@@ -14,8 +14,6 @@
 - [The UK's _Office of national statistics_](https://www.ons.gov.uk/)
 - [A dataset collection prepared by the _University of Tampa_'s library](https://utopia.ut.edu/c.php?g=887297&p=6377135)
 - [Our world in data](https://ourworldindata.org/data?topics=Education+and+Knowledge); CSV data can downloaded from individual articles.
-- Datasets from PSU?
-  - The [Common data set archive](https://www.pdx.edu/research-planning/common-data-set-archive) is a bunch of PDFs.
 
 #### Selected, promising datasets
 
@@ -26,6 +24,17 @@
 
 - UK _Office for national statistics_:
   - https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/whichskillsareemployersseekinginyourarea/2024-11-05
+##### Datasets from PSU
+
+- The [Common data set archive](https://www.pdx.edu/research-planning/common-data-set-archive) is a bunch of PDFs.
+- The [Data cookbook](http://pdx.datacookbook.com/)
+- The [Cognos](https://www.pdx.edu/technology/cognos) data reporting tool.
+- [Oregon evictions data tracking](https://www.pdx.edu/urban-studies/oregon-evictions-data-tracking)
+- The [Statistical look](https://www.pdx.edu/research-planning/statistical-look) page collects links to various other resources; bizarrely, the _Enrollment modeling_ section reports using markov chains to predict enrollment; see https://www.pdx.edu/research-planning/sites/researchplanning.web.wdt.pdx.edu/files/2024-10/Enrollment%20Forecast%20-%20OIRP.pdf.
+- [PSU's annual financial reports](https://www.pdx.edu/financial-services/annual-financial-reports) are available as PDFs.
+- [PSU's financial report dashboard](https://www.pdx.edu/finance-administration/financial-reports-and-dashboards)
+- [PSU's financial services department](https://www.pdx.edu/financial-services/)
+- [This page](https://www.psuf.org/s/1904/21/page.aspx?sid=1904&gid=2&pgid=797) says that the _PSU foundation_'s financial information may be available upon request.
 
 ##### From _Data is plural_
 
