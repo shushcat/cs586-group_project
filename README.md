@@ -8,57 +8,56 @@
 --------
 
 - [x] Go over the datasets once, accepting or rejecting
-- [ ] Tidy up the reference links
+- [x] Tidy up the reference links
 - [ ] Check whether they can be downloaded, collecting links and rejecting datasets that aren't available
-- [ ] Put together a Makefile to collect datasets into a `./datasets` directory
+- [ ] Add a makefile and script to download linked datasets to a `./datasets` directory
 
 # Education & sports in America
 
-- American infrastructure datasets from the _Department of homeland security_:
-    - [infrastructure-related datasets](https://hifld-dhs-gii.opendata.arcgis.com)
-    - [educational facilities](https://hifld-dhs-gii.opendata.arcgis.com/datasets?group_id=1b542a2d4fda47aea7e52cbc4fe9fd65)
-    - [sports venues](https://hifld-dhs-gii.opendata.arcgis.com/datasets/85d3d0fc64924edbbd7c62e319d8a791_0)
+- [x] The [College scorecard](https://collegescorecard.ed.gov/data) data, while [off by an average of 10% in reported graduation rates among Pell-grant recipients](https://hechingerreport.org/theres-finally-federal-data-on-low-income-college-graduation-rates-but-its-wrong/), give a comprehensive view of universities in the US as a whole.
+	- **link**: https://ed-public-download.scorecard.network/downloads/College_Scorecard_Raw_Data_01162025.zip
 
-- The [College scorecard](https://collegescorecard.ed.gov/data) data, while [off by an average of 10% in reported graduation rates among Pell-grant recipients](https://hechingerreport.org/theres-finally-federal-data-on-low-income-college-graduation-rates-but-its-wrong/), give a comprehensive view of universities in the US as a whole.
-
-- _The Huffington post_ and _Chronicle of higher education_ teamed up to investigate have collected [data on how college's finance their athletics](http://projects.huffingtonpost.com/ncaa/reporters-note)
+- [x] _The Huffington post_ and _Chronicle of higher education_ teamed up to investigate have collected [data on how college's finance their athletics](http://projects.huffingtonpost.com/ncaa/reporters-note)
+	- **link**: http://hpin.s3.amazonaws.com/ncaa-financials/ncaa-financials-data.zip
 	- See [their report](http://projects.huffingtonpost.com/projects/ncaa/sports-at-any-cost) and
 	- [_The Washington post_'s report on the unprofitability of college athletics](http://www.washingtonpost.com/sf/sports/wp/2015/11/23/running-up-the-bills/)
 
-- The [_Department of education_'s data on foreign gifts to and contracts with US colleges](https://studentaid.ed.gov/sa/about/data-center/school/foreign-gifts)
+- [x] The [_Department of education_'s data on foreign gifts to and contracts with US colleges](https://studentaid.ed.gov/sa/about/data-center/school/foreign-gifts)
+	- **link**: https://studentaid.gov/sites/default/files/ForeignGifts.xls
+		- from: https://catalog.data.gov/dataset/foreign-gifts-and-contracts-report-e353d
 	- See [their database on such gifts and contracts](https://catalog.data.gov/dataset/foreign-gifts-and-contracts-report-2011), and
 	- See a report from the _Associated press_ on Saudi-Arabia's financial ties to US colleges: https://www.apnews.com/4d56411af6a8490e8030eacab4401571
 
-- Does sports gambling correlate with subsidies to to college sports?
-	- [_The census bureau_’s "Quarterly summary of state and local government tax revenue](https://www.census.gov/programs-surveys/qtax.html)
-	- [Monthly data for a subset of those taxes](https://www.census.gov/data/experimental-data-products/selected-monthly-state-sales-tax-collections.html), including sports gambling
-		- (See https://www.washingtonpost.com/business/2024/06/07/sports-betting-lottery-state-budgets/)
+- [_The census bureau_’s "Quarterly summary of state and local government tax revenue](https://www.census.gov/programs-surveys/qtax.html)
+	- **link** to "Historic quarterly state and local government tax revenue": https://www2.census.gov/programs-surveys/qtax/tables/historical/2009Q1-2024Q3-QTAX-Table1.xlsx
+- [Monthly data for a subset of those taxes](https://www.census.gov/data/experimental-data-products/selected-monthly-state-sales-tax-collections.html), including sports gambling
+	- (See https://www.washingtonpost.com/business/2024/06/07/sports-betting-lottery-state-budgets/)
 
-- [NCAA data on student athletes’ academic progress and graduation rates](https://www.icpsr.umich.edu/icpsrweb/content/NCAA/data.html), aggregated by school and sport; **dead link** but may be archived somewhere.
-- [ ] The [Stanford common data set](https://irds.stanford.edu/data-findings/cds) collects data in a common format to make comparing higher education institutions easier.
+- [ ] [NCAA data on student athletes’ academic progress and graduation rates](https://www.icpsr.umich.edu/icpsrweb/content/NCAA/data.html), aggregated by school and sport; **dead link** but may be archived somewhere.
 
-- [Aggregate data on federal student loans from the _US department of education_](https://studentaid.gov/data-center/student)
+- [ ] [Aggregate data on federal student loans from the _US department of education_](https://studentaid.gov/data-center/student)
 	- [Amounts outstanding](https://studentaid.gov/data-center/student/portfolio)
 	- [volumes of financial aid requested](https://studentaid.gov/data-center/student/application-volume)
 	- [volumes of financial aid awarded](https://studentaid.gov/data-center/student/title-iv)
 	- [student loan default rates](https://studentaid.gov/data-center/student/default)
 	- [student loan forgiveness rates](https://studentaid.gov/data-center/student/loan-forgiveness)
 
-- [_USA today_'s data on college football assistant-coaches' salaries](http://sports.usatoday.com/ncaa/salaries/football/assistant).
-- [_USA today_'s data on college football head-coaches' salaries](http://sports.usatoday.com/ncaa/salaries/football/coach)
+- [ ] [_USA today_'s data on college football assistant-coaches' salaries](http://sports.usatoday.com/ncaa/salaries/football/assistant).
+
+- [ ] [_USA today_'s data on college football head-coaches' salaries](http://sports.usatoday.com/ncaa/salaries/football/coach)
 	- Also see http://deadspin.com/infographic-is-your-states-highest-paid-employee-a-co-489635228)
 
 - Is there a connection between subsidies to college sports teams and Title-IX investigations?
-	- [_The chronicle of higher education_'s tracker of federal investigations into sexual assault on college campuses](http://projects.chronicle.com/titleix/)
+	- [ ] [_The chronicle of higher education_'s tracker of federal investigations into sexual assault on college campuses](http://projects.chronicle.com/titleix/)
 		- [an API to access the data more easily](http://projects.chronicle.com/titleix/api/v1/docs/)
 
-- The [College athletics financial information database](http://cafidatabase.knightcommission.org) list sources of revenue and expenses for many colleges
+- [ ] The [College athletics financial information database](http://cafidatabase.knightcommission.org) list sources of revenue and expenses for many colleges
 	- For how the data was obtained, see: http://cafidatabase.knightcommission.org/about-the-data and https://sports.usatoday.com/2020/07/05/methodology-for-2019-ncaa-athletic-department-revenue-database/
 
-- The [_Department of education_'s annual school- and team-level datasets on college sports' finances](https://ope.ed.gov/athletics/)
+- [ ] The [_Department of education_'s annual school- and team-level datasets on college sports' finances](https://ope.ed.gov/athletics/)
 	- See _USAFacts_' reporting which uses the data to examine college football finances: https://usafacts.org/articles/coronavirus-college-football-profit-sec-acc-pac-12-big-ten-millions-fall-2020/
 
-- The [_Urban institute_'s education data explorer](https://educationdata.urban.org/data-explorer/) has normed 
+- [ ] The [_Urban institute_'s education data explorer](https://educationdata.urban.org/data-explorer/) has normed 
 	- the _Department of education_'s
 		- [Common core of data](https://nces.ed.gov/ccd/), [Civil rights data collection](https://ocrdata.ed.gov/),
 		- [Integrated postsecondary education data system](https://nces.ed.gov/ipeds/), and
@@ -68,6 +67,16 @@
 	- the data can be downloaded in bulk for both
 		- [elementary and secondary schools](https://educationdata.urban.org/documentation/schools.html), [school districts](https://educationdata.urban.org/documentation/school-districts.html) and 
 		- [colleges](https://educationdata.urban.org/documentation/colleges.html)
+
+## Probably not useful
+
+- The [Stanford common data set](https://irds.stanford.edu/data-findings/cds) collects data in a common format to make comparing higher education institutions easier.
+
+- American infrastructure datasets from the _Department of homeland security_:
+    - [infrastructure-related datasets](https://hifld-dhs-gii.opendata.arcgis.com)
+    - [educational facilities](https://hifld-dhs-gii.opendata.arcgis.com/datasets?group_id=1b542a2d4fda47aea7e52cbc4fe9fd65)
+    - [sports venues](https://hifld-dhs-gii.opendata.arcgis.com/datasets/85d3d0fc64924edbbd7c62e319d8a791_0)
+
 
 # Resources, broadly
 
