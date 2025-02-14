@@ -21,11 +21,13 @@
 
 - The [College scorecard](https://collegescorecard.ed.gov/data) data, while [off by an average of 10% in reported graduation rates among Pell-grant recipients](https://hechingerreport.org/theres-finally-federal-data-on-low-income-college-graduation-rates-but-its-wrong/), give a comprehensive view of universities in the US as a whole.
 
->__College sports financing.__ The Huffington Post and Chronicle of Higher Education teamed up to investigate [how colleges bankroll their athletics](http://projects.huffingtonpost.com/projects/ncaa/sports-at-any-cost). (Georgia State, for example, [spent more than $100 million subsidizing sports between 2010 and 2014](http://projects.huffingtonpost.com/projects/ncaa/subsidy-scorecards/eastern-kentucky-university), mostly via student fees.) The report, published last week, draws on five years of revenue/expense reports from 234 Division I public universities. You can [download the raw data](http://projects.huffingtonpost.com/ncaa/reporters-note) or [explore it online](http://projects.huffingtonpost.com/projects/ncaa/subsidy-scorecards). Related: The Washington Post also tackled this topic — from a slightly different angle — last week, [examining the profitability (or lack thereof) of athletic programs at 48 schools](http://www.washingtonpost.com/sf/sports/wp/2015/11/23/running-up-the-bills/). [h/t [Shane Shifflett](https://twitter.com/shaneshifflett)]
+- _The Huffington post_ and _Chronicle of higher education_ teamed up to investigate have collected [data on how college's finance their athletics](http://projects.huffingtonpost.com/ncaa/reporters-note)
+	- See [their report](http://projects.huffingtonpost.com/projects/ncaa/sports-at-any-cost) and
+	- [_The Washington post_'s report on the unprofitability of college athletics](http://www.washingtonpost.com/sf/sports/wp/2015/11/23/running-up-the-bills/)
 
->__Foreign gifts to U.S. universities.__ The Department of Education [requires U.S. universities to report](https://studentaid.ed.gov/sa/about/data-center/school/foreign-gifts) all major gifts from (and contracts with) foreign entities. The agency’s [database of these gifts and contracts](https://catalog.data.gov/dataset/foreign-gifts-and-contracts-report-2011) currently covers 2012 to mid-2018, and includes 18,000+ entries from more than 150 schools. __Related:__ In the wake of Jamal Khashoggi’s murder, the AP’s Collin Binkley and Chad Day used the data [to examine colleges’ financial ties to Saudi Arabia](https://www.apnews.com/4d56411af6a8490e8030eacab4401571). [h/t [Meghan Hoyer](https://twitter.com/MeghanHoyer)]
-
->__Women’s college basketball rosters.__ Students in [Derek Willis](https://merrill.umd.edu/directory/derek-willis)’s “[Sports Data Analysis & Visualization](https://app.testudo.umd.edu/soc/202208/JOUR/JOUR479X)” course at the University of Maryland’s journalism school have [assembled](https://twitter.com/derekwillis/status/1600946516272861185) data on [13,000+ players on women’s college basketball teams](https://github.com/Sports-Roster-Data/womens-college-basketball), sourced from 900+ rosters for the 2022–23 NCAA season. Their main dataset lists each player’s name, team, position, jersey number, height, year, hometown, high school, and more.
+- The [_Department of education_'s data on foreign gifts to and contracts with US colleges](https://studentaid.ed.gov/sa/about/data-center/school/foreign-gifts)
+	- See [their database on such gifts and contracts](https://catalog.data.gov/dataset/foreign-gifts-and-contracts-report-2011), and
+	- See a report from the _Associated press_ on Saudi-Arabia's financial ties to US colleges: https://www.apnews.com/4d56411af6a8490e8030eacab4401571
 
 - Does sports gambling correlate with subsidies to to college sports?
 	- [_The census bureau_’s "Quarterly summary of state and local government tax revenue](https://www.census.gov/programs-surveys/qtax.html)
@@ -82,6 +84,8 @@
 
 - UK _Office for national statistics_:
   - https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/whichskillsareemployersseekinginyourarea/2024-11-05
+
+>__Women’s college basketball rosters.__ Students in [Derek Willis](https://merrill.umd.edu/directory/derek-willis)’s “[Sports Data Analysis & Visualization](https://app.testudo.umd.edu/soc/202208/JOUR/JOUR479X)” course at the University of Maryland’s journalism school have [assembled](https://twitter.com/derekwillis/status/1600946516272861185) data on [13,000+ players on women’s college basketball teams](https://github.com/Sports-Roster-Data/womens-college-basketball), sourced from 900+ rosters for the 2022–23 NCAA season. Their main dataset lists each player’s name, team, position, jersey number, height, year, hometown, high school, and more.
 
 ### Datasets from PSU
 
