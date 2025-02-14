@@ -1,3 +1,4 @@
 - What is the connection between college sports and academics?
 - Does spending on college sports affect student's academic performances?
 - How is cost of attendance affected by funding for college sports?
+- How does increased funding for college sports affect universities, colleges, and the areas surrounding them.
