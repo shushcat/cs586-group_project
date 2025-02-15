@@ -9,7 +9,7 @@
 
 - [x] Go over the datasets once, accepting or rejecting
 - [x] Tidy up the reference links
-- [ ] Check whether they can be downloaded, collecting links and rejecting datasets that aren't available
+- [x] Check whether they can be downloaded, collecting links and rejecting datasets that aren't available
 - [ ] Add a makefile and script to download linked datasets to a `./datasets` directory
 - [ ] [Package datasets as a "Release"](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases) on Github.
 
@@ -51,7 +51,9 @@
 	- **link** (2003--2023): https://ope.ed.gov/athletics/#/datafile/list
 	- See _USAFacts_' reporting which uses the data to examine college football finances: https://usafacts.org/articles/coronavirus-college-football-profit-sec-acc-pac-12-big-ten-millions-fall-2020/
 
-- [ ] The [_Urban institute_'s education data explorer](https://educationdata.urban.org/data-explorer/) has normed 
+## Probably not useful
+
+- The [_Urban institute_'s education data explorer](https://educationdata.urban.org/data-explorer/) has normed 
 	- the _Department of education_'s
 		- [Common core of data](https://nces.ed.gov/ccd/), [Civil rights data collection](https://ocrdata.ed.gov/),
 		- [Integrated postsecondary education data system](https://nces.ed.gov/ipeds/), and
@@ -62,7 +64,6 @@
 		- [elementary and secondary schools](https://educationdata.urban.org/documentation/schools.html), [school districts](https://educationdata.urban.org/documentation/school-districts.html) and 
 		- [colleges](https://educationdata.urban.org/documentation/colleges.html)
 
-## Probably not useful
 
 - The [College athletics financial information database](http://cafidatabase.knightcommission.org) list sources of revenue and expenses for many colleges
 	- For how the data was obtained, see: http://cafidatabase.knightcommission.org/about-the-data and https://sports.usatoday.com/2020/07/05/methodology-for-2019-ncaa-athletic-department-revenue-database/
