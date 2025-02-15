@@ -33,9 +33,10 @@
 	- [Monthly data for a subset of those taxes](https://www.census.gov/data/experimental-data-products/selected-monthly-state-sales-tax-collections.html), including sports gambling
 		- (See https://www.washingtonpost.com/business/2024/06/07/sports-betting-lottery-state-budgets/)
 
-- [ ] [NCAA data on student athletes’ academic progress and graduation rates](https://www.icpsr.umich.edu/icpsrweb/content/NCAA/data.html), aggregated by school and sport; **dead link** but may be archived somewhere.
+- [x] [NCAA data on student athletes’ academic progress and graduation rates](https://www.icpsr.umich.edu/icpsrweb/content/NCAA/data.html), aggregated by school and sport; **dead link** but may be archived somewhere.
 	- See live **link**: https://www.icpsr.umich.edu/web/ICPSR/studies/30022#;
-		- requires account to download
+		- requires PSU account to download
+	- Saved as `./datasets/icpsr`
 
 - [ ] [Aggregate data on federal student loans from the _US department of education_](https://studentaid.gov/data-center/student)
 	- [Amounts outstanding](https://studentaid.gov/data-center/student/portfolio)
