@@ -17,6 +17,31 @@ Rather, we plan to arrange our data so as to allow researchers to easily frame q
 
 Some examples of the kinds of questions we would like to be able to ask follow.
 
+1. What is the connection between college sports and academics?
+2. Does spending on college sports affect student's academic performances?
+3. How is cost of attendance affected by funding for college sports?
+4. How does increased funding for college sports affect universities, colleges, and the areas surrounding them?
+5. Does sports gambling correlate with subsidies to college sports?
+6. Is there a connection between subsidies to college sports teams and Title-IX investigations?
+7. How many students are in high school, under grad, grad etc programs?
+8. How many students are involved in both academics and sports?
+9. Which colleges have the highest fees?
+10. What are the top 15 schools and colleges that have good ratings?
+11. Which schools and colleges support financing for academically oriented students?
+12. Which schools and colleges support financing for students involved in sports?
+13. How many students are involved in college sports?
+14. What kinds of funding are offered to students at schools and colleges?
+15. How much funding is offered to students when comparing between states?
+16. Which schools and colleges are highly supportive of sports?
+17. What is the variation in funding for education versus sports?
+18. Which schools and colleges participate and encourage students in more than 1 sport?
+19. What is the average of students who are good at both sports and academics?
+20. How many consecutive wins have various college sports team had?
+21. How many students, by school, have received funding based on athletics participation?
+22. What is the average amount or scholarship money offered per year in each category?
+23. Is there a difference in the average funding for male and female college sports teams?
+24. How does any difference in the previous question compare to differences in funding based on academic merit?
+
 #### Sources and their ingestion
 
 We have collected the following datasets:
