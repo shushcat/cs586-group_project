@@ -11,6 +11,7 @@
 - [x] Tidy up the reference links
 - [ ] Check whether they can be downloaded, collecting links and rejecting datasets that aren't available
 - [ ] Add a makefile and script to download linked datasets to a `./datasets` directory
+- [ ] [Package datasets as a "Release"](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases) on Github.
 
 # Education & sports in America
 
@@ -34,30 +35,20 @@
 		- (See https://www.washingtonpost.com/business/2024/06/07/sports-betting-lottery-state-budgets/)
 
 - [x] [NCAA data on student athletes’ academic progress and graduation rates](https://www.icpsr.umich.edu/icpsrweb/content/NCAA/data.html), aggregated by school and sport; **dead link** but may be archived somewhere.
-	- See live **link**: https://www.icpsr.umich.edu/web/ICPSR/studies/30022#;
+	- **link**: https://www.icpsr.umich.edu/web/ICPSR/studies/30022#;
 		- requires PSU account to download
-	- Saved as `./datasets/icpsr`
+	- Saved under ignored subfolder `./datasets/icpsr`
 
-- [ ] [Aggregate data on federal student loans from the _US department of education_](https://studentaid.gov/data-center/student)
+- [x] [Aggregate data on federal student loans from the _US department of education_](https://studentaid.gov/data-center/student)
+	- [student loan default rates](https://studentaid.gov/data-center/student/default)
+		- **link** (2015--2018): https://studentaid.gov/data-center/student/default
 	- [Amounts outstanding](https://studentaid.gov/data-center/student/portfolio)
 	- [volumes of financial aid requested](https://studentaid.gov/data-center/student/application-volume)
 	- [volumes of financial aid awarded](https://studentaid.gov/data-center/student/title-iv)
-	- [student loan default rates](https://studentaid.gov/data-center/student/default)
 	- [student loan forgiveness rates](https://studentaid.gov/data-center/student/loan-forgiveness)
 
-- [ ] [_USA today_'s data on college football assistant-coaches' salaries](http://sports.usatoday.com/ncaa/salaries/football/assistant).
-
-- [ ] [_USA today_'s data on college football head-coaches' salaries](http://sports.usatoday.com/ncaa/salaries/football/coach)
-	- Also see http://deadspin.com/infographic-is-your-states-highest-paid-employee-a-co-489635228)
-
-- Is there a connection between subsidies to college sports teams and Title-IX investigations?
-	- [ ] [_The chronicle of higher education_'s tracker of federal investigations into sexual assault on college campuses](http://projects.chronicle.com/titleix/)
-		- [an API to access the data more easily](http://projects.chronicle.com/titleix/api/v1/docs/)
-
-- [ ] The [College athletics financial information database](http://cafidatabase.knightcommission.org) list sources of revenue and expenses for many colleges
-	- For how the data was obtained, see: http://cafidatabase.knightcommission.org/about-the-data and https://sports.usatoday.com/2020/07/05/methodology-for-2019-ncaa-athletic-department-revenue-database/
-
-- [ ] The [_Department of education_'s annual school- and team-level datasets on college sports' finances](https://ope.ed.gov/athletics/)
+- [x] The [_Department of education_'s annual school- and team-level datasets on college sports' finances](https://ope.ed.gov/athletics/)
+	- **link** (2003--2023): https://ope.ed.gov/athletics/#/datafile/list
 	- See _USAFacts_' reporting which uses the data to examine college football finances: https://usafacts.org/articles/coronavirus-college-football-profit-sec-acc-pac-12-big-ten-millions-fall-2020/
 
 - [ ] The [_Urban institute_'s education data explorer](https://educationdata.urban.org/data-explorer/) has normed 
@@ -73,6 +64,12 @@
 
 ## Probably not useful
 
+- The [College athletics financial information database](http://cafidatabase.knightcommission.org) list sources of revenue and expenses for many colleges
+	- For how the data was obtained, see: http://cafidatabase.knightcommission.org/about-the-data and https://sports.usatoday.com/2020/07/05/methodology-for-2019-ncaa-athletic-department-revenue-database/
+
+- [_The chronicle of higher education_'s tracker of federal investigations into sexual assault on college campuses](http://projects.chronicle.com/titleix/)
+	- [an API to access the data more easily](http://projects.chronicle.com/titleix/api/v1/docs/)
+
 - The [Stanford common data set](https://irds.stanford.edu/data-findings/cds) collects data in a common format to make comparing higher education institutions easier.
 
 - American infrastructure datasets from the _Department of homeland security_:
@@ -80,6 +77,9 @@
     - [educational facilities](https://hifld-dhs-gii.opendata.arcgis.com/datasets?group_id=1b542a2d4fda47aea7e52cbc4fe9fd65)
     - [sports venues](https://hifld-dhs-gii.opendata.arcgis.com/datasets/85d3d0fc64924edbbd7c62e319d8a791_0)
 
+- [_USA today_'s data on college football assistant-coaches' salaries](http://sports.usatoday.com/ncaa/salaries/football/assistant).
+- [_USA today_'s data on college football head-coaches' salaries](http://sports.usatoday.com/ncaa/salaries/football/coach)
+	- Also see http://deadspin.com/infographic-is-your-states-highest-paid-employee-a-co-489635228)
 
 # Resources, broadly
 

@@ -3,3 +3,4 @@
 - How is cost of attendance affected by funding for college sports?
 - How does increased funding for college sports affect universities, colleges, and the areas surrounding them.
 - Does sports gambling correlate with subsidies to to college sports?
+- Is there a connection between subsidies to college sports teams and Title-IX investigations?
