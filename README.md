@@ -2,13 +2,23 @@
 
 --------
 
-## TODO
+## TODO Roadmap
 
 - [x] Go over the datasets once, accepting or rejecting
 - [x] Tidy up the reference links
 - [x] Check whether they can be downloaded, collecting links and rejecting datasets that aren't available
-- [ ] Add a makefile and script to download linked datasets to a `./datasets` directory
+- [x] Deliverable 1 (2025-02-14)
+    - [x] Pick subject area.  What is this database about?  Write 1--2 paragraphs giving a general description and background information.
+    - [x] List 20 questions as examples the database might help to answer.
+    - [x] Describe sources and ingestion scheme.  We will need at least several hundred rows of data.  Present this as a paragraph.  Be specific.
+- [ ] Collect datasets
+	- [ ] URLs: makefile
+	- [ ] ~URL|registration: include in repo?
+	- [ ] Add a makefile for those that cannot be Add a makefile and script to download linked datasets to a `./datasets` directory
+	- Download all of them; record
 - [ ] [Package datasets as a "Release"](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases) on Github.
+
+# Log
 
 # Database design
 
@@ -149,10 +159,3 @@ All very tentative so far.
 >__School testing.__ The Department of Education’s [EDFacts data](http://www2.ed.gov/about/inits/ed/edfacts/data-files/index.html) tracks public grade schools’ participation and proficiency rates on standardized math and reading/language exams. The files provide data on all students who took the tests, broken down by race/ethnicity, sex, disability status, homelessness, and more. A related set of data files, available on the same page, tracks high-school graduation rates.
 
 >__SAT, ACT, and AP scores.__ The California Department of Education publishes [aggregate scores on these high-school tests](http://www.cde.ca.gov/ds/sp/ai/) for each county, district, and school going back to the late 1990s. One hitch: For more than two months, the 2016 AP data “contained 350,000 more tests than had actually been taken,” [according to inewsource.org’s Megan Wood](http://inewsource.org/2017/06/13/state-admits-posting-faulty-data/), who spotted the discrepancies (and others) and got the department to fix them. Similar datasets are available from other states, including [Texas](http://tea.texas.gov/acctres/sat_act_index.html), [Florida](http://www.fldoe.org/accountability/accountability-reporting/act-sat-ap-data/index.stml), and [Pennsylvania](http://www.education.pa.gov/K-12/Assessment%20and%20Accountability/Pages/SAT-and-ACT.aspx#tab-1). __Bonus:__ inewsource.org’s has also published easy-to-search tables of the California [AP](http://data.inewsource.org/interactives/california-ap-scores-2011-2016/), [SAT](http://data.inewsource.org/interactives/california-sat-scores-2011-2016/), and [ACT](http://data.inewsource.org/interactives/california-act-scores-2011-2016/) scores.
-
-# Log
-
-- [X] Deliverable 1 (2025-02-14)
-    - [X] Pick subject area.  What is this database about?  Write 1--2 paragraphs giving a general description and background information.
-    - [X] List 20 questions as examples the database might help to answer.
-    - [X] Describe sources and ingestion scheme.  We will need at least several hundred rows of data.  Present this as a paragraph.  Be specific.
