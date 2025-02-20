@@ -1,0 +1,350 @@
+File Manifest for ICPSR 30022
+
+Paskus, Thomas. NCAA Division I and II Graduation Success Rate and Academic
+Success Rate, 1995-2008 Cohorts [United States]. ICPSR30022-v4. Ann Arbor,
+MI: Inter-university Consortium for Political and Social Research
+[distributor], 2015-11-05. http://doi.org/10.3886/ICPSR30022.v4
+
+Details on the version history can be found below the file listings.
+
+
+Study-level Documentation
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    30022-descriptioncitation.pdf       -       -         -       2015-11-16  -
+
+    30022-related_literature.txt        -       -         -       daily       -
+
+    30022-manifest.txt                  -       -         -       daily       -
+
+
+DS0001 Division I National Aggregation Overall
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    30022-0001-Codebook.pdf             -       -         -       2015-11-05  e31b6f548bbbcd83cd6c1ed19194f366
+
+    30022-0001-Data.dta                 -       36        91      2015-11-05  f0f65d7807a4efc7672a05aaebd357d6
+
+    30022-0001-Data.rda                 -       36        91      2015-11-05  132933636d88d3cd6af37fd002d6c2ea
+
+    30022-0001-Data.sav                 -       36        91      2015-11-05  ee675a7c1a26b3d33f8d996f4f859c4d
+
+    30022-0001-Data.stc                 -       36        91      2015-11-05  bfce76217b67b953647c3a709518b8ed
+
+    30022-0001-Data.tsv                 -       36        91      2015-11-05  a3a6aacf0addecb1398e2e36ddeb405a
+
+    30022-0001-Data.txt                 323     36        91      2015-11-05  f031fe51d984681e3fe4288efa9e8ccb
+
+    30022-0001-Setup.dct                -       -         -       2015-11-05  f8c652f067125876557423b95e1df44a
+
+    30022-0001-Setup.do                 -       -         -       2015-11-05  e22049b2df74a8196ca25220c5ebabe9
+
+    30022-0001-Setup.sas                -       -         -       2015-11-05  e397f0d000a299c80bac84d64ef84c5e
+
+    30022-0001-Setup.sps                -       -         -       2015-11-05  ca83e2ce774d417e0ad41a84bda28e05
+
+    30022-0001-Supplemental_syntax.do   -       -         -       2015-11-05  0374d8a4615be0128b3f50447d7280f7
+
+    30022-0001-Supplemental_syntax.sas  -       -         -       2015-11-05  bc038e20f358002d40fce84520a0aa4b
+
+
+DS0002 Division I National Aggregation Student-Athletes
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    30022-0002-Codebook.pdf             -       -         -       2015-11-05  98f434c98d8dd1603a5b17b14ff75d66
+
+    30022-0002-Data.dta                 -       112       63      2015-11-05  c9d4992fa72dbf962686c5d6a51ada85
+
+    30022-0002-Data.rda                 -       112       63      2015-11-05  e69722a2293eb84077d0f114a5979e6f
+
+    30022-0002-Data.sav                 -       112       63      2015-11-05  5b35e810002afd7be598d7556cd948d4
+
+    30022-0002-Data.stc                 -       112       63      2015-11-05  fa8ecdd85a7cd3b88f3a7284847aab81
+
+    30022-0002-Data.tsv                 -       112       63      2015-11-05  d8fae949b606f4985d66efcbde6aadb5
+
+    30022-0002-Data.txt                 234     112       63      2015-11-05  0281b33e9acf2a5aa48b3ea659d44272
+
+    30022-0002-Setup.dct                -       -         -       2015-11-05  2718cb5367d84871676b345d2b1154c4
+
+    30022-0002-Setup.do                 -       -         -       2015-11-05  c58b26f9bd248901b190e6a3c8519b86
+
+    30022-0002-Setup.sas                -       -         -       2015-11-05  1c2d52b6a7c92dd644adb86eff26ab4c
+
+    30022-0002-Setup.sps                -       -         -       2015-11-05  9b1dfb10298829ea5da6be5d694ff7bd
+
+    30022-0002-Supplemental_syntax.do   -       -         -       2015-11-05  519c532e7182755e070a4f6cfd768564
+
+    30022-0002-Supplemental_syntax.sas  -       -         -       2015-11-05  c2959cebd8a0568e65995965818214e5
+
+
+DS0003 Division I National Aggregation Student Body
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    30022-0003-Codebook.pdf             -       -         -       2015-11-05  44c3197a1340ba1ceb4a1563f4824c9c
+
+    30022-0003-Data.dta                 -       6         30      2015-11-05  d467d69022bb23d616a1db30cb7d998a
+
+    30022-0003-Data.rda                 -       6         30      2015-11-05  3c7f06e888cfcebce378c9b874e57125
+
+    30022-0003-Data.sav                 -       6         30      2015-11-05  627b638ec853b59151478bc42e6f8693
+
+    30022-0003-Data.stc                 -       6         30      2015-11-05  6ff01e23f1614945ce36303ea9819af0
+
+    30022-0003-Data.tsv                 -       6         30      2015-11-05  81cf0cac90f1210c3c43b5a1858746ed
+
+    30022-0003-Data.txt                 174     6         30      2015-11-05  f5a0883f3da79f7b2b9b8213dece6f64
+
+    30022-0003-Setup.dct                -       -         -       2015-11-05  956b4d7d158eea36c4b66aeefbc0b06c
+
+    30022-0003-Setup.do                 -       -         -       2015-11-05  c288456697258d549a6e553ceea547a4
+
+    30022-0003-Setup.sas                -       -         -       2015-11-05  398ed93d387193462b0bb0138451e9f4
+
+    30022-0003-Setup.sps                -       -         -       2015-11-05  08c68549d9500c832261952c688874b6
+
+    30022-0003-Supplemental_syntax.do   -       -         -       2015-11-05  fa331b35d07c072c2338ff2f37077f7e
+
+    30022-0003-Supplemental_syntax.sas  -       -         -       2015-11-05  1f9b759e928b7a1ed2d77935172d002f
+
+
+DS0004 Division I School Student-Athletes and Student Body
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    30022-0004-Codebook.pdf             -       -         -       2015-11-05  7eae96d9a9fadefe8db9b14bd061aeba
+
+    30022-0004-Data.dta                 -       345       226     2015-11-05  c62b68cc7566c22f5d5b4b00445b82bd
+
+    30022-0004-Data.rda                 -       345       226     2015-11-05  f8c36b2293675c7f67bceb920ff218af
+
+    30022-0004-Data.sav                 -       345       226     2015-11-05  6191bdb1348319430b0a8be57c1506b5
+
+    30022-0004-Data.stc                 -       345       226     2015-11-05  c27d95ce6f958d914299e18a9281b1e6
+
+    30022-0004-Data.tsv                 -       345       226     2015-11-05  20e4983b3d3986162f140a8fe986aa3a
+
+    30022-0004-Data.txt                 778     345       226     2015-11-05  3735073f1255132ce95b72d3d2b6e040
+
+    30022-0004-Setup.dct                -       -         -       2015-11-05  38202c83b0a11c7ac0fbb344406ccd7f
+
+    30022-0004-Setup.do                 -       -         -       2015-11-05  821a8f0e463cd6fc23c7070d468795c1
+
+    30022-0004-Setup.sas                -       -         -       2015-11-05  f040f9da245f2bad7a5e7c4744b711f3
+
+    30022-0004-Setup.sps                -       -         -       2015-11-05  e5d2d611bc9334417406f814c2b7ca6c
+
+    30022-0004-Supplemental_syntax.do   -       -         -       2015-11-05  afc22e82899ef45edfe4da1f042debce
+
+    30022-0004-Supplemental_syntax.sas  -       -         -       2015-11-05  b590f3fd053bd226d14fe4e0b4997ca1
+
+
+DS0005 Division I Squad Level Graduation Success Rate
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    30022-0005-Codebook.pdf             -       -         -       2015-11-05  abd13487b841e307ae7a1aa8ccf4b620
+
+    30022-0005-Data.dta                 -       5,337     11      2015-11-05  bd0400d4666f612c04e4344dae43b657
+
+    30022-0005-Data.rda                 -       5,337     11      2015-11-05  85c9d43b5caf233fd2f58b45f5dcf34d
+
+    30022-0005-Data.sav                 -       5,337     11      2015-11-05  52193f273523c5ba66452b1fa6bdfc7c
+
+    30022-0005-Data.stc                 -       5,337     11      2015-11-05  4f5c9746b58015f4e3ac379e926ab9b1
+
+    30022-0005-Data.tsv                 -       5,337     11      2015-11-05  8be990ee3e5868455ef5e4ce818eb734
+
+    30022-0005-Data.txt                 160     5,337     11      2015-11-05  3009781413748804b9ba77bd86c77d2f
+
+    30022-0005-Setup.dct                -       -         -       2015-11-05  1ee24564b67a5a636393c3a0632d8294
+
+    30022-0005-Setup.do                 -       -         -       2015-11-05  f03fa0c362599972a73b7b8c3d004410
+
+    30022-0005-Setup.sas                -       -         -       2015-11-05  feba577835faa0a184b4285a45d26840
+
+    30022-0005-Setup.sps                -       -         -       2015-11-05  042f15bd05c1c32cd902d7e7dd9124c0
+
+    30022-0005-Supplemental_syntax.do   -       -         -       2015-11-05  91e697b64d05e17c99172e1a271a0c2e
+
+    30022-0005-Supplemental_syntax.sas  -       -         -       2015-11-05  b0e0d03babb08ddca5876baa4a78bb09
+
+
+DS0006 Division II National Aggregation Overall
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    30022-0006-Codebook.pdf             -       -         -       2015-11-05  6dc2945e95624076b7096586d87218bd
+
+    30022-0006-Data.dta                 -       36        91      2015-11-05  a800cae3945c0817cc71438ad9e5c9fa
+
+    30022-0006-Data.rda                 -       36        91      2015-11-05  647e6df690fd29e5c1d30ac75c00a444
+
+    30022-0006-Data.sav                 -       36        91      2015-11-05  7ca7211dcd042444f85ca416b252ea7c
+
+    30022-0006-Data.stc                 -       36        91      2015-11-05  c4549db15457210b5555741636ce533f
+
+    30022-0006-Data.tsv                 -       36        91      2015-11-05  647d692a247de5fca0f659f7f53c7be5
+
+    30022-0006-Data.txt                 304     36        91      2015-11-05  20ed4d335c67039cc0f42ce7d492997d
+
+    30022-0006-Setup.dct                -       -         -       2015-11-05  a6a0aa437120d453dc1757a848015171
+
+    30022-0006-Setup.do                 -       -         -       2015-11-05  1b0bf2f44c0c4a73cb47f02eb262b839
+
+    30022-0006-Setup.sas                -       -         -       2015-11-05  ef71535d0699fabb5ea104f9816ec8a2
+
+    30022-0006-Setup.sps                -       -         -       2015-11-05  d13b504d0211339976c66839409b600e
+
+    30022-0006-Supplemental_syntax.do   -       -         -       2015-11-05  ba2745e018b206b7c39e6765bc202e6f
+
+    30022-0006-Supplemental_syntax.sas  -       -         -       2015-11-05  cbc7c6a0559e29cb8e082e81ac40dfcb
+
+
+DS0007 Division II National Aggregation Student-Athletes
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    30022-0007-Codebook.pdf             -       -         -       2015-11-05  9d3d5a0461d1f66bc693b0a739b05994
+
+    30022-0007-Data.dta                 -       109       63      2015-11-05  c51e501ac2365dfa6c7df8324241bfd5
+
+    30022-0007-Data.rda                 -       109       63      2015-11-05  7d639c10cabf4be4fec4d79ec69aec02
+
+    30022-0007-Data.sav                 -       109       63      2015-11-05  b17528c937447772c1a53fc2391153c5
+
+    30022-0007-Data.stc                 -       109       63      2015-11-05  98e627b7f3ba28840564224d357c9b7e
+
+    30022-0007-Data.tsv                 -       109       63      2015-11-05  c7646b79fc1a2cd132da61536ffc8e75
+
+    30022-0007-Data.txt                 219     109       63      2015-11-05  6392562153bedfcf5f427847db2384b6
+
+    30022-0007-Setup.dct                -       -         -       2015-11-05  bb519d48f412280df50a393d696f48c5
+
+    30022-0007-Setup.do                 -       -         -       2015-11-05  24a9ec31f5442681938e44fef919c777
+
+    30022-0007-Setup.sas                -       -         -       2015-11-05  83908adeac96c1afb7fbda3332316795
+
+    30022-0007-Setup.sps                -       -         -       2015-11-05  a499421b9b8d42bf958c0eeb39ba943c
+
+    30022-0007-Supplemental_syntax.do   -       -         -       2015-11-05  d77c19b48e5a68c0ffae87483093dce7
+
+    30022-0007-Supplemental_syntax.sas  -       -         -       2015-11-05  a98dc01f8cc93a0b9297bd5fe4022d22
+
+
+DS0008 Division II National Aggregation Student Body
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    30022-0008-Codebook.pdf             -       -         -       2015-11-05  381e6c15ad0fd465d5d0b89aa312edc7
+
+    30022-0008-Data.dta                 -       6         30      2015-11-05  e2cc783176db34e29755bfdfbd11a233
+
+    30022-0008-Data.rda                 -       6         30      2015-11-05  2d5c4d932e9b65bb3a135a8fddf9537e
+
+    30022-0008-Data.sav                 -       6         30      2015-11-05  7f0ac3c3761b9577f14e104b80d6b081
+
+    30022-0008-Data.stc                 -       6         30      2015-11-05  a6fae7007c13014e50296abb16b078c4
+
+    30022-0008-Data.tsv                 -       6         30      2015-11-05  80c241439edc123281ad8e89f54790c7
+
+    30022-0008-Data.txt                 147     6         30      2015-11-05  b7ac2cd47fa3cf59309e0779431e321e
+
+    30022-0008-Setup.dct                -       -         -       2015-11-05  9a52e7b492979c01e996fb09f2e8027c
+
+    30022-0008-Setup.do                 -       -         -       2015-11-05  8173023214fad9f890c3f7189b0542dc
+
+    30022-0008-Setup.sas                -       -         -       2015-11-05  21af1c915f3bd8d96618da83625d58d9
+
+    30022-0008-Setup.sps                -       -         -       2015-11-05  52fa0711fcf55f46e7c27ab2bac85cac
+
+    30022-0008-Supplemental_syntax.do   -       -         -       2015-11-05  d966e05165381cc115b2a4d4bf4ab95d
+
+    30022-0008-Supplemental_syntax.sas  -       -         -       2015-11-05  8e1e356342738e589763ec83d04b9349
+
+
+DS0009 Division II School Student-Athletes and Student Body
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    30022-0009-Codebook.pdf             -       -         -       2015-11-05  3b3f038bcb962eb9022be77b0cf3ae3f
+
+    30022-0009-Data.dta                 -       306       225     2015-11-05  a08cd263996d481ccbb0121ec3d3a20d
+
+    30022-0009-Data.rda                 -       306       225     2015-11-05  d4da38d602de243905bf9acd28dfa25f
+
+    30022-0009-Data.sav                 -       306       225     2015-11-05  19e5014710104fbfcaa41636ff59667f
+
+    30022-0009-Data.stc                 -       306       225     2015-11-05  46a67445ed42d939a4d207902154ada5
+
+    30022-0009-Data.tsv                 -       306       225     2015-11-05  940e36f17cac9b1ae740e3d874b5dde9
+
+    30022-0009-Data.txt                 733     306       225     2015-11-05  95101db957daf43d96208f0853c2db4f
+
+    30022-0009-Setup.dct                -       -         -       2015-11-05  209122757b7f662b6c51e4033f8f22f8
+
+    30022-0009-Setup.do                 -       -         -       2015-11-05  1e780953f213620e82d4cc639e0c7201
+
+    30022-0009-Setup.sas                -       -         -       2015-11-05  1d06b5968b333a3923dd8d41df2de3e1
+
+    30022-0009-Setup.sps                -       -         -       2015-11-05  12a4736b7adc9470693dd7ef6ab2c5d5
+
+    30022-0009-Supplemental_syntax.do   -       -         -       2015-11-05  cc1b6771ee37c9249a014da2809c389b
+
+    30022-0009-Supplemental_syntax.sas  -       -         -       2015-11-05  b9ad6086c6d18f0979fd1b5b463f9331
+
+
+DS0010 Division II Squad Level Academic Success Rate
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    30022-0010-Codebook.pdf             -       -         -       2015-11-05  2fab6b01ebcc5c8e648d0f8f553f5a6a
+
+    30022-0010-Data.dta                 -       3,955     10      2015-11-05  df36c9bb14cf99f27a3dc78ee24614c1
+
+    30022-0010-Data.rda                 -       3,955     10      2015-11-05  70e4efc59432139ea895b68d7a6899ef
+
+    30022-0010-Data.sav                 -       3,955     10      2015-11-05  e0dfb22b608d1eb0d86473caddd53e49
+
+    30022-0010-Data.stc                 -       3,955     10      2015-11-05  011260fe3deaa5b7aeff05877dbc8f6f
+
+    30022-0010-Data.tsv                 -       3,955     10      2015-11-05  eb819e6244a41b17e325d56c94c44833
+
+    30022-0010-Data.txt                 122     3,955     10      2015-11-05  5b1b57f0f91d3c140474dbe7db367f5c
+
+    30022-0010-Setup.dct                -       -         -       2015-11-05  58de3289ba256e4a2e3439d4d542d484
+
+    30022-0010-Setup.do                 -       -         -       2015-11-05  d183c0417e185eea3c96c6eca85253eb
+
+    30022-0010-Setup.sas                -       -         -       2015-11-05  6de3fad6aace21afffc28c395370cdda
+
+    30022-0010-Setup.sps                -       -         -       2015-11-05  d2048d87d1ae3a8e668a2da4b4cf7ebd
+
+    30022-0010-Supplemental_syntax.do   -       -         -       2015-11-05  09dae6530e73d4744852c8c55b35c8fc
+
+    30022-0010-Supplemental_syntax.sas  -       -         -       2015-11-05  88f1c166cc06cd52e6c2aa43ed640428
+
+
+Version History
+
+2015-11-05 Data for the 2008 cohort has been added to update each of the
+ten files. New codebooks have been added for each of the ten files as well.
+The previous data documentation guide is being removed.  2012-04-10 Titles
+on certain setup files and on certain pages in the codebooks were out of
+date and have been corrected.  2012-03-21 Data for the year 2003 has been
+added to each data file.
