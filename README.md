@@ -12,11 +12,24 @@
     - [x] List 20 questions as examples the database might help to answer.
     - [x] Describe sources and ingestion scheme.  We will need at least several hundred rows of data.  Present this as a paragraph.  Be specific.
 - [ ] Collect datasets
-	- [ ] URLs: makefile
-	- [ ] ~URL|registration: include in repo?
-	- [ ] Add a makefile for those that cannot be Add a makefile and script to download linked datasets to a `./datasets` directory
-	- Download all of them; record
-- [ ] [Package datasets as a "Release"](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases) on Github.
+		- [x] "College scorecard": [./datasets/college_scorecard]
+			- [x] Retrieval steps: makefile
+		- [x] "NCAA division I and II graduation success rate and academic success rate, 1995-2008 cohorts": [./datasets/athlete_academic_success]
+			- [x] Added to repository
+		- [x] _The Huffington post_ and _Chronicle of higher education_'s data on how college's finance their athletics: [./datasets/college_athletics_financing]
+			- [x] Retrieval steps: makefile
+		- [x] _Department of education_'s data on foreign gifts to and contracts with US colleges: [./datasets/foreign_gifts]
+			- [x] Retrieval steps: makefile
+		- [x] _The census bureau_’s "Historic quarterly state and local government tax revenue": [./datasets/historic_tax_revenue
+			- [x] Retrieval steps: makefile
+		- [ ] Aggregate data on federal student loan default rates _US department of education_?
+			- [ ] Find for institutions; start at https://fsapartners.ed.gov/knowledge-center/topics/default-management/official-cohort-default-rates-schools
+		- [ ] _Department of education_'s annual school- and team-level datasets on college sports' finances.
+			- [ ] Evaluate carefully---is this useful?  May be duplicating some other sources.
+	- [x] Add script to download linked datasets to a `./datasets` directory
+		- [x] Add rule to makefile to trigger script
+	- [ ] Download all of them; record
+- [ ] Maybe [package datasets as a "Release"](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases) on Github if the scripted download route doesn't work
 
 # Log
 
@@ -29,6 +42,12 @@ All very tentative so far.
 - State
 - College
 
+
+# Dataset retrieval
+
+See the file [./datasets/collect_datasets.sh].
+
+In order to run `collect_datasets.sh`, you need `in2csv` installed, which is part of [CSVKit](https://github.com/wireservice/csvkit)---`brew install csvkit` should do the trick.
 
 # Education & sports in american colleges
 
@@ -55,6 +74,9 @@ All very tentative so far.
 	- **link**: https://www.icpsr.umich.edu/web/ICPSR/studies/30022#;
 		- requires PSU account to download
 	- Saved under ignored subfolder `./datasets/icpsr`
+
+- [ ] [The _US department of education_'s cohort default rate](https://fsapartners.ed.gov/knowledge-center/topics/default-management/official-cohort-default-rates-schools)
+	- **link** for 2021: https://fsapartners.ed.gov/sites/default/files/2024-09/PEPS300ReportFY21Official.xlsx
 
 - [x] [Aggregate data on federal student loans from the _US department of education_](https://studentaid.gov/data-center/student)
 	- [student loan default rates](https://studentaid.gov/data-center/student/default)
