@@ -12,15 +12,15 @@
     - [x] List 20 questions as examples the database might help to answer.
     - [x] Describe sources and ingestion scheme.  We will need at least several hundred rows of data.  Present this as a paragraph.  Be specific.
 - [ ] Collect datasets
-	- [x] "College scorecard": [./datasets/college_scorecard]
+	- [x] ["College scorecard"](datasets/college_scorecard)
 		- [x] Retrieval steps: makefile
-	- [x] "NCAA division I and II graduation success rate and academic success rate, 1995-2008 cohorts": [./datasets/athlete_academic_success]
+	- [x] ["NCAA division I and II graduation success rate and academic success rate, 1995-2008 cohorts"](datasets/athlete_academic_success)
 		- [x] Added to repository
-	- [x] _The Huffington post_ and _Chronicle of higher education_'s data on how college's finance their athletics: [./datasets/college_athletics_financing]
+	- [x] [_The Huffington post_ and _Chronicle of higher education_'s data on how college's finance their athletics](datasets/college_athletics_financing)
 		- [x] Retrieval steps: makefile
-	- [x] _Department of education_'s data on foreign gifts to and contracts with US colleges: [./datasets/foreign_gifts]
+	- [x] [_Department of education_'s data on foreign gifts to and contracts with US colleges](datasets/foreign_gifts)
 		- [x] Retrieval steps: makefile
-	- [x] _The census bureau_’s "Historic quarterly state and local government tax revenue": [./datasets/historic_tax_revenue
+	- [x] [_The census bureau_’s "Historic quarterly state and local government tax revenue"](datasets/historic_tax_revenue)
 		- [x] Retrieval steps: makefile
 	- [ ] Aggregate data on federal student loan default rates _US department of education_?
 		- [ ] Find for institutions; start at https://fsapartners.ed.gov/knowledge-center/topics/default-management/official-cohort-default-rates-schools
