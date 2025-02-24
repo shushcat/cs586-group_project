@@ -7,10 +7,23 @@
 - [x] Go over the datasets once, accepting or rejecting
 - [x] Tidy up the reference links
 - [x] Check whether they can be downloaded, collecting links and rejecting datasets that aren't available
-- [x] Deliverable 1 (2025-02-14)
+- [x] Deliverable 1 (due 2025-02-14)
     - [x] Pick subject area.  What is this database about?  Write 1--2 paragraphs giving a general description and background information.
     - [x] List 20 questions as examples the database might help to answer.
     - [x] Describe sources and ingestion scheme.  We will need at least several hundred rows of data.  Present this as a paragraph.  Be specific.
+- [ ] Deliverable 2 (due 2025-02-28)
+	- [ ] ER diagram
+		- 6--10 tables
+		- at least 1 view
+		- [ ] translation to relational schema, including
+			- primary keys
+			- unique keys
+			- foreign keys
+	- [ ] load real data into database
+		- at least 5 rows per table
+		- aim for summed row count of at least 1,000
+- [ ] Deliverable 3 (due 2025-03-07)
+- [ ] Deliverable 4 (due 2025-03-14)
 - [ ] Collect datasets
 	- [x] ["College scorecard"](datasets/college_scorecard)
 		- [x] Retrieval steps: makefile
