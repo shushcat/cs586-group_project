@@ -11,6 +11,9 @@
     - [x] Pick subject area.  What is this database about?  Write 1--2 paragraphs giving a general description and background information.
     - [x] List 20 questions as examples the database might help to answer.
     - [x] Describe sources and ingestion scheme.  We will need at least several hundred rows of data.  Present this as a paragraph.  Be specific.
+- [ ] Add datasets to repo or add a retrieval script
+	- [ ] college_scorecard
+	- [x] foreign_gifts
 - [ ] Deliverable 2 (due 2025-02-28)
 	- [ ] ER diagram
 		- 6--10 tables
@@ -45,8 +48,6 @@
 - [ ] Trim datasets
 	- [ ] Check for overlapping timespan
 
-# Log
-
 # Database design
 
 All very tentative so far.
@@ -56,8 +57,7 @@ All very tentative so far.
 - State
 - College
 
-
-# Dataset retrieval
+# Dataset selection
 
 See the file [./datasets/collect_datasets.sh].
 
@@ -65,13 +65,51 @@ In order to run `collect_datasets.sh`, you need `in2csv` installed, which is par
 
 # Education & sports in american colleges
 
+## TODO College scorecard
+
 - [x] The [College scorecard](https://collegescorecard.ed.gov/data) data, while [off by an average of 10% in reported graduation rates among Pell-grant recipients](https://hechingerreport.org/theres-finally-federal-data-on-low-income-college-graduation-rates-but-its-wrong/), give a comprehensive view of universities in the US as a whole.
 	- **link**: https://ed-public-download.scorecard.network/downloads/College_Scorecard_Raw_Data_01162025.zip
+
+	mkdir college_scorecard
+	cd college_scorecard
+	curl -O https://ed-public-download.scorecard.network/downloads/College_Scorecard_Raw_Data_01162025.zip
+	if [ "$(sha256sum College_Scorecard_Raw_Data_01162025.zip | sed 's/ .*//')" != "4109f05f64ce8e23ee504c6c691ac7b378c64a3c2b49041d7c05fe35c52c68bc" ]; then
+		exit
+	fi
+	unzip College_Scorecard_Raw_Data_01162025.zip
+	rm College_Scorecard_Raw_Data_01162025.zip
+
+
+## DONE _The Huffington post_ and _Chronicle of higher education_'s data on how college's finance their athletics:
+
+	cd "$DATASET_DIR"
+	mkdir college_athletics_financing
+	cd college_athletics_financing
+	wget http://hpin.s3.amazonaws.com/ncaa-financials/ncaa-financials-data.zip
+	unzip ncaa-financials-data.zip
+	rm ncaa-financials-data.zip
+	rm -rf __MACOSX/
+	cd ncaa-financials-data
+	mv * ..
+	cd ..
+	rm -rf ncaa-financials-data
+	in2csv CHE_RealScoredatadictionary.xlsx > data_dictionary.csv
+	rm CHE_RealScoredatadictionary.xlsx
 
 - [x] _The Huffington post_ and _Chronicle of higher education_ teamed up to investigate have collected [data on how college's finance their athletics](http://projects.huffingtonpost.com/ncaa/reporters-note)
 	- **link**: http://hpin.s3.amazonaws.com/ncaa-financials/ncaa-financials-data.zip
 	- See [their report](http://projects.huffingtonpost.com/projects/ncaa/sports-at-any-cost) and
 	- [_The Washington post_'s report on the unprofitability of college athletics](http://www.washingtonpost.com/sf/sports/wp/2015/11/23/running-up-the-bills/)
+
+## DONE _Department of education_'s data on foreign gifts to and contracts with US colleges:
+
+	cd "$DATASET_DIR"
+	mkdir foreign_gifts
+	cd foreign_gifts
+	wget --user-agent="" https://studentaid.gov/sites/default/files/ForeignGifts.xls
+	# `in2csv` is part of CSVKit (https://github.com/wireservice/csvkit), which might be in `brew`
+	in2csv ForeignGifts.xls > foreign_gifts.csv
+	rm ForeignGifts.xls
 
 - [x] The [_Department of education_'s data on foreign gifts to and contracts with US colleges](https://studentaid.ed.gov/sa/about/data-center/school/foreign-gifts)
 	- **link**: https://studentaid.gov/sites/default/files/ForeignGifts.xls
@@ -79,15 +117,44 @@ In order to run `collect_datasets.sh`, you need `in2csv` installed, which is par
 	- See [their database on such gifts and contracts](https://catalog.data.gov/dataset/foreign-gifts-and-contracts-report-2011), and
 	- See a report from the _Associated press_ on Saudi-Arabia's financial ties to US colleges: https://www.apnews.com/4d56411af6a8490e8030eacab4401571
 
+
+## DONE _The census bureau_’s "Historic quarterly state and local government tax revenue":
+
+	cd "$DATASET_DIR"
+	mkdir historic_tax_revenue
+	cd historic_tax_revenue
+	wget https://www2.census.gov/programs-surveys/qtax/tables/historical/2009Q1-2024Q3-QTAX-Table1.xlsx
+	in2csv 2009Q1-2024Q3-QTAX-Table1.xlsx > 2009Q1--2024Q3_tax_revenue.csv
+	rm 2009Q1-2024Q3-QTAX-Table1.xlsx
+
 - [x] [_The census bureau_’s "Quarterly summary of state and local government tax revenue](https://www.census.gov/programs-surveys/qtax.html)
 	- **link** to "Historic quarterly state and local government tax revenue": https://www2.census.gov/programs-surveys/qtax/tables/historical/2009Q1-2024Q3-QTAX-Table1.xlsx
 	- [Monthly data for a subset of those taxes](https://www.census.gov/data/experimental-data-products/selected-monthly-state-sales-tax-collections.html), including sports gambling
 		- (See https://www.washingtonpost.com/business/2024/06/07/sports-betting-lottery-state-budgets/)
 
+## DONE NCAA data on student athletes’ academic progress and graduation rates
+
+Requires PSU account to download.
+See https://www.icpsr.umich.edu/web/ICPSR/studies/30022#.
+Saved under `./athlete_academic_success`.
+
 - [x] [NCAA data on student athletes’ academic progress and graduation rates](https://www.icpsr.umich.edu/icpsrweb/content/NCAA/data.html), aggregated by school and sport; **dead link** but may be archived somewhere.
 	- **link**: https://www.icpsr.umich.edu/web/ICPSR/studies/30022#;
 		- requires PSU account to download
 	- Saved under ignored subfolder `./datasets/icpsr`
+
+## TODO Cohort default rates
+
+Aggregate data on federal student loan default rates _US department of education_?
+
+Available for FY2015Q4--FY2018Q4, with a missing FY2018Q1.
+
+	cd "$DATASET_DIR"
+	mkdir loan_defaults
+	cd loan_defaults
+
+https://studentaid.gov/data-center/student/default
+
 
 - [ ] [The _US department of education_'s cohort default rate](https://fsapartners.ed.gov/knowledge-center/topics/default-management/official-cohort-default-rates-schools)
 	- **link** for 2021: https://fsapartners.ed.gov/sites/default/files/2024-09/PEPS300ReportFY21Official.xlsx
@@ -100,11 +167,15 @@ In order to run `collect_datasets.sh`, you need `in2csv` installed, which is par
 	- [volumes of financial aid awarded](https://studentaid.gov/data-center/student/title-iv)
 	- [student loan forgiveness rates](https://studentaid.gov/data-center/student/loan-forgiveness)
 
+## TODO _Department of education_'s annual school- and team-level datasets on college sports' finances.
+
+https://ope.ed.gov/athletics/#/datafile/list
+
 - [x] The [_Department of education_'s annual school- and team-level datasets on college sports' finances](https://ope.ed.gov/athletics/)
 	- **link** (2003--2023): https://ope.ed.gov/athletics/#/datafile/list
 	- See _USAFacts_' reporting which uses the data to examine college football finances: https://usafacts.org/articles/coronavirus-college-football-profit-sec-acc-pac-12-big-ten-millions-fall-2020/
 
-## Probably not useful
+# Archived resources
 
 - The [_Urban institute_'s education data explorer](https://educationdata.urban.org/data-explorer/) has normed
 	- the _Department of education_'s
@@ -135,7 +206,7 @@ In order to run `collect_datasets.sh`, you need `in2csv` installed, which is par
 - [_USA today_'s data on college football head-coaches' salaries](http://sports.usatoday.com/ncaa/salaries/football/coach)
 	- Also see http://deadspin.com/infographic-is-your-states-highest-paid-employee-a-co-489635228)
 
-# Resources, broadly
+## Collections of datasets
 
 - [Kaggle's open datasets](https://www.kaggle.com/datasets)
 - [Data is plural](https://www.data-is-plural.com/)
@@ -145,8 +216,7 @@ In order to run `collect_datasets.sh`, you need `in2csv` installed, which is par
 - [A dataset collection prepared by the _University of Tampa_'s library](https://utopia.ut.edu/c.php?g=887297&p=6377135)
 - [Our world in data](https://ourworldindata.org/data?topics=Education+and+Knowledge); CSV data can downloaded from individual articles.
 
-
-## Rejected sources, saved for the time-being
+## Miscellaneous rejected datasets
 
 - UK _Office for national statistics_:
   - https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/whichskillsareemployersseekinginyourarea/2024-11-05
