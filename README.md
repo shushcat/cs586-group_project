@@ -72,13 +72,13 @@ In order to run `collect_datasets.sh`, you need `in2csv` installed, which is par
 
 	mkdir college_scorecard
 	cd college_scorecard
-	curl -O https://ed-public-download.scorecard.network/downloads/College_Scorecard_Raw_Data_01162025.zip
+	wget https://ed-public-download.scorecard.network/downloads/College_Scorecard_Raw_Data_01162025.zip
 	if [ "$(sha256sum College_Scorecard_Raw_Data_01162025.zip | sed 's/ .*//')" != "4109f05f64ce8e23ee504c6c691ac7b378c64a3c2b49041d7c05fe35c52c68bc" ]; then
 		exit
 	fi
 	unzip College_Scorecard_Raw_Data_01162025.zip
-	rm College_Scorecard_Raw_Data_01162025.zip
-
+	rm -rf College_Scorecard_Raw_Data_01162025.zip
+	rm -rf __MACOSX/
 
 ## DONE _The Huffington post_ and _Chronicle of higher education_'s data on how college's finance their athletics:
 
