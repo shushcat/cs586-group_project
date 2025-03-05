@@ -2,7 +2,7 @@
 
 --------
 
-## TODO Roadmap
+# Roadmap
 
 - [x] Go over the datasets once, accepting or rejecting
 - [x] Tidy up the reference links
@@ -11,10 +11,11 @@
     - [x] Pick subject area.  What is this database about?  Write 1--2 paragraphs giving a general description and background information.
     - [x] List 20 questions as examples the database might help to answer.
     - [x] Describe sources and ingestion scheme.  We will need at least several hundred rows of data.  Present this as a paragraph.  Be specific.
-- [ ] Add datasets to repo or add a retrieval script
-	- [ ] college_scorecard
-	- [x] foreign_gifts
-- [ ] Deliverable 2 (due 2025-02-28)
+- [ ] Collect datasets
+- [ ] Trim datasets
+	- [ ] Check for overlapping timespan
+- [ ] Describe all retrieval and normalization steps per dataset.
+- [ ] Deliverable 2 (due 2025-03-07)
 	- [ ] ER diagram
 		- 6--10 tables
 		- at least 1 view
@@ -25,28 +26,7 @@
 	- [ ] load real data into database
 		- at least 5 rows per table
 		- aim for summed row count of at least 1,000
-- [ ] Deliverable 3 (due 2025-03-07)
-- [ ] Deliverable 4 (due 2025-03-14)
-- [ ] Collect datasets
-	- [x] ["College scorecard"](datasets/college_scorecard)
-		- [x] Retrieval steps: makefile
-	- [x] ["NCAA division I and II graduation success rate and academic success rate, 1995-2008 cohorts"](datasets/athlete_academic_success)
-		- [x] Added to repository
-	- [x] [_The Huffington post_ and _Chronicle of higher education_'s data on how college's finance their athletics](datasets/college_athletics_financing)
-		- [x] Retrieval steps: makefile
-	- [x] [_Department of education_'s data on foreign gifts to and contracts with US colleges](datasets/foreign_gifts)
-		- [x] Retrieval steps: makefile
-	- [x] [_The census bureau_’s "Historic quarterly state and local government tax revenue"](datasets/historic_tax_revenue)
-		- [x] Retrieval steps: makefile
-	- [ ] Aggregate data on federal student loan default rates _US department of education_?
-		- [ ] Find for institutions; start at https://fsapartners.ed.gov/knowledge-center/topics/default-management/official-cohort-default-rates-schools
-	- [ ] _Department of education_'s annual school- and team-level datasets on college sports' finances.
-		- [ ] Evaluate carefully---is this useful?  May be duplicating some other sources.
-- [x] Add script to download linked datasets to a `./datasets` directory
-	- [x] Add rule to makefile to trigger script
-	- [ ] Maybe [package datasets as a "Release"](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases) on Github if the scripted download route doesn't work
-- [ ] Trim datasets
-	- [ ] Check for overlapping timespan
+- [ ] Deliverable 3 (due 2025-03-14)
 
 # Database design
 
@@ -57,11 +37,10 @@ All very tentative so far.
 - State
 - College
 
-# Dataset selection
+# Dataset selection & normalization
 
-See the file [./datasets/collect_datasets.sh].
-
-In order to run `collect_datasets.sh`, you need `in2csv` installed, which is part of [CSVKit](https://github.com/wireservice/csvkit)---`brew install csvkit` should do the trick.
+Steps taken to collect and normalize each dataset appear under each dataset's heading.
+To convert datasets that were only available as XLS or XLSX files as of March 2025, we used the tool `in2csv`, which is part of [CSVKit](https://github.com/wireservice/csvkit).
 
 # Education & sports in american colleges
 
@@ -70,31 +49,38 @@ In order to run `collect_datasets.sh`, you need `in2csv` installed, which is par
 - [x] The [College scorecard](https://collegescorecard.ed.gov/data) data, while [off by an average of 10% in reported graduation rates among Pell-grant recipients](https://hechingerreport.org/theres-finally-federal-data-on-low-income-college-graduation-rates-but-its-wrong/), give a comprehensive view of universities in the US as a whole.
 	- **link**: https://ed-public-download.scorecard.network/downloads/College_Scorecard_Raw_Data_01162025.zip
 
-	mkdir college_scorecard
-	cd college_scorecard
-	wget https://ed-public-download.scorecard.network/downloads/College_Scorecard_Raw_Data_01162025.zip
-	if [ "$(sha256sum College_Scorecard_Raw_Data_01162025.zip | sed 's/ .*//')" != "4109f05f64ce8e23ee504c6c691ac7b378c64a3c2b49041d7c05fe35c52c68bc" ]; then
-		exit
-	fi
-	unzip College_Scorecard_Raw_Data_01162025.zip
-	rm -rf College_Scorecard_Raw_Data_01162025.zip
-	rm -rf __MACOSX/
+```sh
+mkdir college_scorecard
+cd college_scorecard
+wget https://ed-public-download.scorecard.network/downloads/College_Scorecard_Raw_Data_01162025.zip
+if [ "$(sha256sum College_Scorecard_Raw_Data_01162025.zip | sed 's/ .*//')" != "4109f05f64ce8e23ee504c6c691ac7b378c64a3c2b49041d7c05fe35c52c68bc" ]; then
+	exit
+fi
+unzip College_Scorecard_Raw_Data_01162025.zip
+rm -rf College_Scorecard_Raw_Data_01162025.zip
+rm -rf __MACOSX/
+```
 
 ## DONE _The Huffington post_ and _Chronicle of higher education_'s data on how college's finance their athletics:
 
-	cd "$DATASET_DIR"
-	mkdir college_athletics_financing
-	cd college_athletics_financing
-	wget http://hpin.s3.amazonaws.com/ncaa-financials/ncaa-financials-data.zip
-	unzip ncaa-financials-data.zip
-	rm ncaa-financials-data.zip
-	rm -rf __MACOSX/
-	cd ncaa-financials-data
-	mv * ..
-	cd ..
-	rm -rf ncaa-financials-data
-	in2csv CHE_RealScoredatadictionary.xlsx > data_dictionary.csv
-	rm CHE_RealScoredatadictionary.xlsx
+- [x] [_The Huffington post_ and _Chronicle of higher education_'s data on how college's finance their athletics](datasets/college_athletics_financing)
+	- [x] Retrieval steps: makefile
+
+```sh
+cd "$DATASET_DIR"
+mkdir college_athletics_financing
+cd college_athletics_financing
+wget http://hpin.s3.amazonaws.com/ncaa-financials/ncaa-financials-data.zip
+unzip ncaa-financials-data.zip
+rm ncaa-financials-data.zip
+rm -rf __MACOSX/
+cd ncaa-financials-data
+mv * ..
+cd ..
+rm -rf ncaa-financials-data
+in2csv CHE_RealScoredatadictionary.xlsx > data_dictionary.csv
+rm CHE_RealScoredatadictionary.xlsx
+```
 
 - [x] _The Huffington post_ and _Chronicle of higher education_ teamed up to investigate have collected [data on how college's finance their athletics](http://projects.huffingtonpost.com/ncaa/reporters-note)
 	- **link**: http://hpin.s3.amazonaws.com/ncaa-financials/ncaa-financials-data.zip
@@ -103,13 +89,17 @@ In order to run `collect_datasets.sh`, you need `in2csv` installed, which is par
 
 ## DONE _Department of education_'s data on foreign gifts to and contracts with US colleges:
 
-	cd "$DATASET_DIR"
-	mkdir foreign_gifts
-	cd foreign_gifts
-	wget --user-agent="" https://studentaid.gov/sites/default/files/ForeignGifts.xls
-	# `in2csv` is part of CSVKit (https://github.com/wireservice/csvkit), which might be in `brew`
-	in2csv ForeignGifts.xls > foreign_gifts.csv
-	rm ForeignGifts.xls
+Dataset folder: [](./datasets/foreign_gifts)
+
+```sh
+cd "$DATASET_DIR"
+mkdir foreign_gifts
+cd foreign_gifts
+wget --user-agent="" https://studentaid.gov/sites/default/files/ForeignGifts.xls
+# `in2csv` is part of CSVKit (https://github.com/wireservice/csvkit), which might be in `brew`
+in2csv ForeignGifts.xls > foreign_gifts.csv
+rm ForeignGifts.xls
+```
 
 - [x] The [_Department of education_'s data on foreign gifts to and contracts with US colleges](https://studentaid.ed.gov/sa/about/data-center/school/foreign-gifts)
 	- **link**: https://studentaid.gov/sites/default/files/ForeignGifts.xls
@@ -118,25 +108,30 @@ In order to run `collect_datasets.sh`, you need `in2csv` installed, which is par
 	- See a report from the _Associated press_ on Saudi-Arabia's financial ties to US colleges: https://www.apnews.com/4d56411af6a8490e8030eacab4401571
 
 
-## DONE _The census bureau_’s "Historic quarterly state and local government tax revenue":
+## DONE "Historic quarterly state and local government tax revenue"; _US census bureau_.
 
-	cd "$DATASET_DIR"
-	mkdir historic_tax_revenue
-	cd historic_tax_revenue
-	wget https://www2.census.gov/programs-surveys/qtax/tables/historical/2009Q1-2024Q3-QTAX-Table1.xlsx
-	in2csv 2009Q1-2024Q3-QTAX-Table1.xlsx > 2009Q1--2024Q3_tax_revenue.csv
-	rm 2009Q1-2024Q3-QTAX-Table1.xlsx
+Dataset folder: [](datasets/historic_tax_revenue)
+
+```sh
+cd "$DATASET_DIR"
+mkdir historic_tax_revenue
+cd historic_tax_revenue
+wget https://www2.census.gov/programs-surveys/qtax/tables/historical/2009Q1-2024Q3-QTAX-Table1.xlsx
+in2csv 2009Q1-2024Q3-QTAX-Table1.xlsx > 2009Q1--2024Q3_tax_revenue.csv
+rm 2009Q1-2024Q3-QTAX-Table1.xlsx
+```
 
 - [x] [_The census bureau_’s "Quarterly summary of state and local government tax revenue](https://www.census.gov/programs-surveys/qtax.html)
 	- **link** to "Historic quarterly state and local government tax revenue": https://www2.census.gov/programs-surveys/qtax/tables/historical/2009Q1-2024Q3-QTAX-Table1.xlsx
 	- [Monthly data for a subset of those taxes](https://www.census.gov/data/experimental-data-products/selected-monthly-state-sales-tax-collections.html), including sports gambling
 		- (See https://www.washingtonpost.com/business/2024/06/07/sports-betting-lottery-state-budgets/)
 
-## DONE NCAA data on student athletes’ academic progress and graduation rates
+## DONE "NCAA division I and II graduation success rate and academic success rate, 1995-2008 cohorts"
+
+Dataset folder: [](./datasets/athlete_academic_success).
 
 Requires PSU account to download.
 See https://www.icpsr.umich.edu/web/ICPSR/studies/30022#.
-Saved under `./athlete_academic_success`.
 
 - [x] [NCAA data on student athletes’ academic progress and graduation rates](https://www.icpsr.umich.edu/icpsrweb/content/NCAA/data.html), aggregated by school and sport; **dead link** but may be archived somewhere.
 	- **link**: https://www.icpsr.umich.edu/web/ICPSR/studies/30022#;
@@ -145,13 +140,18 @@ Saved under `./athlete_academic_success`.
 
 ## TODO Cohort default rates
 
+- [ ] Aggregate data on federal student loan default rates _US department of education_?
+	- [ ] Find for institutions; start at https://fsapartners.ed.gov/knowledge-center/topics/default-management/official-cohort-default-rates-schools
+
 Aggregate data on federal student loan default rates _US department of education_?
 
 Available for FY2015Q4--FY2018Q4, with a missing FY2018Q1.
 
-	cd "$DATASET_DIR"
-	mkdir loan_defaults
-	cd loan_defaults
+```sh
+cd "$DATASET_DIR"
+mkdir loan_defaults
+cd loan_defaults
+```
 
 https://studentaid.gov/data-center/student/default
 
@@ -168,6 +168,9 @@ https://studentaid.gov/data-center/student/default
 	- [student loan forgiveness rates](https://studentaid.gov/data-center/student/loan-forgiveness)
 
 ## TODO _Department of education_'s annual school- and team-level datasets on college sports' finances.
+
+- [ ] _Department of education_'s annual school- and team-level datasets on college sports' finances.
+		- [ ] Evaluate carefully---is this useful?  May be duplicating some other sources.
 
 https://ope.ed.gov/athletics/#/datafile/list
 
