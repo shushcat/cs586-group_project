@@ -12,6 +12,7 @@
     - [x] List 20 questions as examples the database might help to answer.
     - [x] Describe sources and ingestion scheme.  We will need at least several hundred rows of data.  Present this as a paragraph.  Be specific.
 - [x] Collect datasets
+- [ ] Select & reject datasets
 - [ ] Describe all retrieval and normalization steps per dataset.
 - [ ] List fields and span for each dataset
 - [ ] Trim datasets
@@ -40,6 +41,19 @@ All very tentative so far.
 
 # Dataset retrieval, normalization & selection
 
+- [x] college_scorecard/
+	- 1996--2023
+- [x] foreign_gifts/
+	- 2014--2020
+- [x] equity_athletics_data_analysis/ 
+	- 2002--2023
+- [ ] athlete_academic_success/
+	- 1995--2008
+- [ ] college_athletics_financing/
+	- 2013--2015
+- [ ] historic_tax_revenue/
+	- 2009--2024
+
 Steps taken to collect and normalize each dataset appear under each dataset's heading.
 To convert datasets that were only available as XLS or XLSX files as of March 2025, we used the tool `in2csv`, which is part of [CSVKit](https://github.com/wireservice/csvkit).
 
@@ -65,9 +79,6 @@ rm -rf __MACOSX/
 ## _The Huffington post_ and _Chronicle of higher education_'s data on how colleges finance their athletics:
 
 Dataset folder: [](./datasets/college_athletics_financing/)
-
-- [x] [_The Huffington post_ and _Chronicle of higher education_'s data on how college's finance their athletics](datasets/college_athletics_financing)
-	- [x] Retrieval steps: makefile
 
 ```sh
 cd "$DATASET_DIR"
