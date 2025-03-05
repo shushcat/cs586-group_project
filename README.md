@@ -76,7 +76,7 @@ rm -rf College_Scorecard_Raw_Data_01162025.zip
 rm -rf __MACOSX/
 ```
 
-## _The Huffington post_ and _Chronicle of higher education_'s data on how colleges finance their athletics:
+## _The Huffington post_ and _Chronicle of higher education_'s data on how colleges finance their athletics
 
 Dataset folder: [](./datasets/college_athletics_financing/)
 
@@ -101,9 +101,12 @@ rm CHE_RealScoredatadictionary.xlsx
 	- See [their report](http://projects.huffingtonpost.com/projects/ncaa/sports-at-any-cost) and
 	- [_The Washington post_'s report on the unprofitability of college athletics](http://www.washingtonpost.com/sf/sports/wp/2015/11/23/running-up-the-bills/)
 
-## _Department of education_'s data on foreign gifts to and contracts with US colleges:
+## _Department of education_'s data on foreign gifts to and contracts with US colleges
 
 Dataset folder: [](./datasets/foreign_gifts)
+
+- Data for 2020--2024: https://fsapartners.ed.gov/knowledge-center/topics/section-117-foreign-gift-and-contract-reporting/section-117-foreign-gift-and-contract-data
+- Data for october of 2024: https://fsapartners.ed.gov/knowledge-center/topics/section-117-foreign-gift-and-contract-reporting/section-117-foreign-gift-and-contract-data
 
 ```sh
 cd "$DATASET_DIR"
@@ -122,7 +125,7 @@ rm ForeignGifts.xls
 	- See a report from the _Associated press_ on Saudi-Arabia's financial ties to US colleges: https://www.apnews.com/4d56411af6a8490e8030eacab4401571
 
 
-## "Historic quarterly state and local government tax revenue"; _US census bureau_.
+## "Historic quarterly state and local government tax revenue"; _US census bureau_
 
 Dataset folder: [](datasets/historic_tax_revenue)
 
