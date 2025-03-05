@@ -1,0 +1,287 @@
+ List of variables on the working file
+""
+Name                                                                   Position
+""
+UNITID    UNITID                                                              1
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F6
+          Write Format: F6
+""
+INSTNM    Institution Name                                                    2
+          Measurement Level: Nominal
+          Column Width: 49  Alignment: Left
+          Print Format: A255
+          Write Format: A255
+""
+BRANCH    Branch Name                                                        34
+          Measurement Level: Nominal
+          Column Width: 35  Alignment: Left
+          Print Format: A80
+          Write Format: A80
+""
+ADDRESS   address                                                            44
+          Measurement Level: Nominal
+          Column Width: 43  Alignment: Left
+          Print Format: A60
+          Write Format: A60
+""
+CITY      city                                                               52
+          Measurement Level: Nominal
+          Column Width: 20  Alignment: Left
+          Print Format: A50
+          Write Format: A50
+""
+STATE     state                                                              59
+          Measurement Level: Nominal
+          Column Width: 8  Alignment: Left
+          Print Format: A2
+          Write Format: A2
+""
+ZIP       zip                                                                60
+          Measurement Level: Nominal
+          Column Width: 14  Alignment: Left
+          Print Format: A14
+          Write Format: A14
+""
+COUNTY    county                                                             62
+          Measurement Level: Nominal
+          Column Width: 22  Alignment: Left
+          Print Format: A50
+          Write Format: A50
+""
+""
+""
+""
+""
+""
+CAMPUS    campus                                                             69
+          Measurement Level: Nominal
+          Column Width: 255  Alignment: Left
+          Print Format: A255
+          Write Format: A255
+""
+COUNTRY   US or Oversea                                                     101
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F1
+          Write Format: F1
+""
+EFRACE15  Total Men                                                         102
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F5
+          Write Format: F5
+""
+EFRACE16  Total Women                                                       103
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F5
+          Write Format: F5
+""
+EFRACE18  Grand Total                                                       104
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F5
+          Write Format: F5
+""
+NOTE      Note for Enrollment                                               105
+          Measurement Level: Nominal
+          Column Width: 37  Alignment: Left
+          Print Format: A100
+          Write Format: A100
+""
+CLSCODE   Classification Code                                               118
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F2
+          Write Format: F2
+""
+          Value    Label
+""
+              0    None
+              1    NCAA Division I-A
+              2     NCAA Division I-AA
+              3    NCAA Division I-AAA
+              4    NCAA Division II (with football)
+              5    NCAA Division II (without football)
+              6    NCAA Division III (with football)
+              7    NCAA Division III (without football)
+""
+""
+""
+""
+              8    Other
+              9    NAIA Division I
+             10    NAIA Division II
+             11    NAIA Division III
+             12    NJCAA Division I
+             13    NJCAA Division II
+             14    NJCAA Division III
+             15    NCCAA Division I
+             16    NCCAA Division II
+""
+CLSOTHER  Classification other                                              119
+          Measurement Level: Nominal
+          Column Width: 21  Alignment: Left
+          Print Format: A255
+          Write Format: A255
+""
+A4        Men team athletically-related student aid                         151
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F7
+          Write Format: F7
+""
+A5        Women team athletically-related student aid                       152
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F7
+          Write Format: F7
+""
+A6        Total athletically-related student aid                            153
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F8
+          Write Format: F8
+""
+A7        Men team athletically-related student aid ratio                   154
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F6.2
+          Write Format: F6.2
+""
+A8        Women team athletically-related student aid ratio                 155
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F6.2
+          Write Format: F6.2
+""
+A9        Men team recruiting expenses                                      156
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F7
+          Write Format: F7
+""
+""
+""
+""
+""
+""
+A10       Women team recruiting expenses                                    157
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F6
+          Write Format: F6
+""
+A11       Total recruiting expenses                                         158
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F7
+          Write Format: F7
+""
+A12       Men team head coach salaries per person                           159
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F7
+          Write Format: F7
+""
+A13       Women team head coach salaries per person                         160
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F7
+          Write Format: F7
+""
+A14       Men team number of head coaches included in average               161
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F2
+          Write Format: F2
+""
+A15       Women team number of head coaches included in average             162
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F2
+          Write Format: F2
+""
+A16       Men team head coach as full time employee average salary          163
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F7
+          Write Format: F7
+""
+A17       Women team head coach as full time employee average salary        164
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F7
+          Write Format: F7
+""
+""
+""
+""
+""
+""
+A18       Men team number of head coaches as full time employee             165
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F5.2
+          Write Format: F5.2
+""
+A19       Women team number of head coaches as full time employee           166
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F5.2
+          Write Format: F5.2
+""
+A20       Men team assistant coach salaries per person                      167
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F7
+          Write Format: F7
+""
+A21       Women team assistant coach salaries per person                    168
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F6
+          Write Format: F6
+""
+A22       Men team number of assistant coaches included in average          169
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F2
+          Write Format: F2
+""
+A23       Women team number of assistant coaches included in average        170
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F2
+          Write Format: F2
+""
+A24       Men team assistant coach as full time employee average salar      171
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F7
+          Write Format: F7
+""
+A25       Women team assistant coach as full time employee average sal      172
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F7
+          Write Format: F7
+""
+""
+""
+""
+""
+""
+A26       Men team number of assistant coaches as full time employee        173
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F5.2
+          Write Format: F5.2
+""
+A27       Women team number of assistant coaches as full time employee      174
+          Measurement Level: Scale
+          Column Width: 8  Alignment: Right
+          Print Format: F5.2
+          Write Format: F5.2

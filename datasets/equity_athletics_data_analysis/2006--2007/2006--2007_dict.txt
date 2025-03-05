@@ -1,0 +1,360 @@
+  --------------------------- ----------------------------------------------------
+  NAME                        LABEL
+
+  unitid                      unitid
+
+  institution_name            institution_name
+
+  addr1_txt                   addr1_txt
+
+  addr2_txt                   addr2_txt
+
+  city_txt                    city_txt
+
+  state_cd                    state_cd
+
+  zip_text                    zip_text
+
+  ClassificationCode          ClassificationCode
+
+  classification_name         classification_name
+
+  ClassificationOther         ClassificationOther
+
+  EFMaleCount                 Total Men
+
+  EFFemaleCount               Total Women
+
+  EFTotalCount                Grand Total
+
+  sector_cd                   sector_cd
+
+  sector_name                 sector_name
+
+  STUDENTAID_MEN              Athletic Student Aid/Men's Team
+
+  STUDENTAID_WOMEN            Athletic Student Aid/Women's Team
+
+  STUDENTAID_COED             Athletic Student Aid/Coed Team
+
+  STUDENTAID_TOTAL            Total Student Aid/ Men's/Women's/Coed Team
+
+  STUAID_MEN_RATIO            Ratio Athletic Student Aid/Men's Team
+
+  STUAID_WOMEN_RATIO          Ratio Athletic Student Aid/Women's Team
+
+  STUAID_COED_RATIO           Ratio Athletic Student Aid/Coed Team
+
+  RECRUITEXP_MEN              Recruiting Expenses for Men's Team
+
+  RECRUITEXP_WOMEN            Recruiting Expenses for Women's Team
+
+  RECRUITEXP_COED             Recruiting Expenses for Coed Team
+
+  RECRUITEXP_TOTAL            Total Recruiting Exp./Men and Women's Team
+
+  HDCOACH_SALARY_MEN          Annual salary per HD Coach/Men's
+
+  HDCOACH_SALARY_WOMEN        Annual Salary per HD Coach/Women's
+
+  HDCOACH_SALARY_COED         Annual Salary per HD Coach/Coed
+
+  NUM_HDCOACH_MEN             # HD Coaches Men's Team
+
+  NUM_HDCOACH_WOMEN           # HD Coaches    Women's Team
+
+  NUM_HDCOACH_COED            # HD Coaches Coed Team
+
+  HDCOACH_SAL_FTE_MEN         Ave. salary per FTE HD Coach/ Men's
+
+  HDCOACH_SAL_FTE_WOMN        Ave. salary per FTE HD Coach/ Women's
+
+  HDCOACH_SAL_FTE_COED        Ave. salary per FTE HD Coach/Coed
+
+  FTE_HDCOACH_MEN             # FTE HD Coach/Men's Team
+
+  FTE_HDCOACH_WOMEN           # FTE HD Coach/Women's Team
+
+  FTE_HDCOACH_COED            # FTE HD Coach/Coed Team
+
+  ASCOACH_SALARY_MEN          Annual Salary/Assist. Coach/Men's
+
+  ASCOACH_SALARY_WOMEN        Annual Salary/Assist. Coach/Women's
+
+  ASCOACH_SALARY_COED         Annual Salary/Assist. Coach/Coed
+
+  NUM_ASCOACH_MEN             # Assist. Coach/Men's
+
+  NUM_ASCOACH_WOMEN           # Assist. Coach/Women's
+
+  NUM_ASCOACH_COED            # Assist. Coach/Coed
+
+  ASCOACH_SAL_FTE_MEN         Ave. salary per FTE/Men's
+
+  ASCOACH_SAL_FTE_WOMN        Ave. salary per FTE/Women's
+
+  ASCOACH_SAL_FTE_COED        Ave. salary per FTE/Coed
+
+  FTE_ASCOACH_MEN             # FTEs Assist. Coach/Men's
+
+  FTE_ASCOACH_WOMEN           # FTEs Assist. Coach/Women's
+
+  FTE_ASCOACH_COED            # FTEs Assist. Coach/Coed
+
+  IL_PARTIC_MEN               Total # Participants Men
+
+  IL_PARTIC_WOMEN             Total # Participants Women
+
+  IL_PARTIC_COED_MEN          Total # Participants Men Coed
+
+  IL_PARTIC_COED_WOMEN        Total # Participants Women Coed
+
+  IL_SUM_PARTIC_MEN           Total # Participants Men/Men Coed
+
+  IL_SUM_PARTIC_WOMEN         Total # Participants Women/Women Coed
+
+  IL_OPEXPPERPART_MEN         Total Op. Exp. Per Participant/Men
+
+  IL_OPEXPPERTEAM_MEN         Total Op. Exp. Per Team/Men
+
+  IL_OPEXPPERPART_WOMEN       Total Op. Exp. Per Participant/Women
+
+  IL_OPEXPPERTEAM_WOMEN       Total Op. Exp. Per Team/Women
+
+  IL_TOTAL_OPEXP_MENWOMEN     Total Op. Exp. Men and Women
+
+  IL_OPEXPPERPART_COED_MEN    Total Op. Exp. Per Participant/Coed Men
+
+  IL_OPEXPPERTEAM_COED_MEN    Total Op. Exp. Per Team/Coed Men
+
+  IL_OPEXP_PART_COED_WOMEN    Total Op. Exp. Per Participant Women/Coed
+
+  IL_OPEXP_TEAM_COED_WOMEN    Total Op. Exp. Per Team Women/Coed
+
+  IL_TOTAL_OPEXP_COEDTEAM     Total Op. Exp. Coed Men/Coed Women
+
+  IL_SUM_OPEXPPERPART_MEN     Total Op. Exp. Per Participant/Men/Coed Men
+
+  IL_SUM_OPEXPPERTEAM_MEN     Total Op. Exp. Per Team/Men/Coed Men
+
+  IL_SUM_OPEXPPERPART_WOMEN   Total Op. Exp. Per Participant/Women/Coed Women
+
+  IL_SUM_OPEXPPERTEAM_WOMEN   Total Op. Exp. Per Team/Women/Coed Women
+
+  IL_TOTAL_OPEXP_INCLCOED     Total Op. Exp. Men/Women/Coed Men/Women
+
+  IL_MEN_FTHEADCOACH_MALE     Total # Men's HD Coach/Male/Full-Time
+
+  IL_MEN_PTHEADCOACH_MALE     Total # Men's HD Coach/Male/Part-Time
+
+  IL_MEN_FTUNIVEMPLOY_MALE    Total # Men's HD Coach/Male/FTEmp
+
+  IL_MEN_PTUNIVEMPLOY_MALE    Total # Men's HD Coach/Male/PTEmp
+
+  IL_MEN_FTHEADCOACH_FEM      Total # Men's HD Coach/Female/Full-Time
+
+  IL_MEN_PTHEADCOACH_FEM      Total # Men's HD Coach/Female/Part-Time
+
+  IL_MEN_FTUNIVEMPLOY_FEM     Total # Men's HD Coach/Female/FTEmp
+
+  IL_MEN_PTUNIVEMPLOY_FEM     Total # Men's HD Coach/Female/PTEmp
+
+  IL_MEN_TOTAL_HEADCOACH      Total # HD Coach/Men's Team
+
+  IL_WOMEN_FTHDCOACH_MALE     Total # Women's HD Coach/Male/Full-Time
+
+  IL_WOMEN_PTHDCOACH_MALE     Total # Women's HD Coach/Male/Part-Time
+
+  IL_WOMEN_FTUNIVEMP_MALE     Total # Women's HD Coach/Male/FTEmp
+
+  IL_WOMEN_PTUNIVEMP_MALE     Total # Women's HD Coach/Male/PTEmp
+
+  IL_WOMEN_FTHDCOACH_FEM      Total # Women's HD Coach/Female/Full-Time
+
+  IL_WOMEN_PTHDCOACH_FEM      Total # Women's HDCoach/Female/Part-Time
+
+  IL_WOMEN_FTUNIVEMP_FEM      Total # Women's HDCoach/Female/FTEmp
+
+  IL_WOMEN_PTUNIVEMP_FEM      Total # Women's HD Coach/Female/PTEmp
+
+  IL_WOMEN_TOTAL_HDCOACH      Total # HDCoach/Women's Team
+
+  IL_COED_FTHDCOACH_MALE      Total # Coed HD Coach//Male/Full-Time
+
+  IL_COED_PTHDCOACH_MALE      Total # Coed HD Coach/Male/Part-Time
+
+  IL_COED_FTUNIVEMP_MALE      Total # Coed HD Coach/Male/FTEmp
+
+  IL_COED_PTUNIVEMP_MALE      Total # Coed HD Coach/Male/PTEmp
+
+  IL_COED_FTHDCOACH_FEM       Total # Coed HD Coach/Female/Full-Time
+
+  IL_COED_PTHDCOACH_FEM       Total # Coed HD Coach/Female/Part-Time
+
+  IL_COED_FTUNIVEMP_FEM       Total # Coed HD Coach/Female/FTEmp
+
+  IL_COED_PTUNIVEMP_FEM       Total # Coed HD Coach/Female/PTEmp
+
+  IL_COED_TOTAL_HDCOACH       Total # Coed Team HD Coaches
+
+  IL_SUM_FTHDCOACH_MALE       Total # Male HD Coaches/Men/Women/Coed/Full-Time
+
+  IL_SUM_PTHDCOACH_MALE       Total # Male HD Coaches/Men/Women/Coed/Part-Time
+
+  IL_SUM_FTUNIVEMP_MALE       Total # Male HD Coaches/Men/Women/Coed/FTEmp
+
+  IL_SUM_PTUNIVEMP_MALE       Total # Male HD Coaches/Men/Women/Coed/PTEmp
+
+  IL_SUM_FTHDCOACH_FEM        Total # Female HD Coaches/Men/Women/Coed/Full-Time
+
+  IL_SUM_PTHDCOACH_FEM        Total # Female HD Coaches/Men/Women/Coed/Part-Time
+
+  IL_SUM_FTUNIVEMP_FEM        Total # Female HD Coaches/Men/Women/Coed/FTEmp
+
+  IL_SUM_PTUNIVEMP_FEM        Total # Female HD Coaches/Men/Women/Coed/PTEmp
+
+  IL_SUM_TOTAL_HDCOACH        Total # HD Coaches/Men/Women/Coed Teams
+
+  IL_MEN_FTASCOACH_MALE       Total # Men's Assist. Coach/Male/Full-Time
+
+  IL_MEN_PTASCOACH_MALE       Total # Men's Assist. Coach/Male/Part-Time
+
+  IL_MEN_FTACUNIVEMP_MALE     Total # Men's Assist. Coach/Male/FTEmp
+
+  IL_MEN_PTACUNIVEMP_MALE     Total # Men's Assist. Coach/Male/PTEmp
+
+  IL_MEN_FTASSTCOACH_FEM      Total # Men's Assist. Coach/Female/Full-Time
+
+  IL_MEN_PTASSTCOACH_FEM      Total # Men's Assist. Coach/Female/Part-Time
+
+  IL_MEN_FTACUNIVEMP_FEM      Total # Men's Assist. Coach/Female/FTEmp
+
+  IL_MEN_PTACUNIVEMP_FEM      Total # Men's Assist. Coach/Female/PTEmp
+
+  IL_MEN_TOTAL_ASSTCOACH      Total Number of Total Assist. Coaches in Men's Team
+
+  IL_WOMEN_FTASCOACH_MALE     Total # Women's Assist. Coach/Male/Full-Time
+
+  IL_WOMEN_PTASCOACH_MALE     Total # Women's Assist. Coach/Male/Part-Time
+
+  IL_WOMEN_FTACUNEMP_MALE     Total # Women's Assist. Coach/Male/FTEmp
+
+  IL_WOMEN_PTACUNEMP_MALE     Total # Women's Assist. Coach/Male/PTEmp
+
+  IL_WOMEN_FTASTCOACH_FEM     Total # Women's Assist. Coach/Female/Full-Time
+
+  IL_WOMEN_PTASTCOACH_FEM     Total # Women's Assist. Coach/Female/Part-Time
+
+  IL_WOMN_FTACUNIVEMP_FEM     Total # Women's Assist. Coach/Female/FTEmp
+
+  IL_WOMN_PTACUNIVEMP_FEM     Total # Women's Assist. Coach Female/PTEmp
+
+  IL_WOMEN_TOTAL_ASTCOACH     Total Number of Total Assist. Coaches in Women's
+                              Team
+
+  IL_COED_FTASCOACH_MALE      Total # Coed Assist. Coach/Male/Full-Time
+
+  IL_COED_PTASCOACH_MALE      Total # Coed Assist. Coach/Male/Part-Time
+
+  IL_COED_FTACUNEMP_MALE      Total # Coed Assist. Coach/Male/FTEmp
+
+  IL_COED_PTACUNEMP_MALE      Total # Coed Assist. Coach/Male/PTEmp
+
+  IL_COED_FTASTCOACH_FEM      Total # Coed Assist. Coach/Female/Full-Time
+
+  IL_COED_PTASTCOACH_FEM      Total # Coed Assist. Coach/Female/Part-Time
+
+  IL_COED_FTACUNIVEMP_FEM     Total # Coed Assist. Coach/Female/FTEmp
+
+  IL_COED_PTACUNIVEMP_FEM     Total # Coed Assist. Coach/Female/PTEmp
+
+  IL_COED_TOTAL_ASTCOACH      Total # of Total Assist. Coaches in Coed Team
+
+  IL_SUM_FTASCOACH_MALE       Total # Assist. Coach/Men/Women/Coed/Male/Full-Time
+
+  IL_SUM_PTASCOACH_MALE       Total # Assist. Coach/Men/Women/Coed/Male/Part-Time
+
+  IL_SUM_FTACUNIVEMP_MALE     Total # Assist. Coach/Men/Women/Coed/Male/FTEmp
+
+  IL_SUM_PTACUNIVEMP_MALE     Total # Assist. Coach/Men/Women/Coed/Male/PTEmp
+
+  IL_SUM_FTASCOACH_FEM        Total # Assist.
+                              Coach/Men/Women/Coed/Female/Full-Time
+
+  IL_SUM_PTASCOACH_FEM        Total # Assist.
+                              Coach/Men/Women/Coed/Female/Part-Time
+
+  IL_SUM_FTACUNIVEMP_FEM      Total # Assist. Coach/Men/Women/Coed/Female/FTEmp
+
+  IL_SUM_PTACUNIVEMP_FEM      Total # Assist. Coach/Men/Women/Coed/Female/PTEmp
+
+  IL_SUM_TOTAL_ASSTCOACH      Total # Assist. Coaches/Men/Women/Coed Teams
+
+  IL_REV_MEN                  Total Revenues per Team for Men (Excludes Football
+                              and Basketball)
+
+  IL_REV_WOMEN                Total Revenues per Team for Women (Excludes Football
+                              and Basketball)
+
+  IL_TOTAL_REV_MENWOMEN       Total Revenues per Team for Men and Women (Excludes
+                              Football and Basketball)
+
+  IL_REV_COED_MEN             Total Revenues per Team for Coed Men (Excludes
+                              Football and Basketball)
+
+  IL_REV_COED_WOMEN           Total Revenues per Team for Coed Women (Excludes
+                              Football and Basketball)
+
+  IL_TOTAL_REV_COED           Total Revenues per Team/ Coed Men/Coed Women
+                              (Excludes Football and Basketball)
+
+  IL_REVENUE_MENALL           Total Revenues per Team for Men's and Coed Men
+                              (Excludes Football and Basketball)
+
+  IL_REVENUE_WOMENALL         Total Revenues per Team for Women's and Coed Women
+                              (Excludes Football and Basketball)
+
+  IL_TOTAL_REVENUE_ALL        Total Revenues per Team and Total Coed Revenues
+                              (Excludes Football and Basketball)
+
+  IL_EXP_MEN                  Total Expenses per Team for Men (Excludes Football
+                              and Basketball)
+
+  IL_EXP_WOMEN                Total Expenses per Team for Women (Excludes Football
+                              and Basketball)
+
+  IL_TOTAL_EXP_MENWOMEN       Total Expenses per Team for Men and Women (Excludes
+                              Football and Basketball)
+
+  IL_EXP_COED_MEN             Total Expenses per Team for Coed Men (Excludes
+                              Football and Basketball)
+
+  IL_EXP_COED_WOMEN           Total Expenses per Team for Coed Women (Excludes
+                              Football and Basketball)
+
+  IL_TOTAL_EXP_COED           Total Expenses per Team/Coed Men and Coed Women
+                              (Excludes Football and Basketball)
+
+  IL_EXPENSE_MENALL           Total Expenses per Team for Men's and Coed Men
+                              (Excludes Football and Basketball)
+
+  IL_EXPENSE_WOMENALL         Total Expenses per Team for Women's and Coed Women
+                              (Excludes Football and Basketball)
+
+  IL_TOTAL_EXPENSE_ALL        Total Sum of Expenses per Team and Total Coed
+                              Expenses (Excludes Football and Basketball)
+
+  UNDUP_CT_PARTIC_MEN         Unduplicated Counts of Participants in Men's Team
+                              and Men's Coed Team
+
+  UNDUP_CT_PARTIC_WOMEN       Unduplicated Counts of Participants in Women's Team
+                              and Women's Coed Team.
+
+  TOT_REVENUE_ALL_NOTALLOC    Total Revenues Not Allocated by Gender/Sport
+
+  TOT_EXPENSE_ALL_NOTALLOC    Total Expenses Not Allocated by Gender/Sport
+
+  GRND_TOTAL_REVENUE          Grand Total Revenues
+
+  GRND_TOTAL_EXPENSE          Grand Total Expenses
+  --------------------------- ----------------------------------------------------
