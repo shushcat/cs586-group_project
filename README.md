@@ -11,10 +11,11 @@
     - [x] Pick subject area.  What is this database about?  Write 1--2 paragraphs giving a general description and background information.
     - [x] List 20 questions as examples the database might help to answer.
     - [x] Describe sources and ingestion scheme.  We will need at least several hundred rows of data.  Present this as a paragraph.  Be specific.
-- [ ] Collect datasets
+- [x] Collect datasets
+- [ ] Describe all retrieval and normalization steps per dataset.
+- [ ] List fields and span for each dataset
 - [ ] Trim datasets
 	- [ ] Check for overlapping timespan
-- [ ] Describe all retrieval and normalization steps per dataset.
 - [ ] Deliverable 2 (due 2025-03-07)
 	- [ ] ER diagram
 		- 6--10 tables
@@ -37,14 +38,14 @@ All very tentative so far.
 - State
 - College
 
-# Dataset selection & normalization
+# Dataset retrieval, normalization & selection
 
 Steps taken to collect and normalize each dataset appear under each dataset's heading.
 To convert datasets that were only available as XLS or XLSX files as of March 2025, we used the tool `in2csv`, which is part of [CSVKit](https://github.com/wireservice/csvkit).
 
-# Education & sports in american colleges
-
 ## TODO College scorecard
+
+- Date range: 1996--2023
 
 - [x] The [College scorecard](https://collegescorecard.ed.gov/data) data, while [off by an average of 10% in reported graduation rates among Pell-grant recipients](https://hechingerreport.org/theres-finally-federal-data-on-low-income-college-graduation-rates-but-its-wrong/), give a comprehensive view of universities in the US as a whole.
 	- **link**: https://ed-public-download.scorecard.network/downloads/College_Scorecard_Raw_Data_01162025.zip
@@ -61,7 +62,9 @@ rm -rf College_Scorecard_Raw_Data_01162025.zip
 rm -rf __MACOSX/
 ```
 
-## DONE _The Huffington post_ and _Chronicle of higher education_'s data on how college's finance their athletics:
+## _The Huffington post_ and _Chronicle of higher education_'s data on how colleges finance their athletics:
+
+Dataset folder: [](./datasets/college_athletics_financing/)
 
 - [x] [_The Huffington post_ and _Chronicle of higher education_'s data on how college's finance their athletics](datasets/college_athletics_financing)
 	- [x] Retrieval steps: makefile
@@ -87,7 +90,7 @@ rm CHE_RealScoredatadictionary.xlsx
 	- See [their report](http://projects.huffingtonpost.com/projects/ncaa/sports-at-any-cost) and
 	- [_The Washington post_'s report on the unprofitability of college athletics](http://www.washingtonpost.com/sf/sports/wp/2015/11/23/running-up-the-bills/)
 
-## DONE _Department of education_'s data on foreign gifts to and contracts with US colleges:
+## _Department of education_'s data on foreign gifts to and contracts with US colleges:
 
 Dataset folder: [](./datasets/foreign_gifts)
 
@@ -108,7 +111,7 @@ rm ForeignGifts.xls
 	- See a report from the _Associated press_ on Saudi-Arabia's financial ties to US colleges: https://www.apnews.com/4d56411af6a8490e8030eacab4401571
 
 
-## DONE "Historic quarterly state and local government tax revenue"; _US census bureau_.
+## "Historic quarterly state and local government tax revenue"; _US census bureau_.
 
 Dataset folder: [](datasets/historic_tax_revenue)
 
@@ -126,7 +129,7 @@ rm 2009Q1-2024Q3-QTAX-Table1.xlsx
 	- [Monthly data for a subset of those taxes](https://www.census.gov/data/experimental-data-products/selected-monthly-state-sales-tax-collections.html), including sports gambling
 		- (See https://www.washingtonpost.com/business/2024/06/07/sports-betting-lottery-state-budgets/)
 
-## DONE "NCAA division I and II graduation success rate and academic success rate, 1995-2008 cohorts"
+## "NCAA division I and II graduation success rate and academic success rate, 1995-2008 cohorts"
 
 Dataset folder: [](./datasets/athlete_academic_success).
 
@@ -138,47 +141,25 @@ See https://www.icpsr.umich.edu/web/ICPSR/studies/30022#.
 		- requires PSU account to download
 	- Saved under ignored subfolder `./datasets/icpsr`
 
-## TODO Cohort default rates
+## _Equity in athletics data analysis_ (EADA): Institution-level financial information for college sports
 
-- [ ] Aggregate data on federal student loan default rates _US department of education_?
-	- [ ] Find for institutions; start at https://fsapartners.ed.gov/knowledge-center/topics/default-management/official-cohort-default-rates-schools
+Dataset folder: [](./datasets/equity_athletics_data_analysis)
 
-Aggregate data on federal student loan default rates _US department of education_?
+Information released per the [Equity in athletics disclosure act](https://www.ed.gov/laws-and-policy/higher-education-laws-and-policy/policy-initiatives/equity-in-athletics-disclosure-act) and available by year for all institutions at [](https://ope.ed.gov/athletics/#/datafile/list).
 
-Available for FY2015Q4--FY2018Q4, with a missing FY2018Q1.
-
-```sh
-cd "$DATASET_DIR"
-mkdir loan_defaults
-cd loan_defaults
-```
-
-https://studentaid.gov/data-center/student/default
-
-
-- [ ] [The _US department of education_'s cohort default rate](https://fsapartners.ed.gov/knowledge-center/topics/default-management/official-cohort-default-rates-schools)
-	- **link** for 2021: https://fsapartners.ed.gov/sites/default/files/2024-09/PEPS300ReportFY21Official.xlsx
-
-- [x] [Aggregate data on federal student loans from the _US department of education_](https://studentaid.gov/data-center/student)
-	- [student loan default rates](https://studentaid.gov/data-center/student/default)
-		- **link** (2015--2018): https://studentaid.gov/data-center/student/default
-	- [Amounts outstanding](https://studentaid.gov/data-center/student/portfolio)
-	- [volumes of financial aid requested](https://studentaid.gov/data-center/student/application-volume)
-	- [volumes of financial aid awarded](https://studentaid.gov/data-center/student/title-iv)
-	- [student loan forgiveness rates](https://studentaid.gov/data-center/student/loan-forgiveness)
-
-## TODO _Department of education_'s annual school- and team-level datasets on college sports' finances.
-
-- [ ] _Department of education_'s annual school- and team-level datasets on college sports' finances.
-		- [ ] Evaluate carefully---is this useful?  May be duplicating some other sources.
-
-https://ope.ed.gov/athletics/#/datafile/list
+Removed all files in formats other than doc and XLS, then filtered to retain only doc or XLS files that aggregate data at the institutional level.
+Since file and sheet names were inconsistent from year to year, we manually reviewed each of the remaining files before converting each one to a CSV file with `in2csv`.
+We converted data dictionaries that were provided in doc format by using LibreOffice to export them to an intermediate format, then using Pandoc to convert those files to plain text.
 
 - [x] The [_Department of education_'s annual school- and team-level datasets on college sports' finances](https://ope.ed.gov/athletics/)
 	- **link** (2003--2023): https://ope.ed.gov/athletics/#/datafile/list
 	- See _USAFacts_' reporting which uses the data to examine college football finances: https://usafacts.org/articles/coronavirus-college-football-profit-sec-acc-pac-12-big-ten-millions-fall-2020/
 
 # Archived resources
+
+All resources below this point are unused.
+
+--------
 
 - The [_Urban institute_'s education data explorer](https://educationdata.urban.org/data-explorer/) has normed
 	- the _Department of education_'s
@@ -225,6 +206,37 @@ https://ope.ed.gov/athletics/#/datafile/list
   - https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/whichskillsareemployersseekinginyourarea/2024-11-05
 
 >__Women’s college basketball rosters.__ Students in [Derek Willis](https://merrill.umd.edu/directory/derek-willis)’s “[Sports Data Analysis & Visualization](https://app.testudo.umd.edu/soc/202208/JOUR/JOUR479X)” course at the University of Maryland’s journalism school have [assembled](https://twitter.com/derekwillis/status/1600946516272861185) data on [13,000+ players on women’s college basketball teams](https://github.com/Sports-Roster-Data/womens-college-basketball), sourced from 900+ rosters for the 2022–23 NCAA season. Their main dataset lists each player’s name, team, position, jersey number, height, year, hometown, high school, and more.
+
+### Cohort default rates
+
+Included in the "College scorecard" data.
+
+- [ ] Aggregate data on federal student loan default rates _US department of education_?
+	- [ ] Find for institutions; start at https://fsapartners.ed.gov/knowledge-center/topics/default-management/official-cohort-default-rates-schools
+
+Aggregate data on federal student loan default rates _US department of education_?
+
+Available for FY2015Q4--FY2018Q4, with a missing FY2018Q1.
+
+```sh
+cd "$DATASET_DIR"
+mkdir loan_defaults
+cd loan_defaults
+```
+
+https://studentaid.gov/data-center/student/default
+
+
+- [ ] [The _US department of education_'s cohort default rate](https://fsapartners.ed.gov/knowledge-center/topics/default-management/official-cohort-default-rates-schools)
+	- **link** for 2021: https://fsapartners.ed.gov/sites/default/files/2024-09/PEPS300ReportFY21Official.xlsx
+
+- [x] [Aggregate data on federal student loans from the _US department of education_](https://studentaid.gov/data-center/student)
+	- [student loan default rates](https://studentaid.gov/data-center/student/default)
+		- **link** (2015--2018): https://studentaid.gov/data-center/student/default
+	- [Amounts outstanding](https://studentaid.gov/data-center/student/portfolio)
+	- [volumes of financial aid requested](https://studentaid.gov/data-center/student/application-volume)
+	- [volumes of financial aid awarded](https://studentaid.gov/data-center/student/title-iv)
+	- [student loan forgiveness rates](https://studentaid.gov/data-center/student/loan-forgiveness)
 
 ### Datasets from PSU
 
