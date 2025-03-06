@@ -45,7 +45,7 @@ All very tentative so far.
 	- 1996--2023
 - [x] foreign_gifts/
 	- 2014--2020
-- [x] equity_athletics_data_analysis/ 
+- [x] equity_athletics_data_analysis/
 	- 2002--2023
 - [ ] athlete_academic_success/
 	- 1995--2008
@@ -78,7 +78,7 @@ rm -rf __MACOSX/
 
 ## _The Huffington post_ and _Chronicle of higher education_'s data on how colleges finance their athletics
 
-Dataset folder: [](./datasets/college_athletics_financing/)
+[Dataset folder](datasets/college_athletics_financing/)
 
 ```sh
 cd "$DATASET_DIR"
@@ -103,7 +103,7 @@ rm CHE_RealScoredatadictionary.xlsx
 
 ## _Department of education_'s data on foreign gifts to and contracts with US colleges
 
-Dataset folder: [](./datasets/foreign_gifts)
+[Dataset folder](datasets/foreign_gifts)
 
 - Data for 2020--2024: https://fsapartners.ed.gov/knowledge-center/topics/section-117-foreign-gift-and-contract-reporting/section-117-foreign-gift-and-contract-data
 - Data for october of 2024: https://fsapartners.ed.gov/knowledge-center/topics/section-117-foreign-gift-and-contract-reporting/section-117-foreign-gift-and-contract-data
@@ -127,7 +127,7 @@ rm ForeignGifts.xls
 
 ## "Historic quarterly state and local government tax revenue"; _US census bureau_
 
-Dataset folder: [](datasets/historic_tax_revenue)
+[Dataset folder](datasets/historic_tax_revenue).
 
 ```sh
 cd "$DATASET_DIR"
@@ -145,7 +145,7 @@ rm 2009Q1-2024Q3-QTAX-Table1.xlsx
 
 ## "NCAA division I and II graduation success rate and academic success rate, 1995-2008 cohorts"
 
-Dataset folder: [](./datasets/athlete_academic_success).
+[Dataset folder](datasets/athlete_academic_success).
 
 Requires PSU account to download.
 See https://www.icpsr.umich.edu/web/ICPSR/studies/30022#.
@@ -157,7 +157,7 @@ See https://www.icpsr.umich.edu/web/ICPSR/studies/30022#.
 
 ## _Equity in athletics data analysis_ (EADA): Institution-level financial information for college sports
 
-Dataset folder: [](./datasets/equity_athletics_data_analysis)
+[Dataset folder](datasets/equity_athletics_data_analysis)
 
 Information released per the [Equity in athletics disclosure act](https://www.ed.gov/laws-and-policy/higher-education-laws-and-policy/policy-initiatives/equity-in-athletics-disclosure-act) and available by year for all institutions at [](https://ope.ed.gov/athletics/#/datafile/list).
 
