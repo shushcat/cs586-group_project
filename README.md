@@ -45,12 +45,19 @@ All very tentative so far.
 	- 1996--2023
 - [x] foreign_gifts/
 	- 2014--2020
+ 	- Considering just the years 2013 to 2015
+  	- Useful columns ( ID | Institution Name | City | State | Foreign Gift Amount | Gift Type | Country of Giftor | Giftor Name )
+  	- Not useful columns ( OPEID | Foreign Gift Received Date )
 - [x] equity_athletics_data_analysis/
 	- 2002--2023
+ 	- Useful columns ( unitid | institution_name | city_txt	| state_cd | EFMaleCount | EFFemaleCount | EFTotalCount | sector_cd | sector_name | STAID_MEN | STAID_WOMEN | STAID_COED | STUDENTAID_TOTAL)
+  	- Can be ignored ( addr1_txt | addr2_txt )
 - [ ] athlete_academic_success/
 	- 1995--2008
 - [ ] college_athletics_financing/
 	- 2013--2015
+ 	- Useful columns ( unitid | instnm | chronname | conference | city | state | nickname | year | url | full_time_enrollment )
+  	- Can be ignored ( inflationadjusted columns ) 
 - [ ] historic_tax_revenue/
 	- 2009--2024
 
