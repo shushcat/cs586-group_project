@@ -16,10 +16,9 @@
 	- [x] college_scorecard/dict.tsv
 	- [x] foreign_gifts/dict.txt
 	- [x] college_athletics_financing/dict.csv
-- [ ] Revisit college_scorecard
-	- [ ] Narrow to 2013--2015
-	- [ ] Clean Git history
-	- [ ] Split files
+- [x] Revisit college_scorecard
+	- [x] Split files
+	- [x] Narrow to 2010--2015
 - [ ] Remove unused datasets
 	- [x] college_scorecard/dict.tsv
 	- [x] foreign_gifts/dict.txt
@@ -65,8 +64,6 @@ All very tentative so far.
 	- 2002--2023
  	- Useful columns ( unitid | institution_name | city_txt	| state_cd | EFMaleCount | EFFemaleCount | EFTotalCount | sector_cd | sector_name | STAID_MEN | STAID_WOMEN | STAID_COED | STUDENTAID_TOTAL)
   	- Can be ignored ( addr1_txt | addr2_txt )
-- [ ] athlete_academic_success/
-	- 1995--2008
 - [ ] college_athletics_financing/
 	- 2013--2015
 	- 2010--2014?
@@ -139,12 +136,19 @@ rm CHE_RealScoredatadictionary.xlsx
 	- See [their report](http://projects.huffingtonpost.com/projects/ncaa/sports-at-any-cost) and
 	- [_The Washington post_'s report on the unprofitability of college athletics](http://www.washingtonpost.com/sf/sports/wp/2015/11/23/running-up-the-bills/)
 
-## _Department of education_'s data on foreign gifts to and contracts with US colleges
+## _Department of education_'s data on foreign gifts to and contracts with US colleges `foreign_gifts`
 
 [Dataset folder](datasets/foreign_gifts)
 
-- Data for 2020--2024: https://fsapartners.ed.gov/knowledge-center/topics/section-117-foreign-gift-and-contract-reporting/section-117-foreign-gift-and-contract-data
-- Data for october of 2024: https://fsapartners.ed.gov/knowledge-center/topics/section-117-foreign-gift-and-contract-reporting/section-117-foreign-gift-and-contract-data
+"Foreign Gift and Contracts Report with Date Range 01/01/2014 to 06/30/2020 
+
+Data Source: Postsecondary Education Participation System 10/19/2020"
+
+The [_Department of education_'s data on foreign gifts to and contracts with US colleges](https://studentaid.ed.gov/sa/about/data-center/school/foreign-gifts)
+	- **link**: https://studentaid.gov/sites/default/files/ForeignGifts.xls
+		- from: https://catalog.data.gov/dataset/foreign-gifts-and-contracts-report-e353d
+	- See [their database on such gifts and contracts](https://catalog.data.gov/dataset/foreign-gifts-and-contracts-report-2011), and
+	- See a report from the _Associated press_ on Saudi-Arabia's financial ties to US colleges: https://www.apnews.com/4d56411af6a8490e8030eacab4401571
 
 ```sh
 cd "$DATASET_DIR"
@@ -156,12 +160,8 @@ in2csv ForeignGifts.xls > foreign_gifts.csv
 rm ForeignGifts.xls
 ```
 
-- [x] The [_Department of education_'s data on foreign gifts to and contracts with US colleges](https://studentaid.ed.gov/sa/about/data-center/school/foreign-gifts)
-	- **link**: https://studentaid.gov/sites/default/files/ForeignGifts.xls
-		- from: https://catalog.data.gov/dataset/foreign-gifts-and-contracts-report-e353d
-	- See [their database on such gifts and contracts](https://catalog.data.gov/dataset/foreign-gifts-and-contracts-report-2011), and
-	- See a report from the _Associated press_ on Saudi-Arabia's financial ties to US colleges: https://www.apnews.com/4d56411af6a8490e8030eacab4401571
-
+- Data for 2020--2024: https://fsapartners.ed.gov/knowledge-center/topics/section-117-foreign-gift-and-contract-reporting/section-117-foreign-gift-and-contract-data
+- Data for october of 2024: https://fsapartners.ed.gov/knowledge-center/topics/section-117-foreign-gift-and-contract-reporting/section-117-foreign-gift-and-contract-data
 
 ## "Historic quarterly state and local government tax revenue"; _US census bureau_
 
@@ -180,18 +180,6 @@ rm 2009Q1-2024Q3-QTAX-Table1.xlsx
 	- **link** to "Historic quarterly state and local government tax revenue": https://www2.census.gov/programs-surveys/qtax/tables/historical/2009Q1-2024Q3-QTAX-Table1.xlsx
 	- [Monthly data for a subset of those taxes](https://www.census.gov/data/experimental-data-products/selected-monthly-state-sales-tax-collections.html), including sports gambling
 		- (See https://www.washingtonpost.com/business/2024/06/07/sports-betting-lottery-state-budgets/)
-
-## "NCAA division I and II graduation success rate and academic success rate, 1995-2008 cohorts"
-
-[Dataset folder](datasets/athlete_academic_success).
-
-Requires PSU account to download.
-See https://www.icpsr.umich.edu/web/ICPSR/studies/30022#.
-
-- [x] [NCAA data on student athletes’ academic progress and graduation rates](https://www.icpsr.umich.edu/icpsrweb/content/NCAA/data.html), aggregated by school and sport; **dead link** but may be archived somewhere.
-	- **link**: https://www.icpsr.umich.edu/web/ICPSR/studies/30022#;
-		- requires PSU account to download
-	- Saved under ignored subfolder `./datasets/icpsr`
 
 ## _Equity in athletics data analysis_ (EADA): Institution-level financial information for college sports
 
@@ -258,6 +246,20 @@ All resources below this point are unused.
   - https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/whichskillsareemployersseekinginyourarea/2024-11-05
 
 >__Women’s college basketball rosters.__ Students in [Derek Willis](https://merrill.umd.edu/directory/derek-willis)’s “[Sports Data Analysis & Visualization](https://app.testudo.umd.edu/soc/202208/JOUR/JOUR479X)” course at the University of Maryland’s journalism school have [assembled](https://twitter.com/derekwillis/status/1600946516272861185) data on [13,000+ players on women’s college basketball teams](https://github.com/Sports-Roster-Data/womens-college-basketball), sourced from 900+ rosters for the 2022–23 NCAA season. Their main dataset lists each player’s name, team, position, jersey number, height, year, hometown, high school, and more.
+
+### "NCAA division I and II graduation success rate and academic success rate, 1995-2008 cohorts" `athlete_academic_success`
+- 1995--2008
+
+[Dataset folder](datasets/athlete_academic_success).
+
+Requires PSU account to download.
+See https://www.icpsr.umich.edu/web/ICPSR/studies/30022#.
+
+- [x] [NCAA data on student athletes’ academic progress and graduation rates](https://www.icpsr.umich.edu/icpsrweb/content/NCAA/data.html), aggregated by school and sport; **dead link** but may be archived somewhere.
+	- **link**: https://www.icpsr.umich.edu/web/ICPSR/studies/30022#;
+		- requires PSU account to download
+	- Saved under ignored subfolder `./datasets/icpsr`
+
 
 ### Cohort default rates
 
