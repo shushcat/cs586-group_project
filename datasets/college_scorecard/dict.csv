@@ -318,7 +318,7 @@ CURROPER, integer, "Flag for currently operating institution, 0=closed, 1=operat
 NPT4_PUB, integer, "Average net price for Title IV institutions (public institutions)"
 NPT4_PRIV, integer, "Average net price for Title IV institutions (private for-profit and nonprofit institutions)"
 NPT4_PROG, integer, "Average net price for the largest program at the institution for program-year institutions"
-NPT4_OTHER, integer, "Average net price for the largest program at the institution for schools on "other" academic year calendars"
+NPT4_OTHER, integer, "Average net price for the largest program at the institution for schools on ""other"" academic year calendars"
 NPT41_PUB, integer, "Average net price for $0-$30,000 family income (public institutions)"
 NPT42_PUB, integer, "Average net price for $30,001-$48,000 family income (public institutions)"
 NPT43_PUB, integer, "Average net price for $48,001-$75,000 family income (public institutions)"
