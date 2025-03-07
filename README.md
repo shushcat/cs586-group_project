@@ -12,7 +12,20 @@
     - [x] List 20 questions as examples the database might help to answer.
     - [x] Describe sources and ingestion scheme.  We will need at least several hundred rows of data.  Present this as a paragraph.  Be specific.
 - [x] Collect datasets
-- [ ] Select & reject datasets
+- [x] Make dictionary for each dataset & select datasets
+	- [x] college_scorecard/dict.tsv
+	- [x] foreign_gifts/dict.txt
+	- [x] college_athletics_financing/dict.csv
+- [ ] Revisit college_scorecard
+	- [ ] Narrow to 2013--2015
+	- [ ] Clean Git history
+	- [ ] Split files
+- [ ] Remove unused datasets
+	- [x] college_scorecard/dict.tsv
+	- [x] foreign_gifts/dict.txt
+	- [x] college_athletics_financing/dict.csv
+- [ ] Select relevant fields from each dataset
+- [ ] Reject overlapping datasets
 - [ ] Describe all retrieval and normalization steps per dataset.
 - [ ] List fields and span for each dataset
 - [ ] Trim datasets
@@ -56,6 +69,7 @@ All very tentative so far.
 	- 1995--2008
 - [ ] college_athletics_financing/
 	- 2013--2015
+	- 2010--2014?
  	- Useful columns ( unitid | instnm | chronname | conference | city | state | nickname | year | url | full_time_enrollment )
   	- Can be ignored ( inflationadjusted columns ) 
 - [ ] historic_tax_revenue/
@@ -64,12 +78,29 @@ All very tentative so far.
 Steps taken to collect and normalize each dataset appear under each dataset's heading.
 To convert datasets that were only available as XLS or XLSX files as of March 2025, we used the tool `in2csv`, which is part of [CSVKit](https://github.com/wireservice/csvkit).
 
-## TODO College scorecard
+## College scorecard
 
-- Date range: 1996--2023
+- Date range: 1996--2024
 
-- [x] The [College scorecard](https://collegescorecard.ed.gov/data) data, while [off by an average of 10% in reported graduation rates among Pell-grant recipients](https://hechingerreport.org/theres-finally-federal-data-on-low-income-college-graduation-rates-but-its-wrong/), give a comprehensive view of universities in the US as a whole.
-	- **link**: https://ed-public-download.scorecard.network/downloads/College_Scorecard_Raw_Data_01162025.zip
+The [College scorecard](https://collegescorecard.ed.gov/data) data, while [off by an average of 10% in reported graduation rates among Pell-grant recipients](https://hechingerreport.org/theres-finally-federal-data-on-low-income-college-graduation-rates-but-its-wrong/), give a comprehensive view of universities in the US as a whole.
+- **link**: https://ed-public-download.scorecard.network/downloads/College_Scorecard_Raw_Data_01162025.zip
+- see retrieval commands for links to dictionaries, technical information, and errata
+
+```sh
+mkdir college_scorecard
+cd college_scorecard
+wget https://ed-public-download.scorecard.network/downloads/Most-Recent-Cohorts-Institution_01162025.zip
+unzip Most-Recent-Cohorts-Institution_01162025.zip
+rm Most-Recent-Cohorts-Institution_01162025.zip
+wget https://collegescorecard.ed.gov/files/CollegeScorecardDataDictionary.xlsx
+wget https://collegescorecard.ed.gov/files/InstitutionDataDocumentation.pdf
+wget https://collegescorecard.ed.gov/files/EarningsDataErrata.pdf
+
+```
+
+### Retrieving the complete dataset
+
+I've decided not to use the entire dataset; all we need is the institution-level data.
 
 ```sh
 mkdir college_scorecard
@@ -83,7 +114,7 @@ rm -rf College_Scorecard_Raw_Data_01162025.zip
 rm -rf __MACOSX/
 ```
 
-## _The Huffington post_ and _Chronicle of higher education_'s data on how colleges finance their athletics
+## _The Huffington post_ and _Chronicle of higher education_'s data on how colleges finance their athletics; `college_athletics_financing`
 
 [Dataset folder](datasets/college_athletics_financing/)
 
