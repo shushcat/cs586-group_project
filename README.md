@@ -13,22 +13,28 @@
     - [x] Describe sources and ingestion scheme.  We will need at least several hundred rows of data.  Present this as a paragraph.  Be specific.
 - [x] Collect datasets
 - [x] Make dictionary for each dataset & select datasets
-	- [x] college_scorecard/dict.tsv
-	- [x] foreign_gifts/dict.txt
-	- [x] college_athletics_financing/dict.csv
+	- [x] college_scorecard
+	- [x] foreign_gifts
+	- [x] college_athletics_financing
+	- [x] equity_athletics_data_analysis/
 - [x] Revisit college_scorecard
 	- [x] Split files
 	- [x] Narrow to 2010--2015
-- [ ] Remove unused datasets
-	- [x] college_scorecard/dict.tsv
-	- [x] foreign_gifts/dict.txt
-	- [x] college_athletics_financing/dict.csv
+- [x] Remove unused datasets
 - [ ] Select relevant fields from each dataset
-- [ ] Reject overlapping datasets
-- [ ] Describe all retrieval and normalization steps per dataset.
-- [ ] List fields and span for each dataset
-- [ ] Trim datasets
-	- [ ] Check for overlapping timespan
+	- [x] Check which are promising
+- [ ] Prune to overlapping data range (2014?)
+	- [x] Prune to narrowed ranges:
+		- [x] college_scorecard: 2010--2015
+		- [x] foreign_gifts: 2014-01--2020-06
+		- [x] college_athletics_financing: 2010--2014
+		- [x] equity_athletics_data_analysis: 2011--2016
+	- [ ] Check reporting protocols to make sure date ranges are reported for the same spans
+		- [ ] college_scorecard: 2010--2015
+		- [ ] foreign_gifts: 2014-01--2020-06
+		- [ ] college_athletics_financing: 2010--2014
+		- [ ] equity_athletics_data_analysis: 2011--2016
+- [ ] Make sure retrieval and normalization steps are described (at least roughly) for used datasets
 - [ ] Deliverable 2 (due 2025-03-07)
 	- [ ] ER diagram
 		- 6--10 tables
@@ -64,13 +70,10 @@ All very tentative so far.
 	- 2002--2023
  	- Useful columns ( unitid | institution_name | city_txt	| state_cd | EFMaleCount | EFFemaleCount | EFTotalCount | sector_cd | sector_name | STAID_MEN | STAID_WOMEN | STAID_COED | STUDENTAID_TOTAL)
   	- Can be ignored ( addr1_txt | addr2_txt )
-- [ ] college_athletics_financing/
-	- 2013--2015
-	- 2010--2014?
+- [x] college_athletics_financing/
+	- 2010--2014
  	- Useful columns ( unitid | instnm | chronname | conference | city | state | nickname | year | url | full_time_enrollment )
   	- Can be ignored ( inflationadjusted columns ) 
-- [ ] historic_tax_revenue/
-	- 2009--2024
 
 Steps taken to collect and normalize each dataset appear under each dataset's heading.
 To convert datasets that were only available as XLS or XLSX files as of March 2025, we used the tool `in2csv`, which is part of [CSVKit](https://github.com/wireservice/csvkit).
@@ -163,25 +166,7 @@ rm ForeignGifts.xls
 - Data for 2020--2024: https://fsapartners.ed.gov/knowledge-center/topics/section-117-foreign-gift-and-contract-reporting/section-117-foreign-gift-and-contract-data
 - Data for october of 2024: https://fsapartners.ed.gov/knowledge-center/topics/section-117-foreign-gift-and-contract-reporting/section-117-foreign-gift-and-contract-data
 
-## "Historic quarterly state and local government tax revenue"; _US census bureau_
-
-[Dataset folder](datasets/historic_tax_revenue).
-
-```sh
-cd "$DATASET_DIR"
-mkdir historic_tax_revenue
-cd historic_tax_revenue
-wget https://www2.census.gov/programs-surveys/qtax/tables/historical/2009Q1-2024Q3-QTAX-Table1.xlsx
-in2csv 2009Q1-2024Q3-QTAX-Table1.xlsx > 2009Q1--2024Q3_tax_revenue.csv
-rm 2009Q1-2024Q3-QTAX-Table1.xlsx
-```
-
-- [x] [_The census bureau_’s "Quarterly summary of state and local government tax revenue](https://www.census.gov/programs-surveys/qtax.html)
-	- **link** to "Historic quarterly state and local government tax revenue": https://www2.census.gov/programs-surveys/qtax/tables/historical/2009Q1-2024Q3-QTAX-Table1.xlsx
-	- [Monthly data for a subset of those taxes](https://www.census.gov/data/experimental-data-products/selected-monthly-state-sales-tax-collections.html), including sports gambling
-		- (See https://www.washingtonpost.com/business/2024/06/07/sports-betting-lottery-state-budgets/)
-
-## _Equity in athletics data analysis_ (EADA): Institution-level financial information for college sports
+## _Equity in athletics data analysis_ (EADA): Institution-level financial information for college sports `equity_athletics_data_analysis`
 
 [Dataset folder](datasets/equity_athletics_data_analysis)
 
@@ -246,6 +231,41 @@ All resources below this point are unused.
   - https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/whichskillsareemployersseekinginyourarea/2024-11-05
 
 >__Women’s college basketball rosters.__ Students in [Derek Willis](https://merrill.umd.edu/directory/derek-willis)’s “[Sports Data Analysis & Visualization](https://app.testudo.umd.edu/soc/202208/JOUR/JOUR479X)” course at the University of Maryland’s journalism school have [assembled](https://twitter.com/derekwillis/status/1600946516272861185) data on [13,000+ players on women’s college basketball teams](https://github.com/Sports-Roster-Data/womens-college-basketball), sourced from 900+ rosters for the 2022–23 NCAA season. Their main dataset lists each player’s name, team, position, jersey number, height, year, hometown, high school, and more.
+
+### "Historic quarterly state and local government tax revenue"; _US census bureau_
+
+"National totals of state and local government tax revenue, by type of tax"
+
+Data shown in millions of dollars; `tqrr` and `cv` in percentages.
+
+>Total Tax Revenue is the total of only the 4 major taxes.
+"Estimated measures of sampling variability are based on estimates not adjusted for seasonal variation, trading day differences, or moving holidays."
+Abbreviations and symbols:
+	- Corporate: Corporation Net Income
+	- tqrr: Total Quantity Response Rate
+	- cv: Coefficient of Variation
+"The tqrr and cv of Property, Individual Income, and Corporate Income taxes are unavailable for 2009 and 2010 due to unavailability of respondent data from 2009 and 2010."
+R-Revised from previously published amount
+Details may not add to the total due to independent rounding.
+"Source: U.S. Census Bureau, Quarterly Summary of State and Local Government Tax Revenue."
+
+
+[Dataset folder](datasets/historic_tax_revenue).
+
+```sh
+cd "$DATASET_DIR"
+mkdir historic_tax_revenue
+cd historic_tax_revenue
+wget https://www2.census.gov/programs-surveys/qtax/tables/historical/2009Q1-2024Q3-QTAX-Table1.xlsx
+in2csv 2009Q1-2024Q3-QTAX-Table1.xlsx > 2009Q1--2024Q3_tax_revenue.csv
+rm 2009Q1-2024Q3-QTAX-Table1.xlsx
+```
+
+- [x] [_The census bureau_’s "Quarterly summary of state and local government tax revenue](https://www.census.gov/programs-surveys/qtax.html)
+	- **link** to "Historic quarterly state and local government tax revenue": https://www2.census.gov/programs-surveys/qtax/tables/historical/2009Q1-2024Q3-QTAX-Table1.xlsx
+	- [Monthly data for a subset of those taxes](https://www.census.gov/data/experimental-data-products/selected-monthly-state-sales-tax-collections.html), including sports gambling
+		- (See https://www.washingtonpost.com/business/2024/06/07/sports-betting-lottery-state-budgets/)
+
 
 ### "NCAA division I and II graduation success rate and academic success rate, 1995-2008 cohorts" `athlete_academic_success`
 - 1995--2008
