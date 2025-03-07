@@ -1,0 +1,11 @@
+ID
+OPEID
+Institution Name
+City
+State
+Foreign Gift Received Date
+Foreign Gift Amount
+Gift Type
+Country of Giftor
+Giftor Name
+
