@@ -78,6 +78,24 @@ All very tentative so far.
 Steps taken to collect and normalize each dataset appear under each dataset's heading.
 To convert datasets that were only available as XLS or XLSX files as of March 2025, we used the tool `in2csv`, which is part of [CSVKit](https://github.com/wireservice/csvkit).
 
+## Data import and schema design
+
+- [x] college_scorecard/
+	- 1996--2023
+- [x] foreign_gifts/
+	- 2014--2020
+ 	- Considering just the years 2013 to 2015
+  	- Useful columns ( ID | Institution Name | City | State | Foreign Gift Amount | Gift Type | Country of Giftor | Giftor Name )
+  	- Not useful columns ( OPEID | Foreign Gift Received Date )
+- [x] equity_athletics_data_analysis/
+	- 2002--2023
+ 	- Useful columns ( unitid | institution_name | city_txt	| state_cd | EFMaleCount | EFFemaleCount | EFTotalCount | sector_cd | sector_name | STAID_MEN | STAID_WOMEN | STAID_COED | STUDENTAID_TOTAL)
+  	- Can be ignored ( addr1_txt | addr2_txt )
+- [x] college_athletics_financing/
+	- 2010--2014
+ 	- Useful columns ( unitid | instnm | chronname | conference | city | state | nickname | year | url | full_time_enrollment )
+  	- Can be ignored ( inflationadjusted columns ) 
+
 ## College scorecard
 
 - Date range: 1996--2024
