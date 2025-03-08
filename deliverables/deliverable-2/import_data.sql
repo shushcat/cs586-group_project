@@ -1,3326 +1,3326 @@
 --college_scorecard/
-VARIABLE NAME,API data type, "NAME OF DATA ELEMENT"
-UNITID, integer, "Unit ID for institution"
-OPEID, string, "8-digit OPE ID for institution"
-OPEID6, string, "6-digit OPE ID for institution"
-INSTNM, autocomplete, "Institution name"
-CITY, autocomplete, "City"
-STABBR, string, "State postcode"
-ZIP, string, "ZIP code"
-ACCREDAGENCY, string, "Accreditor for institution"
-INSTURL, string, "URL for institution's homepage"
-NPCURL, string, "URL for institution's net price calculator"
-SCH_DEG, integer, "Predominant degree awarded (recoded 0s and 4s)"
-HCM2, integer, "Schools that are on Heightened Cash Monitoring 2 by the Department of Education"
-MAIN, integer, "Flag for main campus"
-NUMBRANCH, integer, "Number of branch campuses"
-PREDDEG, integer, "Predominant undergraduate degree awarded  0 Not classified  1 Predominantly certificate-degree granting  2 Predominantly associate's-degree granting  3 Predominantly bachelor's-degree granting  4 Entirely graduate-degree granting"
-HIGHDEG, integer, "Highest degree awarded  0 Non-degree-granting  1 Certificate degree  2 Associate degree  3 Bachelor's degree  4 Graduate degree"
-CONTROL, integer, "Control of institution (IPEDS)"
-ST_FIPS, integer, "FIPS code for state"
-REGION, integer, "Region (IPEDS)"
-LOCALE, integer, "Locale of institution"
-LOCALE2, integer, "Degree of urbanization of institution"
-LATITUDE, float, "Latitude"
-LONGITUDE, float, "Longitude"
-CCBASIC, integer, "Carnegie Classification -- basic"
-CCUGPROF, integer, "Carnegie Classification -- undergraduate profile"
-CCSIZSET, integer, "Carnegie Classification -- size and setting"
-HBCU, integer, "Flag for Historically Black College and University"
-PBI, integer, "Flag for predominantly black institution"
-ANNHI, integer, "Flag for Alaska Native Native Hawaiian serving institution"
-TRIBAL, integer, "Flag for tribal college and university"
-AANAPII, integer, "Flag for Asian American Native American Pacific Islander-serving institution"
-HSI, integer, "Flag for Hispanic-serving institution"
-NANTI, integer, "Flag for Native American non-tribal institution"
-MENONLY, integer, "Flag for men-only college"
-WOMENONLY, integer, "Flag for women-only college"
-RELAFFIL, integer, "Religous affiliation of the institution"
-ADM_RATE, float, "Admission rate"
-ADM_RATE_ALL, float, "Admission rate for all campuses rolled up to the 6-digit OPE ID"
-SATVR25, float, "25th percentile of SAT scores at the institution (critical reading)"
-SATVR75, float, "75th percentile of SAT scores at the institution (critical reading)"
-SATMT25, float, "25th percentile of SAT scores at the institution (math)"
-SATMT75, float, "75th percentile of SAT scores at the institution (math)"
-SATWR25, float, "25th percentile of SAT scores at the institution (writing)"
-SATWR75, float, "75th percentile of SAT scores at the institution (writing)"
-SATVRMID, float, "Midpoint of SAT scores at the institution (critical reading)"
-SATMTMID, float, "Midpoint of SAT scores at the institution (math)"
-SATWRMID, float, "Midpoint of SAT scores at the institution (writing)"
-ACTCM25, float, "25th percentile of the ACT cumulative score"
-ACTCM75, float, "75th percentile of the ACT cumulative score"
-ACTEN25, float, "25th percentile of the ACT English score"
-ACTEN75, float, "75th percentile of the ACT English score"
-ACTMT25, float, "25th percentile of the ACT math score"
-ACTMT75, float, "75th percentile of the ACT math score"
-ACTWR25, float, "25th percentile of the ACT writing score"
-ACTWR75, float, "75th percentile of the ACT writing score"
-ACTCMMID, float, "Midpoint of the ACT cumulative score"
-ACTENMID, float, "Midpoint of the ACT English score"
-ACTMTMID, float, "Midpoint of the ACT math score"
-ACTWRMID, float, "Midpoint of the ACT writing score"
-SAT_AVG, float, "Average SAT equivalent score of students admitted"
-SAT_AVG_ALL, float, "Average SAT equivalent score of students admitted for all campuses rolled up to the 6-digit OPE ID"
-PCIP01, float, "Percentage of degrees awarded in Agriculture, Agriculture Operations, And Related Sciences."
-PCIP03, float, "Percentage of degrees awarded in Natural Resources And Conservation."
-PCIP04, float, "Percentage of degrees awarded in Architecture And Related Services."
-PCIP05, float, "Percentage of degrees awarded in Area, Ethnic, Cultural, Gender, And Group Studies."
-PCIP09, float, "Percentage of degrees awarded in Communication, Journalism, And Related Programs."
-PCIP10, float, "Percentage of degrees awarded in Communications Technologies/Technicians And Support Services."
-PCIP11, float, "Percentage of degrees awarded in Computer And Information Sciences And Support Services."
-PCIP12, float, "Percentage of degrees awarded in Personal And Culinary Services."
-PCIP13, float, "Percentage of degrees awarded in Education."
-PCIP14, float, "Percentage of degrees awarded in Engineering."
-PCIP15, float, "Percentage of degrees awarded in Engineering Technologies And Engineering-Related Fields."
-PCIP16, float, "Percentage of degrees awarded in Foreign Languages, Literatures, And Linguistics."
-PCIP19, float, "Percentage of degrees awarded in Family And Consumer Sciences/Human Sciences."
-PCIP22, float, "Percentage of degrees awarded in Legal Professions And Studies."
-PCIP23, float, "Percentage of degrees awarded in English Language And Literature/Letters."
-PCIP24, float, "Percentage of degrees awarded in Liberal Arts And Sciences, General Studies And Humanities."
-PCIP25, float, "Percentage of degrees awarded in Library Science."
-PCIP26, float, "Percentage of degrees awarded in Biological And Biomedical Sciences."
-PCIP27, float, "Percentage of degrees awarded in Mathematics And Statistics."
-PCIP29, float, "Percentage of degrees awarded in Military Technologies And Applied Sciences."
-PCIP30, float, "Percentage of degrees awarded in Multi/Interdisciplinary Studies."
-PCIP31, float, "Percentage of degrees awarded in Parks, Recreation, Leisure, And Fitness Studies."
-PCIP38, float, "Percentage of degrees awarded in Philosophy And Religious Studies."
-PCIP39, float, "Percentage of degrees awarded in Theology And Religious Vocations."
-PCIP40, float, "Percentage of degrees awarded in Physical Sciences."
-PCIP41, float, "Percentage of degrees awarded in Science Technologies/Technicians."
-PCIP42, float, "Percentage of degrees awarded in Psychology."
-PCIP43, float, "Percentage of degrees awarded in Homeland Security, Law Enforcement, Firefighting And Related Protective Services."
-PCIP44, float, "Percentage of degrees awarded in Public Administration And Social Service Professions."
-PCIP45, float, "Percentage of degrees awarded in Social Sciences."
-PCIP46, float, "Percentage of degrees awarded in Construction Trades."
-PCIP47, float, "Percentage of degrees awarded in Mechanic And Repair Technologies/Technicians."
-PCIP48, float, "Percentage of degrees awarded in Precision Production."
-PCIP49, float, "Percentage of degrees awarded in Transportation And Materials Moving."
-PCIP50, float, "Percentage of degrees awarded in Visual And Performing Arts."
-PCIP51, float, "Percentage of degrees awarded in Health Professions And Related Programs."
-PCIP52, float, "Percentage of degrees awarded in Business, Management, Marketing, And Related Support Services."
-PCIP54, float, "Percentage of degrees awarded in History."
-CIP01CERT1, integer, "Certificate of less than one academic year in Agriculture, Agriculture Operations, And Related Sciences."
-CIP01CERT2, integer, "Certificate of at least one but less than two academic years in Agriculture, Agriculture Operations, And Related Sciences."
-CIP01ASSOC, integer, "Associate degree in Agriculture, Agriculture Operations, And Related Sciences."
-CIP01CERT4, integer, "Award of at least two but less than four academic years in Agriculture, Agriculture Operations, And Related Sciences."
-CIP01BACHL, integer, "Bachelor's degree in Agriculture, Agriculture Operations, And Related Sciences."
-CIP03CERT1, integer, "Certificate of less than one academic year in Natural Resources And Conservation."
-CIP03CERT2, integer, "Certificate of at least one but less than two academic years in Natural Resources And Conservation."
-CIP03ASSOC, integer, "Associate degree in Natural Resources And Conservation."
-CIP03CERT4, integer, "Award of at least two but less than four academic years in Natural Resources And Conservation."
-CIP03BACHL, integer, "Bachelor's degree in Natural Resources And Conservation."
-CIP04CERT1, integer, "Certificate of less than one academic year in Architecture And Related Services."
-CIP04CERT2, integer, "Certificate of at least one but less than two academic years in Architecture And Related Services."
-CIP04ASSOC, integer, "Associate degree in Architecture And Related Services."
-CIP04CERT4, integer, "Award of at least two but less than four academic years in Architecture And Related Services."
-CIP04BACHL, integer, "Bachelor's degree in Architecture And Related Services."
-CIP05CERT1, integer, "Certificate of less than one academic year in Area, Ethnic, Cultural, Gender, And Group Studies."
-CIP05CERT2, integer, "Certificate of at least one but less than two academic years in Area, Ethnic, Cultural, Gender, And Group Studies."
-CIP05ASSOC, integer, "Associate degree in Area, Ethnic, Cultural, Gender, And Group Studies."
-CIP05CERT4, integer, "Award of at least two but less than four academic years in Area, Ethnic, Cultural, Gender, And Group Studies."
-CIP05BACHL, integer, "Bachelor's degree in Area, Ethnic, Cultural, Gender, And Group Studies."
-CIP09CERT1, integer, "Certificate of less than one academic year in Communication, Journalism, And Related Programs."
-CIP09CERT2, integer, "Certificate of at least one but less than two academic years in Communication, Journalism, And Related Programs."
-CIP09ASSOC, integer, "Associate degree in Communication, Journalism, And Related Programs."
-CIP09CERT4, integer, "Award of at least two but less than four academic years in Communication, Journalism, And Related Programs."
-CIP09BACHL, integer, "Bachelor's degree in Communication, Journalism, And Related Programs."
-CIP10CERT1, integer, "Certificate of less than one academic year in Communications Technologies/Technicians And Support Services."
-CIP10CERT2, integer, "Certificate of at least one but less than two academic years in Communications Technologies/Technicians And Support Services."
-CIP10ASSOC, integer, "Associate degree in Communications Technologies/Technicians And Support Services."
-CIP10CERT4, integer, "Award of at least two but less than four academic years in Communications Technologies/Technicians And Support Services."
-CIP10BACHL, integer, "Bachelor's degree in Communications Technologies/Technicians And Support Services."
-CIP11CERT1, integer, "Certificate of less than one academic year in Computer And Information Sciences And Support Services."
-CIP11CERT2, integer, "Certificate of at least one but less than two academic years in Computer And Information Sciences And Support Services."
-CIP11ASSOC, integer, "Associate degree in Computer And Information Sciences And Support Services."
-CIP11CERT4, integer, "Award of at least two but less than four academic years in Computer And Information Sciences And Support Services."
-CIP11BACHL, integer, "Bachelor's degree in Computer And Information Sciences And Support Services."
-CIP12CERT1, integer, "Certificate of less than one academic year in Personal And Culinary Services."
-CIP12CERT2, integer, "Certificate of at least one but less than two academic years in Personal And Culinary Services."
-CIP12ASSOC, integer, "Associate degree in Personal And Culinary Services."
-CIP12CERT4, integer, "Award of at least two but less than four academic years in Personal And Culinary Services."
-CIP12BACHL, integer, "Bachelor's degree in Personal And Culinary Services."
-CIP13CERT1, integer, "Certificate of less than one academic year in Education."
-CIP13CERT2, integer, "Certificate of at least one but less than two academic years in Education."
-CIP13ASSOC, integer, "Associate degree in Education."
-CIP13CERT4, integer, "Award of at least two but less than four academic years in Education."
-CIP13BACHL, integer, "Bachelor's degree in Education."
-CIP14CERT1, integer, "Certificate of less than one academic year in Engineering."
-CIP14CERT2, integer, "Certificate of at least one but less than two academic years in Engineering."
-CIP14ASSOC, integer, "Associate degree in Engineering."
-CIP14CERT4, integer, "Award of at least two but less than four academic years in Engineering."
-CIP14BACHL, integer, "Bachelor's degree in Engineering."
-CIP15CERT1, integer, "Certificate of less than one academic year in Engineering Technologies And Engineering-Related Fields."
-CIP15CERT2, integer, "Certificate of at least one but less than two academic years in Engineering Technologies And Engineering-Related Fields."
-CIP15ASSOC, integer, "Associate degree in Engineering Technologies And Engineering-Related Fields."
-CIP15CERT4, integer, "Award of at least two but less than four academic years in Engineering Technologies And Engineering-Related Fields."
-CIP15BACHL, integer, "Bachelor's degree in Engineering Technologies And Engineering-Related Fields."
-CIP16CERT1, integer, "Certificate of less than one academic year in Foreign Languages, Literatures, And Linguistics."
-CIP16CERT2, integer, "Certificate of at least one but less than two academic years in Foreign Languages, Literatures, And Linguistics."
-CIP16ASSOC, integer, "Associate degree in Foreign Languages, Literatures, And Linguistics."
-CIP16CERT4, integer, "Award of at least two but less than four academic years in Foreign Languages, Literatures, And Linguistics."
-CIP16BACHL, integer, "Bachelor's degree in Foreign Languages, Literatures, And Linguistics."
-CIP19CERT1, integer, "Certificate of less than one academic year in Family And Consumer Sciences/Human Sciences."
-CIP19CERT2, integer, "Certificate of at least one but less than two academic years in Family And Consumer Sciences/Human Sciences."
-CIP19ASSOC, integer, "Associate degree in Family And Consumer Sciences/Human Sciences."
-CIP19CERT4, integer, "Award of at least two but less than four academic years in Family And Consumer Sciences/Human Sciences."
-CIP19BACHL, integer, "Bachelor's degree in Family And Consumer Sciences/Human Sciences."
-CIP22CERT1, integer, "Certificate of less than one academic year in Legal Professions And Studies."
-CIP22CERT2, integer, "Certificate of at least one but less than two academic years in Legal Professions And Studies."
-CIP22ASSOC, integer, "Associate degree in Legal Professions And Studies."
-CIP22CERT4, integer, "Award of at least two but less than four academic years in Legal Professions And Studies."
-CIP22BACHL, integer, "Bachelor's degree in Legal Professions And Studies."
-CIP23CERT1, integer, "Certificate of less than one academic year in English Language And Literature/Letters."
-CIP23CERT2, integer, "Certificate of at least one but less than two academic years in English Language And Literature/Letters."
-CIP23ASSOC, integer, "Associate degree in English Language And Literature/Letters."
-CIP23CERT4, integer, "Award of at least two but less than four academic years in English Language And Literature/Letters."
-CIP23BACHL, integer, "Bachelor's degree in English Language And Literature/Letters."
-CIP24CERT1, integer, "Certificate of less than one academic year in Liberal Arts And Sciences, General Studies And Humanities."
-CIP24CERT2, integer, "Certificate of at least one but less than two academic years in Liberal Arts And Sciences, General Studies And Humanities."
-CIP24ASSOC, integer, "Associate degree in Liberal Arts And Sciences, General Studies And Humanities."
-CIP24CERT4, integer, "Award of at least two but less than four academic years in Liberal Arts And Sciences, General Studies And Humanities."
-CIP24BACHL, integer, "Bachelor's degree in Liberal Arts And Sciences, General Studies And Humanities."
-CIP25CERT1, integer, "Certificate of less than one academic year in Library Science."
-CIP25CERT2, integer, "Certificate of at least one but less than two academic years in Library Science."
-CIP25ASSOC, integer, "Associate degree in Library Science."
-CIP25CERT4, integer, "Award of at least two but less than four academic years in Library Science."
-CIP25BACHL, integer, "Bachelor's degree in Library Science."
-CIP26CERT1, integer, "Certificate of less than one academic year in Biological And Biomedical Sciences."
-CIP26CERT2, integer, "Certificate of at least one but less than two academic years in Biological And Biomedical Sciences."
-CIP26ASSOC, integer, "Associate degree in Biological And Biomedical Sciences."
-CIP26CERT4, integer, "Award of at least two but less than four academic years in Biological And Biomedical Sciences."
-CIP26BACHL, integer, "Bachelor's degree in Biological And Biomedical Sciences."
-CIP27CERT1, integer, "Certificate of less than one academic year in Mathematics And Statistics."
-CIP27CERT2, integer, "Certificate of at least one but less than two academic years in Mathematics And Statistics."
-CIP27ASSOC, integer, "Associate degree in Mathematics And Statistics."
-CIP27CERT4, integer, "Award of at least two but less than four academic years in Mathematics And Statistics."
-CIP27BACHL, integer, "Bachelor's degree in Mathematics And Statistics."
-CIP29CERT1, integer, "Certificate of less than one academic year in Military Technologies And Applied Sciences."
-CIP29CERT2, integer, "Certificate of at least one but less than two academic years in Military Technologies And Applied Sciences."
-CIP29ASSOC, integer, "Associate degree in Military Technologies And Applied Sciences."
-CIP29CERT4, integer, "Award of at least two but less than four academic years in Military Technologies And Applied Sciences."
-CIP29BACHL, integer, "Bachelor's degree in Military Technologies And Applied Sciences."
-CIP30CERT1, integer, "Certificate of less than one academic year in Multi/Interdisciplinary Studies."
-CIP30CERT2, integer, "Certificate of at least one but less than two academic years in Multi/Interdisciplinary Studies."
-CIP30ASSOC, integer, "Associate degree in Multi/Interdisciplinary Studies."
-CIP30CERT4, integer, "Award of at least two but less than four academic years in Multi/Interdisciplinary Studies."
-CIP30BACHL, integer, "Bachelor's degree in Multi/Interdisciplinary Studies."
-CIP31CERT1, integer, "Certificate of less than one academic year in Parks, Recreation, Leisure, And Fitness Studies."
-CIP31CERT2, integer, "Certificate of at least one but less than two academic years in Parks, Recreation, Leisure, And Fitness Studies."
-CIP31ASSOC, integer, "Associate degree in Parks, Recreation, Leisure, And Fitness Studies."
-CIP31CERT4, integer, "Award of at least two but less than four academic years in Parks, Recreation, Leisure, And Fitness Studies."
-CIP31BACHL, integer, "Bachelor's degree in Parks, Recreation, Leisure, And Fitness Studies."
-CIP38CERT1, integer, "Certificate of less than one academic year in Philosophy And Religious Studies."
-CIP38CERT2, integer, "Certificate of at least one but less than two academic years in Philosophy And Religious Studies."
-CIP38ASSOC, integer, "Associate degree in Philosophy And Religious Studies."
-CIP38CERT4, integer, "Award of at least two but less than four academic years in Philosophy And Religious Studies."
-CIP38BACHL, integer, "Bachelor's degree in Philosophy And Religious Studies."
-CIP39CERT1, integer, "Certificate of less than one academic year in Theology And Religious Vocations."
-CIP39CERT2, integer, "Certificate of at least one but less than two academic years in Theology And Religious Vocations."
-CIP39ASSOC, integer, "Associate degree in Theology And Religious Vocations."
-CIP39CERT4, integer, "Award of at least two but less than four academic years in Theology And Religious Vocations."
-CIP39BACHL, integer, "Bachelor's degree in Theology And Religious Vocations."
-CIP40CERT1, integer, "Certificate of less than one academic year in Physical Sciences."
-CIP40CERT2, integer, "Certificate of at least one but less than two academic years in Physical Sciences."
-CIP40ASSOC, integer, "Associate degree in Physical Sciences."
-CIP40CERT4, integer, "Award of at least two but less than four academic years in Physical Sciences."
-CIP40BACHL, integer, "Bachelor's degree in Physical Sciences."
-CIP41CERT1, integer, "Certificate of less than one academic year in Science Technologies/Technicians."
-CIP41CERT2, integer, "Certificate of at least one but less than two academic years in Science Technologies/Technicians."
-CIP41ASSOC, integer, "Associate degree in Science Technologies/Technicians."
-CIP41CERT4, integer, "Award of at least two but less than four academic years in Science Technologies/Technicians."
-CIP41BACHL, integer, "Bachelor's degree in Science Technologies/Technicians."
-CIP42CERT1, integer, "Certificate of less than one academic year in Psychology."
-CIP42CERT2, integer, "Certificate of at least one but less than two academic years in Psychology."
-CIP42ASSOC, integer, "Associate degree in Psychology."
-CIP42CERT4, integer, "Award of at least two but less than four academic years in Psychology."
-CIP42BACHL, integer, "Bachelor's degree in Psychology."
-CIP43CERT1, integer, "Certificate of less than one academic year in Homeland Security, Law Enforcement, Firefighting And Related Protective Services."
-CIP43CERT2, integer, "Certificate of at least one but less than two academic years in Homeland Security, Law Enforcement, Firefighting And Related Protective Services."
-CIP43ASSOC, integer, "Associate degree in Homeland Security, Law Enforcement, Firefighting And Related Protective Services."
-CIP43CERT4, integer, "Award of at least two but less than four academic years in Homeland Security, Law Enforcement, Firefighting And Related Protective Services."
-CIP43BACHL, integer, "Bachelor's degree in Homeland Security, Law Enforcement, Firefighting And Related Protective Services."
-CIP44CERT1, integer, "Certificate of less than one academic year in Public Administration And Social Service Professions."
-CIP44CERT2, integer, "Certificate of at least one but less than two academic years in Public Administration And Social Service Professions."
-CIP44ASSOC, integer, "Associate degree in Public Administration And Social Service Professions."
-CIP44CERT4, integer, "Award of at least two but less than four academic years in Public Administration And Social Service Professions."
-CIP44BACHL, integer, "Bachelor's degree in Public Administration And Social Service Professions."
-CIP45CERT1, integer, "Certificate of less than one academic year in Social Sciences."
-CIP45CERT2, integer, "Certificate of at least one but less than two academic years in Social Sciences."
-CIP45ASSOC, integer, "Associate degree in Social Sciences."
-CIP45CERT4, integer, "Award of at least two but less than four academic years in Social Sciences."
-CIP45BACHL, integer, "Bachelor's degree in Social Sciences."
-CIP46CERT1, integer, "Certificate of less than one academic year in Construction Trades."
-CIP46CERT2, integer, "Certificate of at least one but less than two academic years in Construction Trades."
-CIP46ASSOC, integer, "Associate degree in Construction Trades."
-CIP46CERT4, integer, "Award of at least two but less than four academic years in Construction Trades."
-CIP46BACHL, integer, "Bachelor's degree in Construction Trades."
-CIP47CERT1, integer, "Certificate of less than one academic year in Mechanic And Repair Technologies/Technicians."
-CIP47CERT2, integer, "Certificate of at least one but less than two academic years in Mechanic And Repair Technologies/Technicians."
-CIP47ASSOC, integer, "Associate degree in Mechanic And Repair Technologies/Technicians."
-CIP47CERT4, integer, "Award of at least two but less than four academic years in Mechanic And Repair Technologies/Technicians."
-CIP47BACHL, integer, "Bachelor's degree in Mechanic And Repair Technologies/Technicians."
-CIP48CERT1, integer, "Certificate of less than one academic year in Precision Production."
-CIP48CERT2, integer, "Certificate of at least one but less than two academic years in Precision Production."
-CIP48ASSOC, integer, "Associate degree in Precision Production."
-CIP48CERT4, integer, "Award of at least two but less than four academic years in Precision Production."
-CIP48BACHL, integer, "Bachelor's degree in Precision Production."
-CIP49CERT1, integer, "Certificate of less than one academic year in Transportation And Materials Moving."
-CIP49CERT2, integer, "Certificate of at least one but less than two academic years in Transportation And Materials Moving."
-CIP49ASSOC, integer, "Associate degree in Transportation And Materials Moving."
-CIP49CERT4, integer, "Award of at least two but less than four academic years in Transportation And Materials Moving."
-CIP49BACHL, integer, "Bachelor's degree in Transportation And Materials Moving."
-CIP50CERT1, integer, "Certificate of less than one academic year in Visual And Performing Arts."
-CIP50CERT2, integer, "Certificate of at least one but less than two academic years in Visual And Performing Arts."
-CIP50ASSOC, integer, "Associate degree in Visual And Performing Arts."
-CIP50CERT4, integer, "Award of at least two but less than four academic years in Visual And Performing Arts."
-CIP50BACHL, integer, "Bachelor's degree in Visual And Performing Arts."
-CIP51CERT1, integer, "Certificate of less than one academic year in Health Professions And Related Programs."
-CIP51CERT2, integer, "Certificate of at least one but less than two academic years in Health Professions And Related Programs."
-CIP51ASSOC, integer, "Associate degree in Health Professions And Related Programs."
-CIP51CERT4, integer, "Award of at least two but less than four academic years in Health Professions And Related Programs."
-CIP51BACHL, integer, "Bachelor's degree in Health Professions And Related Programs."
-CIP52CERT1, integer, "Certificate of less than one academic year in Business, Management, Marketing, And Related Support Services."
-CIP52CERT2, integer, "Certificate of at least one but less than two academic years in Business, Management, Marketing, And Related Support Services."
-CIP52ASSOC, integer, "Associate degree in Business, Management, Marketing, And Related Support Services."
-CIP52CERT4, integer, "Award of at least two but less than four academic years in Business, Management, Marketing, And Related Support Services."
-CIP52BACHL, integer, "Bachelor's degree in Business, Management, Marketing, And Related Support Services."
-CIP54CERT1, integer, "Certificate of less than one academic year in History."
-CIP54CERT2, integer, "Certificate of at least one but less than two academic years in History."
-CIP54ASSOC, integer, "Associate degree in History."
-CIP54CERT4, integer, "Award of at least two but less than four academic years in History."
-CIP54BACHL, integer, "Bachelor's degree in History."
-DISTANCEONLY, integer, "Flag for distance-education-only education"
-UGDS, integer, "Enrollment of undergraduate certificate/degree-seeking students"
-UG, integer, "Enrollment of all undergraduate students"
-UGDS_WHITE, float, "Total share of enrollment of undergraduate degree-seeking students who are white"
-UGDS_BLACK, float, "Total share of enrollment of undergraduate degree-seeking students who are black"
-UGDS_HISP, float, "Total share of enrollment of undergraduate degree-seeking students who are Hispanic"
-UGDS_ASIAN, float, "Total share of enrollment of undergraduate degree-seeking students who are Asian"
-UGDS_AIAN, float, "Total share of enrollment of undergraduate degree-seeking students who are American Indian/Alaska Native"
-UGDS_NHPI, float, "Total share of enrollment of undergraduate degree-seeking students who are Native Hawaiian/Pacific Islander"
-UGDS_2MOR, float, "Total share of enrollment of undergraduate degree-seeking students who are two or more races"
-UGDS_NRA, float, "Total share of enrollment of undergraduate degree-seeking students who are non-resident aliens"
-UGDS_UNKN, float, "Total share of enrollment of undergraduate degree-seeking students whose race is unknown"
-UGDS_WHITENH, float, "Total share of enrollment of undergraduate degree-seeking students who are white non-Hispanic"
-UGDS_BLACKNH, float, "Total share of enrollment of undergraduate degree-seeking students who are black non-Hispanic"
-UGDS_API, float, "Total share of enrollment of undergraduate degree-seeking students who are Asian/Pacific Islander"
-UGDS_AIANOLD, float, "Total share of enrollment of undergraduate degree-seeking students who are American Indian/Alaska Native"
-UGDS_HISPOLD, float, "Total share of enrollment of undergraduate degree-seeking students who are Hispanic"
-UG_NRA, float, "Total share of enrollment of undergraduate students who are non-resident aliens"
-UG_UNKN, float, "Total share of enrollment of undergraduate students whose race is unknown"
-UG_WHITENH, float, "Total share of enrollment of undergraduate students who are white non-Hispanic"
-UG_BLACKNH, float, "Total share of enrollment of undergraduate students who are black non-Hispanic"
-UG_API, float, "Total share of enrollment of undergraduate students who are Asian/Pacific Islander"
-UG_AIANOLD, float, "Total share of enrollment of undergraduate students who are American Indian/Alaska Native"
-UG_HISPOLD, float, "Total share of enrollment of undergraduate students who are Hispanic"
-PPTUG_EF, float, "Share of undergraduate, degree-/certificate-seeking students who are part-time"
-PPTUG_EF2, float, "Share of undergraduate, degree-/certificate-seeking students who are part-time"
-CURROPER, integer, "Flag for currently operating institution, 0=closed, 1=operating"
-NPT4_PUB, integer, "Average net price for Title IV institutions (public institutions)"
-NPT4_PRIV, integer, "Average net price for Title IV institutions (private for-profit and nonprofit institutions)"
-NPT4_PROG, integer, "Average net price for the largest program at the institution for program-year institutions"
-NPT4_OTHER, integer, "Average net price for the largest program at the institution for schools on ""other"" academic year calendars"
-NPT41_PUB, integer, "Average net price for $0-$30,000 family income (public institutions)"
-NPT42_PUB, integer, "Average net price for $30,001-$48,000 family income (public institutions)"
-NPT43_PUB, integer, "Average net price for $48,001-$75,000 family income (public institutions)"
-NPT44_PUB, integer, "Average net price for $75,001-$110,000 family income (public institutions)"
-NPT45_PUB, integer, "Average net price for $110,000+ family income (public institutions)"
-NPT41_PRIV, integer, "Average net price for $0-$30,000 family income (private for-profit and nonprofit institutions)"
-NPT42_PRIV, integer, "Average net price for $30,001-$48,000 family income (private for-profit and nonprofit institutions)"
-NPT43_PRIV, integer, "Average net price for $48,001-$75,000 family income (private for-profit and nonprofit institutions)"
-NPT44_PRIV, integer, "Average net price for $75,001-$110,000 family income (private for-profit and nonprofit institutions)"
-NPT45_PRIV, integer, "Average net price for $110,000+ family income (private for-profit and nonprofit institutions)"
-NPT41_PROG, integer, "Average net price for $0-$30,000 family income (program-year institutions)"
-NPT42_PROG, integer, "Average net price for $30,001-$48,000 family income (program-year institutions)"
-NPT43_PROG, integer, "Average net price for $48,001-$75,000 family income (program-year institutions)"
-NPT44_PROG, integer, "Average net price for $75,001-$110,000 family income (program-year institutions)"
-NPT45_PROG, integer, "Average net price for $110,000+ family income (program-year institutions)"
-NPT41_OTHER, integer, "Average net price for $0-$30,000 family income (other academic calendar institutions)"
-NPT42_OTHER, integer, "Average net price for $30,001-$48,000 family income (other academic calendar institutions)"
-NPT43_OTHER, integer, "Average net price for $48,001-$75,000 family income (other academic calendar institutions)"
-NPT44_OTHER, integer, "Average net price for $75,001-$110,000 family income (other academic calendar institutions)"
-NPT45_OTHER, integer, "Average net price for $110,000+ family income (other academic calendar institutions)"
-NPT4_048_PUB, integer, "Average net price for $0-$48,000 family income (public institutions)"
-NPT4_048_PRIV, integer, "Average net price for $0-$48,000 family income (private for-profit and nonprofit institutions)"
-NPT4_048_PROG, integer, "Average net price for $0-$48,000 family income (program-year institutions)"
-NPT4_048_OTHER, integer, "Average net price for $0-$48,000 family income (other academic calendar institutions)"
-NPT4_3075_PUB, integer, "Average net price for $30,001-$75,000 family income (public institutions)"
-NPT4_3075_PRIV, integer, "Average net price for $30,001-$75,000 family income (private for-profit and nonprofit institutions)"
-NPT4_75UP_PUB, integer, "Average net price for $75,000+ family income (public institutions)"
-NPT4_75UP_PRIV, integer, "Average net price for $75,000+ family income (private for-profit and nonprofit institutions)"
-NPT4_3075_PROG, integer, "Average net price for $30,001-$75,000 family income (program-year institutions)"
-NPT4_3075_OTHER, integer, "Average net price for $30,001-$75,000 family income (other academic calendar institutions)"
-NPT4_75UP_PROG, integer, "Average net price for $75,000+ family income (program-year institutions)"
-NPT4_75UP_OTHER, integer, "Average net price for $75,000+ family income (other academic calendar institutions)"
-NUM4_PUB, integer, "Number of Title IV students (public institutions)"
-NUM4_PRIV, integer, "Number of Title IV students (private for-profit and nonprofit institutions)"
-NUM4_PROG, integer, "Number of Title IV students (program-year institutions)"
-NUM4_OTHER, integer, "Number of Title IV students (other academic calendar institutions)"
-NUM41_PUB, integer, "Number of Title IV students, $0-$30,000 family income (public institutions)"
-NUM42_PUB, integer, "Number of Title IV students, $30,001-$48,000 family income (public institutions)"
-NUM43_PUB, integer, "Number of Title IV students, $48,001-$75,000 family income (public institutions)"
-NUM44_PUB, integer, "Number of Title IV students, $75,001-$110,000 family income (public institutions)"
-NUM45_PUB, integer, "Number of Title IV students, $110,000+ family income (public institutions)"
-NUM41_PRIV, integer, "Number of Title IV students, $0-$30,000 family income (private for-profit and nonprofit institutions)"
-NUM42_PRIV, integer, "Number of Title IV students, $30,001-$48,000 family income (private for-profit and nonprofit institutions)"
-NUM43_PRIV, integer, "Number of Title IV students, $48,001-$75,000 family income (private for-profit and nonprofit institutions)"
-NUM44_PRIV, integer, "Number of Title IV students, $75,001-$110,000 family income (private for-profit and nonprofit institutions)"
-NUM45_PRIV, integer, "Number of Title IV students, $110,000+ family income (private for-profit and nonprofit institutions)"
-NUM41_PROG, integer, "Number of Title IV students, $0-$30,000 family income (program-year institutions)"
-NUM42_PROG, integer, "Number of Title IV students, $30,001-$48,000 family income (program-year institutions)"
-NUM43_PROG, integer, "Number of Title IV students, $48,001-$75,000 family income (program-year institutions)"
-NUM44_PROG, integer, "Number of Title IV students, $75,001-$110,000 family income (program-year institutions)"
-NUM45_PROG, integer, "Number of Title IV students, $110,000+ family income (program-year institutions)"
-NUM41_OTHER, integer, "Number of Title IV students, $0-$30,000 family income (other academic calendar institutions)"
-NUM42_OTHER, integer, "Number of Title IV students, $30,001-$48,000 family income (other academic calendar institutions)"
-NUM43_OTHER, integer, "Number of Title IV students, $48,001-$75,000 family income (other academic calendar institutions)"
-NUM44_OTHER, integer, "Number of Title IV students, $75,001-$110,000 family income (other academic calendar institutions)"
-NUM45_OTHER, integer, "Number of Title IV students, $110,000+ family income (other academic calendar institutions)"
-COSTT4_A, integer, "Average cost of attendance (academic year institutions)"
-COSTT4_P, integer, "Average cost of attendance (program-year institutions)"
-TUITIONFEE_IN, integer, "In-state tuition and fees"
-TUITIONFEE_OUT, integer, "Out-of-state tuition and fees"
-TUITIONFEE_PROG, integer, "Tuition and fees for program-year institutions"
-TUITFTE, integer, "Net tuition revenue per full-time equivalent student"
-INEXPFTE, integer, "Instructional expenditures per full-time equivalent student"
-AVGFACSAL, integer, "Average faculty salary"
-PFTFAC, float, "Proportion of faculty that is full-time"
-PCTPELL, float, "Percentage of undergraduates who receive a Pell Grant"
-C150_4, float, "Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion)"
-C150_L4, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion)"
-C150_4_POOLED, float, "Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion), pooled for two year rolling averages"
-C150_L4_POOLED, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion), pooled for two year rolling averages"
-POOLYRS, integer, "Years used for rolling averages of completion rate C150_[4/L4]_POOLED and transfer rate TRANS_[4/L4]_POOLED"
-PFTFTUG1_EF, float, "Share of entering undergraduate students who are first-time, full-time degree-/certificate-seeking undergraduate students"
-D150_4, integer, "Adjusted cohort count for completion rate at four-year institutions (denominator of 150% completion rate)"
-D150_L4, integer, "Adjusted cohort count for completion rate at less-than-four-year institutions (denominator of 150% completion rate)"
-D150_4_POOLED, integer, "Adjusted cohort count for completion rate at four-year institutions (denominator of 150% completion rate), pooled for two-year rolling averages"
-D150_L4_POOLED, integer, "Adjusted cohort count for completion rate at less-than-four-year institutions (denominator of 150% completion rate), pooled for two-year rolling averages"
-C150_4_WHITE, float, "Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for white students"
-C150_4_BLACK, float, "Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for black students"
-C150_4_HISP, float, "Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for Hispanic students"
-C150_4_ASIAN, float, "Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for Asian students"
-C150_4_AIAN, float, "Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for American Indian/Alaska Native students"
-C150_4_NHPI, float, "Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for Native Hawaiian/Pacific Islander students"
-C150_4_2MOR, float, "Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for students of two-or-more-races"
-C150_4_NRA, float, "Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for non-resident alien students"
-C150_4_UNKN, float, "Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for students whose race is unknown"
-C150_4_WHITENH, float, "Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for white students"
-C150_4_BLACKNH, float, "Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for black students"
-C150_4_API, float, "Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for Asian/Pacific Islander students"
-C150_4_AIANOLD, float, "Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for American Indian/Alaska Native students"
-C150_4_HISPOLD, float, "Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for Hispanic students"
-C150_L4_WHITE, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for white students"
-C150_L4_BLACK, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for black students"
-C150_L4_HISP, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for Hispanic students"
-C150_L4_ASIAN, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for Asian students"
-C150_L4_AIAN, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for American Indian/Alaska Native students"
-C150_L4_NHPI, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for Native Hawaiian/Pacific Islander students"
-C150_L4_2MOR, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for students of two-or-more-races"
-C150_L4_NRA, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for non-resident alien students"
-C150_L4_UNKN, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for students whose race is unknown"
-C150_L4_WHITENH, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for white non-Hispanic students"
-C150_L4_BLACKNH, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for black non-Hispanic students"
-C150_L4_API, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for Asian/Pacific Islander students"
-C150_L4_AIANOLD, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for American Indian/Alaska Native students"
-C150_L4_HISPOLD, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for Hispanic students"
-C200_4, float, "Completion rate for first-time, full-time bachelor's-degree-seeking students at four-year institutions (200% of expected time to completion)"
-C200_L4, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (200% of expected time to completion)"
-D200_4, float, "Adjusted cohort count for completion rate at four-year institutions (denominator of 200% completion rate)"
-D200_L4, float, "Adjusted cohort count for completion rate at less-than-four-year institutions (denominator of 200% completion rate)"
-RET_FT4, float, "First-time, full-time student retention rate at four-year institutions"
-RET_FTL4, float, "First-time, full-time student retention rate at less-than-four-year institutions"
-RET_PT4, float, "First-time, part-time student retention rate at four-year institutions"
-RET_PTL4, float, "First-time, part-time student retention rate at less-than-four-year institutions"
-C200_4_POOLED, float, "Completion rate for first-time, full-time bachelor's-degree-seeking students at four-year institutions (200% of expected time to completion), pooled for two year rolling averages"
-C200_L4_POOLED, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (200% of expected time to completion), pooled for two year rolling averages"
-POOLYRS200, integer, "Years used for rolling averages of completion rate C200_[4/L4]_POOLED"
-D200_4_POOLED, float, "Adjusted cohort count for completion rate at four-year institutions (denominator of 200% completion rate), pooled for two-year rolling averages"
-D200_L4_POOLED, float, "Adjusted cohort count for completion rate at less-than-four-year institutions (denominator of 200% completion rate), pooled for two-year rolling averages"
-PCTFLOAN, float, "Percent of all undergraduate students receiving a federal student loan"
-UG25ABV, float, "Percentage of undergraduates aged 25 and above"
-CDR2, float, "Two-year cohort default rate"
-CDR3, float, "Three-year cohort default rate"
-DEATH_YR2_RT, float, "Percent died within 2 years at original institution"
-COMP_ORIG_YR2_RT, float, "Percent completed within 2 years at original institution"
-COMP_4YR_TRANS_YR2_RT, float, "Percent who transferred to a 4-year institution and completed within 2 years"
-COMP_2YR_TRANS_YR2_RT, float, "Percent who transferred to a 2-year institution and completed within 2 years"
-WDRAW_ORIG_YR2_RT, float, "Percent withdrawn from original institution within 2 years"
-WDRAW_4YR_TRANS_YR2_RT, float, "Percent who transferred to a 4-year institution and withdrew within 2 years"
-WDRAW_2YR_TRANS_YR2_RT, float, "Percent who transferred to a 2-year institution and withdrew within 2 years"
-ENRL_ORIG_YR2_RT, float, "Percent still enrolled at original institution within 2 years"
-ENRL_4YR_TRANS_YR2_RT, float, "Percent who transferred to a 4-year institution and were still enrolled within 2 years"
-ENRL_2YR_TRANS_YR2_RT, float, "Percent who transferred to a 2-year institution and were still enrolled within 2 years"
-UNKN_ORIG_YR2_RT, float, "Percent with status unknown within 2 years at original institution"
-UNKN_4YR_TRANS_YR2_RT, float, "Percent who transferred to a 4-year institution and whose status is unknown within 2 years"
-UNKN_2YR_TRANS_YR2_RT, float, "Percent who transferred to a 2-year institution and whose status is unknown within 2 years"
-LO_INC_DEATH_YR2_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who died within 2 years at original institution"
-LO_INC_COMP_ORIG_YR2_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who completed within 2 years at original institution"
-LO_INC_COMP_4YR_TRANS_YR2_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and completed within 2 years"
-LO_INC_COMP_2YR_TRANS_YR2_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and completed within 2 years"
-LO_INC_WDRAW_ORIG_YR2_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students withdrawn from original institution within 2 years"
-LO_INC_WDRAW_4YR_TRANS_YR2_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 2 years"
-LO_INC_WDRAW_2YR_TRANS_YR2_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 2 years"
-LO_INC_ENRL_ORIG_YR2_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who were still enrolled at original institution within 2 years"
-LO_INC_ENRL_4YR_TRANS_YR2_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 2 years"
-LO_INC_ENRL_2YR_TRANS_YR2_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 2 years"
-LO_INC_UNKN_ORIG_YR2_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students with status unknown within 2 years at original institution"
-LO_INC_UNKN_4YR_TRANS_YR2_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 2 years"
-LO_INC_UNKN_2YR_TRANS_YR2_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 2 years"
-MD_INC_DEATH_YR2_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who died within 2 years at original institution"
-MD_INC_COMP_ORIG_YR2_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who completed within 2 years at original institution"
-MD_INC_COMP_4YR_TRANS_YR2_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and completed within 2 years"
-MD_INC_COMP_2YR_TRANS_YR2_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and completed within 2 years"
-MD_INC_WDRAW_ORIG_YR2_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students withdrawn from original institution within 2 years"
-MD_INC_WDRAW_4YR_TRANS_YR2_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 2 years"
-MD_INC_WDRAW_2YR_TRANS_YR2_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 2 years"
-MD_INC_ENRL_ORIG_YR2_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who were still enrolled at original institution within 2 years"
-MD_INC_ENRL_4YR_TRANS_YR2_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 2 years"
-MD_INC_ENRL_2YR_TRANS_YR2_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 2 years"
-MD_INC_UNKN_ORIG_YR2_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students with status unknown within 2 years at original institution"
-MD_INC_UNKN_4YR_TRANS_YR2_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 2 years"
-MD_INC_UNKN_2YR_TRANS_YR2_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 2 years"
-HI_INC_DEATH_YR2_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who died within 2 years at original institution"
-HI_INC_COMP_ORIG_YR2_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who completed within 2 years at original institution"
-HI_INC_COMP_4YR_TRANS_YR2_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and completed within 2 years"
-HI_INC_COMP_2YR_TRANS_YR2_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and completed within 2 years"
-HI_INC_WDRAW_ORIG_YR2_RT, float, "Percent of high-income (above $75,000 in nominal family income) students withdrawn from original institution within 2 years"
-HI_INC_WDRAW_4YR_TRANS_YR2_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 2 years"
-HI_INC_WDRAW_2YR_TRANS_YR2_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 2 years"
-HI_INC_ENRL_ORIG_YR2_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who were still enrolled at original institution within 2 years"
-HI_INC_ENRL_4YR_TRANS_YR2_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 2 years"
-HI_INC_ENRL_2YR_TRANS_YR2_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 2 years"
-HI_INC_UNKN_ORIG_YR2_RT, float, "Percent of high-income (above $75,000 in nominal family income) students with status unknown within 2 years at original institution"
-HI_INC_UNKN_4YR_TRANS_YR2_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 2 years"
-HI_INC_UNKN_2YR_TRANS_YR2_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 2 years"
-DEP_DEATH_YR2_RT, float, "Percent of dependent students who died within 2 years at original institution"
-DEP_COMP_ORIG_YR2_RT, float, "Percent of dependent students who completed within 2 years at original institution"
-DEP_COMP_4YR_TRANS_YR2_RT, float, "Percent of dependent students who transferred to a 4-year institution and completed within 2 years"
-DEP_COMP_2YR_TRANS_YR2_RT, float, "Percent of dependent students who transferred to a 2-year institution and completed within 2 years"
-DEP_WDRAW_ORIG_YR2_RT, float, "Percent of dependent students withdrawn from original institution within 2 years"
-DEP_WDRAW_4YR_TRANS_YR2_RT, float, "Percent of dependent students who transferred to a 4-year institution and withdrew within 2 years"
-DEP_WDRAW_2YR_TRANS_YR2_RT, float, "Percent of dependent students who transferred to a 2-year institution and withdrew within 2 years"
-DEP_ENRL_ORIG_YR2_RT, float, "Percent of dependent students who were still enrolled at original institution within 2 years"
-DEP_ENRL_4YR_TRANS_YR2_RT, float, "Percent of dependent students who transferred to a 4-year institution and were still enrolled within 2 years"
-DEP_ENRL_2YR_TRANS_YR2_RT, float, "Percent of dependent students who transferred to a 2-year institution and were still enrolled within 2 years"
-DEP_UNKN_ORIG_YR2_RT, float, "Percent of dependent students with status unknown within 2 years at original institution"
-DEP_UNKN_4YR_TRANS_YR2_RT, float, "Percent of dependent students who transferred to a 4-year institution and whose status is unknown within 2 years"
-DEP_UNKN_2YR_TRANS_YR2_RT, float, "Percent of dependent students who transferred to a 2-year institution and whose status is unknown within 2 years"
-IND_DEATH_YR2_RT, float, "Percent of independent students who died within 2 years at original institution"
-IND_COMP_ORIG_YR2_RT, float, "Percent of independent students who completed within 2 years at original institution"
-IND_COMP_4YR_TRANS_YR2_RT, float, "Percent of independent students who transferred to a 4-year institution and completed within 2 years"
-IND_COMP_2YR_TRANS_YR2_RT, float, "Percent of independent students who transferred to a 2-year institution and completed within 2 years"
-IND_WDRAW_ORIG_YR2_RT, float, "Percent of independent students withdrawn from original institution within 2 years"
-IND_WDRAW_4YR_TRANS_YR2_RT, float, "Percent of independent students who transferred to a 4-year institution and withdrew within 2 years"
-IND_WDRAW_2YR_TRANS_YR2_RT, float, "Percent of independent students who transferred to a 2-year institution and withdrew within 2 years"
-IND_ENRL_ORIG_YR2_RT, float, "Percent of independent students who were still enrolled at original institution within 2 years"
-IND_ENRL_4YR_TRANS_YR2_RT, float, "Percent of independent students who transferred to a 4-year institution and were still enrolled within 2 years"
-IND_ENRL_2YR_TRANS_YR2_RT, float, "Percent of independent students who transferred to a 2-year institution and were still enrolled within 2 years"
-IND_UNKN_ORIG_YR2_RT, float, "Percent of independent students with status unknown within 2 years at original institution"
-IND_UNKN_4YR_TRANS_YR2_RT, float, "Percent of independent students who transferred to a 4-year institution and whose status is unknown within 2 years"
-IND_UNKN_2YR_TRANS_YR2_RT, float, "Percent of independent students who transferred to a 2-year institution and whose status is unknown within 2 years"
-FEMALE_DEATH_YR2_RT, float, "Percent of female students who died within 2 years at original institution"
-FEMALE_COMP_ORIG_YR2_RT, float, "Percent of female students who completed within 2 years at original institution"
-FEMALE_COMP_4YR_TRANS_YR2_RT, float, "Percent of female students who transferred to a 4-year institution and completed within 2 years"
-FEMALE_COMP_2YR_TRANS_YR2_RT, float, "Percent of female students who transferred to a 2-year institution and completed within 2 years"
-FEMALE_WDRAW_ORIG_YR2_RT, float, "Percent of female students withdrawn from original institution within 2 years"
-FEMALE_WDRAW_4YR_TRANS_YR2_RT, float, "Percent of female students who transferred to a 4-year institution and withdrew within 2 years"
-FEMALE_WDRAW_2YR_TRANS_YR2_RT, float, "Percent of female students who transferred to a 2-year institution and withdrew within 2 years"
-FEMALE_ENRL_ORIG_YR2_RT, float, "Percent of female students who were still enrolled at original institution within 2 years"
-FEMALE_ENRL_4YR_TRANS_YR2_RT, float, "Percent of female students who transferred to a 4-year institution and were still enrolled within 2 years"
-FEMALE_ENRL_2YR_TRANS_YR2_RT, float, "Percent of female students who transferred to a 2-year institution and were still enrolled within 2 years"
-FEMALE_UNKN_ORIG_YR2_RT, float, "Percent of female students with status unknown within 2 years at original institution"
-FEMALE_UNKN_4YR_TRANS_YR2_RT, float, "Percent of female students who transferred to a 4-year institution and whose status is unknown within 2 years"
-FEMALE_UNKN_2YR_TRANS_YR2_RT, float, "Percent of female students who transferred to a 2-year institution and whose status is unknown within 2 years"
-MALE_DEATH_YR2_RT, float, "Percent of male students who died within 2 years at original institution"
-MALE_COMP_ORIG_YR2_RT, float, "Percent of male students who completed within 2 years at original institution"
-MALE_COMP_4YR_TRANS_YR2_RT, float, "Percent of male students who transferred to a 4-year institution and completed within 2 years"
-MALE_COMP_2YR_TRANS_YR2_RT, float, "Percent of male students who transferred to a 2-year institution and completed within 2 years"
-MALE_WDRAW_ORIG_YR2_RT, float, "Percent of male students withdrawn from original institution within 2 years"
-MALE_WDRAW_4YR_TRANS_YR2_RT, float, "Percent of male students who transferred to a 4-year institution and withdrew within 2 years"
-MALE_WDRAW_2YR_TRANS_YR2_RT, float, "Percent of male students who transferred to a 2-year institution and withdrew within 2 years"
-MALE_ENRL_ORIG_YR2_RT, float, "Percent of male students who were still enrolled at original institution within 2 years"
-MALE_ENRL_4YR_TRANS_YR2_RT, float, "Percent of male students who transferred to a 4-year institution and were still enrolled within 2 years"
-MALE_ENRL_2YR_TRANS_YR2_RT, float, "Percent of male students who transferred to a 2-year institution and were still enrolled within 2 years"
-MALE_UNKN_ORIG_YR2_RT, float, "Percent of male students with status unknown within 2 years at original institution"
-MALE_UNKN_4YR_TRANS_YR2_RT, float, "Percent of male students who transferred to a 4-year institution and whose status is unknown within 2 years"
-MALE_UNKN_2YR_TRANS_YR2_RT, float, "Percent of male students who transferred to a 2-year institution and whose status is unknown within 2 years"
-PELL_DEATH_YR2_RT, float, "Percent of students who received a Pell Grant at the institution and who died within 2 years at original institution"
-PELL_COMP_ORIG_YR2_RT, float, "Percent of students who received a Pell Grant at the institution and who completed in 2 years at original institution"
-PELL_COMP_4YR_TRANS_YR2_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and completed within 2 years"
-PELL_COMP_2YR_TRANS_YR2_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and completed within 2 years"
-PELL_WDRAW_ORIG_YR2_RT, float, "Percent of students who received a Pell Grant at the institution and withdrew from original institution within 2 years"
-PELL_WDRAW_4YR_TRANS_YR2_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and withdrew within 2 years"
-PELL_WDRAW_2YR_TRANS_YR2_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and withdrew within 2 years"
-PELL_ENRL_ORIG_YR2_RT, float, "Percent of students who received a Pell Grant at the institution and who were still enrolled at original institution within 2 years"
-PELL_ENRL_4YR_TRANS_YR2_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and were still enrolled within 2 years"
-PELL_ENRL_2YR_TRANS_YR2_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and were still enrolled within 2 years"
-PELL_UNKN_ORIG_YR2_RT, float, "Percent of students who received a Pell Grant at the institution and with status unknown within 2 years at original institution"
-PELL_UNKN_4YR_TRANS_YR2_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and whose status is unknown within 2 years"
-PELL_UNKN_2YR_TRANS_YR2_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and whose status is unknown within 2 years"
-NOPELL_DEATH_YR2_RT, float, "Percent of students who never received a Pell Grant at the institution and who died within 2 years at original institution"
-NOPELL_COMP_ORIG_YR2_RT, float, "Percent of students who never received a Pell Grant at the institution and who completed in 2 years at original institution"
-NOPELL_COMP_4YR_TRANS_YR2_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and completed within 2 years"
-NOPELL_COMP_2YR_TRANS_YR2_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and completed within 2 years"
-NOPELL_WDRAW_ORIG_YR2_RT, float, "Percent of students who never received a Pell Grant at the institution and withdrew from original institution within 2 years"
-NOPELL_WDRAW_4YR_TRANS_YR2_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and withdrew within 2 years"
-NOPELL_WDRAW_2YR_TRANS_YR2_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and withdrew within 2 years"
-NOPELL_ENRL_ORIG_YR2_RT, float, "Percent of students who never received a Pell Grant at the institution and who were still enrolled at original institution within 2 years"
-NOPELL_ENRL_4YR_TRANS_YR2_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and were still enrolled within 2 years"
-NOPELL_ENRL_2YR_TRANS_YR2_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and were still enrolled within 2 years"
-NOPELL_UNKN_ORIG_YR2_RT, float, "Percent of students who never received a Pell Grant at the institution and with status unknown within 2 years at original institution"
-NOPELL_UNKN_4YR_TRANS_YR2_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and whose status is unknown within 2 years"
-NOPELL_UNKN_2YR_TRANS_YR2_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and whose status is unknown within 2 years"
-LOAN_DEATH_YR2_RT, float, "Percent of students who received a federal loan at the institution and who died within 2 years at original institution"
-LOAN_COMP_ORIG_YR2_RT, float, "Percent of students who received a federal loan at the institution and who completed in 2 years at original institution"
-LOAN_COMP_4YR_TRANS_YR2_RT, float, "Percent of students who received a federel loan at the institution and who transferred to a 4-year institution and completed within 2 years"
-LOAN_COMP_2YR_TRANS_YR2_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and completed within 2 years"
-LOAN_WDRAW_ORIG_YR2_RT, float, "Percent of students who received a federal loan at the institution and withdrew from original institution within 2 years"
-LOAN_WDRAW_4YR_TRANS_YR2_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and withdrew within 2 years"
-LOAN_WDRAW_2YR_TRANS_YR2_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and withdrew within 2 years"
-LOAN_ENRL_ORIG_YR2_RT, float, "Percent of students who received a federal loan at the institution and who were still enrolled at original institution within 2 years"
-LOAN_ENRL_4YR_TRANS_YR2_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and were still enrolled within 2 years"
-LOAN_ENRL_2YR_TRANS_YR2_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and were still enrolled within 2 years"
-LOAN_UNKN_ORIG_YR2_RT, float, "Percent of students who received a federal loan at the institution and with status unknown within 2 years at original institution"
-LOAN_UNKN_4YR_TRANS_YR2_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and whose status is unknown within 2 years"
-LOAN_UNKN_2YR_TRANS_YR2_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and whose status is unknown within 2 years"
-NOLOAN_DEATH_YR2_RT, float, "Percent of students who never received a federal loan at the institution and who died within 2 years at original institution"
-NOLOAN_COMP_ORIG_YR2_RT, float, "Percent of students who never received a federal loan at the institution and who completed in 2 years at original institution"
-NOLOAN_COMP_4YR_TRANS_YR2_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and completed within 2 years"
-NOLOAN_COMP_2YR_TRANS_YR2_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and completed within 2 years"
-NOLOAN_WDRAW_ORIG_YR2_RT, float, "Percent of students who never received a federal loan at the institution and withdrew from original institution within 2 years"
-NOLOAN_WDRAW_4YR_TRANS_YR2_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and withdrew within 2 years"
-NOLOAN_WDRAW_2YR_TRANS_YR2_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and withdrew within 2 years"
-NOLOAN_ENRL_ORIG_YR2_RT, float, "Percent of students who never received a federal loan at the institution and who were still enrolled at original institution within 2 years"
-NOLOAN_ENRL_4YR_TRANS_YR2_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and were still enrolled within 2 years"
-NOLOAN_ENRL_2YR_TRANS_YR2_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and were still enrolled within 2 years"
-NOLOAN_UNKN_ORIG_YR2_RT, float, "Percent of students who never received a federal loan at the institution and with status unknown within 2 years at original institution"
-NOLOAN_UNKN_4YR_TRANS_YR2_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and whose status is unknown within 2 years"
-NOLOAN_UNKN_2YR_TRANS_YR2_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and whose status is unknown within 2 years"
-FIRSTGEN_DEATH_YR2_RT, float, "Percent of first-generation students who died within 2 years at original institution"
-FIRSTGEN_COMP_ORIG_YR2_RT, float, "Percent of first-generation students who completed within 2 years at original institution"
-FIRSTGEN_COMP_4YR_TRANS_YR2_RT, float, "Percent of first-generation students who transferred to a 4-year institution and completed within 2 years"
-FIRSTGEN_COMP_2YR_TRANS_YR2_RT, float, "Percent of first-generation students who transferred to a 2-year institution and completed within 2 years"
-FIRSTGEN_WDRAW_ORIG_YR2_RT, float, "Percent of first-generation students withdrawn from original institution within 2 years"
-FIRSTGEN_WDRAW_4YR_TRANS_YR2_RT, float, "Percent of first-generation students who transferred to a 4-year institution and withdrew within 2 years"
-FIRSTGEN_WDRAW_2YR_TRANS_YR2_RT, float, "Percent of first-generation students who transferred to a 2-year institution and withdrew within 2 years"
-FIRSTGEN_ENRL_ORIG_YR2_RT, float, "Percent of first-generation students who were still enrolled at original institution within 2 years"
-FIRSTGEN_ENRL_4YR_TRANS_YR2_RT, float, "Percent of first-generation students who transferred to a 4-year institution and were still enrolled within 2 years"
-FIRSTGEN_ENRL_2YR_TRANS_YR2_RT, float, "Percent of first-generation students who transferred to a 2-year institution and were still enrolled within 2 years"
-FIRSTGEN_UNKN_ORIG_YR2_RT, float, "Percent of first-generation students with status unknown within 2 years at original institution"
-FIRSTGEN_UNKN_4YR_TRANS_YR2_RT, float, "Percent of first-generation students who transferred to a 4-year institution and whose status is unknown within 2 years"
-FIRSTGEN_UNKN_2YR_TRANS_YR2_RT, float, "Percent of first-generation students who transferred to a 2-year institution and whose status is unknown within 2 years"
-NOT1STGEN_DEATH_YR2_RT, float, "Percent of not-first-generation students who died within 2 years at original institution"
-NOT1STGEN_COMP_ORIG_YR2_RT, float, "Percent of not-first-generation students who completed within 2 years at original institution"
-NOT1STGEN_COMP_4YR_TRANS_YR2_RT, float, "Percent of not-first-generation students who transferred to a 4-year institution and completed within 2 years"
-NOT1STGEN_COMP_2YR_TRANS_YR2_RT, float, "Percent of not-first-generation students who transferred to a 2-year institution and completed within 2 years"
-NOT1STGEN_WDRAW_ORIG_YR2_RT, float, "Percent of not-first-generation students withdrawn from original institution within 2 years"
-NOT1STGEN_WDRAW_4YR_TRANS_YR2_RT, float, "Percent of not-first-generation students who transferred to a 4-year institution and withdrew within 2 years"
-NOT1STGEN_WDRAW_2YR_TRANS_YR2_RT, float, "Percent of not-first-generation students who transferred to a 2-year institution and withdrew within 2 years"
-NOT1STGEN_ENRL_ORIG_YR2_RT, float, "Percent of not-first-generation students who were still enrolled at original institution within 2 years"
-NOT1STGEN_ENRL_4YR_TRANS_YR2_RT, float, "Percent of not-first-generation students who transferred to a 4-year institution and were still enrolled within 2 years"
-NOT1STGEN_ENRL_2YR_TRANS_YR2_RT, float, "Percent of not-first-generation students who transferred to a 2-year institution and were still enrolled within 2 years"
-NOT1STGEN_UNKN_ORIG_YR2_RT, float, "Percent of not-first-generation students with status unknown within 2 years at original institution"
-NOT1STGEN_UNKN_4YR_TRANS_YR2_RT, float, "Percent of not-first-generation students who transferred to a 4-year institution and whose status is unknown within 2 years"
-NOT1STGEN_UNKN_2YR_TRANS_YR2_RT, float, "Percent of not-first-generation students who transferred to a 2-year institution and whose status is unknown within 2 years"
-DEATH_YR3_RT, float, "Percent died within 3 years at original institution"
-COMP_ORIG_YR3_RT, float, "Percent completed within 3 years at original institution"
-COMP_4YR_TRANS_YR3_RT, float, "Percent who transferred to a 4-year institution and completed within 3 years"
-COMP_2YR_TRANS_YR3_RT, float, "Percent who transferred to a 2-year institution and completed within 3 years"
-WDRAW_ORIG_YR3_RT, float, "Percent withdrawn from original institution within 3 years"
-WDRAW_4YR_TRANS_YR3_RT, float, "Percent who transferred to a 4-year institution and withdrew within 3 years"
-WDRAW_2YR_TRANS_YR3_RT, float, "Percent who transferred to a 2-year institution and withdrew within 3 years"
-ENRL_ORIG_YR3_RT, float, "Percent still enrolled at original institution within 3 years"
-ENRL_4YR_TRANS_YR3_RT, float, "Percent who transferred to a 4-year institution and were still enrolled within 3 years"
-ENRL_2YR_TRANS_YR3_RT, float, "Percent who transferred to a 2-year institution and were still enrolled within 3 years"
-UNKN_ORIG_YR3_RT, float, "Percent with status unknown within 3 years at original institution"
-UNKN_4YR_TRANS_YR3_RT, float, "Percent who transferred to a 4-year institution and whose status is unknown within 3 years"
-UNKN_2YR_TRANS_YR3_RT, float, "Percent who transferred to a 2-year institution and whose status is unknown within 3 years"
-LO_INC_DEATH_YR3_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who died within 3 years at original institution"
-LO_INC_COMP_ORIG_YR3_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who completed within 3 years at original institution"
-LO_INC_COMP_4YR_TRANS_YR3_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and completed within 3 years"
-LO_INC_COMP_2YR_TRANS_YR3_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and completed within 3 years"
-LO_INC_WDRAW_ORIG_YR3_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students withdrawn from original institution within 3 years"
-LO_INC_WDRAW_4YR_TRANS_YR3_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 3 years"
-LO_INC_WDRAW_2YR_TRANS_YR3_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 3 years"
-LO_INC_ENRL_ORIG_YR3_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who were still enrolled at original institution within 3 years"
-LO_INC_ENRL_4YR_TRANS_YR3_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 3 years"
-LO_INC_ENRL_2YR_TRANS_YR3_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 3 years"
-LO_INC_UNKN_ORIG_YR3_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students with status unknown within 3 years at original institution"
-LO_INC_UNKN_4YR_TRANS_YR3_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 3 years"
-LO_INC_UNKN_2YR_TRANS_YR3_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 3 years"
-MD_INC_DEATH_YR3_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who died within 3 years at original institution"
-MD_INC_COMP_ORIG_YR3_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who completed within 3 years at original institution"
-MD_INC_COMP_4YR_TRANS_YR3_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and completed within 3 years"
-MD_INC_COMP_2YR_TRANS_YR3_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and completed within 3 years"
-MD_INC_WDRAW_ORIG_YR3_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students withdrawn from original institution within 3 years"
-MD_INC_WDRAW_4YR_TRANS_YR3_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 3 years"
-MD_INC_WDRAW_2YR_TRANS_YR3_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 3 years"
-MD_INC_ENRL_ORIG_YR3_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who were still enrolled at original institution within 3 years"
-MD_INC_ENRL_4YR_TRANS_YR3_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 3 years"
-MD_INC_ENRL_2YR_TRANS_YR3_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 3 years"
-MD_INC_UNKN_ORIG_YR3_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students with status unknown within 3 years at original institution"
-MD_INC_UNKN_4YR_TRANS_YR3_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 3 years"
-MD_INC_UNKN_2YR_TRANS_YR3_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 3 years"
-HI_INC_DEATH_YR3_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who died within 3 years at original institution"
-HI_INC_COMP_ORIG_YR3_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who completed within 3 years at original institution"
-HI_INC_COMP_4YR_TRANS_YR3_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and completed within 3 years"
-HI_INC_COMP_2YR_TRANS_YR3_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and completed within 3 years"
-HI_INC_WDRAW_ORIG_YR3_RT, float, "Percent of high-income (above $75,000 in nominal family income) students withdrawn from original institution within 3 years"
-HI_INC_WDRAW_4YR_TRANS_YR3_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 3 years"
-HI_INC_WDRAW_2YR_TRANS_YR3_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 3 years"
-HI_INC_ENRL_ORIG_YR3_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who were still enrolled at original institution within 3 years"
-HI_INC_ENRL_4YR_TRANS_YR3_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 3 years"
-HI_INC_ENRL_2YR_TRANS_YR3_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 3 years"
-HI_INC_UNKN_ORIG_YR3_RT, float, "Percent of high-income (above $75,000 in nominal family income) students with status unknown within 3 years at original institution"
-HI_INC_UNKN_4YR_TRANS_YR3_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 3 years"
-HI_INC_UNKN_2YR_TRANS_YR3_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 3 years"
-DEP_DEATH_YR3_RT, float, "Percent of dependent students who died within 3 years at original institution"
-DEP_COMP_ORIG_YR3_RT, float, "Percent of dependent students who completed within 3 years at original institution"
-DEP_COMP_4YR_TRANS_YR3_RT, float, "Percent of dependent students who transferred to a 4-year institution and completed within 3 years"
-DEP_COMP_2YR_TRANS_YR3_RT, float, "Percent of dependent students who transferred to a 2-year institution and completed within 3 years"
-DEP_WDRAW_ORIG_YR3_RT, float, "Percent of dependent students withdrawn from original institution within 3 years"
-DEP_WDRAW_4YR_TRANS_YR3_RT, float, "Percent of dependent students who transferred to a 4-year institution and withdrew within 3 years"
-DEP_WDRAW_2YR_TRANS_YR3_RT, float, "Percent of dependent students who transferred to a 2-year institution and withdrew within 3 years"
-DEP_ENRL_ORIG_YR3_RT, float, "Percent of dependent students who were still enrolled at original institution within 3 years"
-DEP_ENRL_4YR_TRANS_YR3_RT, float, "Percent of dependent students who transferred to a 4-year institution and were still enrolled within 3 years"
-DEP_ENRL_2YR_TRANS_YR3_RT, float, "Percent of dependent students who transferred to a 2-year institution and were still enrolled within 3 years"
-DEP_UNKN_ORIG_YR3_RT, float, "Percent of dependent students with status unknown within 3 years at original institution"
-DEP_UNKN_4YR_TRANS_YR3_RT, float, "Percent of dependent students who transferred to a 4-year institution and whose status is unknown within 3 years"
-DEP_UNKN_2YR_TRANS_YR3_RT, float, "Percent of dependent students who transferred to a 2-year institution and whose status is unknown within 3 years"
-IND_DEATH_YR3_RT, float, "Percent of independent students who died within 3 years at original institution"
-IND_COMP_ORIG_YR3_RT, float, "Percent of independent students who completed within 3 years at original institution"
-IND_COMP_4YR_TRANS_YR3_RT, float, "Percent of independent students who transferred to a 4-year institution and completed within 3 years"
-IND_COMP_2YR_TRANS_YR3_RT, float, "Percent of independent students who transferred to a 2-year institution and completed within 3 years"
-IND_WDRAW_ORIG_YR3_RT, float, "Percent of independent students withdrawn from original institution within 3 years"
-IND_WDRAW_4YR_TRANS_YR3_RT, float, "Percent of independent students who transferred to a 4-year institution and withdrew within 3 years"
-IND_WDRAW_2YR_TRANS_YR3_RT, float, "Percent of independent students who transferred to a 2-year institution and withdrew within 3 years"
-IND_ENRL_ORIG_YR3_RT, float, "Percent of independent students who were still enrolled at original institution within 3 years"
-IND_ENRL_4YR_TRANS_YR3_RT, float, "Percent of independent students who transferred to a 4-year institution and were still enrolled within 3 years"
-IND_ENRL_2YR_TRANS_YR3_RT, float, "Percent of independent students who transferred to a 2-year institution and were still enrolled within 3 years"
-IND_UNKN_ORIG_YR3_RT, float, "Percent of independent students with status unknown within 3 years at original institution"
-IND_UNKN_4YR_TRANS_YR3_RT, float, "Percent of independent students who transferred to a 4-year institution and whose status is unknown within 3 years"
-IND_UNKN_2YR_TRANS_YR3_RT, float, "Percent of independent students who transferred to a 2-year institution and whose status is unknown within 3 years"
-FEMALE_DEATH_YR3_RT, float, "Percent of female students who died within 3 years at original institution"
-FEMALE_COMP_ORIG_YR3_RT, float, "Percent of female students who completed within 3 years at original institution"
-FEMALE_COMP_4YR_TRANS_YR3_RT, float, "Percent of female students who transferred to a 4-year institution and completed within 3 years"
-FEMALE_COMP_2YR_TRANS_YR3_RT, float, "Percent of female students who transferred to a 2-year institution and completed within 3 years"
-FEMALE_WDRAW_ORIG_YR3_RT, float, "Percent of female students withdrawn from original institution within 3 years"
-FEMALE_WDRAW_4YR_TRANS_YR3_RT, float, "Percent of female students who transferred to a 4-year institution and withdrew within 3 years"
-FEMALE_WDRAW_2YR_TRANS_YR3_RT, float, "Percent of female students who transferred to a 2-year institution and withdrew within 3 years"
-FEMALE_ENRL_ORIG_YR3_RT, float, "Percent of female students who were still enrolled at original institution within 3 years"
-FEMALE_ENRL_4YR_TRANS_YR3_RT, float, "Percent of female students who transferred to a 4-year institution and were still enrolled within 3 years"
-FEMALE_ENRL_2YR_TRANS_YR3_RT, float, "Percent of female students who transferred to a 2-year institution and were still enrolled within 3 years"
-FEMALE_UNKN_ORIG_YR3_RT, float, "Percent of female students with status unknown within 3 years at original institution"
-FEMALE_UNKN_4YR_TRANS_YR3_RT, float, "Percent of female students who transferred to a 4-year institution and whose status is unknown within 3 years"
-FEMALE_UNKN_2YR_TRANS_YR3_RT, float, "Percent of female students who transferred to a 2-year institution and whose status is unknown within 3 years"
-MALE_DEATH_YR3_RT, float, "Percent of male students who died within 3 years at original institution"
-MALE_COMP_ORIG_YR3_RT, float, "Percent of male students who completed within 3 years at original institution"
-MALE_COMP_4YR_TRANS_YR3_RT, float, "Percent of male students who transferred to a 4-year institution and completed within 3 years"
-MALE_COMP_2YR_TRANS_YR3_RT, float, "Percent of male students who transferred to a 2-year institution and completed within 3 years"
-MALE_WDRAW_ORIG_YR3_RT, float, "Percent of male students withdrawn from original institution within 3 years"
-MALE_WDRAW_4YR_TRANS_YR3_RT, float, "Percent of male students who transferred to a 4-year institution and withdrew within 3 years"
-MALE_WDRAW_2YR_TRANS_YR3_RT, float, "Percent of male students who transferred to a 2-year institution and withdrew within 3 years"
-MALE_ENRL_ORIG_YR3_RT, float, "Percent of male students who were still enrolled at original institution within 3 years"
-MALE_ENRL_4YR_TRANS_YR3_RT, float, "Percent of male students who transferred to a 4-year institution and were still enrolled within 3 years"
-MALE_ENRL_2YR_TRANS_YR3_RT, float, "Percent of male students who transferred to a 2-year institution and were still enrolled within 3 years"
-MALE_UNKN_ORIG_YR3_RT, float, "Percent of male students with status unknown within 3 years at original institution"
-MALE_UNKN_4YR_TRANS_YR3_RT, float, "Percent of male students who transferred to a 4-year institution and whose status is unknown within 3 years"
-MALE_UNKN_2YR_TRANS_YR3_RT, float, "Percent of male students who transferred to a 2-year institution and whose status is unknown within 3 years"
-PELL_DEATH_YR3_RT, float, "Percent of students who received a Pell Grant at the institution and who died within 3 years at original institution"
-PELL_COMP_ORIG_YR3_RT, float, "Percent of students who received a Pell Grant at the institution and who completed in 3 years at original institution"
-PELL_COMP_4YR_TRANS_YR3_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and completed within 3 years"
-PELL_COMP_2YR_TRANS_YR3_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and completed within 3 years"
-PELL_WDRAW_ORIG_YR3_RT, float, "Percent of students who received a Pell Grant at the institution and withdrew from original institution within 3 years"
-PELL_WDRAW_4YR_TRANS_YR3_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and withdrew within 3 years"
-PELL_WDRAW_2YR_TRANS_YR3_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and withdrew within 3 years"
-PELL_ENRL_ORIG_YR3_RT, float, "Percent of students who received a Pell Grant at the institution and who were still enrolled at original institution within 3 years"
-PELL_ENRL_4YR_TRANS_YR3_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and were still enrolled within 3 years"
-PELL_ENRL_2YR_TRANS_YR3_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and were still enrolled within 3 years"
-PELL_UNKN_ORIG_YR3_RT, float, "Percent of students who received a Pell Grant at the institution and with status unknown within 3 years at original institution"
-PELL_UNKN_4YR_TRANS_YR3_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and whose status is unknown within 3 years"
-PELL_UNKN_2YR_TRANS_YR3_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and whose status is unknown within 3 years"
-NOPELL_DEATH_YR3_RT, float, "Percent of students who never received a Pell Grant at the institution and who died within 3 years at original institution"
-NOPELL_COMP_ORIG_YR3_RT, float, "Percent of students who never received a Pell Grant at the institution and who completed in 3 years at original institution"
-NOPELL_COMP_4YR_TRANS_YR3_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and completed within 3 years"
-NOPELL_COMP_2YR_TRANS_YR3_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and completed within 3 years"
-NOPELL_WDRAW_ORIG_YR3_RT, float, "Percent of students who never received a Pell Grant at the institution and withdrew from original institution within 3 years"
-NOPELL_WDRAW_4YR_TRANS_YR3_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and withdrew within 3 years"
-NOPELL_WDRAW_2YR_TRANS_YR3_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and withdrew within 3 years"
-NOPELL_ENRL_ORIG_YR3_RT, float, "Percent of students who never received a Pell Grant at the institution and who were still enrolled at original institution within 3 years"
-NOPELL_ENRL_4YR_TRANS_YR3_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and were still enrolled within 3 years"
-NOPELL_ENRL_2YR_TRANS_YR3_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and were still enrolled within 3 years"
-NOPELL_UNKN_ORIG_YR3_RT, float, "Percent of students who never received a Pell Grant at the institution and with status unknown within 3 years at original institution"
-NOPELL_UNKN_4YR_TRANS_YR3_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and whose status is unknown within 3 years"
-NOPELL_UNKN_2YR_TRANS_YR3_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and whose status is unknown within 3 years"
-LOAN_DEATH_YR3_RT, float, "Percent of students who received a federal loan at the institution and who died within 3 years at original institution"
-LOAN_COMP_ORIG_YR3_RT, float, "Percent of students who received a federal loan at the institution and who completed in 3 years at original institution"
-LOAN_COMP_4YR_TRANS_YR3_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and completed within 3 years"
-LOAN_COMP_2YR_TRANS_YR3_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and completed within 3 years"
-LOAN_WDRAW_ORIG_YR3_RT, float, "Percent of students who received a federal loan at the institution and withdrew from original institution within 3 years"
-LOAN_WDRAW_4YR_TRANS_YR3_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and withdrew within 3 years"
-LOAN_WDRAW_2YR_TRANS_YR3_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and withdrew within 3 years"
-LOAN_ENRL_ORIG_YR3_RT, float, "Percent of students who received a federal loan at the institution and who were still enrolled at original institution within 3 years"
-LOAN_ENRL_4YR_TRANS_YR3_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and were still enrolled within 3 years"
-LOAN_ENRL_2YR_TRANS_YR3_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and were still enrolled within 3 years"
-LOAN_UNKN_ORIG_YR3_RT, float, "Percent of students who received a federal loan at the institution and with status unknown within 3 years at original institution"
-LOAN_UNKN_4YR_TRANS_YR3_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and whose status is unknown within 3 years"
-LOAN_UNKN_2YR_TRANS_YR3_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and whose status is unknown within 3 years"
-NOLOAN_DEATH_YR3_RT, float, "Percent of students who never received a federal loan at the institution and who died within 3 years at original institution"
-NOLOAN_COMP_ORIG_YR3_RT, float, "Percent of students who never received a federal loan at the institution and who completed in 3 years at original institution"
-NOLOAN_COMP_4YR_TRANS_YR3_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and completed within 3 years"
-NOLOAN_COMP_2YR_TRANS_YR3_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and completed within 3 years"
-NOLOAN_WDRAW_ORIG_YR3_RT, float, "Percent of students who never received a federal loan at the institution and withdrew from original institution within 3 years"
-NOLOAN_WDRAW_4YR_TRANS_YR3_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and withdrew within 3 years"
-NOLOAN_WDRAW_2YR_TRANS_YR3_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and withdrew within 3 years"
-NOLOAN_ENRL_ORIG_YR3_RT, float, "Percent of students who never received a federal loan at the institution and who were still enrolled at original institution within 3 years"
-NOLOAN_ENRL_4YR_TRANS_YR3_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and were still enrolled within 3 years"
-NOLOAN_ENRL_2YR_TRANS_YR3_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and were still enrolled within 3 years"
-NOLOAN_UNKN_ORIG_YR3_RT, float, "Percent of students who never received a federal loan at the institution and with status unknown within 3 years at original institution"
-NOLOAN_UNKN_4YR_TRANS_YR3_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and whose status is unknown within 3 years"
-NOLOAN_UNKN_2YR_TRANS_YR3_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and whose status is unknown within 3 years"
-FIRSTGEN_DEATH_YR3_RT, float, "Percent of first-generation students who died within 3 years at original institution"
-FIRSTGEN_COMP_ORIG_YR3_RT, float, "Percent of first-generation students who completed within 3 years at original institution"
-FIRSTGEN_COMP_4YR_TRANS_YR3_RT, float, "Percent of first-generation students who transferred to a 4-year institution and completed within 3 years"
-FIRSTGEN_COMP_2YR_TRANS_YR3_RT, float, "Percent of first-generation students who transferred to a 2-year institution and completed within 3 years"
-FIRSTGEN_WDRAW_ORIG_YR3_RT, float, "Percent of first-generation students withdrawn from original institution within 3 years"
-FIRSTGEN_WDRAW_4YR_TRANS_YR3_RT, float, "Percent of first-generation students who transferred to a 4-year institution and withdrew within 3 years"
-FIRSTGEN_WDRAW_2YR_TRANS_YR3_RT, float, "Percent of first-generation students who transferred to a 2-year institution and withdrew within 3 years"
-FIRSTGEN_ENRL_ORIG_YR3_RT, float, "Percent of first-generation students who were still enrolled at original institution within 3 years"
-FIRSTGEN_ENRL_4YR_TRANS_YR3_RT, float, "Percent of first-generation students who transferred to a 4-year institution and were still enrolled within 3 years"
-FIRSTGEN_ENRL_2YR_TRANS_YR3_RT, float, "Percent of first-generation students who transferred to a 2-year institution and were still enrolled within 3 years"
-FIRSTGEN_UNKN_ORIG_YR3_RT, float, "Percent of first-generation students with status unknown within 3 years at original institution"
-FIRSTGEN_UNKN_4YR_TRANS_YR3_RT, float, "Percent of first-generation students who transferred to a 4-year institution and whose status is unknown within 3 years"
-FIRSTGEN_UNKN_2YR_TRANS_YR3_RT, float, "Percent of first-generation students who transferred to a 2-year institution and whose status is unknown within 3 years"
-NOT1STGEN_DEATH_YR3_RT, float, "Percent of not-first-generation students who died within 3 years at original institution"
-NOT1STGEN_COMP_ORIG_YR3_RT, float, "Percent of not-first-generation students who completed within 3 years at original institution"
-NOT1STGEN_COMP_4YR_TRANS_YR3_RT, float, "Percent of not-first-generation students who transferred to a 4-year institution and completed within 3 years"
-NOT1STGEN_COMP_2YR_TRANS_YR3_RT, float, "Percent of not-first-generation students who transferred to a 2-year institution and completed within 3 years"
-NOT1STGEN_WDRAW_ORIG_YR3_RT, float, "Percent of not-first-generation students withdrawn from original institution within 3 years"
-NOT1STGEN_WDRAW_4YR_TRANS_YR3_RT, float, "Percent of not-first-generation students who transferred to a 4-year institution and withdrew within 3 years"
-NOT1STGEN_WDRAW_2YR_TRANS_YR3_RT, float, "Percent of not-first-generation students who transferred to a 2-year institution and withdrew within 3 years"
-NOT1STGEN_ENRL_ORIG_YR3_RT, float, "Percent of not-first-generation students who were still enrolled at original institution within 3 years"
-NOT1STGEN_ENRL_4YR_TRANS_YR3_RT, float, "Percent of not-first-generation students who transferred to a 4-year institution and were still enrolled within 3 years"
-NOT1STGEN_ENRL_2YR_TRANS_YR3_RT, float, "Percent of not-first-generation students who transferred to a 2-year institution and were still enrolled within 3 years"
-NOT1STGEN_UNKN_ORIG_YR3_RT, float, "Percent of not-first-generation students with status unknown within 3 years at original institution"
-NOT1STGEN_UNKN_4YR_TRANS_YR3_RT, float, "Percent of not-first-generation students who transferred to a 4-year institution and whose status is unknown within 3 years"
-NOT1STGEN_UNKN_2YR_TRANS_YR3_RT, float, "Percent of not-first-generation students who transferred to a 2-year institution and whose status is unknown within 3 years"
-DEATH_YR4_RT, float, "Percent died within 4 years at original institution"
-COMP_ORIG_YR4_RT, float, "Percent completed within 4 years at original institution"
-COMP_4YR_TRANS_YR4_RT, float, "Percent who transferred to a 4-year institution and completed within 4 years"
-COMP_2YR_TRANS_YR4_RT, float, "Percent who transferred to a 2-year institution and completed within 4 years"
-WDRAW_ORIG_YR4_RT, float, "Percent withdrawn from original institution within 4 years"
-WDRAW_4YR_TRANS_YR4_RT, float, "Percent who transferred to a 4-year institution and withdrew within 4 years"
-WDRAW_2YR_TRANS_YR4_RT, float, "Percent who transferred to a 2-year institution and withdrew within 4 years"
-ENRL_ORIG_YR4_RT, float, "Percent still enrolled at original institution within 4 years"
-ENRL_4YR_TRANS_YR4_RT, float, "Percent who transferred to a 4-year institution and were still enrolled within 4 years"
-ENRL_2YR_TRANS_YR4_RT, float, "Percent who transferred to a 2-year institution and were still enrolled within 4 years"
-UNKN_ORIG_YR4_RT, float, "Percent with status unknown within 4 years at original institution"
-UNKN_4YR_TRANS_YR4_RT, float, "Percent who transferred to a 4-year institution and whose status is unknown within 4 years"
-UNKN_2YR_TRANS_YR4_RT, float, "Percent who transferred to a 2-year institution and whose status is unknown within 4 years"
-LO_INC_DEATH_YR4_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who died within 4 years at original institution"
-LO_INC_COMP_ORIG_YR4_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who completed within 4 years at original institution"
-LO_INC_COMP_4YR_TRANS_YR4_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and completed within 4 years"
-LO_INC_COMP_2YR_TRANS_YR4_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and completed within 4 years"
-LO_INC_WDRAW_ORIG_YR4_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students withdrawn from original institution within 4 years"
-LO_INC_WDRAW_4YR_TRANS_YR4_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 4 years"
-LO_INC_WDRAW_2YR_TRANS_YR4_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 4 years"
-LO_INC_ENRL_ORIG_YR4_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who were still enrolled at original institution within 4 years"
-LO_INC_ENRL_4YR_TRANS_YR4_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 4 years"
-LO_INC_ENRL_2YR_TRANS_YR4_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 4 years"
-LO_INC_UNKN_ORIG_YR4_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students with status unknown within 4 years at original institution"
-LO_INC_UNKN_4YR_TRANS_YR4_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 4 years"
-LO_INC_UNKN_2YR_TRANS_YR4_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 4 years"
-MD_INC_DEATH_YR4_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who died within 4 years at original institution"
-MD_INC_COMP_ORIG_YR4_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who completed within 4 years at original institution"
-MD_INC_COMP_4YR_TRANS_YR4_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and completed within 4 years"
-MD_INC_COMP_2YR_TRANS_YR4_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and completed within 4 years"
-MD_INC_WDRAW_ORIG_YR4_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students withdrawn from original institution within 4 years"
-MD_INC_WDRAW_4YR_TRANS_YR4_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 4 years"
-MD_INC_WDRAW_2YR_TRANS_YR4_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 4 years"
-MD_INC_ENRL_ORIG_YR4_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who were still enrolled at original institution within 4 years"
-MD_INC_ENRL_4YR_TRANS_YR4_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 4 years"
-MD_INC_ENRL_2YR_TRANS_YR4_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 4 years"
-MD_INC_UNKN_ORIG_YR4_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students with status unknown within 4 years at original institution"
-MD_INC_UNKN_4YR_TRANS_YR4_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 4 years"
-MD_INC_UNKN_2YR_TRANS_YR4_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 4 years"
-HI_INC_DEATH_YR4_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who died within 4 years at original institution"
-HI_INC_COMP_ORIG_YR4_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who completed within 4 years at original institution"
-HI_INC_COMP_4YR_TRANS_YR4_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and completed within 4 years"
-HI_INC_COMP_2YR_TRANS_YR4_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and completed within 4 years"
-HI_INC_WDRAW_ORIG_YR4_RT, float, "Percent of high-income (above $75,000 in nominal family income) students withdrawn from original institution within 4 years"
-HI_INC_WDRAW_4YR_TRANS_YR4_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 4 years"
-HI_INC_WDRAW_2YR_TRANS_YR4_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 4 years"
-HI_INC_ENRL_ORIG_YR4_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who were still enrolled at original institution within 4 years"
-HI_INC_ENRL_4YR_TRANS_YR4_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 4 years"
-HI_INC_ENRL_2YR_TRANS_YR4_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 4 years"
-HI_INC_UNKN_ORIG_YR4_RT, float, "Percent of high-income (above $75,000 in nominal family income) students with status unknown within 4 years at original institution"
-HI_INC_UNKN_4YR_TRANS_YR4_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 4 years"
-HI_INC_UNKN_2YR_TRANS_YR4_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 4 years"
-DEP_DEATH_YR4_RT, float, "Percent of dependent students who died within 4 years at original institution"
-DEP_COMP_ORIG_YR4_RT, float, "Percent of dependent students who completed within 4 years at original institution"
-DEP_COMP_4YR_TRANS_YR4_RT, float, "Percent of dependent students who transferred to a 4-year institution and completed within 4 years"
-DEP_COMP_2YR_TRANS_YR4_RT, float, "Percent of dependent students who transferred to a 2-year institution and completed within 4 years"
-DEP_WDRAW_ORIG_YR4_RT, float, "Percent of dependent students withdrawn from original institution within 4 years"
-DEP_WDRAW_4YR_TRANS_YR4_RT, float, "Percent of dependent students who transferred to a 4-year institution and withdrew within 4 years"
-DEP_WDRAW_2YR_TRANS_YR4_RT, float, "Percent of dependent students who transferred to a 2-year institution and withdrew within 4 years"
-DEP_ENRL_ORIG_YR4_RT, float, "Percent of dependent students who were still enrolled at original institution within 4 years"
-DEP_ENRL_4YR_TRANS_YR4_RT, float, "Percent of dependent students who transferred to a 4-year institution and were still enrolled within 4 years"
-DEP_ENRL_2YR_TRANS_YR4_RT, float, "Percent of dependent students who transferred to a 2-year institution and were still enrolled within 4 years"
-DEP_UNKN_ORIG_YR4_RT, float, "Percent of dependent students with status unknown within 4 years at original institution"
-DEP_UNKN_4YR_TRANS_YR4_RT, float, "Percent of dependent students who transferred to a 4-year institution and whose status is unknown within 4 years"
-DEP_UNKN_2YR_TRANS_YR4_RT, float, "Percent of dependent students who transferred to a 2-year institution and whose status is unknown within 4 years"
-IND_DEATH_YR4_RT, float, "Percent of independent students who died within 4 years at original institution"
-IND_COMP_ORIG_YR4_RT, float, "Percent of independent students who completed within 4 years at original institution"
-IND_COMP_4YR_TRANS_YR4_RT, float, "Percent of independent students who transferred to a 4-year institution and completed within 4 years"
-IND_COMP_2YR_TRANS_YR4_RT, float, "Percent of independent students who transferred to a 2-year institution and completed within 4 years"
-IND_WDRAW_ORIG_YR4_RT, float, "Percent of independent students withdrawn from original institution within 4 years"
-IND_WDRAW_4YR_TRANS_YR4_RT, float, "Percent of independent students who transferred to a 4-year institution and withdrew within 4 years"
-IND_WDRAW_2YR_TRANS_YR4_RT, float, "Percent of independent students who transferred to a 2-year institution and withdrew within 4 years"
-IND_ENRL_ORIG_YR4_RT, float, "Percent of independent students who were still enrolled at original institution within 4 years"
-IND_ENRL_4YR_TRANS_YR4_RT, float, "Percent of independent students who transferred to a 4-year institution and were still enrolled within 4 years"
-IND_ENRL_2YR_TRANS_YR4_RT, float, "Percent of independent students who transferred to a 2-year institution and were still enrolled within 4 years"
-IND_UNKN_ORIG_YR4_RT, float, "Percent of independent students with status unknown within 4 years at original institution"
-IND_UNKN_4YR_TRANS_YR4_RT, float, "Percent of independent students who transferred to a 4-year institution and whose status is unknown within 4 years"
-IND_UNKN_2YR_TRANS_YR4_RT, float, "Percent of independent students who transferred to a 2-year institution and whose status is unknown within 4 years"
-FEMALE_DEATH_YR4_RT, float, "Percent of female students who died within 4 years at original institution"
-FEMALE_COMP_ORIG_YR4_RT, float, "Percent of female students who completed within 4 years at original institution"
-FEMALE_COMP_4YR_TRANS_YR4_RT, float, "Percent of female students who transferred to a 4-year institution and completed within 4 years"
-FEMALE_COMP_2YR_TRANS_YR4_RT, float, "Percent of female students who transferred to a 2-year institution and completed within 4 years"
-FEMALE_WDRAW_ORIG_YR4_RT, float, "Percent of female students withdrawn from original institution within 4 years"
-FEMALE_WDRAW_4YR_TRANS_YR4_RT, float, "Percent of female students who transferred to a 4-year institution and withdrew within 4 years"
-FEMALE_WDRAW_2YR_TRANS_YR4_RT, float, "Percent of female students who transferred to a 2-year institution and withdrew within 4 years"
-FEMALE_ENRL_ORIG_YR4_RT, float, "Percent of female students who were still enrolled at original institution within 4 years"
-FEMALE_ENRL_4YR_TRANS_YR4_RT, float, "Percent of female students who transferred to a 4-year institution and were still enrolled within 4 years"
-FEMALE_ENRL_2YR_TRANS_YR4_RT, float, "Percent of female students who transferred to a 2-year institution and were still enrolled within 4 years"
-FEMALE_UNKN_ORIG_YR4_RT, float, "Percent of female students with status unknown within 4 years at original institution"
-FEMALE_UNKN_4YR_TRANS_YR4_RT, float, "Percent of female students who transferred to a 4-year institution and whose status is unknown within 4 years"
-FEMALE_UNKN_2YR_TRANS_YR4_RT, float, "Percent of female students who transferred to a 2-year institution and whose status is unknown within 4 years"
-MALE_DEATH_YR4_RT, float, "Percent of male students who died within 4 years at original institution"
-MALE_COMP_ORIG_YR4_RT, float, "Percent of male students who completed within 4 years at original institution"
-MALE_COMP_4YR_TRANS_YR4_RT, float, "Percent of male students who transferred to a 4-year institution and completed within 4 years"
-MALE_COMP_2YR_TRANS_YR4_RT, float, "Percent of male students who transferred to a 2-year institution and completed within 4 years"
-MALE_WDRAW_ORIG_YR4_RT, float, "Percent of male students withdrawn from original institution within 4 years"
-MALE_WDRAW_4YR_TRANS_YR4_RT, float, "Percent of male students who transferred to a 4-year institution and withdrew within 4 years"
-MALE_WDRAW_2YR_TRANS_YR4_RT, float, "Percent of male students who transferred to a 2-year institution and withdrew within 4 years"
-MALE_ENRL_ORIG_YR4_RT, float, "Percent of male students who were still enrolled at original institution within 4 years"
-MALE_ENRL_4YR_TRANS_YR4_RT, float, "Percent of male students who transferred to a 4-year institution and were still enrolled within 4 years"
-MALE_ENRL_2YR_TRANS_YR4_RT, float, "Percent of male students who transferred to a 2-year institution and were still enrolled within 4 years"
-MALE_UNKN_ORIG_YR4_RT, float, "Percent of male students with status unknown within 4 years at original institution"
-MALE_UNKN_4YR_TRANS_YR4_RT, float, "Percent of male students who transferred to a 4-year institution and whose status is unknown within 4 years"
-MALE_UNKN_2YR_TRANS_YR4_RT, float, "Percent of male students who transferred to a 2-year institution and whose status is unknown within 4 years"
-PELL_DEATH_YR4_RT, float, "Percent of students who received a Pell Grant at the institution and who died within 4 years at original institution"
-PELL_COMP_ORIG_YR4_RT, float, "Percent of students who received a Pell Grant at the institution and who completed in 4 years at original institution"
-PELL_COMP_4YR_TRANS_YR4_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and completed within 4 years"
-PELL_COMP_2YR_TRANS_YR4_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and completed within 4 years"
-PELL_WDRAW_ORIG_YR4_RT, float, "Percent of students who received a Pell Grant at the institution and withdrew from original institution within 4 years"
-PELL_WDRAW_4YR_TRANS_YR4_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and withdrew within 4 years"
-PELL_WDRAW_2YR_TRANS_YR4_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and withdrew within 4 years"
-PELL_ENRL_ORIG_YR4_RT, float, "Percent of students who received a Pell Grant at the institution and who were still enrolled at original institution within 4 years"
-PELL_ENRL_4YR_TRANS_YR4_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and were still enrolled within 4 years"
-PELL_ENRL_2YR_TRANS_YR4_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and were still enrolled within 4 years"
-PELL_UNKN_ORIG_YR4_RT, float, "Percent of students who received a Pell Grant at the institution and with status unknown within 4 years at original institution"
-PELL_UNKN_4YR_TRANS_YR4_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and whose status is unknown within 4 years"
-PELL_UNKN_2YR_TRANS_YR4_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and whose status is unknown within 4 years"
-NOPELL_DEATH_YR4_RT, float, "Percent of students who never received a Pell Grant at the institution and who died within 4 years at original institution"
-NOPELL_COMP_ORIG_YR4_RT, float, "Percent of students who never received a Pell Grant at the institution and who completed in 4 years at original institution"
-NOPELL_COMP_4YR_TRANS_YR4_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and completed within 4 years"
-NOPELL_COMP_2YR_TRANS_YR4_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and completed within 4 years"
-NOPELL_WDRAW_ORIG_YR4_RT, float, "Percent of students who never received a Pell Grant at the institution and withdrew from original institution within 4 years"
-NOPELL_WDRAW_4YR_TRANS_YR4_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and withdrew within 4 years"
-NOPELL_WDRAW_2YR_TRANS_YR4_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and withdrew within 4 years"
-NOPELL_ENRL_ORIG_YR4_RT, float, "Percent of students who never received a Pell Grant at the institution and who were still enrolled at original institution within 4 years"
-NOPELL_ENRL_4YR_TRANS_YR4_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and were still enrolled within 4 years"
-NOPELL_ENRL_2YR_TRANS_YR4_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and were still enrolled within 4 years"
-NOPELL_UNKN_ORIG_YR4_RT, float, "Percent of students who never received a Pell Grant at the institution and with status unknown within 4 years at original institution"
-NOPELL_UNKN_4YR_TRANS_YR4_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and whose status is unknown within 4 years"
-NOPELL_UNKN_2YR_TRANS_YR4_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and whose status is unknown within 4 years"
-LOAN_DEATH_YR4_RT, float, "Percent of students who received a federal loan at the institution and who died within 4 years at original institution"
-LOAN_COMP_ORIG_YR4_RT, float, "Percent of students who received a federal loan at the institution and who completed in 4 years at original institution"
-LOAN_COMP_4YR_TRANS_YR4_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and completed within 4 years"
-LOAN_COMP_2YR_TRANS_YR4_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and completed within 4 years"
-LOAN_WDRAW_ORIG_YR4_RT, float, "Percent of students who received a federal loan at the institution and withdrew from original institution within 4 years"
-LOAN_WDRAW_4YR_TRANS_YR4_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and withdrew within 4 years"
-LOAN_WDRAW_2YR_TRANS_YR4_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and withdrew within 4 years"
-LOAN_ENRL_ORIG_YR4_RT, float, "Percent of students who received a federal loan at the institution and who were still enrolled at original institution within 4 years"
-LOAN_ENRL_4YR_TRANS_YR4_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and were still enrolled within 4 years"
-LOAN_ENRL_2YR_TRANS_YR4_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and were still enrolled within 4 years"
-LOAN_UNKN_ORIG_YR4_RT, float, "Percent of students who received a federal loan at the institution and with status unknown within 4 years at original institution"
-LOAN_UNKN_4YR_TRANS_YR4_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and whose status is unknown within 4 years"
-LOAN_UNKN_2YR_TRANS_YR4_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and whose status is unknown within 4 years"
-NOLOAN_DEATH_YR4_RT, float, "Percent of students who never received a federal loan at the institution and who died within 4 years at original institution"
-NOLOAN_COMP_ORIG_YR4_RT, float, "Percent of students who never received a federal loan at the institution and who completed in 4 years at original institution"
-NOLOAN_COMP_4YR_TRANS_YR4_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and completed within 4 years"
-NOLOAN_COMP_2YR_TRANS_YR4_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and completed within 4 years"
-NOLOAN_WDRAW_ORIG_YR4_RT, float, "Percent of students who never received a federal loan at the institution and withdrew from original institution within 4 years"
-NOLOAN_WDRAW_4YR_TRANS_YR4_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and withdrew within 4 years"
-NOLOAN_WDRAW_2YR_TRANS_YR4_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and withdrew within 4 years"
-NOLOAN_ENRL_ORIG_YR4_RT, float, "Percent of students who never received a federal loan at the institution and who were still enrolled at original institution within 4 years"
-NOLOAN_ENRL_4YR_TRANS_YR4_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and were still enrolled within 4 years"
-NOLOAN_ENRL_2YR_TRANS_YR4_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and were still enrolled within 4 years"
-NOLOAN_UNKN_ORIG_YR4_RT, float, "Percent of students who never received a federal loan at the institution and with status unknown within 4 years at original institution"
-NOLOAN_UNKN_4YR_TRANS_YR4_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and whose status is unknown within 4 years"
-NOLOAN_UNKN_2YR_TRANS_YR4_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and whose status is unknown within 4 years"
-FIRSTGEN_DEATH_YR4_RT, float, "Percent of first-generation students who died within 4 years at original institution"
-FIRSTGEN_COMP_ORIG_YR4_RT, float, "Percent of first-generation students who completed within 4 years at original institution"
-FIRSTGEN_COMP_4YR_TRANS_YR4_RT, float, "Percent of first-generation students who transferred to a 4-year institution and completed within 4 years"
-FIRSTGEN_COMP_2YR_TRANS_YR4_RT, float, "Percent of first-generation students who transferred to a 2-year institution and completed within 4 years"
-FIRSTGEN_WDRAW_ORIG_YR4_RT, float, "Percent of first-generation students withdrawn from original institution within 4 years"
-FIRSTGEN_WDRAW_4YR_TRANS_YR4_RT, float, "Percent of first-generation students who transferred to a 4-year institution and withdrew within 4 years"
-FIRSTGEN_WDRAW_2YR_TRANS_YR4_RT, float, "Percent of first-generation students who transferred to a 2-year institution and withdrew within 4 years"
-FIRSTGEN_ENRL_ORIG_YR4_RT, float, "Percent of first-generation students who were still enrolled at original institution within 4 years"
-FIRSTGEN_ENRL_4YR_TRANS_YR4_RT, float, "Percent of first-generation students who transferred to a 4-year institution and were still enrolled within 4 years"
-FIRSTGEN_ENRL_2YR_TRANS_YR4_RT, float, "Percent of first-generation students who transferred to a 2-year institution and were still enrolled within 4 years"
-FIRSTGEN_UNKN_ORIG_YR4_RT, float, "Percent of first-generation students with status unknown within 4 years at original institution"
-FIRSTGEN_UNKN_4YR_TRANS_YR4_RT, float, "Percent of first-generation students who transferred to a 4-year institution and whose status is unknown within 4 years"
-FIRSTGEN_UNKN_2YR_TRANS_YR4_RT, float, "Percent of first-generation students who transferred to a 2-year institution and whose status is unknown within 4 years"
-NOT1STGEN_DEATH_YR4_RT, float, "Percent of not-first-generation students who died within 4 years at original institution"
-NOT1STGEN_COMP_ORIG_YR4_RT, float, "Percent of not-first-generation students who completed within 4 years at original institution"
-NOT1STGEN_COMP_4YR_TRANS_YR4_RT, float, "Percent of not-first-generation students who transferred to a 4-year institution and completed within 4 years"
-NOT1STGEN_COMP_2YR_TRANS_YR4_RT, float, "Percent of not-first-generation students who transferred to a 2-year institution and completed within 4 years"
-NOT1STGEN_WDRAW_ORIG_YR4_RT, float, "Percent of not-first-generation students withdrawn from original institution within 4 years"
-NOT1STGEN_WDRAW_4YR_TRANS_YR4_RT, float, "Percent of not-first-generation students who transferred to a 4-year institution and withdrew within 4 years"
-NOT1STGEN_WDRAW_2YR_TRANS_YR4_RT, float, "Percent of not-first-generation students who transferred to a 2-year institution and withdrew within 4 years"
-NOT1STGEN_ENRL_ORIG_YR4_RT, float, "Percent of not-first-generation students who were still enrolled at original institution within 4 years"
-NOT1STGEN_ENRL_4YR_TRANS_YR4_RT, float, "Percent of not-first-generation students who transferred to a 4-year institution and were still enrolled within 4 years"
-NOT1STGEN_ENRL_2YR_TRANS_YR4_RT, float, "Percent of not-first-generation students who transferred to a 2-year institution and were still enrolled within 4 years"
-NOT1STGEN_UNKN_ORIG_YR4_RT, float, "Percent of not-first-generation students with status unknown within 4 years at original institution"
-NOT1STGEN_UNKN_4YR_TRANS_YR4_RT, float, "Percent of not-first-generation students who transferred to a 4-year institution and whose status is unknown within 4 years"
-NOT1STGEN_UNKN_2YR_TRANS_YR4_RT, float, "Percent of not-first-generation students who transferred to a 2-year institution and whose status is unknown within 4 years"
-DEATH_YR6_RT, float, "Percent died within 6 years at original institution"
-COMP_ORIG_YR6_RT, float, "Percent completed within 6 years at original institution"
-COMP_4YR_TRANS_YR6_RT, float, "Percent who transferred to a 4-year institution and completed within 6 years"
-COMP_2YR_TRANS_YR6_RT, float, "Percent who transferred to a 2-year institution and completed within 6 years"
-WDRAW_ORIG_YR6_RT, float, "Percent withdrawn from original institution within 6 years"
-WDRAW_4YR_TRANS_YR6_RT, float, "Percent who transferred to a 4-year institution and withdrew within 6 years"
-WDRAW_2YR_TRANS_YR6_RT, float, "Percent who transferred to a 2-year institution and withdrew within 6 years"
-ENRL_ORIG_YR6_RT, float, "Percent still enrolled at original institution within 6 years"
-ENRL_4YR_TRANS_YR6_RT, float, "Percent who transferred to a 4-year institution and were still enrolled within 6 years"
-ENRL_2YR_TRANS_YR6_RT, float, "Percent who transferred to a 2-year institution and were still enrolled within 6 years"
-UNKN_ORIG_YR6_RT, float, "Percent with status unknown within 6 years at original institution"
-UNKN_4YR_TRANS_YR6_RT, float, "Percent who transferred to a 4-year institution and whose status is unknown within 6 years"
-UNKN_2YR_TRANS_YR6_RT, float, "Percent who transferred to a 2-year institution and whose status is unknown within 6 years"
-LO_INC_DEATH_YR6_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who died within 6 years at original institution"
-LO_INC_COMP_ORIG_YR6_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who completed within 6 years at original institution"
-LO_INC_COMP_4YR_TRANS_YR6_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and completed within 6 years"
-LO_INC_COMP_2YR_TRANS_YR6_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and completed within 6 years"
-LO_INC_WDRAW_ORIG_YR6_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students withdrawn from original institution within 6 years"
-LO_INC_WDRAW_4YR_TRANS_YR6_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 6 years"
-LO_INC_WDRAW_2YR_TRANS_YR6_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 6 years"
-LO_INC_ENRL_ORIG_YR6_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who were still enrolled at original institution within 6 years"
-LO_INC_ENRL_4YR_TRANS_YR6_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 6 years"
-LO_INC_ENRL_2YR_TRANS_YR6_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 6 years"
-LO_INC_UNKN_ORIG_YR6_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students with status unknown within 6 years at original institution"
-LO_INC_UNKN_4YR_TRANS_YR6_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 6 years"
-LO_INC_UNKN_2YR_TRANS_YR6_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 6 years"
-MD_INC_DEATH_YR6_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who died within 6 years at original institution"
-MD_INC_COMP_ORIG_YR6_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who completed within 6 years at original institution"
-MD_INC_COMP_4YR_TRANS_YR6_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and completed within 6 years"
-MD_INC_COMP_2YR_TRANS_YR6_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and completed within 6 years"
-MD_INC_WDRAW_ORIG_YR6_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students withdrawn from original institution within 6 years"
-MD_INC_WDRAW_4YR_TRANS_YR6_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 6 years"
-MD_INC_WDRAW_2YR_TRANS_YR6_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 6 years"
-MD_INC_ENRL_ORIG_YR6_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who were still enrolled at original institution within 6 years"
-MD_INC_ENRL_4YR_TRANS_YR6_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 6 years"
-MD_INC_ENRL_2YR_TRANS_YR6_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 6 years"
-MD_INC_UNKN_ORIG_YR6_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students with status unknown within 6 years at original institution"
-MD_INC_UNKN_4YR_TRANS_YR6_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 6 years"
-MD_INC_UNKN_2YR_TRANS_YR6_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 6 years"
-HI_INC_DEATH_YR6_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who died within 6 years at original institution"
-HI_INC_COMP_ORIG_YR6_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who completed within 6 years at original institution"
-HI_INC_COMP_4YR_TRANS_YR6_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and completed within 6 years"
-HI_INC_COMP_2YR_TRANS_YR6_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and completed within 6 years"
-HI_INC_WDRAW_ORIG_YR6_RT, float, "Percent of high-income (above $75,000 in nominal family income) students withdrawn from original institution within 6 years"
-HI_INC_WDRAW_4YR_TRANS_YR6_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 6 years"
-HI_INC_WDRAW_2YR_TRANS_YR6_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 6 years"
-HI_INC_ENRL_ORIG_YR6_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who were still enrolled at original institution within 6 years"
-HI_INC_ENRL_4YR_TRANS_YR6_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 6 years"
-HI_INC_ENRL_2YR_TRANS_YR6_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 6 years"
-HI_INC_UNKN_ORIG_YR6_RT, float, "Percent of high-income (above $75,000 in nominal family income) students with status unknown within 6 years at original institution"
-HI_INC_UNKN_4YR_TRANS_YR6_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 6 years"
-HI_INC_UNKN_2YR_TRANS_YR6_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 6 years"
-DEP_DEATH_YR6_RT, float, "Percent of dependent students who died within 6 years at original institution"
-DEP_COMP_ORIG_YR6_RT, float, "Percent of dependent students who completed within 6 years at original institution"
-DEP_COMP_4YR_TRANS_YR6_RT, float, "Percent of dependent students who transferred to a 4-year institution and completed within 6 years"
-DEP_COMP_2YR_TRANS_YR6_RT, float, "Percent of dependent students who transferred to a 2-year institution and completed within 6 years"
-DEP_WDRAW_ORIG_YR6_RT, float, "Percent of dependent students withdrawn from original institution within 6 years"
-DEP_WDRAW_4YR_TRANS_YR6_RT, float, "Percent of dependent students who transferred to a 4-year institution and withdrew within 6 years"
-DEP_WDRAW_2YR_TRANS_YR6_RT, float, "Percent of dependent students who transferred to a 2-year institution and withdrew within 6 years"
-DEP_ENRL_ORIG_YR6_RT, float, "Percent of dependent students who were still enrolled at original institution within 6 years"
-DEP_ENRL_4YR_TRANS_YR6_RT, float, "Percent of dependent students who transferred to a 4-year institution and were still enrolled within 6 years"
-DEP_ENRL_2YR_TRANS_YR6_RT, float, "Percent of dependent students who transferred to a 2-year institution and were still enrolled within 6 years"
-DEP_UNKN_ORIG_YR6_RT, float, "Percent of dependent students with status unknown within 6 years at original institution"
-DEP_UNKN_4YR_TRANS_YR6_RT, float, "Percent of dependent students who transferred to a 4-year institution and whose status is unknown within 6 years"
-DEP_UNKN_2YR_TRANS_YR6_RT, float, "Percent of dependent students who transferred to a 2-year institution and whose status is unknown within 6 years"
-IND_DEATH_YR6_RT, float, "Percent of independent students who died within 6 years at original institution"
-IND_COMP_ORIG_YR6_RT, float, "Percent of independent students who completed within 6 years at original institution"
-IND_COMP_4YR_TRANS_YR6_RT, float, "Percent of independent students who transferred to a 4-year institution and completed within 6 years"
-IND_COMP_2YR_TRANS_YR6_RT, float, "Percent of independent students who transferred to a 2-year institution and completed within 6 years"
-IND_WDRAW_ORIG_YR6_RT, float, "Percent of independent students withdrawn from original institution within 6 years"
-IND_WDRAW_4YR_TRANS_YR6_RT, float, "Percent of independent students who transferred to a 4-year institution and withdrew within 6 years"
-IND_WDRAW_2YR_TRANS_YR6_RT, float, "Percent of independent students who transferred to a 2-year institution and withdrew within 6 years"
-IND_ENRL_ORIG_YR6_RT, float, "Percent of independent students who were still enrolled at original institution within 6 years"
-IND_ENRL_4YR_TRANS_YR6_RT, float, "Percent of independent students who transferred to a 4-year institution and were still enrolled within 6 years"
-IND_ENRL_2YR_TRANS_YR6_RT, float, "Percent of independent students who transferred to a 2-year institution and were still enrolled within 6 years"
-IND_UNKN_ORIG_YR6_RT, float, "Percent of independent students with status unknown within 6 years at original institution"
-IND_UNKN_4YR_TRANS_YR6_RT, float, "Percent of independent students who transferred to a 4-year institution and whose status is unknown within 6 years"
-IND_UNKN_2YR_TRANS_YR6_RT, float, "Percent of independent students who transferred to a 2-year institution and whose status is unknown within 6 years"
-FEMALE_DEATH_YR6_RT, float, "Percent of female students who died within 6 years at original institution"
-FEMALE_COMP_ORIG_YR6_RT, float, "Percent of female students who completed within 6 years at original institution"
-FEMALE_COMP_4YR_TRANS_YR6_RT, float, "Percent of female students who transferred to a 4-year institution and completed within 6 years"
-FEMALE_COMP_2YR_TRANS_YR6_RT, float, "Percent of female students who transferred to a 2-year institution and completed within 6 years"
-FEMALE_WDRAW_ORIG_YR6_RT, float, "Percent of female students withdrawn from original institution within 6 years"
-FEMALE_WDRAW_4YR_TRANS_YR6_RT, float, "Percent of female students who transferred to a 4-year institution and withdrew within 6 years"
-FEMALE_WDRAW_2YR_TRANS_YR6_RT, float, "Percent of female students who transferred to a 2-year institution and withdrew within 6 years"
-FEMALE_ENRL_ORIG_YR6_RT, float, "Percent of female students who were still enrolled at original institution within 6 years"
-FEMALE_ENRL_4YR_TRANS_YR6_RT, float, "Percent of female students who transferred to a 4-year institution and were still enrolled within 6 years"
-FEMALE_ENRL_2YR_TRANS_YR6_RT, float, "Percent of female students who transferred to a 2-year institution and were still enrolled within 6 years"
-FEMALE_UNKN_ORIG_YR6_RT, float, "Percent of female students with status unknown within 6 years at original institution"
-FEMALE_UNKN_4YR_TRANS_YR6_RT, float, "Percent of female students who transferred to a 4-year institution and whose status is unknown within 6 years"
-FEMALE_UNKN_2YR_TRANS_YR6_RT, float, "Percent of female students who transferred to a 2-year institution and whose status is unknown within 6 years"
-MALE_DEATH_YR6_RT, float, "Percent of male students who died within 6 years at original institution"
-MALE_COMP_ORIG_YR6_RT, float, "Percent of male students who completed within 6 years at original institution"
-MALE_COMP_4YR_TRANS_YR6_RT, float, "Percent of male students who transferred to a 4-year institution and completed within 6 years"
-MALE_COMP_2YR_TRANS_YR6_RT, float, "Percent of male students who transferred to a 2-year institution and completed within 6 years"
-MALE_WDRAW_ORIG_YR6_RT, float, "Percent of male students withdrawn from original institution within 6 years"
-MALE_WDRAW_4YR_TRANS_YR6_RT, float, "Percent of male students who transferred to a 4-year institution and withdrew within 6 years"
-MALE_WDRAW_2YR_TRANS_YR6_RT, float, "Percent of male students who transferred to a 2-year institution and withdrew within 6 years"
-MALE_ENRL_ORIG_YR6_RT, float, "Percent of male students who were still enrolled at original institution within 6 years"
-MALE_ENRL_4YR_TRANS_YR6_RT, float, "Percent of male students who transferred to a 4-year institution and were still enrolled within 6 years"
-MALE_ENRL_2YR_TRANS_YR6_RT, float, "Percent of male students who transferred to a 2-year institution and were still enrolled within 6 years"
-MALE_UNKN_ORIG_YR6_RT, float, "Percent of male students with status unknown within 6 years at original institution"
-MALE_UNKN_4YR_TRANS_YR6_RT, float, "Percent of male students who transferred to a 4-year institution and whose status is unknown within 6 years"
-MALE_UNKN_2YR_TRANS_YR6_RT, float, "Percent of male students who transferred to a 2-year institution and whose status is unknown within 6 years"
-PELL_DEATH_YR6_RT, float, "Percent of students who received a Pell Grant at the institution and who died within 6 years at original institution"
-PELL_COMP_ORIG_YR6_RT, float, "Percent of students who received a Pell Grant at the institution and who completed in 6 years at original institution"
-PELL_COMP_4YR_TRANS_YR6_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and completed within 6 years"
-PELL_COMP_2YR_TRANS_YR6_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and completed within 6 years"
-PELL_WDRAW_ORIG_YR6_RT, float, "Percent of students who received a Pell Grant at the institution and withdrew from original institution within 6 years"
-PELL_WDRAW_4YR_TRANS_YR6_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and withdrew within 6 years"
-PELL_WDRAW_2YR_TRANS_YR6_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and withdrew within 6 years"
-PELL_ENRL_ORIG_YR6_RT, float, "Percent of students who received a Pell Grant at the institution and who were still enrolled at original institution within 6 years"
-PELL_ENRL_4YR_TRANS_YR6_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and were still enrolled within 6 years"
-PELL_ENRL_2YR_TRANS_YR6_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and were still enrolled within 6 years"
-PELL_UNKN_ORIG_YR6_RT, float, "Percent of students who received a Pell Grant at the institution and with status unknown within 6 years at original institution"
-PELL_UNKN_4YR_TRANS_YR6_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and whose status is unknown within 6 years"
-PELL_UNKN_2YR_TRANS_YR6_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and whose status is unknown within 6 years"
-NOPELL_DEATH_YR6_RT, float, "Percent of students who never received a Pell Grant at the institution and who died within 6 years at original institution"
-NOPELL_COMP_ORIG_YR6_RT, float, "Percent of students who never received a Pell Grant at the institution and who completed in 6 years at original institution"
-NOPELL_COMP_4YR_TRANS_YR6_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and completed within 6 years"
-NOPELL_COMP_2YR_TRANS_YR6_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and completed within 6 years"
-NOPELL_WDRAW_ORIG_YR6_RT, float, "Percent of students who never received a Pell Grant at the institution and withdrew from original institution within 6 years"
-NOPELL_WDRAW_4YR_TRANS_YR6_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and withdrew within 6 years"
-NOPELL_WDRAW_2YR_TRANS_YR6_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and withdrew within 6 years"
-NOPELL_ENRL_ORIG_YR6_RT, float, "Percent of students who never received a Pell Grant at the institution and who were still enrolled at original institution within 6 years"
-NOPELL_ENRL_4YR_TRANS_YR6_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and were still enrolled within 6 years"
-NOPELL_ENRL_2YR_TRANS_YR6_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and were still enrolled within 6 years"
-NOPELL_UNKN_ORIG_YR6_RT, float, "Percent of students who never received a Pell Grant at the institution and with status unknown within 6 years at original institution"
-NOPELL_UNKN_4YR_TRANS_YR6_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and whose status is unknown within 6 years"
-NOPELL_UNKN_2YR_TRANS_YR6_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and whose status is unknown within 6 years"
-LOAN_DEATH_YR6_RT, float, "Percent of students who received a federal loan at the institution and who died within 6 years at original institution"
-LOAN_COMP_ORIG_YR6_RT, float, "Percent of students who received a federal loan at the institution and who completed in 6 years at original institution"
-LOAN_COMP_4YR_TRANS_YR6_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and completed within 6 years"
-LOAN_COMP_2YR_TRANS_YR6_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and completed within 6 years"
-LOAN_WDRAW_ORIG_YR6_RT, float, "Percent of students who received a federal loan at the institution and withdrew from original institution within 6 years"
-LOAN_WDRAW_4YR_TRANS_YR6_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and withdrew within 6 years"
-LOAN_WDRAW_2YR_TRANS_YR6_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and withdrew within 6 years"
-LOAN_ENRL_ORIG_YR6_RT, float, "Percent of students who received a federal loan at the institution and who were still enrolled at original institution within 6 years"
-LOAN_ENRL_4YR_TRANS_YR6_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and were still enrolled within 6 years"
-LOAN_ENRL_2YR_TRANS_YR6_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and were still enrolled within 6 years"
-LOAN_UNKN_ORIG_YR6_RT, float, "Percent of students who received a federal loan at the institution and with status unknown within 6 years at original institution"
-LOAN_UNKN_4YR_TRANS_YR6_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and whose status is unknown within 6 years"
-LOAN_UNKN_2YR_TRANS_YR6_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and whose status is unknown within 6 years"
-NOLOAN_DEATH_YR6_RT, float, "Percent of students who never received a federal loan at the institution and who died within 6 years at original institution"
-NOLOAN_COMP_ORIG_YR6_RT, float, "Percent of students who never received a federal loan at the institution and who completed in 6 years at original institution"
-NOLOAN_COMP_4YR_TRANS_YR6_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and completed within 6 years"
-NOLOAN_COMP_2YR_TRANS_YR6_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and completed within 6 years"
-NOLOAN_WDRAW_ORIG_YR6_RT, float, "Percent of students who never received a federal loan at the institution and withdrew from original institution within 6 years"
-NOLOAN_WDRAW_4YR_TRANS_YR6_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and withdrew within 6 years"
-NOLOAN_WDRAW_2YR_TRANS_YR6_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and withdrew within 6 years"
-NOLOAN_ENRL_ORIG_YR6_RT, float, "Percent of students who never received a federal loan at the institution and who were still enrolled at original institution within 6 years"
-NOLOAN_ENRL_4YR_TRANS_YR6_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and were still enrolled within 6 years"
-NOLOAN_ENRL_2YR_TRANS_YR6_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and were still enrolled within 6 years"
-NOLOAN_UNKN_ORIG_YR6_RT, float, "Percent of students who never received a federal loan at the institution and with status unknown within 6 years at original institution"
-NOLOAN_UNKN_4YR_TRANS_YR6_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and whose status is unknown within 6 years"
-NOLOAN_UNKN_2YR_TRANS_YR6_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and whose status is unknown within 6 years"
-FIRSTGEN_DEATH_YR6_RT, float, "Percent of first-generation students who died within 6 years at original institution"
-FIRSTGEN_COMP_ORIG_YR6_RT, float, "Percent of first-generation students who completed within 6 years at original institution"
-FIRSTGEN_COMP_4YR_TRANS_YR6_RT, float, "Percent of first-generation students who transferred to a 4-year institution and completed within 6 years"
-FIRSTGEN_COMP_2YR_TRANS_YR6_RT, float, "Percent of first-generation students who transferred to a 2-year institution and completed within 6 years"
-FIRSTGEN_WDRAW_ORIG_YR6_RT, float, "Percent of first-generation students withdrawn from original institution within 6 years"
-FIRSTGEN_WDRAW_4YR_TRANS_YR6_RT, float, "Percent of first-generation students who transferred to a 4-year institution and withdrew within 6 years"
-FIRSTGEN_WDRAW_2YR_TRANS_YR6_RT, float, "Percent of first-generation students who transferred to a 2-year institution and withdrew within 6 years"
-FIRSTGEN_ENRL_ORIG_YR6_RT, float, "Percent of first-generation students who were still enrolled at original institution within 6 years"
-FIRSTGEN_ENRL_4YR_TRANS_YR6_RT, float, "Percent of first-generation students who transferred to a 4-year institution and were still enrolled within 6 years"
-FIRSTGEN_ENRL_2YR_TRANS_YR6_RT, float, "Percent of first-generation students who transferred to a 2-year institution and were still enrolled within 6 years"
-FIRSTGEN_UNKN_ORIG_YR6_RT, float, "Percent of first-generation students with status unknown within 6 years at original institution"
-FIRSTGEN_UNKN_4YR_TRANS_YR6_RT, float, "Percent of first-generation students who transferred to a 4-year institution and whose status is unknown within 6 years"
-FIRSTGEN_UNKN_2YR_TRANS_YR6_RT, float, "Percent of first-generation students who transferred to a 2-year institution and whose status is unknown within 6 years"
-NOT1STGEN_DEATH_YR6_RT, float, "Percent of not-first-generation students who died within 6 years at original institution"
-NOT1STGEN_COMP_ORIG_YR6_RT, float, "Percent of not-first-generation students who completed within 6 years at original institution"
-NOT1STGEN_COMP_4YR_TRANS_YR6_RT, float, "Percent of not-first-generation students who transferred to a 4-year institution and completed within 6 years"
-NOT1STGEN_COMP_2YR_TRANS_YR6_RT, float, "Percent of not-first-generation students who transferred to a 2-year institution and completed within 6 years"
-NOT1STGEN_WDRAW_ORIG_YR6_RT, float, "Percent of not-first-generation students withdrawn from original institution within 6 years"
-NOT1STGEN_WDRAW_4YR_TRANS_YR6_RT, float, "Percent of not-first-generation students who transferred to a 4-year institution and withdrew within 6 years"
-NOT1STGEN_WDRAW_2YR_TRANS_YR6_RT, float, "Percent of not-first-generation students who transferred to a 2-year institution and withdrew within 6 years"
-NOT1STGEN_ENRL_ORIG_YR6_RT, float, "Percent of not-first-generation students who were still enrolled at original institution within 6 years"
-NOT1STGEN_ENRL_4YR_TRANS_YR6_RT, float, "Percent of not-first-generation students who transferred to a 4-year institution and were still enrolled within 6 years"
-NOT1STGEN_ENRL_2YR_TRANS_YR6_RT, float, "Percent of not-first-generation students who transferred to a 2-year institution and were still enrolled within 6 years"
-NOT1STGEN_UNKN_ORIG_YR6_RT, float, "Percent of not-first-generation students with status unknown within 6 years at original institution"
-NOT1STGEN_UNKN_4YR_TRANS_YR6_RT, float, "Percent of not-first-generation students who transferred to a 4-year institution and whose status is unknown within 6 years"
-NOT1STGEN_UNKN_2YR_TRANS_YR6_RT, float, "Percent of not-first-generation students who transferred to a 2-year institution and whose status is unknown within 6 years"
-DEATH_YR8_RT, float, "Percent died within 8 years at original institution"
-COMP_ORIG_YR8_RT, float, "Percent completed within 8 years at original institution"
-COMP_4YR_TRANS_YR8_RT, float, "Percent who transferred to a 4-year institution and completed within 8 years"
-COMP_2YR_TRANS_YR8_RT, float, "Percent who transferred to a 2-year institution and completed within 8 years"
-WDRAW_ORIG_YR8_RT, float, "Percent withdrawn from original institution within 8 years"
-WDRAW_4YR_TRANS_YR8_RT, float, "Percent who transferred to a 4-year institution and withdrew within 8 years"
-WDRAW_2YR_TRANS_YR8_RT, float, "Percent who transferred to a 2-year institution and withdrew within 8 years"
-ENRL_ORIG_YR8_RT, float, "Percent still enrolled at original institution within 8 years"
-ENRL_4YR_TRANS_YR8_RT, float, "Percent who transferred to a 4-year institution and were still enrolled within 8 years"
-ENRL_2YR_TRANS_YR8_RT, float, "Percent who transferred to a 2-year institution and were still enrolled within 8 years"
-UNKN_ORIG_YR8_RT, float, "Percent with status unknown within 8 years at original institution"
-UNKN_4YR_TRANS_YR8_RT, float, "Percent who transferred to a 4-year institution and whose status is unknown within 8 years"
-UNKN_2YR_TRANS_YR8_RT, float, "Percent who transferred to a 2-year institution and whose status is unknown within 8 years"
-LO_INC_DEATH_YR8_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who died within 8 years at original institution"
-LO_INC_COMP_ORIG_YR8_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who completed within 8 years at original institution"
-LO_INC_COMP_4YR_TRANS_YR8_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and completed within 8 years"
-LO_INC_COMP_2YR_TRANS_YR8_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and completed within 8 years"
-LO_INC_WDRAW_ORIG_YR8_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students withdrawn from original institution within 8 years"
-LO_INC_WDRAW_4YR_TRANS_YR8_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 8 years"
-LO_INC_WDRAW_2YR_TRANS_YR8_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 8 years"
-LO_INC_ENRL_ORIG_YR8_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who were still enrolled at original institution within 8 years"
-LO_INC_ENRL_4YR_TRANS_YR8_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 8 years"
-LO_INC_ENRL_2YR_TRANS_YR8_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 8 years"
-LO_INC_UNKN_ORIG_YR8_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students with status unknown within 8 years at original institution"
-LO_INC_UNKN_4YR_TRANS_YR8_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 8 years"
-LO_INC_UNKN_2YR_TRANS_YR8_RT, float, "Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 8 years"
-MD_INC_DEATH_YR8_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who died within 8 years at original institution"
-MD_INC_COMP_ORIG_YR8_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who completed within 8 years at original institution"
-MD_INC_COMP_4YR_TRANS_YR8_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and completed within 8 years"
-MD_INC_COMP_2YR_TRANS_YR8_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and completed within 8 years"
-MD_INC_WDRAW_ORIG_YR8_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students withdrawn from original institution within 8 years"
-MD_INC_WDRAW_4YR_TRANS_YR8_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 8 years"
-MD_INC_WDRAW_2YR_TRANS_YR8_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 8 years"
-MD_INC_ENRL_ORIG_YR8_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who were still enrolled at original institution within 8 years"
-MD_INC_ENRL_4YR_TRANS_YR8_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 8 years"
-MD_INC_ENRL_2YR_TRANS_YR8_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 8 years"
-MD_INC_UNKN_ORIG_YR8_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students with status unknown within 8 years at original institution"
-MD_INC_UNKN_4YR_TRANS_YR8_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 8 years"
-MD_INC_UNKN_2YR_TRANS_YR8_RT, float, "Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 8 years"
-HI_INC_DEATH_YR8_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who died within 8 years at original institution"
-HI_INC_COMP_ORIG_YR8_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who completed within 8 years at original institution"
-HI_INC_COMP_4YR_TRANS_YR8_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and completed within 8 years"
-HI_INC_COMP_2YR_TRANS_YR8_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and completed within 8 years"
-HI_INC_WDRAW_ORIG_YR8_RT, float, "Percent of high-income (above $75,000 in nominal family income) students withdrawn from original institution within 8 years"
-HI_INC_WDRAW_4YR_TRANS_YR8_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 8 years"
-HI_INC_WDRAW_2YR_TRANS_YR8_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 8 years"
-HI_INC_ENRL_ORIG_YR8_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who were still enrolled at original institution within 8 years"
-HI_INC_ENRL_4YR_TRANS_YR8_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 8 years"
-HI_INC_ENRL_2YR_TRANS_YR8_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 8 years"
-HI_INC_UNKN_ORIG_YR8_RT, float, "Percent of high-income (above $75,000 in nominal family income) students with status unknown within 8 years at original institution"
-HI_INC_UNKN_4YR_TRANS_YR8_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 8 years"
-HI_INC_UNKN_2YR_TRANS_YR8_RT, float, "Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 8 years"
-DEP_DEATH_YR8_RT, float, "Percent of dependent students who died within 8 years at original institution"
-DEP_COMP_ORIG_YR8_RT, float, "Percent of dependent students who completed within 8 years at original institution"
-DEP_COMP_4YR_TRANS_YR8_RT, float, "Percent of dependent students who transferred to a 4-year institution and completed within 8 years"
-DEP_COMP_2YR_TRANS_YR8_RT, float, "Percent of dependent students who transferred to a 2-year institution and completed within 8 years"
-DEP_WDRAW_ORIG_YR8_RT, float, "Percent of dependent students withdrawn from original institution within 8 years"
-DEP_WDRAW_4YR_TRANS_YR8_RT, float, "Percent of dependent students who transferred to a 4-year institution and withdrew within 8 years"
-DEP_WDRAW_2YR_TRANS_YR8_RT, float, "Percent of dependent students who transferred to a 2-year institution and withdrew within 8 years"
-DEP_ENRL_ORIG_YR8_RT, float, "Percent of dependent students who were still enrolled at original institution within 8 years"
-DEP_ENRL_4YR_TRANS_YR8_RT, float, "Percent of dependent students who transferred to a 4-year institution and were still enrolled within 8 years"
-DEP_ENRL_2YR_TRANS_YR8_RT, float, "Percent of dependent students who transferred to a 2-year institution and were still enrolled within 8 years"
-DEP_UNKN_ORIG_YR8_RT, float, "Percent of dependent students with status unknown within 8 years at original institution"
-DEP_UNKN_4YR_TRANS_YR8_RT, float, "Percent of dependent students who transferred to a 4-year institution and whose status is unknown within 8 years"
-DEP_UNKN_2YR_TRANS_YR8_RT, float, "Percent of dependent students who transferred to a 2-year institution and whose status is unknown within 8 years"
-IND_DEATH_YR8_RT, float, "Percent of independent students who died within 8 years at original institution"
-IND_COMP_ORIG_YR8_RT, float, "Percent of independent students who completed within 8 years at original institution"
-IND_COMP_4YR_TRANS_YR8_RT, float, "Percent of independent students who transferred to a 4-year institution and completed within 8 years"
-IND_COMP_2YR_TRANS_YR8_RT, float, "Percent of independent students who transferred to a 2-year institution and completed within 8 years"
-IND_WDRAW_ORIG_YR8_RT, float, "Percent of independent students withdrawn from original institution within 8 years"
-IND_WDRAW_4YR_TRANS_YR8_RT, float, "Percent of independent students who transferred to a 4-year institution and withdrew within 8 years"
-IND_WDRAW_2YR_TRANS_YR8_RT, float, "Percent of independent students who transferred to a 2-year institution and withdrew within 8 years"
-IND_ENRL_ORIG_YR8_RT, float, "Percent of independent students who were still enrolled at original institution within 8 years"
-IND_ENRL_4YR_TRANS_YR8_RT, float, "Percent of independent students who transferred to a 4-year institution and were still enrolled within 8 years"
-IND_ENRL_2YR_TRANS_YR8_RT, float, "Percent of independent students who transferred to a 2-year institution and were still enrolled within 8 years"
-IND_UNKN_ORIG_YR8_RT, float, "Percent of independent students with status unknown within 8 years at original institution"
-IND_UNKN_4YR_TRANS_YR8_RT, float, "Percent of independent students who transferred to a 4-year institution and whose status is unknown within 8 years"
-IND_UNKN_2YR_TRANS_YR8_RT, float, "Percent of independent students who transferred to a 2-year institution and whose status is unknown within 8 years"
-FEMALE_DEATH_YR8_RT, float, "Percent of female students who died within 8 years at original institution"
-FEMALE_COMP_ORIG_YR8_RT, float, "Percent of female students who completed within 8 years at original institution"
-FEMALE_COMP_4YR_TRANS_YR8_RT, float, "Percent of female students who transferred to a 4-year institution and completed within 8 years"
-FEMALE_COMP_2YR_TRANS_YR8_RT, float, "Percent of female students who transferred to a 2-year institution and completed within 8 years"
-FEMALE_WDRAW_ORIG_YR8_RT, float, "Percent of female students withdrawn from original institution within 8 years"
-FEMALE_WDRAW_4YR_TRANS_YR8_RT, float, "Percent of female students who transferred to a 4-year institution and withdrew within 8 years"
-FEMALE_WDRAW_2YR_TRANS_YR8_RT, float, "Percent of female students who transferred to a 2-year institution and withdrew within 8 years"
-FEMALE_ENRL_ORIG_YR8_RT, float, "Percent of female students who were still enrolled at original institution within 8 years"
-FEMALE_ENRL_4YR_TRANS_YR8_RT, float, "Percent of female students who transferred to a 4-year institution and were still enrolled within 8 years"
-FEMALE_ENRL_2YR_TRANS_YR8_RT, float, "Percent of female students who transferred to a 2-year institution and were still enrolled within 8 years"
-FEMALE_UNKN_ORIG_YR8_RT, float, "Percent of female students with status unknown within 8 years at original institution"
-FEMALE_UNKN_4YR_TRANS_YR8_RT, float, "Percent of female students who transferred to a 4-year institution and whose status is unknown within 8 years"
-FEMALE_UNKN_2YR_TRANS_YR8_RT, float, "Percent of female students who transferred to a 2-year institution and whose status is unknown within 8 years"
-MALE_DEATH_YR8_RT, float, "Percent of male students who died within 8 years at original institution"
-MALE_COMP_ORIG_YR8_RT, float, "Percent of male students who completed within 8 years at original institution"
-MALE_COMP_4YR_TRANS_YR8_RT, float, "Percent of male students who transferred to a 4-year institution and completed within 8 years"
-MALE_COMP_2YR_TRANS_YR8_RT, float, "Percent of male students who transferred to a 2-year institution and completed within 8 years"
-MALE_WDRAW_ORIG_YR8_RT, float, "Percent of male students withdrawn from original institution within 8 years"
-MALE_WDRAW_4YR_TRANS_YR8_RT, float, "Percent of male students who transferred to a 4-year institution and withdrew within 8 years"
-MALE_WDRAW_2YR_TRANS_YR8_RT, float, "Percent of male students who transferred to a 2-year institution and withdrew within 8 years"
-MALE_ENRL_ORIG_YR8_RT, float, "Percent of male students who were still enrolled at original institution within 8 years"
-MALE_ENRL_4YR_TRANS_YR8_RT, float, "Percent of male students who transferred to a 4-year institution and were still enrolled within 8 years"
-MALE_ENRL_2YR_TRANS_YR8_RT, float, "Percent of male students who transferred to a 2-year institution and were still enrolled within 8 years"
-MALE_UNKN_ORIG_YR8_RT, float, "Percent of male students with status unknown within 8 years at original institution"
-MALE_UNKN_4YR_TRANS_YR8_RT, float, "Percent of male students who transferred to a 4-year institution and whose status is unknown within 8 years"
-MALE_UNKN_2YR_TRANS_YR8_RT, float, "Percent of male students who transferred to a 2-year institution and whose status is unknown within 8 years"
-PELL_DEATH_YR8_RT, float, "Percent of students who received a Pell Grant at the institution and who died within 8 years at original institution"
-PELL_COMP_ORIG_YR8_RT, float, "Percent of students who received a Pell Grant at the institution and who completed in 8 years at original institution"
-PELL_COMP_4YR_TRANS_YR8_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and completed within 8 years"
-PELL_COMP_2YR_TRANS_YR8_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and completed within 8 years"
-PELL_WDRAW_ORIG_YR8_RT, float, "Percent of students who received a Pell Grant at the institution and withdrew from original institution within 8 years"
-PELL_WDRAW_4YR_TRANS_YR8_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and withdrew within 8 years"
-PELL_WDRAW_2YR_TRANS_YR8_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and withdrew within 8 years"
-PELL_ENRL_ORIG_YR8_RT, float, "Percent of students who received a Pell Grant at the institution and who were still enrolled at original institution within 8 years"
-PELL_ENRL_4YR_TRANS_YR8_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and were still enrolled within 8 years"
-PELL_ENRL_2YR_TRANS_YR8_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and were still enrolled within 8 years"
-PELL_UNKN_ORIG_YR8_RT, float, "Percent of students who received a Pell Grant at the institution and with status unknown within 8 years at original institution"
-PELL_UNKN_4YR_TRANS_YR8_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and whose status is unknown within 8 years"
-PELL_UNKN_2YR_TRANS_YR8_RT, float, "Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and whose status is unknown within 8 years"
-NOPELL_DEATH_YR8_RT, float, "Percent of students who never received a Pell Grant at the institution and who died within 8 years at original institution"
-NOPELL_COMP_ORIG_YR8_RT, float, "Percent of students who never received a Pell Grant at the institution and who completed in 8 years at original institution"
-NOPELL_COMP_4YR_TRANS_YR8_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and completed within 8 years"
-NOPELL_COMP_2YR_TRANS_YR8_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and completed within 8 years"
-NOPELL_WDRAW_ORIG_YR8_RT, float, "Percent of students who never received a Pell Grant at the institution and withdrew from original institution within 8 years"
-NOPELL_WDRAW_4YR_TRANS_YR8_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and withdrew within 8 years"
-NOPELL_WDRAW_2YR_TRANS_YR8_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and withdrew within 8 years"
-NOPELL_ENRL_ORIG_YR8_RT, float, "Percent of students who never received a Pell Grant at the institution and who were still enrolled at original institution within 8 years"
-NOPELL_ENRL_4YR_TRANS_YR8_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and were still enrolled within 8 years"
-NOPELL_ENRL_2YR_TRANS_YR8_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and were still enrolled within 8 years"
-NOPELL_UNKN_ORIG_YR8_RT, float, "Percent of students who never received a Pell Grant at the institution and with status unknown within 8 years at original institution"
-NOPELL_UNKN_4YR_TRANS_YR8_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and whose status is unknown within 8 years"
-NOPELL_UNKN_2YR_TRANS_YR8_RT, float, "Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and whose status is unknown within 8 years"
-LOAN_DEATH_YR8_RT, float, "Percent of students who received a federal loan at the institution and who died within 8 years at original institution"
-LOAN_COMP_ORIG_YR8_RT, float, "Percent of students who received a federal loan at the institution and who completed in 8 years at original institution"
-LOAN_COMP_4YR_TRANS_YR8_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and completed within 8 years"
-LOAN_COMP_2YR_TRANS_YR8_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and completed within 8 years"
-LOAN_WDRAW_ORIG_YR8_RT, float, "Percent of students who received a federal loan at the institution and withdrew from original institution within 8 years"
-LOAN_WDRAW_4YR_TRANS_YR8_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and withdrew within 8 years"
-LOAN_WDRAW_2YR_TRANS_YR8_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and withdrew within 8 years"
-LOAN_ENRL_ORIG_YR8_RT, float, "Percent of students who received a federal loan at the institution and who were still enrolled at original institution within 8 years"
-LOAN_ENRL_4YR_TRANS_YR8_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and were still enrolled within 8 years"
-LOAN_ENRL_2YR_TRANS_YR8_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and were still enrolled within 8 years"
-LOAN_UNKN_ORIG_YR8_RT, float, "Percent of students who received a federal loan at the institution and with status unknown within 8 years at original institution"
-LOAN_UNKN_4YR_TRANS_YR8_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and whose status is unknown within 8 years"
-LOAN_UNKN_2YR_TRANS_YR8_RT, float, "Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and whose status is unknown within 8 years"
-NOLOAN_DEATH_YR8_RT, float, "Percent of students who never received a federal loan at the institution and who died within 8 years at original institution"
-NOLOAN_COMP_ORIG_YR8_RT, float, "Percent of students who never received a federal loan at the institution and who completed in 8 years at original institution"
-NOLOAN_COMP_4YR_TRANS_YR8_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and completed within 8 years"
-NOLOAN_COMP_2YR_TRANS_YR8_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and completed within 8 years"
-NOLOAN_WDRAW_ORIG_YR8_RT, float, "Percent of students who never received a federal loan at the institution and withdrew from original institution within 8 years"
-NOLOAN_WDRAW_4YR_TRANS_YR8_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and withdrew within 8 years"
-NOLOAN_WDRAW_2YR_TRANS_YR8_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and withdrew within 8 years"
-NOLOAN_ENRL_ORIG_YR8_RT, float, "Percent of students who never received a federal loan at the institution and who were still enrolled at original institution within 8 years"
-NOLOAN_ENRL_4YR_TRANS_YR8_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and were still enrolled within 8 years"
-NOLOAN_ENRL_2YR_TRANS_YR8_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and were still enrolled within 8 years"
-NOLOAN_UNKN_ORIG_YR8_RT, float, "Percent of students who never received a federal loan at the institution and with status unknown within 8 years at original institution"
-NOLOAN_UNKN_4YR_TRANS_YR8_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and whose status is unknown within 8 years"
-NOLOAN_UNKN_2YR_TRANS_YR8_RT, float, "Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and whose status is unknown within 8 years"
-FIRSTGEN_DEATH_YR8_RT, float, "Percent of first-generation students who died within 8 years at original institution"
-FIRSTGEN_COMP_ORIG_YR8_RT, float, "Percent of first-generation students who completed within 8 years at original institution"
-FIRSTGEN_COMP_4YR_TRANS_YR8_RT, float, "Percent of first-generation students who transferred to a 4-year institution and completed within 8 years"
-FIRSTGEN_COMP_2YR_TRANS_YR8_RT, float, "Percent of first-generation students who transferred to a 2-year institution and completed within 8 years"
-FIRSTGEN_WDRAW_ORIG_YR8_RT, float, "Percent of first-generation students withdrawn from original institution within 8 years"
-FIRSTGEN_WDRAW_4YR_TRANS_YR8_RT, float, "Percent of first-generation students who transferred to a 4-year institution and withdrew within 8 years"
-FIRSTGEN_WDRAW_2YR_TRANS_YR8_RT, float, "Percent of first-generation students who transferred to a 2-year institution and withdrew within 8 years"
-FIRSTGEN_ENRL_ORIG_YR8_RT, float, "Percent of first-generation students who were still enrolled at original institution within 8 years"
-FIRSTGEN_ENRL_4YR_TRANS_YR8_RT, float, "Percent of first-generation students who transferred to a 4-year institution and were still enrolled within 8 years"
-FIRSTGEN_ENRL_2YR_TRANS_YR8_RT, float, "Percent of first-generation students who transferred to a 2-year institution and were still enrolled within 8 years"
-FIRSTGEN_UNKN_ORIG_YR8_RT, float, "Percent of first-generation students with status unknown within 8 years at original institution"
-FIRSTGEN_UNKN_4YR_TRANS_YR8_RT, float, "Percent of first-generation students who transferred to a 4-year institution and whose status is unknown within 8 years"
-FIRSTGEN_UNKN_2YR_TRANS_YR8_RT, float, "Percent of first-generation students who transferred to a 2-year institution and whose status is unknown within 8 years"
-NOT1STGEN_DEATH_YR8_RT, float, "Percent of not-first-generation students who died within 8 years at original institution"
-NOT1STGEN_COMP_ORIG_YR8_RT, float, "Percent of not-first-generation students who completed within 8 years at original institution"
-NOT1STGEN_COMP_4YR_TRANS_YR8_RT, float, "Percent of not-first-generation students who transferred to a 4-year institution and completed within 8 years"
-NOT1STGEN_COMP_2YR_TRANS_YR8_RT, float, "Percent of not-first-generation students who transferred to a 2-year institution and completed within 8 years"
-NOT1STGEN_WDRAW_ORIG_YR8_RT, float, "Percent of not-first-generation students withdrawn from original institution within 8 years"
-NOT1STGEN_WDRAW_4YR_TRANS_YR8_RT, float, "Percent of not-first-generation students who transferred to a 4-year institution and withdrew within 8 years"
-NOT1STGEN_WDRAW_2YR_TRANS_YR8_RT, float, "Percent of not-first-generation students who transferred to a 2-year institution and withdrew within 8 years"
-NOT1STGEN_ENRL_ORIG_YR8_RT, float, "Percent of not-first-generation students who were still enrolled at original institution within 8 years"
-NOT1STGEN_ENRL_4YR_TRANS_YR8_RT, float, "Percent of not-first-generation students who transferred to a 4-year institution and were still enrolled within 8 years"
-NOT1STGEN_ENRL_2YR_TRANS_YR8_RT, float, "Percent of not-first-generation students who transferred to a 2-year institution and were still enrolled within 8 years"
-NOT1STGEN_UNKN_ORIG_YR8_RT, float, "Percent of not-first-generation students with status unknown within 8 years at original institution"
-NOT1STGEN_UNKN_4YR_TRANS_YR8_RT, float, "Percent of not-first-generation students who transferred to a 4-year institution and whose status is unknown within 8 years"
-NOT1STGEN_UNKN_2YR_TRANS_YR8_RT, float, "Percent of not-first-generation students who transferred to a 2-year institution and whose status is unknown within 8 years"
-RPY_1YR_RT, float, "Fraction of repayment cohort who are not in default, and with loan balances that have declined one year since entering repayment, excluding enrolled and military deferment from calculation. (Rolling averages)"
-COMPL_RPY_1YR_RT, float, "One-year repayment rate for completers"
-NONCOM_RPY_1YR_RT, float, "One-year repayment rate for non-completers"
-LO_INC_RPY_1YR_RT, float, "One-year repayment rate by family income ($0-30,000)"
-MD_INC_RPY_1YR_RT, float, "One-year repayment rate by family income ($30,000-75,000)"
-HI_INC_RPY_1YR_RT, float, "One-year repayment rate by family income ($75,000+)"
-DEP_RPY_1YR_RT, float, "One-year repayment rate for dependent students"
-IND_RPY_1YR_RT, float, "One-year repayment rate for independent students"
-PELL_RPY_1YR_RT, float, "One-year repayment rate for students who received a Pell grant while at the school"
-NOPELL_RPY_1YR_RT, float, "One-year repayment rate for students who never received a Pell grant while at school"
-FEMALE_RPY_1YR_RT, float, "One-year repayment rate for females"
-MALE_RPY_1YR_RT, float, "One-year repayment rate for males"
-FIRSTGEN_RPY_1YR_RT, float, "One-year repayment rate for first-generation students"
-NOTFIRSTGEN_RPY_1YR_RT, float, "One-year repayment rate for students who are not first-generation"
-RPY_3YR_RT, float, "Fraction of repayment cohort who are not in default, and with loan balances that have declined three years since entering repayment, excluding enrolled and military deferment from calculation. (rolling averages)"
-COMPL_RPY_3YR_RT, float, "Three-year repayment rate for completers"
-NONCOM_RPY_3YR_RT, float, "Three-year repayment rate for non-completers"
-LO_INC_RPY_3YR_RT, float, "Three-year repayment rate by family income ($0-30,000)"
-MD_INC_RPY_3YR_RT, float, "Three-year repayment rate by family income ($30,000-75,000)"
-HI_INC_RPY_3YR_RT, float, "Three-year repayment rate by family income ($75,000+)"
-DEP_RPY_3YR_RT, float, "Three-year repayment rate for dependent students"
-IND_RPY_3YR_RT, float, "Three-year repayment rate for independent students"
-PELL_RPY_3YR_RT, float, "Three-year repayment rate for students who received a Pell grant while at the school"
-NOPELL_RPY_3YR_RT, float, "Three-year repayment rate for students who never received a Pell grant while at school"
-FEMALE_RPY_3YR_RT, float, "Three-year repayment rate for females"
-MALE_RPY_3YR_RT, float, "Three-year repayment rate for males"
-FIRSTGEN_RPY_3YR_RT, float, "Three-year repayment rate for first-generation students"
-NOTFIRSTGEN_RPY_3YR_RT, float, "Three-year repayment rate for students who are not first-generation"
-RPY_5YR_RT, float, "Fraction of repayment cohort who are not in default, and with loan balances that have declined five years since entering repayment, excluding enrolled and military deferment from calculation. (rolling averages)"
-COMPL_RPY_5YR_RT, float, "Five-year repayment rate for completers"
-NONCOM_RPY_5YR_RT, float, "Five-year repayment rate for non-completers"
-LO_INC_RPY_5YR_RT, float, "Five-year repayment rate by family income ($0-30,000)"
-MD_INC_RPY_5YR_RT, float, "Five-year repayment rate by family income ($30,000-75,000)"
-HI_INC_RPY_5YR_RT, float, "Five-year repayment rate by family income ($75,000+)"
-DEP_RPY_5YR_RT, float, "Five-year repayment rate for dependent students"
-IND_RPY_5YR_RT, float, "Five-year repayment rate for independent students"
-PELL_RPY_5YR_RT, float, "Five-year repayment rate for students who received a Pell grant while at the school"
-NOPELL_RPY_5YR_RT, float, "Five-year repayment rate for students who never received a Pell grant while at school"
-FEMALE_RPY_5YR_RT, float, "Five-year repayment rate for females"
-MALE_RPY_5YR_RT, float, "Five-year repayment rate for males"
-FIRSTGEN_RPY_5YR_RT, float, "Five-year repayment rate for first-generation students"
-NOTFIRSTGEN_RPY_5YR_RT, float, "Five-year repayment rate for students who are not first-generation"
-RPY_7YR_RT, float, "Fraction of repayment cohort who are not in default, and with loan balances that have declined seven years since entering repayment, excluding enrolled and military deferment from calculation. (rolling averages)"
-COMPL_RPY_7YR_RT, float, "Seven-year repayment rate for completers"
-NONCOM_RPY_7YR_RT, float, "Seven-year repayment rate for non-completers"
-LO_INC_RPY_7YR_RT, float, "Seven-year repayment rate by family income ($0-30,000)"
-MD_INC_RPY_7YR_RT, float, "Seven-year repayment rate by family income ($30,000-75,000)"
-HI_INC_RPY_7YR_RT, float, "Seven-year repayment rate by family income ($75,000+)"
-DEP_RPY_7YR_RT, float, "Seven-year repayment rate for dependent students"
-IND_RPY_7YR_RT, float, "Seven-year repayment rate for independent students"
-PELL_RPY_7YR_RT, float, "Seven-year repayment rate for students who received a Pell grant while at the school"
-NOPELL_RPY_7YR_RT, float, "Seven-year repayment rate for students who never received a Pell grant while at school"
-FEMALE_RPY_7YR_RT, float, "Seven-year repayment rate for females"
-MALE_RPY_7YR_RT, float, "Seven-year repayment rate for males"
-FIRSTGEN_RPY_7YR_RT, float, "Seven-year repayment rate for first-generation students"
-NOTFIRSTGEN_RPY_7YR_RT, float, "Seven-year repayment rate for students who are not first-generation"
-INC_PCT_LO, float, "Percentage of aided students whose family income is between $0-$30,000"
-DEP_STAT_PCT_IND, float, "Percentage of students who are financially independent"
-IND_INC_PCT_LO, float, "Percentage of students who are financially independent and have family incomes between $0-30,000"
-DEP_INC_PCT_LO, float, "Percentage of students who are financially dependent and have family incomes between $0-30,000"
-PAR_ED_PCT_1STGEN, float, "Percentage first-generation students"
-INC_PCT_M1, float, "Aided students with family incomes between $30,001-$48,000 in nominal dollars"
-INC_PCT_M2, float, "Aided students with family incomes between $48,001-$75,000 in nominal dollars"
-INC_PCT_H1, float, "Aided students with family incomes between $75,001-$110,000 in nominal dollars"
-INC_PCT_H2, float, "Aided students with family incomes between $110,001+ in nominal dollars"
-DEP_INC_PCT_M1, float, "Dependent students with family incomes between $30,001-$48,000 in nominal dollars"
-DEP_INC_PCT_M2, float, "Dependent students with family incomes between $48,001-$75,000 in nominal dollars"
-DEP_INC_PCT_H1, float, "Dependent students with family incomes between $75,001-$110,000 in nominal dollars"
-DEP_INC_PCT_H2, float, "Dependent students with family incomes between $110,001+ in nominal dollars"
-IND_INC_PCT_M1, float, "Independent students with family incomes between $30,001-$48,000 in nominal dollars"
-IND_INC_PCT_M2, float, "Independent students with family incomes between $48,001-$75,000 in nominal dollars"
-IND_INC_PCT_H1, float, "Independent students with family incomes between $75,001-$110,000 in nominal dollars"
-IND_INC_PCT_H2, float, "Independent students with family incomes between $110,001+ in nominal dollars"
-PAR_ED_PCT_MS, float, "Percent of students whose parents' highest educational level is middle school"
-PAR_ED_PCT_HS, float, "Percent of students whose parents' highest educational level is high school"
-PAR_ED_PCT_PS, float, "Percent of students whose parents' highest educational level was is some form of postsecondary education"
-APPL_SCH_PCT_GE2, float, "Number of applications is greater than or equal to 2"
-APPL_SCH_PCT_GE3, float, "Number of applications is greater than or equal to 3"
-APPL_SCH_PCT_GE4, float, "Number of applications is greater than or equal to 4"
-APPL_SCH_PCT_GE5, float, "Number of applications is greater than or equal to 5"
-DEP_INC_AVG, integer, "Average family income of dependent students in real 2015 dollars."
-IND_INC_AVG, integer, "Average family income of independent students in real 2015 dollars."
-OVERALL_YR2_N, integer, "Number of students in overall 2-year completion cohort"
-LO_INC_YR2_N, integer, "Number of low-income (less than $30,000 in nominal family income) students in overall 2-year completion cohort"
-MD_INC_YR2_N, integer, "Number of middle-income (between $30,000 and $75,000 in nominal family income) students in overall 2-year completion cohort"
-HI_INC_YR2_N, integer, "Number of high-income (above $75,000 in nominal family income) students in overall 2-year completion cohort"
-DEP_YR2_N, integer, "Number of dependent students in overall 2-year completion cohort"
-IND_YR2_N, integer, "Number of independent students in overall 2-year completion cohort"
-FEMALE_YR2_N, integer, "Number of female students in overall 2-year completion cohort"
-MALE_YR2_N, integer, "Number of male students in overall 2-year completion cohort"
-PELL_YR2_N, integer, "Number of Pell students in overall 2-year completion cohort"
-NOPELL_YR2_N, integer, "Number of no-Pell students in overall 2-year completion cohort"
-LOAN_YR2_N, integer, "Number of loan students in overall 2-year completion cohort"
-NOLOAN_YR2_N, integer, "Number of no-loan students in overall 2-year completion cohort"
-FIRSTGEN_YR2_N, integer, "Number of first-generation students in overall 2-year completion cohort"
-NOT1STGEN_YR2_N, integer, "Number of not-first-generation students in overall 2-year completion cohort"
-OVERALL_YR3_N, integer, "Number of students in overall 3-year completion cohort"
-LO_INC_YR3_N, integer, "Number of low-income (less than $30,000 in nominal family income) students in overall 3-year completion cohort"
-MD_INC_YR3_N, integer, "Number of middle-income (between $30,000 and $75,000 in nominal family income) students in overall 3-year completion cohort"
-HI_INC_YR3_N, integer, "Number of high-income (above $75,000 in nominal family income) students in overall 3-year completion cohort"
-DEP_YR3_N, integer, "Number of dependent students in overall 3-year completion cohort"
-IND_YR3_N, integer, "Number of independent students in overall 3-year completion cohort"
-FEMALE_YR3_N, integer, "Number of female students in overall 3-year completion cohort"
-MALE_YR3_N, integer, "Number of male students in overall 3-year completion cohort"
-PELL_YR3_N, integer, "Number of Pell students in overall 3-year completion cohort"
-NOPELL_YR3_N, integer, "Number of no-Pell students in overall 3-year completion cohort"
-LOAN_YR3_N, integer, "Number of loan students in overall 3-year completion cohort"
-NOLOAN_YR3_N, integer, "Number of no-loan students in overall 3-year completion cohort"
-FIRSTGEN_YR3_N, integer, "Number of first-generation students in overall 3-year completion cohort"
-NOT1STGEN_YR3_N, integer, "Number of not-first-generation students in overall 3-year completion cohort"
-OVERALL_YR4_N, integer, "Number of students in overall 4-year completion cohort"
-LO_INC_YR4_N, integer, "Number of low-income (less than $30,000 in nominal family income) students in overall 4-year completion cohort"
-MD_INC_YR4_N, integer, "Number of middle-income (between $30,000 and $75,000 in nominal family income) students in overall 4-year completion cohort"
-HI_INC_YR4_N, integer, "Number of high-income (above $75,000 in nominal family income) students in overall 4-year completion cohort"
-DEP_YR4_N, integer, "Number of dependent students in overall 4-year completion cohort"
-IND_YR4_N, integer, "Number of independent students in overall 4-year completion cohort"
-FEMALE_YR4_N, integer, "Number of female students in overall 4-year completion cohort"
-MALE_YR4_N, integer, "Number of male students in overall 4-year completion cohort"
-PELL_YR4_N, integer, "Number of Pell students in overall 4-year completion cohort"
-NOPELL_YR4_N, integer, "Number of no-Pell students in overall 4-year completion cohort"
-LOAN_YR4_N, integer, "Number of loan students in overall 4-year completion cohort"
-NOLOAN_YR4_N, integer, "Number of no-loan students in overall 4-year completion cohort"
-FIRSTGEN_YR4_N, integer, "Number of first-generation students in overall 4-year completion cohort"
-NOT1STGEN_YR4_N, integer, "Number of not-first-generation students in overall 4-year completion cohort"
-OVERALL_YR6_N, integer, "Number of students in overall 6-year completion cohort"
-LO_INC_YR6_N, integer, "Number of low-income (less than $30,000 in nominal family income) students in overall 6-year completion cohort"
-MD_INC_YR6_N, integer, "Number of middle-income (between $30,000 and $75,000 in nominal family income) students in overall 6-year completion cohort"
-HI_INC_YR6_N, integer, "Number of high-income (above $75,000 in nominal family income) students in overall 6-year completion cohort"
-DEP_YR6_N, integer, "Number of dependent students in overall 6-year completion cohort"
-IND_YR6_N, integer, "Number of independent students in overall 6-year completion cohort"
-FEMALE_YR6_N, integer, "Number of female students in overall 6-year completion cohort"
-MALE_YR6_N, integer, "Number of male students in overall 6-year completion cohort"
-PELL_YR6_N, integer, "Number of Pell students in overall 6-year completion cohort"
-NOPELL_YR6_N, integer, "Number of no-Pell students in overall 6-year completion cohort"
-LOAN_YR6_N, integer, "Number of loan students in overall 6-year completion cohort"
-NOLOAN_YR6_N, integer, "Number of no-loan students in overall 6-year completion cohort"
-FIRSTGEN_YR6_N, integer, "Number of first-generation students in overall 6-year completion cohort"
-NOT1STGEN_YR6_N, integer, "Number of not-first-generation students in overall 6-year completion cohort"
-OVERALL_YR8_N, integer, "Number of students in overall 8-year completion cohort"
-LO_INC_YR8_N, integer, "Number of low-income (less than $30,000 in nominal family income) students in overall 8-year completion cohort"
-MD_INC_YR8_N, integer, "Number of middle-income (between $30,000 and $75,000 in nominal family income) students in overall 8-year completion cohort"
-HI_INC_YR8_N, integer, "Number of high-income (above $75,000 in nominal family income) students in overall 8-year completion cohort"
-DEP_YR8_N, integer, "Number of dependent students in overall 8-year completion cohort"
-IND_YR8_N, integer, "Number of independent students in overall 8-year completion cohort"
-FEMALE_YR8_N, integer, "Number of female students in overall 8-year completion cohort"
-MALE_YR8_N, integer, "Number of male students in overall 8-year completion cohort"
-PELL_YR8_N, integer, "Number of Pell students in overall 8-year completion cohort"
-NOPELL_YR8_N, integer, "Number of no-Pell students in overall 8-year completion cohort"
-LOAN_YR8_N, integer, "Number of loan students in overall 8-year completion cohort"
-NOLOAN_YR8_N, integer, "Number of no-loan students in overall 8-year completion cohort"
-FIRSTGEN_YR8_N, integer, "Number of first-generation students in overall 8-year completion cohort"
-NOT1STGEN_YR8_N, integer, "Number of not-first-generation students in overall 8-year completion cohort"
-DEBT_MDN, float, "The median original amount of the loan principal upon entering repayment"
-GRAD_DEBT_MDN, float, "The median debt for students who have completed"
-WDRAW_DEBT_MDN, float, "The median debt for students who have not completed"
-LO_INC_DEBT_MDN, float, "The median debt for students with family income between $0-$30,000"
-MD_INC_DEBT_MDN, float, "The median debt for students with family income between $30,001-$75,000"
-HI_INC_DEBT_MDN, float, "The median debt for students with family income $75,001+"
-DEP_DEBT_MDN, float, "The median debt for dependent students"
-IND_DEBT_MDN, float, "The median debt for independent students"
-PELL_DEBT_MDN, float, "The median debt for Pell students"
-NOPELL_DEBT_MDN, float, "The median debt for no-Pell students"
-FEMALE_DEBT_MDN, float, "The median debt for female students"
-MALE_DEBT_MDN, float, "The median debt for male students"
-FIRSTGEN_DEBT_MDN, float, "The median debt for first-generation students"
-NOTFIRSTGEN_DEBT_MDN, float, "The median debt for not-first-generation students"
-DEBT_N, integer, "The number of students in the median debt cohort"
-GRAD_DEBT_N, integer, "The number of students in the median debt completers cohort"
-WDRAW_DEBT_N, integer, "The number of students in the median debt withdrawn cohort"
-LO_INC_DEBT_N, integer, "The number of students in the median debt low-income (less than or equal to $30,000 in nominal family income) students cohort"
-MD_INC_DEBT_N, integer, "The number of students in the median debt middle-income (between $30,000 and $75,000 in nominal family income) students cohort"
-HI_INC_DEBT_N, integer, "The number of students in the median debt high-income (above $75,000 in nominal family income) students cohort"
-DEP_DEBT_N, integer, "The number of students in the median debt dependent students cohort"
-IND_DEBT_N, integer, "The number of students in the median debt independent students cohort"
-PELL_DEBT_N, integer, "The number of students in the median debt Pell students cohort"
-NOPELL_DEBT_N, integer, "The number of students in the median debt no-Pell students cohort"
-FEMALE_DEBT_N, integer, "The number of students in the median debt female students cohort"
-MALE_DEBT_N, integer, "The number of students in the median debt male students cohort"
-FIRSTGEN_DEBT_N, integer, "The number of students in the median debt first-generation students cohort"
-NOTFIRSTGEN_DEBT_N, integer, "The number of students in the median debt not-first-generation students cohort"
-GRAD_DEBT_MDN10YR, float, "Median loan debt of completers in monthly payments (10-year amortization plan)"
-CUML_DEBT_N, integer, "Number of students in the cumulative loan debt cohort"
-CUML_DEBT_P90, integer, "Cumulative loan debt at the 90th percentile"
-CUML_DEBT_P75, integer, "Cumulative loan debt at the 75th percentile"
-CUML_DEBT_P25, integer, "Cumulative loan debt at the 25th percentile"
-CUML_DEBT_P10, integer, "Cumulative loan debt at the 10th percentile"
-INC_N, integer, "Number of students in the family income cohort"
-DEP_INC_N, integer, "Number of students in the family income dependent students cohort"
-IND_INC_N, integer, "Number of students in the family income independent students cohort"
-DEP_STAT_N, integer, "Number of students in the disaggregation with valid dependency status"
-PAR_ED_N, integer, "Number of students in the parents' education level cohort"
-APPL_SCH_N, integer, "Number of students in the FAFSA applications cohort"
-REPAY_DT_MDN, string, "Median Date Student Enters Repayment"
-SEPAR_DT_MDN, string, "Median Date Student Separated"
-REPAY_DT_N, integer, "Number of students in the cohort for date students enter repayment"
-SEPAR_DT_N, integer, "Number of students in the cohort for date students separated from the school"
-RPY_1YR_N, integer, "Number of students in the 1-year repayment rate cohort"
-COMPL_RPY_1YR_N, integer, "Number of students in the 1-year repayment rate of completers cohort"
-NONCOM_RPY_1YR_N, integer, "Number of students in the 1-year repayment rate of non-completers cohort"
-LO_INC_RPY_1YR_N, integer, "Number of students in the 1-year repayment rate of low-income (less than $30,000 in nominal family income) students cohort"
-MD_INC_RPY_1YR_N, integer, "Number of students in the 1-year repayment rate of middle-income (between $30,000 and $75,000 in nominal family income) students cohort"
-HI_INC_RPY_1YR_N, integer, "Number of students in the 1-year repayment rate of high-income (above $75,000 in nominal family income) students cohort"
-DEP_RPY_1YR_N, integer, "Number of students in the 1-year repayment rate of dependent students cohort"
-IND_RPY_1YR_N, integer, "Number of students in the 1-year repayment rate of independent students cohort"
-PELL_RPY_1YR_N, integer, "Number of students in the 1-year repayment rate of Pell students cohort"
-NOPELL_RPY_1YR_N, integer, "Number of students in the 1-year repayment rate of no-Pell students cohort"
-FEMALE_RPY_1YR_N, integer, "Number of students in the 1-year repayment rate of female students cohort"
-MALE_RPY_1YR_N, integer, "Number of students in the 1-year repayment rate of male students cohort"
-FIRSTGEN_RPY_1YR_N, integer, "Number of students in the 1-year repayment rate of first-generation students cohort"
-NOTFIRSTGEN_RPY_1YR_N, integer, "Number of students in the 1-year repayment rate of not-first-generation students cohort"
-RPY_3YR_N, integer, "Number of students in the 3-year repayment rate cohort"
-COMPL_RPY_3YR_N, integer, "Number of students in the 3-year repayment rate of completers cohort"
-NONCOM_RPY_3YR_N, integer, "Number of students in the 3-year repayment rate of non-completers cohort"
-LO_INC_RPY_3YR_N, integer, "Number of students in the 3-year repayment rate of low-income (less than $30,000 in nominal family income) students cohort"
-MD_INC_RPY_3YR_N, integer, "Number of students in the 3-year repayment rate of middle-income (between $30,000 and $75,000 in nominal family income) students cohort"
-HI_INC_RPY_3YR_N, integer, "Number of students in the 3-year repayment rate of high-income (above $75,000 in nominal family income) students cohort"
-DEP_RPY_3YR_N, integer, "Number of students in the 3-year repayment rate of dependent students cohort"
-IND_RPY_3YR_N, integer, "Number of students in the 3-year repayment rate of independent students cohort"
-PELL_RPY_3YR_N, integer, "Number of students in the 3-year repayment rate of Pell students cohort"
-NOPELL_RPY_3YR_N, integer, "Number of students in the 3-year repayment rate of no-Pell students cohort"
-FEMALE_RPY_3YR_N, integer, "Number of students in the 3-year repayment rate of female students cohort"
-MALE_RPY_3YR_N, integer, "Number of students in the 3-year repayment rate of male students cohort"
-FIRSTGEN_RPY_3YR_N, integer, "Number of students in the 3-year repayment rate of first-generation students cohort"
-NOTFIRSTGEN_RPY_3YR_N, integer, "Number of students in the 3-year repayment rate of not-first-generation students cohort"
-RPY_5YR_N, integer, "Number of students in the 5-year repayment rate cohort"
-COMPL_RPY_5YR_N, integer, "Number of students in the 5-year repayment rate of completers cohort"
-NONCOM_RPY_5YR_N, integer, "Number of students in the 5-year repayment rate of non-completers cohort"
-LO_INC_RPY_5YR_N, integer, "Number of students in the 5-year repayment rate of low-income (less than $30,000 in nominal family income) students cohort"
-MD_INC_RPY_5YR_N, integer, "Number of students in the 5-year repayment rate of middle-income (between $30,000 and $75,000 in nominal family income) students cohort"
-HI_INC_RPY_5YR_N, integer, "Number of students in the 5-year repayment rate of high-income (above $75,000 in nominal family income) students cohort"
-DEP_RPY_5YR_N, integer, "Number of students in the 5-year repayment rate of dependent students cohort"
-IND_RPY_5YR_N, integer, "Number of students in the 5-year repayment rate of independent students cohort"
-PELL_RPY_5YR_N, integer, "Number of students in the 5-year repayment rate of Pell students cohort"
-NOPELL_RPY_5YR_N, integer, "Number of students in the 5-year repayment rate of no-Pell students cohort"
-FEMALE_RPY_5YR_N, integer, "Number of students in the 5-year repayment rate of female students cohort"
-MALE_RPY_5YR_N, integer, "Number of students in the 5-year repayment rate of male students cohort"
-FIRSTGEN_RPY_5YR_N, integer, "Number of students in the 5-year repayment rate of first-generation students cohort"
-NOTFIRSTGEN_RPY_5YR_N, integer, "Number of students in the 5-year repayment rate of not-first-generation students cohort"
-RPY_7YR_N, integer, "Number of students in the 7-year repayment rate cohort"
-COMPL_RPY_7YR_N, integer, "Number of students in the 7-year repayment rate of completers cohort"
-NONCOM_RPY_7YR_N, integer, "Number of students in the 7-year repayment rate of non-completers cohort"
-LO_INC_RPY_7YR_N, integer, "Number of students in the 7-year repayment rate of low-income (less than $30,000 in nominal family income) students cohort"
-MD_INC_RPY_7YR_N, integer, "Number of students in the 7-year repayment rate of middle-income (between $30,000 and $75,000 in nominal family income) students cohort"
-HI_INC_RPY_7YR_N, integer, "Number of students in the 7-year repayment rate of high-income (above $75,000 in nominal family income) students cohort"
-DEP_RPY_7YR_N, integer, "Number of students in the 7-year repayment rate of dependent students cohort"
-IND_RPY_7YR_N, integer, "Number of students in the 7-year repayment rate of independent students cohort"
-PELL_RPY_7YR_N, integer, "Number of students in the 7-year repayment rate of Pell students cohort"
-NOPELL_RPY_7YR_N, integer, "Number of students in the 7-year repayment rate of no-Pell students cohort"
-FEMALE_RPY_7YR_N, integer, "Number of students in the 7-year repayment rate of female students cohort"
-MALE_RPY_7YR_N, integer, "Number of students in the 7-year repayment rate of male students cohort"
-FIRSTGEN_RPY_7YR_N, integer, "Number of students in the 7-year repayment rate of first-generation students cohort"
-NOTFIRSTGEN_RPY_7YR_N, integer, "Number of students in the 7-year repayment rate of not-first-generation students cohort"
-COUNT_ED, integer, "Count of students in the earnings cohort"
-LOAN_EVER, float, "Share of students who received a federal loan while in school"
-PELL_EVER, float, "Share of students who received a Pell Grant while in school"
-AGE_ENTRY, integer, "Average age of entry"
-AGE_ENTRY_SQ, integer, "Average of the age of entry squared"
-AGEGE24, float, "Percent of students over 23 at entry"
-FEMALE, float, "Share of female students"
-MARRIED, float, "Share of married students"
-DEPENDENT, float, "Share of dependent students"
-VETERAN, float, "Share of veteran students"
-FIRST_GEN, float, "Share of first-generation students"
-FAMINC, integer, "Average family income"
-MD_FAMINC, integer, "Median family income"
-FAMINC_IND, integer, "Average family income for independent students "
-LNFAMINC, integer, "Average of the log of family income"
-LNFAMINC_IND, integer, "Average of the log of family income for independent students"
-PCT_WHITE, float, "Percent of the population from students' zip codes that is White, via Census data"
-PCT_BLACK, float, "Percent of the population from students' zip codes that is Black, via Census data"
-PCT_ASIAN, float, "Percent of the population from students' zip codes that is Asian, via Census data"
-PCT_HISPANIC, float, "Percent of the population from students' zip codes that is Hispanic, via Census data"
-PCT_BA, float, "Percent of the population from students' zip codes with a bachelor's degree over the age 25, via Census data"
-PCT_GRAD_PROF, float, "Percent of the population from students' zip codes over 25 with a professional degree, via Census data"
-PCT_BORN_US, float, "Percent of the population from students' zip codes that was born in the US, via Census data"
-MEDIAN_HH_INC, integer, "Median household income"
-POVERTY_RATE, float, "Poverty rate, via Census data"
-UNEMP_RATE, float, "Unemployment rate, via Census data"
-LN_MEDIAN_HH_INC, integer, "Log of the median household income"
-FSEND_COUNT, integer, "Average number of students who sent their FAFSA reports to at least one college"
-FSEND_1, float, "Share of students who submitted FAFSAs to only one college"
-FSEND_2, float, "Share of students who submitted FAFSAs to two colleges"
-FSEND_3, float, "Share of students who submitted FAFSAs to three colleges"
-FSEND_4, float, "Share of students who submitted FAFSAs to four colleges"
-FSEND_5, float, "Share of students who submitted FAFSAs to at least five colleges"
-COUNT_NWNE_P10, integer, "Number of students not working and not enrolled 10 years after entry"
-COUNT_WNE_P10, integer, "Number of students working and not enrolled 10 years after entry"
-MN_EARN_WNE_P10, integer, "Mean earnings of students working and not enrolled 10 years after entry"
-MD_EARN_WNE_P10, integer, "Median earnings of students working and not enrolled 10 years after entry"
-PCT10_EARN_WNE_P10, integer, "10th percentile of earnings of students working and not enrolled 10 years after entry"
-PCT25_EARN_WNE_P10, integer, "25th percentile of earnings of students working and not enrolled 10 years after entry"
-PCT75_EARN_WNE_P10, integer, "75th percentile of earnings of students working and not enrolled 10 years after entry"
-PCT90_EARN_WNE_P10, integer, "90th percentile of earnings of students working and not enrolled 10 years after entry"
-SD_EARN_WNE_P10, integer, "Standard deviation of earnings of students working and not enrolled 10 years after entry"
-COUNT_WNE_INC1_P10, integer, "Number of students working and not enrolled 10 years after entry in the lowest income tercile $0-$30,000"
-COUNT_WNE_INC2_P10, integer, "Number of students working and not enrolled 10 years after entry in the middle income tercile $30,001-$75,000"
-COUNT_WNE_INC3_P10, integer, "Number of students working and not enrolled 10 years after entry in the highest income tercile $75,001+ "
-COUNT_WNE_INDEP0_INC1_P10, integer, "Number of dependent students working and not enrolled 10 years after entry in the lowest income tercile $0-$30,000 "
-COUNT_WNE_INDEP0_P10, integer, "Number of dependent students working and not enrolled 10 years after entry"
-COUNT_WNE_INDEP1_P10, integer, "Number of independent students working and not enrolled 10 years after entry"
-COUNT_WNE_MALE0_P10, integer, "Number of female students working and not enrolled 10 years after entry"
-COUNT_WNE_MALE1_P10, integer, "Number of male students working and not enrolled 10 years after entry"
-GT_25K_P10, float, "Share of students earning over $25,000/year (threshold earnings) 10 years after entry"
-GT_28K_P10, float, "Share of students earning over $28,000/year (threshold earnings) 10 years after entry"
-MN_EARN_WNE_INC1_P10, integer, "Mean earnings of students working and not enrolled 10 years after entry in the lowest income tercile $0-$30,000"
-MN_EARN_WNE_INC2_P10, integer, "Mean earnings of students working and not enrolled 10 years after entry in the middle income tercile $30,001-$75,000"
-MN_EARN_WNE_INC3_P10, integer, "Mean earnings of students working and not enrolled 10 years after entry in the highest income tercile $75,001+ "
-MN_EARN_WNE_INDEP0_INC1_P10, integer, "Mean earnings of dependent students working and not enrolled 10 years after entry in the lowest income tercile $0-$30,000"
-MN_EARN_WNE_INDEP0_P10, integer, "Mean earnings of dependent students working and not enrolled 10 years after entry"
-MN_EARN_WNE_INDEP1_P10, integer, "Mean earnings of independent students working and not enrolled 10 years after entry"
-MN_EARN_WNE_MALE0_P10, integer, "Mean earnings of female students working and not enrolled 10 years after entry"
-MN_EARN_WNE_MALE1_P10, integer, "Mean earnings of male students working and not enrolled 10 years after entry"
-COUNT_NWNE_P6, integer, "Number of students not working and not enrolled 6 years after entry"
-COUNT_WNE_P6, integer, "Number of students working and not enrolled 6 years after entry"
-MN_EARN_WNE_P6, integer, "Mean earnings of students working and not enrolled 6 years after entry"
-MD_EARN_WNE_P6, integer, "Median earnings of students working and not enrolled 6 years after entry"
-PCT10_EARN_WNE_P6, integer, "10th percentile of earnings of students working and not enrolled 6 years after entry"
-PCT25_EARN_WNE_P6, integer, "25th percentile of earnings of students working and not enrolled 6 years after entry"
-PCT75_EARN_WNE_P6, integer, "75th percentile of earnings of students working and not enrolled 6 years after entry"
-PCT90_EARN_WNE_P6, integer, "90th percentile of earnings of students working and not enrolled 6 years after entry"
-SD_EARN_WNE_P6, integer, "Standard deviation of earnings of students working and not enrolled 6 years after entry"
-COUNT_WNE_INC1_P6, integer, "Number of students working and not enrolled 6 years after entry in the lowest income tercile $0-$30,000"
-COUNT_WNE_INC2_P6, integer, "Number of students working and not enrolled 6 years after entry in the middle income tercile $30,001-$75,000"
-COUNT_WNE_INC3_P6, integer, "Number of students working and not enrolled 6 years after entry in the highest income tercile $75,001+ "
-COUNT_WNE_INDEP0_INC1_P6, integer, "Number of dependent students working and not enrolled 6 years after entry in the lowest income tercile $0-$30,000"
-COUNT_WNE_INDEP0_P6, integer, "Number of dependent students working and not enrolled 6 years after entry"
-COUNT_WNE_INDEP1_P6, integer, "Number of independent students working and not enrolled 6 years after entry"
-COUNT_WNE_MALE0_P6, integer, "Number of female students working and not enrolled 6 years after entry"
-COUNT_WNE_MALE1_P6, integer, "Number of male students working and not enrolled 6 years after entry"
-GT_25K_P6, float, "Share of students earning over $25,000/year (threshold earnings) 6 years after entry"
-GT_28K_P6, float, "Share of students earning over $28,000/year (threshold earnings) 6 years after entry"
-MN_EARN_WNE_INC1_P6, float, "Mean earnings of students working and not enrolled 6 years after entry in the lowest income tercile $0-$30,000"
-MN_EARN_WNE_INC2_P6, float, "Mean earnings of students working and not enrolled 6 years after entry in the middle income tercile $30,001-$75,000"
-MN_EARN_WNE_INC3_P6, float, "Mean earnings of students working and not enrolled 6 years after entry in the highest income tercile $75,001+ "
-MN_EARN_WNE_INDEP0_INC1_P6, float, "Mean earnings of dependent students working and not enrolled 6 years after entry in the lowest income tercile $0-$30,000"
-MN_EARN_WNE_INDEP0_P6, float, "Mean earnings of dependent students working and not enrolled 6 years after entry"
-MN_EARN_WNE_INDEP1_P6, float, "Mean earnings of independent students working and not enrolled 6 years after entry"
-MN_EARN_WNE_MALE0_P6, float, "Mean earnings of female students working and not enrolled 6 years after entry"
-MN_EARN_WNE_MALE1_P6, float, "Mean earnings of male students working and not enrolled 6 years after entry"
-COUNT_NWNE_P7, float, "Number of students not working and not enrolled 7 years after entry"
-COUNT_WNE_P7, integer, "Number of students working and not enrolled 7 years after entry"
-MN_EARN_WNE_P7, float, "Mean earnings of students working and not enrolled 7 years after entry"
-SD_EARN_WNE_P7, float, "Standard deviation of earnings of students working and not enrolled 7 years after entry"
-GT_25K_P7, float, "Share of students earning over $25,000/year (threshold earnings) 7 years after entry"
-COUNT_NWNE_P8, integer, "Number of students not working and not enrolled 8 years after entry"
-COUNT_WNE_P8, integer, "Number of students working and not enrolled 8 years after entry"
-MN_EARN_WNE_P8, float, "Mean earnings of students working and not enrolled 8 years after entry"
-MD_EARN_WNE_P8, float, "Median earnings of students working and not enrolled 8 years after entry"
-PCT10_EARN_WNE_P8, integer, "10th percentile of earnings of students working and not enrolled 8 years after entry"
-PCT25_EARN_WNE_P8, integer, "25th percentile of earnings of students working and not enrolled 8 years after entry"
-PCT75_EARN_WNE_P8, integer, "75th percentile of earnings of students working and not enrolled 8 years after entry"
-PCT90_EARN_WNE_P8, integer, "90th percentile of earnings of students working and not enrolled 8 years after entry"
-SD_EARN_WNE_P8, float, "Standard deviation of earnings of students working and not enrolled 8 years after entry"
-GT_25K_P8, float, "Share of students earning over $25,000/year (threshold earnings) 8 years after entry"
-GT_28K_P8, float, "Share of students earning over $28,000/year (threshold earnings) 8 years after entry"
-COUNT_NWNE_P9, integer, "Number of students not working and not enrolled 9 years after entry"
-COUNT_WNE_P9, integer, "Number of students working and not enrolled 9 years after entry"
-MN_EARN_WNE_P9, float, "Mean earnings of students working and not enrolled 9 years after entry"
-SD_EARN_WNE_P9, float, "Standard deviation of earnings of students working and not enrolled 9 years after entry"
-GT_25K_P9, float, "Share of students earning over $25,000/year (threshold earnings) 9 years after entry"
-DEBT_MDN_SUPP, float, "Median debt, suppressed for n=30"
-GRAD_DEBT_MDN_SUPP, float, "Median debt of completers, suppressed for n=30"
-GRAD_DEBT_MDN10YR_SUPP, float, "Median debt of completers expressed in 10-year monthly payments, suppressed for n=30"
-RPY_3YR_RT_SUPP, float, "3-year repayment rate, suppressed for n=30"
-LO_INC_RPY_3YR_RT_SUPP, float, "3-year repayment rate for low-income (less than $30,000 in nominal family income) students, suppressed for n=30"
-MD_INC_RPY_3YR_RT_SUPP, float, "3-year repayment rate for middle-income (between $30,000 and $75,000 in nominal family income) students, suppressed for n=30"
-HI_INC_RPY_3YR_RT_SUPP, float, "3-year repayment rate for high-income (above $75,000 in nominal family income) students, suppressed for n=30"
-COMPL_RPY_3YR_RT_SUPP, float, "3-year repayment rate for completers, suppressed for n=30"
-NONCOM_RPY_3YR_RT_SUPP, float, "3-year repayment rate for non-completers, suppressed for n=30"
-DEP_RPY_3YR_RT_SUPP, float, "3-year repayment rate for dependent students, suppressed for n=30"
-IND_RPY_3YR_RT_SUPP, float, "3-year repayment rate for independent students, suppressed for n=30"
-PELL_RPY_3YR_RT_SUPP, float, "3-year repayment rate for Pell students, suppressed for n=30"
-NOPELL_RPY_3YR_RT_SUPP, float, "3-year repayment rate for no-Pell students, suppressed for n=30"
-FEMALE_RPY_3YR_RT_SUPP, float, "3-year repayment rate for female students, suppressed for n=30"
-MALE_RPY_3YR_RT_SUPP, float, "3-year repayment rate for male students, suppressed for n=30"
-FIRSTGEN_RPY_3YR_RT_SUPP, float, "3-year repayment rate for first-generation students, suppressed for n=30"
-NOTFIRSTGEN_RPY_3YR_RT_SUPP, float, "3-year repayment rate for non-first-generation students, suppressed for n=30"
-C150_L4_POOLED_SUPP, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) , pooled in two-year rolling averages and suppressed for small n size"
-C150_4_POOLED_SUPP, float, "Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) , pooled in two-year rolling averages and suppressed for small n size."
-C200_L4_POOLED_SUPP, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (200% of expected time to completion), pooled in two-year rolling averages and suppressed for small n size. "
-C200_4_POOLED_SUPP, float, "Completion rate for first-time, full-time students at four-year institutions (200% of expected time to completion), pooled in two-year rolling averages and suppressed for small n size"
-ALIAS, autocomplete, "Institution name aliases"
-C100_4, float, "Completion rate for first-time, full-time students at four-year institutions (100% of expected time to completion)"
-D100_4, integer, "Adjusted cohort count for completion rate at four-year institutions (denominator of 100% completion rate)"
-C100_L4, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (100% of expected time to completion)"
-D100_L4, integer, "Adjusted cohort count for completion rate at less-than-four-year institutions (denominator of 100% completion rate)"
-TRANS_4, float, "Transfer rate for first-time, full-time students at four-year institutions (within 150% of expected time to completion/6 years)"
-DTRANS_4, integer, "Adjusted cohort count for transfer rate at four-year institutions (denominator of 150% transfer rate)"
-TRANS_L4, float, "Transfer rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion)"
-DTRANS_L4, integer, "Adjusted cohort count for transfer rate at less-than-four-year institutions (denominator of 150% transfer rate)"
-ICLEVEL, integer, "Level of institution"
-UGDS_MEN, float, "Total share of enrollment of undergraduate degree-seeking students who are men"
-UGDS_WOMEN, float, "Total share of enrollment of undergraduate degree-seeking students who are women"
-CDR2_DENOM, integer, "Number of students in the cohort for the two-year cohort default rate"
-CDR3_DENOM, integer, "Number of students in the cohort for the three-year cohort default rate"
-OPENADMP, integer, "Open admissions policy indicator"
-D_PCTPELL_PCTFLOAN, integer, "Number of undergraduate students (denominator percent receiving a pell grant or federal student loan)"
-UGNONDS, integer, "Number of non-degree-seeking undergraduate students"
-GRADS, integer, "Number of graduate students"
-D150_4_WHITE, integer, "Adjusted cohort count for completion rate of White students at four-year institutions (denominator of 150% completion rate)"
-D150_4_BLACK, integer, "Adjusted cohort count for completion rate of Black/African American students at four-year institutions (denominator of 150% completion rate)"
-D150_4_HISP, integer, "Adjusted cohort count for completion rate of Hispanic students at four-year institutions (denominator of 150% completion rate)"
-D150_4_ASIAN, integer, "Adjusted cohort count for completion rate of Asian students at four-year institutions (denominator of 150% completion rate)"
-D150_4_AIAN, integer, "Adjusted cohort count for completion rate of American Indian/Alaska Native students at four-year institutions (denominator of 150% completion rate)"
-D150_4_NHPI, integer, "Adjusted cohort count for completion rate of Native Hawaiian/Pacific Islander students at four-year institutions (denominator of 150% completion rate)"
-D150_4_2MOR, integer, "Adjusted cohort count for completion rate of students of Two or More Races at four-year institutions (denominator of 150% completion rate)"
-D150_4_NRA, integer, "Adjusted cohort count for completion rate of U.S. Nonresident students at four-year institutions (denominator of 150% completion rate)"
-D150_4_UNKN, integer, "Adjusted cohort count for completion rate of students of Unknown race at four-year institutions (denominator of 150% completion rate)"
-D150_L4_WHITE, integer, "Adjusted cohort count for completion rate of White students at less-than-four-year institutions (denominator of 150% completion rate)"
-D150_L4_BLACK, integer, "Adjusted cohort count for completion rate of Black/African American students at less-than-four-year institutions (denominator of 150% completion rate)"
-D150_L4_HISP, integer, "Adjusted cohort count for completion rate of Hispanic students at less-than-four-year institutions (denominator of 150% completion rate)"
-D150_L4_ASIAN, integer, "Adjusted cohort count for completion rate of Asian students at less-than-four-year institutions (denominator of 150% completion rate)"
-D150_L4_AIAN, integer, "Adjusted cohort count for completion rate of American Indian/Alaska Native students at less-than-four-year institutions (denominator of 150% completion rate)"
-D150_L4_NHPI, integer, "Adjusted cohort count for completion rate of Native Hawaiian/Pacific Islander students at less-than-four-year institutions (denominator of 150% completion rate)"
-D150_L4_2MOR, integer, "Adjusted cohort count for completion rate of students of Two or More Races at less-than-four-year institutions (denominator of 150% completion rate)"
-D150_L4_NRA, integer, "Adjusted cohort count for completion rate of U.S. Nonresident students at less-than-four-year institutions (denominator of 150% completion rate)"
-D150_L4_UNKN, integer, "Adjusted cohort count for completion rate of students of Unknown race at less-than-four-year institutions (denominator of 150% completion rate)"
-D150_4_WHITENH, integer, "Adjusted cohort count for completion rate of White, non-Hispanic students at four-year institutions (denominator of 150% completion rate)"
-D150_4_BLACKNH, integer, "Adjusted cohort count for completion rate of Black, non-Hispanic students at four-year institutions (denominator of 150% completion rate)"
-D150_4_API, integer, "Adjusted cohort count for completion rate of Asian/Pacific Islander students at four-year institutions (denominator of 150% completion rate)"
-D150_4_AIANOld, integer, "Adjusted cohort count for completion rate of American Indian/Alaska Native students at four-year institutions (denominator of 150% completion rate)"
-D150_4_HISPOld, integer, "Adjusted cohort count for completion rate of Hispanic students at four-year institutions (denominator of 150% completion rate)"
-D150_L4_WHITENH, integer, "Adjusted cohort count for completion rate of White, non-Hispanic students at less-than-four-year institutions (denominator of 150% completion rate)"
-D150_L4_BLACKNH, integer, "Adjusted cohort count for completion rate of Black, non-Hispanic students at less-than-four-year institutions (denominator of 150% completion rate)"
-D150_L4_API, integer, "Adjusted cohort count for completion rate of Asian/Pacific Islander students at less-than-four-year institutions (denominator of 150% completion rate)"
-D150_L4_AIANOld, integer, "Adjusted cohort count for completion rate of American Indian/Alaska Native students at less-than-four-year institutions (denominator of 150% completion rate)"
-D150_L4_HISPOld, integer, "Adjusted cohort count for completion rate of Hispanic students at less-than-four-year institutions (denominator of 150% completion rate)"
-ACCREDCODE, string, "Code corresponding to accreditor (as captured from PEPS)"
-T4APPROVALDATE, string, "Date that institution was first approved to participate in Title IV aid programs"
-OMACHT6_FTFT, integer, "Adjusted cohort count of full-time, first-time students (denominator for the percentage receiving an award within 6 years of entry)"
-OMAWDP6_FTFT, float, "Percentage of full-time, first-time student receiving an award within 6 years of entry"
-OMACHT8_FTFT, integer, "Adjusted cohort count of full-time, first-time students (denominator for the 8-year outcomes percentages)"
-OMAWDP8_FTFT, float, "Percentage of full-time, first-time student receiving an award within 8 years of entry"
-OMENRYP8_FTFT, float, "Percentage of full-time, first-time students that did not receive an award and are still enrolled at this institution 8 years after entry"
-OMENRAP8_FTFT, float, "Percentage of full-time, first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
-OMENRUP8_FTFT, float, "Percentage of full-time, first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
-OMACHT6_PTFT, integer, "Adjusted cohort count of part-time, first-time students (denominator for the percentage receiving an award within 6 years of entry)"
-OMAWDP6_PTFT, float, "Percentage of part-time, first-time student receiving an award within 6 years of entry"
-OMACHT8_PTFT, integer, "Adjusted cohort count of part-time, first-time students (denominator for the 8-year outcomes percentages)"
-OMAWDP8_PTFT, float, "Percentage of part-time, first-time student receiving an award within 8 years of entry"
-OMENRYP8_PTFT, float, "Percentage of part-time, first-time students that did not receive an award and are still enrolled at this institution 8 years after entry"
-OMENRAP8_PTFT, float, "Percentage of part-time, first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
-OMENRUP8_PTFT, float, "Percentage of part-time, first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
-OMACHT6_FTNFT, integer, "Adjusted cohort count of full-time, not first-time students (denominator for the percentage receiving an award within 6 years of entry)"
-OMAWDP6_FTNFT, float, "Percentage of full-time, not first-time student receiving an award within 6 years of entry"
-OMACHT8_FTNFT, integer, "Adjusted cohort count of full-time, not first-time students (denominator for the 8-year outcomes percentages)"
-OMAWDP8_FTNFT, float, "Percentage of full-time, not first-time student receiving an award within 8 years of entry"
-OMENRYP8_FTNFT, float, "Percentage of full-time, not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry"
-OMENRAP8_FTNFT, float, "Percentage of full-time, not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
-OMENRUP8_FTNFT, float, "Percentage of full-time, not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
-OMACHT6_PTNFT, integer, "Adjusted cohort count of part-time, not first-time students (denominator for the percentage receiving an award within 6 years of entry)"
-OMAWDP6_PTNFT, float, "Percentage of part-time, not first-time student receiving an award within 6 years of entry"
-OMACHT8_PTNFT, integer, "Adjusted cohort count of part-time, not first-time students (denominator for the 8-year outcomes percentages)"
-OMAWDP8_PTNFT, float, "Percentage of part-time, not first-time student receiving an award within 8 years of entry"
-OMENRYP8_PTNFT, float, "Percentage of part-time, not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry"
-OMENRAP8_PTNFT, float, "Percentage of part-time, not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
-OMENRUP8_PTNFT, float, "Percentage of part-time, not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
-RET_FT4_POOLED, float, "First-time, full-time student retention rate at four-year institutions"
-RET_FTL4_POOLED, float, "First-time, full-time student retention rate at less-than-four-year institutions"
-RET_PT4_POOLED, float, "First-time, part-time student retention rate at four-year institutions"
-RET_PTL4_POOLED, float, "First-time, part-time student retention rate at less-than-four-year institutions"
-RET_FT_DEN4_POOLED, float, "Adjusted cohort count for the first-time, full-time student retention rate at four-year institutions (denominator of the retention rate)"
-RET_FT_DENL4_POOLED, float, "Adjusted cohort count for the first-time, full-time student retention rate at less-than-four-year institutions (denominator of the retention rate)"
-RET_PT_DEN4_POOLED, float, "Adjusted cohort count for the first-time, part-time student retention rate at four-year institutions (denominator of the retention rate)"
-RET_PT_DENL4_POOLED, float, "Adjusted cohort count for the first-time, part-time student retention rate at less-than-four-year institutions (denominator of the retention rate)"
-POOLYRSRET_FT, integer, "Years used for rolling averages of full-time retention rate RET_FT[4/L4]_POOLED"
-POOLYRSRET_PT, integer, "Years used for rolling averages of part-time retention rate RET_PT[4/L4]_POOLED"
-RET_FT4_POOLED_SUPP, float, "First-time, full-time student retention rate at four-year institutions"
-RET_FTL4_POOLED_SUPP, float, "First-time, full-time student retention rate at less-than-four-year institutions"
-RET_PT4_POOLED_SUPP, float, "First-time, part-time student retention rate at four-year institutions"
-RET_PTL4_POOLED_SUPP, float, "First-time, part-time student retention rate at less-than-four-year institutions"
-TRANS_4_POOLED, float, "Transfer rate for first-time, full-time students at four-year institutions (within 150% of expected time to completion/6 years)"
-TRANS_L4_POOLED, float, "Transfer rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion)"
-DTRANS_4_POOLED, integer, "Adjusted cohort count for transfer rate at four-year institutions (denominator of 150% transfer rate)"
-DTRANS_L4_POOLED, integer, "Adjusted cohort count for transfer rate at less-than-four-year institutions (denominator of 150% transfer rate)"
-TRANS_4_POOLED_SUPP, float, "Transfer rate for first-time, full-time students at four-year institutions (within 150% of expected time to completion/6 years)"
-TRANS_L4_POOLED_SUPP, float, "Transfer rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion)"
-C100_4_POOLED, float, "Completion rate for first-time, full-time students at four-year institutions (100% of expected time to completion), pooled for rolling averages"
-C100_L4_POOLED, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (100% of expected time to completion), pooled for rolling averages"
-D100_4_POOLED, integer, "Adjusted cohort count for completion rate at four-year institutions (denominator of 100% completion rate), pooled for rolling averages"
-D100_L4_POOLED, integer, "Adjusted cohort count for completion rate at less-than-four-year institutions (denominator of 100% completion rate), pooled for rolling averages"
-POOLYRS100, integer, "Years used for rolling averages of completion rate C100_[4/L4]_POOLED"
-C100_4_POOLED_SUPP, float, "Completion rate for first-time, full-time students at four-year institutions (100% of expected time to completion), pooled for rolling averages and suppressed for small n size."
-C100_L4_POOLED_SUPP, float, "Completion rate for first-time, full-time students at less-than-four-year institutions (100% of expected time to completion), pooled for rolling averages and suppressed for small n size."
-C150_4_PELL, float, "Completion rate for first-time, full-time students receiving a Pell Grant during their first year of college at four-year institutions (150% of expected time to completion)"
-D150_4_PELL, integer, "Adjusted cohort count for Pell Grant recipient completion rate at four-year institutions (denominator of 150% Pell Grant recipient completion rate)"
-C150_L4_PELL, float, "Completion rate for first-time, full-time students receiving a Pell Grant during their first year of college at less-than-four-year institutions (150% of expected time to completion)"
-D150_L4_PELL, integer, "Adjusted cohort count for Pell Grant recipient completion rate at less-than-four-year institutions (denominator of 150% Pell Grant recipient completion rate)"
-C150_4_LOANNOPELL, float, "Completion rate for first-time, full-time students receiving a Direct Subsidized Loan but not a Pell Grant during their first year of college at four-year institutions (150% of expected time to completion)"
-D150_4_LOANNOPELL, integer, "Adjusted cohort count for Direct Subsidized Loan recipients who did not receive a Pell Grant completion rate at four-year institutions (denominator of 150% Direct Subsidized Loan recipient who did not receive a Pell Grant completion rate)"
-C150_L4_LOANNOPELL, float, "Completion rate for first-time, full-time students receiving a Direct Subsidized Loan but not a Pell Grant during their first year of college at less-than-four-year institutions (150% of expected time to completion)"
-D150_L4_LOANNOPELL, integer, "Adjusted cohort count for Direct Subsidized Loan recipients who did not receive a Pell Grant completion rate at less-than-four-year institutions (denominator of 150% Direct Subsidized Loan recipient who did not receive a Pell Grant completion rate)"
-C150_4_NOLOANNOPELL, float, "Completion rate for first-time, full-time students receiving neither a Direct Subsidized Loan or a Pell Grant during their first year of college at four-year institutions (150% of expected time to completion)"
-D150_4_NOLOANNOPELL, integer, "Adjusted cohort count for those who did not receive a Direct Subsidized Loan or a Pell Grant completion rate at four-year institutions (denominator of 150% did not receive a Direct Subsidized Loan or Pell Grant completion rate)"
-C150_L4_NOLOANNOPELL, float, "Completion rate for first-time, full-time students receiving neither a Direct Subsidized Loan or a Pell Grant during their first year of college at less-than-four-year institutions (150% of expected time to completion)"
-D150_L4_NOLOANNOPELL, integer, "Adjusted cohort count for those who did not receive a Direct Subsidized Loan or a Pell Grant completion rate at less-than-four-year institutions (denominator of 150% did not receive a Direct Subsidized Loan or Pell Grant completion rate)"
-OMACHT6_FTFT_POOLED, integer, "Adjusted cohort count of full-time, first-time students (denominator for the percentage receiving an award within 6 years of entry), pooled across years."
-OMAWDP6_FTFT_POOLED, float, "Percentage of full-time, first-time student receiving an award within 6 years of entry, pooled in rolling averages."
-OMACHT8_FTFT_POOLED, integer, "Adjusted cohort count of full-time, first-time students (denominator for the 8-year outcomes percentages), pooled across years."
-OMAWDP8_FTFT_POOLED, float, "Percentage of full-time, first-time student receiving an award within 8 years of entry, pooled in rolling averages."
-OMENRYP8_FTFT_POOLED, float, "Percentage of full-time, first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages."
-OMENRAP8_FTFT_POOLED, float, "Percentage of full-time, first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages."
-OMENRUP8_FTFT_POOLED, float, "Percentage of full-time, first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages."
-OMACHT6_PTFT_POOLED, integer, "Adjusted cohort count of part-time, first-time students (denominator for the percentage receiving an award within 6 years of entry), pooled across years."
-OMAWDP6_PTFT_POOLED, float, "Percentage of part-time, first-time student receiving an award within 6 years of entry, pooled in rolling averages."
-OMACHT8_PTFT_POOLED, integer, "Adjusted cohort count of part-time, first-time students (denominator for the 8-year outcomes percentages), pooled across years."
-OMAWDP8_PTFT_POOLED, float, "Percentage of part-time, first-time student receiving an award within 8 years of entry, pooled in rolling averages."
-OMENRYP8_PTFT_POOLED, float, "Percentage of part-time, first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages."
-OMENRAP8_PTFT_POOLED, float, "Percentage of part-time, first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages."
-OMENRUP8_PTFT_POOLED, float, "Percentage of part-time, first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages."
-OMACHT6_FTNFT_POOLED, integer, "Adjusted cohort count of full-time, not first-time students (denominator for the percentage receiving an award within 6 years of entry), pooled across years."
-OMAWDP6_FTNFT_POOLED, float, "Percentage of full-time, not first-time student receiving an award within 6 years of entry, pooled in rolling averages."
-OMACHT8_FTNFT_POOLED, integer, "Adjusted cohort count of full-time, not first-time students (denominator for the 8-year outcomes percentages), pooled across years."
-OMAWDP8_FTNFT_POOLED, float, "Percentage of full-time, not first-time student receiving an award within 8 years of entry, pooled in rolling averages."
-OMENRYP8_FTNFT_POOLED, float, "Percentage of full-time, not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages."
-OMENRAP8_FTNFT_POOLED, float, "Percentage of full-time, not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages."
-OMENRUP8_FTNFT_POOLED, float, "Percentage of full-time, not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages."
-OMACHT6_PTNFT_POOLED, integer, "Adjusted cohort count of part-time, not first-time students (denominator for the percentage receiving an award within 6 years of entry), pooled across years."
-OMAWDP6_PTNFT_POOLED, float, "Percentage of part-time, not first-time student receiving an award within 6 years of entry, pooled in rolling averages."
-OMACHT8_PTNFT_POOLED, integer, "Adjusted cohort count of part-time, not first-time students (denominator for the 8-year outcomes percentages), pooled across years."
-OMAWDP8_PTNFT_POOLED, float, "Percentage of part-time, not first-time student receiving an award within 8 years of entry, pooled in rolling averages."
-OMENRYP8_PTNFT_POOLED, float, "Percentage of part-time, not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages."
-OMENRAP8_PTNFT_POOLED, float, "Percentage of part-time, not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages."
-OMENRUP8_PTNFT_POOLED, float, "Percentage of part-time, not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages."
-POOLYRSOM_FTFT, integer, "Years used for rolling averages of outcome metrics OM[ACHT6/AWDP6/ACHT8/AWDP8/ENRAP8/ENRYP8/ENRUP8]_FTFT_POOLED"
-POOLYRSOM_PTFT, integer, "Years used for rolling averages of outcome metrics OM[ACHT6/AWDP6/ACHT8/AWDP8/ENRAP8/ENRYP8/ENRUP8]_PTFT_POOLED"
-POOLYRSOM_FTNFT, integer, "Years used for rolling averages of outcome metrics OM[ACHT6/AWDP6/ACHT8/AWDP8/ENRAP8/ENRYP8/ENRUP8]_FTNFT_POOLED"
-POOLYRSOM_PTNFT, integer, "Years used for rolling averages of outcome metrics OM[ACHT6/AWDP6/ACHT8/AWDP8/ENRAP8/ENRYP8/ENRUP8]_PTNFT_POOLED"
-OMAWDP6_FTFT_POOLED_SUPP, float, "Percentage of full-time, first-time student receiving an award within 6 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP8_FTFT_POOLED_SUPP, float, "Percentage of full-time, first-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRYP8_FTFT_POOLED_SUPP, float, "Percentage of full-time, first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP8_FTFT_POOLED_SUPP, float, "Percentage of full-time, first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP8_FTFT_POOLED_SUPP, float, "Percentage of full-time, first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP6_PTFT_POOLED_SUPP, float, "Percentage of part-time, first-time student receiving an award within 6 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP8_PTFT_POOLED_SUPP, float, "Percentage of part-time, first-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRYP8_PTFT_POOLED_SUPP, float, "Percentage of part-time, first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP8_PTFT_POOLED_SUPP, float, "Percentage of part-time, first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP8_PTFT_POOLED_SUPP, float, "Percentage of part-time, first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP6_FTNFT_POOLED_SUPP, float, "Percentage of full-time, not first-time student receiving an award within 6 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP8_FTNFT_POOLED_SUPP, float, "Percentage of full-time, not first-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRYP8_FTNFT_POOLED_SUPP, float, "Percentage of full-time, not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP8_FTNFT_POOLED_SUPP, float, "Percentage of full-time, not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP8_FTNFT_POOLED_SUPP, float, "Percentage of full-time, not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP6_PTNFT_POOLED_SUPP, float, "Percentage of part-time, not first-time student receiving an award within 6 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP8_PTNFT_POOLED_SUPP, float, "Percentage of part-time, not first-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRYP8_PTNFT_POOLED_SUPP, float, "Percentage of part-time, not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP8_PTNFT_POOLED_SUPP, float, "Percentage of part-time, not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP8_PTNFT_POOLED_SUPP, float, "Percentage of part-time, not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-SCHTYPE, integer, "Control of institution, per PEPS"
-OPEFLAG, integer, "Title IV eligibility type"
-PRGMOFR, integer, "Number of programs offered"
-CIPCODE1, string, "CIP code of largest program"
-CIPCODE2, string, "CIP code of program #2"
-CIPCODE3, string, "CIP code of program #3"
-CIPCODE4, string, "CIP code of program #4"
-CIPCODE5, string, "CIP code of program #5"
-CIPCODE6, string, "CIP code of program #6"
-CIPTITLE1, string, "CIP text description of largest program"
-CIPTITLE2, string, "CIP text description of program #2"
-CIPTITLE3, string, "CIP text description of program #3"
-CIPTITLE4, string, "CIP text description of program #4"
-CIPTITLE5, string, "CIP text description of program #5"
-CIPTITLE6, string, "CIP text description of program #6"
-CIPTFBS1, integer, "Tuition, fees, books, and supply charges for largest program (full program)"
-CIPTFBS2, integer, "Tuition, fees, books, and supply charges for program #2 (full program)"
-CIPTFBS3, integer, "Tuition, fees, books, and supply charges for program #3 (full program)"
-CIPTFBS4, integer, "Tuition, fees, books, and supply charges for program #4 (full program)"
-CIPTFBS5, integer, "Tuition, fees, books, and supply charges for program #5 (full program)"
-CIPTFBS6, integer, "Tuition, fees, books, and supply charges for program #6 (full program)"
-CIPTFBSANNUAL1, integer, "Tuition, fees, books, and supply charges for largest program (annualized based on institution's academic year)"
-CIPTFBSANNUAL2, integer, "Tuition, fees, books, and supply charges for program #2 (annualized based on institution's academic year)"
-CIPTFBSANNUAL3, integer, "Tuition, fees, books, and supply charges for program #3 (annualized based on institution's academic year)"
-CIPTFBSANNUAL4, integer, "Tuition, fees, books, and supply charges for program #4 (annualized based on institution's academic year)"
-CIPTFBSANNUAL5, integer, "Tuition, fees, books, and supply charges for program #5 (annualized based on institution's academic year)"
-CIPTFBSANNUAL6, integer, "Tuition, fees, books, and supply charges for program #6 (annualized based on institution's academic year)"
-MTHCMP1, integer, "Average number of months needed to complete largest program"
-MTHCMP2, integer, "Average number of months needed to complete program #2"
-MTHCMP3, integer, "Average number of months needed to complete program #3"
-MTHCMP4, integer, "Average number of months needed to complete program #4"
-MTHCMP5, integer, "Average number of months needed to complete program #5"
-MTHCMP6, integer, "Average number of months needed to complete program #6"
-POOLYRSOM_ALL, integer, "Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_ALL_POOLED"
-POOLYRSOM_FIRSTTIME, integer, "Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_FIRSTTIME_POOLED"
-POOLYRSOM_NOTFIRSTTIME, integer, "Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_NOTFIRSTTIME_POOLED"
-POOLYRSOM_FULLTIME, integer, "Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_FULLTIME_POOLED"
-POOLYRSOM_PARTTIME, integer, "Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_PARTTIME_POOLED"
-OMENRYP_ALL, float, "Percentage of all students that did not receive an award and are still enrolled at this institution 8 years after entry"
-OMENRAP_ALL, float, "Percentage of all students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
-OMAWDP8_ALL, float, "Percentage of all student receiving an award within 8 years of entry"
-OMENRUP_ALL, float, "Percentage of all students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
-OMENRYP_FIRSTTIME, float, "Percentage of first-time students that did not receive an award and are still enrolled at this institution 8 years after entry"
-OMENRAP_FIRSTTIME, float, "Percentage of first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
-OMAWDP8_FIRSTTIME, float, "Percentage of first-time student receiving an award within 8 years of entry"
-OMENRUP_FIRSTTIME, float, "Percentage of first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
-OMENRYP_NOTFIRSTTIME, float, "Percentage of not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry"
-OMENRAP_NOTFIRSTTIME, float, "Percentage of not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
-OMAWDP8_NOTFIRSTTIME, float, "Percentage of not first-time student receiving an award within 8 years of entry"
-OMENRUP_NOTFIRSTTIME, float, "Percentage of not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
-OMENRYP_FULLTIME, float, "Percentage of full-time students that did not receive an award and are still enrolled at this institution 8 years after entry"
-OMENRAP_FULLTIME, float, "Percentage of full-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
-OMAWDP8_FULLTIME, float, "Percentage of full-time student receiving an award within 8 years of entry"
-OMENRUP_FULLTIME, float, "Percentage of full-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
-OMENRYP_PARTTIME, float, "Percentage of part-time students that did not receive an award and are still enrolled at this institution 8 years after entry"
-OMENRAP_PARTTIME, float, "Percentage of part-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
-OMAWDP8_PARTTIME, float, "Percentage of part-time student receiving an award within 8 years of entry"
-OMENRUP_PARTTIME, float, "Percentage of part-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
-OMENRYP_ALL_POOLED_SUPP, float, "Percentage of all students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP_ALL_POOLED_SUPP, float, "Percentage of all students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP8_ALL_POOLED_SUPP, float, "Percentage of all student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP_ALL_POOLED_SUPP, float, "Percentage of all students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRYP_FIRSTTIME_POOLED_SUPP, float, "Percentage of first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP_FIRSTTIME_POOLED_SUPP, float, "Percentage of first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP8_FIRSTTIME_POOLED_SUPP, float, "Percentage of first-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP_FIRSTTIME_POOLED_SUPP, float, "Percentage of first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRYP_NOTFIRSTTIME_POOLED_SUPP, float, "Percentage of not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP_NOTFIRSTTIME_POOLED_SUPP, float, "Percentage of not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP8_NOTFIRSTTIME_POOLED_SUPP, float, "Percentage of not first-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP_NOTFIRSTTIME_POOLED_SUPP, float, "Percentage of not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRYP_FULLTIME_POOLED_SUPP, float, "Percentage of full-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP_FULLTIME_POOLED_SUPP, float, "Percentage of full-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP8_FULLTIME_POOLED_SUPP, float, "Percentage of full-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP_FULLTIME_POOLED_SUPP, float, "Percentage of full-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRYP_PARTTIME_POOLED_SUPP, float, "Percentage of part-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP_PARTTIME_POOLED_SUPP, float, "Percentage of part-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP8_PARTTIME_POOLED_SUPP, float, "Percentage of part-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP_PARTTIME_POOLED_SUPP, float, "Percentage of part-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-FTFTPCTPELL, float, "Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a Pell Grant"
-FTFTPCTFLOAN, float, "Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a federal loan"
-UG12MN, integer, "Unduplicated count of undergraduate students enrolled during a 12 month period"
-G12MN, integer, "Unduplicated count of graduate students enrolled during a 12 month period"
-SCUGFFN, integer, "Number of full-time, first-time degree/certificate-seeking undergraduate students (denominator for percent full-time, first-time degree/certificate-seeking undergraduates receiving a pell grant or federal student loan)"
-POOLYRS_FTFTAIDPCT, integer, "Years used for rolling averages of FTFTPCTPELL_POOLED_SUPP and FTFTPCTFLOAN_POOLED_SUPP"
-FTFTPCTPELL_POOLED_SUPP, float, "Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a Pell Grant, pooled in rolling averages and suppressed for small n size"
-FTFTPCTFLOAN_POOLED_SUPP, float, "Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a federal loan, pooled in rolling averages and suppressed for small n size"
-SCUGFFN_POOLED, integer, "Number of full-time, first-time degree/certificate-seeking undergraduate students (denominator for percent full-time, first-time degree/certificate-seeking undergraduates receiving a pell grant or federal student loan), pooled in rolling averages"
-PPLUS_PCT_LOW, integer, "Lower bound of estimated percentage range of students whose parents took out a PLUS loan"
-PPLUS_PCT_HIGH, integer, "Upper bound of estimated percentage range of students whose parents took out a PLUS loan"
-PPLUS_PCT_LOW_POOLED_SUPP, integer, "Lower bound of estimated percentage range of students whose parents took out a PLUS loan, pooled in rolling averages and suppressed for small n size"
-PPLUS_PCT_HIGH_POOLED_SUPP, integer, "Upper bound of estimated percentage range of students whose parents took out a PLUS loan, pooled in rolling averages and suppressed for small n size"
-POOLYRS_PLUSPCT, integer, "Years used for rolling averages of PPLUS_PCT_LOW_POOLED_SUPP and PPLUS_PCT_HIGH_POOLED_SUPP"
-PLUS_DEBT_INST_N, integer, "Student recipient count for median PLUS loan debt disbursed at this institution"
-PLUS_DEBT_INST_MD, integer, "Median PLUS loan debt disbursed at this institution"
-PLUS_DEBT_ALL_N, integer, "Student recipient count for median PLUS loan debt disbursed at all institutions"
-PLUS_DEBT_ALL_MD, integer, "Median PLUS loan debt disbursed at all institutions"
-PLUS_DEBT_INST_COMP_N, integer, "Student recipient count for median PLUS loan debt disbursed to completers at this institution"
-PLUS_DEBT_INST_COMP_MD, integer, "Median PLUS loan debt disbursed to completers at this institution"
-PLUS_DEBT_INST_COMP_MDPAY10, float, "Median estimated monthly payment for PLUS loan debt disbursed to completers at this institution"
-PLUS_DEBT_INST_COMP_MD_SUPP, integer, "Median PLUS loan debt disbursed to completers at this institution, suppressed for n=30"
-PLUS_DEBT_INST_COMP_MDPAY10_SUPP, float, "Median estimated monthly payment for PLUS loan debt disbursed to completers at this institution, suppressed for n=30"
-PLUS_DEBT_ALL_COMP_N, integer, "Student recipient count for median PLUS loan debt disbursed to completers at all institutions"
-PLUS_DEBT_ALL_COMP_MD, integer, "Median PLUS loan debt disbursed to completers at all institutions"
-PLUS_DEBT_ALL_COMP_MDPAY10, float, "Median estimated monthly payment for PLUS loan debt disbursed to completers at all institutions"
-PLUS_DEBT_ALL_COMP_MD_SUPP, integer, "Median PLUS loan debt disbursed to completers at all institutions, suppressed for n=30"
-PLUS_DEBT_ALL_COMP_MDPAY10_SUPP, float, "Median estimated monthly payment for PLUS loan debt disbursed to completers at all institutions, suppressed for n=30"
-PLUS_DEBT_INST_NOCOMP_N, integer, "Student recipient count for median PLUS loan debt disbursed to non-completers at this institution"
-PLUS_DEBT_INST_NOCOMP_MD, integer, "Median PLUS loan debt disbursed to non-completers at this institution"
-PLUS_DEBT_ALL_NOCOMP_N, integer, "Student recipient count for median PLUS loan debt disbursed to non-completers at all institutions"
-PLUS_DEBT_ALL_NOCOMP_MD, integer, "Median PLUS loan debt disbursed to non-completers at all institutions"
-PLUS_DEBT_INST_MALE_N, integer, "Student recipient count for median PLUS loan debt disbursed to males at this institution"
-PLUS_DEBT_INST_MALE_MD, integer, "Median PLUS loan debt disbursed to males at this institution"
-PLUS_DEBT_ALL_MALE_N, integer, "Student recipient count for median PLUS loan debt disbursed to males at all institutions"
-PLUS_DEBT_ALL_MALE_MD, integer, "Median PLUS loan debt disbursed to males at all institutions"
-PLUS_DEBT_INST_NOMALE_N, integer, "Student recipient count for median PLUS loan debt disbursed to non-males at this institution"
-PLUS_DEBT_INST_NOMALE_MD, integer, "Median PLUS loan debt disbursed to non-males at this institution"
-PLUS_DEBT_ALL_NOMALE_N, integer, "Student recipient count for median PLUS loan debt disbursed to non-males at all institutions"
-PLUS_DEBT_ALL_NOMALE_MD, integer, "Median PLUS loan debt disbursed to non-males at all institutions"
-PLUS_DEBT_INST_PELL_N, integer, "Student recipient count for median PLUS loan debt disbursed to Pell recipients at this institution"
-PLUS_DEBT_INST_PELL_MD, integer, "Median PLUS loan debt disbursed to Pell recipients at this institution"
-PLUS_DEBT_ALL_PELL_N, integer, "Student recipient count for median PLUS loan debt disbursed to Pell recipients at all institutions"
-PLUS_DEBT_ALL_PELL_MD, integer, "Median PLUS loan debt disbursed to Pell recipients at all institutions"
-PLUS_DEBT_INST_NOPELL_N, integer, "Student recipient count for median PLUS loan debt disbursed to non-Pell-recipients at this institution"
-PLUS_DEBT_INST_NOPELL_MD, integer, "Median PLUS loan debt disbursed to non-Pell-recipients at this institution"
-PLUS_DEBT_ALL_NOPELL_N, integer, "Student recipient count for median PLUS loan debt disbursed to non-Pell-recipients at all institutions"
-PLUS_DEBT_ALL_NOPELL_MD, integer, "Median PLUS loan debt disbursed to non-Pell-recipients at all institutions"
-PLUS_DEBT_INST_STAFFTHIS_N, integer, "Student recipient count for median PLUS loan debt disbursed at this institution to Stafford loan recipients at this institution"
-PLUS_DEBT_INST_STAFFTHIS_MD, integer, "Median PLUS loan debt disbursed at this institution to Stafford loan recipients at this institution"
-PLUS_DEBT_ALL_STAFFTHIS_N, integer, "Student recipient count for median PLUS loan debt disbursed at any institution to Stafford loan recipients at this institution"
-PLUS_DEBT_ALL_STAFFTHIS_MD, integer, "Median PLUS loan debt disbursed at any institution to Stafford loan recipients at this institution"
-PLUS_DEBT_INST_NOSTAFFTHIS_N, integer, "Student recipient count for median PLUS loan debt disbursed at this institution to students not receiving a Stafford loan at this institution"
-PLUS_DEBT_INST_NOSTAFFTHIS_MD, integer, "Median PLUS loan debt disbursed at this institution to students not receiving a Stafford loan at this institution"
-PLUS_DEBT_ALL_NOSTAFFTHIS_N, integer, "Student recipient count for median PLUS loan debt disbursed at any institution to students not receiving a Stafford loan at this institution"
-PLUS_DEBT_ALL_NOSTAFFTHIS_MD, integer, "Median PLUS loan debt disbursed at any institution to students not receiving a Stafford loan at this institution"
-PLUS_DEBT_INST_STAFFANY_N, integer, "Student recipient count for median PLUS loan debt disbursed at this institution to Stafford loan recipients at any institution"
-PLUS_DEBT_INST_STAFFANY_MD, integer, "Median PLUS loan debt disbursed at this institution to Stafford loan recipients at any institution"
-PLUS_DEBT_ALL_STAFFANY_N, integer, "Student recipient count for median PLUS loan debt disbursed at any institution to Stafford loan recipients at any institution"
-PLUS_DEBT_ALL_STAFFANY_MD, integer, "Median PLUS loan debt disbursed at any institution to Stafford loan recipients at any institution"
-PLUS_DEBT_INST_NOSTAFFANY_N, integer, "Student recipient count for median PLUS loan debt disbursed at this institution to students not receiving a Stafford loan at any institution"
-PLUS_DEBT_INST_NOSTAFFANY_MD, integer, "Median PLUS loan debt disbursed at this institution to students not receiving a Stafford loan at any institution"
-PLUS_DEBT_ALL_NOSTAFFANY_N, integer, "Student recipient count for median PLUS loan debt disbursed at any institution to students not receiving a Stafford loan at any institution"
-PLUS_DEBT_ALL_NOSTAFFANY_MD, integer, "Median PLUS loan debt disbursed at any institution to students not receiving a Stafford loan at any institution"
-COUNT_NWNE_3YR, integer, "Number of graduates not working and not enrolled 3 years after completing"
-COUNT_WNE_3YR, integer, "Number of graduates working and not enrolled 3 years after completing"
-CNTOVER150_3YR, integer, "Number of graduates working and not enrolled who earned more than 150% of the single-person household poverty threshold 3 years after completing"
-DBRR1_FED_UG_N, integer, "Undergraduate federal student loan dollar-based 1-year repayment rate borrower count"
-DBRR1_FED_UG_NUM, long, "Undergraduate federal student loan dollar-based 1-year repayment rate numerator"
-DBRR1_FED_UG_DEN, long, "Undergraduate federal student loan dollar-based 1-year repayment rate denominator"
-DBRR1_FED_UG_RT, float, "Undergraduate federal student loan dollar-based 1-year repayment rate"
-DBRR1_FED_GR_N, integer, "Graduate federal student loan dollar-based 1-year repayment rate borrower count"
-DBRR1_FED_GR_NUM, long, "Graduate federal student loan dollar-based 1-year repayment rate numerator"
-DBRR1_FED_GR_DEN, long, "Graduate federal student loan dollar-based 1-year repayment rate denominator"
-DBRR1_FED_GR_RT, float, "Graduate federal student loan dollar-based 1-year repayment rate"
-DBRR1_FED_UGCOMP_N, integer, "Undergraduate borrower completers undergraduate federal student loan dollar-based 1-year repayment rate borrower count"
-DBRR1_FED_UGCOMP_NUM, long, "Undergraduate borrower completers undergraduate federal student loan dollar-based 1-year repayment rate numerator"
-DBRR1_FED_UGCOMP_DEN, long, "Undergraduate borrower completers undergraduate federal student loan dollar-based 1-year repayment rate denominator"
-DBRR1_FED_UGCOMP_RT, float, "Undergraduate borrower completers undergraduate federal student loan dollar-based 1-year repayment rate"
-DBRR1_FED_UGNOCOMP_N, integer, "Undergraduate borrower non-completers undergraduate federal student loan dollar-based 1-year repayment rate borrower count"
-DBRR1_FED_UGNOCOMP_NUM, long, "Undergraduate borrower non-completers undergraduate federal student loan dollar-based 1-year repayment rate numerator"
-DBRR1_FED_UGNOCOMP_DEN, long, "Undergraduate borrower non-completers undergraduate federal student loan dollar-based 1-year repayment rate denominator"
-DBRR1_FED_UGNOCOMP_RT, float, "Undergraduate borrower non-completers undergraduate federal student loan dollar-based 1-year repayment rate repayment rate"
-DBRR1_FED_UGUNK_N, integer, "Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 1-year repayment rate borrower count"
-DBRR1_FED_UGUNK_NUM, long, "Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 1-year repayment rate numerator"
-DBRR1_FED_UGUNK_DEN, long, "Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 1-year repayment rate denominator"
-DBRR1_FED_UGUNK_RT, float, "Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 1-year repayment rate repayment rate"
-DBRR1_FED_GRCOMP_N, integer, "Graduate borrower completers graduate federal student loan dollar-based 1-year repayment rate borrower count"
-DBRR1_FED_GRCOMP_NUM, long, "Graduate borrower completers graduate federal student loan dollar-based 1-year repayment rate numerator"
-DBRR1_FED_GRCOMP_DEN, long, "Graduate borrower completers graduate federal student loan dollar-based 1-year repayment rate denominator"
-DBRR1_FED_GRCOMP_RT, float, "Graduate borrower completers graduate federal student loan dollar-based 1-year repayment rate"
-DBRR1_FED_GRNOCOMP_N, integer, "Graduate borrower non-completers graduate federal student loan dollar-based 1-year repayment rate borrower count"
-DBRR1_FED_GRNOCOMP_NUM, long, "Graduate borrower non-completers graduate federal student loan dollar-based 1-year repayment rate numerator"
-DBRR1_FED_GRNOCOMP_DEN, long, "Graduate borrower non-completers graduate federal student loan dollar-based 1-year repayment rate denominator"
-DBRR1_FED_GRNOCOMP_RT, float, "Graduate borrower non-completers graduate federal student loan dollar-based 1-year repayment rate repayment rate"
-DBRR4_FED_UG_N, integer, "Undergraduate federal student loan dollar-based 4-year repayment rate borrower count"
-DBRR4_FED_UG_NUM, long, "Undergraduate federal student loan dollar-based 4-year repayment rate numerator"
-DBRR4_FED_UG_DEN, long, "Undergraduate federal student loan dollar-based 4-year repayment rate denominator"
-DBRR4_FED_UG_RT, float, "Undergraduate federal student loan dollar-based 4-year repayment rate"
-DBRR4_FED_GR_N, integer, "Graduate federal student loan dollar-based 4-year repayment rate borrower count"
-DBRR4_FED_GR_NUM, long, "Graduate federal student loan dollar-based 4-year repayment rate numerator"
-DBRR4_FED_GR_DEN, long, "Graduate federal student loan dollar-based 4-year repayment rate denominator"
-DBRR4_FED_GR_RT, float, "Graduate federal student loan dollar-based 4-year repayment rate"
-DBRR4_FED_UGCOMP_N, integer, "Undergraduate borrower completers undergraduate federal student loan dollar-based 4-year repayment rate borrower count"
-DBRR4_FED_UGCOMP_NUM, long, "Undergraduate borrower completers undergraduate federal student loan dollar-based 4-year repayment rate numerator"
-DBRR4_FED_UGCOMP_DEN, long, "Undergraduate borrower completers undergraduate federal student loan dollar-based 4-year repayment rate denominator"
-DBRR4_FED_UGCOMP_RT, float, "Undergraduate borrower completers undergraduate federal student loan dollar-based 4-year repayment rate"
-DBRR4_FED_UGNOCOMP_N, integer, "Undergraduate borrower non-completers undergraduate federal student loan dollar-based 4-year repayment rate borrower count"
-DBRR4_FED_UGNOCOMP_NUM, long, "Undergraduate borrower non-completers undergraduate federal student loan dollar-based 4-year repayment rate numerator"
-DBRR4_FED_UGNOCOMP_DEN, long, "Undergraduate borrower non-completers undergraduate federal student loan dollar-based 4-year repayment rate denominator"
-DBRR4_FED_UGNOCOMP_RT, float, "Undergraduate borrower non-completers undergraduate federal student loan dollar-based 4-year repayment rate repayment rate"
-DBRR4_FED_UGUNK_N, integer, "Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 4-year repayment rate borrower count"
-DBRR4_FED_UGUNK_NUM, long, "Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 4-year repayment rate numerator"
-DBRR4_FED_UGUNK_DEN, long, "Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 4-year repayment rate denominator"
-DBRR4_FED_UGUNK_RT, float, "Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 4-year repayment rate repayment rate"
-DBRR5_FED_UG_N, integer, "Undergraduate federal student loan dollar-based 5-year repayment rate borrower count"
-DBRR5_FED_UG_NUM, long, "Undergraduate federal student loan dollar-based 5-year repayment rate numerator"
-DBRR5_FED_UG_DEN, long, "Undergraduate federal student loan dollar-based 5-year repayment rate denominator"
-DBRR5_FED_UG_RT, float, "Undergraduate federal student loan dollar-based 5-year repayment rate"
-DBRR5_FED_GR_N, integer, "Graduate federal student loan dollar-based 5-year repayment rate borrower count"
-DBRR5_FED_GR_NUM, long, "Graduate federal student loan dollar-based 5-year repayment rate numerator"
-DBRR5_FED_GR_DEN, long, "Graduate federal student loan dollar-based 5-year repayment rate denominator"
-DBRR5_FED_GR_RT, float, "Graduate federal student loan dollar-based 5-year repayment rate"
-DBRR10_FED_UG_N, integer, "Undergraduate federal student loan dollar-based 10-year repayment rate borrower count"
-DBRR10_FED_UG_NUM, long, "Undergraduate federal student loan dollar-based 10-year repayment rate numerator"
-DBRR10_FED_UG_DEN, long, "Undergraduate federal student loan dollar-based 10-year repayment rate denominator"
-DBRR10_FED_UG_RT, float, "Undergraduate federal student loan dollar-based 10-year repayment rate"
-DBRR10_FED_GR_N, integer, "Graduate federal student loan dollar-based 10-year repayment rate borrower count"
-DBRR10_FED_GR_NUM, long, "Graduate federal student loan dollar-based 10-year repayment rate numerator"
-DBRR10_FED_GR_DEN, long, "Graduate federal student loan dollar-based 10-year repayment rate denominator"
-DBRR10_FED_GR_RT, float, "Graduate federal student loan dollar-based 10-year repayment rate"
-DBRR20_FED_UG_N, integer, "Undergraduate federal student loan dollar-based 20-year repayment rate borrower count"
-DBRR20_FED_UG_NUM, long, "Undergraduate federal student loan dollar-based 20-year repayment rate numerator"
-DBRR20_FED_UG_DEN, long, "Undergraduate federal student loan dollar-based 20-year repayment rate denominator"
-DBRR20_FED_UG_RT, float, "Undergraduate federal student loan dollar-based 20-year repayment rate"
-DBRR20_FED_GR_N, integer, "Graduate federal student loan dollar-based 20-year repayment rate borrower count"
-DBRR20_FED_GR_NUM, long, "Graduate federal student loan dollar-based 20-year repayment rate numerator"
-DBRR20_FED_GR_DEN, long, "Graduate federal student loan dollar-based 20-year repayment rate denominator"
-DBRR20_FED_GR_RT, float, "Graduate federal student loan dollar-based 20-year repayment rate"
-DBRR1_PP_UG_N, integer, "Undergraduate Parent PLUS Loan dollar-based 1-year repayment rate borrower count"
-DBRR1_PP_UG_NUM, long, "Undergraduate Parent PLUS Loan dollar-based 1-year repayment rate numerator"
-DBRR1_PP_UG_DEN, long, "Undergraduate Parent PLUS Loan dollar-based 1-year repayment rate denominator"
-DBRR1_PP_UG_RT, float, "Undergraduate Parent PLUS Loan dollar-based 1-year repayment rate"
-DBRR1_PP_UGCOMP_N, integer, "Undergraduate student completers Parent PLUS Loan dollar-based 1-year repayment rate borrower count"
-DBRR1_PP_UGCOMP_NUM, long, "Undergraduate student completers Parent PLUS Loan dollar-based 1-year repayment rate numerator"
-DBRR1_PP_UGCOMP_DEN, long, "Undergraduate student completers Parent PLUS Loan dollar-based 1-year repayment rate denominator"
-DBRR1_PP_UGCOMP_RT, float, "Undergraduate student completers Parent PLUS Loan dollar-based 1-year repayment rate"
-DBRR1_PP_UGNOCOMP_N, integer, "Undergraduate student non-completers Parent PLUS Loan dollar-based 1-year repayment rate borrower count"
-DBRR1_PP_UGNOCOMP_NUM, long, "Undergraduate student non-completers Parent PLUS Loan dollar-based 1-year repayment rate numerator"
-DBRR1_PP_UGNOCOMP_DEN, long, "Undergraduate student non-completers Parent PLUS Loan dollar-based 1-year repayment rate denominator"
-DBRR1_PP_UGNOCOMP_RT, float, "Undergraduate student non-completers Parent PLUS Loan dollar-based 1-year repayment rate repayment rate"
-DBRR1_PP_UGUNK_N, integer, "Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 1-year repayment rate borrower count"
-DBRR1_PP_UGUNK_NUM, long, "Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 1-year repayment rate numerator"
-DBRR1_PP_UGUNK_DEN, long, "Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 1-year repayment rate denominator"
-DBRR1_PP_UGUNK_RT, float, "Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 1-year repayment rate repayment rate"
-DBRR4_PP_UG_N, integer, "Undergraduate Parent PLUS Loan dollar-based 4-year repayment rate borrower count"
-DBRR4_PP_UG_NUM, long, "Undergraduate Parent PLUS Loan dollar-based 4-year repayment rate numerator"
-DBRR4_PP_UG_DEN, long, "Undergraduate Parent PLUS Loan dollar-based 4-year repayment rate denominator"
-DBRR4_PP_UG_RT, float, "Undergraduate Parent PLUS Loan dollar-based 4-year repayment rate"
-DBRR4_PP_UGCOMP_N, integer, "Undergraduate student completers Parent PLUS Loan dollar-based 4-year repayment rate borrower count"
-DBRR4_PP_UGCOMP_NUM, long, "Undergraduate student completers Parent PLUS Loan dollar-based 4-year repayment rate numerator"
-DBRR4_PP_UGCOMP_DEN, long, "Undergraduate student completers Parent PLUS Loan dollar-based 4-year repayment rate denominator"
-DBRR4_PP_UGCOMP_RT, float, "Undergraduate student completers Parent PLUS Loan dollar-based 4-year repayment rate"
-DBRR4_PP_UGNOCOMP_N, integer, "Undergraduate student non-completers Parent PLUS Loan dollar-based 4-year repayment rate borrower count"
-DBRR4_PP_UGNOCOMP_NUM, long, "Undergraduate student non-completers Parent PLUS Loan dollar-based 4-year repayment rate numerator"
-DBRR4_PP_UGNOCOMP_DEN, long, "Undergraduate student non-completers Parent PLUS Loan dollar-based 4-year repayment rate denominator"
-DBRR4_PP_UGNOCOMP_RT, float, "Undergraduate student non-completers Parent PLUS Loan dollar-based 4-year repayment rate repayment rate"
-DBRR4_PP_UGUNK_N, integer, "Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 4-year repayment rate borrower count"
-DBRR4_PP_UGUNK_NUM, long, "Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 4-year repayment rate numerator"
-DBRR4_PP_UGUNK_DEN, long, "Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 4-year repayment rate denominator"
-DBRR4_PP_UGUNK_RT, float, "Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 4-year repayment rate repayment rate"
-DBRR5_PP_UG_N, integer, "Undergraduate Parent PLUS Loan dollar-based 5-year repayment rate borrower count"
-DBRR5_PP_UG_NUM, long, "Undergraduate Parent PLUS Loan dollar-based 5-year repayment rate numerator"
-DBRR5_PP_UG_DEN, long, "Undergraduate Parent PLUS Loan dollar-based 5-year repayment rate denominator"
-DBRR5_PP_UG_RT, float, "Undergraduate Parent PLUS Loan dollar-based 5-year repayment rate"
-DBRR10_PP_UG_N, integer, "Undergraduate Parent PLUS Loan dollar-based 10-year repayment rate borrower count"
-DBRR10_PP_UG_NUM, long, "Undergraduate Parent PLUS Loan dollar-based 10-year repayment rate numerator"
-DBRR10_PP_UG_DEN, long, "Undergraduate Parent PLUS Loan dollar-based 10-year repayment rate denominator"
-DBRR10_PP_UG_RT, float, "Undergraduate Parent PLUS Loan dollar-based 10-year repayment rate"
-DBRR20_PP_UG_N, integer, "Undergraduate Parent PLUS Loan dollar-based 20-year repayment rate borrower count"
-DBRR20_PP_UG_NUM, long, "Undergraduate Parent PLUS Loan dollar-based 20-year repayment rate numerator"
-DBRR20_PP_UG_DEN, long, "Undergraduate Parent PLUS Loan dollar-based 20-year repayment rate denominator"
-DBRR20_PP_UG_RT, float, "Undergraduate Parent PLUS Loan dollar-based 20-year repayment rate"
-BBRR1_FED_UG_N, integer, "Undergraduate federal student loan borrower-based 1-year borrower count"
-BBRR1_FED_UG_DFLT, float, "Percentage of undergraduate federal student loan borrowers in default after 1 year"
-BBRR1_FED_UG_DLNQ, float, "Percentage of undergraduate federal student loan borrowers in delinquency after 1 year"
-BBRR1_FED_UG_FBR, float, "Percentage of undergraduate federal student loan borrowers in forbearance after 1 year"
-BBRR1_FED_UG_DFR, float, "Percentage of undergraduate federal student loan borrowers in deferment after 1 year"
-BBRR1_FED_UG_NOPROG, float, "Percentage of undergraduate federal student loan borrowers not making progress after 1 year"
-BBRR1_FED_UG_MAKEPROG, float, "Percentage of undergraduate federal student loan borrowers making progress after 1 year"
-BBRR1_FED_UG_PAIDINFULL, float, "Percentage of undergraduate federal student loan borrowers paid in full after 1 year"
-BBRR1_FED_UG_DISCHARGE, float, "Percentage of undergraduate federal student loan borrowers with all loans discharged after 1 year"
-BBRR1_FED_UGCOMP_N, integer, "Undergraduate completer undergraduate federal student loan borrower-based 1-year borrower count"
-BBRR1_FED_UGCOMP_DFLT, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers in default after 1 year"
-BBRR1_FED_UGCOMP_DLNQ, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers in delinquency after 1 year"
-BBRR1_FED_UGCOMP_FBR, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers in forbearance after 1 year"
-BBRR1_FED_UGCOMP_DFR, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers in deferment after 1 year"
-BBRR1_FED_UGCOMP_NOPROG, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers not making progress after 1 year"
-BBRR1_FED_UGCOMP_MAKEPROG, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers making progress after 1 year"
-BBRR1_FED_UGCOMP_PAIDINFULL, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers paid in full after 1 year"
-BBRR1_FED_UGCOMP_DISCHARGE, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers with all loans discharged after 1 year"
-BBRR1_FED_UGNOCOMP_N, integer, "Undergraduate non-completer undergraduate federal student loan borrower-based 1-year borrower count"
-BBRR1_FED_UGNOCOMP_DFLT, float, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers in default after 1 year"
-BBRR1_FED_UGNOCOMP_DLNQ, float, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers in delinquency after 1 year"
-BBRR1_FED_UGNOCOMP_FBR, float, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers in forbearance after 1 year"
-BBRR1_FED_UGNOCOMP_DFR, float, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers in deferment after 1 year"
-BBRR1_FED_UGNOCOMP_NOPROG, float, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers not making progress after 1 year"
-BBRR1_FED_UGNOCOMP_MAKEPROG, float, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers making progress after 1 year"
-BBRR1_FED_UGNOCOMP_PAIDINFULL, float, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers paid in full after 1 year"
-BBRR1_FED_UGNOCOMP_DISCHARGE, float, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers with all loans discharged after 1 year"
-BBRR1_FED_UGUNK_N, integer, "Undergraduate unknown completion status undergraduate federal student loan borrower-based 1-year borrower count"
-BBRR1_FED_UGUNK_DFLT, float, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in default after 1 year"
-BBRR1_FED_UGUNK_DLNQ, float, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in delinquency after 1 year"
-BBRR1_FED_UGUNK_FBR, float, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in forbearance after 1 year"
-BBRR1_FED_UGUNK_DFR, float, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in deferment after 1 year"
-BBRR1_FED_UGUNK_NOPROG, float, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers not making progress after 1 year"
-BBRR1_FED_UGUNK_MAKEPROG, float, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers making progress after 1 year"
-BBRR1_FED_UGUNK_PAIDINFULL, float, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers paid in full after 1 year"
-BBRR1_FED_UGUNK_DISCHARGE, float, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers with all loans discharged after 1 year"
-BBRR1_FED_GR_N, integer, "Graduate federal student loan borrower-based 1-year borrower count"
-BBRR1_FED_GR_DFLT, float, "Percentage of graduate federal student loan borrowers in default after 1 year"
-BBRR1_FED_GR_DLNQ, float, "Percentage of graduate federal student loan borrowers in delinquency after 1 year"
-BBRR1_FED_GR_FBR, float, "Percentage of graduate federal student loan borrowers in forbearance after 1 year"
-BBRR1_FED_GR_DFR, float, "Percentage of graduate federal student loan borrowers in deferment after 1 year"
-BBRR1_FED_GR_NOPROG, float, "Percentage of graduate federal student loan borrowers not making progress after 1 year"
-BBRR1_FED_GR_MAKEPROG, float, "Percentage of graduate federal student loan borrowers making progress after 1 year"
-BBRR1_FED_GR_PAIDINFULL, float, "Percentage of graduate federal student loan borrowers paid in full after 1 year"
-BBRR1_FED_GR_DISCHARGE, float, "Percentage of graduate federal student loan borrowers with all loans discharged after 1 year"
-BBRR1_FED_GRCOMP_N, integer, "Graduate completer graduate federal student loan borrower-based 1-year borrower count"
-BBRR1_FED_GRCOMP_DFLT, float, "Percentage of graduate completer graduate federal student loan borrowers in default after 1 year"
-BBRR1_FED_GRCOMP_DLNQ, float, "Percentage of graduate completer graduate federal student loan borrowers in delinquency after 1 year"
-BBRR1_FED_GRCOMP_FBR, float, "Percentage of graduate completer graduate federal student loan borrowers in forbearance after 1 year"
-BBRR1_FED_GRCOMP_DFR, float, "Percentage of graduate completer graduate federal student loan borrowers in deferment after 1 year"
-BBRR1_FED_GRCOMP_NOPROG, float, "Percentage of graduate completer graduate federal student loan borrowers not making progress after 1 year"
-BBRR1_FED_GRCOMP_MAKEPROG, float, "Percentage of graduate completer graduate federal student loan borrowers making progress after 1 year"
-BBRR1_FED_GRCOMP_PAIDINFULL, float, "Percentage of graduate completer graduate federal student loan borrowers paid in full after 1 year"
-BBRR1_FED_GRCOMP_DISCHARGE, float, "Percentage of graduate completer graduate federal student loan borrowers with all loans discharged after 1 year"
-BBRR1_FED_GRNOCOMP_N, integer, "Graduate non-completer graduate federal student loan borrower-based 1-year borrower count"
-BBRR1_FED_GRNOCOMP_DFLT, float, "Percentage of graduate non-completer graduate federal student loan borrowers in default after 1 year"
-BBRR1_FED_GRNOCOMP_DLNQ, float, "Percentage of graduate non-completer graduate federal student loan borrowers in delinquency after 1 year"
-BBRR1_FED_GRNOCOMP_FBR, float, "Percentage of graduate non-completer graduate federal student loan borrowers in forbearance after 1 year"
-BBRR1_FED_GRNOCOMP_DFR, float, "Percentage of graduate non-completer graduate federal student loan borrowers in deferment after 1 year"
-BBRR1_FED_GRNOCOMP_NOPROG, float, "Percentage of graduate non-completer graduate federal student loan borrowers not making progress after 1 year"
-BBRR1_FED_GRNOCOMP_MAKEPROG, float, "Percentage of graduate non-completer graduate federal student loan borrowers making progress after 1 year"
-BBRR1_FED_GRNOCOMP_PAIDINFULL, float, "Percentage of graduate non-completer graduate federal student loan borrowers paid in full after 1 year"
-BBRR1_FED_GRNOCOMP_DISCHARGE, float, "Percentage of graduate non-completer graduate federal student loan borrowers with all loans discharged after 1 year"
-BBRR1_PP_UG_N, integer, "Undergraduate student Parent PLUS Loan borrower-based 1-year borrower count"
-BBRR1_PP_UG_DFLT, float, "Percentage of undergraduate student Parent PLUS Loan borrowers in default after 1 year"
-BBRR1_PP_UG_DLNQ, float, "Percentage of undergraduate student Parent PLUS Loan borrowers in delinquency after 1 year"
-BBRR1_PP_UG_FBR, float, "Percentage of undergraduate student Parent PLUS Loan borrowers in forbearance after 1 year"
-BBRR1_PP_UG_DFR, float, "Percentage of undergraduate student Parent PLUS Loan borrowers in deferment after 1 year"
-BBRR1_PP_UG_NOPROG, float, "Percentage of undergraduate student Parent PLUS Loan borrowers not making progress after 1 year"
-BBRR1_PP_UG_MAKEPROG, float, "Percentage of undergraduate student Parent PLUS Loan borrowers making progress after 1 year"
-BBRR1_PP_UG_PAIDINFULL, float, "Percentage of undergraduate student Parent PLUS Loan borrowers paid in full after 1 year"
-BBRR1_PP_UG_DISCHARGE, float, "Percentage of undergraduate student Parent PLUS Loan borrowers with all loans discharged after 1 year"
-BBRR1_PP_UGCOMP_N, integer, "Undergraduate completer undergraduate student Parent PLUS Loan borrower-based 1-year borrower count"
-BBRR1_PP_UGCOMP_DFLT, float, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in default after 1 year"
-BBRR1_PP_UGCOMP_DLNQ, float, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in delinquency after 1 year"
-BBRR1_PP_UGCOMP_FBR, float, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in forbearance after 1 year"
-BBRR1_PP_UGCOMP_DFR, float, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in deferment after 1 year"
-BBRR1_PP_UGCOMP_NOPROG, float, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers not making progress after 1 year"
-BBRR1_PP_UGCOMP_MAKEPROG, float, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers making progress after 1 year"
-BBRR1_PP_UGCOMP_PAIDINFULL, float, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers paid in full after 1 year"
-BBRR1_PP_UGCOMP_DISCHARGE, float, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers with all loans discharged after 1 year"
-BBRR1_PP_UGNOCOMP_N, integer, "Undergraduate non-completer undergraduate student Parent PLUS Loan borrower-based 1-year borrower count"
-BBRR1_PP_UGNOCOMP_DFLT, float, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in default after 1 year"
-BBRR1_PP_UGNOCOMP_DLNQ, float, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in delinquency after 1 year"
-BBRR1_PP_UGNOCOMP_FBR, float, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in forbearance after 1 year"
-BBRR1_PP_UGNOCOMP_DFR, float, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in deferment after 1 year"
-BBRR1_PP_UGNOCOMP_NOPROG, float, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers not making progress after 1 year"
-BBRR1_PP_UGNOCOMP_MAKEPROG, float, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers making progress after 1 year"
-BBRR1_PP_UGNOCOMP_PAIDINFULL, float, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers paid in full after 1 year"
-BBRR1_PP_UGNOCOMP_DISCHARGE, float, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers with all loans discharged after 1 year"
-BBRR1_PP_UGUNK_N, integer, "Undergraduate unknown completion status undergraduate student Parent PLUS Loan borrower-based 1-year borrower count"
-BBRR1_PP_UGUNK_DFLT, float, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in default after 1 year"
-BBRR1_PP_UGUNK_DLNQ, float, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in delinquency after 1 year"
-BBRR1_PP_UGUNK_FBR, float, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in forbearance after 1 year"
-BBRR1_PP_UGUNK_DFR, float, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in deferment after 1 year"
-BBRR1_PP_UGUNK_NOPROG, float, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers not making progress after 1 year"
-BBRR1_PP_UGUNK_MAKEPROG, float, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers making progress after 1 year"
-BBRR1_PP_UGUNK_PAIDINFULL, float, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers paid in full after 1 year"
-BBRR1_PP_UGUNK_DISCHARGE, float, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers with all loans discharged after 1 year"
-BBRR2_FED_UG_N, integer, "Undergraduate federal student loan borrower-based 2-year borrower count"
-BBRR2_FED_UG_DFLT, float, "Percentage of undergraduate federal student loan borrowers in default after 2 years"
-BBRR2_FED_UG_DLNQ, float, "Percentage of undergraduate federal student loan borrowers in delinquency after 2 years"
-BBRR2_FED_UG_FBR, float, "Percentage of undergraduate federal student loan borrowers in forbearance after 2 years"
-BBRR2_FED_UG_DFR, float, "Percentage of undergraduate federal student loan borrowers in deferment after 2 years"
-BBRR2_FED_UG_NOPROG, float, "Percentage of undergraduate federal student loan borrowers not making progress after 2 years"
-BBRR2_FED_UG_MAKEPROG, float, "Percentage of undergraduate federal student loan borrowers making progress after 2 years"
-BBRR2_FED_UG_PAIDINFULL, float, "Percentage of undergraduate federal student loan borrowers paid in full after 2 years"
-BBRR2_FED_UG_DISCHARGE, float, "Percentage of undergraduate federal student loan borrowers with all loans discharged after 2 years"
-BBRR2_FED_UGCOMP_N, integer, "Undergraduate completer undergraduate federal student loan borrower-based 2-year borrower count"
-BBRR2_FED_UGCOMP_DFLT, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers in default after 2 years"
-BBRR2_FED_UGCOMP_DLNQ, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers in delinquency after 2 years"
-BBRR2_FED_UGCOMP_FBR, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers in forbearance after 2 years"
-BBRR2_FED_UGCOMP_DFR, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers in deferment after 2 years"
-BBRR2_FED_UGCOMP_NOPROG, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers not making progress after 2 years"
-BBRR2_FED_UGCOMP_MAKEPROG, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers making progress after 2 years"
-BBRR2_FED_UGCOMP_PAIDINFULL, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers paid in full after 2 years"
-BBRR2_FED_UGCOMP_DISCHARGE, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers with all loans discharged after 2 years"
-BBRR2_FED_UGNOCOMP_N, integer, "Undergraduate non-completer undergraduate federal student loan borrower-based 2-year borrower count"
-BBRR2_FED_UGNOCOMP_DFLT, float, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers in default after 2 years"
-BBRR2_FED_UGNOCOMP_DLNQ, float, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers in delinquency after 2 years"
-BBRR2_FED_UGNOCOMP_FBR, float, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers in forbearance after 2 years"
-BBRR2_FED_UGNOCOMP_DFR, float, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers in deferment after 2 years"
-BBRR2_FED_UGNOCOMP_NOPROG, float, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers not making progress after 2 years"
-BBRR2_FED_UGNOCOMP_MAKEPROG, float, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers making progress after 2 years"
-BBRR2_FED_UGNOCOMP_PAIDINFULL, float, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers paid in full after 2 years"
-BBRR2_FED_UGNOCOMP_DISCHARGE, float, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers with all loans discharged after 2 years"
-BBRR2_FED_UGUNK_N, integer, "Undergraduate unknown completion status undergraduate federal student loan borrower-based 2-year borrower count"
-BBRR2_FED_UGUNK_DFLT, float, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in default after 2 years"
-BBRR2_FED_UGUNK_DLNQ, float, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in delinquency after 2 years"
-BBRR2_FED_UGUNK_FBR, float, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in forbearance after 2 years"
-BBRR2_FED_UGUNK_DFR, float, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in deferment after 2 years"
-BBRR2_FED_UGUNK_NOPROG, float, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers not making progress after 2 years"
-BBRR2_FED_UGUNK_MAKEPROG, float, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers making progress after 2 years"
-BBRR2_FED_UGUNK_PAIDINFULL, float, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers paid in full after 2 years"
-BBRR2_FED_UGUNK_DISCHARGE, float, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers with all loans discharged after 2 years"
-BBRR2_FED_GR_N, integer, "Graduate federal student loan borrower-based 2-year borrower count"
-BBRR2_FED_GR_DFLT, float, "Percentage of graduate federal student loan borrowers in default after 2 years"
-BBRR2_FED_GR_DLNQ, float, "Percentage of graduate federal student loan borrowers in delinquency after 2 years"
-BBRR2_FED_GR_FBR, float, "Percentage of graduate federal student loan borrowers in forbearance after 2 years"
-BBRR2_FED_GR_DFR, float, "Percentage of graduate federal student loan borrowers in deferment after 2 years"
-BBRR2_FED_GR_NOPROG, float, "Percentage of graduate federal student loan borrowers not making progress after 2 years"
-BBRR2_FED_GR_MAKEPROG, float, "Percentage of graduate federal student loan borrowers making progress after 2 years"
-BBRR2_FED_GR_PAIDINFULL, float, "Percentage of graduate federal student loan borrowers paid in full after 2 years"
-BBRR2_FED_GR_DISCHARGE, float, "Percentage of graduate federal student loan borrowers with all loans discharged after 2 years"
-BBRR2_FED_GRCOMP_N, integer, "Graduate completer graduate federal student loan borrower-based 2-year borrower count"
-BBRR2_FED_GRCOMP_DFLT, float, "Percentage of graduate completer graduate federal student loan borrowers in default after 2 years"
-BBRR2_FED_GRCOMP_DLNQ, float, "Percentage of graduate completer graduate federal student loan borrowers in delinquency after 2 years"
-BBRR2_FED_GRCOMP_FBR, float, "Percentage of graduate completer graduate federal student loan borrowers in forbearance after 2 years"
-BBRR2_FED_GRCOMP_DFR, float, "Percentage of graduate completer graduate federal student loan borrowers in deferment after 2 years"
-BBRR2_FED_GRCOMP_NOPROG, float, "Percentage of graduate completer graduate federal student loan borrowers not making progress after 2 years"
-BBRR2_FED_GRCOMP_MAKEPROG, float, "Percentage of graduate completer graduate federal student loan borrowers making progress after 2 years"
-BBRR2_FED_GRCOMP_PAIDINFULL, float, "Percentage of graduate completer graduate federal student loan borrowers paid in full after 2 years"
-BBRR2_FED_GRCOMP_DISCHARGE, float, "Percentage of graduate completer graduate federal student loan borrowers with all loans discharged after 2 years"
-BBRR2_FED_GRNOCOMP_N, integer, "Graduate non-completer graduate federal student loan borrower-based 2-year borrower count"
-BBRR2_FED_GRNOCOMP_DFLT, float, "Percentage of graduate non-completer graduate federal student loan borrowers in default after 2 years"
-BBRR2_FED_GRNOCOMP_DLNQ, float, "Percentage of graduate non-completer graduate federal student loan borrowers in delinquency after 2 years"
-BBRR2_FED_GRNOCOMP_FBR, float, "Percentage of graduate non-completer graduate federal student loan borrowers in forbearance after 2 years"
-BBRR2_FED_GRNOCOMP_DFR, float, "Percentage of graduate non-completer graduate federal student loan borrowers in deferment after 2 years"
-BBRR2_FED_GRNOCOMP_NOPROG, float, "Percentage of graduate non-completer graduate federal student loan borrowers not making progress after 2 years"
-BBRR2_FED_GRNOCOMP_MAKEPROG, float, "Percentage of graduate non-completer graduate federal student loan borrowers making progress after 2 years"
-BBRR2_FED_GRNOCOMP_PAIDINFULL, float, "Percentage of graduate non-completer graduate federal student loan borrowers paid in full after 2 years"
-BBRR2_FED_GRNOCOMP_DISCHARGE, float, "Percentage of graduate non-completer graduate federal student loan borrowers with all loans discharged after 2 years"
-BBRR2_PP_UG_N, integer, "Undergraduate student Parent PLUS Loan borrower-based 2-year borrower count"
-BBRR2_PP_UG_DFLT, float, "Percentage of undergraduate student Parent PLUS Loan borrowers in default after 2 years"
-BBRR2_PP_UG_DLNQ, float, "Percentage of undergraduate student Parent PLUS Loan borrowers in delinquency after 2 years"
-BBRR2_PP_UG_FBR, float, "Percentage of undergraduate student Parent PLUS Loan borrowers in forbearance after 2 years"
-BBRR2_PP_UG_DFR, float, "Percentage of undergraduate student Parent PLUS Loan borrowers in deferment after 2 years"
-BBRR2_PP_UG_NOPROG, float, "Percentage of undergraduate student Parent PLUS Loan borrowers not making progress after 2 years"
-BBRR2_PP_UG_MAKEPROG, float, "Percentage of undergraduate student Parent PLUS Loan borrowers making progress after 2 years"
-BBRR2_PP_UG_PAIDINFULL, float, "Percentage of undergraduate student Parent PLUS Loan borrowers paid in full after 2 years"
-BBRR2_PP_UG_DISCHARGE, float, "Percentage of undergraduate student Parent PLUS Loan borrowers with all loans discharged after 2 years"
-BBRR2_PP_UGCOMP_N, integer, "Undergraduate completer undergraduate student Parent PLUS Loan borrower-based 2-year borrower count"
-BBRR2_PP_UGCOMP_DFLT, float, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in default after 2 years"
-BBRR2_PP_UGCOMP_DLNQ, float, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in delinquency after 2 years"
-BBRR2_PP_UGCOMP_FBR, float, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in forbearance after 2 years"
-BBRR2_PP_UGCOMP_DFR, float, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in deferment after 2 years"
-BBRR2_PP_UGCOMP_NOPROG, float, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers not making progress after 2 years"
-BBRR2_PP_UGCOMP_MAKEPROG, float, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers making progress after 2 years"
-BBRR2_PP_UGCOMP_PAIDINFULL, float, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers paid in full after 2 years"
-BBRR2_PP_UGCOMP_DISCHARGE, float, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers with all loans discharged after 2 years"
-BBRR2_PP_UGNOCOMP_N, integer, "Undergraduate non-completer undergraduate student Parent PLUS Loan borrower-based 2-year borrower count"
-BBRR2_PP_UGNOCOMP_DFLT, float, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in default after 2 years"
-BBRR2_PP_UGNOCOMP_DLNQ, float, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in delinquency after 2 years"
-BBRR2_PP_UGNOCOMP_FBR, float, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in forbearance after 2 years"
-BBRR2_PP_UGNOCOMP_DFR, float, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in deferment after 2 years"
-BBRR2_PP_UGNOCOMP_NOPROG, float, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers not making progress after 2 years"
-BBRR2_PP_UGNOCOMP_MAKEPROG, float, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers making progress after 2 years"
-BBRR2_PP_UGNOCOMP_PAIDINFULL, float, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers paid in full after 2 years"
-BBRR2_PP_UGNOCOMP_DISCHARGE, float, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers with all loans discharged after 2 years"
-BBRR2_PP_UGUNK_N, integer, "Undergraduate unknown completion status undergraduate student Parent PLUS Loan borrower-based 2-year borrower count"
-BBRR2_PP_UGUNK_DFLT, float, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in default after 2 years"
-BBRR2_PP_UGUNK_DLNQ, float, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in delinquency after 2 years"
-BBRR2_PP_UGUNK_FBR, float, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in forbearance after 2 years"
-BBRR2_PP_UGUNK_DFR, float, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in deferment after 2 years"
-BBRR2_PP_UGUNK_NOPROG, float, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers not making progress after 2 years"
-BBRR2_PP_UGUNK_MAKEPROG, float, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers making progress after 2 years"
-BBRR2_PP_UGUNK_PAIDINFULL, float, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers paid in full after 2 years"
-BBRR2_PP_UGUNK_DISCHARGE, float, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers with all loans discharged after 2 years"
-BBRR2_FED_UG_N_SUPP, integer, "Undergraduate federal student loan borrower-based 2-year borrower count, suppressed for n<30"
-BBRR2_FED_UG_DFLT_SUPP, float, "Percentage of undergraduate federal student loan borrowers in default after 2 years, suppressed for n<30"
-BBRR2_FED_UG_DLNQ_SUPP, float, "Percentage of undergraduate federal student loan borrowers in delinquency after 2 years, suppressed for n<30"
-BBRR2_FED_UG_FBR_SUPP, float, "Percentage of undergraduate federal student loan borrowers in forbearance after 2 years, suppressed for n<30"
-BBRR2_FED_UG_DFR_SUPP, float, "Percentage of undergraduate federal student loan borrowers in deferment after 2 years, suppressed for n<30"
-BBRR2_FED_UG_NOPROG_SUPP, float, "Percentage of undergraduate federal student loan borrowers not making progress after 2 years, suppressed for n<30"
-BBRR2_FED_UG_MAKEPROG_SUPP, float, "Percentage of undergraduate federal student loan borrowers making progress after 2 years, suppressed for n<30"
-BBRR2_FED_UG_PAIDINFULL_SUPP, float, "Percentage of undergraduate federal student loan borrowers paid in full after 2 years, suppressed for n<30"
-BBRR2_FED_UG_DISCHARGE_SUPP, float, "Percentage of undergraduate federal student loan borrowers with all loans discharged after 2 years, suppressed for n<30"
-BBRR2_FED_UGCOMP_N_SUPP, integer, "Undergraduate completer undergraduate federal student loan borrower-based 2-year borrower count, suppressed for n<30"
-BBRR2_FED_UGCOMP_DFLT_SUPP, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers in default after 2 years, suppressed for n<30"
-BBRR2_FED_UGCOMP_DLNQ_SUPP, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers in delinquency after 2 years, suppressed for n<30"
-BBRR2_FED_UGCOMP_FBR_SUPP, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers in forbearance after 2 years, suppressed for n<30"
-BBRR2_FED_UGCOMP_DFR_SUPP, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers in deferment after 2 years, suppressed for n<30"
-BBRR2_FED_UGCOMP_NOPROG_SUPP, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers not making progress after 2 years, suppressed for n<30"
-BBRR2_FED_UGCOMP_MAKEPROG_SUPP, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers making progress after 2 years, suppressed for n<30"
-BBRR2_FED_UGCOMP_PAIDINFULL_SUPP, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers paid in full after 2 years, suppressed for n<30"
-BBRR2_FED_UGCOMP_DISCHARGE_SUPP, float, "Percentage of undergraduate completer undergraduate federal student loan borrowers with all loans discharged after 2 years, suppressed for n<30"
-LPSTAFFORD_CNT, integer, "Number of borrowers with outstanding federal Direct Loan balances"
-LPSTAFFORD_AMT, long, "Total outstanding federal Direct Loan balance"
-LPPPLUS_CNT, integer, "Number of students associated with outstanding Parent PLUS Loan balances"
-LPPPLUS_AMT, long, "Total outstanding Parent PLUS Loan balance"
-LPGPLUS_CNT, integer, "Number of students associated with outstanding Grad PLUS Loan balances"
-LPGPLUS_AMT, long, "Total outstanding Grad PLUS Loan balance"
-FEDSCHCD, string, "Federal School Code"
-BOOKSUPPLY, integer, "Cost of attendance: estimated books and supplies"
-ROOMBOARD_ON, integer, "Cost of attendance: on-campus room and board"
-OTHEREXPENSE_ON, integer, "Cost of attendance: on-campus other expenses"
-ROOMBOARD_OFF, integer, "Cost of attendance: off-campus room and board"
-OTHEREXPENSE_OFF, integer, "Cost of attendance: off-campus other expenses"
-OTHEREXPENSE_FAM, integer, "Cost of attendance: with-family other expenses"
-ENDOWBEGIN, long, "Value of school's endowment at the beginning of the fiscal year"
-ENDOWEND, long, "Value of school's endowment at the end of the fiscal year"
-DOLPROVIDER, integer, "DOL approved training provider indicator"
-ADMCON7, integer, "Test score requirements for admission"
-MDCOMP_PD, float, "Median completion rate amongst insitutions with the same predominant degree category "
-MDCOST_PD, float, "Median average net price amongst insitituions with the same predominant degree category"
-MDEARN_PD, float, "Median earnings of students working and not enrolled 10 years after entry"
-MDCOMP_ALL, float, "Overall median of completion rate"
-MDCOST_ALL, float, "Overall median for average net price "
-MDEARN_ALL, float, "Overall median earnings of students working and not enrolled 10 years after entry"
-D150_L4_PELL_POOLED, integer, "Adjusted cohort count for Pell Grant recipient completion rate at less-than-four-year institutions (denominator of 150% completion rate), pooled for two-year rolling averages"
-C150_L4_PELL_POOLED, float, "Pell Grant recipient completion rate at less-than-four-year institutions, pooled for two-year rolling averages"
-D150_4_PELL_POOLED, integer, "Adjusted cohort count for Pell Grant recipient completion rate at four-year institutions (denominator of 150% completion rate), pooled for two-year rolling averages"
-C150_4_PELL_POOLED, float, "First-time, full-time Pell Grant recipient completion rate at four-year institutions, pooled for two-year rolling averages"
-C150_L4_PELL_POOLED_SUPP, float, "First-time, full-time Pell Grant recipient completion rate at less-than-four-year institutions, pooled for two-year rolling averages and suppressed for small n size"
-C150_4_PELL_POOLED_SUPP, float, "First-time, full-time Pell Grant recipient completion rate at four-year institutions, pooled for two-year rolling averages and suppressed for small n size"
-POOLYRS150_PELL, integer, "Years used for rolling averages of Pell Grant recipient completion rate C150_PELL_[4/L4]_POOLED"
-OMENRYP_PELL_ALL, float, "Percentage of all Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry"
-OMENRAP_PELL_ALL, float, "Percentage of all Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
-OMAWDP8_PELL_ALL, float, "Percentage of all Pell Grant recipient students receiving an award within 8 years of entry"
-OMENRUP_PELL_ALL, float, "Percentage of all Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
-OMENRYP_PELL_FIRSTTIME, float, "Percentage of first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry"
-OMENRAP_PELL_FIRSTTIME, float, "Percentage of first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
-OMAWDP8_PELL_FIRSTTIME, float, "Percentage of first-time Pell Grant recipient students receiving an award within 8 years of entry"
-OMENRUP_PELL_FIRSTTIME, float, "Percentage of first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
-OMENRYP_PELL_NOTFIRSTTIME, float, "Percentage of not first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry"
-OMENRAP_PELL_NOTFIRSTTIME, float, "Percentage of not first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
-OMAWDP8_PELL_NOTFIRSTTIME, float, "Percentage of not first-time Pell Grant recipient students receiving an award within 8 years of entry"
-OMENRUP_PELL_NOTFIRSTTIME, float, "Percentage of not first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
-OMENRYP_PELL_FULLTIME, float, "Percentage of full-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry"
-OMENRAP_PELL_FULLTIME, float, "Percentage of full-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
-OMAWDP8_PELL_FULLTIME, float, "Percentage of full-time Pell Grant recipient students receiving an award within 8 years of entry"
-OMENRUP_PELL_FULLTIME, float, "Percentage of full-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
-OMENRYP_PELL_PARTTIME, float, "Percentage of part-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry"
-OMENRAP_PELL_PARTTIME, float, "Percentage of part-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
-OMAWDP8_PELL_PARTTIME, float, "Percentage of part-time Pell Grant recipient students receiving an award within 8 years of entry"
-OMENRUP_PELL_PARTTIME, float, "Percentage of part-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
-OMACHT8_PELL_FTFT, integer, "Adjusted cohort count of full-time, first-time Pell Grant recipient students (denominator for the 8-year outcomes percentages)"
-OMAWDP8_PELL_FTFT, float, "Percentage of full-time, first-time Pell Grant recipient students receiving an award within 8 years of entry"
-OMENRYP8_PELL_FTFT, float, "Percentage of full-time, first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry"
-OMENRAP8_PELL_FTFT, float, "Percentage of full-time, first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
-OMENRUP8_PELL_FTFT, float, "Percentage of full-time, first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
-OMACHT8_PELL_PTFT, integer, "Adjusted cohort count of part-time, first-time Pell Grant recipient students (denominator for the 8-year outcomes percentages)"
-OMAWDP8_PELL_PTFT, float, "Percentage of part-time, first-time Pell Grant recipient students receiving an award within 8 years of entry"
-OMENRYP8_PELL_PTFT, float, "Percentage of part-time, first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry"
-OMENRAP8_PELL_PTFT, float, "Percentage of part-time, first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
-OMENRUP8_PELL_PTFT, float, "Percentage of part-time, first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
-OMACHT8_PELL_FTNFT, integer, "Adjusted cohort count of full-time, not first-time Pell Grant recipient students (denominator for the 8-year outcomes percentages)"
-OMAWDP8_PELL_FTNFT, float, "Percentage of full-time, not first-time Pell Grant recipient students receiving an award within 8 years of entry"
-OMENRYP8_PELL_FTNFT, float, "Percentage of full-time, not first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry"
-OMENRAP8_PELL_FTNFT, float, "Percentage of full-time, not first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
-OMENRUP8_PELL_FTNFT, float, "Percentage of full-time, not first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
-OMACHT8_PELL_PTNFT, integer, "Adjusted cohort count of part-time, not first-time Pell Grant recipient students (denominator for the 8-year outcomes percentages)"
-OMAWDP8_PELL_PTNFT, float, "Percentage of part-time, not first-time Pell Grant recipient students receiving an award within 8 years of entry"
-OMENRYP8_PELL_PTNFT, float, "Percentage of part-time, not first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry"
-OMENRAP8_PELL_PTNFT, float, "Percentage of part-time, not first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
-OMENRUP8_PELL_PTNFT, float, "Percentage of part-time, not first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
-OMACHT8_PELL_FTFT_POOLED, integer, "Adjusted cohort count of full-time, first-time Pell Grant recipient students (denominator for the 8-year outcomes percentages), pooled across years."
-OMACHT8_PELL_PTFT_POOLED, integer, "Adjusted cohort count of part-time, first-time Pell Grant recipient students (denominator for the 8-year outcomes percentages), pooled across years."
-OMACHT8_PELL_FTNFT_POOLED, integer, "Adjusted cohort count of full-time, not first-time Pell Grant recipient students (denominator for the 8-year outcomes percentages), pooled across years."
-OMACHT8_PELL_PTNFT_POOLED, integer, "Adjusted cohort count of part-time, not first-time Pell Grant recipient students (denominator for the 8-year outcomes percentages), pooled across years."
-OMAWDP8_PELL_FTFT_POOLED, float, "Percentage of full-time, first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages."
-OMENRYP8_PELL_FTFT_POOLED, float, "Percentage of full-time, first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages."
-OMENRAP8_PELL_FTFT_POOLED, float, "Percentage of full-time, first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages."
-OMENRUP8_PELL_FTFT_POOLED, float, "Percentage of full-time, first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages."
-OMAWDP8_PELL_PTFT_POOLED, float, "Percentage of part-time, first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages."
-OMENRYP8_PELL_PTFT_POOLED, float, "Percentage of part-time, first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages."
-OMENRAP8_PELL_PTFT_POOLED, float, "Percentage of part-time, first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages."
-OMENRUP8_PELL_PTFT_POOLED, float, "Percentage of part-time, first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages."
-OMAWDP8_PELL_FTNFT_POOLED, float, "Percentage of full-time, not first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages."
-OMENRYP8_PELL_FTNFT_POOLED, float, "Percentage of full-time, not first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages."
-OMENRAP8_PELL_FTNFT_POOLED, float, "Percentage of full-time, not first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages."
-OMENRUP8_PELL_FTNFT_POOLED, float, "Percentage of full-time, not first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages."
-OMAWDP8_PELL_PTNFT_POOLED, float, "Percentage of part-time, not first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages."
-OMENRYP8_PELL_PTNFT_POOLED, float, "Percentage of part-time, not first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages."
-OMENRAP8_PELL_PTNFT_POOLED, float, "Percentage of part-time, not first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages."
-OMENRUP8_PELL_PTNFT_POOLED, float, "Percentage of part-time, not first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages."
-OMENRYP_PELL_ALL_POOLED, float, "Percentage of all Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP_PELL_ALL_POOLED, float, "Percentage of all Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP8_PELL_ALL_POOLED, float, "Percentage of all Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP_PELL_ALL_POOLED, float, "Percentage of all Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRYP_PELL_FTT_POOLED, float, "Percentage of first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP_PELL_FTT_POOLED, float, "Percentage of first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP8_PELL_FTT_POOLED, float, "Percentage of first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP_PELL_FTT_POOLED, float, "Percentage of first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRYP_PELL_NFT_POOLED, float, "Percentage of not first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP_PELL_NFT_POOLED, float, "Percentage of not first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP8_PELL_NFT_POOLED, float, "Percentage of not first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP_PELL_NFT_POOLED, float, "Percentage of not first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRYP_PELL_FT_POOLED, float, "Percentage of full-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP_PELL_FT_POOLED, float, "Percentage of full-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP8_PELL_FT_POOLED, float, "Percentage of full-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP_PELL_FT_POOLED, float, "Percentage of full-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRYP_PELL_PT_POOLED, float, "Percentage of part-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP_PELL_PT_POOLED, float, "Percentage of part-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP8_PELL_PT_POOLED, float, "Percentage of part-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP_PELL_PT_POOLED, float, "Percentage of part-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-POOLYRSOM_PELL_FTFT, float, "Years used for rolling averages of outcome metrics OM[ACHT6/AWDP6/ACHT8/AWDP8/ENRAP8/ENRYP8/ENRUP8]_PELL_FTFT_POOLED"
-POOLYRSOM_PELL_PTFT, float, "Years used for rolling averages of outcome metrics OM[ACHT6/AWDP6/ACHT8/AWDP8/ENRAP8/ENRYP8/ENRUP8]_PELL_PTFT_POOLED"
-POOLYRSOM_PELL_FTNFT, float, "Years used for rolling averages of outcome metrics OM[ACHT6/AWDP6/ACHT8/AWDP8/ENRAP8/ENRYP8/ENRUP8]_PELL_FTNFT_POOLED"
-POOLYRSOM_PELL_PTNFT, float, "Years used for rolling averages of outcome metrics OM[ACHT6/AWDP6/ACHT8/AWDP8/ENRAP8/ENRYP8/ENRUP8]_PELL_PTNFT_POOLED"
-POOLYRSOM_PELL_ALL, float, "Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_PELL_ALL_POOLED"
-POOLYRSOM_PELL_FIRSTTIME, float, "Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_PELL_FTT_POOLED"
-POOLYRSOM_PELL_NOTFIRSTTIME, float, "Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_PELL_NFT_POOLED"
-POOLYRSOM_PELL_FULLTIME, float, "Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_PELL_FT_POOLED"
-POOLYRSOM_PELL_PARTTIME, float, "Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_PELL_PT_POOLED"
-OMAWDP8_PELL_FTFT_POOLED_SUPP, float, "Percentage of full-time, first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRYP8_PELL_FTFT_POOLED_SUPP, float, "Percentage of full-time, first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP8_PELL_FTFT_POOLED_SUPP, float, "Percentage of full-time, first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP8_PELL_FTFT_POOLED_SUPP, float, "Percentage of full-time, first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP8_PELL_PTFT_POOLED_SUPP, float, "Percentage of part-time, first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRYP8_PELL_PTFT_POOLED_SUPP, float, "Percentage of part-time, first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP8_PELL_PTFT_POOLED_SUPP, float, "Percentage of part-time, first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP8_PELL_PTFT_POOLED_SUPP, float, "Percentage of part-time, first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP8_PELL_FTNFT_POOLED_SUPP, float, "Percentage of full-time, not first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRYP8_PELL_FTNFT_POOLED_SUPP, float, "Percentage of full-time, not first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP8_PELL_FTNFT_POOLED_SUPP, float, "Percentage of full-time, not first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP8_PELL_FTNFT_POOLED_SUPP, float, "Percentage of full-time, not first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP8_PELL_PTNFT_POOLED_SUPP, float, "Percentage of part-time, not first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRYP8_PELL_PTNFT_POOLED_SUPP, float, "Percentage of part-time, not first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP8_PELL_PTNFT_POOLED_SUPP, float, "Percentage of part-time, not first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP8_PELL_PTNFT_POOLED_SUPP, float, "Percentage of part-time, not first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRYP_PELL_ALL_POOLED_SUPP, float, "Percentage of all Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP_PELL_ALL_POOLED_SUPP, float, "Percentage of all Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP8_PELL_ALL_POOLED_SUPP, float, "Percentage of all Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP_PELL_ALL_POOLED_SUPP, float, "Percentage of all Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRYP_PELL_FTT_POOLED_SUPP, float, "Percentage of first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP_PELL_FTT_POOLED_SUPP, float, "Percentage of first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP8_PELL_FTT_POOLED_SUPP, float, "Percentage of first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP_PELL_FTT_POOLED_SUPP, float, "Percentage of first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRYP_PELL_NFT_POOLED_SUPP, float, "Percentage of not first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP_PELL_NFT_POOLED_SUPP, float, "Percentage of not first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP8_PELL_NFT_POOLED_SUPP, float, "Percentage of not first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP_PELL_NFT_POOLED_SUPP, float, "Percentage of not first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRYP_PELL_FT_POOLED_SUPP, float, "Percentage of full-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP_PELL_FT_POOLED_SUPP, float, "Percentage of full-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP8_PELL_FT_POOLED_SUPP, float, "Percentage of full-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP_PELL_FT_POOLED_SUPP, float, "Percentage of full-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRYP_PELL_PT_POOLED_SUPP, float, "Percentage of part-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size"
-OMENRAP_PELL_PT_POOLED_SUPP, float, "Percentage of part-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMAWDP8_PELL_PT_POOLED_SUPP, float, "Percentage of part-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-OMENRUP_PELL_PT_POOLED_SUPP, float, "Percentage of part-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size"
-BBRR1_FED_IND_N, integer, "Independent federal student loan borrower-based 1-year borrower count"
-BBRR1_FED_IND_DFLT, string, "Percentage of independent federal student loan borrowers in default after 1 year"
-BBRR1_FED_IND_DLNQ, string, "Percentage of independent federal student loan borrowers in delinquency after 1 year"
-BBRR1_FED_IND_FBR, string, "Percentage of independent federal student loan borrowers in forbearance after 1 year"
-BBRR1_FED_IND_DFR, string, "Percentage of independent federal student loan borrowers in deferment after 1 year"
-BBRR1_FED_IND_NOPROG, string, "Percentage of independent federal student loan borrowers not making progress after 1 year"
-BBRR1_FED_IND_MAKEPROG, string, "Percentage of independent federal student loan borrowers making progress after 1 year"
-BBRR1_FED_IND_PAIDINFULL, string, "Percentage of independent federal student loan borrowers paid in full after 1 year"
-BBRR1_FED_IND_DISCHARGE, string, "Percentage of independent federal student loan borrowers with all loans discharged after 1 year"
-BBRR1_FED_DEP_N, integer, "Dependent federal student loan borrower-based 1-year borrower count"
-BBRR1_FED_DEP_DFLT, string, "Percentage of dependent federal student loan borrowers in default after 1 year"
-BBRR1_FED_DEP_DLNQ, string, "Percentage of dependent federal student loan borrowers in delinquency after 1 year"
-BBRR1_FED_DEP_FBR, string, "Percentage of dependent federal student loan borrowers in forbearance after 1 year"
-BBRR1_FED_DEP_DFR, string, "Percentage of dependent federal student loan borrowers in deferment after 1 year"
-BBRR1_FED_DEP_NOPROG, string, "Percentage of dependent federal student loan borrowers not making progress after 1 year"
-BBRR1_FED_DEP_MAKEPROG, string, "Percentage of dependent federal student loan borrowers making progress after 1 year"
-BBRR1_FED_DEP_PAIDINFULL, string, "Percentage of dependent federal student loan borrowers paid in full after 1 year"
-BBRR1_FED_DEP_DISCHARGE, string, "Percentage of dependent federal student loan borrowers with all loans discharged after 1 year"
-BBRR1_FED_PELL_N, integer, "Pell Grant recipient federal student loan borrower-based 1-year borrower count"
-BBRR1_FED_PELL_DFLT, string, "Percentage of Pell Grant recipient federal student loan borrowers in default after 1 year"
-BBRR1_FED_PELL_DLNQ, string, "Percentage of Pell Grant recipient federal student loan borrowers in delinquency after 1 year"
-BBRR1_FED_PELL_FBR, string, "Percentage of Pell Grant recipient federal student loan borrowers in forbearance after 1 year"
-BBRR1_FED_PELL_DFR, string, "Percentage of Pell Grant recipient federal student loan borrowers in deferment after 1 year"
-BBRR1_FED_PELL_NOPROG, string, "Percentage of Pell Grant recipient federal student loan borrowers not making progress after 1 year"
-BBRR1_FED_PELL_MAKEPROG, string, "Percentage of Pell Grant recipient federal student loan borrowers making progress after 1 year"
-BBRR1_FED_PELL_PAIDINFULL, string, "Percentage of Pell Grant recipient federal student loan borrowers paid in full after 1 year"
-BBRR1_FED_PELL_DISCHARGE, string, "Percentage of Pell Grant recipient federal student loan borrowers with all loans discharged after 1 year"
-BBRR1_FED_NOPELL_N, integer, "Non-Pell Grant recipient federal student loan borrower-based 1-year borrower count"
-BBRR1_FED_NOPELL_DFLT, string, "Percentage of non-Pell Grant recipient federal student loan borrowers in default after 1 year"
-BBRR1_FED_NOPELL_DLNQ, string, "Percentage of non-Pell Grant recipient federal student loan borrowers in delinquency after 1 year"
-BBRR1_FED_NOPELL_FBR, string, "Percentage of non-Pell Grant recipient federal student loan borrowers in forbearance after 1 year"
-BBRR1_FED_NOPELL_DFR, string, "Percentage of non-Pell Grant recipient federal student loan borrowers in deferment after 1 year"
-BBRR1_FED_NOPELL_NOPROG, string, "Percentage of non-Pell Grant recipient federal student loan borrowers not making progress after 1 year"
-BBRR1_FED_NOPELL_MAKEPROG, string, "Percentage of non-Pell Grant recipient federal student loan borrowers making progress after 1 year"
-BBRR1_FED_NOPELL_PAIDINFULL, string, "Percentage of non-Pell Grant recipient federal student loan borrowers paid in full after 1 year"
-BBRR1_FED_NOPELL_DISCHARGE, string, "Percentage of non-Pell Grant recipient federal student loan borrowers with all loans discharged after 1 year"
-BBRR1_FED_MALE_N, integer, "Male federal student loan borrower-based 1-year borrower count"
-BBRR1_FED_MALE_DFLT, string, "Percentage of male federal student loan borrowers in default after 1 year"
-BBRR1_FED_MALE_DLNQ, string, "Percentage of male federal student loan borrowers in delinquency after 1 year"
-BBRR1_FED_MALE_FBR, string, "Percentage of male federal student loan borrowers in forbearance after 1 year"
-BBRR1_FED_MALE_DFR, string, "Percentage of male federal student loan borrowers in deferment after 1 year"
-BBRR1_FED_MALE_NOPROG, string, "Percentage of male federal student loan borrowers not making progress after 1 year"
-BBRR1_FED_MALE_MAKEPROG, string, "Percentage of male federal student loan borrowers making progress after 1 year"
-BBRR1_FED_MALE_PAIDINFULL, string, "Percentage of male federal student loan borrowers paid in full after 1 year"
-BBRR1_FED_MALE_DISCHARGE, string, "Percentage of male federal student loan borrowers with all loans discharged after 1 year"
-BBRR1_FED_NOMALE_N, integer, "Non-male federal student loan borrower-based 1-year borrower count"
-BBRR1_FED_NOMALE_DFLT, string, "Percentage of non-male federal student loan borrowers in default after 1 year"
-BBRR1_FED_NOMALE_DLNQ, string, "Percentage of non-male federal student loan borrowers in delinquency after 1 year"
-BBRR1_FED_NOMALE_FBR, string, "Percentage of non-male federal student loan borrowers in forbearance after 1 year"
-BBRR1_FED_NOMALE_DFR, string, "Percentage of non-male federal student loan borrowers in deferment after 1 year"
-BBRR1_FED_NOMALE_NOPROG, string, "Percentage of non-male federal student loan borrowers not making progress after 1 year"
-BBRR1_FED_NOMALE_MAKEPROG, string, "Percentage of non-male federal student loan borrowers making progress after 1 year"
-BBRR1_FED_NOMALE_PAIDINFULL, string, "Percentage of non-male federal student loan borrowers paid in full after 1 year"
-BBRR1_FED_NOMALE_DISCHARGE, string, "Percentage of non-male federal student loan borrowers with all loans discharged after 1 year"
-BBRR1_PP_IND_N, integer, "Independent student Parent PLUS Loan borrower-based 1-year borrower count"
-BBRR1_PP_IND_DFLT, string, "Percentage of independent student Parent PLUS Loan borrowers in default after 1 year"
-BBRR1_PP_IND_DLNQ, string, "Percentage of independent student Parent PLUS Loan borrowers in delinquency after 1 year"
-BBRR1_PP_IND_FBR, string, "Percentage of independent student Parent PLUS Loan borrowers in forbearance after 1 year"
-BBRR1_PP_IND_DFR, string, "Percentage of independent student Parent PLUS Loan borrowers in deferment after 1 year"
-BBRR1_PP_IND_NOPROG, string, "Percentage of independent student Parent PLUS Loan borrowers not making progress after 1 year"
-BBRR1_PP_IND_MAKEPROG, string, "Percentage of independent student Parent PLUS Loan borrowers making progress after 1 year"
-BBRR1_PP_IND_PAIDINFULL, string, "Percentage of independent student Parent PLUS Loan borrowers paid in full after 1 year"
-BBRR1_PP_IND_DISCHARGE, string, "Percentage of independent student Parent PLUS Loan borrowers with all loans discharged after 1 year"
-BBRR1_PP_DEP_N, integer, "Dependent student Parent PLUS Loan borrower-based 1-year borrower count"
-BBRR1_PP_DEP_DFLT, string, "Percentage of dependent student Parent PLUS Loan borrowers in default after 1 year"
-BBRR1_PP_DEP_DLNQ, string, "Percentage of dependent student Parent PLUS Loan borrowers in delinquency after 1 year"
-BBRR1_PP_DEP_FBR, string, "Percentage of dependent student Parent PLUS Loan borrowers in forbearance after 1 year"
-BBRR1_PP_DEP_DFR, string, "Percentage of dependent student Parent PLUS Loan borrowers in deferment after 1 year"
-BBRR1_PP_DEP_NOPROG, string, "Percentage of dependent student Parent PLUS Loan borrowers not making progress after 1 year"
-BBRR1_PP_DEP_MAKEPROG, string, "Percentage of dependent student Parent PLUS Loan borrowers making progress after 1 year"
-BBRR1_PP_DEP_PAIDINFULL, string, "Percentage of dependent student Parent PLUS Loan borrowers paid in full after 1 year"
-BBRR1_PP_DEP_DISCHARGE, string, "Percentage of dependent student Parent PLUS Loan borrowers with all loans discharged after 1 year"
-BBRR1_PP_PELL_N, integer, "Pell Grant recipient student Parent PLUS Loan borrower-based 1-year borrower count"
-BBRR1_PP_PELL_DFLT, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in default after 1 year"
-BBRR1_PP_PELL_DLNQ, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in delinquency after 1 year"
-BBRR1_PP_PELL_FBR, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in forbearance after 1 year"
-BBRR1_PP_PELL_DFR, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in deferment after 1 year"
-BBRR1_PP_PELL_NOPROG, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers not making progress after 1 year"
-BBRR1_PP_PELL_MAKEPROG, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers making progress after 1 year"
-BBRR1_PP_PELL_PAIDINFULL, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers paid in full after 1 year"
-BBRR1_PP_PELL_DISCHARGE, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers with all loans discharged after 1 year"
-BBRR1_PP_NOPELL_N, integer, "Non-Pell Grant recipient student Parent PLUS Loan borrower-based 1-year borrower count"
-BBRR1_PP_NOPELL_DFLT, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in default after 1 year"
-BBRR1_PP_NOPELL_DLNQ, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in delinquency after 1 year"
-BBRR1_PP_NOPELL_FBR, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in forbearance after 1 year"
-BBRR1_PP_NOPELL_DFR, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in deferment after 1 year"
-BBRR1_PP_NOPELL_NOPROG, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers not making progress after 1 year"
-BBRR1_PP_NOPELL_MAKEPROG, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers making progress after 1 year"
-BBRR1_PP_NOPELL_PAIDINFULL, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers paid in full after 1 year"
-BBRR1_PP_NOPELL_DISCHARGE, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers with all loans discharged after 1 year"
-BBRR1_PP_MALE_N, integer, "Male student Parent PLUS Loan borrower-based 1-year borrower count"
-BBRR1_PP_MALE_DFLT, string, "Percentage of male student Parent PLUS Loan borrowers in default after 1 year"
-BBRR1_PP_MALE_DLNQ, string, "Percentage of male student Parent PLUS Loan borrowers in delinquency after 1 year"
-BBRR1_PP_MALE_FBR, string, "Percentage of male student Parent PLUS Loan borrowers in forbearance after 1 year"
-BBRR1_PP_MALE_DFR, string, "Percentage of male student Parent PLUS Loan borrowers in deferment after 1 year"
-BBRR1_PP_MALE_NOPROG, string, "Percentage of male student Parent PLUS Loan borrowers not making progress after 1 year"
-BBRR1_PP_MALE_MAKEPROG, string, "Percentage of male student Parent PLUS Loan borrowers making progress after 1 year"
-BBRR1_PP_MALE_PAIDINFULL, string, "Percentage of male student Parent PLUS Loan borrowers paid in full after 1 year"
-BBRR1_PP_MALE_DISCHARGE, string, "Percentage of male student Parent PLUS Loan borrowers with all loans discharged after 1 year"
-BBRR1_PP_NOMALE_N, integer, "Non-male student Parent PLUS Loan borrower-based 1-year borrower count"
-BBRR1_PP_NOMALE_DFLT, string, "Percentage of non-male student Parent PLUS Loan borrowers in default after 1 year"
-BBRR1_PP_NOMALE_DLNQ, string, "Percentage of non-male student Parent PLUS Loan borrowers in delinquency after 1 year"
-BBRR1_PP_NOMALE_FBR, string, "Percentage of non-male student Parent PLUS Loan borrowers in forbearance after 1 year"
-BBRR1_PP_NOMALE_DFR, string, "Percentage of non-male student Parent PLUS Loan borrowers in deferment after 1 year"
-BBRR1_PP_NOMALE_NOPROG, string, "Percentage of non-male student Parent PLUS Loan borrowers not making progress after 1 year"
-BBRR1_PP_NOMALE_MAKEPROG, string, "Percentage of non-male student Parent PLUS Loan borrowers making progress after 1 year"
-BBRR1_PP_NOMALE_PAIDINFULL, string, "Percentage of non-male student Parent PLUS Loan borrowers paid in full after 1 year"
-BBRR1_PP_NOMALE_DISCHARGE, string, "Percentage of non-male student Parent PLUS Loan borrowers with all loans discharged after 1 year"
-BBRR2_FED_IND_N, integer, "Independent federal student loan borrower-based 2-year borrower count"
-BBRR2_FED_IND_DFLT, string, "Percentage of independent federal student loan borrowers in default after 2 years"
-BBRR2_FED_IND_DLNQ, string, "Percentage of independent federal student loan borrowers in delinquency after 2 years"
-BBRR2_FED_IND_FBR, string, "Percentage of independent federal student loan borrowers in forbearance after 2 years"
-BBRR2_FED_IND_DFR, string, "Percentage of independent federal student loan borrowers in deferment after 2 years"
-BBRR2_FED_IND_NOPROG, string, "Percentage of independent federal student loan borrowers not making progress after 2 years"
-BBRR2_FED_IND_MAKEPROG, string, "Percentage of independent federal student loan borrowers making progress after 2 years"
-BBRR2_FED_IND_PAIDINFULL, string, "Percentage of independent federal student loan borrowers paid in full after 2 years"
-BBRR2_FED_IND_DISCHARGE, string, "Percentage of independent federal student loan borrowers with all loans discharged after 2 years"
-BBRR2_FED_DEP_N, integer, "Dependent federal student loan borrower-based 2-year borrower count"
-BBRR2_FED_DEP_DFLT, string, "Percentage of dependent federal student loan borrowers in default after 2 years"
-BBRR2_FED_DEP_DLNQ, string, "Percentage of dependent federal student loan borrowers in delinquency after 2 years"
-BBRR2_FED_DEP_FBR, string, "Percentage of dependent federal student loan borrowers in forbearance after 2 years"
-BBRR2_FED_DEP_DFR, string, "Percentage of dependent federal student loan borrowers in deferment after 2 years"
-BBRR2_FED_DEP_NOPROG, string, "Percentage of dependent federal student loan borrowers not making progress after 2 years"
-BBRR2_FED_DEP_MAKEPROG, string, "Percentage of dependent federal student loan borrowers making progress after 2 years"
-BBRR2_FED_DEP_PAIDINFULL, string, "Percentage of dependent federal student loan borrowers paid in full after 2 years"
-BBRR2_FED_DEP_DISCHARGE, string, "Percentage of dependent federal student loan borrowers with all loans discharged after 2 years"
-BBRR2_FED_PELL_N, integer, "Pell Grant recipient federal student loan borrower-based 2-year borrower count"
-BBRR2_FED_PELL_DFLT, string, "Percentage of Pell Grant recipient federal student loan borrowers in default after 2 years"
-BBRR2_FED_PELL_DLNQ, string, "Percentage of Pell Grant recipient federal student loan borrowers in delinquency after 2 years"
-BBRR2_FED_PELL_FBR, string, "Percentage of Pell Grant recipient federal student loan borrowers in forbearance after 2 years"
-BBRR2_FED_PELL_DFR, string, "Percentage of Pell Grant recipient federal student loan borrowers in deferment after 2 years"
-BBRR2_FED_PELL_NOPROG, string, "Percentage of Pell Grant recipient federal student loan borrowers not making progress after 2 years"
-BBRR2_FED_PELL_MAKEPROG, string, "Percentage of Pell Grant recipient federal student loan borrowers making progress after 2 years"
-BBRR2_FED_PELL_PAIDINFULL, string, "Percentage of Pell Grant recipient federal student loan borrowers paid in full after 2 years"
-BBRR2_FED_PELL_DISCHARGE, string, "Percentage of Pell Grant recipient federal student loan borrowers with all loans discharged after 2 years"
-BBRR2_FED_NOPELL_N, integer, "Non-Pell Grant recipient federal student loan borrower-based 2-year borrower count"
-BBRR2_FED_NOPELL_DFLT, string, "Percentage of non-Pell Grant recipient federal student loan borrowers in default after 2 years"
-BBRR2_FED_NOPELL_DLNQ, string, "Percentage of non-Pell Grant recipient federal student loan borrowers in delinquency after 2 years"
-BBRR2_FED_NOPELL_FBR, string, "Percentage of non-Pell Grant recipient federal student loan borrowers in forbearance after 2 years"
-BBRR2_FED_NOPELL_DFR, string, "Percentage of non-Pell Grant recipient federal student loan borrowers in deferment after 2 years"
-BBRR2_FED_NOPELL_NOPROG, string, "Percentage of non-Pell Grant recipient federal student loan borrowers not making progress after 2 years"
-BBRR2_FED_NOPELL_MAKEPROG, string, "Percentage of non-Pell Grant recipient federal student loan borrowers making progress after 2 years"
-BBRR2_FED_NOPELL_PAIDINFULL, string, "Percentage of non-Pell Grant recipient federal student loan borrowers paid in full after 2 years"
-BBRR2_FED_NOPELL_DISCHARGE, string, "Percentage of non-Pell Grant recipient federal student loan borrowers with all loans discharged after 2 years"
-BBRR2_FED_MALE_N, integer, "Male federal student loan borrower-based 2-year borrower count"
-BBRR2_FED_MALE_DFLT, string, "Percentage of male federal student loan borrowers in default after 2 years"
-BBRR2_FED_MALE_DLNQ, string, "Percentage of male federal student loan borrowers in delinquency after 2 years"
-BBRR2_FED_MALE_FBR, string, "Percentage of male federal student loan borrowers in forbearance after 2 years"
-BBRR2_FED_MALE_DFR, string, "Percentage of male federal student loan borrowers in deferment after 2 years"
-BBRR2_FED_MALE_NOPROG, string, "Percentage of male federal student loan borrowers not making progress after 2 years"
-BBRR2_FED_MALE_MAKEPROG, string, "Percentage of male federal student loan borrowers making progress after 2 years"
-BBRR2_FED_MALE_PAIDINFULL, string, "Percentage of male federal student loan borrowers paid in full after 2 years"
-BBRR2_FED_MALE_DISCHARGE, string, "Percentage of male federal student loan borrowers with all loans discharged after 2 years"
-BBRR2_FED_NOMALE_N, integer, "Non-male federal student loan borrower-based 2-year borrower count"
-BBRR2_FED_NOMALE_DFLT, string, "Percentage of non-male federal student loan borrowers in default after 2 years"
-BBRR2_FED_NOMALE_DLNQ, string, "Percentage of non-male federal student loan borrowers in delinquency after 2 years"
-BBRR2_FED_NOMALE_FBR, string, "Percentage of non-male federal student loan borrowers in forbearance after 2 years"
-BBRR2_FED_NOMALE_DFR, string, "Percentage of non-male federal student loan borrowers in deferment after 2 years"
-BBRR2_FED_NOMALE_NOPROG, string, "Percentage of non-male federal student loan borrowers not making progress after 2 years"
-BBRR2_FED_NOMALE_MAKEPROG, string, "Percentage of non-male federal student loan borrowers making progress after 2 years"
-BBRR2_FED_NOMALE_PAIDINFULL, string, "Percentage of non-male federal student loan borrowers paid in full after 2 years"
-BBRR2_FED_NOMALE_DISCHARGE, string, "Percentage of non-male federal student loan borrowers with all loans discharged after 2 years"
-BBRR2_PP_IND_N, integer, "Independent student Parent PLUS Loan borrower-based 2-year borrower count"
-BBRR2_PP_IND_DFLT, string, "Percentage of independent student Parent PLUS Loan borrowers in default after 2 years"
-BBRR2_PP_IND_DLNQ, string, "Percentage of independent student Parent PLUS Loan borrowers in delinquency after 2 years"
-BBRR2_PP_IND_FBR, string, "Percentage of independent student Parent PLUS Loan borrowers in forbearance after 2 years"
-BBRR2_PP_IND_DFR, string, "Percentage of independent student Parent PLUS Loan borrowers in deferment after 2 years"
-BBRR2_PP_IND_NOPROG, string, "Percentage of independent student Parent PLUS Loan borrowers not making progress after 2 years"
-BBRR2_PP_IND_MAKEPROG, string, "Percentage of independent student Parent PLUS Loan borrowers making progress after 2 years"
-BBRR2_PP_IND_PAIDINFULL, string, "Percentage of independent student Parent PLUS Loan borrowers paid in full after 2 years"
-BBRR2_PP_IND_DISCHARGE, string, "Percentage of independent student Parent PLUS Loan borrowers with all loans discharged after 2 years"
-BBRR2_PP_DEP_N, integer, "Dependent student Parent PLUS Loan borrower-based 2-year borrower count"
-BBRR2_PP_DEP_DFLT, string, "Percentage of dependent student Parent PLUS Loan borrowers in default after 2 years"
-BBRR2_PP_DEP_DLNQ, string, "Percentage of dependent student Parent PLUS Loan borrowers in delinquency after 2 years"
-BBRR2_PP_DEP_FBR, string, "Percentage of dependent student Parent PLUS Loan borrowers in forbearance after 2 years"
-BBRR2_PP_DEP_DFR, string, "Percentage of dependent student Parent PLUS Loan borrowers in deferment after 2 years"
-BBRR2_PP_DEP_NOPROG, string, "Percentage of dependent student Parent PLUS Loan borrowers not making progress after 2 years"
-BBRR2_PP_DEP_MAKEPROG, string, "Percentage of dependent student Parent PLUS Loan borrowers making progress after 2 years"
-BBRR2_PP_DEP_PAIDINFULL, string, "Percentage of dependent student Parent PLUS Loan borrowers paid in full after 2 years"
-BBRR2_PP_DEP_DISCHARGE, string, "Percentage of dependent student Parent PLUS Loan borrowers with all loans discharged after 2 years"
-BBRR2_PP_PELL_N, integer, "Pell Grant recipient student Parent PLUS Loan borrower-based 2-year borrower count"
-BBRR2_PP_PELL_DFLT, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in default after 2 years"
-BBRR2_PP_PELL_DLNQ, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in delinquency after 2 years"
-BBRR2_PP_PELL_FBR, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in forbearance after 2 years"
-BBRR2_PP_PELL_DFR, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in deferment after 2 years"
-BBRR2_PP_PELL_NOPROG, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers not making progress after 2 years"
-BBRR2_PP_PELL_MAKEPROG, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers making progress after 2 years"
-BBRR2_PP_PELL_PAIDINFULL, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers paid in full after 2 years"
-BBRR2_PP_PELL_DISCHARGE, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers with all loans discharged after 2 years"
-BBRR2_PP_NOPELL_N, integer, "Non-Pell Grant recipient student Parent PLUS Loan borrower-based 2-year borrower count"
-BBRR2_PP_NOPELL_DFLT, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in default after 2 years"
-BBRR2_PP_NOPELL_DLNQ, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in delinquency after 2 years"
-BBRR2_PP_NOPELL_FBR, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in forbearance after 2 years"
-BBRR2_PP_NOPELL_DFR, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in deferment after 2 years"
-BBRR2_PP_NOPELL_NOPROG, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers not making progress after 2 years"
-BBRR2_PP_NOPELL_MAKEPROG, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers making progress after 2 years"
-BBRR2_PP_NOPELL_PAIDINFULL, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers paid in full after 2 years"
-BBRR2_PP_NOPELL_DISCHARGE, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers with all loans discharged after 2 years"
-BBRR2_PP_MALE_N, integer, "Male student Parent PLUS Loan borrower-based 2-year borrower count"
-BBRR2_PP_MALE_DFLT, string, "Percentage of male student Parent PLUS Loan borrowers in default after 2 years"
-BBRR2_PP_MALE_DLNQ, string, "Percentage of male student Parent PLUS Loan borrowers in delinquency after 2 years"
-BBRR2_PP_MALE_FBR, string, "Percentage of male student Parent PLUS Loan borrowers in forbearance after 2 years"
-BBRR2_PP_MALE_DFR, string, "Percentage of male student Parent PLUS Loan borrowers in deferment after 2 years"
-BBRR2_PP_MALE_NOPROG, string, "Percentage of male student Parent PLUS Loan borrowers not making progress after 2 years"
-BBRR2_PP_MALE_MAKEPROG, string, "Percentage of male student Parent PLUS Loan borrowers making progress after 2 years"
-BBRR2_PP_MALE_PAIDINFULL, string, "Percentage of male student Parent PLUS Loan borrowers paid in full after 2 years"
-BBRR2_PP_MALE_DISCHARGE, string, "Percentage of male student Parent PLUS Loan borrowers with all loans discharged after 2 years"
-BBRR2_PP_NOMALE_N, integer, "Non-male student Parent PLUS Loan borrower-based 2-year borrower count"
-BBRR2_PP_NOMALE_DFLT, string, "Percentage of non-male student Parent PLUS Loan borrowers in default after 2 years"
-BBRR2_PP_NOMALE_DLNQ, string, "Percentage of non-male student Parent PLUS Loan borrowers in delinquency after 2 years"
-BBRR2_PP_NOMALE_FBR, string, "Percentage of non-male student Parent PLUS Loan borrowers in forbearance after 2 years"
-BBRR2_PP_NOMALE_DFR, string, "Percentage of non-male student Parent PLUS Loan borrowers in deferment after 2 years"
-BBRR2_PP_NOMALE_NOPROG, string, "Percentage of non-male student Parent PLUS Loan borrowers not making progress after 2 years"
-BBRR2_PP_NOMALE_MAKEPROG, string, "Percentage of non-male student Parent PLUS Loan borrowers making progress after 2 years"
-BBRR2_PP_NOMALE_PAIDINFULL, string, "Percentage of non-male student Parent PLUS Loan borrowers paid in full after 2 years"
-BBRR2_PP_NOMALE_DISCHARGE, string, "Percentage of non-male student Parent PLUS Loan borrowers with all loans discharged after 2 years"
-BBRR3_FED_UG_N, integer, "Undergraduate federal student loan borrower-based 3-year borrower count"
-BBRR3_FED_UG_DFLT, string, "Percentage of undergraduate federal student loan borrowers in default after 3 years"
-BBRR3_FED_UG_DLNQ, string, "Percentage of undergraduate federal student loan borrowers in delinquency after 3 years"
-BBRR3_FED_UG_FBR, string, "Percentage of undergraduate federal student loan borrowers in forbearance after 3 years"
-BBRR3_FED_UG_DFR, string, "Percentage of undergraduate federal student loan borrowers in deferment after 3 years"
-BBRR3_FED_UG_NOPROG, string, "Percentage of undergraduate federal student loan borrowers not making progress after 3 years"
-BBRR3_FED_UG_MAKEPROG, string, "Percentage of undergraduate federal student loan borrowers making progress after 3 years"
-BBRR3_FED_UG_PAIDINFULL, string, "Percentage of undergraduate federal student loan borrowers paid in full after 3 years"
-BBRR3_FED_UG_DISCHARGE, string, "Percentage of undergraduate federal student loan borrowers with all loans discharged after 3 years"
-BBRR3_FED_UGCOMP_N, integer, "Undergraduate completer undergraduate federal student loan borrower-based 3-year borrower count"
-BBRR3_FED_UGCOMP_DFLT, string, "Percentage of undergraduate completer undergraduate federal student loan borrowers in default after 3 years"
-BBRR3_FED_UGCOMP_DLNQ, string, "Percentage of undergraduate completer undergraduate federal student loan borrowers in delinquency after 3 years"
-BBRR3_FED_UGCOMP_FBR, string, "Percentage of undergraduate completer undergraduate federal student loan borrowers in forbearance after 3 years"
-BBRR3_FED_UGCOMP_DFR, string, "Percentage of undergraduate completer undergraduate federal student loan borrowers in deferment after 3 years"
-BBRR3_FED_UGCOMP_NOPROG, string, "Percentage of undergraduate completer undergraduate federal student loan borrowers not making progress after 3 years"
-BBRR3_FED_UGCOMP_MAKEPROG, string, "Percentage of undergraduate completer undergraduate federal student loan borrowers making progress after 3 years"
-BBRR3_FED_UGCOMP_PAIDINFULL, string, "Percentage of undergraduate completer undergraduate federal student loan borrowers paid in full after 3 years"
-BBRR3_FED_UGCOMP_DISCHARGE, string, "Percentage of undergraduate completer undergraduate federal student loan borrowers with all loans discharged after 3 years"
-BBRR3_FED_UGNOCOMP_N, integer, "Undergraduate non-completer undergraduate federal student loan borrower-based 3-year borrower count"
-BBRR3_FED_UGNOCOMP_DFLT, string, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers in default after 3 years"
-BBRR3_FED_UGNOCOMP_DLNQ, string, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers in delinquency after 3 years"
-BBRR3_FED_UGNOCOMP_FBR, string, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers in forbearance after 3 years"
-BBRR3_FED_UGNOCOMP_DFR, string, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers in deferment after 3 years"
-BBRR3_FED_UGNOCOMP_NOPROG, string, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers not making progress after 3 years"
-BBRR3_FED_UGNOCOMP_MAKEPROG, string, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers making progress after 3 years"
-BBRR3_FED_UGNOCOMP_PAIDINFULL, string, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers paid in full after 3 years"
-BBRR3_FED_UGNOCOMP_DISCHARGE, string, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers with all loans discharged after 3 years"
-BBRR3_FED_UGUNK_N, integer, "Undergraduate unknown completion status undergraduate federal student loan borrower-based 3-year borrower count"
-BBRR3_FED_UGUNK_DFLT, string, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in default after 3 years"
-BBRR3_FED_UGUNK_DLNQ, string, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in delinquency after 3 years"
-BBRR3_FED_UGUNK_FBR, string, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in forbearance after 3 years"
-BBRR3_FED_UGUNK_DFR, string, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in deferment after 3 years"
-BBRR3_FED_UGUNK_NOPROG, string, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers not making progress after 3 years"
-BBRR3_FED_UGUNK_MAKEPROG, string, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers making progress after 3 years"
-BBRR3_FED_UGUNK_PAIDINFULL, string, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers paid in full after 3 years"
-BBRR3_FED_UGUNK_DISCHARGE, string, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers with all loans discharged after 3 years"
-BBRR3_FED_GR_N, integer, "Graduate federal student loan borrower-based 3-year borrower count"
-BBRR3_FED_GR_DFLT, string, "Percentage of graduate federal student loan borrowers in default after 3 years"
-BBRR3_FED_GR_DLNQ, string, "Percentage of graduate federal student loan borrowers in delinquency after 3 years"
-BBRR3_FED_GR_FBR, string, "Percentage of graduate federal student loan borrowers in forbearance after 3 years"
-BBRR3_FED_GR_DFR, string, "Percentage of graduate federal student loan borrowers in deferment after 3 years"
-BBRR3_FED_GR_NOPROG, string, "Percentage of graduate federal student loan borrowers not making progress after 3 years"
-BBRR3_FED_GR_MAKEPROG, string, "Percentage of graduate federal student loan borrowers making progress after 3 years"
-BBRR3_FED_GR_PAIDINFULL, string, "Percentage of graduate federal student loan borrowers paid in full after 3 years"
-BBRR3_FED_GR_DISCHARGE, string, "Percentage of graduate federal student loan borrowers with all loans discharged after 3 years"
-BBRR3_FED_GRCOMP_N, integer, "Graduate completer graduate federal student loan borrower-based 3-year borrower count"
-BBRR3_FED_GRCOMP_DFLT, string, "Percentage of graduate completer graduate federal student loan borrowers in default after 3 years"
-BBRR3_FED_GRCOMP_DLNQ, string, "Percentage of graduate completer graduate federal student loan borrowers in delinquency after 3 years"
-BBRR3_FED_GRCOMP_FBR, string, "Percentage of graduate completer graduate federal student loan borrowers in forbearance after 3 years"
-BBRR3_FED_GRCOMP_DFR, string, "Percentage of graduate completer graduate federal student loan borrowers in deferment after 3 years"
-BBRR3_FED_GRCOMP_NOPROG, string, "Percentage of graduate completer graduate federal student loan borrowers not making progress after 3 years"
-BBRR3_FED_GRCOMP_MAKEPROG, string, "Percentage of graduate completer graduate federal student loan borrowers making progress after 3 years"
-BBRR3_FED_GRCOMP_PAIDINFULL, string, "Percentage of graduate completer graduate federal student loan borrowers paid in full after 3 years"
-BBRR3_FED_GRCOMP_DISCHARGE, string, "Percentage of graduate completer graduate federal student loan borrowers with all loans discharged after 3 years"
-BBRR3_FED_GRNOCOMP_N, integer, "Graduate non-completer graduate federal student loan borrower-based 3-year borrower count"
-BBRR3_FED_GRNOCOMP_DFLT, string, "Percentage of graduate non-completer graduate federal student loan borrowers in default after 3 years"
-BBRR3_FED_GRNOCOMP_DLNQ, string, "Percentage of graduate non-completer graduate federal student loan borrowers in delinquency after 3 years"
-BBRR3_FED_GRNOCOMP_FBR, string, "Percentage of graduate non-completer graduate federal student loan borrowers in forbearance after 3 years"
-BBRR3_FED_GRNOCOMP_DFR, string, "Percentage of graduate non-completer graduate federal student loan borrowers in deferment after 3 years"
-BBRR3_FED_GRNOCOMP_NOPROG, string, "Percentage of graduate non-completer graduate federal student loan borrowers not making progress after 3 years"
-BBRR3_FED_GRNOCOMP_MAKEPROG, string, "Percentage of graduate non-completer graduate federal student loan borrowers making progress after 3 years"
-BBRR3_FED_GRNOCOMP_PAIDINFULL, string, "Percentage of graduate non-completer graduate federal student loan borrowers paid in full after 3 years"
-BBRR3_FED_GRNOCOMP_DISCHARGE, string, "Percentage of graduate non-completer graduate federal student loan borrowers with all loans discharged after 3 years"
-BBRR3_PP_UG_N, integer, "Undergraduate student Parent PLUS Loan borrower-based 3-year borrower count"
-BBRR3_PP_UG_DFLT, string, "Percentage of undergraduate student Parent PLUS Loan borrowers in default after 3 years"
-BBRR3_PP_UG_DLNQ, string, "Percentage of undergraduate student Parent PLUS Loan borrowers in delinquency after 3 years"
-BBRR3_PP_UG_FBR, string, "Percentage of undergraduate student Parent PLUS Loan borrowers in forbearance after 3 years"
-BBRR3_PP_UG_DFR, string, "Percentage of undergraduate student Parent PLUS Loan borrowers in deferment after 3 years"
-BBRR3_PP_UG_NOPROG, string, "Percentage of undergraduate student Parent PLUS Loan borrowers not making progress after 3 years"
-BBRR3_PP_UG_MAKEPROG, string, "Percentage of undergraduate student Parent PLUS Loan borrowers making progress after 3 years"
-BBRR3_PP_UG_PAIDINFULL, string, "Percentage of undergraduate student Parent PLUS Loan borrowers paid in full after 3 years"
-BBRR3_PP_UG_DISCHARGE, string, "Percentage of undergraduate student Parent PLUS Loan borrowers with all loans discharged after 3 years"
-BBRR3_PP_UGCOMP_N, integer, "Undergraduate completer undergraduate student Parent PLUS Loan borrower-based 3-year borrower count"
-BBRR3_PP_UGCOMP_DFLT, string, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in default after 3 years"
-BBRR3_PP_UGCOMP_DLNQ, string, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in delinquency after 3 years"
-BBRR3_PP_UGCOMP_FBR, string, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in forbearance after 3 years"
-BBRR3_PP_UGCOMP_DFR, string, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in deferment after 3 years"
-BBRR3_PP_UGCOMP_NOPROG, string, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers not making progress after 3 years"
-BBRR3_PP_UGCOMP_MAKEPROG, string, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers making progress after 3 years"
-BBRR3_PP_UGCOMP_PAIDINFULL, string, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers paid in full after 3 years"
-BBRR3_PP_UGCOMP_DISCHARGE, string, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers with all loans discharged after 3 years"
-BBRR3_PP_UGNOCOMP_N, integer, "Undergraduate non-completer undergraduate student Parent PLUS Loan borrower-based 3-year borrower count"
-BBRR3_PP_UGNOCOMP_DFLT, string, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in default after 3 years"
-BBRR3_PP_UGNOCOMP_DLNQ, string, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in delinquency after 3 years"
-BBRR3_PP_UGNOCOMP_FBR, string, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in forbearance after 3 years"
-BBRR3_PP_UGNOCOMP_DFR, string, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in deferment after 3 years"
-BBRR3_PP_UGNOCOMP_NOPROG, string, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers not making progress after 3 years"
-BBRR3_PP_UGNOCOMP_MAKEPROG, string, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers making progress after 3 years"
-BBRR3_PP_UGNOCOMP_PAIDINFULL, string, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers paid in full after 3 years"
-BBRR3_PP_UGNOCOMP_DISCHARGE, string, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers with all loans discharged after 3 years"
-BBRR3_PP_UGUNK_N, integer, "Undergraduate unknown completion status undergraduate student Parent PLUS Loan borrower-based 3-year borrower count"
-BBRR3_PP_UGUNK_DFLT, string, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in default after 3 years"
-BBRR3_PP_UGUNK_DLNQ, string, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in delinquency after 3 years"
-BBRR3_PP_UGUNK_FBR, string, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in forbearance after 3 years"
-BBRR3_PP_UGUNK_DFR, string, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in deferment after 3 years"
-BBRR3_PP_UGUNK_NOPROG, string, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers not making progress after 3 years"
-BBRR3_PP_UGUNK_MAKEPROG, string, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers making progress after 3 years"
-BBRR3_PP_UGUNK_PAIDINFULL, string, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers paid in full after 3 years"
-BBRR3_PP_UGUNK_DISCHARGE, string, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers with all loans discharged after 3 years"
-BBRR3_FED_IND_N, integer, "Independent federal student loan borrower-based 3-year borrower count"
-BBRR3_FED_IND_DFLT, string, "Percentage of independent federal student loan borrowers in default after 3 years"
-BBRR3_FED_IND_DLNQ, string, "Percentage of independent federal student loan borrowers in delinquency after 3 years"
-BBRR3_FED_IND_FBR, string, "Percentage of independent federal student loan borrowers in forbearance after 3 years"
-BBRR3_FED_IND_DFR, string, "Percentage of independent federal student loan borrowers in deferment after 3 years"
-BBRR3_FED_IND_NOPROG, string, "Percentage of independent federal student loan borrowers not making progress after 3 years"
-BBRR3_FED_IND_MAKEPROG, string, "Percentage of independent federal student loan borrowers making progress after 3 years"
-BBRR3_FED_IND_PAIDINFULL, string, "Percentage of independent federal student loan borrowers paid in full after 3 years"
-BBRR3_FED_IND_DISCHARGE, string, "Percentage of independent federal student loan borrowers with all loans discharged after 3 years"
-BBRR3_FED_DEP_N, integer, "Dependent federal student loan borrower-based 3-year borrower count"
-BBRR3_FED_DEP_DFLT, string, "Percentage of dependent federal student loan borrowers in default after 3 years"
-BBRR3_FED_DEP_DLNQ, string, "Percentage of dependent federal student loan borrowers in delinquency after 3 years"
-BBRR3_FED_DEP_FBR, string, "Percentage of dependent federal student loan borrowers in forbearance after 3 years"
-BBRR3_FED_DEP_DFR, string, "Percentage of dependent federal student loan borrowers in deferment after 3 years"
-BBRR3_FED_DEP_NOPROG, string, "Percentage of dependent federal student loan borrowers not making progress after 3 years"
-BBRR3_FED_DEP_MAKEPROG, string, "Percentage of dependent federal student loan borrowers making progress after 3 years"
-BBRR3_FED_DEP_PAIDINFULL, string, "Percentage of dependent federal student loan borrowers paid in full after 3 years"
-BBRR3_FED_DEP_DISCHARGE, string, "Percentage of dependent federal student loan borrowers with all loans discharged after 3 years"
-BBRR3_FED_PELL_N, integer, "Pell Grant recipient federal student loan borrower-based 3-year borrower count"
-BBRR3_FED_PELL_DFLT, string, "Percentage of Pell Grant recipient federal student loan borrowers in default after 3 years"
-BBRR3_FED_PELL_DLNQ, string, "Percentage of Pell Grant recipient federal student loan borrowers in delinquency after 3 years"
-BBRR3_FED_PELL_FBR, string, "Percentage of Pell Grant recipient federal student loan borrowers in forbearance after 3 years"
-BBRR3_FED_PELL_DFR, string, "Percentage of Pell Grant recipient federal student loan borrowers in deferment after 3 years"
-BBRR3_FED_PELL_NOPROG, string, "Percentage of Pell Grant recipient federal student loan borrowers not making progress after 3 years"
-BBRR3_FED_PELL_MAKEPROG, string, "Percentage of Pell Grant recipient federal student loan borrowers making progress after 3 years"
-BBRR3_FED_PELL_PAIDINFULL, string, "Percentage of Pell Grant recipient federal student loan borrowers paid in full after 3 years"
-BBRR3_FED_PELL_DISCHARGE, string, "Percentage of Pell Grant recipient federal student loan borrowers with all loans discharged after 3 years"
-BBRR3_FED_NOPELL_N, integer, "Non-Pell Grant recipient federal student loan borrower-based 3-year borrower count"
-BBRR3_FED_NOPELL_DFLT, string, "Percentage of non-Pell Grant recipient federal student loan borrowers in default after 3 years"
-BBRR3_FED_NOPELL_DLNQ, string, "Percentage of non-Pell Grant recipient federal student loan borrowers in delinquency after 3 years"
-BBRR3_FED_NOPELL_FBR, string, "Percentage of non-Pell Grant recipient federal student loan borrowers in forbearance after 3 years"
-BBRR3_FED_NOPELL_DFR, string, "Percentage of non-Pell Grant recipient federal student loan borrowers in deferment after 3 years"
-BBRR3_FED_NOPELL_NOPROG, string, "Percentage of non-Pell Grant recipient federal student loan borrowers not making progress after 3 years"
-BBRR3_FED_NOPELL_MAKEPROG, string, "Percentage of non-Pell Grant recipient federal student loan borrowers making progress after 3 years"
-BBRR3_FED_NOPELL_PAIDINFULL, string, "Percentage of non-Pell Grant recipient federal student loan borrowers paid in full after 3 years"
-BBRR3_FED_NOPELL_DISCHARGE, string, "Percentage of non-Pell Grant recipient federal student loan borrowers with all loans discharged after 3 years"
-BBRR3_FED_MALE_N, integer, "Male federal student loan borrower-based 3-year borrower count"
-BBRR3_FED_MALE_DFLT, string, "Percentage of male federal student loan borrowers in default after 3 years"
-BBRR3_FED_MALE_DLNQ, string, "Percentage of male federal student loan borrowers in delinquency after 3 years"
-BBRR3_FED_MALE_FBR, string, "Percentage of male federal student loan borrowers in forbearance after 3 years"
-BBRR3_FED_MALE_DFR, string, "Percentage of male federal student loan borrowers in deferment after 3 years"
-BBRR3_FED_MALE_NOPROG, string, "Percentage of male federal student loan borrowers not making progress after 3 years"
-BBRR3_FED_MALE_MAKEPROG, string, "Percentage of male federal student loan borrowers making progress after 3 years"
-BBRR3_FED_MALE_PAIDINFULL, string, "Percentage of male federal student loan borrowers paid in full after 3 years"
-BBRR3_FED_MALE_DISCHARGE, string, "Percentage of male federal student loan borrowers with all loans discharged after 3 years"
-BBRR3_FED_NOMALE_N, integer, "Non-male federal student loan borrower-based 3-year borrower count"
-BBRR3_FED_NOMALE_DFLT, string, "Percentage of non-male federal student loan borrowers in default after 3 years"
-BBRR3_FED_NOMALE_DLNQ, string, "Percentage of non-male federal student loan borrowers in delinquency after 3 years"
-BBRR3_FED_NOMALE_FBR, string, "Percentage of non-male federal student loan borrowers in forbearance after 3 years"
-BBRR3_FED_NOMALE_DFR, string, "Percentage of non-male federal student loan borrowers in deferment after 3 years"
-BBRR3_FED_NOMALE_NOPROG, string, "Percentage of non-male federal student loan borrowers not making progress after 3 years"
-BBRR3_FED_NOMALE_MAKEPROG, string, "Percentage of non-male federal student loan borrowers making progress after 3 years"
-BBRR3_FED_NOMALE_PAIDINFULL, string, "Percentage of non-male federal student loan borrowers paid in full after 3 years"
-BBRR3_FED_NOMALE_DISCHARGE, string, "Percentage of non-male federal student loan borrowers with all loans discharged after 3 years"
-BBRR3_PP_IND_N, integer, "Independent student Parent PLUS Loan borrower-based 3-year borrower count"
-BBRR3_PP_IND_DFLT, string, "Percentage of independent student Parent PLUS Loan borrowers in default after 3 years"
-BBRR3_PP_IND_DLNQ, string, "Percentage of independent student Parent PLUS Loan borrowers in delinquency after 3 years"
-BBRR3_PP_IND_FBR, string, "Percentage of independent student Parent PLUS Loan borrowers in forbearance after 3 years"
-BBRR3_PP_IND_DFR, string, "Percentage of independent student Parent PLUS Loan borrowers in deferment after 3 years"
-BBRR3_PP_IND_NOPROG, string, "Percentage of independent student Parent PLUS Loan borrowers not making progress after 3 years"
-BBRR3_PP_IND_MAKEPROG, string, "Percentage of independent student Parent PLUS Loan borrowers making progress after 3 years"
-BBRR3_PP_IND_PAIDINFULL, string, "Percentage of independent student Parent PLUS Loan borrowers paid in full after 3 years"
-BBRR3_PP_IND_DISCHARGE, string, "Percentage of independent student Parent PLUS Loan borrowers with all loans discharged after 3 years"
-BBRR3_PP_DEP_N, integer, "Dependent student Parent PLUS Loan borrower-based 3-year borrower count"
-BBRR3_PP_DEP_DFLT, string, "Percentage of dependent student Parent PLUS Loan borrowers in default after 3 years"
-BBRR3_PP_DEP_DLNQ, string, "Percentage of dependent student Parent PLUS Loan borrowers in delinquency after 3 years"
-BBRR3_PP_DEP_FBR, string, "Percentage of dependent student Parent PLUS Loan borrowers in forbearance after 3 years"
-BBRR3_PP_DEP_DFR, string, "Percentage of dependent student Parent PLUS Loan borrowers in deferment after 3 years"
-BBRR3_PP_DEP_NOPROG, string, "Percentage of dependent student Parent PLUS Loan borrowers not making progress after 3 years"
-BBRR3_PP_DEP_MAKEPROG, string, "Percentage of dependent student Parent PLUS Loan borrowers making progress after 3 years"
-BBRR3_PP_DEP_PAIDINFULL, string, "Percentage of dependent student Parent PLUS Loan borrowers paid in full after 3 years"
-BBRR3_PP_DEP_DISCHARGE, string, "Percentage of dependent student Parent PLUS Loan borrowers with all loans discharged after 3 years"
-BBRR3_PP_PELL_N, integer, "Pell Grant recipient student Parent PLUS Loan borrower-based 3-year borrower count"
-BBRR3_PP_PELL_DFLT, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in default after 3 years"
-BBRR3_PP_PELL_DLNQ, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in delinquency after 3 years"
-BBRR3_PP_PELL_FBR, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in forbearance after 3 years"
-BBRR3_PP_PELL_DFR, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in deferment after 3 years"
-BBRR3_PP_PELL_NOPROG, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers not making progress after 3 years"
-BBRR3_PP_PELL_MAKEPROG, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers making progress after 3 years"
-BBRR3_PP_PELL_PAIDINFULL, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers paid in full after 3 years"
-BBRR3_PP_PELL_DISCHARGE, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers with all loans discharged after 3 years"
-BBRR3_PP_NOPELL_N, integer, "Non-Pell Grant recipient student Parent PLUS Loan borrower-based 3-year borrower count"
-BBRR3_PP_NOPELL_DFLT, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in default after 3 years"
-BBRR3_PP_NOPELL_DLNQ, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in delinquency after 3 years"
-BBRR3_PP_NOPELL_FBR, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in forbearance after 3 years"
-BBRR3_PP_NOPELL_DFR, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in deferment after 3 years"
-BBRR3_PP_NOPELL_NOPROG, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers not making progress after 3 years"
-BBRR3_PP_NOPELL_MAKEPROG, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers making progress after 3 years"
-BBRR3_PP_NOPELL_PAIDINFULL, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers paid in full after 3 years"
-BBRR3_PP_NOPELL_DISCHARGE, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers with all loans discharged after 3 years"
-BBRR3_PP_MALE_N, integer, "Male student Parent PLUS Loan borrower-based 3-year borrower count"
-BBRR3_PP_MALE_DFLT, string, "Percentage of male student Parent PLUS Loan borrowers in default after 3 years"
-BBRR3_PP_MALE_DLNQ, string, "Percentage of male student Parent PLUS Loan borrowers in delinquency after 3 years"
-BBRR3_PP_MALE_FBR, string, "Percentage of male student Parent PLUS Loan borrowers in forbearance after 3 years"
-BBRR3_PP_MALE_DFR, string, "Percentage of male student Parent PLUS Loan borrowers in deferment after 3 years"
-BBRR3_PP_MALE_NOPROG, string, "Percentage of male student Parent PLUS Loan borrowers not making progress after 3 years"
-BBRR3_PP_MALE_MAKEPROG, string, "Percentage of male student Parent PLUS Loan borrowers making progress after 3 years"
-BBRR3_PP_MALE_PAIDINFULL, string, "Percentage of male student Parent PLUS Loan borrowers paid in full after 3 years"
-BBRR3_PP_MALE_DISCHARGE, string, "Percentage of male student Parent PLUS Loan borrowers with all loans discharged after 3 years"
-BBRR3_PP_NOMALE_N, integer, "Non-male student Parent PLUS Loan borrower-based 3-year borrower count"
-BBRR3_PP_NOMALE_DFLT, string, "Percentage of non-male student Parent PLUS Loan borrowers in default after 3 years"
-BBRR3_PP_NOMALE_DLNQ, string, "Percentage of non-male student Parent PLUS Loan borrowers in delinquency after 3 years"
-BBRR3_PP_NOMALE_FBR, string, "Percentage of non-male student Parent PLUS Loan borrowers in forbearance after 3 years"
-BBRR3_PP_NOMALE_DFR, string, "Percentage of non-male student Parent PLUS Loan borrowers in deferment after 3 years"
-BBRR3_PP_NOMALE_NOPROG, string, "Percentage of non-male student Parent PLUS Loan borrowers not making progress after 3 years"
-BBRR3_PP_NOMALE_MAKEPROG, string, "Percentage of non-male student Parent PLUS Loan borrowers making progress after 3 years"
-BBRR3_PP_NOMALE_PAIDINFULL, string, "Percentage of non-male student Parent PLUS Loan borrowers paid in full after 3 years"
-BBRR3_PP_NOMALE_DISCHARGE, string, "Percentage of non-male student Parent PLUS Loan borrowers with all loans discharged after 3 years"
-COUNT_NWNE_1YR, integer, "Number of graduates working and not enrolled 1 year after completing"
-COUNT_WNE_1YR, integer, "Number of graduates not working and not enrolled 1 year after completing"
-CNTOVER150_1YR, integer, "Number of graduates working and not enrolled who earned more than 150% of the single-person household poverty threshold 1 year after completing"
-GT_THRESHOLD_P6, float, "Share of students earning more than a high school graduate (threshold earnings) 6 years after entry"
-GT_THRESHOLD_P6_SUPP, float, "Share of students earning more than a high school graduate (threshold earnings) 6 years after entry, suppressed for small n size"
-MD_EARN_WNE_INC1_P6, integer, "Median earnings of students working and not enrolled 6 years after entry in the lowest income tercile $0-$30,000"
-MD_EARN_WNE_INC2_P6, integer, "Median earnings of students working and not enrolled 6 years after entry in the middle income tercile $30,001-$75,000"
-MD_EARN_WNE_INC3_P6, integer, "Median earnings of students working and not enrolled 6 years after entry in the highest income tercile $75,001+"
-MD_EARN_WNE_INDEP1_P6, integer, "Median earnings of independent students working and not enrolled 6 years after entry"
-MD_EARN_WNE_INDEP0_P6, integer, "Median earnings of dependent students working and not enrolled 6 years after entry"
-MD_EARN_WNE_MALE0_P6, integer, "Median earnings of non-male students working and not enrolled 6 years after entry"
-MD_EARN_WNE_MALE1_P6, integer, "Median earnings of male students working and not enrolled 6 years after entry"
-GT_THRESHOLD_P8, float, "Share of students earning more than a high school graduate (threshold earnings) 8 years after entry"
-COUNT_WNE_INC1_P8, integer, "Number of students working and not enrolled 8 years after entry in the lowest income tercile $0-$30,000"
-MD_EARN_WNE_INC1_P8, integer, "Median earnings of students working and not enrolled 8 years after entry in the lowest income tercile $0-$30,000"
-COUNT_WNE_INC2_P8, integer, "Number of students working and not enrolled 8 years after entry in the middle income tercile $30,001-$75,000"
-MD_EARN_WNE_INC2_P8, integer, "Median earnings of students working and not enrolled 8 years after entry in the middle income tercile $30,001-$75,000"
-COUNT_WNE_INC3_P8, integer, "Number of students working and not enrolled 8 years after entry in the highest income tercile $75,001+"
-MD_EARN_WNE_INC3_P8, integer, "Median earnings of students working and not enrolled 8 years after entry in the highest income tercile $75,001+"
-COUNT_WNE_INDEP1_P8, integer, "Number of independent students working and not enrolled 8 years after entry"
-MD_EARN_WNE_INDEP1_P8, integer, "Median earnings of independent students working and not enrolled 8 years after entry"
-COUNT_WNE_INDEP0_P8, integer, "Number of dependent students working and not enrolled 8 years after entry"
-MD_EARN_WNE_INDEP0_P8, integer, "Median earnings of dependent students working and not enrolled 8 years after entry"
-COUNT_WNE_MALE0_P8, integer, "Number of non-male students working and not enrolled 8 years after entry"
-MD_EARN_WNE_MALE0_P8, integer, "Median earnings of non-male students working and not enrolled 8 years after entry"
-COUNT_WNE_MALE1_P8, integer, "Number of male students working and not enrolled 8 years after entry"
-MD_EARN_WNE_MALE1_P8, integer, "Median earnings of male students working and not enrolled 8 years after entry"
-GT_THRESHOLD_P10, float, "Share of students earning more than a high school graduate (threshold earnings) 10 years after entry"
-MD_EARN_WNE_INC1_P10, integer, "Median earnings of students working and not enrolled 10 years after entry in the lowest income tercile $0-$30,000"
-MD_EARN_WNE_INC2_P10, integer, "Median earnings of students working and not enrolled 10 years after entry in the middle income tercile $30,001-$75,000"
-MD_EARN_WNE_INC3_P10, integer, "Median earnings of students working and not enrolled 10 years after entry in the highest income tercile $75,001+"
-MD_EARN_WNE_INDEP1_P10, integer, "Median earnings of independent students working and not enrolled 10 years after entry"
-MD_EARN_WNE_INDEP0_P10, integer, "Median earnings of dependent students working and not enrolled 10 years after entry"
-MD_EARN_WNE_MALE0_P10, integer, "Median earnings of non-male students working and not enrolled 10 years after entry"
-MD_EARN_WNE_MALE1_P10, integer, "Median earnings of male students working and not enrolled 10 years after entry"
-STUFACR, float, "Undergraduate student to instructional faculty ratio"
-IRPS_2MOR, float, "Share of full time faculty that are Two or More Races"
-IRPS_AIAN, float, "Share of full time faculty that are American Indian or Alaskan Native"
-IRPS_ASIAN, float, "Share of full time faculty that are Asian"
-IRPS_BLACK, float, "Share of full time faculty that are Black or African American"
-IRPS_HISP, float, "Share of full time faculty that are Hispanic"
-IRPS_NHPI, float, "Share of full time faculty that are Native Hawaiian or Other Pacific Islander"
-IRPS_NRA, float, "Share of full time faculty that are U.S. Nonresidents"
-IRPS_UNKN, float, "Share of full time faculty that are of unknown race/ethnicity"
-IRPS_WHITE, float, "Share of full time faculty that are White"
-IRPS_WOMEN, float, "Share of full time faculty that are men"
-IRPS_MEN, float, "Share of full time faculty that are women"
-MD_EARN_WNE_1YR, integer, "Median earnings of graduates working and not enrolled 1 year after completing"
-GT_THRESHOLD_1YR, integer, "Number of graduates working and not enrolled who earned more than a high school graduate 1 year after completing"
-COUNT_NWNE_4YR, integer, "Number of graduates not working and not enrolled 4 years after completing"
-COUNT_WNE_4YR, integer, "Number of graduates working and not enrolled 4 years after completing"
-MD_EARN_WNE_4YR, integer, "Median earnings of graduates working and not enrolled 4 years after completing"
-GT_THRESHOLD_4YR, integer, "Number of graduates working and not enrolled who earned more than a high school graduate 4 years after completing"
-BBRR4_FED_UG_N, integer, "Undergraduate federal student loan borrower-based 4-year borrower count"
-BBRR4_FED_UG_DFLT, string, "Percentage of undergraduate federal student loan borrowers in default after 4 years"
-BBRR4_FED_UG_DLNQ, string, "Percentage of undergraduate federal student loan borrowers in delinquency after 4 years"
-BBRR4_FED_UG_FBR, string, "Percentage of undergraduate federal student loan borrowers in forbearance after 4 years"
-BBRR4_FED_UG_DFR, string, "Percentage of undergraduate federal student loan borrowers in deferment after 4 years"
-BBRR4_FED_UG_NOPROG, string, "Percentage of undergraduate federal student loan borrowers not making progress after 4 years"
-BBRR4_FED_UG_MAKEPROG, string, "Percentage of undergraduate federal student loan borrowers making progress after 4 years"
-BBRR4_FED_UG_PAIDINFULL, string, "Percentage of undergraduate federal student loan borrowers paid in full after 4 years"
-BBRR4_FED_UG_DISCHARGE, string, "Percentage of undergraduate federal student loan borrowers with all loans discharged after 4 years"
-BBRR4_FED_UGCOMP_N, integer, "Undergraduate completer undergraduate federal student loan borrower-based 4-year borrower count"
-BBRR4_FED_UGCOMP_DFLT, string, "Percentage of undergraduate completer undergraduate federal student loan borrowers in default after 4 years"
-BBRR4_FED_UGCOMP_DLNQ, string, "Percentage of undergraduate completer undergraduate federal student loan borrowers in delinquency after 4 years"
-BBRR4_FED_UGCOMP_FBR, string, "Percentage of undergraduate completer undergraduate federal student loan borrowers in forbearance after 4 years"
-BBRR4_FED_UGCOMP_DFR, string, "Percentage of undergraduate completer undergraduate federal student loan borrowers in deferment after 4 years"
-BBRR4_FED_UGCOMP_NOPROG, string, "Percentage of undergraduate completer undergraduate federal student loan borrowers not making progress after 4 years"
-BBRR4_FED_UGCOMP_MAKEPROG, string, "Percentage of undergraduate completer undergraduate federal student loan borrowers making progress after 4 years"
-BBRR4_FED_UGCOMP_PAIDINFULL, string, "Percentage of undergraduate completer undergraduate federal student loan borrowers paid in full after 4 years"
-BBRR4_FED_UGCOMP_DISCHARGE, string, "Percentage of undergraduate completer undergraduate federal student loan borrowers with all loans discharged after 4 years"
-BBRR4_FED_UGNOCOMP_N, integer, "Undergraduate non-completer undergraduate federal student loan borrower-based 4-year borrower count"
-BBRR4_FED_UGNOCOMP_DFLT, string, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers in default after 4 years"
-BBRR4_FED_UGNOCOMP_DLNQ, string, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers in delinquency after 4 years"
-BBRR4_FED_UGNOCOMP_FBR, string, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers in forbearance after 4 years"
-BBRR4_FED_UGNOCOMP_DFR, string, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers in deferment after 4 years"
-BBRR4_FED_UGNOCOMP_NOPROG, string, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers not making progress after 4 years"
-BBRR4_FED_UGNOCOMP_MAKEPROG, string, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers making progress after 4 years"
-BBRR4_FED_UGNOCOMP_PAIDINFULL, string, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers paid in full after 4 years"
-BBRR4_FED_UGNOCOMP_DISCHARGE, string, "Percentage of undergraduate non-completer undergraduate federal student loan borrowers with all loans discharged after 4 years"
-BBRR4_FED_UGUNK_N, integer, "Undergraduate unknown completion status undergraduate federal student loan borrower-based 4-year borrower count"
-BBRR4_FED_UGUNK_DFLT, string, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in default after 4 years"
-BBRR4_FED_UGUNK_DLNQ, string, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in delinquency after 4 years"
-BBRR4_FED_UGUNK_FBR, string, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in forbearance after 4 years"
-BBRR4_FED_UGUNK_DFR, string, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in deferment after 4 years"
-BBRR4_FED_UGUNK_NOPROG, string, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers not making progress after 4 years"
-BBRR4_FED_UGUNK_MAKEPROG, string, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers making progress after 4 years"
-BBRR4_FED_UGUNK_PAIDINFULL, string, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers paid in full after 4 years"
-BBRR4_FED_UGUNK_DISCHARGE, string, "Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers with all loans discharged after 4 years"
-BBRR4_FED_GR_N, integer, "Graduate federal student loan borrower-based 4-year borrower count"
-BBRR4_FED_GR_DFLT, string, "Percentage of graduate federal student loan borrowers in default after 4 years"
-BBRR4_FED_GR_DLNQ, string, "Percentage of graduate federal student loan borrowers in delinquency after 4 years"
-BBRR4_FED_GR_FBR, string, "Percentage of graduate federal student loan borrowers in forbearance after 4 years"
-BBRR4_FED_GR_DFR, string, "Percentage of graduate federal student loan borrowers in deferment after 4 years"
-BBRR4_FED_GR_NOPROG, string, "Percentage of graduate federal student loan borrowers not making progress after 4 years"
-BBRR4_FED_GR_MAKEPROG, string, "Percentage of graduate federal student loan borrowers making progress after 4 years"
-BBRR4_FED_GR_PAIDINFULL, string, "Percentage of graduate federal student loan borrowers paid in full after 4 years"
-BBRR4_FED_GR_DISCHARGE, string, "Percentage of graduate federal student loan borrowers with all loans discharged after 4 years"
-BBRR4_FED_GRCOMP_N, integer, "Graduate completer graduate federal student loan borrower-based 4-year borrower count"
-BBRR4_FED_GRCOMP_DFLT, string, "Percentage of graduate completer graduate federal student loan borrowers in default after 4 years"
-BBRR4_FED_GRCOMP_DLNQ, string, "Percentage of graduate completer graduate federal student loan borrowers in delinquency after 4 years"
-BBRR4_FED_GRCOMP_FBR, string, "Percentage of graduate completer graduate federal student loan borrowers in forbearance after 4 years"
-BBRR4_FED_GRCOMP_DFR, string, "Percentage of graduate completer graduate federal student loan borrowers in deferment after 4 years"
-BBRR4_FED_GRCOMP_NOPROG, string, "Percentage of graduate completer graduate federal student loan borrowers not making progress after 4 years"
-BBRR4_FED_GRCOMP_MAKEPROG, string, "Percentage of graduate completer graduate federal student loan borrowers making progress after 4 years"
-BBRR4_FED_GRCOMP_PAIDINFULL, string, "Percentage of graduate completer graduate federal student loan borrowers paid in full after 4 years"
-BBRR4_FED_GRCOMP_DISCHARGE, string, "Percentage of graduate completer graduate federal student loan borrowers with all loans discharged after 4 years"
-BBRR4_FED_GRNOCOMP_N, integer, "Graduate non-completer graduate federal student loan borrower-based 4-year borrower count"
-BBRR4_FED_GRNOCOMP_DFLT, string, "Percentage of graduate non-completer graduate federal student loan borrowers in default after 4 years"
-BBRR4_FED_GRNOCOMP_DLNQ, string, "Percentage of graduate non-completer graduate federal student loan borrowers in delinquency after 4 years"
-BBRR4_FED_GRNOCOMP_FBR, string, "Percentage of graduate non-completer graduate federal student loan borrowers in forbearance after 4 years"
-BBRR4_FED_GRNOCOMP_DFR, string, "Percentage of graduate non-completer graduate federal student loan borrowers in deferment after 4 years"
-BBRR4_FED_GRNOCOMP_NOPROG, string, "Percentage of graduate non-completer graduate federal student loan borrowers not making progress after 4 years"
-BBRR4_FED_GRNOCOMP_MAKEPROG, string, "Percentage of graduate non-completer graduate federal student loan borrowers making progress after 4 years"
-BBRR4_FED_GRNOCOMP_PAIDINFULL, string, "Percentage of graduate non-completer graduate federal student loan borrowers paid in full after 4 years"
-BBRR4_FED_GRNOCOMP_DISCHARGE, string, "Percentage of graduate non-completer graduate federal student loan borrowers with all loans discharged after 4 years"
-BBRR4_PP_UG_N, integer, "Undergraduate student Parent PLUS Loan borrower-based 4-year borrower count"
-BBRR4_PP_UG_DFLT, string, "Percentage of undergraduate student Parent PLUS Loan borrowers in default after 4 years"
-BBRR4_PP_UG_DLNQ, string, "Percentage of undergraduate student Parent PLUS Loan borrowers in delinquency after 4 years"
-BBRR4_PP_UG_FBR, string, "Percentage of undergraduate student Parent PLUS Loan borrowers in forbearance after 4 years"
-BBRR4_PP_UG_DFR, string, "Percentage of undergraduate student Parent PLUS Loan borrowers in deferment after 4 years"
-BBRR4_PP_UG_NOPROG, string, "Percentage of undergraduate student Parent PLUS Loan borrowers not making progress after 4 years"
-BBRR4_PP_UG_MAKEPROG, string, "Percentage of undergraduate student Parent PLUS Loan borrowers making progress after 4 years"
-BBRR4_PP_UG_PAIDINFULL, string, "Percentage of undergraduate student Parent PLUS Loan borrowers paid in full after 4 years"
-BBRR4_PP_UG_DISCHARGE, string, "Percentage of undergraduate student Parent PLUS Loan borrowers with all loans discharged after 4 years"
-BBRR4_PP_UGCOMP_N, integer, "Undergraduate completer undergraduate student Parent PLUS Loan borrower-based 4-year borrower count"
-BBRR4_PP_UGCOMP_DFLT, string, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in default after 4 years"
-BBRR4_PP_UGCOMP_DLNQ, string, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in delinquency after 4 years"
-BBRR4_PP_UGCOMP_FBR, string, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in forbearance after 4 years"
-BBRR4_PP_UGCOMP_DFR, string, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in deferment after 4 years"
-BBRR4_PP_UGCOMP_NOPROG, string, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers not making progress after 4 years"
-BBRR4_PP_UGCOMP_MAKEPROG, string, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers making progress after 4 years"
-BBRR4_PP_UGCOMP_PAIDINFULL, string, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers paid in full after 4 years"
-BBRR4_PP_UGCOMP_DISCHARGE, string, "Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers with all loans discharged after 4 years"
-BBRR4_PP_UGNOCOMP_N, integer, "Undergraduate non-completer undergraduate student Parent PLUS Loan borrower-based 4-year borrower count"
-BBRR4_PP_UGNOCOMP_DFLT, string, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in default after 4 years"
-BBRR4_PP_UGNOCOMP_DLNQ, string, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in delinquency after 4 years"
-BBRR4_PP_UGNOCOMP_FBR, string, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in forbearance after 4 years"
-BBRR4_PP_UGNOCOMP_DFR, string, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in deferment after 4 years"
-BBRR4_PP_UGNOCOMP_NOPROG, string, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers not making progress after 4 years"
-BBRR4_PP_UGNOCOMP_MAKEPROG, string, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers making progress after 4 years"
-BBRR4_PP_UGNOCOMP_PAIDINFULL, string, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers paid in full after 4 years"
-BBRR4_PP_UGNOCOMP_DISCHARGE, string, "Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers with all loans discharged after 4 years"
-BBRR4_PP_UGUNK_N, integer, "Undergraduate unknown completion status undergraduate student Parent PLUS Loan borrower-based 4-year borrower count"
-BBRR4_PP_UGUNK_DFLT, string, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in default after 4 years"
-BBRR4_PP_UGUNK_DLNQ, string, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in delinquency after 4 years"
-BBRR4_PP_UGUNK_FBR, string, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in forbearance after 4 years"
-BBRR4_PP_UGUNK_DFR, string, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in deferment after 4 years"
-BBRR4_PP_UGUNK_NOPROG, string, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers not making progress after 4 years"
-BBRR4_PP_UGUNK_MAKEPROG, string, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers making progress after 4 years"
-BBRR4_PP_UGUNK_PAIDINFULL, string, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers paid in full after 4 years"
-BBRR4_PP_UGUNK_DISCHARGE, string, "Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers with all loans discharged after 4 years"
-BBRR4_FED_IND_N, integer, "Independent federal student loan borrower-based 4-year borrower count"
-BBRR4_FED_IND_DFLT, string, "Percentage of independent federal student loan borrowers in default after 4 years"
-BBRR4_FED_IND_DLNQ, string, "Percentage of independent federal student loan borrowers in delinquency after 4 years"
-BBRR4_FED_IND_FBR, string, "Percentage of independent federal student loan borrowers in forbearance after 4 years"
-BBRR4_FED_IND_DFR, string, "Percentage of independent federal student loan borrowers in deferment after 4 years"
-BBRR4_FED_IND_NOPROG, string, "Percentage of independent federal student loan borrowers not making progress after 4 years"
-BBRR4_FED_IND_MAKEPROG, string, "Percentage of independent federal student loan borrowers making progress after 4 years"
-BBRR4_FED_IND_PAIDINFULL, string, "Percentage of independent federal student loan borrowers paid in full after 4 years"
-BBRR4_FED_IND_DISCHARGE, string, "Percentage of independent federal student loan borrowers with all loans discharged after 4 years"
-BBRR4_FED_DEP_N, integer, "Dependent federal student loan borrower-based 4-year borrower count"
-BBRR4_FED_DEP_DFLT, string, "Percentage of dependent federal student loan borrowers in default after 4 years"
-BBRR4_FED_DEP_DLNQ, string, "Percentage of dependent federal student loan borrowers in delinquency after 4 years"
-BBRR4_FED_DEP_FBR, string, "Percentage of dependent federal student loan borrowers in forbearance after 4 years"
-BBRR4_FED_DEP_DFR, string, "Percentage of dependent federal student loan borrowers in deferment after 4 years"
-BBRR4_FED_DEP_NOPROG, string, "Percentage of dependent federal student loan borrowers not making progress after 4 years"
-BBRR4_FED_DEP_MAKEPROG, string, "Percentage of dependent federal student loan borrowers making progress after 4 years"
-BBRR4_FED_DEP_PAIDINFULL, string, "Percentage of dependent federal student loan borrowers paid in full after 4 years"
-BBRR4_FED_DEP_DISCHARGE, string, "Percentage of dependent federal student loan borrowers with all loans discharged after 4 years"
-BBRR4_FED_PELL_N, integer, "Pell Grant recipient federal student loan borrower-based 4-year borrower count"
-BBRR4_FED_PELL_DFLT, string, "Percentage of Pell Grant recipient federal student loan borrowers in default after 4 years"
-BBRR4_FED_PELL_DLNQ, string, "Percentage of Pell Grant recipient federal student loan borrowers in delinquency after 4 years"
-BBRR4_FED_PELL_FBR, string, "Percentage of Pell Grant recipient federal student loan borrowers in forbearance after 4 years"
-BBRR4_FED_PELL_DFR, string, "Percentage of Pell Grant recipient federal student loan borrowers in deferment after 4 years"
-BBRR4_FED_PELL_NOPROG, string, "Percentage of Pell Grant recipient federal student loan borrowers not making progress after 4 years"
-BBRR4_FED_PELL_MAKEPROG, string, "Percentage of Pell Grant recipient federal student loan borrowers making progress after 4 years"
-BBRR4_FED_PELL_PAIDINFULL, string, "Percentage of Pell Grant recipient federal student loan borrowers paid in full after 4 years"
-BBRR4_FED_PELL_DISCHARGE, string, "Percentage of Pell Grant recipient federal student loan borrowers with all loans discharged after 4 years"
-BBRR4_FED_NOPELL_N, integer, "Non-Pell Grant recipient federal student loan borrower-based 4-year borrower count"
-BBRR4_FED_NOPELL_DFLT, string, "Percentage of non-Pell Grant recipient federal student loan borrowers in default after 4 years"
-BBRR4_FED_NOPELL_DLNQ, string, "Percentage of non-Pell Grant recipient federal student loan borrowers in delinquency after 4 years"
-BBRR4_FED_NOPELL_FBR, string, "Percentage of non-Pell Grant recipient federal student loan borrowers in forbearance after 4 years"
-BBRR4_FED_NOPELL_DFR, string, "Percentage of non-Pell Grant recipient federal student loan borrowers in deferment after 4 years"
-BBRR4_FED_NOPELL_NOPROG, string, "Percentage of non-Pell Grant recipient federal student loan borrowers not making progress after 4 years"
-BBRR4_FED_NOPELL_MAKEPROG, string, "Percentage of non-Pell Grant recipient federal student loan borrowers making progress after 4 years"
-BBRR4_FED_NOPELL_PAIDINFULL, string, "Percentage of non-Pell Grant recipient federal student loan borrowers paid in full after 4 years"
-BBRR4_FED_NOPELL_DISCHARGE, string, "Percentage of non-Pell Grant recipient federal student loan borrowers with all loans discharged after 4 years"
-BBRR4_FED_MALE_N, integer, "Male federal student loan borrower-based 4-year borrower count"
-BBRR4_FED_MALE_DFLT, string, "Percentage of male federal student loan borrowers in default after 4 years"
-BBRR4_FED_MALE_DLNQ, string, "Percentage of male federal student loan borrowers in delinquency after 4 years"
-BBRR4_FED_MALE_FBR, string, "Percentage of male federal student loan borrowers in forbearance after 4 years"
-BBRR4_FED_MALE_DFR, string, "Percentage of male federal student loan borrowers in deferment after 4 years"
-BBRR4_FED_MALE_NOPROG, string, "Percentage of male federal student loan borrowers not making progress after 4 years"
-BBRR4_FED_MALE_MAKEPROG, string, "Percentage of male federal student loan borrowers making progress after 4 years"
-BBRR4_FED_MALE_PAIDINFULL, string, "Percentage of male federal student loan borrowers paid in full after 4 years"
-BBRR4_FED_MALE_DISCHARGE, string, "Percentage of male federal student loan borrowers with all loans discharged after 4 years"
-BBRR4_FED_NOMALE_N, integer, "Non-male federal student loan borrower-based 4-year borrower count"
-BBRR4_FED_NOMALE_DFLT, string, "Percentage of non-male federal student loan borrowers in default after 4 years"
-BBRR4_FED_NOMALE_DLNQ, string, "Percentage of non-male federal student loan borrowers in delinquency after 4 years"
-BBRR4_FED_NOMALE_FBR, string, "Percentage of non-male federal student loan borrowers in forbearance after 4 years"
-BBRR4_FED_NOMALE_DFR, string, "Percentage of non-male federal student loan borrowers in deferment after 4 years"
-BBRR4_FED_NOMALE_NOPROG, string, "Percentage of non-male federal student loan borrowers not making progress after 4 years"
-BBRR4_FED_NOMALE_MAKEPROG, string, "Percentage of non-male federal student loan borrowers making progress after 4 years"
-BBRR4_FED_NOMALE_PAIDINFULL, string, "Percentage of non-male federal student loan borrowers paid in full after 4 years"
-BBRR4_FED_NOMALE_DISCHARGE, string, "Percentage of non-male federal student loan borrowers with all loans discharged after 4 years"
-BBRR4_PP_IND_N, integer, "Independent student Parent PLUS Loan borrower-based 4-year borrower count"
-BBRR4_PP_IND_DFLT, string, "Percentage of independent student Parent PLUS Loan borrowers in default after 4 years"
-BBRR4_PP_IND_DLNQ, string, "Percentage of independent student Parent PLUS Loan borrowers in delinquency after 4 years"
-BBRR4_PP_IND_FBR, string, "Percentage of independent student Parent PLUS Loan borrowers in forbearance after 4 years"
-BBRR4_PP_IND_DFR, string, "Percentage of independent student Parent PLUS Loan borrowers in deferment after 4 years"
-BBRR4_PP_IND_NOPROG, string, "Percentage of independent student Parent PLUS Loan borrowers not making progress after 4 years"
-BBRR4_PP_IND_MAKEPROG, string, "Percentage of independent student Parent PLUS Loan borrowers making progress after 4 years"
-BBRR4_PP_IND_PAIDINFULL, string, "Percentage of independent student Parent PLUS Loan borrowers paid in full after 4 years"
-BBRR4_PP_IND_DISCHARGE, string, "Percentage of independent student Parent PLUS Loan borrowers with all loans discharged after 4 years"
-BBRR4_PP_DEP_N, integer, "Dependent student Parent PLUS Loan borrower-based 4-year borrower count"
-BBRR4_PP_DEP_DFLT, string, "Percentage of dependent student Parent PLUS Loan borrowers in default after 4 years"
-BBRR4_PP_DEP_DLNQ, string, "Percentage of dependent student Parent PLUS Loan borrowers in delinquency after 4 years"
-BBRR4_PP_DEP_FBR, string, "Percentage of dependent student Parent PLUS Loan borrowers in forbearance after 4 years"
-BBRR4_PP_DEP_DFR, string, "Percentage of dependent student Parent PLUS Loan borrowers in deferment after 4 years"
-BBRR4_PP_DEP_NOPROG, string, "Percentage of dependent student Parent PLUS Loan borrowers not making progress after 4 years"
-BBRR4_PP_DEP_MAKEPROG, string, "Percentage of dependent student Parent PLUS Loan borrowers making progress after 4 years"
-BBRR4_PP_DEP_PAIDINFULL, string, "Percentage of dependent student Parent PLUS Loan borrowers paid in full after 4 years"
-BBRR4_PP_DEP_DISCHARGE, string, "Percentage of dependent student Parent PLUS Loan borrowers with all loans discharged after 4 years"
-BBRR4_PP_PELL_N, integer, "Pell Grant recipient student Parent PLUS Loan borrower-based 4-year borrower count"
-BBRR4_PP_PELL_DFLT, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in default after 4 years"
-BBRR4_PP_PELL_DLNQ, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in delinquency after 4 years"
-BBRR4_PP_PELL_FBR, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in forbearance after 4 years"
-BBRR4_PP_PELL_DFR, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in deferment after 4 years"
-BBRR4_PP_PELL_NOPROG, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers not making progress after 4 years"
-BBRR4_PP_PELL_MAKEPROG, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers making progress after 4 years"
-BBRR4_PP_PELL_PAIDINFULL, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers paid in full after 4 years"
-BBRR4_PP_PELL_DISCHARGE, string, "Percentage of Pell Grant recipient student Parent PLUS Loan borrowers with all loans discharged after 4 years"
-BBRR4_PP_NOPELL_N, integer, "Non-Pell Grant recipient student Parent PLUS Loan borrower-based 4-year borrower count"
-BBRR4_PP_NOPELL_DFLT, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in default after 4 years"
-BBRR4_PP_NOPELL_DLNQ, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in delinquency after 4 years"
-BBRR4_PP_NOPELL_FBR, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in forbearance after 4 years"
-BBRR4_PP_NOPELL_DFR, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in deferment after 4 years"
-BBRR4_PP_NOPELL_NOPROG, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers not making progress after 4 years"
-BBRR4_PP_NOPELL_MAKEPROG, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers making progress after 4 years"
-BBRR4_PP_NOPELL_PAIDINFULL, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers paid in full after 4 years"
-BBRR4_PP_NOPELL_DISCHARGE, string, "Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers with all loans discharged after 4 years"
-BBRR4_PP_MALE_N, integer, "Male student Parent PLUS Loan borrower-based 4-year borrower count"
-BBRR4_PP_MALE_DFLT, string, "Percentage of male student Parent PLUS Loan borrowers in default after 4 years"
-BBRR4_PP_MALE_DLNQ, string, "Percentage of male student Parent PLUS Loan borrowers in delinquency after 4 years"
-BBRR4_PP_MALE_FBR, string, "Percentage of male student Parent PLUS Loan borrowers in forbearance after 4 years"
-BBRR4_PP_MALE_DFR, string, "Percentage of male student Parent PLUS Loan borrowers in deferment after 4 years"
-BBRR4_PP_MALE_NOPROG, string, "Percentage of male student Parent PLUS Loan borrowers not making progress after 4 years"
-BBRR4_PP_MALE_MAKEPROG, string, "Percentage of male student Parent PLUS Loan borrowers making progress after 4 years"
-BBRR4_PP_MALE_PAIDINFULL, string, "Percentage of male student Parent PLUS Loan borrowers paid in full after 4 years"
-BBRR4_PP_MALE_DISCHARGE, string, "Percentage of male student Parent PLUS Loan borrowers with all loans discharged after 4 years"
-BBRR4_PP_NOMALE_N, integer, "Non-male student Parent PLUS Loan borrower-based 4-year borrower count"
-BBRR4_PP_NOMALE_DFLT, string, "Percentage of non-male student Parent PLUS Loan borrowers in default after 4 years"
-BBRR4_PP_NOMALE_DLNQ, string, "Percentage of non-male student Parent PLUS Loan borrowers in delinquency after 4 years"
-BBRR4_PP_NOMALE_FBR, string, "Percentage of non-male student Parent PLUS Loan borrowers in forbearance after 4 years"
-BBRR4_PP_NOMALE_DFR, string, "Percentage of non-male student Parent PLUS Loan borrowers in deferment after 4 years"
-BBRR4_PP_NOMALE_NOPROG, string, "Percentage of non-male student Parent PLUS Loan borrowers not making progress after 4 years"
-BBRR4_PP_NOMALE_MAKEPROG, string, "Percentage of non-male student Parent PLUS Loan borrowers making progress after 4 years"
-BBRR4_PP_NOMALE_PAIDINFULL, string, "Percentage of non-male student Parent PLUS Loan borrowers paid in full after 4 years"
-BBRR4_PP_NOMALE_DISCHARGE, string, "Percentage of non-male student Parent PLUS Loan borrowers with all loans discharged after 4 years"
-CONTROL_PEPS, string, "Control of institution (PEPS)"
-ADM_RATE_SUPP, float, "Admission rate, suppressed for n<30"
-OMENRYP_NOPELL_ALL, float, "Percentage of all non-Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry"
-OMENRAP_NOPELL_ALL, float, "Percentage of all non-Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
-OMAWDP8_NOPELL_ALL, float, "Percentage of all non-Pell Grant recipient students receiving an award within 8 years of entry"
-OMENRUP_NOPELL_ALL, float, "Percentage of all non-Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
-OMENRYP_NOPELL_FIRSTTIME, float, "Percentage of first-time non-Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry"
-OMENRAP_NOPELL_FIRSTTIME, float, "Percentage of first-time non-Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
-OMAWDP8_NOPELL_FIRSTTIME, float, "Percentage of first-time non-Pell Grant recipient students receiving an award within 8 years of entry"
-OMENRUP_NOPELL_FIRSTTIME, float, "Percentage of first-time non-Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
-OMENRYP_NOPELL_NOTFIRSTTIME, float, "Percentage of not first-time non-Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry"
-OMENRAP_NOPELL_NOTFIRSTTIME, float, "Percentage of not first-time non-Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry"
-OMAWDP8_NOPELL_NOTFIRSTTIME, float, "Percentage of not first-time non-Pell Grant recipient students receiving an award within 8 years of entry"
-OMENRUP_NOPELL_NOTFIRSTTIME, float, "Percentage of not first-time non-Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry"
-OMACHT8_NOPELL_ALL, integer, "Adjusted cohort count of non-Pell Grant recipeint students (denominator for the 8-year outcomes percentages)"
-OMACHT8_NOPELL_FIRSTTIME, integer, "Adjusted cohort count of first-time non-Pell Grant recipient students (denominator for the 8-year outcomes percentages)"
-OMACHT8_NOPELL_NOTFIRSTTIME, integer, "Adjusted cohort count of non-first-time non-Pell Grant recipient students (denominator for the 8-year outcomes percentages)"
-ADDR, string, "Address of institution"
-PCTPELL_DCS, float, "Percentage of degree/certificate-seeking undergraduate students awarded a Pell Grant"
-PCTFLOAN_DCS, float, "Percentage of degree/certificate-seeking undergraduate students awarded a federal loan"
-DCS_PELL_LOAN, integer, "Number of degree/certificate-seeking undergraduate students (denominator for percent degree/certificate-seeking undergraduates receiving a pell grant or federal student loan)"
-PCTPELL_DCS_POOLED_SUPP, float, "Percentage of degree/certificate-seeking undergraduate students awarded a Pell Grant, pooled in rolling averages and suppressed for small n size"
-PCTFLOAN_DCS_POOLED_SUPP, float, "Percentage of degree/certificate-seeking undergraduate students awarded a federal loan, pooled in rolling averages and suppressed for small n size"
-DCS_PELL_LOAN_POOLED, integer, "Number of degree/certificate-seeking undergraduate students (denominator for percent degree/certificate-seeking undergraduates receiving a pell grant or federal student loan), pooled in rolling averages"
-POOLYRS_DCS, integer, "Years used for rolling averages of PCTPELL_DCS_POOLED_SUPP and PCTFLOAN_DCS_POOLED_SUPP"
-SATVR50, float, "50th percentile of SAT scores at the institution (critical reading)"
-SATMT50, float, "50th percentile of SAT scores at the institution (math)"
-ACTCM50, float, "50th percentile of the ACT cumulative score"
-ACTEN50, float, "50th percentile of the ACT English score"
-ACTMT50, float, "50th percentile of the ACT math score"
-COUNT_NWNE_5YR, integer, "Number of graduates not working and not enrolled 5 years after completing"
-COUNT_WNE_5YR, integer, "Number of graduates working and not enrolled 5 years after completing"
-MD_EARN_WNE_5YR, integer, "Median earnings of graduates working and not enrolled 5 years after completing"
-GT_THRESHOLD_5YR, integer, "Number of graduates working and not enrolled who earned more than a high school graduate 5 years after completing"
-MD_EARN_WNE_P7, integer, "Median earnings of students working and not enrolled 7 years after entry"
-PCT25_EARN_WNE_P7, integer, "25th percentile of earnings of students working and not enrolled 7 years after entry"
-PCT75_EARN_WNE_P7, integer, "75th percentile of earnings of students working and not enrolled 7 years after entry"
-COUNT_WNE_INC1_P7, integer, "Number of students working and not enrolled 7 years after entry in the lowest income tercile $0-$30,000"
-COUNT_WNE_INC2_P7, integer, "Number of students working and not enrolled 7 years after entry in the middle income tercile $30,001-$75,000"
-COUNT_WNE_INC3_P7, integer, "Number of students working and not enrolled 7 years after entry in the highest income tercile $75,001+ "
-COUNT_WNE_INDEP0_P7, integer, "Number of dependent students working and not enrolled 7 years after entry"
-COUNT_WNE_INDEP1_P7, integer, "Number of independent students working and not enrolled 7 years after entry"
-COUNT_WNE_MALE0_P7, integer, "Number of female students working and not enrolled 7 years after entry"
-COUNT_WNE_MALE1_P7, integer, "Number of male students working and not enrolled 7 years after entry"
-GT_THRESHOLD_P7, float, "Share of students earning more than a high school graduate (threshold earnings) 7 years after entry"
-MD_EARN_WNE_INC1_P7, integer, "Median earnings of students working and not enrolled 7 years after entry in the lowest income tercile $0-$30,000"
-MD_EARN_WNE_INC2_P7, integer, "Median earnings of students working and not enrolled 7 years after entry in the middle income tercile $30,001-$75,000"
-MD_EARN_WNE_INC3_P7, integer, "Median earnings of students working and not enrolled 7 years after entry in the highest income tercile $75,001+"
-MD_EARN_WNE_INDEP1_P7, integer, "Median earnings of independent students working and not enrolled 7 years after entry"
-MD_EARN_WNE_INDEP0_P7, integer, "Median earnings of dependent students working and not enrolled 7 years after entry"
-MD_EARN_WNE_MALE0_P7, integer, "Median earnings of non-male students working and not enrolled 7 years after entry"
-MD_EARN_WNE_MALE1_P7, integer, "Median earnings of male students working and not enrolled 7 years after entry"
-MD_EARN_WNE_P9, float, "Median earnings of students working and not enrolled 9 years after entry"
-PCT25_EARN_WNE_P9, integer, "25th percentile of earnings of students working and not enrolled 9 years after entry"
-PCT75_EARN_WNE_P9, integer, "75th percentile of earnings of students working and not enrolled 9 years after entry"
-COUNT_WNE_INC1_P9, integer, "Number of students working and not enrolled 9 years after entry in the lowest income tercile $0-$30,000"
-COUNT_WNE_INC2_P9, integer, "Number of students working and not enrolled 9 years after entry in the middle income tercile $30,001-$75,000"
-COUNT_WNE_INC3_P9, integer, "Number of students working and not enrolled 9 years after entry in the highest income tercile $75,001+"
-COUNT_WNE_INDEP0_P9, integer, "Number of dependent students working and not enrolled 9 years after entry"
-COUNT_WNE_INDEP1_P9, integer, "Number of independent students working and not enrolled 9 years after entry"
-COUNT_WNE_MALE0_P9, integer, "Number of non-male students working and not enrolled 9 years after entry"
-COUNT_WNE_MALE1_P9, integer, "Number of male students working and not enrolled 9 years after entry"
-GT_THRESHOLD_P9, float, "Share of students earning more than a high school graduate (threshold earnings) 9 years after entry"
-MD_EARN_WNE_INC1_P9, integer, "Median earnings of students working and not enrolled 9 years after entry in the lowest income tercile $0-$30,000"
-MD_EARN_WNE_INC2_P9, integer, "Median earnings of students working and not enrolled 9 years after entry in the middle income tercile $30,001-$75,000"
-MD_EARN_WNE_INC3_P9, integer, "Median earnings of students working and not enrolled 9 years after entry in the highest income tercile $75,001+"
-MD_EARN_WNE_INDEP0_P9, integer, "Median earnings of dependent students working and not enrolled 9 years after entry"
-MD_EARN_WNE_INDEP1_P9, integer, "Median earnings of independent students working and not enrolled 9 years after entry"
-MD_EARN_WNE_MALE0_P9, integer, "Median earnings of non-male students working and not enrolled 9 years after entry"
-MD_EARN_WNE_MALE1_P9, integer, "Median earnings of male students working and not enrolled 9 years after entry"
-COUNT_NWNE_P11, integer, "Number of students not working and not enrolled 11 years after entry"
-COUNT_WNE_P11, integer, "Number of students working and not enrolled 11 years after entry"
-MD_EARN_WNE_P11, integer, "Median earnings of students working and not enrolled 11 years after entry"
-PCT25_EARN_WNE_P11, integer, "25th percentile of earnings of students working and not enrolled 11 years after entry"
-PCT75_EARN_WNE_P11, integer, "75th percentile of earnings of students working and not enrolled 11 years after entry"
-SD_EARN_WNE_P11, integer, "Standard deviation of earnings of students working and not enrolled 11 years after entry"
-COUNT_WNE_INC1_P11, integer, "Number of students working and not enrolled 11 years after entry in the lowest income tercile $0-$30,000"
-COUNT_WNE_INC2_P11, integer, "Number of students working and not enrolled 11 years after entry in the middle income tercile $30,001-$75,000"
-COUNT_WNE_INC3_P11, integer, "Number of students working and not enrolled 11 years after entry in the highest income tercile $75,001+ "
-COUNT_WNE_INDEP0_P11, integer, "Number of dependent students working and not enrolled 11 years after entry"
-COUNT_WNE_INDEP1_P11, integer, "Number of independent students working and not enrolled 11 years after entry"
-COUNT_WNE_MALE0_P11, integer, "Number of female students working and not enrolled 11 years after entry"
-COUNT_WNE_MALE1_P11, integer, "Number of male students working and not enrolled 11 years after entry"
-GT_THRESHOLD_P11, float, "Share of students earning more than a high school graduate (threshold earnings) 11 years after entry"
-MD_EARN_WNE_INC1_P11, integer, "Median earnings of students working and not enrolled 11 years after entry in the lowest income tercile $0-$30,000"
-MD_EARN_WNE_INC2_P11, integer, "Median earnings of students working and not enrolled 11 years after entry in the middle income tercile $30,001-$75,000"
-MD_EARN_WNE_INC3_P11, integer, "Median earnings of students working and not enrolled 11 years after entry in the highest income tercile $75,001+"
-MD_EARN_WNE_INDEP0_P11, integer, "Median earnings of dependent students working and not enrolled 11 years after entry"
-MD_EARN_WNE_INDEP1_P11, integer, "Median earnings of independent students working and not enrolled 11 years after entry"
-MD_EARN_WNE_MALE0_P11, integer, "Median earnings of non-male students working and not enrolled 11 years after entry"
-MD_EARN_WNE_MALE1_P11, integer, "Median earnings of male students working and not enrolled 11 years after entry"
+variable_name API_data_type --NAME_OF_DATA_ELEMENT
+unitid integer --Unit ID for institution
+opeid string --8-digit OPE ID for institution
+opeid6 string --6-digit OPE ID for institution
+instnm autocomplete --Institution name
+city autocomplete --City
+stabbr string --State postcode
+zip string --ZIP code
+accredagency string --Accreditor for institution
+insturl string --URL for institution's homepage
+npcurl string --URL for institution's net price calculator
+sch_deg integer --Predominant degree awarded (recoded 0s and 4s)
+hcm2 integer --Schools that are on Heightened Cash Monitoring 2 by the Department of Education
+main integer --Flag for main campus
+numbranch integer --Number of branch campuses
+preddeg integer --Predominant undergraduate degree awarded  0 Not classified  1 Predominantly certificate-degree granting  2 Predominantly associate's-degree granting  3 Predominantly bachelor's-degree granting  4 Entirely graduate-degree granting
+highdeg integer --Highest degree awarded  0 Non-degree-granting  1 Certificate degree  2 Associate degree  3 Bachelor's degree  4 Graduate degree
+control integer --Control of institution (IPEDS)
+st_fips integer --FIPS code for state
+region integer --Region (IPEDS)
+locale integer --Locale of institution
+locale2 integer --Degree of urbanization of institution
+latitude float --Latitude
+longitude float --Longitude
+ccbasic integer --Carnegie Classification -- basic
+ccugprof integer --Carnegie Classification -- undergraduate profile
+ccsizset integer --Carnegie Classification -- size and setting
+hbcu integer --Flag for Historically Black College and University
+pbi integer --Flag for predominantly black institution
+annhi integer --Flag for Alaska Native Native Hawaiian serving institution
+tribal integer --Flag for tribal college and university
+aanapii integer --Flag for Asian American Native American Pacific Islander-serving institution
+hsi integer --Flag for Hispanic-serving institution
+nanti integer --Flag for Native American non-tribal institution
+menonly integer --Flag for men-only college
+womenonly integer --Flag for women-only college
+relaffil integer --Religous affiliation of the institution
+adm_rate float --Admission rate
+adm_rate_all float --Admission rate for all campuses rolled up to the 6-digit OPE ID
+satvr25 float --25th percentile of SAT scores at the institution (critical reading)
+satvr75 float --75th percentile of SAT scores at the institution (critical reading)
+satmt25 float --25th percentile of SAT scores at the institution (math)
+satmt75 float --75th percentile of SAT scores at the institution (math)
+satwr25 float --25th percentile of SAT scores at the institution (writing)
+satwr75 float --75th percentile of SAT scores at the institution (writing)
+satvrmid float --Midpoint of SAT scores at the institution (critical reading)
+satmtmid float --Midpoint of SAT scores at the institution (math)
+satwrmid float --Midpoint of SAT scores at the institution (writing)
+actcm25 float --25th percentile of the ACT cumulative score
+actcm75 float --75th percentile of the ACT cumulative score
+acten25 float --25th percentile of the ACT English score
+acten75 float --75th percentile of the ACT English score
+actmt25 float --25th percentile of the ACT math score
+actmt75 float --75th percentile of the ACT math score
+actwr25 float --25th percentile of the ACT writing score
+actwr75 float --75th percentile of the ACT writing score
+actcmmid float --Midpoint of the ACT cumulative score
+actenmid float --Midpoint of the ACT English score
+actmtmid float --Midpoint of the ACT math score
+actwrmid float --Midpoint of the ACT writing score
+sat_avg float --Average SAT equivalent score of students admitted
+sat_avg_all float --Average SAT equivalent score of students admitted for all campuses rolled up to the 6-digit OPE ID
+pcip01 float --Percentage of degrees awarded in Agriculture, Agriculture Operations, And Related Sciences.
+pcip03 float --Percentage of degrees awarded in Natural Resources And Conservation.
+pcip04 float --Percentage of degrees awarded in Architecture And Related Services.
+pcip05 float --Percentage of degrees awarded in Area, Ethnic, Cultural, Gender, And Group Studies.
+pcip09 float --Percentage of degrees awarded in Communication, Journalism, And Related Programs.
+pcip10 float --Percentage of degrees awarded in Communications Technologies/Technicians And Support Services.
+pcip11 float --Percentage of degrees awarded in Computer And Information Sciences And Support Services.
+pcip12 float --Percentage of degrees awarded in Personal And Culinary Services.
+pcip13 float --Percentage of degrees awarded in Education.
+pcip14 float --Percentage of degrees awarded in Engineering.
+pcip15 float --Percentage of degrees awarded in Engineering Technologies And Engineering-Related Fields.
+pcip16 float --Percentage of degrees awarded in Foreign Languages, Literatures, And Linguistics.
+pcip19 float --Percentage of degrees awarded in Family And Consumer Sciences/Human Sciences.
+pcip22 float --Percentage of degrees awarded in Legal Professions And Studies.
+pcip23 float --Percentage of degrees awarded in English Language And Literature/Letters.
+pcip24 float --Percentage of degrees awarded in Liberal Arts And Sciences, General Studies And Humanities.
+pcip25 float --Percentage of degrees awarded in Library Science.
+pcip26 float --Percentage of degrees awarded in Biological And Biomedical Sciences.
+pcip27 float --Percentage of degrees awarded in Mathematics And Statistics.
+pcip29 float --Percentage of degrees awarded in Military Technologies And Applied Sciences.
+pcip30 float --Percentage of degrees awarded in Multi/Interdisciplinary Studies.
+pcip31 float --Percentage of degrees awarded in Parks, Recreation, Leisure, And Fitness Studies.
+pcip38 float --Percentage of degrees awarded in Philosophy And Religious Studies.
+pcip39 float --Percentage of degrees awarded in Theology And Religious Vocations.
+pcip40 float --Percentage of degrees awarded in Physical Sciences.
+pcip41 float --Percentage of degrees awarded in Science Technologies/Technicians.
+pcip42 float --Percentage of degrees awarded in Psychology.
+pcip43 float --Percentage of degrees awarded in Homeland Security, Law Enforcement, Firefighting And Related Protective Services.
+pcip44 float --Percentage of degrees awarded in Public Administration And Social Service Professions.
+pcip45 float --Percentage of degrees awarded in Social Sciences.
+pcip46 float --Percentage of degrees awarded in Construction Trades.
+pcip47 float --Percentage of degrees awarded in Mechanic And Repair Technologies/Technicians.
+pcip48 float --Percentage of degrees awarded in Precision Production.
+pcip49 float --Percentage of degrees awarded in Transportation And Materials Moving.
+pcip50 float --Percentage of degrees awarded in Visual And Performing Arts.
+pcip51 float --Percentage of degrees awarded in Health Professions And Related Programs.
+pcip52 float --Percentage of degrees awarded in Business, Management, Marketing, And Related Support Services.
+pcip54 float --Percentage of degrees awarded in History.
+cip01cert1 integer --Certificate of less than one academic year in Agriculture, Agriculture Operations, And Related Sciences.
+cip01cert2 integer --Certificate of at least one but less than two academic years in Agriculture, Agriculture Operations, And Related Sciences.
+cip01assoc integer --Associate degree in Agriculture, Agriculture Operations, And Related Sciences.
+cip01cert4 integer --Award of at least two but less than four academic years in Agriculture, Agriculture Operations, And Related Sciences.
+cip01bachl integer --Bachelor's degree in Agriculture, Agriculture Operations, And Related Sciences.
+cip03cert1 integer --Certificate of less than one academic year in Natural Resources And Conservation.
+cip03cert2 integer --Certificate of at least one but less than two academic years in Natural Resources And Conservation.
+cip03assoc integer --Associate degree in Natural Resources And Conservation.
+cip03cert4 integer --Award of at least two but less than four academic years in Natural Resources And Conservation.
+cip03bachl integer --Bachelor's degree in Natural Resources And Conservation.
+cip04cert1 integer --Certificate of less than one academic year in Architecture And Related Services.
+cip04cert2 integer --Certificate of at least one but less than two academic years in Architecture And Related Services.
+cip04assoc integer --Associate degree in Architecture And Related Services.
+cip04cert4 integer --Award of at least two but less than four academic years in Architecture And Related Services.
+cip04bachl integer --Bachelor's degree in Architecture And Related Services.
+cip05cert1 integer --Certificate of less than one academic year in Area, Ethnic, Cultural, Gender, And Group Studies.
+cip05cert2 integer --Certificate of at least one but less than two academic years in Area, Ethnic, Cultural, Gender, And Group Studies.
+cip05assoc integer --Associate degree in Area, Ethnic, Cultural, Gender, And Group Studies.
+cip05cert4 integer --Award of at least two but less than four academic years in Area, Ethnic, Cultural, Gender, And Group Studies.
+cip05bachl integer --Bachelor's degree in Area, Ethnic, Cultural, Gender, And Group Studies.
+cip09cert1 integer --Certificate of less than one academic year in Communication, Journalism, And Related Programs.
+cip09cert2 integer --Certificate of at least one but less than two academic years in Communication, Journalism, And Related Programs.
+cip09assoc integer --Associate degree in Communication, Journalism, And Related Programs.
+cip09cert4 integer --Award of at least two but less than four academic years in Communication, Journalism, And Related Programs.
+cip09bachl integer --Bachelor's degree in Communication, Journalism, And Related Programs.
+cip10cert1 integer --Certificate of less than one academic year in Communications Technologies/Technicians And Support Services.
+cip10cert2 integer --Certificate of at least one but less than two academic years in Communications Technologies/Technicians And Support Services.
+cip10assoc integer --Associate degree in Communications Technologies/Technicians And Support Services.
+cip10cert4 integer --Award of at least two but less than four academic years in Communications Technologies/Technicians And Support Services.
+cip10bachl integer --Bachelor's degree in Communications Technologies/Technicians And Support Services.
+cip11cert1 integer --Certificate of less than one academic year in Computer And Information Sciences And Support Services.
+cip11cert2 integer --Certificate of at least one but less than two academic years in Computer And Information Sciences And Support Services.
+cip11assoc integer --Associate degree in Computer And Information Sciences And Support Services.
+cip11cert4 integer --Award of at least two but less than four academic years in Computer And Information Sciences And Support Services.
+cip11bachl integer --Bachelor's degree in Computer And Information Sciences And Support Services.
+cip12cert1 integer --Certificate of less than one academic year in Personal And Culinary Services.
+cip12cert2 integer --Certificate of at least one but less than two academic years in Personal And Culinary Services.
+cip12assoc integer --Associate degree in Personal And Culinary Services.
+cip12cert4 integer --Award of at least two but less than four academic years in Personal And Culinary Services.
+cip12bachl integer --Bachelor's degree in Personal And Culinary Services.
+cip13cert1 integer --Certificate of less than one academic year in Education.
+cip13cert2 integer --Certificate of at least one but less than two academic years in Education.
+cip13assoc integer --Associate degree in Education.
+cip13cert4 integer --Award of at least two but less than four academic years in Education.
+cip13bachl integer --Bachelor's degree in Education.
+cip14cert1 integer --Certificate of less than one academic year in Engineering.
+cip14cert2 integer --Certificate of at least one but less than two academic years in Engineering.
+cip14assoc integer --Associate degree in Engineering.
+cip14cert4 integer --Award of at least two but less than four academic years in Engineering.
+cip14bachl integer --Bachelor's degree in Engineering.
+cip15cert1 integer --Certificate of less than one academic year in Engineering Technologies And Engineering-Related Fields.
+cip15cert2 integer --Certificate of at least one but less than two academic years in Engineering Technologies And Engineering-Related Fields.
+cip15assoc integer --Associate degree in Engineering Technologies And Engineering-Related Fields.
+cip15cert4 integer --Award of at least two but less than four academic years in Engineering Technologies And Engineering-Related Fields.
+cip15bachl integer --Bachelor's degree in Engineering Technologies And Engineering-Related Fields.
+cip16cert1 integer --Certificate of less than one academic year in Foreign Languages, Literatures, And Linguistics.
+cip16cert2 integer --Certificate of at least one but less than two academic years in Foreign Languages, Literatures, And Linguistics.
+cip16assoc integer --Associate degree in Foreign Languages, Literatures, And Linguistics.
+cip16cert4 integer --Award of at least two but less than four academic years in Foreign Languages, Literatures, And Linguistics.
+cip16bachl integer --Bachelor's degree in Foreign Languages, Literatures, And Linguistics.
+cip19cert1 integer --Certificate of less than one academic year in Family And Consumer Sciences/Human Sciences.
+cip19cert2 integer --Certificate of at least one but less than two academic years in Family And Consumer Sciences/Human Sciences.
+cip19assoc integer --Associate degree in Family And Consumer Sciences/Human Sciences.
+cip19cert4 integer --Award of at least two but less than four academic years in Family And Consumer Sciences/Human Sciences.
+cip19bachl integer --Bachelor's degree in Family And Consumer Sciences/Human Sciences.
+cip22cert1 integer --Certificate of less than one academic year in Legal Professions And Studies.
+cip22cert2 integer --Certificate of at least one but less than two academic years in Legal Professions And Studies.
+cip22assoc integer --Associate degree in Legal Professions And Studies.
+cip22cert4 integer --Award of at least two but less than four academic years in Legal Professions And Studies.
+cip22bachl integer --Bachelor's degree in Legal Professions And Studies.
+cip23cert1 integer --Certificate of less than one academic year in English Language And Literature/Letters.
+cip23cert2 integer --Certificate of at least one but less than two academic years in English Language And Literature/Letters.
+cip23assoc integer --Associate degree in English Language And Literature/Letters.
+cip23cert4 integer --Award of at least two but less than four academic years in English Language And Literature/Letters.
+cip23bachl integer --Bachelor's degree in English Language And Literature/Letters.
+cip24cert1 integer --Certificate of less than one academic year in Liberal Arts And Sciences, General Studies And Humanities.
+cip24cert2 integer --Certificate of at least one but less than two academic years in Liberal Arts And Sciences, General Studies And Humanities.
+cip24assoc integer --Associate degree in Liberal Arts And Sciences, General Studies And Humanities.
+cip24cert4 integer --Award of at least two but less than four academic years in Liberal Arts And Sciences, General Studies And Humanities.
+cip24bachl integer --Bachelor's degree in Liberal Arts And Sciences, General Studies And Humanities.
+cip25cert1 integer --Certificate of less than one academic year in Library Science.
+cip25cert2 integer --Certificate of at least one but less than two academic years in Library Science.
+cip25assoc integer --Associate degree in Library Science.
+cip25cert4 integer --Award of at least two but less than four academic years in Library Science.
+cip25bachl integer --Bachelor's degree in Library Science.
+cip26cert1 integer --Certificate of less than one academic year in Biological And Biomedical Sciences.
+cip26cert2 integer --Certificate of at least one but less than two academic years in Biological And Biomedical Sciences.
+cip26assoc integer --Associate degree in Biological And Biomedical Sciences.
+cip26cert4 integer --Award of at least two but less than four academic years in Biological And Biomedical Sciences.
+cip26bachl integer --Bachelor's degree in Biological And Biomedical Sciences.
+cip27cert1 integer --Certificate of less than one academic year in Mathematics And Statistics.
+cip27cert2 integer --Certificate of at least one but less than two academic years in Mathematics And Statistics.
+cip27assoc integer --Associate degree in Mathematics And Statistics.
+cip27cert4 integer --Award of at least two but less than four academic years in Mathematics And Statistics.
+cip27bachl integer --Bachelor's degree in Mathematics And Statistics.
+cip29cert1 integer --Certificate of less than one academic year in Military Technologies And Applied Sciences.
+cip29cert2 integer --Certificate of at least one but less than two academic years in Military Technologies And Applied Sciences.
+cip29assoc integer --Associate degree in Military Technologies And Applied Sciences.
+cip29cert4 integer --Award of at least two but less than four academic years in Military Technologies And Applied Sciences.
+cip29bachl integer --Bachelor's degree in Military Technologies And Applied Sciences.
+cip30cert1 integer --Certificate of less than one academic year in Multi/Interdisciplinary Studies.
+cip30cert2 integer --Certificate of at least one but less than two academic years in Multi/Interdisciplinary Studies.
+cip30assoc integer --Associate degree in Multi/Interdisciplinary Studies.
+cip30cert4 integer --Award of at least two but less than four academic years in Multi/Interdisciplinary Studies.
+cip30bachl integer --Bachelor's degree in Multi/Interdisciplinary Studies.
+cip31cert1 integer --Certificate of less than one academic year in Parks, Recreation, Leisure, And Fitness Studies.
+cip31cert2 integer --Certificate of at least one but less than two academic years in Parks, Recreation, Leisure, And Fitness Studies.
+cip31assoc integer --Associate degree in Parks, Recreation, Leisure, And Fitness Studies.
+cip31cert4 integer --Award of at least two but less than four academic years in Parks, Recreation, Leisure, And Fitness Studies.
+cip31bachl integer --Bachelor's degree in Parks, Recreation, Leisure, And Fitness Studies.
+cip38cert1 integer --Certificate of less than one academic year in Philosophy And Religious Studies.
+cip38cert2 integer --Certificate of at least one but less than two academic years in Philosophy And Religious Studies.
+cip38assoc integer --Associate degree in Philosophy And Religious Studies.
+cip38cert4 integer --Award of at least two but less than four academic years in Philosophy And Religious Studies.
+cip38bachl integer --Bachelor's degree in Philosophy And Religious Studies.
+cip39cert1 integer --Certificate of less than one academic year in Theology And Religious Vocations.
+cip39cert2 integer --Certificate of at least one but less than two academic years in Theology And Religious Vocations.
+cip39assoc integer --Associate degree in Theology And Religious Vocations.
+cip39cert4 integer --Award of at least two but less than four academic years in Theology And Religious Vocations.
+cip39bachl integer --Bachelor's degree in Theology And Religious Vocations.
+cip40cert1 integer --Certificate of less than one academic year in Physical Sciences.
+cip40cert2 integer --Certificate of at least one but less than two academic years in Physical Sciences.
+cip40assoc integer --Associate degree in Physical Sciences.
+cip40cert4 integer --Award of at least two but less than four academic years in Physical Sciences.
+cip40bachl integer --Bachelor's degree in Physical Sciences.
+cip41cert1 integer --Certificate of less than one academic year in Science Technologies/Technicians.
+cip41cert2 integer --Certificate of at least one but less than two academic years in Science Technologies/Technicians.
+cip41assoc integer --Associate degree in Science Technologies/Technicians.
+cip41cert4 integer --Award of at least two but less than four academic years in Science Technologies/Technicians.
+cip41bachl integer --Bachelor's degree in Science Technologies/Technicians.
+cip42cert1 integer --Certificate of less than one academic year in Psychology.
+cip42cert2 integer --Certificate of at least one but less than two academic years in Psychology.
+cip42assoc integer --Associate degree in Psychology.
+cip42cert4 integer --Award of at least two but less than four academic years in Psychology.
+cip42bachl integer --Bachelor's degree in Psychology.
+cip43cert1 integer --Certificate of less than one academic year in Homeland Security, Law Enforcement, Firefighting And Related Protective Services.
+cip43cert2 integer --Certificate of at least one but less than two academic years in Homeland Security, Law Enforcement, Firefighting And Related Protective Services.
+cip43assoc integer --Associate degree in Homeland Security, Law Enforcement, Firefighting And Related Protective Services.
+cip43cert4 integer --Award of at least two but less than four academic years in Homeland Security, Law Enforcement, Firefighting And Related Protective Services.
+cip43bachl integer --Bachelor's degree in Homeland Security, Law Enforcement, Firefighting And Related Protective Services.
+cip44cert1 integer --Certificate of less than one academic year in Public Administration And Social Service Professions.
+cip44cert2 integer --Certificate of at least one but less than two academic years in Public Administration And Social Service Professions.
+cip44assoc integer --Associate degree in Public Administration And Social Service Professions.
+cip44cert4 integer --Award of at least two but less than four academic years in Public Administration And Social Service Professions.
+cip44bachl integer --Bachelor's degree in Public Administration And Social Service Professions.
+cip45cert1 integer --Certificate of less than one academic year in Social Sciences.
+cip45cert2 integer --Certificate of at least one but less than two academic years in Social Sciences.
+cip45assoc integer --Associate degree in Social Sciences.
+cip45cert4 integer --Award of at least two but less than four academic years in Social Sciences.
+cip45bachl integer --Bachelor's degree in Social Sciences.
+cip46cert1 integer --Certificate of less than one academic year in Construction Trades.
+cip46cert2 integer --Certificate of at least one but less than two academic years in Construction Trades.
+cip46assoc integer --Associate degree in Construction Trades.
+cip46cert4 integer --Award of at least two but less than four academic years in Construction Trades.
+cip46bachl integer --Bachelor's degree in Construction Trades.
+cip47cert1 integer --Certificate of less than one academic year in Mechanic And Repair Technologies/Technicians.
+cip47cert2 integer --Certificate of at least one but less than two academic years in Mechanic And Repair Technologies/Technicians.
+cip47assoc integer --Associate degree in Mechanic And Repair Technologies/Technicians.
+cip47cert4 integer --Award of at least two but less than four academic years in Mechanic And Repair Technologies/Technicians.
+cip47bachl integer --Bachelor's degree in Mechanic And Repair Technologies/Technicians.
+cip48cert1 integer --Certificate of less than one academic year in Precision Production.
+cip48cert2 integer --Certificate of at least one but less than two academic years in Precision Production.
+cip48assoc integer --Associate degree in Precision Production.
+cip48cert4 integer --Award of at least two but less than four academic years in Precision Production.
+cip48bachl integer --Bachelor's degree in Precision Production.
+cip49cert1 integer --Certificate of less than one academic year in Transportation And Materials Moving.
+cip49cert2 integer --Certificate of at least one but less than two academic years in Transportation And Materials Moving.
+cip49assoc integer --Associate degree in Transportation And Materials Moving.
+cip49cert4 integer --Award of at least two but less than four academic years in Transportation And Materials Moving.
+cip49bachl integer --Bachelor's degree in Transportation And Materials Moving.
+cip50cert1 integer --Certificate of less than one academic year in Visual And Performing Arts.
+cip50cert2 integer --Certificate of at least one but less than two academic years in Visual And Performing Arts.
+cip50assoc integer --Associate degree in Visual And Performing Arts.
+cip50cert4 integer --Award of at least two but less than four academic years in Visual And Performing Arts.
+cip50bachl integer --Bachelor's degree in Visual And Performing Arts.
+cip51cert1 integer --Certificate of less than one academic year in Health Professions And Related Programs.
+cip51cert2 integer --Certificate of at least one but less than two academic years in Health Professions And Related Programs.
+cip51assoc integer --Associate degree in Health Professions And Related Programs.
+cip51cert4 integer --Award of at least two but less than four academic years in Health Professions And Related Programs.
+cip51bachl integer --Bachelor's degree in Health Professions And Related Programs.
+cip52cert1 integer --Certificate of less than one academic year in Business, Management, Marketing, And Related Support Services.
+cip52cert2 integer --Certificate of at least one but less than two academic years in Business, Management, Marketing, And Related Support Services.
+cip52assoc integer --Associate degree in Business, Management, Marketing, And Related Support Services.
+cip52cert4 integer --Award of at least two but less than four academic years in Business, Management, Marketing, And Related Support Services.
+cip52bachl integer --Bachelor's degree in Business, Management, Marketing, And Related Support Services.
+cip54cert1 integer --Certificate of less than one academic year in History.
+cip54cert2 integer --Certificate of at least one but less than two academic years in History.
+cip54assoc integer --Associate degree in History.
+cip54cert4 integer --Award of at least two but less than four academic years in History.
+cip54bachl integer --Bachelor's degree in History.
+distanceonly integer --Flag for distance-education-only education
+ugds integer --Enrollment of undergraduate certificate/degree-seeking students
+ug integer --Enrollment of all undergraduate students
+ugds_white float --Total share of enrollment of undergraduate degree-seeking students who are white
+ugds_black float --Total share of enrollment of undergraduate degree-seeking students who are black
+ugds_hisp float --Total share of enrollment of undergraduate degree-seeking students who are Hispanic
+ugds_asian float --Total share of enrollment of undergraduate degree-seeking students who are Asian
+ugds_aian float --Total share of enrollment of undergraduate degree-seeking students who are American Indian/Alaska Native
+ugds_nhpi float --Total share of enrollment of undergraduate degree-seeking students who are Native Hawaiian/Pacific Islander
+ugds_2mor float --Total share of enrollment of undergraduate degree-seeking students who are two or more races
+ugds_nra float --Total share of enrollment of undergraduate degree-seeking students who are non-resident aliens
+ugds_unkn float --Total share of enrollment of undergraduate degree-seeking students whose race is unknown
+ugds_whitenh float --Total share of enrollment of undergraduate degree-seeking students who are white non-Hispanic
+ugds_blacknh float --Total share of enrollment of undergraduate degree-seeking students who are black non-Hispanic
+ugds_api float --Total share of enrollment of undergraduate degree-seeking students who are Asian/Pacific Islander
+ugds_aianold float --Total share of enrollment of undergraduate degree-seeking students who are American Indian/Alaska Native
+ugds_hispold float --Total share of enrollment of undergraduate degree-seeking students who are Hispanic
+ug_nra float --Total share of enrollment of undergraduate students who are non-resident aliens
+ug_unkn float --Total share of enrollment of undergraduate students whose race is unknown
+ug_whitenh float --Total share of enrollment of undergraduate students who are white non-Hispanic
+ug_blacknh float --Total share of enrollment of undergraduate students who are black non-Hispanic
+ug_api float --Total share of enrollment of undergraduate students who are Asian/Pacific Islander
+ug_aianold float --Total share of enrollment of undergraduate students who are American Indian/Alaska Native
+ug_hispold float --Total share of enrollment of undergraduate students who are Hispanic
+pptug_ef float --Share of undergraduate, degree-/certificate-seeking students who are part-time
+pptug_ef2 float --Share of undergraduate, degree-/certificate-seeking students who are part-time
+curroper integer --Flag for currently operating institution, 0=closed, 1=operating
+npt4_pub integer --Average net price for Title IV institutions (public institutions)
+npt4_priv integer --Average net price for Title IV institutions (private for-profit and nonprofit institutions)
+npt4_prog integer --Average net price for the largest program at the institution for program-year institutions
+npt4_other integer --Average net price for the largest program at the institution for schools on ""other"" academic year calendars
+npt41_pub integer --Average net price for $0-$30,000 family income (public institutions)
+npt42_pub integer --Average net price for $30,001-$48,000 family income (public institutions)
+npt43_pub integer --Average net price for $48,001-$75,000 family income (public institutions)
+npt44_pub integer --Average net price for $75,001-$110,000 family income (public institutions)
+npt45_pub integer --Average net price for $110,000+ family income (public institutions)
+npt41_priv integer --Average net price for $0-$30,000 family income (private for-profit and nonprofit institutions)
+npt42_priv integer --Average net price for $30,001-$48,000 family income (private for-profit and nonprofit institutions)
+npt43_priv integer --Average net price for $48,001-$75,000 family income (private for-profit and nonprofit institutions)
+npt44_priv integer --Average net price for $75,001-$110,000 family income (private for-profit and nonprofit institutions)
+npt45_priv integer --Average net price for $110,000+ family income (private for-profit and nonprofit institutions)
+npt41_prog integer --Average net price for $0-$30,000 family income (program-year institutions)
+npt42_prog integer --Average net price for $30,001-$48,000 family income (program-year institutions)
+npt43_prog integer --Average net price for $48,001-$75,000 family income (program-year institutions)
+npt44_prog integer --Average net price for $75,001-$110,000 family income (program-year institutions)
+npt45_prog integer --Average net price for $110,000+ family income (program-year institutions)
+npt41_other integer --Average net price for $0-$30,000 family income (other academic calendar institutions)
+npt42_other integer --Average net price for $30,001-$48,000 family income (other academic calendar institutions)
+npt43_other integer --Average net price for $48,001-$75,000 family income (other academic calendar institutions)
+npt44_other integer --Average net price for $75,001-$110,000 family income (other academic calendar institutions)
+npt45_other integer --Average net price for $110,000+ family income (other academic calendar institutions)
+npt4_048_pub integer --Average net price for $0-$48,000 family income (public institutions)
+npt4_048_priv integer --Average net price for $0-$48,000 family income (private for-profit and nonprofit institutions)
+npt4_048_prog integer --Average net price for $0-$48,000 family income (program-year institutions)
+npt4_048_other integer --Average net price for $0-$48,000 family income (other academic calendar institutions)
+npt4_3075_pub integer --Average net price for $30,001-$75,000 family income (public institutions)
+npt4_3075_priv integer --Average net price for $30,001-$75,000 family income (private for-profit and nonprofit institutions)
+npt4_75up_pub integer --Average net price for $75,000+ family income (public institutions)
+npt4_75up_priv integer --Average net price for $75,000+ family income (private for-profit and nonprofit institutions)
+npt4_3075_prog integer --Average net price for $30,001-$75,000 family income (program-year institutions)
+npt4_3075_other integer --Average net price for $30,001-$75,000 family income (other academic calendar institutions)
+npt4_75up_prog integer --Average net price for $75,000+ family income (program-year institutions)
+npt4_75up_other integer --Average net price for $75,000+ family income (other academic calendar institutions)
+num4_pub integer --Number of Title IV students (public institutions)
+num4_priv integer --Number of Title IV students (private for-profit and nonprofit institutions)
+num4_prog integer --Number of Title IV students (program-year institutions)
+num4_other integer --Number of Title IV students (other academic calendar institutions)
+num41_pub integer --Number of Title IV students, $0-$30,000 family income (public institutions)
+num42_pub integer --Number of Title IV students, $30,001-$48,000 family income (public institutions)
+num43_pub integer --Number of Title IV students, $48,001-$75,000 family income (public institutions)
+num44_pub integer --Number of Title IV students, $75,001-$110,000 family income (public institutions)
+num45_pub integer --Number of Title IV students, $110,000+ family income (public institutions)
+num41_priv integer --Number of Title IV students, $0-$30,000 family income (private for-profit and nonprofit institutions)
+num42_priv integer --Number of Title IV students, $30,001-$48,000 family income (private for-profit and nonprofit institutions)
+num43_priv integer --Number of Title IV students, $48,001-$75,000 family income (private for-profit and nonprofit institutions)
+num44_priv integer --Number of Title IV students, $75,001-$110,000 family income (private for-profit and nonprofit institutions)
+num45_priv integer --Number of Title IV students, $110,000+ family income (private for-profit and nonprofit institutions)
+num41_prog integer --Number of Title IV students, $0-$30,000 family income (program-year institutions)
+num42_prog integer --Number of Title IV students, $30,001-$48,000 family income (program-year institutions)
+num43_prog integer --Number of Title IV students, $48,001-$75,000 family income (program-year institutions)
+num44_prog integer --Number of Title IV students, $75,001-$110,000 family income (program-year institutions)
+num45_prog integer --Number of Title IV students, $110,000+ family income (program-year institutions)
+num41_other integer --Number of Title IV students, $0-$30,000 family income (other academic calendar institutions)
+num42_other integer --Number of Title IV students, $30,001-$48,000 family income (other academic calendar institutions)
+num43_other integer --Number of Title IV students, $48,001-$75,000 family income (other academic calendar institutions)
+num44_other integer --Number of Title IV students, $75,001-$110,000 family income (other academic calendar institutions)
+num45_other integer --Number of Title IV students, $110,000+ family income (other academic calendar institutions)
+costt4_a integer --Average cost of attendance (academic year institutions)
+costt4_p integer --Average cost of attendance (program-year institutions)
+tuitionfee_in integer --In-state tuition and fees
+tuitionfee_out integer --Out-of-state tuition and fees
+tuitionfee_prog integer --Tuition and fees for program-year institutions
+tuitfte integer --Net tuition revenue per full-time equivalent student
+inexpfte integer --Instructional expenditures per full-time equivalent student
+avgfacsal integer --Average faculty salary
+pftfac float --Proportion of faculty that is full-time
+pctpell float --Percentage of undergraduates who receive a Pell Grant
+c150_4 float --Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion)
+c150_l4 float --Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion)
+c150_4_pooled float --Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion), pooled for two year rolling averages
+c150_l4_pooled float --Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion), pooled for two year rolling averages
+poolyrs integer --Years used for rolling averages of completion rate C150_[4/L4]_POOLED and transfer rate TRANS_[4/L4]_POOLED
+pftftug1_ef float --Share of entering undergraduate students who are first-time, full-time degree-/certificate-seeking undergraduate students
+d150_4 integer --Adjusted cohort count for completion rate at four-year institutions (denominator of 150% completion rate)
+d150_l4 integer --Adjusted cohort count for completion rate at less-than-four-year institutions (denominator of 150% completion rate)
+d150_4_pooled integer --Adjusted cohort count for completion rate at four-year institutions (denominator of 150% completion rate), pooled for two-year rolling averages
+d150_l4_pooled integer --Adjusted cohort count for completion rate at less-than-four-year institutions (denominator of 150% completion rate), pooled for two-year rolling averages
+c150_4_white float --Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for white students
+c150_4_black float --Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for black students
+c150_4_hisp float --Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for Hispanic students
+c150_4_asian float --Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for Asian students
+c150_4_aian float --Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for American Indian/Alaska Native students
+c150_4_nhpi float --Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for Native Hawaiian/Pacific Islander students
+c150_4_2mor float --Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for students of two-or-more-races
+c150_4_nra float --Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for non-resident alien students
+c150_4_unkn float --Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for students whose race is unknown
+c150_4_whitenh float --Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for white students
+c150_4_blacknh float --Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for black students
+c150_4_api float --Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for Asian/Pacific Islander students
+c150_4_aianold float --Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for American Indian/Alaska Native students
+c150_4_hispold float --Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) for Hispanic students
+c150_l4_white float --Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for white students
+c150_l4_black float --Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for black students
+c150_l4_hisp float --Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for Hispanic students
+c150_l4_asian float --Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for Asian students
+c150_l4_aian float --Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for American Indian/Alaska Native students
+c150_l4_nhpi float --Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for Native Hawaiian/Pacific Islander students
+c150_l4_2mor float --Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for students of two-or-more-races
+c150_l4_nra float --Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for non-resident alien students
+c150_l4_unkn float --Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for students whose race is unknown
+c150_l4_whitenh float --Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for white non-Hispanic students
+c150_l4_blacknh float --Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for black non-Hispanic students
+c150_l4_api float --Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for Asian/Pacific Islander students
+c150_l4_aianold float --Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for American Indian/Alaska Native students
+c150_l4_hispold float --Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) for Hispanic students
+c200_4 float --Completion rate for first-time, full-time bachelor's-degree-seeking students at four-year institutions (200% of expected time to completion)
+c200_l4 float --Completion rate for first-time, full-time students at less-than-four-year institutions (200% of expected time to completion)
+d200_4 float --Adjusted cohort count for completion rate at four-year institutions (denominator of 200% completion rate)
+d200_l4 float --Adjusted cohort count for completion rate at less-than-four-year institutions (denominator of 200% completion rate)
+ret_ft4 float --First-time, full-time student retention rate at four-year institutions
+ret_ftl4 float --First-time, full-time student retention rate at less-than-four-year institutions
+ret_pt4 float --First-time, part-time student retention rate at four-year institutions
+ret_ptl4 float --First-time, part-time student retention rate at less-than-four-year institutions
+c200_4_pooled float --Completion rate for first-time, full-time bachelor's-degree-seeking students at four-year institutions (200% of expected time to completion), pooled for two year rolling averages
+c200_l4_pooled float --Completion rate for first-time, full-time students at less-than-four-year institutions (200% of expected time to completion), pooled for two year rolling averages
+poolyrs200 integer --Years used for rolling averages of completion rate C200_[4/L4]_POOLED
+d200_4_pooled float --Adjusted cohort count for completion rate at four-year institutions (denominator of 200% completion rate), pooled for two-year rolling averages
+d200_l4_pooled float --Adjusted cohort count for completion rate at less-than-four-year institutions (denominator of 200% completion rate), pooled for two-year rolling averages
+pctfloan float --Percent of all undergraduate students receiving a federal student loan
+ug25abv float --Percentage of undergraduates aged 25 and above
+cdr2 float --Two-year cohort default rate
+cdr3 float --Three-year cohort default rate
+death_yr2_rt float --Percent died within 2 years at original institution
+comp_orig_yr2_rt float --Percent completed within 2 years at original institution
+comp_4yr_trans_yr2_rt float --Percent who transferred to a 4-year institution and completed within 2 years
+comp_2yr_trans_yr2_rt float --Percent who transferred to a 2-year institution and completed within 2 years
+wdraw_orig_yr2_rt float --Percent withdrawn from original institution within 2 years
+wdraw_4yr_trans_yr2_rt float --Percent who transferred to a 4-year institution and withdrew within 2 years
+wdraw_2yr_trans_yr2_rt float --Percent who transferred to a 2-year institution and withdrew within 2 years
+enrl_orig_yr2_rt float --Percent still enrolled at original institution within 2 years
+enrl_4yr_trans_yr2_rt float --Percent who transferred to a 4-year institution and were still enrolled within 2 years
+enrl_2yr_trans_yr2_rt float --Percent who transferred to a 2-year institution and were still enrolled within 2 years
+unkn_orig_yr2_rt float --Percent with status unknown within 2 years at original institution
+unkn_4yr_trans_yr2_rt float --Percent who transferred to a 4-year institution and whose status is unknown within 2 years
+unkn_2yr_trans_yr2_rt float --Percent who transferred to a 2-year institution and whose status is unknown within 2 years
+lo_inc_death_yr2_rt float --Percent of low-income (less than $30,000 in nominal family income) students who died within 2 years at original institution
+lo_inc_comp_orig_yr2_rt float --Percent of low-income (less than $30,000 in nominal family income) students who completed within 2 years at original institution
+lo_inc_comp_4yr_trans_yr2_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and completed within 2 years
+lo_inc_comp_2yr_trans_yr2_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and completed within 2 years
+lo_inc_wdraw_orig_yr2_rt float --Percent of low-income (less than $30,000 in nominal family income) students withdrawn from original institution within 2 years
+lo_inc_wdraw_4yr_trans_yr2_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 2 years
+lo_inc_wdraw_2yr_trans_yr2_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 2 years
+lo_inc_enrl_orig_yr2_rt float --Percent of low-income (less than $30,000 in nominal family income) students who were still enrolled at original institution within 2 years
+lo_inc_enrl_4yr_trans_yr2_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 2 years
+lo_inc_enrl_2yr_trans_yr2_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 2 years
+lo_inc_unkn_orig_yr2_rt float --Percent of low-income (less than $30,000 in nominal family income) students with status unknown within 2 years at original institution
+lo_inc_unkn_4yr_trans_yr2_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 2 years
+lo_inc_unkn_2yr_trans_yr2_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 2 years
+md_inc_death_yr2_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who died within 2 years at original institution
+md_inc_comp_orig_yr2_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who completed within 2 years at original institution
+md_inc_comp_4yr_trans_yr2_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and completed within 2 years
+md_inc_comp_2yr_trans_yr2_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and completed within 2 years
+md_inc_wdraw_orig_yr2_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students withdrawn from original institution within 2 years
+md_inc_wdraw_4yr_trans_yr2_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 2 years
+md_inc_wdraw_2yr_trans_yr2_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 2 years
+md_inc_enrl_orig_yr2_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who were still enrolled at original institution within 2 years
+md_inc_enrl_4yr_trans_yr2_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 2 years
+md_inc_enrl_2yr_trans_yr2_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 2 years
+md_inc_unkn_orig_yr2_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students with status unknown within 2 years at original institution
+md_inc_unkn_4yr_trans_yr2_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 2 years
+md_inc_unkn_2yr_trans_yr2_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 2 years
+hi_inc_death_yr2_rt float --Percent of high-income (above $75,000 in nominal family income) students who died within 2 years at original institution
+hi_inc_comp_orig_yr2_rt float --Percent of high-income (above $75,000 in nominal family income) students who completed within 2 years at original institution
+hi_inc_comp_4yr_trans_yr2_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and completed within 2 years
+hi_inc_comp_2yr_trans_yr2_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and completed within 2 years
+hi_inc_wdraw_orig_yr2_rt float --Percent of high-income (above $75,000 in nominal family income) students withdrawn from original institution within 2 years
+hi_inc_wdraw_4yr_trans_yr2_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 2 years
+hi_inc_wdraw_2yr_trans_yr2_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 2 years
+hi_inc_enrl_orig_yr2_rt float --Percent of high-income (above $75,000 in nominal family income) students who were still enrolled at original institution within 2 years
+hi_inc_enrl_4yr_trans_yr2_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 2 years
+hi_inc_enrl_2yr_trans_yr2_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 2 years
+hi_inc_unkn_orig_yr2_rt float --Percent of high-income (above $75,000 in nominal family income) students with status unknown within 2 years at original institution
+hi_inc_unkn_4yr_trans_yr2_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 2 years
+hi_inc_unkn_2yr_trans_yr2_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 2 years
+dep_death_yr2_rt float --Percent of dependent students who died within 2 years at original institution
+dep_comp_orig_yr2_rt float --Percent of dependent students who completed within 2 years at original institution
+dep_comp_4yr_trans_yr2_rt float --Percent of dependent students who transferred to a 4-year institution and completed within 2 years
+dep_comp_2yr_trans_yr2_rt float --Percent of dependent students who transferred to a 2-year institution and completed within 2 years
+dep_wdraw_orig_yr2_rt float --Percent of dependent students withdrawn from original institution within 2 years
+dep_wdraw_4yr_trans_yr2_rt float --Percent of dependent students who transferred to a 4-year institution and withdrew within 2 years
+dep_wdraw_2yr_trans_yr2_rt float --Percent of dependent students who transferred to a 2-year institution and withdrew within 2 years
+dep_enrl_orig_yr2_rt float --Percent of dependent students who were still enrolled at original institution within 2 years
+dep_enrl_4yr_trans_yr2_rt float --Percent of dependent students who transferred to a 4-year institution and were still enrolled within 2 years
+dep_enrl_2yr_trans_yr2_rt float --Percent of dependent students who transferred to a 2-year institution and were still enrolled within 2 years
+dep_unkn_orig_yr2_rt float --Percent of dependent students with status unknown within 2 years at original institution
+dep_unkn_4yr_trans_yr2_rt float --Percent of dependent students who transferred to a 4-year institution and whose status is unknown within 2 years
+dep_unkn_2yr_trans_yr2_rt float --Percent of dependent students who transferred to a 2-year institution and whose status is unknown within 2 years
+ind_death_yr2_rt float --Percent of independent students who died within 2 years at original institution
+ind_comp_orig_yr2_rt float --Percent of independent students who completed within 2 years at original institution
+ind_comp_4yr_trans_yr2_rt float --Percent of independent students who transferred to a 4-year institution and completed within 2 years
+ind_comp_2yr_trans_yr2_rt float --Percent of independent students who transferred to a 2-year institution and completed within 2 years
+ind_wdraw_orig_yr2_rt float --Percent of independent students withdrawn from original institution within 2 years
+ind_wdraw_4yr_trans_yr2_rt float --Percent of independent students who transferred to a 4-year institution and withdrew within 2 years
+ind_wdraw_2yr_trans_yr2_rt float --Percent of independent students who transferred to a 2-year institution and withdrew within 2 years
+ind_enrl_orig_yr2_rt float --Percent of independent students who were still enrolled at original institution within 2 years
+ind_enrl_4yr_trans_yr2_rt float --Percent of independent students who transferred to a 4-year institution and were still enrolled within 2 years
+ind_enrl_2yr_trans_yr2_rt float --Percent of independent students who transferred to a 2-year institution and were still enrolled within 2 years
+ind_unkn_orig_yr2_rt float --Percent of independent students with status unknown within 2 years at original institution
+ind_unkn_4yr_trans_yr2_rt float --Percent of independent students who transferred to a 4-year institution and whose status is unknown within 2 years
+ind_unkn_2yr_trans_yr2_rt float --Percent of independent students who transferred to a 2-year institution and whose status is unknown within 2 years
+female_death_yr2_rt float --Percent of female students who died within 2 years at original institution
+female_comp_orig_yr2_rt float --Percent of female students who completed within 2 years at original institution
+female_comp_4yr_trans_yr2_rt float --Percent of female students who transferred to a 4-year institution and completed within 2 years
+female_comp_2yr_trans_yr2_rt float --Percent of female students who transferred to a 2-year institution and completed within 2 years
+female_wdraw_orig_yr2_rt float --Percent of female students withdrawn from original institution within 2 years
+female_wdraw_4yr_trans_yr2_rt float --Percent of female students who transferred to a 4-year institution and withdrew within 2 years
+female_wdraw_2yr_trans_yr2_rt float --Percent of female students who transferred to a 2-year institution and withdrew within 2 years
+female_enrl_orig_yr2_rt float --Percent of female students who were still enrolled at original institution within 2 years
+female_enrl_4yr_trans_yr2_rt float --Percent of female students who transferred to a 4-year institution and were still enrolled within 2 years
+female_enrl_2yr_trans_yr2_rt float --Percent of female students who transferred to a 2-year institution and were still enrolled within 2 years
+female_unkn_orig_yr2_rt float --Percent of female students with status unknown within 2 years at original institution
+female_unkn_4yr_trans_yr2_rt float --Percent of female students who transferred to a 4-year institution and whose status is unknown within 2 years
+female_unkn_2yr_trans_yr2_rt float --Percent of female students who transferred to a 2-year institution and whose status is unknown within 2 years
+male_death_yr2_rt float --Percent of male students who died within 2 years at original institution
+male_comp_orig_yr2_rt float --Percent of male students who completed within 2 years at original institution
+male_comp_4yr_trans_yr2_rt float --Percent of male students who transferred to a 4-year institution and completed within 2 years
+male_comp_2yr_trans_yr2_rt float --Percent of male students who transferred to a 2-year institution and completed within 2 years
+male_wdraw_orig_yr2_rt float --Percent of male students withdrawn from original institution within 2 years
+male_wdraw_4yr_trans_yr2_rt float --Percent of male students who transferred to a 4-year institution and withdrew within 2 years
+male_wdraw_2yr_trans_yr2_rt float --Percent of male students who transferred to a 2-year institution and withdrew within 2 years
+male_enrl_orig_yr2_rt float --Percent of male students who were still enrolled at original institution within 2 years
+male_enrl_4yr_trans_yr2_rt float --Percent of male students who transferred to a 4-year institution and were still enrolled within 2 years
+male_enrl_2yr_trans_yr2_rt float --Percent of male students who transferred to a 2-year institution and were still enrolled within 2 years
+male_unkn_orig_yr2_rt float --Percent of male students with status unknown within 2 years at original institution
+male_unkn_4yr_trans_yr2_rt float --Percent of male students who transferred to a 4-year institution and whose status is unknown within 2 years
+male_unkn_2yr_trans_yr2_rt float --Percent of male students who transferred to a 2-year institution and whose status is unknown within 2 years
+pell_death_yr2_rt float --Percent of students who received a Pell Grant at the institution and who died within 2 years at original institution
+pell_comp_orig_yr2_rt float --Percent of students who received a Pell Grant at the institution and who completed in 2 years at original institution
+pell_comp_4yr_trans_yr2_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and completed within 2 years
+pell_comp_2yr_trans_yr2_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and completed within 2 years
+pell_wdraw_orig_yr2_rt float --Percent of students who received a Pell Grant at the institution and withdrew from original institution within 2 years
+pell_wdraw_4yr_trans_yr2_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and withdrew within 2 years
+pell_wdraw_2yr_trans_yr2_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and withdrew within 2 years
+pell_enrl_orig_yr2_rt float --Percent of students who received a Pell Grant at the institution and who were still enrolled at original institution within 2 years
+pell_enrl_4yr_trans_yr2_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and were still enrolled within 2 years
+pell_enrl_2yr_trans_yr2_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and were still enrolled within 2 years
+pell_unkn_orig_yr2_rt float --Percent of students who received a Pell Grant at the institution and with status unknown within 2 years at original institution
+pell_unkn_4yr_trans_yr2_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and whose status is unknown within 2 years
+pell_unkn_2yr_trans_yr2_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and whose status is unknown within 2 years
+nopell_death_yr2_rt float --Percent of students who never received a Pell Grant at the institution and who died within 2 years at original institution
+nopell_comp_orig_yr2_rt float --Percent of students who never received a Pell Grant at the institution and who completed in 2 years at original institution
+nopell_comp_4yr_trans_yr2_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and completed within 2 years
+nopell_comp_2yr_trans_yr2_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and completed within 2 years
+nopell_wdraw_orig_yr2_rt float --Percent of students who never received a Pell Grant at the institution and withdrew from original institution within 2 years
+nopell_wdraw_4yr_trans_yr2_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and withdrew within 2 years
+nopell_wdraw_2yr_trans_yr2_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and withdrew within 2 years
+nopell_enrl_orig_yr2_rt float --Percent of students who never received a Pell Grant at the institution and who were still enrolled at original institution within 2 years
+nopell_enrl_4yr_trans_yr2_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and were still enrolled within 2 years
+nopell_enrl_2yr_trans_yr2_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and were still enrolled within 2 years
+nopell_unkn_orig_yr2_rt float --Percent of students who never received a Pell Grant at the institution and with status unknown within 2 years at original institution
+nopell_unkn_4yr_trans_yr2_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and whose status is unknown within 2 years
+nopell_unkn_2yr_trans_yr2_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and whose status is unknown within 2 years
+loan_death_yr2_rt float --Percent of students who received a federal loan at the institution and who died within 2 years at original institution
+loan_comp_orig_yr2_rt float --Percent of students who received a federal loan at the institution and who completed in 2 years at original institution
+loan_comp_4yr_trans_yr2_rt float --Percent of students who received a federel loan at the institution and who transferred to a 4-year institution and completed within 2 years
+loan_comp_2yr_trans_yr2_rt float --Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and completed within 2 years
+loan_wdraw_orig_yr2_rt float --Percent of students who received a federal loan at the institution and withdrew from original institution within 2 years
+loan_wdraw_4yr_trans_yr2_rt float --Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and withdrew within 2 years
+loan_wdraw_2yr_trans_yr2_rt float --Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and withdrew within 2 years
+loan_enrl_orig_yr2_rt float --Percent of students who received a federal loan at the institution and who were still enrolled at original institution within 2 years
+loan_enrl_4yr_trans_yr2_rt float --Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and were still enrolled within 2 years
+loan_enrl_2yr_trans_yr2_rt float --Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and were still enrolled within 2 years
+loan_unkn_orig_yr2_rt float --Percent of students who received a federal loan at the institution and with status unknown within 2 years at original institution
+loan_unkn_4yr_trans_yr2_rt float --Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and whose status is unknown within 2 years
+loan_unkn_2yr_trans_yr2_rt float --Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and whose status is unknown within 2 years
+noloan_death_yr2_rt float --Percent of students who never received a federal loan at the institution and who died within 2 years at original institution
+noloan_comp_orig_yr2_rt float --Percent of students who never received a federal loan at the institution and who completed in 2 years at original institution
+noloan_comp_4yr_trans_yr2_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and completed within 2 years
+noloan_comp_2yr_trans_yr2_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and completed within 2 years
+noloan_wdraw_orig_yr2_rt float --Percent of students who never received a federal loan at the institution and withdrew from original institution within 2 years
+noloan_wdraw_4yr_trans_yr2_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and withdrew within 2 years
+noloan_wdraw_2yr_trans_yr2_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and withdrew within 2 years
+noloan_enrl_orig_yr2_rt float --Percent of students who never received a federal loan at the institution and who were still enrolled at original institution within 2 years
+noloan_enrl_4yr_trans_yr2_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and were still enrolled within 2 years
+noloan_enrl_2yr_trans_yr2_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and were still enrolled within 2 years
+noloan_unkn_orig_yr2_rt float --Percent of students who never received a federal loan at the institution and with status unknown within 2 years at original institution
+noloan_unkn_4yr_trans_yr2_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and whose status is unknown within 2 years
+noloan_unkn_2yr_trans_yr2_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and whose status is unknown within 2 years
+firstgen_death_yr2_rt float --Percent of first-generation students who died within 2 years at original institution
+firstgen_comp_orig_yr2_rt float --Percent of first-generation students who completed within 2 years at original institution
+firstgen_comp_4yr_trans_yr2_rt float --Percent of first-generation students who transferred to a 4-year institution and completed within 2 years
+firstgen_comp_2yr_trans_yr2_rt float --Percent of first-generation students who transferred to a 2-year institution and completed within 2 years
+firstgen_wdraw_orig_yr2_rt float --Percent of first-generation students withdrawn from original institution within 2 years
+firstgen_wdraw_4yr_trans_yr2_rt float --Percent of first-generation students who transferred to a 4-year institution and withdrew within 2 years
+firstgen_wdraw_2yr_trans_yr2_rt float --Percent of first-generation students who transferred to a 2-year institution and withdrew within 2 years
+firstgen_enrl_orig_yr2_rt float --Percent of first-generation students who were still enrolled at original institution within 2 years
+firstgen_enrl_4yr_trans_yr2_rt float --Percent of first-generation students who transferred to a 4-year institution and were still enrolled within 2 years
+firstgen_enrl_2yr_trans_yr2_rt float --Percent of first-generation students who transferred to a 2-year institution and were still enrolled within 2 years
+firstgen_unkn_orig_yr2_rt float --Percent of first-generation students with status unknown within 2 years at original institution
+firstgen_unkn_4yr_trans_yr2_rt float --Percent of first-generation students who transferred to a 4-year institution and whose status is unknown within 2 years
+firstgen_unkn_2yr_trans_yr2_rt float --Percent of first-generation students who transferred to a 2-year institution and whose status is unknown within 2 years
+not1stgen_death_yr2_rt float --Percent of not-first-generation students who died within 2 years at original institution
+not1stgen_comp_orig_yr2_rt float --Percent of not-first-generation students who completed within 2 years at original institution
+not1stgen_comp_4yr_trans_yr2_rt float --Percent of not-first-generation students who transferred to a 4-year institution and completed within 2 years
+not1stgen_comp_2yr_trans_yr2_rt float --Percent of not-first-generation students who transferred to a 2-year institution and completed within 2 years
+not1stgen_wdraw_orig_yr2_rt float --Percent of not-first-generation students withdrawn from original institution within 2 years
+not1stgen_wdraw_4yr_trans_yr2_rt float --Percent of not-first-generation students who transferred to a 4-year institution and withdrew within 2 years
+not1stgen_wdraw_2yr_trans_yr2_rt float --Percent of not-first-generation students who transferred to a 2-year institution and withdrew within 2 years
+not1stgen_enrl_orig_yr2_rt float --Percent of not-first-generation students who were still enrolled at original institution within 2 years
+not1stgen_enrl_4yr_trans_yr2_rt float --Percent of not-first-generation students who transferred to a 4-year institution and were still enrolled within 2 years
+not1stgen_enrl_2yr_trans_yr2_rt float --Percent of not-first-generation students who transferred to a 2-year institution and were still enrolled within 2 years
+not1stgen_unkn_orig_yr2_rt float --Percent of not-first-generation students with status unknown within 2 years at original institution
+not1stgen_unkn_4yr_trans_yr2_rt float --Percent of not-first-generation students who transferred to a 4-year institution and whose status is unknown within 2 years
+not1stgen_unkn_2yr_trans_yr2_rt float --Percent of not-first-generation students who transferred to a 2-year institution and whose status is unknown within 2 years
+death_yr3_rt float --Percent died within 3 years at original institution
+comp_orig_yr3_rt float --Percent completed within 3 years at original institution
+comp_4yr_trans_yr3_rt float --Percent who transferred to a 4-year institution and completed within 3 years
+comp_2yr_trans_yr3_rt float --Percent who transferred to a 2-year institution and completed within 3 years
+wdraw_orig_yr3_rt float --Percent withdrawn from original institution within 3 years
+wdraw_4yr_trans_yr3_rt float --Percent who transferred to a 4-year institution and withdrew within 3 years
+wdraw_2yr_trans_yr3_rt float --Percent who transferred to a 2-year institution and withdrew within 3 years
+enrl_orig_yr3_rt float --Percent still enrolled at original institution within 3 years
+enrl_4yr_trans_yr3_rt float --Percent who transferred to a 4-year institution and were still enrolled within 3 years
+enrl_2yr_trans_yr3_rt float --Percent who transferred to a 2-year institution and were still enrolled within 3 years
+unkn_orig_yr3_rt float --Percent with status unknown within 3 years at original institution
+unkn_4yr_trans_yr3_rt float --Percent who transferred to a 4-year institution and whose status is unknown within 3 years
+unkn_2yr_trans_yr3_rt float --Percent who transferred to a 2-year institution and whose status is unknown within 3 years
+lo_inc_death_yr3_rt float --Percent of low-income (less than $30,000 in nominal family income) students who died within 3 years at original institution
+lo_inc_comp_orig_yr3_rt float --Percent of low-income (less than $30,000 in nominal family income) students who completed within 3 years at original institution
+lo_inc_comp_4yr_trans_yr3_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and completed within 3 years
+lo_inc_comp_2yr_trans_yr3_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and completed within 3 years
+lo_inc_wdraw_orig_yr3_rt float --Percent of low-income (less than $30,000 in nominal family income) students withdrawn from original institution within 3 years
+lo_inc_wdraw_4yr_trans_yr3_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 3 years
+lo_inc_wdraw_2yr_trans_yr3_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 3 years
+lo_inc_enrl_orig_yr3_rt float --Percent of low-income (less than $30,000 in nominal family income) students who were still enrolled at original institution within 3 years
+lo_inc_enrl_4yr_trans_yr3_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 3 years
+lo_inc_enrl_2yr_trans_yr3_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 3 years
+lo_inc_unkn_orig_yr3_rt float --Percent of low-income (less than $30,000 in nominal family income) students with status unknown within 3 years at original institution
+lo_inc_unkn_4yr_trans_yr3_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 3 years
+lo_inc_unkn_2yr_trans_yr3_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 3 years
+md_inc_death_yr3_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who died within 3 years at original institution
+md_inc_comp_orig_yr3_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who completed within 3 years at original institution
+md_inc_comp_4yr_trans_yr3_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and completed within 3 years
+md_inc_comp_2yr_trans_yr3_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and completed within 3 years
+md_inc_wdraw_orig_yr3_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students withdrawn from original institution within 3 years
+md_inc_wdraw_4yr_trans_yr3_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 3 years
+md_inc_wdraw_2yr_trans_yr3_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 3 years
+md_inc_enrl_orig_yr3_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who were still enrolled at original institution within 3 years
+md_inc_enrl_4yr_trans_yr3_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 3 years
+md_inc_enrl_2yr_trans_yr3_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 3 years
+md_inc_unkn_orig_yr3_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students with status unknown within 3 years at original institution
+md_inc_unkn_4yr_trans_yr3_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 3 years
+md_inc_unkn_2yr_trans_yr3_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 3 years
+hi_inc_death_yr3_rt float --Percent of high-income (above $75,000 in nominal family income) students who died within 3 years at original institution
+hi_inc_comp_orig_yr3_rt float --Percent of high-income (above $75,000 in nominal family income) students who completed within 3 years at original institution
+hi_inc_comp_4yr_trans_yr3_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and completed within 3 years
+hi_inc_comp_2yr_trans_yr3_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and completed within 3 years
+hi_inc_wdraw_orig_yr3_rt float --Percent of high-income (above $75,000 in nominal family income) students withdrawn from original institution within 3 years
+hi_inc_wdraw_4yr_trans_yr3_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 3 years
+hi_inc_wdraw_2yr_trans_yr3_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 3 years
+hi_inc_enrl_orig_yr3_rt float --Percent of high-income (above $75,000 in nominal family income) students who were still enrolled at original institution within 3 years
+hi_inc_enrl_4yr_trans_yr3_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 3 years
+hi_inc_enrl_2yr_trans_yr3_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 3 years
+hi_inc_unkn_orig_yr3_rt float --Percent of high-income (above $75,000 in nominal family income) students with status unknown within 3 years at original institution
+hi_inc_unkn_4yr_trans_yr3_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 3 years
+hi_inc_unkn_2yr_trans_yr3_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 3 years
+dep_death_yr3_rt float --Percent of dependent students who died within 3 years at original institution
+dep_comp_orig_yr3_rt float --Percent of dependent students who completed within 3 years at original institution
+dep_comp_4yr_trans_yr3_rt float --Percent of dependent students who transferred to a 4-year institution and completed within 3 years
+dep_comp_2yr_trans_yr3_rt float --Percent of dependent students who transferred to a 2-year institution and completed within 3 years
+dep_wdraw_orig_yr3_rt float --Percent of dependent students withdrawn from original institution within 3 years
+dep_wdraw_4yr_trans_yr3_rt float --Percent of dependent students who transferred to a 4-year institution and withdrew within 3 years
+dep_wdraw_2yr_trans_yr3_rt float --Percent of dependent students who transferred to a 2-year institution and withdrew within 3 years
+dep_enrl_orig_yr3_rt float --Percent of dependent students who were still enrolled at original institution within 3 years
+dep_enrl_4yr_trans_yr3_rt float --Percent of dependent students who transferred to a 4-year institution and were still enrolled within 3 years
+dep_enrl_2yr_trans_yr3_rt float --Percent of dependent students who transferred to a 2-year institution and were still enrolled within 3 years
+dep_unkn_orig_yr3_rt float --Percent of dependent students with status unknown within 3 years at original institution
+dep_unkn_4yr_trans_yr3_rt float --Percent of dependent students who transferred to a 4-year institution and whose status is unknown within 3 years
+dep_unkn_2yr_trans_yr3_rt float --Percent of dependent students who transferred to a 2-year institution and whose status is unknown within 3 years
+ind_death_yr3_rt float --Percent of independent students who died within 3 years at original institution
+ind_comp_orig_yr3_rt float --Percent of independent students who completed within 3 years at original institution
+ind_comp_4yr_trans_yr3_rt float --Percent of independent students who transferred to a 4-year institution and completed within 3 years
+ind_comp_2yr_trans_yr3_rt float --Percent of independent students who transferred to a 2-year institution and completed within 3 years
+ind_wdraw_orig_yr3_rt float --Percent of independent students withdrawn from original institution within 3 years
+ind_wdraw_4yr_trans_yr3_rt float --Percent of independent students who transferred to a 4-year institution and withdrew within 3 years
+ind_wdraw_2yr_trans_yr3_rt float --Percent of independent students who transferred to a 2-year institution and withdrew within 3 years
+ind_enrl_orig_yr3_rt float --Percent of independent students who were still enrolled at original institution within 3 years
+ind_enrl_4yr_trans_yr3_rt float --Percent of independent students who transferred to a 4-year institution and were still enrolled within 3 years
+ind_enrl_2yr_trans_yr3_rt float --Percent of independent students who transferred to a 2-year institution and were still enrolled within 3 years
+ind_unkn_orig_yr3_rt float --Percent of independent students with status unknown within 3 years at original institution
+ind_unkn_4yr_trans_yr3_rt float --Percent of independent students who transferred to a 4-year institution and whose status is unknown within 3 years
+ind_unkn_2yr_trans_yr3_rt float --Percent of independent students who transferred to a 2-year institution and whose status is unknown within 3 years
+female_death_yr3_rt float --Percent of female students who died within 3 years at original institution
+female_comp_orig_yr3_rt float --Percent of female students who completed within 3 years at original institution
+female_comp_4yr_trans_yr3_rt float --Percent of female students who transferred to a 4-year institution and completed within 3 years
+female_comp_2yr_trans_yr3_rt float --Percent of female students who transferred to a 2-year institution and completed within 3 years
+female_wdraw_orig_yr3_rt float --Percent of female students withdrawn from original institution within 3 years
+female_wdraw_4yr_trans_yr3_rt float --Percent of female students who transferred to a 4-year institution and withdrew within 3 years
+female_wdraw_2yr_trans_yr3_rt float --Percent of female students who transferred to a 2-year institution and withdrew within 3 years
+female_enrl_orig_yr3_rt float --Percent of female students who were still enrolled at original institution within 3 years
+female_enrl_4yr_trans_yr3_rt float --Percent of female students who transferred to a 4-year institution and were still enrolled within 3 years
+female_enrl_2yr_trans_yr3_rt float --Percent of female students who transferred to a 2-year institution and were still enrolled within 3 years
+female_unkn_orig_yr3_rt float --Percent of female students with status unknown within 3 years at original institution
+female_unkn_4yr_trans_yr3_rt float --Percent of female students who transferred to a 4-year institution and whose status is unknown within 3 years
+female_unkn_2yr_trans_yr3_rt float --Percent of female students who transferred to a 2-year institution and whose status is unknown within 3 years
+male_death_yr3_rt float --Percent of male students who died within 3 years at original institution
+male_comp_orig_yr3_rt float --Percent of male students who completed within 3 years at original institution
+male_comp_4yr_trans_yr3_rt float --Percent of male students who transferred to a 4-year institution and completed within 3 years
+male_comp_2yr_trans_yr3_rt float --Percent of male students who transferred to a 2-year institution and completed within 3 years
+male_wdraw_orig_yr3_rt float --Percent of male students withdrawn from original institution within 3 years
+male_wdraw_4yr_trans_yr3_rt float --Percent of male students who transferred to a 4-year institution and withdrew within 3 years
+male_wdraw_2yr_trans_yr3_rt float --Percent of male students who transferred to a 2-year institution and withdrew within 3 years
+male_enrl_orig_yr3_rt float --Percent of male students who were still enrolled at original institution within 3 years
+male_enrl_4yr_trans_yr3_rt float --Percent of male students who transferred to a 4-year institution and were still enrolled within 3 years
+male_enrl_2yr_trans_yr3_rt float --Percent of male students who transferred to a 2-year institution and were still enrolled within 3 years
+male_unkn_orig_yr3_rt float --Percent of male students with status unknown within 3 years at original institution
+male_unkn_4yr_trans_yr3_rt float --Percent of male students who transferred to a 4-year institution and whose status is unknown within 3 years
+male_unkn_2yr_trans_yr3_rt float --Percent of male students who transferred to a 2-year institution and whose status is unknown within 3 years
+pell_death_yr3_rt float --Percent of students who received a Pell Grant at the institution and who died within 3 years at original institution
+pell_comp_orig_yr3_rt float --Percent of students who received a Pell Grant at the institution and who completed in 3 years at original institution
+pell_comp_4yr_trans_yr3_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and completed within 3 years
+pell_comp_2yr_trans_yr3_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and completed within 3 years
+pell_wdraw_orig_yr3_rt float --Percent of students who received a Pell Grant at the institution and withdrew from original institution within 3 years
+pell_wdraw_4yr_trans_yr3_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and withdrew within 3 years
+pell_wdraw_2yr_trans_yr3_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and withdrew within 3 years
+pell_enrl_orig_yr3_rt float --Percent of students who received a Pell Grant at the institution and who were still enrolled at original institution within 3 years
+pell_enrl_4yr_trans_yr3_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and were still enrolled within 3 years
+pell_enrl_2yr_trans_yr3_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and were still enrolled within 3 years
+pell_unkn_orig_yr3_rt float --Percent of students who received a Pell Grant at the institution and with status unknown within 3 years at original institution
+pell_unkn_4yr_trans_yr3_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and whose status is unknown within 3 years
+pell_unkn_2yr_trans_yr3_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and whose status is unknown within 3 years
+nopell_death_yr3_rt float --Percent of students who never received a Pell Grant at the institution and who died within 3 years at original institution
+nopell_comp_orig_yr3_rt float --Percent of students who never received a Pell Grant at the institution and who completed in 3 years at original institution
+nopell_comp_4yr_trans_yr3_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and completed within 3 years
+nopell_comp_2yr_trans_yr3_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and completed within 3 years
+nopell_wdraw_orig_yr3_rt float --Percent of students who never received a Pell Grant at the institution and withdrew from original institution within 3 years
+nopell_wdraw_4yr_trans_yr3_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and withdrew within 3 years
+nopell_wdraw_2yr_trans_yr3_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and withdrew within 3 years
+nopell_enrl_orig_yr3_rt float --Percent of students who never received a Pell Grant at the institution and who were still enrolled at original institution within 3 years
+nopell_enrl_4yr_trans_yr3_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and were still enrolled within 3 years
+nopell_enrl_2yr_trans_yr3_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and were still enrolled within 3 years
+nopell_unkn_orig_yr3_rt float --Percent of students who never received a Pell Grant at the institution and with status unknown within 3 years at original institution
+nopell_unkn_4yr_trans_yr3_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and whose status is unknown within 3 years
+nopell_unkn_2yr_trans_yr3_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and whose status is unknown within 3 years
+loan_death_yr3_rt float --Percent of students who received a federal loan at the institution and who died within 3 years at original institution
+loan_comp_orig_yr3_rt float --Percent of students who received a federal loan at the institution and who completed in 3 years at original institution
+loan_comp_4yr_trans_yr3_rt float --Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and completed within 3 years
+loan_comp_2yr_trans_yr3_rt float --Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and completed within 3 years
+loan_wdraw_orig_yr3_rt float --Percent of students who received a federal loan at the institution and withdrew from original institution within 3 years
+loan_wdraw_4yr_trans_yr3_rt float --Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and withdrew within 3 years
+loan_wdraw_2yr_trans_yr3_rt float --Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and withdrew within 3 years
+loan_enrl_orig_yr3_rt float --Percent of students who received a federal loan at the institution and who were still enrolled at original institution within 3 years
+loan_enrl_4yr_trans_yr3_rt float --Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and were still enrolled within 3 years
+loan_enrl_2yr_trans_yr3_rt float --Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and were still enrolled within 3 years
+loan_unkn_orig_yr3_rt float --Percent of students who received a federal loan at the institution and with status unknown within 3 years at original institution
+loan_unkn_4yr_trans_yr3_rt float --Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and whose status is unknown within 3 years
+loan_unkn_2yr_trans_yr3_rt float --Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and whose status is unknown within 3 years
+noloan_death_yr3_rt float --Percent of students who never received a federal loan at the institution and who died within 3 years at original institution
+noloan_comp_orig_yr3_rt float --Percent of students who never received a federal loan at the institution and who completed in 3 years at original institution
+noloan_comp_4yr_trans_yr3_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and completed within 3 years
+noloan_comp_2yr_trans_yr3_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and completed within 3 years
+noloan_wdraw_orig_yr3_rt float --Percent of students who never received a federal loan at the institution and withdrew from original institution within 3 years
+noloan_wdraw_4yr_trans_yr3_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and withdrew within 3 years
+noloan_wdraw_2yr_trans_yr3_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and withdrew within 3 years
+noloan_enrl_orig_yr3_rt float --Percent of students who never received a federal loan at the institution and who were still enrolled at original institution within 3 years
+noloan_enrl_4yr_trans_yr3_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and were still enrolled within 3 years
+noloan_enrl_2yr_trans_yr3_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and were still enrolled within 3 years
+noloan_unkn_orig_yr3_rt float --Percent of students who never received a federal loan at the institution and with status unknown within 3 years at original institution
+noloan_unkn_4yr_trans_yr3_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and whose status is unknown within 3 years
+noloan_unkn_2yr_trans_yr3_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and whose status is unknown within 3 years
+firstgen_death_yr3_rt float --Percent of first-generation students who died within 3 years at original institution
+firstgen_comp_orig_yr3_rt float --Percent of first-generation students who completed within 3 years at original institution
+firstgen_comp_4yr_trans_yr3_rt float --Percent of first-generation students who transferred to a 4-year institution and completed within 3 years
+firstgen_comp_2yr_trans_yr3_rt float --Percent of first-generation students who transferred to a 2-year institution and completed within 3 years
+firstgen_wdraw_orig_yr3_rt float --Percent of first-generation students withdrawn from original institution within 3 years
+firstgen_wdraw_4yr_trans_yr3_rt float --Percent of first-generation students who transferred to a 4-year institution and withdrew within 3 years
+firstgen_wdraw_2yr_trans_yr3_rt float --Percent of first-generation students who transferred to a 2-year institution and withdrew within 3 years
+firstgen_enrl_orig_yr3_rt float --Percent of first-generation students who were still enrolled at original institution within 3 years
+firstgen_enrl_4yr_trans_yr3_rt float --Percent of first-generation students who transferred to a 4-year institution and were still enrolled within 3 years
+firstgen_enrl_2yr_trans_yr3_rt float --Percent of first-generation students who transferred to a 2-year institution and were still enrolled within 3 years
+firstgen_unkn_orig_yr3_rt float --Percent of first-generation students with status unknown within 3 years at original institution
+firstgen_unkn_4yr_trans_yr3_rt float --Percent of first-generation students who transferred to a 4-year institution and whose status is unknown within 3 years
+firstgen_unkn_2yr_trans_yr3_rt float --Percent of first-generation students who transferred to a 2-year institution and whose status is unknown within 3 years
+not1stgen_death_yr3_rt float --Percent of not-first-generation students who died within 3 years at original institution
+not1stgen_comp_orig_yr3_rt float --Percent of not-first-generation students who completed within 3 years at original institution
+not1stgen_comp_4yr_trans_yr3_rt float --Percent of not-first-generation students who transferred to a 4-year institution and completed within 3 years
+not1stgen_comp_2yr_trans_yr3_rt float --Percent of not-first-generation students who transferred to a 2-year institution and completed within 3 years
+not1stgen_wdraw_orig_yr3_rt float --Percent of not-first-generation students withdrawn from original institution within 3 years
+not1stgen_wdraw_4yr_trans_yr3_rt float --Percent of not-first-generation students who transferred to a 4-year institution and withdrew within 3 years
+not1stgen_wdraw_2yr_trans_yr3_rt float --Percent of not-first-generation students who transferred to a 2-year institution and withdrew within 3 years
+not1stgen_enrl_orig_yr3_rt float --Percent of not-first-generation students who were still enrolled at original institution within 3 years
+not1stgen_enrl_4yr_trans_yr3_rt float --Percent of not-first-generation students who transferred to a 4-year institution and were still enrolled within 3 years
+not1stgen_enrl_2yr_trans_yr3_rt float --Percent of not-first-generation students who transferred to a 2-year institution and were still enrolled within 3 years
+not1stgen_unkn_orig_yr3_rt float --Percent of not-first-generation students with status unknown within 3 years at original institution
+not1stgen_unkn_4yr_trans_yr3_rt float --Percent of not-first-generation students who transferred to a 4-year institution and whose status is unknown within 3 years
+not1stgen_unkn_2yr_trans_yr3_rt float --Percent of not-first-generation students who transferred to a 2-year institution and whose status is unknown within 3 years
+death_yr4_rt float --Percent died within 4 years at original institution
+comp_orig_yr4_rt float --Percent completed within 4 years at original institution
+comp_4yr_trans_yr4_rt float --Percent who transferred to a 4-year institution and completed within 4 years
+comp_2yr_trans_yr4_rt float --Percent who transferred to a 2-year institution and completed within 4 years
+wdraw_orig_yr4_rt float --Percent withdrawn from original institution within 4 years
+wdraw_4yr_trans_yr4_rt float --Percent who transferred to a 4-year institution and withdrew within 4 years
+wdraw_2yr_trans_yr4_rt float --Percent who transferred to a 2-year institution and withdrew within 4 years
+enrl_orig_yr4_rt float --Percent still enrolled at original institution within 4 years
+enrl_4yr_trans_yr4_rt float --Percent who transferred to a 4-year institution and were still enrolled within 4 years
+enrl_2yr_trans_yr4_rt float --Percent who transferred to a 2-year institution and were still enrolled within 4 years
+unkn_orig_yr4_rt float --Percent with status unknown within 4 years at original institution
+unkn_4yr_trans_yr4_rt float --Percent who transferred to a 4-year institution and whose status is unknown within 4 years
+unkn_2yr_trans_yr4_rt float --Percent who transferred to a 2-year institution and whose status is unknown within 4 years
+lo_inc_death_yr4_rt float --Percent of low-income (less than $30,000 in nominal family income) students who died within 4 years at original institution
+lo_inc_comp_orig_yr4_rt float --Percent of low-income (less than $30,000 in nominal family income) students who completed within 4 years at original institution
+lo_inc_comp_4yr_trans_yr4_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and completed within 4 years
+lo_inc_comp_2yr_trans_yr4_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and completed within 4 years
+lo_inc_wdraw_orig_yr4_rt float --Percent of low-income (less than $30,000 in nominal family income) students withdrawn from original institution within 4 years
+lo_inc_wdraw_4yr_trans_yr4_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 4 years
+lo_inc_wdraw_2yr_trans_yr4_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 4 years
+lo_inc_enrl_orig_yr4_rt float --Percent of low-income (less than $30,000 in nominal family income) students who were still enrolled at original institution within 4 years
+lo_inc_enrl_4yr_trans_yr4_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 4 years
+lo_inc_enrl_2yr_trans_yr4_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 4 years
+lo_inc_unkn_orig_yr4_rt float --Percent of low-income (less than $30,000 in nominal family income) students with status unknown within 4 years at original institution
+lo_inc_unkn_4yr_trans_yr4_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 4 years
+lo_inc_unkn_2yr_trans_yr4_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 4 years
+md_inc_death_yr4_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who died within 4 years at original institution
+md_inc_comp_orig_yr4_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who completed within 4 years at original institution
+md_inc_comp_4yr_trans_yr4_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and completed within 4 years
+md_inc_comp_2yr_trans_yr4_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and completed within 4 years
+md_inc_wdraw_orig_yr4_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students withdrawn from original institution within 4 years
+md_inc_wdraw_4yr_trans_yr4_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 4 years
+md_inc_wdraw_2yr_trans_yr4_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 4 years
+md_inc_enrl_orig_yr4_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who were still enrolled at original institution within 4 years
+md_inc_enrl_4yr_trans_yr4_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 4 years
+md_inc_enrl_2yr_trans_yr4_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 4 years
+md_inc_unkn_orig_yr4_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students with status unknown within 4 years at original institution
+md_inc_unkn_4yr_trans_yr4_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 4 years
+md_inc_unkn_2yr_trans_yr4_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 4 years
+hi_inc_death_yr4_rt float --Percent of high-income (above $75,000 in nominal family income) students who died within 4 years at original institution
+hi_inc_comp_orig_yr4_rt float --Percent of high-income (above $75,000 in nominal family income) students who completed within 4 years at original institution
+hi_inc_comp_4yr_trans_yr4_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and completed within 4 years
+hi_inc_comp_2yr_trans_yr4_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and completed within 4 years
+hi_inc_wdraw_orig_yr4_rt float --Percent of high-income (above $75,000 in nominal family income) students withdrawn from original institution within 4 years
+hi_inc_wdraw_4yr_trans_yr4_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 4 years
+hi_inc_wdraw_2yr_trans_yr4_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 4 years
+hi_inc_enrl_orig_yr4_rt float --Percent of high-income (above $75,000 in nominal family income) students who were still enrolled at original institution within 4 years
+hi_inc_enrl_4yr_trans_yr4_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 4 years
+hi_inc_enrl_2yr_trans_yr4_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 4 years
+hi_inc_unkn_orig_yr4_rt float --Percent of high-income (above $75,000 in nominal family income) students with status unknown within 4 years at original institution
+hi_inc_unkn_4yr_trans_yr4_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 4 years
+hi_inc_unkn_2yr_trans_yr4_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 4 years
+dep_death_yr4_rt float --Percent of dependent students who died within 4 years at original institution
+dep_comp_orig_yr4_rt float --Percent of dependent students who completed within 4 years at original institution
+dep_comp_4yr_trans_yr4_rt float --Percent of dependent students who transferred to a 4-year institution and completed within 4 years
+dep_comp_2yr_trans_yr4_rt float --Percent of dependent students who transferred to a 2-year institution and completed within 4 years
+dep_wdraw_orig_yr4_rt float --Percent of dependent students withdrawn from original institution within 4 years
+dep_wdraw_4yr_trans_yr4_rt float --Percent of dependent students who transferred to a 4-year institution and withdrew within 4 years
+dep_wdraw_2yr_trans_yr4_rt float --Percent of dependent students who transferred to a 2-year institution and withdrew within 4 years
+dep_enrl_orig_yr4_rt float --Percent of dependent students who were still enrolled at original institution within 4 years
+dep_enrl_4yr_trans_yr4_rt float --Percent of dependent students who transferred to a 4-year institution and were still enrolled within 4 years
+dep_enrl_2yr_trans_yr4_rt float --Percent of dependent students who transferred to a 2-year institution and were still enrolled within 4 years
+dep_unkn_orig_yr4_rt float --Percent of dependent students with status unknown within 4 years at original institution
+dep_unkn_4yr_trans_yr4_rt float --Percent of dependent students who transferred to a 4-year institution and whose status is unknown within 4 years
+dep_unkn_2yr_trans_yr4_rt float --Percent of dependent students who transferred to a 2-year institution and whose status is unknown within 4 years
+ind_death_yr4_rt float --Percent of independent students who died within 4 years at original institution
+ind_comp_orig_yr4_rt float --Percent of independent students who completed within 4 years at original institution
+ind_comp_4yr_trans_yr4_rt float --Percent of independent students who transferred to a 4-year institution and completed within 4 years
+ind_comp_2yr_trans_yr4_rt float --Percent of independent students who transferred to a 2-year institution and completed within 4 years
+ind_wdraw_orig_yr4_rt float --Percent of independent students withdrawn from original institution within 4 years
+ind_wdraw_4yr_trans_yr4_rt float --Percent of independent students who transferred to a 4-year institution and withdrew within 4 years
+ind_wdraw_2yr_trans_yr4_rt float --Percent of independent students who transferred to a 2-year institution and withdrew within 4 years
+ind_enrl_orig_yr4_rt float --Percent of independent students who were still enrolled at original institution within 4 years
+ind_enrl_4yr_trans_yr4_rt float --Percent of independent students who transferred to a 4-year institution and were still enrolled within 4 years
+ind_enrl_2yr_trans_yr4_rt float --Percent of independent students who transferred to a 2-year institution and were still enrolled within 4 years
+ind_unkn_orig_yr4_rt float --Percent of independent students with status unknown within 4 years at original institution
+ind_unkn_4yr_trans_yr4_rt float --Percent of independent students who transferred to a 4-year institution and whose status is unknown within 4 years
+ind_unkn_2yr_trans_yr4_rt float --Percent of independent students who transferred to a 2-year institution and whose status is unknown within 4 years
+female_death_yr4_rt float --Percent of female students who died within 4 years at original institution
+female_comp_orig_yr4_rt float --Percent of female students who completed within 4 years at original institution
+female_comp_4yr_trans_yr4_rt float --Percent of female students who transferred to a 4-year institution and completed within 4 years
+female_comp_2yr_trans_yr4_rt float --Percent of female students who transferred to a 2-year institution and completed within 4 years
+female_wdraw_orig_yr4_rt float --Percent of female students withdrawn from original institution within 4 years
+female_wdraw_4yr_trans_yr4_rt float --Percent of female students who transferred to a 4-year institution and withdrew within 4 years
+female_wdraw_2yr_trans_yr4_rt float --Percent of female students who transferred to a 2-year institution and withdrew within 4 years
+female_enrl_orig_yr4_rt float --Percent of female students who were still enrolled at original institution within 4 years
+female_enrl_4yr_trans_yr4_rt float --Percent of female students who transferred to a 4-year institution and were still enrolled within 4 years
+female_enrl_2yr_trans_yr4_rt float --Percent of female students who transferred to a 2-year institution and were still enrolled within 4 years
+female_unkn_orig_yr4_rt float --Percent of female students with status unknown within 4 years at original institution
+female_unkn_4yr_trans_yr4_rt float --Percent of female students who transferred to a 4-year institution and whose status is unknown within 4 years
+female_unkn_2yr_trans_yr4_rt float --Percent of female students who transferred to a 2-year institution and whose status is unknown within 4 years
+male_death_yr4_rt float --Percent of male students who died within 4 years at original institution
+male_comp_orig_yr4_rt float --Percent of male students who completed within 4 years at original institution
+male_comp_4yr_trans_yr4_rt float --Percent of male students who transferred to a 4-year institution and completed within 4 years
+male_comp_2yr_trans_yr4_rt float --Percent of male students who transferred to a 2-year institution and completed within 4 years
+male_wdraw_orig_yr4_rt float --Percent of male students withdrawn from original institution within 4 years
+male_wdraw_4yr_trans_yr4_rt float --Percent of male students who transferred to a 4-year institution and withdrew within 4 years
+male_wdraw_2yr_trans_yr4_rt float --Percent of male students who transferred to a 2-year institution and withdrew within 4 years
+male_enrl_orig_yr4_rt float --Percent of male students who were still enrolled at original institution within 4 years
+male_enrl_4yr_trans_yr4_rt float --Percent of male students who transferred to a 4-year institution and were still enrolled within 4 years
+male_enrl_2yr_trans_yr4_rt float --Percent of male students who transferred to a 2-year institution and were still enrolled within 4 years
+male_unkn_orig_yr4_rt float --Percent of male students with status unknown within 4 years at original institution
+male_unkn_4yr_trans_yr4_rt float --Percent of male students who transferred to a 4-year institution and whose status is unknown within 4 years
+male_unkn_2yr_trans_yr4_rt float --Percent of male students who transferred to a 2-year institution and whose status is unknown within 4 years
+pell_death_yr4_rt float --Percent of students who received a Pell Grant at the institution and who died within 4 years at original institution
+pell_comp_orig_yr4_rt float --Percent of students who received a Pell Grant at the institution and who completed in 4 years at original institution
+pell_comp_4yr_trans_yr4_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and completed within 4 years
+pell_comp_2yr_trans_yr4_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and completed within 4 years
+pell_wdraw_orig_yr4_rt float --Percent of students who received a Pell Grant at the institution and withdrew from original institution within 4 years
+pell_wdraw_4yr_trans_yr4_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and withdrew within 4 years
+pell_wdraw_2yr_trans_yr4_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and withdrew within 4 years
+pell_enrl_orig_yr4_rt float --Percent of students who received a Pell Grant at the institution and who were still enrolled at original institution within 4 years
+pell_enrl_4yr_trans_yr4_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and were still enrolled within 4 years
+pell_enrl_2yr_trans_yr4_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and were still enrolled within 4 years
+pell_unkn_orig_yr4_rt float --Percent of students who received a Pell Grant at the institution and with status unknown within 4 years at original institution
+pell_unkn_4yr_trans_yr4_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and whose status is unknown within 4 years
+pell_unkn_2yr_trans_yr4_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and whose status is unknown within 4 years
+nopell_death_yr4_rt float --Percent of students who never received a Pell Grant at the institution and who died within 4 years at original institution
+nopell_comp_orig_yr4_rt float --Percent of students who never received a Pell Grant at the institution and who completed in 4 years at original institution
+nopell_comp_4yr_trans_yr4_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and completed within 4 years
+nopell_comp_2yr_trans_yr4_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and completed within 4 years
+nopell_wdraw_orig_yr4_rt float --Percent of students who never received a Pell Grant at the institution and withdrew from original institution within 4 years
+nopell_wdraw_4yr_trans_yr4_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and withdrew within 4 years
+nopell_wdraw_2yr_trans_yr4_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and withdrew within 4 years
+nopell_enrl_orig_yr4_rt float --Percent of students who never received a Pell Grant at the institution and who were still enrolled at original institution within 4 years
+nopell_enrl_4yr_trans_yr4_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and were still enrolled within 4 years
+nopell_enrl_2yr_trans_yr4_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and were still enrolled within 4 years
+nopell_unkn_orig_yr4_rt float --Percent of students who never received a Pell Grant at the institution and with status unknown within 4 years at original institution
+nopell_unkn_4yr_trans_yr4_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and whose status is unknown within 4 years
+nopell_unkn_2yr_trans_yr4_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and whose status is unknown within 4 years
+loan_death_yr4_rt float --Percent of students who received a federal loan at the institution and who died within 4 years at original institution
+loan_comp_orig_yr4_rt float --Percent of students who received a federal loan at the institution and who completed in 4 years at original institution
+loan_comp_4yr_trans_yr4_rt float --Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and completed within 4 years
+loan_comp_2yr_trans_yr4_rt float --Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and completed within 4 years
+loan_wdraw_orig_yr4_rt float --Percent of students who received a federal loan at the institution and withdrew from original institution within 4 years
+loan_wdraw_4yr_trans_yr4_rt float --Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and withdrew within 4 years
+loan_wdraw_2yr_trans_yr4_rt float --Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and withdrew within 4 years
+loan_enrl_orig_yr4_rt float --Percent of students who received a federal loan at the institution and who were still enrolled at original institution within 4 years
+loan_enrl_4yr_trans_yr4_rt float --Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and were still enrolled within 4 years
+loan_enrl_2yr_trans_yr4_rt float --Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and were still enrolled within 4 years
+loan_unkn_orig_yr4_rt float --Percent of students who received a federal loan at the institution and with status unknown within 4 years at original institution
+loan_unkn_4yr_trans_yr4_rt float --Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and whose status is unknown within 4 years
+loan_unkn_2yr_trans_yr4_rt float --Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and whose status is unknown within 4 years
+noloan_death_yr4_rt float --Percent of students who never received a federal loan at the institution and who died within 4 years at original institution
+noloan_comp_orig_yr4_rt float --Percent of students who never received a federal loan at the institution and who completed in 4 years at original institution
+noloan_comp_4yr_trans_yr4_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and completed within 4 years
+noloan_comp_2yr_trans_yr4_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and completed within 4 years
+noloan_wdraw_orig_yr4_rt float --Percent of students who never received a federal loan at the institution and withdrew from original institution within 4 years
+noloan_wdraw_4yr_trans_yr4_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and withdrew within 4 years
+noloan_wdraw_2yr_trans_yr4_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and withdrew within 4 years
+noloan_enrl_orig_yr4_rt float --Percent of students who never received a federal loan at the institution and who were still enrolled at original institution within 4 years
+noloan_enrl_4yr_trans_yr4_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and were still enrolled within 4 years
+noloan_enrl_2yr_trans_yr4_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and were still enrolled within 4 years
+noloan_unkn_orig_yr4_rt float --Percent of students who never received a federal loan at the institution and with status unknown within 4 years at original institution
+noloan_unkn_4yr_trans_yr4_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and whose status is unknown within 4 years
+noloan_unkn_2yr_trans_yr4_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and whose status is unknown within 4 years
+firstgen_death_yr4_rt float --Percent of first-generation students who died within 4 years at original institution
+firstgen_comp_orig_yr4_rt float --Percent of first-generation students who completed within 4 years at original institution
+firstgen_comp_4yr_trans_yr4_rt float --Percent of first-generation students who transferred to a 4-year institution and completed within 4 years
+firstgen_comp_2yr_trans_yr4_rt float --Percent of first-generation students who transferred to a 2-year institution and completed within 4 years
+firstgen_wdraw_orig_yr4_rt float --Percent of first-generation students withdrawn from original institution within 4 years
+firstgen_wdraw_4yr_trans_yr4_rt float --Percent of first-generation students who transferred to a 4-year institution and withdrew within 4 years
+firstgen_wdraw_2yr_trans_yr4_rt float --Percent of first-generation students who transferred to a 2-year institution and withdrew within 4 years
+firstgen_enrl_orig_yr4_rt float --Percent of first-generation students who were still enrolled at original institution within 4 years
+firstgen_enrl_4yr_trans_yr4_rt float --Percent of first-generation students who transferred to a 4-year institution and were still enrolled within 4 years
+firstgen_enrl_2yr_trans_yr4_rt float --Percent of first-generation students who transferred to a 2-year institution and were still enrolled within 4 years
+firstgen_unkn_orig_yr4_rt float --Percent of first-generation students with status unknown within 4 years at original institution
+firstgen_unkn_4yr_trans_yr4_rt float --Percent of first-generation students who transferred to a 4-year institution and whose status is unknown within 4 years
+firstgen_unkn_2yr_trans_yr4_rt float --Percent of first-generation students who transferred to a 2-year institution and whose status is unknown within 4 years
+not1stgen_death_yr4_rt float --Percent of not-first-generation students who died within 4 years at original institution
+not1stgen_comp_orig_yr4_rt float --Percent of not-first-generation students who completed within 4 years at original institution
+not1stgen_comp_4yr_trans_yr4_rt float --Percent of not-first-generation students who transferred to a 4-year institution and completed within 4 years
+not1stgen_comp_2yr_trans_yr4_rt float --Percent of not-first-generation students who transferred to a 2-year institution and completed within 4 years
+not1stgen_wdraw_orig_yr4_rt float --Percent of not-first-generation students withdrawn from original institution within 4 years
+not1stgen_wdraw_4yr_trans_yr4_rt float --Percent of not-first-generation students who transferred to a 4-year institution and withdrew within 4 years
+not1stgen_wdraw_2yr_trans_yr4_rt float --Percent of not-first-generation students who transferred to a 2-year institution and withdrew within 4 years
+not1stgen_enrl_orig_yr4_rt float --Percent of not-first-generation students who were still enrolled at original institution within 4 years
+not1stgen_enrl_4yr_trans_yr4_rt float --Percent of not-first-generation students who transferred to a 4-year institution and were still enrolled within 4 years
+not1stgen_enrl_2yr_trans_yr4_rt float --Percent of not-first-generation students who transferred to a 2-year institution and were still enrolled within 4 years
+not1stgen_unkn_orig_yr4_rt float --Percent of not-first-generation students with status unknown within 4 years at original institution
+not1stgen_unkn_4yr_trans_yr4_rt float --Percent of not-first-generation students who transferred to a 4-year institution and whose status is unknown within 4 years
+not1stgen_unkn_2yr_trans_yr4_rt float --Percent of not-first-generation students who transferred to a 2-year institution and whose status is unknown within 4 years
+death_yr6_rt float --Percent died within 6 years at original institution
+comp_orig_yr6_rt float --Percent completed within 6 years at original institution
+comp_4yr_trans_yr6_rt float --Percent who transferred to a 4-year institution and completed within 6 years
+comp_2yr_trans_yr6_rt float --Percent who transferred to a 2-year institution and completed within 6 years
+wdraw_orig_yr6_rt float --Percent withdrawn from original institution within 6 years
+wdraw_4yr_trans_yr6_rt float --Percent who transferred to a 4-year institution and withdrew within 6 years
+wdraw_2yr_trans_yr6_rt float --Percent who transferred to a 2-year institution and withdrew within 6 years
+enrl_orig_yr6_rt float --Percent still enrolled at original institution within 6 years
+enrl_4yr_trans_yr6_rt float --Percent who transferred to a 4-year institution and were still enrolled within 6 years
+enrl_2yr_trans_yr6_rt float --Percent who transferred to a 2-year institution and were still enrolled within 6 years
+unkn_orig_yr6_rt float --Percent with status unknown within 6 years at original institution
+unkn_4yr_trans_yr6_rt float --Percent who transferred to a 4-year institution and whose status is unknown within 6 years
+unkn_2yr_trans_yr6_rt float --Percent who transferred to a 2-year institution and whose status is unknown within 6 years
+lo_inc_death_yr6_rt float --Percent of low-income (less than $30,000 in nominal family income) students who died within 6 years at original institution
+lo_inc_comp_orig_yr6_rt float --Percent of low-income (less than $30,000 in nominal family income) students who completed within 6 years at original institution
+lo_inc_comp_4yr_trans_yr6_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and completed within 6 years
+lo_inc_comp_2yr_trans_yr6_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and completed within 6 years
+lo_inc_wdraw_orig_yr6_rt float --Percent of low-income (less than $30,000 in nominal family income) students withdrawn from original institution within 6 years
+lo_inc_wdraw_4yr_trans_yr6_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 6 years
+lo_inc_wdraw_2yr_trans_yr6_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 6 years
+lo_inc_enrl_orig_yr6_rt float --Percent of low-income (less than $30,000 in nominal family income) students who were still enrolled at original institution within 6 years
+lo_inc_enrl_4yr_trans_yr6_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 6 years
+lo_inc_enrl_2yr_trans_yr6_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 6 years
+lo_inc_unkn_orig_yr6_rt float --Percent of low-income (less than $30,000 in nominal family income) students with status unknown within 6 years at original institution
+lo_inc_unkn_4yr_trans_yr6_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 6 years
+lo_inc_unkn_2yr_trans_yr6_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 6 years
+md_inc_death_yr6_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who died within 6 years at original institution
+md_inc_comp_orig_yr6_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who completed within 6 years at original institution
+md_inc_comp_4yr_trans_yr6_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and completed within 6 years
+md_inc_comp_2yr_trans_yr6_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and completed within 6 years
+md_inc_wdraw_orig_yr6_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students withdrawn from original institution within 6 years
+md_inc_wdraw_4yr_trans_yr6_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 6 years
+md_inc_wdraw_2yr_trans_yr6_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 6 years
+md_inc_enrl_orig_yr6_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who were still enrolled at original institution within 6 years
+md_inc_enrl_4yr_trans_yr6_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 6 years
+md_inc_enrl_2yr_trans_yr6_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 6 years
+md_inc_unkn_orig_yr6_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students with status unknown within 6 years at original institution
+md_inc_unkn_4yr_trans_yr6_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 6 years
+md_inc_unkn_2yr_trans_yr6_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 6 years
+hi_inc_death_yr6_rt float --Percent of high-income (above $75,000 in nominal family income) students who died within 6 years at original institution
+hi_inc_comp_orig_yr6_rt float --Percent of high-income (above $75,000 in nominal family income) students who completed within 6 years at original institution
+hi_inc_comp_4yr_trans_yr6_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and completed within 6 years
+hi_inc_comp_2yr_trans_yr6_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and completed within 6 years
+hi_inc_wdraw_orig_yr6_rt float --Percent of high-income (above $75,000 in nominal family income) students withdrawn from original institution within 6 years
+hi_inc_wdraw_4yr_trans_yr6_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 6 years
+hi_inc_wdraw_2yr_trans_yr6_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 6 years
+hi_inc_enrl_orig_yr6_rt float --Percent of high-income (above $75,000 in nominal family income) students who were still enrolled at original institution within 6 years
+hi_inc_enrl_4yr_trans_yr6_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 6 years
+hi_inc_enrl_2yr_trans_yr6_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 6 years
+hi_inc_unkn_orig_yr6_rt float --Percent of high-income (above $75,000 in nominal family income) students with status unknown within 6 years at original institution
+hi_inc_unkn_4yr_trans_yr6_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 6 years
+hi_inc_unkn_2yr_trans_yr6_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 6 years
+dep_death_yr6_rt float --Percent of dependent students who died within 6 years at original institution
+dep_comp_orig_yr6_rt float --Percent of dependent students who completed within 6 years at original institution
+dep_comp_4yr_trans_yr6_rt float --Percent of dependent students who transferred to a 4-year institution and completed within 6 years
+dep_comp_2yr_trans_yr6_rt float --Percent of dependent students who transferred to a 2-year institution and completed within 6 years
+dep_wdraw_orig_yr6_rt float --Percent of dependent students withdrawn from original institution within 6 years
+dep_wdraw_4yr_trans_yr6_rt float --Percent of dependent students who transferred to a 4-year institution and withdrew within 6 years
+dep_wdraw_2yr_trans_yr6_rt float --Percent of dependent students who transferred to a 2-year institution and withdrew within 6 years
+dep_enrl_orig_yr6_rt float --Percent of dependent students who were still enrolled at original institution within 6 years
+dep_enrl_4yr_trans_yr6_rt float --Percent of dependent students who transferred to a 4-year institution and were still enrolled within 6 years
+dep_enrl_2yr_trans_yr6_rt float --Percent of dependent students who transferred to a 2-year institution and were still enrolled within 6 years
+dep_unkn_orig_yr6_rt float --Percent of dependent students with status unknown within 6 years at original institution
+dep_unkn_4yr_trans_yr6_rt float --Percent of dependent students who transferred to a 4-year institution and whose status is unknown within 6 years
+dep_unkn_2yr_trans_yr6_rt float --Percent of dependent students who transferred to a 2-year institution and whose status is unknown within 6 years
+ind_death_yr6_rt float --Percent of independent students who died within 6 years at original institution
+ind_comp_orig_yr6_rt float --Percent of independent students who completed within 6 years at original institution
+ind_comp_4yr_trans_yr6_rt float --Percent of independent students who transferred to a 4-year institution and completed within 6 years
+ind_comp_2yr_trans_yr6_rt float --Percent of independent students who transferred to a 2-year institution and completed within 6 years
+ind_wdraw_orig_yr6_rt float --Percent of independent students withdrawn from original institution within 6 years
+ind_wdraw_4yr_trans_yr6_rt float --Percent of independent students who transferred to a 4-year institution and withdrew within 6 years
+ind_wdraw_2yr_trans_yr6_rt float --Percent of independent students who transferred to a 2-year institution and withdrew within 6 years
+ind_enrl_orig_yr6_rt float --Percent of independent students who were still enrolled at original institution within 6 years
+ind_enrl_4yr_trans_yr6_rt float --Percent of independent students who transferred to a 4-year institution and were still enrolled within 6 years
+ind_enrl_2yr_trans_yr6_rt float --Percent of independent students who transferred to a 2-year institution and were still enrolled within 6 years
+ind_unkn_orig_yr6_rt float --Percent of independent students with status unknown within 6 years at original institution
+ind_unkn_4yr_trans_yr6_rt float --Percent of independent students who transferred to a 4-year institution and whose status is unknown within 6 years
+ind_unkn_2yr_trans_yr6_rt float --Percent of independent students who transferred to a 2-year institution and whose status is unknown within 6 years
+female_death_yr6_rt float --Percent of female students who died within 6 years at original institution
+female_comp_orig_yr6_rt float --Percent of female students who completed within 6 years at original institution
+female_comp_4yr_trans_yr6_rt float --Percent of female students who transferred to a 4-year institution and completed within 6 years
+female_comp_2yr_trans_yr6_rt float --Percent of female students who transferred to a 2-year institution and completed within 6 years
+female_wdraw_orig_yr6_rt float --Percent of female students withdrawn from original institution within 6 years
+female_wdraw_4yr_trans_yr6_rt float --Percent of female students who transferred to a 4-year institution and withdrew within 6 years
+female_wdraw_2yr_trans_yr6_rt float --Percent of female students who transferred to a 2-year institution and withdrew within 6 years
+female_enrl_orig_yr6_rt float --Percent of female students who were still enrolled at original institution within 6 years
+female_enrl_4yr_trans_yr6_rt float --Percent of female students who transferred to a 4-year institution and were still enrolled within 6 years
+female_enrl_2yr_trans_yr6_rt float --Percent of female students who transferred to a 2-year institution and were still enrolled within 6 years
+female_unkn_orig_yr6_rt float --Percent of female students with status unknown within 6 years at original institution
+female_unkn_4yr_trans_yr6_rt float --Percent of female students who transferred to a 4-year institution and whose status is unknown within 6 years
+female_unkn_2yr_trans_yr6_rt float --Percent of female students who transferred to a 2-year institution and whose status is unknown within 6 years
+male_death_yr6_rt float --Percent of male students who died within 6 years at original institution
+male_comp_orig_yr6_rt float --Percent of male students who completed within 6 years at original institution
+male_comp_4yr_trans_yr6_rt float --Percent of male students who transferred to a 4-year institution and completed within 6 years
+male_comp_2yr_trans_yr6_rt float --Percent of male students who transferred to a 2-year institution and completed within 6 years
+male_wdraw_orig_yr6_rt float --Percent of male students withdrawn from original institution within 6 years
+male_wdraw_4yr_trans_yr6_rt float --Percent of male students who transferred to a 4-year institution and withdrew within 6 years
+male_wdraw_2yr_trans_yr6_rt float --Percent of male students who transferred to a 2-year institution and withdrew within 6 years
+male_enrl_orig_yr6_rt float --Percent of male students who were still enrolled at original institution within 6 years
+male_enrl_4yr_trans_yr6_rt float --Percent of male students who transferred to a 4-year institution and were still enrolled within 6 years
+male_enrl_2yr_trans_yr6_rt float --Percent of male students who transferred to a 2-year institution and were still enrolled within 6 years
+male_unkn_orig_yr6_rt float --Percent of male students with status unknown within 6 years at original institution
+male_unkn_4yr_trans_yr6_rt float --Percent of male students who transferred to a 4-year institution and whose status is unknown within 6 years
+male_unkn_2yr_trans_yr6_rt float --Percent of male students who transferred to a 2-year institution and whose status is unknown within 6 years
+pell_death_yr6_rt float --Percent of students who received a Pell Grant at the institution and who died within 6 years at original institution
+pell_comp_orig_yr6_rt float --Percent of students who received a Pell Grant at the institution and who completed in 6 years at original institution
+pell_comp_4yr_trans_yr6_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and completed within 6 years
+pell_comp_2yr_trans_yr6_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and completed within 6 years
+pell_wdraw_orig_yr6_rt float --Percent of students who received a Pell Grant at the institution and withdrew from original institution within 6 years
+pell_wdraw_4yr_trans_yr6_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and withdrew within 6 years
+pell_wdraw_2yr_trans_yr6_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and withdrew within 6 years
+pell_enrl_orig_yr6_rt float --Percent of students who received a Pell Grant at the institution and who were still enrolled at original institution within 6 years
+pell_enrl_4yr_trans_yr6_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and were still enrolled within 6 years
+pell_enrl_2yr_trans_yr6_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and were still enrolled within 6 years
+pell_unkn_orig_yr6_rt float --Percent of students who received a Pell Grant at the institution and with status unknown within 6 years at original institution
+pell_unkn_4yr_trans_yr6_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and whose status is unknown within 6 years
+pell_unkn_2yr_trans_yr6_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and whose status is unknown within 6 years
+nopell_death_yr6_rt float --Percent of students who never received a Pell Grant at the institution and who died within 6 years at original institution
+nopell_comp_orig_yr6_rt float --Percent of students who never received a Pell Grant at the institution and who completed in 6 years at original institution
+nopell_comp_4yr_trans_yr6_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and completed within 6 years
+nopell_comp_2yr_trans_yr6_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and completed within 6 years
+nopell_wdraw_orig_yr6_rt float --Percent of students who never received a Pell Grant at the institution and withdrew from original institution within 6 years
+nopell_wdraw_4yr_trans_yr6_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and withdrew within 6 years
+nopell_wdraw_2yr_trans_yr6_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and withdrew within 6 years
+nopell_enrl_orig_yr6_rt float --Percent of students who never received a Pell Grant at the institution and who were still enrolled at original institution within 6 years
+nopell_enrl_4yr_trans_yr6_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and were still enrolled within 6 years
+nopell_enrl_2yr_trans_yr6_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and were still enrolled within 6 years
+nopell_unkn_orig_yr6_rt float --Percent of students who never received a Pell Grant at the institution and with status unknown within 6 years at original institution
+nopell_unkn_4yr_trans_yr6_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and whose status is unknown within 6 years
+nopell_unkn_2yr_trans_yr6_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and whose status is unknown within 6 years
+loan_death_yr6_rt float --Percent of students who received a federal loan at the institution and who died within 6 years at original institution
+loan_comp_orig_yr6_rt float --Percent of students who received a federal loan at the institution and who completed in 6 years at original institution
+loan_comp_4yr_trans_yr6_rt float --Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and completed within 6 years
+loan_comp_2yr_trans_yr6_rt float --Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and completed within 6 years
+loan_wdraw_orig_yr6_rt float --Percent of students who received a federal loan at the institution and withdrew from original institution within 6 years
+loan_wdraw_4yr_trans_yr6_rt float --Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and withdrew within 6 years
+loan_wdraw_2yr_trans_yr6_rt float --Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and withdrew within 6 years
+loan_enrl_orig_yr6_rt float --Percent of students who received a federal loan at the institution and who were still enrolled at original institution within 6 years
+loan_enrl_4yr_trans_yr6_rt float --Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and were still enrolled within 6 years
+loan_enrl_2yr_trans_yr6_rt float --Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and were still enrolled within 6 years
+loan_unkn_orig_yr6_rt float --Percent of students who received a federal loan at the institution and with status unknown within 6 years at original institution
+loan_unkn_4yr_trans_yr6_rt float --Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and whose status is unknown within 6 years
+loan_unkn_2yr_trans_yr6_rt float --Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and whose status is unknown within 6 years
+noloan_death_yr6_rt float --Percent of students who never received a federal loan at the institution and who died within 6 years at original institution
+noloan_comp_orig_yr6_rt float --Percent of students who never received a federal loan at the institution and who completed in 6 years at original institution
+noloan_comp_4yr_trans_yr6_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and completed within 6 years
+noloan_comp_2yr_trans_yr6_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and completed within 6 years
+noloan_wdraw_orig_yr6_rt float --Percent of students who never received a federal loan at the institution and withdrew from original institution within 6 years
+noloan_wdraw_4yr_trans_yr6_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and withdrew within 6 years
+noloan_wdraw_2yr_trans_yr6_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and withdrew within 6 years
+noloan_enrl_orig_yr6_rt float --Percent of students who never received a federal loan at the institution and who were still enrolled at original institution within 6 years
+noloan_enrl_4yr_trans_yr6_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and were still enrolled within 6 years
+noloan_enrl_2yr_trans_yr6_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and were still enrolled within 6 years
+noloan_unkn_orig_yr6_rt float --Percent of students who never received a federal loan at the institution and with status unknown within 6 years at original institution
+noloan_unkn_4yr_trans_yr6_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and whose status is unknown within 6 years
+noloan_unkn_2yr_trans_yr6_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and whose status is unknown within 6 years
+firstgen_death_yr6_rt float --Percent of first-generation students who died within 6 years at original institution
+firstgen_comp_orig_yr6_rt float --Percent of first-generation students who completed within 6 years at original institution
+firstgen_comp_4yr_trans_yr6_rt float --Percent of first-generation students who transferred to a 4-year institution and completed within 6 years
+firstgen_comp_2yr_trans_yr6_rt float --Percent of first-generation students who transferred to a 2-year institution and completed within 6 years
+firstgen_wdraw_orig_yr6_rt float --Percent of first-generation students withdrawn from original institution within 6 years
+firstgen_wdraw_4yr_trans_yr6_rt float --Percent of first-generation students who transferred to a 4-year institution and withdrew within 6 years
+firstgen_wdraw_2yr_trans_yr6_rt float --Percent of first-generation students who transferred to a 2-year institution and withdrew within 6 years
+firstgen_enrl_orig_yr6_rt float --Percent of first-generation students who were still enrolled at original institution within 6 years
+firstgen_enrl_4yr_trans_yr6_rt float --Percent of first-generation students who transferred to a 4-year institution and were still enrolled within 6 years
+firstgen_enrl_2yr_trans_yr6_rt float --Percent of first-generation students who transferred to a 2-year institution and were still enrolled within 6 years
+firstgen_unkn_orig_yr6_rt float --Percent of first-generation students with status unknown within 6 years at original institution
+firstgen_unkn_4yr_trans_yr6_rt float --Percent of first-generation students who transferred to a 4-year institution and whose status is unknown within 6 years
+firstgen_unkn_2yr_trans_yr6_rt float --Percent of first-generation students who transferred to a 2-year institution and whose status is unknown within 6 years
+not1stgen_death_yr6_rt float --Percent of not-first-generation students who died within 6 years at original institution
+not1stgen_comp_orig_yr6_rt float --Percent of not-first-generation students who completed within 6 years at original institution
+not1stgen_comp_4yr_trans_yr6_rt float --Percent of not-first-generation students who transferred to a 4-year institution and completed within 6 years
+not1stgen_comp_2yr_trans_yr6_rt float --Percent of not-first-generation students who transferred to a 2-year institution and completed within 6 years
+not1stgen_wdraw_orig_yr6_rt float --Percent of not-first-generation students withdrawn from original institution within 6 years
+not1stgen_wdraw_4yr_trans_yr6_rt float --Percent of not-first-generation students who transferred to a 4-year institution and withdrew within 6 years
+not1stgen_wdraw_2yr_trans_yr6_rt float --Percent of not-first-generation students who transferred to a 2-year institution and withdrew within 6 years
+not1stgen_enrl_orig_yr6_rt float --Percent of not-first-generation students who were still enrolled at original institution within 6 years
+not1stgen_enrl_4yr_trans_yr6_rt float --Percent of not-first-generation students who transferred to a 4-year institution and were still enrolled within 6 years
+not1stgen_enrl_2yr_trans_yr6_rt float --Percent of not-first-generation students who transferred to a 2-year institution and were still enrolled within 6 years
+not1stgen_unkn_orig_yr6_rt float --Percent of not-first-generation students with status unknown within 6 years at original institution
+not1stgen_unkn_4yr_trans_yr6_rt float --Percent of not-first-generation students who transferred to a 4-year institution and whose status is unknown within 6 years
+not1stgen_unkn_2yr_trans_yr6_rt float --Percent of not-first-generation students who transferred to a 2-year institution and whose status is unknown within 6 years
+death_yr8_rt float --Percent died within 8 years at original institution
+comp_orig_yr8_rt float --Percent completed within 8 years at original institution
+comp_4yr_trans_yr8_rt float --Percent who transferred to a 4-year institution and completed within 8 years
+comp_2yr_trans_yr8_rt float --Percent who transferred to a 2-year institution and completed within 8 years
+wdraw_orig_yr8_rt float --Percent withdrawn from original institution within 8 years
+wdraw_4yr_trans_yr8_rt float --Percent who transferred to a 4-year institution and withdrew within 8 years
+wdraw_2yr_trans_yr8_rt float --Percent who transferred to a 2-year institution and withdrew within 8 years
+enrl_orig_yr8_rt float --Percent still enrolled at original institution within 8 years
+enrl_4yr_trans_yr8_rt float --Percent who transferred to a 4-year institution and were still enrolled within 8 years
+enrl_2yr_trans_yr8_rt float --Percent who transferred to a 2-year institution and were still enrolled within 8 years
+unkn_orig_yr8_rt float --Percent with status unknown within 8 years at original institution
+unkn_4yr_trans_yr8_rt float --Percent who transferred to a 4-year institution and whose status is unknown within 8 years
+unkn_2yr_trans_yr8_rt float --Percent who transferred to a 2-year institution and whose status is unknown within 8 years
+lo_inc_death_yr8_rt float --Percent of low-income (less than $30,000 in nominal family income) students who died within 8 years at original institution
+lo_inc_comp_orig_yr8_rt float --Percent of low-income (less than $30,000 in nominal family income) students who completed within 8 years at original institution
+lo_inc_comp_4yr_trans_yr8_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and completed within 8 years
+lo_inc_comp_2yr_trans_yr8_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and completed within 8 years
+lo_inc_wdraw_orig_yr8_rt float --Percent of low-income (less than $30,000 in nominal family income) students withdrawn from original institution within 8 years
+lo_inc_wdraw_4yr_trans_yr8_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 8 years
+lo_inc_wdraw_2yr_trans_yr8_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 8 years
+lo_inc_enrl_orig_yr8_rt float --Percent of low-income (less than $30,000 in nominal family income) students who were still enrolled at original institution within 8 years
+lo_inc_enrl_4yr_trans_yr8_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 8 years
+lo_inc_enrl_2yr_trans_yr8_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 8 years
+lo_inc_unkn_orig_yr8_rt float --Percent of low-income (less than $30,000 in nominal family income) students with status unknown within 8 years at original institution
+lo_inc_unkn_4yr_trans_yr8_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 8 years
+lo_inc_unkn_2yr_trans_yr8_rt float --Percent of low-income (less than $30,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 8 years
+md_inc_death_yr8_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who died within 8 years at original institution
+md_inc_comp_orig_yr8_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who completed within 8 years at original institution
+md_inc_comp_4yr_trans_yr8_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and completed within 8 years
+md_inc_comp_2yr_trans_yr8_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and completed within 8 years
+md_inc_wdraw_orig_yr8_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students withdrawn from original institution within 8 years
+md_inc_wdraw_4yr_trans_yr8_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 8 years
+md_inc_wdraw_2yr_trans_yr8_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 8 years
+md_inc_enrl_orig_yr8_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who were still enrolled at original institution within 8 years
+md_inc_enrl_4yr_trans_yr8_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 8 years
+md_inc_enrl_2yr_trans_yr8_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 8 years
+md_inc_unkn_orig_yr8_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students with status unknown within 8 years at original institution
+md_inc_unkn_4yr_trans_yr8_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 8 years
+md_inc_unkn_2yr_trans_yr8_rt float --Percent of middle-income (between $30,000 and $75,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 8 years
+hi_inc_death_yr8_rt float --Percent of high-income (above $75,000 in nominal family income) students who died within 8 years at original institution
+hi_inc_comp_orig_yr8_rt float --Percent of high-income (above $75,000 in nominal family income) students who completed within 8 years at original institution
+hi_inc_comp_4yr_trans_yr8_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and completed within 8 years
+hi_inc_comp_2yr_trans_yr8_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and completed within 8 years
+hi_inc_wdraw_orig_yr8_rt float --Percent of high-income (above $75,000 in nominal family income) students withdrawn from original institution within 8 years
+hi_inc_wdraw_4yr_trans_yr8_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and withdrew within 8 years
+hi_inc_wdraw_2yr_trans_yr8_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and withdrew within 8 years
+hi_inc_enrl_orig_yr8_rt float --Percent of high-income (above $75,000 in nominal family income) students who were still enrolled at original institution within 8 years
+hi_inc_enrl_4yr_trans_yr8_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and were still enrolled within 8 years
+hi_inc_enrl_2yr_trans_yr8_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and were still enrolled within 8 years
+hi_inc_unkn_orig_yr8_rt float --Percent of high-income (above $75,000 in nominal family income) students with status unknown within 8 years at original institution
+hi_inc_unkn_4yr_trans_yr8_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 4-year institution and whose status is unknown within 8 years
+hi_inc_unkn_2yr_trans_yr8_rt float --Percent of high-income (above $75,000 in nominal family income) students who transferred to a 2-year institution and whose status is unknown within 8 years
+dep_death_yr8_rt float --Percent of dependent students who died within 8 years at original institution
+dep_comp_orig_yr8_rt float --Percent of dependent students who completed within 8 years at original institution
+dep_comp_4yr_trans_yr8_rt float --Percent of dependent students who transferred to a 4-year institution and completed within 8 years
+dep_comp_2yr_trans_yr8_rt float --Percent of dependent students who transferred to a 2-year institution and completed within 8 years
+dep_wdraw_orig_yr8_rt float --Percent of dependent students withdrawn from original institution within 8 years
+dep_wdraw_4yr_trans_yr8_rt float --Percent of dependent students who transferred to a 4-year institution and withdrew within 8 years
+dep_wdraw_2yr_trans_yr8_rt float --Percent of dependent students who transferred to a 2-year institution and withdrew within 8 years
+dep_enrl_orig_yr8_rt float --Percent of dependent students who were still enrolled at original institution within 8 years
+dep_enrl_4yr_trans_yr8_rt float --Percent of dependent students who transferred to a 4-year institution and were still enrolled within 8 years
+dep_enrl_2yr_trans_yr8_rt float --Percent of dependent students who transferred to a 2-year institution and were still enrolled within 8 years
+dep_unkn_orig_yr8_rt float --Percent of dependent students with status unknown within 8 years at original institution
+dep_unkn_4yr_trans_yr8_rt float --Percent of dependent students who transferred to a 4-year institution and whose status is unknown within 8 years
+dep_unkn_2yr_trans_yr8_rt float --Percent of dependent students who transferred to a 2-year institution and whose status is unknown within 8 years
+ind_death_yr8_rt float --Percent of independent students who died within 8 years at original institution
+ind_comp_orig_yr8_rt float --Percent of independent students who completed within 8 years at original institution
+ind_comp_4yr_trans_yr8_rt float --Percent of independent students who transferred to a 4-year institution and completed within 8 years
+ind_comp_2yr_trans_yr8_rt float --Percent of independent students who transferred to a 2-year institution and completed within 8 years
+ind_wdraw_orig_yr8_rt float --Percent of independent students withdrawn from original institution within 8 years
+ind_wdraw_4yr_trans_yr8_rt float --Percent of independent students who transferred to a 4-year institution and withdrew within 8 years
+ind_wdraw_2yr_trans_yr8_rt float --Percent of independent students who transferred to a 2-year institution and withdrew within 8 years
+ind_enrl_orig_yr8_rt float --Percent of independent students who were still enrolled at original institution within 8 years
+ind_enrl_4yr_trans_yr8_rt float --Percent of independent students who transferred to a 4-year institution and were still enrolled within 8 years
+ind_enrl_2yr_trans_yr8_rt float --Percent of independent students who transferred to a 2-year institution and were still enrolled within 8 years
+ind_unkn_orig_yr8_rt float --Percent of independent students with status unknown within 8 years at original institution
+ind_unkn_4yr_trans_yr8_rt float --Percent of independent students who transferred to a 4-year institution and whose status is unknown within 8 years
+ind_unkn_2yr_trans_yr8_rt float --Percent of independent students who transferred to a 2-year institution and whose status is unknown within 8 years
+female_death_yr8_rt float --Percent of female students who died within 8 years at original institution
+female_comp_orig_yr8_rt float --Percent of female students who completed within 8 years at original institution
+female_comp_4yr_trans_yr8_rt float --Percent of female students who transferred to a 4-year institution and completed within 8 years
+female_comp_2yr_trans_yr8_rt float --Percent of female students who transferred to a 2-year institution and completed within 8 years
+female_wdraw_orig_yr8_rt float --Percent of female students withdrawn from original institution within 8 years
+female_wdraw_4yr_trans_yr8_rt float --Percent of female students who transferred to a 4-year institution and withdrew within 8 years
+female_wdraw_2yr_trans_yr8_rt float --Percent of female students who transferred to a 2-year institution and withdrew within 8 years
+female_enrl_orig_yr8_rt float --Percent of female students who were still enrolled at original institution within 8 years
+female_enrl_4yr_trans_yr8_rt float --Percent of female students who transferred to a 4-year institution and were still enrolled within 8 years
+female_enrl_2yr_trans_yr8_rt float --Percent of female students who transferred to a 2-year institution and were still enrolled within 8 years
+female_unkn_orig_yr8_rt float --Percent of female students with status unknown within 8 years at original institution
+female_unkn_4yr_trans_yr8_rt float --Percent of female students who transferred to a 4-year institution and whose status is unknown within 8 years
+female_unkn_2yr_trans_yr8_rt float --Percent of female students who transferred to a 2-year institution and whose status is unknown within 8 years
+male_death_yr8_rt float --Percent of male students who died within 8 years at original institution
+male_comp_orig_yr8_rt float --Percent of male students who completed within 8 years at original institution
+male_comp_4yr_trans_yr8_rt float --Percent of male students who transferred to a 4-year institution and completed within 8 years
+male_comp_2yr_trans_yr8_rt float --Percent of male students who transferred to a 2-year institution and completed within 8 years
+male_wdraw_orig_yr8_rt float --Percent of male students withdrawn from original institution within 8 years
+male_wdraw_4yr_trans_yr8_rt float --Percent of male students who transferred to a 4-year institution and withdrew within 8 years
+male_wdraw_2yr_trans_yr8_rt float --Percent of male students who transferred to a 2-year institution and withdrew within 8 years
+male_enrl_orig_yr8_rt float --Percent of male students who were still enrolled at original institution within 8 years
+male_enrl_4yr_trans_yr8_rt float --Percent of male students who transferred to a 4-year institution and were still enrolled within 8 years
+male_enrl_2yr_trans_yr8_rt float --Percent of male students who transferred to a 2-year institution and were still enrolled within 8 years
+male_unkn_orig_yr8_rt float --Percent of male students with status unknown within 8 years at original institution
+male_unkn_4yr_trans_yr8_rt float --Percent of male students who transferred to a 4-year institution and whose status is unknown within 8 years
+male_unkn_2yr_trans_yr8_rt float --Percent of male students who transferred to a 2-year institution and whose status is unknown within 8 years
+pell_death_yr8_rt float --Percent of students who received a Pell Grant at the institution and who died within 8 years at original institution
+pell_comp_orig_yr8_rt float --Percent of students who received a Pell Grant at the institution and who completed in 8 years at original institution
+pell_comp_4yr_trans_yr8_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and completed within 8 years
+pell_comp_2yr_trans_yr8_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and completed within 8 years
+pell_wdraw_orig_yr8_rt float --Percent of students who received a Pell Grant at the institution and withdrew from original institution within 8 years
+pell_wdraw_4yr_trans_yr8_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and withdrew within 8 years
+pell_wdraw_2yr_trans_yr8_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and withdrew within 8 years
+pell_enrl_orig_yr8_rt float --Percent of students who received a Pell Grant at the institution and who were still enrolled at original institution within 8 years
+pell_enrl_4yr_trans_yr8_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and were still enrolled within 8 years
+pell_enrl_2yr_trans_yr8_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and were still enrolled within 8 years
+pell_unkn_orig_yr8_rt float --Percent of students who received a Pell Grant at the institution and with status unknown within 8 years at original institution
+pell_unkn_4yr_trans_yr8_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 4-year institution and whose status is unknown within 8 years
+pell_unkn_2yr_trans_yr8_rt float --Percent of students who received a Pell Grant at the institution and who transferred to a 2-year institution and whose status is unknown within 8 years
+nopell_death_yr8_rt float --Percent of students who never received a Pell Grant at the institution and who died within 8 years at original institution
+nopell_comp_orig_yr8_rt float --Percent of students who never received a Pell Grant at the institution and who completed in 8 years at original institution
+nopell_comp_4yr_trans_yr8_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and completed within 8 years
+nopell_comp_2yr_trans_yr8_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and completed within 8 years
+nopell_wdraw_orig_yr8_rt float --Percent of students who never received a Pell Grant at the institution and withdrew from original institution within 8 years
+nopell_wdraw_4yr_trans_yr8_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and withdrew within 8 years
+nopell_wdraw_2yr_trans_yr8_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and withdrew within 8 years
+nopell_enrl_orig_yr8_rt float --Percent of students who never received a Pell Grant at the institution and who were still enrolled at original institution within 8 years
+nopell_enrl_4yr_trans_yr8_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and were still enrolled within 8 years
+nopell_enrl_2yr_trans_yr8_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and were still enrolled within 8 years
+nopell_unkn_orig_yr8_rt float --Percent of students who never received a Pell Grant at the institution and with status unknown within 8 years at original institution
+nopell_unkn_4yr_trans_yr8_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 4-year institution and whose status is unknown within 8 years
+nopell_unkn_2yr_trans_yr8_rt float --Percent of students who never received a Pell Grant at the institution and who transferred to a 2-year institution and whose status is unknown within 8 years
+loan_death_yr8_rt float --Percent of students who received a federal loan at the institution and who died within 8 years at original institution
+loan_comp_orig_yr8_rt float --Percent of students who received a federal loan at the institution and who completed in 8 years at original institution
+loan_comp_4yr_trans_yr8_rt float --Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and completed within 8 years
+loan_comp_2yr_trans_yr8_rt float --Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and completed within 8 years
+loan_wdraw_orig_yr8_rt float --Percent of students who received a federal loan at the institution and withdrew from original institution within 8 years
+loan_wdraw_4yr_trans_yr8_rt float --Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and withdrew within 8 years
+loan_wdraw_2yr_trans_yr8_rt float --Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and withdrew within 8 years
+loan_enrl_orig_yr8_rt float --Percent of students who received a federal loan at the institution and who were still enrolled at original institution within 8 years
+loan_enrl_4yr_trans_yr8_rt float --Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and were still enrolled within 8 years
+loan_enrl_2yr_trans_yr8_rt float --Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and were still enrolled within 8 years
+loan_unkn_orig_yr8_rt float --Percent of students who received a federal loan at the institution and with status unknown within 8 years at original institution
+loan_unkn_4yr_trans_yr8_rt float --Percent of students who received a federal loan at the institution and who transferred to a 4-year institution and whose status is unknown within 8 years
+loan_unkn_2yr_trans_yr8_rt float --Percent of students who received a federal loan at the institution and who transferred to a 2-year institution and whose status is unknown within 8 years
+noloan_death_yr8_rt float --Percent of students who never received a federal loan at the institution and who died within 8 years at original institution
+noloan_comp_orig_yr8_rt float --Percent of students who never received a federal loan at the institution and who completed in 8 years at original institution
+noloan_comp_4yr_trans_yr8_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and completed within 8 years
+noloan_comp_2yr_trans_yr8_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and completed within 8 years
+noloan_wdraw_orig_yr8_rt float --Percent of students who never received a federal loan at the institution and withdrew from original institution within 8 years
+noloan_wdraw_4yr_trans_yr8_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and withdrew within 8 years
+noloan_wdraw_2yr_trans_yr8_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and withdrew within 8 years
+noloan_enrl_orig_yr8_rt float --Percent of students who never received a federal loan at the institution and who were still enrolled at original institution within 8 years
+noloan_enrl_4yr_trans_yr8_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and were still enrolled within 8 years
+noloan_enrl_2yr_trans_yr8_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and were still enrolled within 8 years
+noloan_unkn_orig_yr8_rt float --Percent of students who never received a federal loan at the institution and with status unknown within 8 years at original institution
+noloan_unkn_4yr_trans_yr8_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 4-year institution and whose status is unknown within 8 years
+noloan_unkn_2yr_trans_yr8_rt float --Percent of students who never received a federal loan at the institution and who transferred to a 2-year institution and whose status is unknown within 8 years
+firstgen_death_yr8_rt float --Percent of first-generation students who died within 8 years at original institution
+firstgen_comp_orig_yr8_rt float --Percent of first-generation students who completed within 8 years at original institution
+firstgen_comp_4yr_trans_yr8_rt float --Percent of first-generation students who transferred to a 4-year institution and completed within 8 years
+firstgen_comp_2yr_trans_yr8_rt float --Percent of first-generation students who transferred to a 2-year institution and completed within 8 years
+firstgen_wdraw_orig_yr8_rt float --Percent of first-generation students withdrawn from original institution within 8 years
+firstgen_wdraw_4yr_trans_yr8_rt float --Percent of first-generation students who transferred to a 4-year institution and withdrew within 8 years
+firstgen_wdraw_2yr_trans_yr8_rt float --Percent of first-generation students who transferred to a 2-year institution and withdrew within 8 years
+firstgen_enrl_orig_yr8_rt float --Percent of first-generation students who were still enrolled at original institution within 8 years
+firstgen_enrl_4yr_trans_yr8_rt float --Percent of first-generation students who transferred to a 4-year institution and were still enrolled within 8 years
+firstgen_enrl_2yr_trans_yr8_rt float --Percent of first-generation students who transferred to a 2-year institution and were still enrolled within 8 years
+firstgen_unkn_orig_yr8_rt float --Percent of first-generation students with status unknown within 8 years at original institution
+firstgen_unkn_4yr_trans_yr8_rt float --Percent of first-generation students who transferred to a 4-year institution and whose status is unknown within 8 years
+firstgen_unkn_2yr_trans_yr8_rt float --Percent of first-generation students who transferred to a 2-year institution and whose status is unknown within 8 years
+not1stgen_death_yr8_rt float --Percent of not-first-generation students who died within 8 years at original institution
+not1stgen_comp_orig_yr8_rt float --Percent of not-first-generation students who completed within 8 years at original institution
+not1stgen_comp_4yr_trans_yr8_rt float --Percent of not-first-generation students who transferred to a 4-year institution and completed within 8 years
+not1stgen_comp_2yr_trans_yr8_rt float --Percent of not-first-generation students who transferred to a 2-year institution and completed within 8 years
+not1stgen_wdraw_orig_yr8_rt float --Percent of not-first-generation students withdrawn from original institution within 8 years
+not1stgen_wdraw_4yr_trans_yr8_rt float --Percent of not-first-generation students who transferred to a 4-year institution and withdrew within 8 years
+not1stgen_wdraw_2yr_trans_yr8_rt float --Percent of not-first-generation students who transferred to a 2-year institution and withdrew within 8 years
+not1stgen_enrl_orig_yr8_rt float --Percent of not-first-generation students who were still enrolled at original institution within 8 years
+not1stgen_enrl_4yr_trans_yr8_rt float --Percent of not-first-generation students who transferred to a 4-year institution and were still enrolled within 8 years
+not1stgen_enrl_2yr_trans_yr8_rt float --Percent of not-first-generation students who transferred to a 2-year institution and were still enrolled within 8 years
+not1stgen_unkn_orig_yr8_rt float --Percent of not-first-generation students with status unknown within 8 years at original institution
+not1stgen_unkn_4yr_trans_yr8_rt float --Percent of not-first-generation students who transferred to a 4-year institution and whose status is unknown within 8 years
+not1stgen_unkn_2yr_trans_yr8_rt float --Percent of not-first-generation students who transferred to a 2-year institution and whose status is unknown within 8 years
+rpy_1yr_rt float --Fraction of repayment cohort who are not in default, and with loan balances that have declined one year since entering repayment, excluding enrolled and military deferment from calculation. (Rolling averages)
+compl_rpy_1yr_rt float --One-year repayment rate for completers
+noncom_rpy_1yr_rt float --One-year repayment rate for non-completers
+lo_inc_rpy_1yr_rt float --One-year repayment rate by family income ($0-30,000)
+md_inc_rpy_1yr_rt float --One-year repayment rate by family income ($30,000-75,000)
+hi_inc_rpy_1yr_rt float --One-year repayment rate by family income ($75,000+)
+dep_rpy_1yr_rt float --One-year repayment rate for dependent students
+ind_rpy_1yr_rt float --One-year repayment rate for independent students
+pell_rpy_1yr_rt float --One-year repayment rate for students who received a Pell grant while at the school
+nopell_rpy_1yr_rt float --One-year repayment rate for students who never received a Pell grant while at school
+female_rpy_1yr_rt float --One-year repayment rate for females
+male_rpy_1yr_rt float --One-year repayment rate for males
+firstgen_rpy_1yr_rt float --One-year repayment rate for first-generation students
+notfirstgen_rpy_1yr_rt float --One-year repayment rate for students who are not first-generation
+rpy_3yr_rt float --Fraction of repayment cohort who are not in default, and with loan balances that have declined three years since entering repayment, excluding enrolled and military deferment from calculation. (rolling averages)
+compl_rpy_3yr_rt float --Three-year repayment rate for completers
+noncom_rpy_3yr_rt float --Three-year repayment rate for non-completers
+lo_inc_rpy_3yr_rt float --Three-year repayment rate by family income ($0-30,000)
+md_inc_rpy_3yr_rt float --Three-year repayment rate by family income ($30,000-75,000)
+hi_inc_rpy_3yr_rt float --Three-year repayment rate by family income ($75,000+)
+dep_rpy_3yr_rt float --Three-year repayment rate for dependent students
+ind_rpy_3yr_rt float --Three-year repayment rate for independent students
+pell_rpy_3yr_rt float --Three-year repayment rate for students who received a Pell grant while at the school
+nopell_rpy_3yr_rt float --Three-year repayment rate for students who never received a Pell grant while at school
+female_rpy_3yr_rt float --Three-year repayment rate for females
+male_rpy_3yr_rt float --Three-year repayment rate for males
+firstgen_rpy_3yr_rt float --Three-year repayment rate for first-generation students
+notfirstgen_rpy_3yr_rt float --Three-year repayment rate for students who are not first-generation
+rpy_5yr_rt float --Fraction of repayment cohort who are not in default, and with loan balances that have declined five years since entering repayment, excluding enrolled and military deferment from calculation. (rolling averages)
+compl_rpy_5yr_rt float --Five-year repayment rate for completers
+noncom_rpy_5yr_rt float --Five-year repayment rate for non-completers
+lo_inc_rpy_5yr_rt float --Five-year repayment rate by family income ($0-30,000)
+md_inc_rpy_5yr_rt float --Five-year repayment rate by family income ($30,000-75,000)
+hi_inc_rpy_5yr_rt float --Five-year repayment rate by family income ($75,000+)
+dep_rpy_5yr_rt float --Five-year repayment rate for dependent students
+ind_rpy_5yr_rt float --Five-year repayment rate for independent students
+pell_rpy_5yr_rt float --Five-year repayment rate for students who received a Pell grant while at the school
+nopell_rpy_5yr_rt float --Five-year repayment rate for students who never received a Pell grant while at school
+female_rpy_5yr_rt float --Five-year repayment rate for females
+male_rpy_5yr_rt float --Five-year repayment rate for males
+firstgen_rpy_5yr_rt float --Five-year repayment rate for first-generation students
+notfirstgen_rpy_5yr_rt float --Five-year repayment rate for students who are not first-generation
+rpy_7yr_rt float --Fraction of repayment cohort who are not in default, and with loan balances that have declined seven years since entering repayment, excluding enrolled and military deferment from calculation. (rolling averages)
+compl_rpy_7yr_rt float --Seven-year repayment rate for completers
+noncom_rpy_7yr_rt float --Seven-year repayment rate for non-completers
+lo_inc_rpy_7yr_rt float --Seven-year repayment rate by family income ($0-30,000)
+md_inc_rpy_7yr_rt float --Seven-year repayment rate by family income ($30,000-75,000)
+hi_inc_rpy_7yr_rt float --Seven-year repayment rate by family income ($75,000+)
+dep_rpy_7yr_rt float --Seven-year repayment rate for dependent students
+ind_rpy_7yr_rt float --Seven-year repayment rate for independent students
+pell_rpy_7yr_rt float --Seven-year repayment rate for students who received a Pell grant while at the school
+nopell_rpy_7yr_rt float --Seven-year repayment rate for students who never received a Pell grant while at school
+female_rpy_7yr_rt float --Seven-year repayment rate for females
+male_rpy_7yr_rt float --Seven-year repayment rate for males
+firstgen_rpy_7yr_rt float --Seven-year repayment rate for first-generation students
+notfirstgen_rpy_7yr_rt float --Seven-year repayment rate for students who are not first-generation
+inc_pct_lo float --Percentage of aided students whose family income is between $0-$30,000
+dep_stat_pct_ind float --Percentage of students who are financially independent
+ind_inc_pct_lo float --Percentage of students who are financially independent and have family incomes between $0-30,000
+dep_inc_pct_lo float --Percentage of students who are financially dependent and have family incomes between $0-30,000
+par_ed_pct_1stgen float --Percentage first-generation students
+inc_pct_m1 float --Aided students with family incomes between $30,001-$48,000 in nominal dollars
+inc_pct_m2 float --Aided students with family incomes between $48,001-$75,000 in nominal dollars
+inc_pct_h1 float --Aided students with family incomes between $75,001-$110,000 in nominal dollars
+inc_pct_h2 float --Aided students with family incomes between $110,001+ in nominal dollars
+dep_inc_pct_m1 float --Dependent students with family incomes between $30,001-$48,000 in nominal dollars
+dep_inc_pct_m2 float --Dependent students with family incomes between $48,001-$75,000 in nominal dollars
+dep_inc_pct_h1 float --Dependent students with family incomes between $75,001-$110,000 in nominal dollars
+dep_inc_pct_h2 float --Dependent students with family incomes between $110,001+ in nominal dollars
+ind_inc_pct_m1 float --Independent students with family incomes between $30,001-$48,000 in nominal dollars
+ind_inc_pct_m2 float --Independent students with family incomes between $48,001-$75,000 in nominal dollars
+ind_inc_pct_h1 float --Independent students with family incomes between $75,001-$110,000 in nominal dollars
+ind_inc_pct_h2 float --Independent students with family incomes between $110,001+ in nominal dollars
+par_ed_pct_ms float --Percent of students whose parents' highest educational level is middle school
+par_ed_pct_hs float --Percent of students whose parents' highest educational level is high school
+par_ed_pct_ps float --Percent of students whose parents' highest educational level was is some form of postsecondary education
+appl_sch_pct_ge2 float --Number of applications is greater than or equal to 2
+appl_sch_pct_ge3 float --Number of applications is greater than or equal to 3
+appl_sch_pct_ge4 float --Number of applications is greater than or equal to 4
+appl_sch_pct_ge5 float --Number of applications is greater than or equal to 5
+dep_inc_avg integer --Average family income of dependent students in real 2015 dollars.
+ind_inc_avg integer --Average family income of independent students in real 2015 dollars.
+overall_yr2_n integer --Number of students in overall 2-year completion cohort
+lo_inc_yr2_n integer --Number of low-income (less than $30,000 in nominal family income) students in overall 2-year completion cohort
+md_inc_yr2_n integer --Number of middle-income (between $30,000 and $75,000 in nominal family income) students in overall 2-year completion cohort
+hi_inc_yr2_n integer --Number of high-income (above $75,000 in nominal family income) students in overall 2-year completion cohort
+dep_yr2_n integer --Number of dependent students in overall 2-year completion cohort
+ind_yr2_n integer --Number of independent students in overall 2-year completion cohort
+female_yr2_n integer --Number of female students in overall 2-year completion cohort
+male_yr2_n integer --Number of male students in overall 2-year completion cohort
+pell_yr2_n integer --Number of Pell students in overall 2-year completion cohort
+nopell_yr2_n integer --Number of no-Pell students in overall 2-year completion cohort
+loan_yr2_n integer --Number of loan students in overall 2-year completion cohort
+noloan_yr2_n integer --Number of no-loan students in overall 2-year completion cohort
+firstgen_yr2_n integer --Number of first-generation students in overall 2-year completion cohort
+not1stgen_yr2_n integer --Number of not-first-generation students in overall 2-year completion cohort
+overall_yr3_n integer --Number of students in overall 3-year completion cohort
+lo_inc_yr3_n integer --Number of low-income (less than $30,000 in nominal family income) students in overall 3-year completion cohort
+md_inc_yr3_n integer --Number of middle-income (between $30,000 and $75,000 in nominal family income) students in overall 3-year completion cohort
+hi_inc_yr3_n integer --Number of high-income (above $75,000 in nominal family income) students in overall 3-year completion cohort
+dep_yr3_n integer --Number of dependent students in overall 3-year completion cohort
+ind_yr3_n integer --Number of independent students in overall 3-year completion cohort
+female_yr3_n integer --Number of female students in overall 3-year completion cohort
+male_yr3_n integer --Number of male students in overall 3-year completion cohort
+pell_yr3_n integer --Number of Pell students in overall 3-year completion cohort
+nopell_yr3_n integer --Number of no-Pell students in overall 3-year completion cohort
+loan_yr3_n integer --Number of loan students in overall 3-year completion cohort
+noloan_yr3_n integer --Number of no-loan students in overall 3-year completion cohort
+firstgen_yr3_n integer --Number of first-generation students in overall 3-year completion cohort
+not1stgen_yr3_n integer --Number of not-first-generation students in overall 3-year completion cohort
+overall_yr4_n integer --Number of students in overall 4-year completion cohort
+lo_inc_yr4_n integer --Number of low-income (less than $30,000 in nominal family income) students in overall 4-year completion cohort
+md_inc_yr4_n integer --Number of middle-income (between $30,000 and $75,000 in nominal family income) students in overall 4-year completion cohort
+hi_inc_yr4_n integer --Number of high-income (above $75,000 in nominal family income) students in overall 4-year completion cohort
+dep_yr4_n integer --Number of dependent students in overall 4-year completion cohort
+ind_yr4_n integer --Number of independent students in overall 4-year completion cohort
+female_yr4_n integer --Number of female students in overall 4-year completion cohort
+male_yr4_n integer --Number of male students in overall 4-year completion cohort
+pell_yr4_n integer --Number of Pell students in overall 4-year completion cohort
+nopell_yr4_n integer --Number of no-Pell students in overall 4-year completion cohort
+loan_yr4_n integer --Number of loan students in overall 4-year completion cohort
+noloan_yr4_n integer --Number of no-loan students in overall 4-year completion cohort
+firstgen_yr4_n integer --Number of first-generation students in overall 4-year completion cohort
+not1stgen_yr4_n integer --Number of not-first-generation students in overall 4-year completion cohort
+overall_yr6_n integer --Number of students in overall 6-year completion cohort
+lo_inc_yr6_n integer --Number of low-income (less than $30,000 in nominal family income) students in overall 6-year completion cohort
+md_inc_yr6_n integer --Number of middle-income (between $30,000 and $75,000 in nominal family income) students in overall 6-year completion cohort
+hi_inc_yr6_n integer --Number of high-income (above $75,000 in nominal family income) students in overall 6-year completion cohort
+dep_yr6_n integer --Number of dependent students in overall 6-year completion cohort
+ind_yr6_n integer --Number of independent students in overall 6-year completion cohort
+female_yr6_n integer --Number of female students in overall 6-year completion cohort
+male_yr6_n integer --Number of male students in overall 6-year completion cohort
+pell_yr6_n integer --Number of Pell students in overall 6-year completion cohort
+nopell_yr6_n integer --Number of no-Pell students in overall 6-year completion cohort
+loan_yr6_n integer --Number of loan students in overall 6-year completion cohort
+noloan_yr6_n integer --Number of no-loan students in overall 6-year completion cohort
+firstgen_yr6_n integer --Number of first-generation students in overall 6-year completion cohort
+not1stgen_yr6_n integer --Number of not-first-generation students in overall 6-year completion cohort
+overall_yr8_n integer --Number of students in overall 8-year completion cohort
+lo_inc_yr8_n integer --Number of low-income (less than $30,000 in nominal family income) students in overall 8-year completion cohort
+md_inc_yr8_n integer --Number of middle-income (between $30,000 and $75,000 in nominal family income) students in overall 8-year completion cohort
+hi_inc_yr8_n integer --Number of high-income (above $75,000 in nominal family income) students in overall 8-year completion cohort
+dep_yr8_n integer --Number of dependent students in overall 8-year completion cohort
+ind_yr8_n integer --Number of independent students in overall 8-year completion cohort
+female_yr8_n integer --Number of female students in overall 8-year completion cohort
+male_yr8_n integer --Number of male students in overall 8-year completion cohort
+pell_yr8_n integer --Number of Pell students in overall 8-year completion cohort
+nopell_yr8_n integer --Number of no-Pell students in overall 8-year completion cohort
+loan_yr8_n integer --Number of loan students in overall 8-year completion cohort
+noloan_yr8_n integer --Number of no-loan students in overall 8-year completion cohort
+firstgen_yr8_n integer --Number of first-generation students in overall 8-year completion cohort
+not1stgen_yr8_n integer --Number of not-first-generation students in overall 8-year completion cohort
+debt_mdn float --The median original amount of the loan principal upon entering repayment
+grad_debt_mdn float --The median debt for students who have completed
+wdraw_debt_mdn float --The median debt for students who have not completed
+lo_inc_debt_mdn float --The median debt for students with family income between $0-$30,000
+md_inc_debt_mdn float --The median debt for students with family income between $30,001-$75,000
+hi_inc_debt_mdn float --The median debt for students with family income $75,001+
+dep_debt_mdn float --The median debt for dependent students
+ind_debt_mdn float --The median debt for independent students
+pell_debt_mdn float --The median debt for Pell students
+nopell_debt_mdn float --The median debt for no-Pell students
+female_debt_mdn float --The median debt for female students
+male_debt_mdn float --The median debt for male students
+firstgen_debt_mdn float --The median debt for first-generation students
+notfirstgen_debt_mdn float --The median debt for not-first-generation students
+debt_n integer --The number of students in the median debt cohort
+grad_debt_n integer --The number of students in the median debt completers cohort
+wdraw_debt_n integer --The number of students in the median debt withdrawn cohort
+lo_inc_debt_n integer --The number of students in the median debt low-income (less than or equal to $30,000 in nominal family income) students cohort
+md_inc_debt_n integer --The number of students in the median debt middle-income (between $30,000 and $75,000 in nominal family income) students cohort
+hi_inc_debt_n integer --The number of students in the median debt high-income (above $75,000 in nominal family income) students cohort
+dep_debt_n integer --The number of students in the median debt dependent students cohort
+ind_debt_n integer --The number of students in the median debt independent students cohort
+pell_debt_n integer --The number of students in the median debt Pell students cohort
+nopell_debt_n integer --The number of students in the median debt no-Pell students cohort
+female_debt_n integer --The number of students in the median debt female students cohort
+male_debt_n integer --The number of students in the median debt male students cohort
+firstgen_debt_n integer --The number of students in the median debt first-generation students cohort
+notfirstgen_debt_n integer --The number of students in the median debt not-first-generation students cohort
+grad_debt_mdn10yr float --Median loan debt of completers in monthly payments (10-year amortization plan)
+cuml_debt_n integer --Number of students in the cumulative loan debt cohort
+cuml_debt_p90 integer --Cumulative loan debt at the 90th percentile
+cuml_debt_p75 integer --Cumulative loan debt at the 75th percentile
+cuml_debt_p25 integer --Cumulative loan debt at the 25th percentile
+cuml_debt_p10 integer --Cumulative loan debt at the 10th percentile
+inc_n integer --Number of students in the family income cohort
+dep_inc_n integer --Number of students in the family income dependent students cohort
+ind_inc_n integer --Number of students in the family income independent students cohort
+dep_stat_n integer --Number of students in the disaggregation with valid dependency status
+par_ed_n integer --Number of students in the parents' education level cohort
+appl_sch_n integer --Number of students in the FAFSA applications cohort
+repay_dt_mdn string --Median Date Student Enters Repayment
+separ_dt_mdn string --Median Date Student Separated
+repay_dt_n integer --Number of students in the cohort for date students enter repayment
+separ_dt_n integer --Number of students in the cohort for date students separated from the school
+rpy_1yr_n integer --Number of students in the 1-year repayment rate cohort
+compl_rpy_1yr_n integer --Number of students in the 1-year repayment rate of completers cohort
+noncom_rpy_1yr_n integer --Number of students in the 1-year repayment rate of non-completers cohort
+lo_inc_rpy_1yr_n integer --Number of students in the 1-year repayment rate of low-income (less than $30,000 in nominal family income) students cohort
+md_inc_rpy_1yr_n integer --Number of students in the 1-year repayment rate of middle-income (between $30,000 and $75,000 in nominal family income) students cohort
+hi_inc_rpy_1yr_n integer --Number of students in the 1-year repayment rate of high-income (above $75,000 in nominal family income) students cohort
+dep_rpy_1yr_n integer --Number of students in the 1-year repayment rate of dependent students cohort
+ind_rpy_1yr_n integer --Number of students in the 1-year repayment rate of independent students cohort
+pell_rpy_1yr_n integer --Number of students in the 1-year repayment rate of Pell students cohort
+nopell_rpy_1yr_n integer --Number of students in the 1-year repayment rate of no-Pell students cohort
+female_rpy_1yr_n integer --Number of students in the 1-year repayment rate of female students cohort
+male_rpy_1yr_n integer --Number of students in the 1-year repayment rate of male students cohort
+firstgen_rpy_1yr_n integer --Number of students in the 1-year repayment rate of first-generation students cohort
+notfirstgen_rpy_1yr_n integer --Number of students in the 1-year repayment rate of not-first-generation students cohort
+rpy_3yr_n integer --Number of students in the 3-year repayment rate cohort
+compl_rpy_3yr_n integer --Number of students in the 3-year repayment rate of completers cohort
+noncom_rpy_3yr_n integer --Number of students in the 3-year repayment rate of non-completers cohort
+lo_inc_rpy_3yr_n integer --Number of students in the 3-year repayment rate of low-income (less than $30,000 in nominal family income) students cohort
+md_inc_rpy_3yr_n integer --Number of students in the 3-year repayment rate of middle-income (between $30,000 and $75,000 in nominal family income) students cohort
+hi_inc_rpy_3yr_n integer --Number of students in the 3-year repayment rate of high-income (above $75,000 in nominal family income) students cohort
+dep_rpy_3yr_n integer --Number of students in the 3-year repayment rate of dependent students cohort
+ind_rpy_3yr_n integer --Number of students in the 3-year repayment rate of independent students cohort
+pell_rpy_3yr_n integer --Number of students in the 3-year repayment rate of Pell students cohort
+nopell_rpy_3yr_n integer --Number of students in the 3-year repayment rate of no-Pell students cohort
+female_rpy_3yr_n integer --Number of students in the 3-year repayment rate of female students cohort
+male_rpy_3yr_n integer --Number of students in the 3-year repayment rate of male students cohort
+firstgen_rpy_3yr_n integer --Number of students in the 3-year repayment rate of first-generation students cohort
+notfirstgen_rpy_3yr_n integer --Number of students in the 3-year repayment rate of not-first-generation students cohort
+rpy_5yr_n integer --Number of students in the 5-year repayment rate cohort
+compl_rpy_5yr_n integer --Number of students in the 5-year repayment rate of completers cohort
+noncom_rpy_5yr_n integer --Number of students in the 5-year repayment rate of non-completers cohort
+lo_inc_rpy_5yr_n integer --Number of students in the 5-year repayment rate of low-income (less than $30,000 in nominal family income) students cohort
+md_inc_rpy_5yr_n integer --Number of students in the 5-year repayment rate of middle-income (between $30,000 and $75,000 in nominal family income) students cohort
+hi_inc_rpy_5yr_n integer --Number of students in the 5-year repayment rate of high-income (above $75,000 in nominal family income) students cohort
+dep_rpy_5yr_n integer --Number of students in the 5-year repayment rate of dependent students cohort
+ind_rpy_5yr_n integer --Number of students in the 5-year repayment rate of independent students cohort
+pell_rpy_5yr_n integer --Number of students in the 5-year repayment rate of Pell students cohort
+nopell_rpy_5yr_n integer --Number of students in the 5-year repayment rate of no-Pell students cohort
+female_rpy_5yr_n integer --Number of students in the 5-year repayment rate of female students cohort
+male_rpy_5yr_n integer --Number of students in the 5-year repayment rate of male students cohort
+firstgen_rpy_5yr_n integer --Number of students in the 5-year repayment rate of first-generation students cohort
+notfirstgen_rpy_5yr_n integer --Number of students in the 5-year repayment rate of not-first-generation students cohort
+rpy_7yr_n integer --Number of students in the 7-year repayment rate cohort
+compl_rpy_7yr_n integer --Number of students in the 7-year repayment rate of completers cohort
+noncom_rpy_7yr_n integer --Number of students in the 7-year repayment rate of non-completers cohort
+lo_inc_rpy_7yr_n integer --Number of students in the 7-year repayment rate of low-income (less than $30,000 in nominal family income) students cohort
+md_inc_rpy_7yr_n integer --Number of students in the 7-year repayment rate of middle-income (between $30,000 and $75,000 in nominal family income) students cohort
+hi_inc_rpy_7yr_n integer --Number of students in the 7-year repayment rate of high-income (above $75,000 in nominal family income) students cohort
+dep_rpy_7yr_n integer --Number of students in the 7-year repayment rate of dependent students cohort
+ind_rpy_7yr_n integer --Number of students in the 7-year repayment rate of independent students cohort
+pell_rpy_7yr_n integer --Number of students in the 7-year repayment rate of Pell students cohort
+nopell_rpy_7yr_n integer --Number of students in the 7-year repayment rate of no-Pell students cohort
+female_rpy_7yr_n integer --Number of students in the 7-year repayment rate of female students cohort
+male_rpy_7yr_n integer --Number of students in the 7-year repayment rate of male students cohort
+firstgen_rpy_7yr_n integer --Number of students in the 7-year repayment rate of first-generation students cohort
+notfirstgen_rpy_7yr_n integer --Number of students in the 7-year repayment rate of not-first-generation students cohort
+count_ed integer --Count of students in the earnings cohort
+loan_ever float --Share of students who received a federal loan while in school
+pell_ever float --Share of students who received a Pell Grant while in school
+age_entry integer --Average age of entry
+age_entry_sq integer --Average of the age of entry squared
+agege24 float --Percent of students over 23 at entry
+female float --Share of female students
+married float --Share of married students
+dependent float --Share of dependent students
+veteran float --Share of veteran students
+first_gen float --Share of first-generation students
+faminc integer --Average family income
+md_faminc integer --Median family income
+faminc_ind integer --Average family income for independent students 
+lnfaminc integer --Average of the log of family income
+lnfaminc_ind integer --Average of the log of family income for independent students
+pct_white float --Percent of the population from students' zip codes that is White, via Census data
+pct_black float --Percent of the population from students' zip codes that is Black, via Census data
+pct_asian float --Percent of the population from students' zip codes that is Asian, via Census data
+pct_hispanic float --Percent of the population from students' zip codes that is Hispanic, via Census data
+pct_ba float --Percent of the population from students' zip codes with a bachelor's degree over the age 25, via Census data
+pct_grad_prof float --Percent of the population from students' zip codes over 25 with a professional degree, via Census data
+pct_born_us float --Percent of the population from students' zip codes that was born in the US, via Census data
+median_hh_inc integer --Median household income
+poverty_rate float --Poverty rate, via Census data
+unemp_rate float --Unemployment rate, via Census data
+ln_median_hh_inc integer --Log of the median household income
+fsend_count integer --Average number of students who sent their FAFSA reports to at least one college
+fsend_1 float --Share of students who submitted FAFSAs to only one college
+fsend_2 float --Share of students who submitted FAFSAs to two colleges
+fsend_3 float --Share of students who submitted FAFSAs to three colleges
+fsend_4 float --Share of students who submitted FAFSAs to four colleges
+fsend_5 float --Share of students who submitted FAFSAs to at least five colleges
+count_nwne_p10 integer --Number of students not working and not enrolled 10 years after entry
+count_wne_p10 integer --Number of students working and not enrolled 10 years after entry
+mn_earn_wne_p10 integer --Mean earnings of students working and not enrolled 10 years after entry
+md_earn_wne_p10 integer --Median earnings of students working and not enrolled 10 years after entry
+pct10_earn_wne_p10 integer --10th percentile of earnings of students working and not enrolled 10 years after entry
+pct25_earn_wne_p10 integer --25th percentile of earnings of students working and not enrolled 10 years after entry
+pct75_earn_wne_p10 integer --75th percentile of earnings of students working and not enrolled 10 years after entry
+pct90_earn_wne_p10 integer --90th percentile of earnings of students working and not enrolled 10 years after entry
+sd_earn_wne_p10 integer --Standard deviation of earnings of students working and not enrolled 10 years after entry
+count_wne_inc1_p10 integer --Number of students working and not enrolled 10 years after entry in the lowest income tercile $0-$30,000
+count_wne_inc2_p10 integer --Number of students working and not enrolled 10 years after entry in the middle income tercile $30,001-$75,000
+count_wne_inc3_p10 integer --Number of students working and not enrolled 10 years after entry in the highest income tercile $75,001+ 
+count_wne_indep0_inc1_p10 integer --Number of dependent students working and not enrolled 10 years after entry in the lowest income tercile $0-$30,000 
+count_wne_indep0_p10 integer --Number of dependent students working and not enrolled 10 years after entry
+count_wne_indep1_p10 integer --Number of independent students working and not enrolled 10 years after entry
+count_wne_male0_p10 integer --Number of female students working and not enrolled 10 years after entry
+count_wne_male1_p10 integer --Number of male students working and not enrolled 10 years after entry
+gt_25k_p10 float --Share of students earning over $25,000/year (threshold earnings) 10 years after entry
+gt_28k_p10 float --Share of students earning over $28,000/year (threshold earnings) 10 years after entry
+mn_earn_wne_inc1_p10 integer --Mean earnings of students working and not enrolled 10 years after entry in the lowest income tercile $0-$30,000
+mn_earn_wne_inc2_p10 integer --Mean earnings of students working and not enrolled 10 years after entry in the middle income tercile $30,001-$75,000
+mn_earn_wne_inc3_p10 integer --Mean earnings of students working and not enrolled 10 years after entry in the highest income tercile $75,001+ 
+mn_earn_wne_indep0_inc1_p10 integer --Mean earnings of dependent students working and not enrolled 10 years after entry in the lowest income tercile $0-$30,000
+mn_earn_wne_indep0_p10 integer --Mean earnings of dependent students working and not enrolled 10 years after entry
+mn_earn_wne_indep1_p10 integer --Mean earnings of independent students working and not enrolled 10 years after entry
+mn_earn_wne_male0_p10 integer --Mean earnings of female students working and not enrolled 10 years after entry
+mn_earn_wne_male1_p10 integer --Mean earnings of male students working and not enrolled 10 years after entry
+count_nwne_p6 integer --Number of students not working and not enrolled 6 years after entry
+count_wne_p6 integer --Number of students working and not enrolled 6 years after entry
+mn_earn_wne_p6 integer --Mean earnings of students working and not enrolled 6 years after entry
+md_earn_wne_p6 integer --Median earnings of students working and not enrolled 6 years after entry
+pct10_earn_wne_p6 integer --10th percentile of earnings of students working and not enrolled 6 years after entry
+pct25_earn_wne_p6 integer --25th percentile of earnings of students working and not enrolled 6 years after entry
+pct75_earn_wne_p6 integer --75th percentile of earnings of students working and not enrolled 6 years after entry
+pct90_earn_wne_p6 integer --90th percentile of earnings of students working and not enrolled 6 years after entry
+sd_earn_wne_p6 integer --Standard deviation of earnings of students working and not enrolled 6 years after entry
+count_wne_inc1_p6 integer --Number of students working and not enrolled 6 years after entry in the lowest income tercile $0-$30,000
+count_wne_inc2_p6 integer --Number of students working and not enrolled 6 years after entry in the middle income tercile $30,001-$75,000
+count_wne_inc3_p6 integer --Number of students working and not enrolled 6 years after entry in the highest income tercile $75,001+ 
+count_wne_indep0_inc1_p6 integer --Number of dependent students working and not enrolled 6 years after entry in the lowest income tercile $0-$30,000
+count_wne_indep0_p6 integer --Number of dependent students working and not enrolled 6 years after entry
+count_wne_indep1_p6 integer --Number of independent students working and not enrolled 6 years after entry
+count_wne_male0_p6 integer --Number of female students working and not enrolled 6 years after entry
+count_wne_male1_p6 integer --Number of male students working and not enrolled 6 years after entry
+gt_25k_p6 float --Share of students earning over $25,000/year (threshold earnings) 6 years after entry
+gt_28k_p6 float --Share of students earning over $28,000/year (threshold earnings) 6 years after entry
+mn_earn_wne_inc1_p6 float --Mean earnings of students working and not enrolled 6 years after entry in the lowest income tercile $0-$30,000
+mn_earn_wne_inc2_p6 float --Mean earnings of students working and not enrolled 6 years after entry in the middle income tercile $30,001-$75,000
+mn_earn_wne_inc3_p6 float --Mean earnings of students working and not enrolled 6 years after entry in the highest income tercile $75,001+ 
+mn_earn_wne_indep0_inc1_p6 float --Mean earnings of dependent students working and not enrolled 6 years after entry in the lowest income tercile $0-$30,000
+mn_earn_wne_indep0_p6 float --Mean earnings of dependent students working and not enrolled 6 years after entry
+mn_earn_wne_indep1_p6 float --Mean earnings of independent students working and not enrolled 6 years after entry
+mn_earn_wne_male0_p6 float --Mean earnings of female students working and not enrolled 6 years after entry
+mn_earn_wne_male1_p6 float --Mean earnings of male students working and not enrolled 6 years after entry
+count_nwne_p7 float --Number of students not working and not enrolled 7 years after entry
+count_wne_p7 integer --Number of students working and not enrolled 7 years after entry
+mn_earn_wne_p7 float --Mean earnings of students working and not enrolled 7 years after entry
+sd_earn_wne_p7 float --Standard deviation of earnings of students working and not enrolled 7 years after entry
+gt_25k_p7 float --Share of students earning over $25,000/year (threshold earnings) 7 years after entry
+count_nwne_p8 integer --Number of students not working and not enrolled 8 years after entry
+count_wne_p8 integer --Number of students working and not enrolled 8 years after entry
+mn_earn_wne_p8 float --Mean earnings of students working and not enrolled 8 years after entry
+md_earn_wne_p8 float --Median earnings of students working and not enrolled 8 years after entry
+pct10_earn_wne_p8 integer --10th percentile of earnings of students working and not enrolled 8 years after entry
+pct25_earn_wne_p8 integer --25th percentile of earnings of students working and not enrolled 8 years after entry
+pct75_earn_wne_p8 integer --75th percentile of earnings of students working and not enrolled 8 years after entry
+pct90_earn_wne_p8 integer --90th percentile of earnings of students working and not enrolled 8 years after entry
+sd_earn_wne_p8 float --Standard deviation of earnings of students working and not enrolled 8 years after entry
+gt_25k_p8 float --Share of students earning over $25,000/year (threshold earnings) 8 years after entry
+gt_28k_p8 float --Share of students earning over $28,000/year (threshold earnings) 8 years after entry
+count_nwne_p9 integer --Number of students not working and not enrolled 9 years after entry
+count_wne_p9 integer --Number of students working and not enrolled 9 years after entry
+mn_earn_wne_p9 float --Mean earnings of students working and not enrolled 9 years after entry
+sd_earn_wne_p9 float --Standard deviation of earnings of students working and not enrolled 9 years after entry
+gt_25k_p9 float --Share of students earning over $25,000/year (threshold earnings) 9 years after entry
+debt_mdn_supp float --Median debt, suppressed for n=30
+grad_debt_mdn_supp float --Median debt of completers, suppressed for n=30
+grad_debt_mdn10yr_supp float --Median debt of completers expressed in 10-year monthly payments, suppressed for n=30
+rpy_3yr_rt_supp float --3-year repayment rate, suppressed for n=30
+lo_inc_rpy_3yr_rt_supp float --3-year repayment rate for low-income (less than $30,000 in nominal family income) students, suppressed for n=30
+md_inc_rpy_3yr_rt_supp float --3-year repayment rate for middle-income (between $30,000 and $75,000 in nominal family income) students, suppressed for n=30
+hi_inc_rpy_3yr_rt_supp float --3-year repayment rate for high-income (above $75,000 in nominal family income) students, suppressed for n=30
+compl_rpy_3yr_rt_supp float --3-year repayment rate for completers, suppressed for n=30
+noncom_rpy_3yr_rt_supp float --3-year repayment rate for non-completers, suppressed for n=30
+dep_rpy_3yr_rt_supp float --3-year repayment rate for dependent students, suppressed for n=30
+ind_rpy_3yr_rt_supp float --3-year repayment rate for independent students, suppressed for n=30
+pell_rpy_3yr_rt_supp float --3-year repayment rate for Pell students, suppressed for n=30
+nopell_rpy_3yr_rt_supp float --3-year repayment rate for no-Pell students, suppressed for n=30
+female_rpy_3yr_rt_supp float --3-year repayment rate for female students, suppressed for n=30
+male_rpy_3yr_rt_supp float --3-year repayment rate for male students, suppressed for n=30
+firstgen_rpy_3yr_rt_supp float --3-year repayment rate for first-generation students, suppressed for n=30
+notfirstgen_rpy_3yr_rt_supp float --3-year repayment rate for non-first-generation students, suppressed for n=30
+c150_l4_pooled_supp float --Completion rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion) , pooled in two-year rolling averages and suppressed for small n size
+c150_4_pooled_supp float --Completion rate for first-time, full-time students at four-year institutions (150% of expected time to completion) , pooled in two-year rolling averages and suppressed for small n size.
+c200_l4_pooled_supp float --Completion rate for first-time, full-time students at less-than-four-year institutions (200% of expected time to completion), pooled in two-year rolling averages and suppressed for small n size. 
+c200_4_pooled_supp float --Completion rate for first-time, full-time students at four-year institutions (200% of expected time to completion), pooled in two-year rolling averages and suppressed for small n size
+alias autocomplete --Institution name aliases
+c100_4 float --Completion rate for first-time, full-time students at four-year institutions (100% of expected time to completion)
+d100_4 integer --Adjusted cohort count for completion rate at four-year institutions (denominator of 100% completion rate)
+c100_l4 float --Completion rate for first-time, full-time students at less-than-four-year institutions (100% of expected time to completion)
+d100_l4 integer --Adjusted cohort count for completion rate at less-than-four-year institutions (denominator of 100% completion rate)
+trans_4 float --Transfer rate for first-time, full-time students at four-year institutions (within 150% of expected time to completion/6 years)
+dtrans_4 integer --Adjusted cohort count for transfer rate at four-year institutions (denominator of 150% transfer rate)
+trans_l4 float --Transfer rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion)
+dtrans_l4 integer --Adjusted cohort count for transfer rate at less-than-four-year institutions (denominator of 150% transfer rate)
+iclevel integer --Level of institution
+ugds_men float --Total share of enrollment of undergraduate degree-seeking students who are men
+ugds_women float --Total share of enrollment of undergraduate degree-seeking students who are women
+cdr2_denom integer --Number of students in the cohort for the two-year cohort default rate
+cdr3_denom integer --Number of students in the cohort for the three-year cohort default rate
+openadmp integer --Open admissions policy indicator
+d_pctpell_pctfloan integer --Number of undergraduate students (denominator percent receiving a pell grant or federal student loan)
+ugnonds integer --Number of non-degree-seeking undergraduate students
+grads integer --Number of graduate students
+d150_4_white integer --Adjusted cohort count for completion rate of White students at four-year institutions (denominator of 150% completion rate)
+d150_4_black integer --Adjusted cohort count for completion rate of Black/African American students at four-year institutions (denominator of 150% completion rate)
+d150_4_hisp integer --Adjusted cohort count for completion rate of Hispanic students at four-year institutions (denominator of 150% completion rate)
+d150_4_asian integer --Adjusted cohort count for completion rate of Asian students at four-year institutions (denominator of 150% completion rate)
+d150_4_aian integer --Adjusted cohort count for completion rate of American Indian/Alaska Native students at four-year institutions (denominator of 150% completion rate)
+d150_4_nhpi integer --Adjusted cohort count for completion rate of Native Hawaiian/Pacific Islander students at four-year institutions (denominator of 150% completion rate)
+d150_4_2mor integer --Adjusted cohort count for completion rate of students of Two or More Races at four-year institutions (denominator of 150% completion rate)
+d150_4_nra integer --Adjusted cohort count for completion rate of U.S. Nonresident students at four-year institutions (denominator of 150% completion rate)
+d150_4_unkn integer --Adjusted cohort count for completion rate of students of Unknown race at four-year institutions (denominator of 150% completion rate)
+d150_l4_white integer --Adjusted cohort count for completion rate of White students at less-than-four-year institutions (denominator of 150% completion rate)
+d150_l4_black integer --Adjusted cohort count for completion rate of Black/African American students at less-than-four-year institutions (denominator of 150% completion rate)
+d150_l4_hisp integer --Adjusted cohort count for completion rate of Hispanic students at less-than-four-year institutions (denominator of 150% completion rate)
+d150_l4_asian integer --Adjusted cohort count for completion rate of Asian students at less-than-four-year institutions (denominator of 150% completion rate)
+d150_l4_aian integer --Adjusted cohort count for completion rate of American Indian/Alaska Native students at less-than-four-year institutions (denominator of 150% completion rate)
+d150_l4_nhpi integer --Adjusted cohort count for completion rate of Native Hawaiian/Pacific Islander students at less-than-four-year institutions (denominator of 150% completion rate)
+d150_l4_2mor integer --Adjusted cohort count for completion rate of students of Two or More Races at less-than-four-year institutions (denominator of 150% completion rate)
+d150_l4_nra integer --Adjusted cohort count for completion rate of U.S. Nonresident students at less-than-four-year institutions (denominator of 150% completion rate)
+d150_l4_unkn integer --Adjusted cohort count for completion rate of students of Unknown race at less-than-four-year institutions (denominator of 150% completion rate)
+d150_4_whitenh integer --Adjusted cohort count for completion rate of White, non-Hispanic students at four-year institutions (denominator of 150% completion rate)
+d150_4_blacknh integer --Adjusted cohort count for completion rate of Black, non-Hispanic students at four-year institutions (denominator of 150% completion rate)
+d150_4_api integer --Adjusted cohort count for completion rate of Asian/Pacific Islander students at four-year institutions (denominator of 150% completion rate)
+d150_4_aianold integer --Adjusted cohort count for completion rate of American Indian/Alaska Native students at four-year institutions (denominator of 150% completion rate)
+d150_4_hispold integer --Adjusted cohort count for completion rate of Hispanic students at four-year institutions (denominator of 150% completion rate)
+d150_l4_whitenh integer --Adjusted cohort count for completion rate of White, non-Hispanic students at less-than-four-year institutions (denominator of 150% completion rate)
+d150_l4_blacknh integer --Adjusted cohort count for completion rate of Black, non-Hispanic students at less-than-four-year institutions (denominator of 150% completion rate)
+d150_l4_api integer --Adjusted cohort count for completion rate of Asian/Pacific Islander students at less-than-four-year institutions (denominator of 150% completion rate)
+d150_l4_aianold integer --Adjusted cohort count for completion rate of American Indian/Alaska Native students at less-than-four-year institutions (denominator of 150% completion rate)
+d150_l4_hispold integer --Adjusted cohort count for completion rate of Hispanic students at less-than-four-year institutions (denominator of 150% completion rate)
+accredcode string --Code corresponding to accreditor (as captured from PEPS)
+t4approvaldate string --Date that institution was first approved to participate in Title IV aid programs
+omacht6_ftft integer --Adjusted cohort count of full-time, first-time students (denominator for the percentage receiving an award within 6 years of entry)
+omawdp6_ftft float --Percentage of full-time, first-time student receiving an award within 6 years of entry
+omacht8_ftft integer --Adjusted cohort count of full-time, first-time students (denominator for the 8-year outcomes percentages)
+omawdp8_ftft float --Percentage of full-time, first-time student receiving an award within 8 years of entry
+omenryp8_ftft float --Percentage of full-time, first-time students that did not receive an award and are still enrolled at this institution 8 years after entry
+omenrap8_ftft float --Percentage of full-time, first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+omenrup8_ftft float --Percentage of full-time, first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+omacht6_ptft integer --Adjusted cohort count of part-time, first-time students (denominator for the percentage receiving an award within 6 years of entry)
+omawdp6_ptft float --Percentage of part-time, first-time student receiving an award within 6 years of entry
+omacht8_ptft integer --Adjusted cohort count of part-time, first-time students (denominator for the 8-year outcomes percentages)
+omawdp8_ptft float --Percentage of part-time, first-time student receiving an award within 8 years of entry
+omenryp8_ptft float --Percentage of part-time, first-time students that did not receive an award and are still enrolled at this institution 8 years after entry
+omenrap8_ptft float --Percentage of part-time, first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+omenrup8_ptft float --Percentage of part-time, first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+omacht6_ftnft integer --Adjusted cohort count of full-time, not first-time students (denominator for the percentage receiving an award within 6 years of entry)
+omawdp6_ftnft float --Percentage of full-time, not first-time student receiving an award within 6 years of entry
+omacht8_ftnft integer --Adjusted cohort count of full-time, not first-time students (denominator for the 8-year outcomes percentages)
+omawdp8_ftnft float --Percentage of full-time, not first-time student receiving an award within 8 years of entry
+omenryp8_ftnft float --Percentage of full-time, not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry
+omenrap8_ftnft float --Percentage of full-time, not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+omenrup8_ftnft float --Percentage of full-time, not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+omacht6_ptnft integer --Adjusted cohort count of part-time, not first-time students (denominator for the percentage receiving an award within 6 years of entry)
+omawdp6_ptnft float --Percentage of part-time, not first-time student receiving an award within 6 years of entry
+omacht8_ptnft integer --Adjusted cohort count of part-time, not first-time students (denominator for the 8-year outcomes percentages)
+omawdp8_ptnft float --Percentage of part-time, not first-time student receiving an award within 8 years of entry
+omenryp8_ptnft float --Percentage of part-time, not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry
+omenrap8_ptnft float --Percentage of part-time, not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+omenrup8_ptnft float --Percentage of part-time, not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+ret_ft4_pooled float --First-time, full-time student retention rate at four-year institutions
+ret_ftl4_pooled float --First-time, full-time student retention rate at less-than-four-year institutions
+ret_pt4_pooled float --First-time, part-time student retention rate at four-year institutions
+ret_ptl4_pooled float --First-time, part-time student retention rate at less-than-four-year institutions
+ret_ft_den4_pooled float --Adjusted cohort count for the first-time, full-time student retention rate at four-year institutions (denominator of the retention rate)
+ret_ft_denl4_pooled float --Adjusted cohort count for the first-time, full-time student retention rate at less-than-four-year institutions (denominator of the retention rate)
+ret_pt_den4_pooled float --Adjusted cohort count for the first-time, part-time student retention rate at four-year institutions (denominator of the retention rate)
+ret_pt_denl4_pooled float --Adjusted cohort count for the first-time, part-time student retention rate at less-than-four-year institutions (denominator of the retention rate)
+poolyrsret_ft integer --Years used for rolling averages of full-time retention rate RET_FT[4/L4]_POOLED
+poolyrsret_pt integer --Years used for rolling averages of part-time retention rate RET_PT[4/L4]_POOLED
+ret_ft4_pooled_supp float --First-time, full-time student retention rate at four-year institutions
+ret_ftl4_pooled_supp float --First-time, full-time student retention rate at less-than-four-year institutions
+ret_pt4_pooled_supp float --First-time, part-time student retention rate at four-year institutions
+ret_ptl4_pooled_supp float --First-time, part-time student retention rate at less-than-four-year institutions
+trans_4_pooled float --Transfer rate for first-time, full-time students at four-year institutions (within 150% of expected time to completion/6 years)
+trans_l4_pooled float --Transfer rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion)
+dtrans_4_pooled integer --Adjusted cohort count for transfer rate at four-year institutions (denominator of 150% transfer rate)
+dtrans_l4_pooled integer --Adjusted cohort count for transfer rate at less-than-four-year institutions (denominator of 150% transfer rate)
+trans_4_pooled_supp float --Transfer rate for first-time, full-time students at four-year institutions (within 150% of expected time to completion/6 years)
+trans_l4_pooled_supp float --Transfer rate for first-time, full-time students at less-than-four-year institutions (150% of expected time to completion)
+c100_4_pooled float --Completion rate for first-time, full-time students at four-year institutions (100% of expected time to completion), pooled for rolling averages
+c100_l4_pooled float --Completion rate for first-time, full-time students at less-than-four-year institutions (100% of expected time to completion), pooled for rolling averages
+d100_4_pooled integer --Adjusted cohort count for completion rate at four-year institutions (denominator of 100% completion rate), pooled for rolling averages
+d100_l4_pooled integer --Adjusted cohort count for completion rate at less-than-four-year institutions (denominator of 100% completion rate), pooled for rolling averages
+poolyrs100 integer --Years used for rolling averages of completion rate C100_[4/L4]_POOLED
+c100_4_pooled_supp float --Completion rate for first-time, full-time students at four-year institutions (100% of expected time to completion), pooled for rolling averages and suppressed for small n size.
+c100_l4_pooled_supp float --Completion rate for first-time, full-time students at less-than-four-year institutions (100% of expected time to completion), pooled for rolling averages and suppressed for small n size.
+c150_4_pell float --Completion rate for first-time, full-time students receiving a Pell Grant during their first year of college at four-year institutions (150% of expected time to completion)
+d150_4_pell integer --Adjusted cohort count for Pell Grant recipient completion rate at four-year institutions (denominator of 150% Pell Grant recipient completion rate)
+c150_l4_pell float --Completion rate for first-time, full-time students receiving a Pell Grant during their first year of college at less-than-four-year institutions (150% of expected time to completion)
+d150_l4_pell integer --Adjusted cohort count for Pell Grant recipient completion rate at less-than-four-year institutions (denominator of 150% Pell Grant recipient completion rate)
+c150_4_loannopell float --Completion rate for first-time, full-time students receiving a Direct Subsidized Loan but not a Pell Grant during their first year of college at four-year institutions (150% of expected time to completion)
+d150_4_loannopell integer --Adjusted cohort count for Direct Subsidized Loan recipients who did not receive a Pell Grant completion rate at four-year institutions (denominator of 150% Direct Subsidized Loan recipient who did not receive a Pell Grant completion rate)
+c150_l4_loannopell float --Completion rate for first-time, full-time students receiving a Direct Subsidized Loan but not a Pell Grant during their first year of college at less-than-four-year institutions (150% of expected time to completion)
+d150_l4_loannopell integer --Adjusted cohort count for Direct Subsidized Loan recipients who did not receive a Pell Grant completion rate at less-than-four-year institutions (denominator of 150% Direct Subsidized Loan recipient who did not receive a Pell Grant completion rate)
+c150_4_noloannopell float --Completion rate for first-time, full-time students receiving neither a Direct Subsidized Loan or a Pell Grant during their first year of college at four-year institutions (150% of expected time to completion)
+d150_4_noloannopell integer --Adjusted cohort count for those who did not receive a Direct Subsidized Loan or a Pell Grant completion rate at four-year institutions (denominator of 150% did not receive a Direct Subsidized Loan or Pell Grant completion rate)
+c150_l4_noloannopell float --Completion rate for first-time, full-time students receiving neither a Direct Subsidized Loan or a Pell Grant during their first year of college at less-than-four-year institutions (150% of expected time to completion)
+d150_l4_noloannopell integer --Adjusted cohort count for those who did not receive a Direct Subsidized Loan or a Pell Grant completion rate at less-than-four-year institutions (denominator of 150% did not receive a Direct Subsidized Loan or Pell Grant completion rate)
+omacht6_ftft_pooled integer --Adjusted cohort count of full-time, first-time students (denominator for the percentage receiving an award within 6 years of entry), pooled across years.
+omawdp6_ftft_pooled float --Percentage of full-time, first-time student receiving an award within 6 years of entry, pooled in rolling averages.
+omacht8_ftft_pooled integer --Adjusted cohort count of full-time, first-time students (denominator for the 8-year outcomes percentages), pooled across years.
+omawdp8_ftft_pooled float --Percentage of full-time, first-time student receiving an award within 8 years of entry, pooled in rolling averages.
+omenryp8_ftft_pooled float --Percentage of full-time, first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages.
+omenrap8_ftft_pooled float --Percentage of full-time, first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages.
+omenrup8_ftft_pooled float --Percentage of full-time, first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages.
+omacht6_ptft_pooled integer --Adjusted cohort count of part-time, first-time students (denominator for the percentage receiving an award within 6 years of entry), pooled across years.
+omawdp6_ptft_pooled float --Percentage of part-time, first-time student receiving an award within 6 years of entry, pooled in rolling averages.
+omacht8_ptft_pooled integer --Adjusted cohort count of part-time, first-time students (denominator for the 8-year outcomes percentages), pooled across years.
+omawdp8_ptft_pooled float --Percentage of part-time, first-time student receiving an award within 8 years of entry, pooled in rolling averages.
+omenryp8_ptft_pooled float --Percentage of part-time, first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages.
+omenrap8_ptft_pooled float --Percentage of part-time, first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages.
+omenrup8_ptft_pooled float --Percentage of part-time, first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages.
+omacht6_ftnft_pooled integer --Adjusted cohort count of full-time, not first-time students (denominator for the percentage receiving an award within 6 years of entry), pooled across years.
+omawdp6_ftnft_pooled float --Percentage of full-time, not first-time student receiving an award within 6 years of entry, pooled in rolling averages.
+omacht8_ftnft_pooled integer --Adjusted cohort count of full-time, not first-time students (denominator for the 8-year outcomes percentages), pooled across years.
+omawdp8_ftnft_pooled float --Percentage of full-time, not first-time student receiving an award within 8 years of entry, pooled in rolling averages.
+omenryp8_ftnft_pooled float --Percentage of full-time, not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages.
+omenrap8_ftnft_pooled float --Percentage of full-time, not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages.
+omenrup8_ftnft_pooled float --Percentage of full-time, not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages.
+omacht6_ptnft_pooled integer --Adjusted cohort count of part-time, not first-time students (denominator for the percentage receiving an award within 6 years of entry), pooled across years.
+omawdp6_ptnft_pooled float --Percentage of part-time, not first-time student receiving an award within 6 years of entry, pooled in rolling averages.
+omacht8_ptnft_pooled integer --Adjusted cohort count of part-time, not first-time students (denominator for the 8-year outcomes percentages), pooled across years.
+omawdp8_ptnft_pooled float --Percentage of part-time, not first-time student receiving an award within 8 years of entry, pooled in rolling averages.
+omenryp8_ptnft_pooled float --Percentage of part-time, not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages.
+omenrap8_ptnft_pooled float --Percentage of part-time, not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages.
+omenrup8_ptnft_pooled float --Percentage of part-time, not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages.
+poolyrsom_ftft integer --Years used for rolling averages of outcome metrics OM[ACHT6/AWDP6/ACHT8/AWDP8/ENRAP8/ENRYP8/ENRUP8]_FTFT_POOLED
+poolyrsom_ptft integer --Years used for rolling averages of outcome metrics OM[ACHT6/AWDP6/ACHT8/AWDP8/ENRAP8/ENRYP8/ENRUP8]_PTFT_POOLED
+poolyrsom_ftnft integer --Years used for rolling averages of outcome metrics OM[ACHT6/AWDP6/ACHT8/AWDP8/ENRAP8/ENRYP8/ENRUP8]_FTNFT_POOLED
+poolyrsom_ptnft integer --Years used for rolling averages of outcome metrics OM[ACHT6/AWDP6/ACHT8/AWDP8/ENRAP8/ENRYP8/ENRUP8]_PTNFT_POOLED
+omawdp6_ftft_pooled_supp float --Percentage of full-time, first-time student receiving an award within 6 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp8_ftft_pooled_supp float --Percentage of full-time, first-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenryp8_ftft_pooled_supp float --Percentage of full-time, first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap8_ftft_pooled_supp float --Percentage of full-time, first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup8_ftft_pooled_supp float --Percentage of full-time, first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp6_ptft_pooled_supp float --Percentage of part-time, first-time student receiving an award within 6 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp8_ptft_pooled_supp float --Percentage of part-time, first-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenryp8_ptft_pooled_supp float --Percentage of part-time, first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap8_ptft_pooled_supp float --Percentage of part-time, first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup8_ptft_pooled_supp float --Percentage of part-time, first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp6_ftnft_pooled_supp float --Percentage of full-time, not first-time student receiving an award within 6 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp8_ftnft_pooled_supp float --Percentage of full-time, not first-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenryp8_ftnft_pooled_supp float --Percentage of full-time, not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap8_ftnft_pooled_supp float --Percentage of full-time, not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup8_ftnft_pooled_supp float --Percentage of full-time, not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp6_ptnft_pooled_supp float --Percentage of part-time, not first-time student receiving an award within 6 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp8_ptnft_pooled_supp float --Percentage of part-time, not first-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenryp8_ptnft_pooled_supp float --Percentage of part-time, not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap8_ptnft_pooled_supp float --Percentage of part-time, not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup8_ptnft_pooled_supp float --Percentage of part-time, not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+schtype integer --Control of institution, per PEPS
+opeflag integer --Title IV eligibility type
+prgmofr integer --Number of programs offered
+cipcode1 string --CIP code of largest program
+cipcode2 string --CIP code of program #2
+cipcode3 string --CIP code of program #3
+cipcode4 string --CIP code of program #4
+cipcode5 string --CIP code of program #5
+cipcode6 string --CIP code of program #6
+ciptitle1 string --CIP text description of largest program
+ciptitle2 string --CIP text description of program #2
+ciptitle3 string --CIP text description of program #3
+ciptitle4 string --CIP text description of program #4
+ciptitle5 string --CIP text description of program #5
+ciptitle6 string --CIP text description of program #6
+ciptfbs1 integer --Tuition, fees, books, and supply charges for largest program (full program)
+ciptfbs2 integer --Tuition, fees, books, and supply charges for program #2 (full program)
+ciptfbs3 integer --Tuition, fees, books, and supply charges for program #3 (full program)
+ciptfbs4 integer --Tuition, fees, books, and supply charges for program #4 (full program)
+ciptfbs5 integer --Tuition, fees, books, and supply charges for program #5 (full program)
+ciptfbs6 integer --Tuition, fees, books, and supply charges for program #6 (full program)
+ciptfbsannual1 integer --Tuition, fees, books, and supply charges for largest program (annualized based on institution's academic year)
+ciptfbsannual2 integer --Tuition, fees, books, and supply charges for program #2 (annualized based on institution's academic year)
+ciptfbsannual3 integer --Tuition, fees, books, and supply charges for program #3 (annualized based on institution's academic year)
+ciptfbsannual4 integer --Tuition, fees, books, and supply charges for program #4 (annualized based on institution's academic year)
+ciptfbsannual5 integer --Tuition, fees, books, and supply charges for program #5 (annualized based on institution's academic year)
+ciptfbsannual6 integer --Tuition, fees, books, and supply charges for program #6 (annualized based on institution's academic year)
+mthcmp1 integer --Average number of months needed to complete largest program
+mthcmp2 integer --Average number of months needed to complete program #2
+mthcmp3 integer --Average number of months needed to complete program #3
+mthcmp4 integer --Average number of months needed to complete program #4
+mthcmp5 integer --Average number of months needed to complete program #5
+mthcmp6 integer --Average number of months needed to complete program #6
+poolyrsom_all integer --Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_ALL_POOLED
+poolyrsom_firsttime integer --Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_FIRSTTIME_POOLED
+poolyrsom_notfirsttime integer --Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_NOTFIRSTTIME_POOLED
+poolyrsom_fulltime integer --Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_FULLTIME_POOLED
+poolyrsom_parttime integer --Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_PARTTIME_POOLED
+omenryp_all float --Percentage of all students that did not receive an award and are still enrolled at this institution 8 years after entry
+omenrap_all float --Percentage of all students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+omawdp8_all float --Percentage of all student receiving an award within 8 years of entry
+omenrup_all float --Percentage of all students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+omenryp_firsttime float --Percentage of first-time students that did not receive an award and are still enrolled at this institution 8 years after entry
+omenrap_firsttime float --Percentage of first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+omawdp8_firsttime float --Percentage of first-time student receiving an award within 8 years of entry
+omenrup_firsttime float --Percentage of first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+omenryp_notfirsttime float --Percentage of not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry
+omenrap_notfirsttime float --Percentage of not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+omawdp8_notfirsttime float --Percentage of not first-time student receiving an award within 8 years of entry
+omenrup_notfirsttime float --Percentage of not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+omenryp_fulltime float --Percentage of full-time students that did not receive an award and are still enrolled at this institution 8 years after entry
+omenrap_fulltime float --Percentage of full-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+omawdp8_fulltime float --Percentage of full-time student receiving an award within 8 years of entry
+omenrup_fulltime float --Percentage of full-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+omenryp_parttime float --Percentage of part-time students that did not receive an award and are still enrolled at this institution 8 years after entry
+omenrap_parttime float --Percentage of part-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+omawdp8_parttime float --Percentage of part-time student receiving an award within 8 years of entry
+omenrup_parttime float --Percentage of part-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+omenryp_all_pooled_supp float --Percentage of all students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap_all_pooled_supp float --Percentage of all students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp8_all_pooled_supp float --Percentage of all student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup_all_pooled_supp float --Percentage of all students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenryp_firsttime_pooled_supp float --Percentage of first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap_firsttime_pooled_supp float --Percentage of first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp8_firsttime_pooled_supp float --Percentage of first-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup_firsttime_pooled_supp float --Percentage of first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenryp_notfirsttime_pooled_supp float --Percentage of not first-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap_notfirsttime_pooled_supp float --Percentage of not first-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp8_notfirsttime_pooled_supp float --Percentage of not first-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup_notfirsttime_pooled_supp float --Percentage of not first-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenryp_fulltime_pooled_supp float --Percentage of full-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap_fulltime_pooled_supp float --Percentage of full-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp8_fulltime_pooled_supp float --Percentage of full-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup_fulltime_pooled_supp float --Percentage of full-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenryp_parttime_pooled_supp float --Percentage of part-time students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap_parttime_pooled_supp float --Percentage of part-time students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp8_parttime_pooled_supp float --Percentage of part-time student receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup_parttime_pooled_supp float --Percentage of part-time students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+ftftpctpell float --Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a Pell Grant
+ftftpctfloan float --Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a federal loan
+ug12mn integer --Unduplicated count of undergraduate students enrolled during a 12 month period
+g12mn integer --Unduplicated count of graduate students enrolled during a 12 month period
+scugffn integer --Number of full-time, first-time degree/certificate-seeking undergraduate students (denominator for percent full-time, first-time degree/certificate-seeking undergraduates receiving a pell grant or federal student loan)
+poolyrs_ftftaidpct integer --Years used for rolling averages of FTFTPCTPELL_POOLED_SUPP and FTFTPCTFLOAN_POOLED_SUPP
+ftftpctpell_pooled_supp float --Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a Pell Grant, pooled in rolling averages and suppressed for small n size
+ftftpctfloan_pooled_supp float --Percentage of full-time, first-time degree/certificate-seeking undergraduate students awarded a federal loan, pooled in rolling averages and suppressed for small n size
+scugffn_pooled integer --Number of full-time, first-time degree/certificate-seeking undergraduate students (denominator for percent full-time, first-time degree/certificate-seeking undergraduates receiving a pell grant or federal student loan), pooled in rolling averages
+pplus_pct_low integer --Lower bound of estimated percentage range of students whose parents took out a PLUS loan
+pplus_pct_high integer --Upper bound of estimated percentage range of students whose parents took out a PLUS loan
+pplus_pct_low_pooled_supp integer --Lower bound of estimated percentage range of students whose parents took out a PLUS loan, pooled in rolling averages and suppressed for small n size
+pplus_pct_high_pooled_supp integer --Upper bound of estimated percentage range of students whose parents took out a PLUS loan, pooled in rolling averages and suppressed for small n size
+poolyrs_pluspct integer --Years used for rolling averages of PPLUS_PCT_LOW_POOLED_SUPP and PPLUS_PCT_HIGH_POOLED_SUPP
+plus_debt_inst_n integer --Student recipient count for median PLUS loan debt disbursed at this institution
+plus_debt_inst_md integer --Median PLUS loan debt disbursed at this institution
+plus_debt_all_n integer --Student recipient count for median PLUS loan debt disbursed at all institutions
+plus_debt_all_md integer --Median PLUS loan debt disbursed at all institutions
+plus_debt_inst_comp_n integer --Student recipient count for median PLUS loan debt disbursed to completers at this institution
+plus_debt_inst_comp_md integer --Median PLUS loan debt disbursed to completers at this institution
+plus_debt_inst_comp_mdpay10 float --Median estimated monthly payment for PLUS loan debt disbursed to completers at this institution
+plus_debt_inst_comp_md_supp integer --Median PLUS loan debt disbursed to completers at this institution, suppressed for n=30
+plus_debt_inst_comp_mdpay10_supp float --Median estimated monthly payment for PLUS loan debt disbursed to completers at this institution, suppressed for n=30
+plus_debt_all_comp_n integer --Student recipient count for median PLUS loan debt disbursed to completers at all institutions
+plus_debt_all_comp_md integer --Median PLUS loan debt disbursed to completers at all institutions
+plus_debt_all_comp_mdpay10 float --Median estimated monthly payment for PLUS loan debt disbursed to completers at all institutions
+plus_debt_all_comp_md_supp integer --Median PLUS loan debt disbursed to completers at all institutions, suppressed for n=30
+plus_debt_all_comp_mdpay10_supp float --Median estimated monthly payment for PLUS loan debt disbursed to completers at all institutions, suppressed for n=30
+plus_debt_inst_nocomp_n integer --Student recipient count for median PLUS loan debt disbursed to non-completers at this institution
+plus_debt_inst_nocomp_md integer --Median PLUS loan debt disbursed to non-completers at this institution
+plus_debt_all_nocomp_n integer --Student recipient count for median PLUS loan debt disbursed to non-completers at all institutions
+plus_debt_all_nocomp_md integer --Median PLUS loan debt disbursed to non-completers at all institutions
+plus_debt_inst_male_n integer --Student recipient count for median PLUS loan debt disbursed to males at this institution
+plus_debt_inst_male_md integer --Median PLUS loan debt disbursed to males at this institution
+plus_debt_all_male_n integer --Student recipient count for median PLUS loan debt disbursed to males at all institutions
+plus_debt_all_male_md integer --Median PLUS loan debt disbursed to males at all institutions
+plus_debt_inst_nomale_n integer --Student recipient count for median PLUS loan debt disbursed to non-males at this institution
+plus_debt_inst_nomale_md integer --Median PLUS loan debt disbursed to non-males at this institution
+plus_debt_all_nomale_n integer --Student recipient count for median PLUS loan debt disbursed to non-males at all institutions
+plus_debt_all_nomale_md integer --Median PLUS loan debt disbursed to non-males at all institutions
+plus_debt_inst_pell_n integer --Student recipient count for median PLUS loan debt disbursed to Pell recipients at this institution
+plus_debt_inst_pell_md integer --Median PLUS loan debt disbursed to Pell recipients at this institution
+plus_debt_all_pell_n integer --Student recipient count for median PLUS loan debt disbursed to Pell recipients at all institutions
+plus_debt_all_pell_md integer --Median PLUS loan debt disbursed to Pell recipients at all institutions
+plus_debt_inst_nopell_n integer --Student recipient count for median PLUS loan debt disbursed to non-Pell-recipients at this institution
+plus_debt_inst_nopell_md integer --Median PLUS loan debt disbursed to non-Pell-recipients at this institution
+plus_debt_all_nopell_n integer --Student recipient count for median PLUS loan debt disbursed to non-Pell-recipients at all institutions
+plus_debt_all_nopell_md integer --Median PLUS loan debt disbursed to non-Pell-recipients at all institutions
+plus_debt_inst_staffthis_n integer --Student recipient count for median PLUS loan debt disbursed at this institution to Stafford loan recipients at this institution
+plus_debt_inst_staffthis_md integer --Median PLUS loan debt disbursed at this institution to Stafford loan recipients at this institution
+plus_debt_all_staffthis_n integer --Student recipient count for median PLUS loan debt disbursed at any institution to Stafford loan recipients at this institution
+plus_debt_all_staffthis_md integer --Median PLUS loan debt disbursed at any institution to Stafford loan recipients at this institution
+plus_debt_inst_nostaffthis_n integer --Student recipient count for median PLUS loan debt disbursed at this institution to students not receiving a Stafford loan at this institution
+plus_debt_inst_nostaffthis_md integer --Median PLUS loan debt disbursed at this institution to students not receiving a Stafford loan at this institution
+plus_debt_all_nostaffthis_n integer --Student recipient count for median PLUS loan debt disbursed at any institution to students not receiving a Stafford loan at this institution
+plus_debt_all_nostaffthis_md integer --Median PLUS loan debt disbursed at any institution to students not receiving a Stafford loan at this institution
+plus_debt_inst_staffany_n integer --Student recipient count for median PLUS loan debt disbursed at this institution to Stafford loan recipients at any institution
+plus_debt_inst_staffany_md integer --Median PLUS loan debt disbursed at this institution to Stafford loan recipients at any institution
+plus_debt_all_staffany_n integer --Student recipient count for median PLUS loan debt disbursed at any institution to Stafford loan recipients at any institution
+plus_debt_all_staffany_md integer --Median PLUS loan debt disbursed at any institution to Stafford loan recipients at any institution
+plus_debt_inst_nostaffany_n integer --Student recipient count for median PLUS loan debt disbursed at this institution to students not receiving a Stafford loan at any institution
+plus_debt_inst_nostaffany_md integer --Median PLUS loan debt disbursed at this institution to students not receiving a Stafford loan at any institution
+plus_debt_all_nostaffany_n integer --Student recipient count for median PLUS loan debt disbursed at any institution to students not receiving a Stafford loan at any institution
+plus_debt_all_nostaffany_md integer --Median PLUS loan debt disbursed at any institution to students not receiving a Stafford loan at any institution
+count_nwne_3yr integer --Number of graduates not working and not enrolled 3 years after completing
+count_wne_3yr integer --Number of graduates working and not enrolled 3 years after completing
+cntover150_3yr integer --Number of graduates working and not enrolled who earned more than 150% of the single-person household poverty threshold 3 years after completing
+dbrr1_fed_ug_n integer --Undergraduate federal student loan dollar-based 1-year repayment rate borrower count
+dbrr1_fed_ug_num long --Undergraduate federal student loan dollar-based 1-year repayment rate numerator
+dbrr1_fed_ug_den long --Undergraduate federal student loan dollar-based 1-year repayment rate denominator
+dbrr1_fed_ug_rt float --Undergraduate federal student loan dollar-based 1-year repayment rate
+dbrr1_fed_gr_n integer --Graduate federal student loan dollar-based 1-year repayment rate borrower count
+dbrr1_fed_gr_num long --Graduate federal student loan dollar-based 1-year repayment rate numerator
+dbrr1_fed_gr_den long --Graduate federal student loan dollar-based 1-year repayment rate denominator
+dbrr1_fed_gr_rt float --Graduate federal student loan dollar-based 1-year repayment rate
+dbrr1_fed_ugcomp_n integer --Undergraduate borrower completers undergraduate federal student loan dollar-based 1-year repayment rate borrower count
+dbrr1_fed_ugcomp_num long --Undergraduate borrower completers undergraduate federal student loan dollar-based 1-year repayment rate numerator
+dbrr1_fed_ugcomp_den long --Undergraduate borrower completers undergraduate federal student loan dollar-based 1-year repayment rate denominator
+dbrr1_fed_ugcomp_rt float --Undergraduate borrower completers undergraduate federal student loan dollar-based 1-year repayment rate
+dbrr1_fed_ugnocomp_n integer --Undergraduate borrower non-completers undergraduate federal student loan dollar-based 1-year repayment rate borrower count
+dbrr1_fed_ugnocomp_num long --Undergraduate borrower non-completers undergraduate federal student loan dollar-based 1-year repayment rate numerator
+dbrr1_fed_ugnocomp_den long --Undergraduate borrower non-completers undergraduate federal student loan dollar-based 1-year repayment rate denominator
+dbrr1_fed_ugnocomp_rt float --Undergraduate borrower non-completers undergraduate federal student loan dollar-based 1-year repayment rate repayment rate
+dbrr1_fed_ugunk_n integer --Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 1-year repayment rate borrower count
+dbrr1_fed_ugunk_num long --Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 1-year repayment rate numerator
+dbrr1_fed_ugunk_den long --Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 1-year repayment rate denominator
+dbrr1_fed_ugunk_rt float --Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 1-year repayment rate repayment rate
+dbrr1_fed_grcomp_n integer --Graduate borrower completers graduate federal student loan dollar-based 1-year repayment rate borrower count
+dbrr1_fed_grcomp_num long --Graduate borrower completers graduate federal student loan dollar-based 1-year repayment rate numerator
+dbrr1_fed_grcomp_den long --Graduate borrower completers graduate federal student loan dollar-based 1-year repayment rate denominator
+dbrr1_fed_grcomp_rt float --Graduate borrower completers graduate federal student loan dollar-based 1-year repayment rate
+dbrr1_fed_grnocomp_n integer --Graduate borrower non-completers graduate federal student loan dollar-based 1-year repayment rate borrower count
+dbrr1_fed_grnocomp_num long --Graduate borrower non-completers graduate federal student loan dollar-based 1-year repayment rate numerator
+dbrr1_fed_grnocomp_den long --Graduate borrower non-completers graduate federal student loan dollar-based 1-year repayment rate denominator
+dbrr1_fed_grnocomp_rt float --Graduate borrower non-completers graduate federal student loan dollar-based 1-year repayment rate repayment rate
+dbrr4_fed_ug_n integer --Undergraduate federal student loan dollar-based 4-year repayment rate borrower count
+dbrr4_fed_ug_num long --Undergraduate federal student loan dollar-based 4-year repayment rate numerator
+dbrr4_fed_ug_den long --Undergraduate federal student loan dollar-based 4-year repayment rate denominator
+dbrr4_fed_ug_rt float --Undergraduate federal student loan dollar-based 4-year repayment rate
+dbrr4_fed_gr_n integer --Graduate federal student loan dollar-based 4-year repayment rate borrower count
+dbrr4_fed_gr_num long --Graduate federal student loan dollar-based 4-year repayment rate numerator
+dbrr4_fed_gr_den long --Graduate federal student loan dollar-based 4-year repayment rate denominator
+dbrr4_fed_gr_rt float --Graduate federal student loan dollar-based 4-year repayment rate
+dbrr4_fed_ugcomp_n integer --Undergraduate borrower completers undergraduate federal student loan dollar-based 4-year repayment rate borrower count
+dbrr4_fed_ugcomp_num long --Undergraduate borrower completers undergraduate federal student loan dollar-based 4-year repayment rate numerator
+dbrr4_fed_ugcomp_den long --Undergraduate borrower completers undergraduate federal student loan dollar-based 4-year repayment rate denominator
+dbrr4_fed_ugcomp_rt float --Undergraduate borrower completers undergraduate federal student loan dollar-based 4-year repayment rate
+dbrr4_fed_ugnocomp_n integer --Undergraduate borrower non-completers undergraduate federal student loan dollar-based 4-year repayment rate borrower count
+dbrr4_fed_ugnocomp_num long --Undergraduate borrower non-completers undergraduate federal student loan dollar-based 4-year repayment rate numerator
+dbrr4_fed_ugnocomp_den long --Undergraduate borrower non-completers undergraduate federal student loan dollar-based 4-year repayment rate denominator
+dbrr4_fed_ugnocomp_rt float --Undergraduate borrower non-completers undergraduate federal student loan dollar-based 4-year repayment rate repayment rate
+dbrr4_fed_ugunk_n integer --Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 4-year repayment rate borrower count
+dbrr4_fed_ugunk_num long --Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 4-year repayment rate numerator
+dbrr4_fed_ugunk_den long --Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 4-year repayment rate denominator
+dbrr4_fed_ugunk_rt float --Undergraduate borrowers with unknown completion status undergraduate federal student loan dollar-based 4-year repayment rate repayment rate
+dbrr5_fed_ug_n integer --Undergraduate federal student loan dollar-based 5-year repayment rate borrower count
+dbrr5_fed_ug_num long --Undergraduate federal student loan dollar-based 5-year repayment rate numerator
+dbrr5_fed_ug_den long --Undergraduate federal student loan dollar-based 5-year repayment rate denominator
+dbrr5_fed_ug_rt float --Undergraduate federal student loan dollar-based 5-year repayment rate
+dbrr5_fed_gr_n integer --Graduate federal student loan dollar-based 5-year repayment rate borrower count
+dbrr5_fed_gr_num long --Graduate federal student loan dollar-based 5-year repayment rate numerator
+dbrr5_fed_gr_den long --Graduate federal student loan dollar-based 5-year repayment rate denominator
+dbrr5_fed_gr_rt float --Graduate federal student loan dollar-based 5-year repayment rate
+dbrr10_fed_ug_n integer --Undergraduate federal student loan dollar-based 10-year repayment rate borrower count
+dbrr10_fed_ug_num long --Undergraduate federal student loan dollar-based 10-year repayment rate numerator
+dbrr10_fed_ug_den long --Undergraduate federal student loan dollar-based 10-year repayment rate denominator
+dbrr10_fed_ug_rt float --Undergraduate federal student loan dollar-based 10-year repayment rate
+dbrr10_fed_gr_n integer --Graduate federal student loan dollar-based 10-year repayment rate borrower count
+dbrr10_fed_gr_num long --Graduate federal student loan dollar-based 10-year repayment rate numerator
+dbrr10_fed_gr_den long --Graduate federal student loan dollar-based 10-year repayment rate denominator
+dbrr10_fed_gr_rt float --Graduate federal student loan dollar-based 10-year repayment rate
+dbrr20_fed_ug_n integer --Undergraduate federal student loan dollar-based 20-year repayment rate borrower count
+dbrr20_fed_ug_num long --Undergraduate federal student loan dollar-based 20-year repayment rate numerator
+dbrr20_fed_ug_den long --Undergraduate federal student loan dollar-based 20-year repayment rate denominator
+dbrr20_fed_ug_rt float --Undergraduate federal student loan dollar-based 20-year repayment rate
+dbrr20_fed_gr_n integer --Graduate federal student loan dollar-based 20-year repayment rate borrower count
+dbrr20_fed_gr_num long --Graduate federal student loan dollar-based 20-year repayment rate numerator
+dbrr20_fed_gr_den long --Graduate federal student loan dollar-based 20-year repayment rate denominator
+dbrr20_fed_gr_rt float --Graduate federal student loan dollar-based 20-year repayment rate
+dbrr1_pp_ug_n integer --Undergraduate Parent PLUS Loan dollar-based 1-year repayment rate borrower count
+dbrr1_pp_ug_num long --Undergraduate Parent PLUS Loan dollar-based 1-year repayment rate numerator
+dbrr1_pp_ug_den long --Undergraduate Parent PLUS Loan dollar-based 1-year repayment rate denominator
+dbrr1_pp_ug_rt float --Undergraduate Parent PLUS Loan dollar-based 1-year repayment rate
+dbrr1_pp_ugcomp_n integer --Undergraduate student completers Parent PLUS Loan dollar-based 1-year repayment rate borrower count
+dbrr1_pp_ugcomp_num long --Undergraduate student completers Parent PLUS Loan dollar-based 1-year repayment rate numerator
+dbrr1_pp_ugcomp_den long --Undergraduate student completers Parent PLUS Loan dollar-based 1-year repayment rate denominator
+dbrr1_pp_ugcomp_rt float --Undergraduate student completers Parent PLUS Loan dollar-based 1-year repayment rate
+dbrr1_pp_ugnocomp_n integer --Undergraduate student non-completers Parent PLUS Loan dollar-based 1-year repayment rate borrower count
+dbrr1_pp_ugnocomp_num long --Undergraduate student non-completers Parent PLUS Loan dollar-based 1-year repayment rate numerator
+dbrr1_pp_ugnocomp_den long --Undergraduate student non-completers Parent PLUS Loan dollar-based 1-year repayment rate denominator
+dbrr1_pp_ugnocomp_rt float --Undergraduate student non-completers Parent PLUS Loan dollar-based 1-year repayment rate repayment rate
+dbrr1_pp_ugunk_n integer --Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 1-year repayment rate borrower count
+dbrr1_pp_ugunk_num long --Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 1-year repayment rate numerator
+dbrr1_pp_ugunk_den long --Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 1-year repayment rate denominator
+dbrr1_pp_ugunk_rt float --Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 1-year repayment rate repayment rate
+dbrr4_pp_ug_n integer --Undergraduate Parent PLUS Loan dollar-based 4-year repayment rate borrower count
+dbrr4_pp_ug_num long --Undergraduate Parent PLUS Loan dollar-based 4-year repayment rate numerator
+dbrr4_pp_ug_den long --Undergraduate Parent PLUS Loan dollar-based 4-year repayment rate denominator
+dbrr4_pp_ug_rt float --Undergraduate Parent PLUS Loan dollar-based 4-year repayment rate
+dbrr4_pp_ugcomp_n integer --Undergraduate student completers Parent PLUS Loan dollar-based 4-year repayment rate borrower count
+dbrr4_pp_ugcomp_num long --Undergraduate student completers Parent PLUS Loan dollar-based 4-year repayment rate numerator
+dbrr4_pp_ugcomp_den long --Undergraduate student completers Parent PLUS Loan dollar-based 4-year repayment rate denominator
+dbrr4_pp_ugcomp_rt float --Undergraduate student completers Parent PLUS Loan dollar-based 4-year repayment rate
+dbrr4_pp_ugnocomp_n integer --Undergraduate student non-completers Parent PLUS Loan dollar-based 4-year repayment rate borrower count
+dbrr4_pp_ugnocomp_num long --Undergraduate student non-completers Parent PLUS Loan dollar-based 4-year repayment rate numerator
+dbrr4_pp_ugnocomp_den long --Undergraduate student non-completers Parent PLUS Loan dollar-based 4-year repayment rate denominator
+dbrr4_pp_ugnocomp_rt float --Undergraduate student non-completers Parent PLUS Loan dollar-based 4-year repayment rate repayment rate
+dbrr4_pp_ugunk_n integer --Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 4-year repayment rate borrower count
+dbrr4_pp_ugunk_num long --Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 4-year repayment rate numerator
+dbrr4_pp_ugunk_den long --Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 4-year repayment rate denominator
+dbrr4_pp_ugunk_rt float --Undergraduate students with unknown completion status Parent PLUS Loan dollar-based 4-year repayment rate repayment rate
+dbrr5_pp_ug_n integer --Undergraduate Parent PLUS Loan dollar-based 5-year repayment rate borrower count
+dbrr5_pp_ug_num long --Undergraduate Parent PLUS Loan dollar-based 5-year repayment rate numerator
+dbrr5_pp_ug_den long --Undergraduate Parent PLUS Loan dollar-based 5-year repayment rate denominator
+dbrr5_pp_ug_rt float --Undergraduate Parent PLUS Loan dollar-based 5-year repayment rate
+dbrr10_pp_ug_n integer --Undergraduate Parent PLUS Loan dollar-based 10-year repayment rate borrower count
+dbrr10_pp_ug_num long --Undergraduate Parent PLUS Loan dollar-based 10-year repayment rate numerator
+dbrr10_pp_ug_den long --Undergraduate Parent PLUS Loan dollar-based 10-year repayment rate denominator
+dbrr10_pp_ug_rt float --Undergraduate Parent PLUS Loan dollar-based 10-year repayment rate
+dbrr20_pp_ug_n integer --Undergraduate Parent PLUS Loan dollar-based 20-year repayment rate borrower count
+dbrr20_pp_ug_num long --Undergraduate Parent PLUS Loan dollar-based 20-year repayment rate numerator
+dbrr20_pp_ug_den long --Undergraduate Parent PLUS Loan dollar-based 20-year repayment rate denominator
+dbrr20_pp_ug_rt float --Undergraduate Parent PLUS Loan dollar-based 20-year repayment rate
+bbrr1_fed_ug_n integer --Undergraduate federal student loan borrower-based 1-year borrower count
+bbrr1_fed_ug_dflt float --Percentage of undergraduate federal student loan borrowers in default after 1 year
+bbrr1_fed_ug_dlnq float --Percentage of undergraduate federal student loan borrowers in delinquency after 1 year
+bbrr1_fed_ug_fbr float --Percentage of undergraduate federal student loan borrowers in forbearance after 1 year
+bbrr1_fed_ug_dfr float --Percentage of undergraduate federal student loan borrowers in deferment after 1 year
+bbrr1_fed_ug_noprog float --Percentage of undergraduate federal student loan borrowers not making progress after 1 year
+bbrr1_fed_ug_makeprog float --Percentage of undergraduate federal student loan borrowers making progress after 1 year
+bbrr1_fed_ug_paidinfull float --Percentage of undergraduate federal student loan borrowers paid in full after 1 year
+bbrr1_fed_ug_discharge float --Percentage of undergraduate federal student loan borrowers with all loans discharged after 1 year
+bbrr1_fed_ugcomp_n integer --Undergraduate completer undergraduate federal student loan borrower-based 1-year borrower count
+bbrr1_fed_ugcomp_dflt float --Percentage of undergraduate completer undergraduate federal student loan borrowers in default after 1 year
+bbrr1_fed_ugcomp_dlnq float --Percentage of undergraduate completer undergraduate federal student loan borrowers in delinquency after 1 year
+bbrr1_fed_ugcomp_fbr float --Percentage of undergraduate completer undergraduate federal student loan borrowers in forbearance after 1 year
+bbrr1_fed_ugcomp_dfr float --Percentage of undergraduate completer undergraduate federal student loan borrowers in deferment after 1 year
+bbrr1_fed_ugcomp_noprog float --Percentage of undergraduate completer undergraduate federal student loan borrowers not making progress after 1 year
+bbrr1_fed_ugcomp_makeprog float --Percentage of undergraduate completer undergraduate federal student loan borrowers making progress after 1 year
+bbrr1_fed_ugcomp_paidinfull float --Percentage of undergraduate completer undergraduate federal student loan borrowers paid in full after 1 year
+bbrr1_fed_ugcomp_discharge float --Percentage of undergraduate completer undergraduate federal student loan borrowers with all loans discharged after 1 year
+bbrr1_fed_ugnocomp_n integer --Undergraduate non-completer undergraduate federal student loan borrower-based 1-year borrower count
+bbrr1_fed_ugnocomp_dflt float --Percentage of undergraduate non-completer undergraduate federal student loan borrowers in default after 1 year
+bbrr1_fed_ugnocomp_dlnq float --Percentage of undergraduate non-completer undergraduate federal student loan borrowers in delinquency after 1 year
+bbrr1_fed_ugnocomp_fbr float --Percentage of undergraduate non-completer undergraduate federal student loan borrowers in forbearance after 1 year
+bbrr1_fed_ugnocomp_dfr float --Percentage of undergraduate non-completer undergraduate federal student loan borrowers in deferment after 1 year
+bbrr1_fed_ugnocomp_noprog float --Percentage of undergraduate non-completer undergraduate federal student loan borrowers not making progress after 1 year
+bbrr1_fed_ugnocomp_makeprog float --Percentage of undergraduate non-completer undergraduate federal student loan borrowers making progress after 1 year
+bbrr1_fed_ugnocomp_paidinfull float --Percentage of undergraduate non-completer undergraduate federal student loan borrowers paid in full after 1 year
+bbrr1_fed_ugnocomp_discharge float --Percentage of undergraduate non-completer undergraduate federal student loan borrowers with all loans discharged after 1 year
+bbrr1_fed_ugunk_n integer --Undergraduate unknown completion status undergraduate federal student loan borrower-based 1-year borrower count
+bbrr1_fed_ugunk_dflt float --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in default after 1 year
+bbrr1_fed_ugunk_dlnq float --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in delinquency after 1 year
+bbrr1_fed_ugunk_fbr float --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in forbearance after 1 year
+bbrr1_fed_ugunk_dfr float --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in deferment after 1 year
+bbrr1_fed_ugunk_noprog float --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers not making progress after 1 year
+bbrr1_fed_ugunk_makeprog float --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers making progress after 1 year
+bbrr1_fed_ugunk_paidinfull float --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers paid in full after 1 year
+bbrr1_fed_ugunk_discharge float --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers with all loans discharged after 1 year
+bbrr1_fed_gr_n integer --Graduate federal student loan borrower-based 1-year borrower count
+bbrr1_fed_gr_dflt float --Percentage of graduate federal student loan borrowers in default after 1 year
+bbrr1_fed_gr_dlnq float --Percentage of graduate federal student loan borrowers in delinquency after 1 year
+bbrr1_fed_gr_fbr float --Percentage of graduate federal student loan borrowers in forbearance after 1 year
+bbrr1_fed_gr_dfr float --Percentage of graduate federal student loan borrowers in deferment after 1 year
+bbrr1_fed_gr_noprog float --Percentage of graduate federal student loan borrowers not making progress after 1 year
+bbrr1_fed_gr_makeprog float --Percentage of graduate federal student loan borrowers making progress after 1 year
+bbrr1_fed_gr_paidinfull float --Percentage of graduate federal student loan borrowers paid in full after 1 year
+bbrr1_fed_gr_discharge float --Percentage of graduate federal student loan borrowers with all loans discharged after 1 year
+bbrr1_fed_grcomp_n integer --Graduate completer graduate federal student loan borrower-based 1-year borrower count
+bbrr1_fed_grcomp_dflt float --Percentage of graduate completer graduate federal student loan borrowers in default after 1 year
+bbrr1_fed_grcomp_dlnq float --Percentage of graduate completer graduate federal student loan borrowers in delinquency after 1 year
+bbrr1_fed_grcomp_fbr float --Percentage of graduate completer graduate federal student loan borrowers in forbearance after 1 year
+bbrr1_fed_grcomp_dfr float --Percentage of graduate completer graduate federal student loan borrowers in deferment after 1 year
+bbrr1_fed_grcomp_noprog float --Percentage of graduate completer graduate federal student loan borrowers not making progress after 1 year
+bbrr1_fed_grcomp_makeprog float --Percentage of graduate completer graduate federal student loan borrowers making progress after 1 year
+bbrr1_fed_grcomp_paidinfull float --Percentage of graduate completer graduate federal student loan borrowers paid in full after 1 year
+bbrr1_fed_grcomp_discharge float --Percentage of graduate completer graduate federal student loan borrowers with all loans discharged after 1 year
+bbrr1_fed_grnocomp_n integer --Graduate non-completer graduate federal student loan borrower-based 1-year borrower count
+bbrr1_fed_grnocomp_dflt float --Percentage of graduate non-completer graduate federal student loan borrowers in default after 1 year
+bbrr1_fed_grnocomp_dlnq float --Percentage of graduate non-completer graduate federal student loan borrowers in delinquency after 1 year
+bbrr1_fed_grnocomp_fbr float --Percentage of graduate non-completer graduate federal student loan borrowers in forbearance after 1 year
+bbrr1_fed_grnocomp_dfr float --Percentage of graduate non-completer graduate federal student loan borrowers in deferment after 1 year
+bbrr1_fed_grnocomp_noprog float --Percentage of graduate non-completer graduate federal student loan borrowers not making progress after 1 year
+bbrr1_fed_grnocomp_makeprog float --Percentage of graduate non-completer graduate federal student loan borrowers making progress after 1 year
+bbrr1_fed_grnocomp_paidinfull float --Percentage of graduate non-completer graduate federal student loan borrowers paid in full after 1 year
+bbrr1_fed_grnocomp_discharge float --Percentage of graduate non-completer graduate federal student loan borrowers with all loans discharged after 1 year
+bbrr1_pp_ug_n integer --Undergraduate student Parent PLUS Loan borrower-based 1-year borrower count
+bbrr1_pp_ug_dflt float --Percentage of undergraduate student Parent PLUS Loan borrowers in default after 1 year
+bbrr1_pp_ug_dlnq float --Percentage of undergraduate student Parent PLUS Loan borrowers in delinquency after 1 year
+bbrr1_pp_ug_fbr float --Percentage of undergraduate student Parent PLUS Loan borrowers in forbearance after 1 year
+bbrr1_pp_ug_dfr float --Percentage of undergraduate student Parent PLUS Loan borrowers in deferment after 1 year
+bbrr1_pp_ug_noprog float --Percentage of undergraduate student Parent PLUS Loan borrowers not making progress after 1 year
+bbrr1_pp_ug_makeprog float --Percentage of undergraduate student Parent PLUS Loan borrowers making progress after 1 year
+bbrr1_pp_ug_paidinfull float --Percentage of undergraduate student Parent PLUS Loan borrowers paid in full after 1 year
+bbrr1_pp_ug_discharge float --Percentage of undergraduate student Parent PLUS Loan borrowers with all loans discharged after 1 year
+bbrr1_pp_ugcomp_n integer --Undergraduate completer undergraduate student Parent PLUS Loan borrower-based 1-year borrower count
+bbrr1_pp_ugcomp_dflt float --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in default after 1 year
+bbrr1_pp_ugcomp_dlnq float --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in delinquency after 1 year
+bbrr1_pp_ugcomp_fbr float --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in forbearance after 1 year
+bbrr1_pp_ugcomp_dfr float --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in deferment after 1 year
+bbrr1_pp_ugcomp_noprog float --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers not making progress after 1 year
+bbrr1_pp_ugcomp_makeprog float --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers making progress after 1 year
+bbrr1_pp_ugcomp_paidinfull float --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers paid in full after 1 year
+bbrr1_pp_ugcomp_discharge float --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers with all loans discharged after 1 year
+bbrr1_pp_ugnocomp_n integer --Undergraduate non-completer undergraduate student Parent PLUS Loan borrower-based 1-year borrower count
+bbrr1_pp_ugnocomp_dflt float --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in default after 1 year
+bbrr1_pp_ugnocomp_dlnq float --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in delinquency after 1 year
+bbrr1_pp_ugnocomp_fbr float --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in forbearance after 1 year
+bbrr1_pp_ugnocomp_dfr float --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in deferment after 1 year
+bbrr1_pp_ugnocomp_noprog float --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers not making progress after 1 year
+bbrr1_pp_ugnocomp_makeprog float --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers making progress after 1 year
+bbrr1_pp_ugnocomp_paidinfull float --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers paid in full after 1 year
+bbrr1_pp_ugnocomp_discharge float --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers with all loans discharged after 1 year
+bbrr1_pp_ugunk_n integer --Undergraduate unknown completion status undergraduate student Parent PLUS Loan borrower-based 1-year borrower count
+bbrr1_pp_ugunk_dflt float --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in default after 1 year
+bbrr1_pp_ugunk_dlnq float --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in delinquency after 1 year
+bbrr1_pp_ugunk_fbr float --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in forbearance after 1 year
+bbrr1_pp_ugunk_dfr float --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in deferment after 1 year
+bbrr1_pp_ugunk_noprog float --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers not making progress after 1 year
+bbrr1_pp_ugunk_makeprog float --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers making progress after 1 year
+bbrr1_pp_ugunk_paidinfull float --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers paid in full after 1 year
+bbrr1_pp_ugunk_discharge float --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers with all loans discharged after 1 year
+bbrr2_fed_ug_n integer --Undergraduate federal student loan borrower-based 2-year borrower count
+bbrr2_fed_ug_dflt float --Percentage of undergraduate federal student loan borrowers in default after 2 years
+bbrr2_fed_ug_dlnq float --Percentage of undergraduate federal student loan borrowers in delinquency after 2 years
+bbrr2_fed_ug_fbr float --Percentage of undergraduate federal student loan borrowers in forbearance after 2 years
+bbrr2_fed_ug_dfr float --Percentage of undergraduate federal student loan borrowers in deferment after 2 years
+bbrr2_fed_ug_noprog float --Percentage of undergraduate federal student loan borrowers not making progress after 2 years
+bbrr2_fed_ug_makeprog float --Percentage of undergraduate federal student loan borrowers making progress after 2 years
+bbrr2_fed_ug_paidinfull float --Percentage of undergraduate federal student loan borrowers paid in full after 2 years
+bbrr2_fed_ug_discharge float --Percentage of undergraduate federal student loan borrowers with all loans discharged after 2 years
+bbrr2_fed_ugcomp_n integer --Undergraduate completer undergraduate federal student loan borrower-based 2-year borrower count
+bbrr2_fed_ugcomp_dflt float --Percentage of undergraduate completer undergraduate federal student loan borrowers in default after 2 years
+bbrr2_fed_ugcomp_dlnq float --Percentage of undergraduate completer undergraduate federal student loan borrowers in delinquency after 2 years
+bbrr2_fed_ugcomp_fbr float --Percentage of undergraduate completer undergraduate federal student loan borrowers in forbearance after 2 years
+bbrr2_fed_ugcomp_dfr float --Percentage of undergraduate completer undergraduate federal student loan borrowers in deferment after 2 years
+bbrr2_fed_ugcomp_noprog float --Percentage of undergraduate completer undergraduate federal student loan borrowers not making progress after 2 years
+bbrr2_fed_ugcomp_makeprog float --Percentage of undergraduate completer undergraduate federal student loan borrowers making progress after 2 years
+bbrr2_fed_ugcomp_paidinfull float --Percentage of undergraduate completer undergraduate federal student loan borrowers paid in full after 2 years
+bbrr2_fed_ugcomp_discharge float --Percentage of undergraduate completer undergraduate federal student loan borrowers with all loans discharged after 2 years
+bbrr2_fed_ugnocomp_n integer --Undergraduate non-completer undergraduate federal student loan borrower-based 2-year borrower count
+bbrr2_fed_ugnocomp_dflt float --Percentage of undergraduate non-completer undergraduate federal student loan borrowers in default after 2 years
+bbrr2_fed_ugnocomp_dlnq float --Percentage of undergraduate non-completer undergraduate federal student loan borrowers in delinquency after 2 years
+bbrr2_fed_ugnocomp_fbr float --Percentage of undergraduate non-completer undergraduate federal student loan borrowers in forbearance after 2 years
+bbrr2_fed_ugnocomp_dfr float --Percentage of undergraduate non-completer undergraduate federal student loan borrowers in deferment after 2 years
+bbrr2_fed_ugnocomp_noprog float --Percentage of undergraduate non-completer undergraduate federal student loan borrowers not making progress after 2 years
+bbrr2_fed_ugnocomp_makeprog float --Percentage of undergraduate non-completer undergraduate federal student loan borrowers making progress after 2 years
+bbrr2_fed_ugnocomp_paidinfull float --Percentage of undergraduate non-completer undergraduate federal student loan borrowers paid in full after 2 years
+bbrr2_fed_ugnocomp_discharge float --Percentage of undergraduate non-completer undergraduate federal student loan borrowers with all loans discharged after 2 years
+bbrr2_fed_ugunk_n integer --Undergraduate unknown completion status undergraduate federal student loan borrower-based 2-year borrower count
+bbrr2_fed_ugunk_dflt float --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in default after 2 years
+bbrr2_fed_ugunk_dlnq float --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in delinquency after 2 years
+bbrr2_fed_ugunk_fbr float --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in forbearance after 2 years
+bbrr2_fed_ugunk_dfr float --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in deferment after 2 years
+bbrr2_fed_ugunk_noprog float --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers not making progress after 2 years
+bbrr2_fed_ugunk_makeprog float --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers making progress after 2 years
+bbrr2_fed_ugunk_paidinfull float --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers paid in full after 2 years
+bbrr2_fed_ugunk_discharge float --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers with all loans discharged after 2 years
+bbrr2_fed_gr_n integer --Graduate federal student loan borrower-based 2-year borrower count
+bbrr2_fed_gr_dflt float --Percentage of graduate federal student loan borrowers in default after 2 years
+bbrr2_fed_gr_dlnq float --Percentage of graduate federal student loan borrowers in delinquency after 2 years
+bbrr2_fed_gr_fbr float --Percentage of graduate federal student loan borrowers in forbearance after 2 years
+bbrr2_fed_gr_dfr float --Percentage of graduate federal student loan borrowers in deferment after 2 years
+bbrr2_fed_gr_noprog float --Percentage of graduate federal student loan borrowers not making progress after 2 years
+bbrr2_fed_gr_makeprog float --Percentage of graduate federal student loan borrowers making progress after 2 years
+bbrr2_fed_gr_paidinfull float --Percentage of graduate federal student loan borrowers paid in full after 2 years
+bbrr2_fed_gr_discharge float --Percentage of graduate federal student loan borrowers with all loans discharged after 2 years
+bbrr2_fed_grcomp_n integer --Graduate completer graduate federal student loan borrower-based 2-year borrower count
+bbrr2_fed_grcomp_dflt float --Percentage of graduate completer graduate federal student loan borrowers in default after 2 years
+bbrr2_fed_grcomp_dlnq float --Percentage of graduate completer graduate federal student loan borrowers in delinquency after 2 years
+bbrr2_fed_grcomp_fbr float --Percentage of graduate completer graduate federal student loan borrowers in forbearance after 2 years
+bbrr2_fed_grcomp_dfr float --Percentage of graduate completer graduate federal student loan borrowers in deferment after 2 years
+bbrr2_fed_grcomp_noprog float --Percentage of graduate completer graduate federal student loan borrowers not making progress after 2 years
+bbrr2_fed_grcomp_makeprog float --Percentage of graduate completer graduate federal student loan borrowers making progress after 2 years
+bbrr2_fed_grcomp_paidinfull float --Percentage of graduate completer graduate federal student loan borrowers paid in full after 2 years
+bbrr2_fed_grcomp_discharge float --Percentage of graduate completer graduate federal student loan borrowers with all loans discharged after 2 years
+bbrr2_fed_grnocomp_n integer --Graduate non-completer graduate federal student loan borrower-based 2-year borrower count
+bbrr2_fed_grnocomp_dflt float --Percentage of graduate non-completer graduate federal student loan borrowers in default after 2 years
+bbrr2_fed_grnocomp_dlnq float --Percentage of graduate non-completer graduate federal student loan borrowers in delinquency after 2 years
+bbrr2_fed_grnocomp_fbr float --Percentage of graduate non-completer graduate federal student loan borrowers in forbearance after 2 years
+bbrr2_fed_grnocomp_dfr float --Percentage of graduate non-completer graduate federal student loan borrowers in deferment after 2 years
+bbrr2_fed_grnocomp_noprog float --Percentage of graduate non-completer graduate federal student loan borrowers not making progress after 2 years
+bbrr2_fed_grnocomp_makeprog float --Percentage of graduate non-completer graduate federal student loan borrowers making progress after 2 years
+bbrr2_fed_grnocomp_paidinfull float --Percentage of graduate non-completer graduate federal student loan borrowers paid in full after 2 years
+bbrr2_fed_grnocomp_discharge float --Percentage of graduate non-completer graduate federal student loan borrowers with all loans discharged after 2 years
+bbrr2_pp_ug_n integer --Undergraduate student Parent PLUS Loan borrower-based 2-year borrower count
+bbrr2_pp_ug_dflt float --Percentage of undergraduate student Parent PLUS Loan borrowers in default after 2 years
+bbrr2_pp_ug_dlnq float --Percentage of undergraduate student Parent PLUS Loan borrowers in delinquency after 2 years
+bbrr2_pp_ug_fbr float --Percentage of undergraduate student Parent PLUS Loan borrowers in forbearance after 2 years
+bbrr2_pp_ug_dfr float --Percentage of undergraduate student Parent PLUS Loan borrowers in deferment after 2 years
+bbrr2_pp_ug_noprog float --Percentage of undergraduate student Parent PLUS Loan borrowers not making progress after 2 years
+bbrr2_pp_ug_makeprog float --Percentage of undergraduate student Parent PLUS Loan borrowers making progress after 2 years
+bbrr2_pp_ug_paidinfull float --Percentage of undergraduate student Parent PLUS Loan borrowers paid in full after 2 years
+bbrr2_pp_ug_discharge float --Percentage of undergraduate student Parent PLUS Loan borrowers with all loans discharged after 2 years
+bbrr2_pp_ugcomp_n integer --Undergraduate completer undergraduate student Parent PLUS Loan borrower-based 2-year borrower count
+bbrr2_pp_ugcomp_dflt float --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in default after 2 years
+bbrr2_pp_ugcomp_dlnq float --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in delinquency after 2 years
+bbrr2_pp_ugcomp_fbr float --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in forbearance after 2 years
+bbrr2_pp_ugcomp_dfr float --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in deferment after 2 years
+bbrr2_pp_ugcomp_noprog float --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers not making progress after 2 years
+bbrr2_pp_ugcomp_makeprog float --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers making progress after 2 years
+bbrr2_pp_ugcomp_paidinfull float --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers paid in full after 2 years
+bbrr2_pp_ugcomp_discharge float --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers with all loans discharged after 2 years
+bbrr2_pp_ugnocomp_n integer --Undergraduate non-completer undergraduate student Parent PLUS Loan borrower-based 2-year borrower count
+bbrr2_pp_ugnocomp_dflt float --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in default after 2 years
+bbrr2_pp_ugnocomp_dlnq float --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in delinquency after 2 years
+bbrr2_pp_ugnocomp_fbr float --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in forbearance after 2 years
+bbrr2_pp_ugnocomp_dfr float --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in deferment after 2 years
+bbrr2_pp_ugnocomp_noprog float --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers not making progress after 2 years
+bbrr2_pp_ugnocomp_makeprog float --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers making progress after 2 years
+bbrr2_pp_ugnocomp_paidinfull float --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers paid in full after 2 years
+bbrr2_pp_ugnocomp_discharge float --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers with all loans discharged after 2 years
+bbrr2_pp_ugunk_n integer --Undergraduate unknown completion status undergraduate student Parent PLUS Loan borrower-based 2-year borrower count
+bbrr2_pp_ugunk_dflt float --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in default after 2 years
+bbrr2_pp_ugunk_dlnq float --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in delinquency after 2 years
+bbrr2_pp_ugunk_fbr float --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in forbearance after 2 years
+bbrr2_pp_ugunk_dfr float --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in deferment after 2 years
+bbrr2_pp_ugunk_noprog float --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers not making progress after 2 years
+bbrr2_pp_ugunk_makeprog float --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers making progress after 2 years
+bbrr2_pp_ugunk_paidinfull float --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers paid in full after 2 years
+bbrr2_pp_ugunk_discharge float --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers with all loans discharged after 2 years
+bbrr2_fed_ug_n_supp integer --Undergraduate federal student loan borrower-based 2-year borrower count, suppressed for n<30
+bbrr2_fed_ug_dflt_supp float --Percentage of undergraduate federal student loan borrowers in default after 2 years, suppressed for n<30
+bbrr2_fed_ug_dlnq_supp float --Percentage of undergraduate federal student loan borrowers in delinquency after 2 years, suppressed for n<30
+bbrr2_fed_ug_fbr_supp float --Percentage of undergraduate federal student loan borrowers in forbearance after 2 years, suppressed for n<30
+bbrr2_fed_ug_dfr_supp float --Percentage of undergraduate federal student loan borrowers in deferment after 2 years, suppressed for n<30
+bbrr2_fed_ug_noprog_supp float --Percentage of undergraduate federal student loan borrowers not making progress after 2 years, suppressed for n<30
+bbrr2_fed_ug_makeprog_supp float --Percentage of undergraduate federal student loan borrowers making progress after 2 years, suppressed for n<30
+bbrr2_fed_ug_paidinfull_supp float --Percentage of undergraduate federal student loan borrowers paid in full after 2 years, suppressed for n<30
+bbrr2_fed_ug_discharge_supp float --Percentage of undergraduate federal student loan borrowers with all loans discharged after 2 years, suppressed for n<30
+bbrr2_fed_ugcomp_n_supp integer --Undergraduate completer undergraduate federal student loan borrower-based 2-year borrower count, suppressed for n<30
+bbrr2_fed_ugcomp_dflt_supp float --Percentage of undergraduate completer undergraduate federal student loan borrowers in default after 2 years, suppressed for n<30
+bbrr2_fed_ugcomp_dlnq_supp float --Percentage of undergraduate completer undergraduate federal student loan borrowers in delinquency after 2 years, suppressed for n<30
+bbrr2_fed_ugcomp_fbr_supp float --Percentage of undergraduate completer undergraduate federal student loan borrowers in forbearance after 2 years, suppressed for n<30
+bbrr2_fed_ugcomp_dfr_supp float --Percentage of undergraduate completer undergraduate federal student loan borrowers in deferment after 2 years, suppressed for n<30
+bbrr2_fed_ugcomp_noprog_supp float --Percentage of undergraduate completer undergraduate federal student loan borrowers not making progress after 2 years, suppressed for n<30
+bbrr2_fed_ugcomp_makeprog_supp float --Percentage of undergraduate completer undergraduate federal student loan borrowers making progress after 2 years, suppressed for n<30
+bbrr2_fed_ugcomp_paidinfull_supp float --Percentage of undergraduate completer undergraduate federal student loan borrowers paid in full after 2 years, suppressed for n<30
+bbrr2_fed_ugcomp_discharge_supp float --Percentage of undergraduate completer undergraduate federal student loan borrowers with all loans discharged after 2 years, suppressed for n<30
+lpstafford_cnt integer --Number of borrowers with outstanding federal Direct Loan balances
+lpstafford_amt long --Total outstanding federal Direct Loan balance
+lppplus_cnt integer --Number of students associated with outstanding Parent PLUS Loan balances
+lppplus_amt long --Total outstanding Parent PLUS Loan balance
+lpgplus_cnt integer --Number of students associated with outstanding Grad PLUS Loan balances
+lpgplus_amt long --Total outstanding Grad PLUS Loan balance
+fedschcd string --Federal School Code
+booksupply integer --Cost of attendance: estimated books and supplies
+roomboard_on integer --Cost of attendance: on-campus room and board
+otherexpense_on integer --Cost of attendance: on-campus other expenses
+roomboard_off integer --Cost of attendance: off-campus room and board
+otherexpense_off integer --Cost of attendance: off-campus other expenses
+otherexpense_fam integer --Cost of attendance: with-family other expenses
+endowbegin long --Value of school's endowment at the beginning of the fiscal year
+endowend long --Value of school's endowment at the end of the fiscal year
+dolprovider integer --DOL approved training provider indicator
+admcon7 integer --Test score requirements for admission
+mdcomp_pd float --Median completion rate amongst insitutions with the same predominant degree category 
+mdcost_pd float --Median average net price amongst insitituions with the same predominant degree category
+mdearn_pd float --Median earnings of students working and not enrolled 10 years after entry
+mdcomp_all float --Overall median of completion rate
+mdcost_all float --Overall median for average net price 
+mdearn_all float --Overall median earnings of students working and not enrolled 10 years after entry
+d150_l4_pell_pooled integer --Adjusted cohort count for Pell Grant recipient completion rate at less-than-four-year institutions (denominator of 150% completion rate), pooled for two-year rolling averages
+c150_l4_pell_pooled float --Pell Grant recipient completion rate at less-than-four-year institutions, pooled for two-year rolling averages
+d150_4_pell_pooled integer --Adjusted cohort count for Pell Grant recipient completion rate at four-year institutions (denominator of 150% completion rate), pooled for two-year rolling averages
+c150_4_pell_pooled float --First-time, full-time Pell Grant recipient completion rate at four-year institutions, pooled for two-year rolling averages
+c150_l4_pell_pooled_supp float --First-time, full-time Pell Grant recipient completion rate at less-than-four-year institutions, pooled for two-year rolling averages and suppressed for small n size
+c150_4_pell_pooled_supp float --First-time, full-time Pell Grant recipient completion rate at four-year institutions, pooled for two-year rolling averages and suppressed for small n size
+poolyrs150_pell integer --Years used for rolling averages of Pell Grant recipient completion rate C150_PELL_[4/L4]_POOLED
+omenryp_pell_all float --Percentage of all Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry
+omenrap_pell_all float --Percentage of all Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+omawdp8_pell_all float --Percentage of all Pell Grant recipient students receiving an award within 8 years of entry
+omenrup_pell_all float --Percentage of all Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+omenryp_pell_firsttime float --Percentage of first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry
+omenrap_pell_firsttime float --Percentage of first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+omawdp8_pell_firsttime float --Percentage of first-time Pell Grant recipient students receiving an award within 8 years of entry
+omenrup_pell_firsttime float --Percentage of first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+omenryp_pell_notfirsttime float --Percentage of not first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry
+omenrap_pell_notfirsttime float --Percentage of not first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+omawdp8_pell_notfirsttime float --Percentage of not first-time Pell Grant recipient students receiving an award within 8 years of entry
+omenrup_pell_notfirsttime float --Percentage of not first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+omenryp_pell_fulltime float --Percentage of full-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry
+omenrap_pell_fulltime float --Percentage of full-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+omawdp8_pell_fulltime float --Percentage of full-time Pell Grant recipient students receiving an award within 8 years of entry
+omenrup_pell_fulltime float --Percentage of full-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+omenryp_pell_parttime float --Percentage of part-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry
+omenrap_pell_parttime float --Percentage of part-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+omawdp8_pell_parttime float --Percentage of part-time Pell Grant recipient students receiving an award within 8 years of entry
+omenrup_pell_parttime float --Percentage of part-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+omacht8_pell_ftft integer --Adjusted cohort count of full-time, first-time Pell Grant recipient students (denominator for the 8-year outcomes percentages)
+omawdp8_pell_ftft float --Percentage of full-time, first-time Pell Grant recipient students receiving an award within 8 years of entry
+omenryp8_pell_ftft float --Percentage of full-time, first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry
+omenrap8_pell_ftft float --Percentage of full-time, first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+omenrup8_pell_ftft float --Percentage of full-time, first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+omacht8_pell_ptft integer --Adjusted cohort count of part-time, first-time Pell Grant recipient students (denominator for the 8-year outcomes percentages)
+omawdp8_pell_ptft float --Percentage of part-time, first-time Pell Grant recipient students receiving an award within 8 years of entry
+omenryp8_pell_ptft float --Percentage of part-time, first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry
+omenrap8_pell_ptft float --Percentage of part-time, first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+omenrup8_pell_ptft float --Percentage of part-time, first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+omacht8_pell_ftnft integer --Adjusted cohort count of full-time, not first-time Pell Grant recipient students (denominator for the 8-year outcomes percentages)
+omawdp8_pell_ftnft float --Percentage of full-time, not first-time Pell Grant recipient students receiving an award within 8 years of entry
+omenryp8_pell_ftnft float --Percentage of full-time, not first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry
+omenrap8_pell_ftnft float --Percentage of full-time, not first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+omenrup8_pell_ftnft float --Percentage of full-time, not first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+omacht8_pell_ptnft integer --Adjusted cohort count of part-time, not first-time Pell Grant recipient students (denominator for the 8-year outcomes percentages)
+omawdp8_pell_ptnft float --Percentage of part-time, not first-time Pell Grant recipient students receiving an award within 8 years of entry
+omenryp8_pell_ptnft float --Percentage of part-time, not first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry
+omenrap8_pell_ptnft float --Percentage of part-time, not first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+omenrup8_pell_ptnft float --Percentage of part-time, not first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+omacht8_pell_ftft_pooled integer --Adjusted cohort count of full-time, first-time Pell Grant recipient students (denominator for the 8-year outcomes percentages), pooled across years.
+omacht8_pell_ptft_pooled integer --Adjusted cohort count of part-time, first-time Pell Grant recipient students (denominator for the 8-year outcomes percentages), pooled across years.
+omacht8_pell_ftnft_pooled integer --Adjusted cohort count of full-time, not first-time Pell Grant recipient students (denominator for the 8-year outcomes percentages), pooled across years.
+omacht8_pell_ptnft_pooled integer --Adjusted cohort count of part-time, not first-time Pell Grant recipient students (denominator for the 8-year outcomes percentages), pooled across years.
+omawdp8_pell_ftft_pooled float --Percentage of full-time, first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages.
+omenryp8_pell_ftft_pooled float --Percentage of full-time, first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages.
+omenrap8_pell_ftft_pooled float --Percentage of full-time, first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages.
+omenrup8_pell_ftft_pooled float --Percentage of full-time, first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages.
+omawdp8_pell_ptft_pooled float --Percentage of part-time, first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages.
+omenryp8_pell_ptft_pooled float --Percentage of part-time, first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages.
+omenrap8_pell_ptft_pooled float --Percentage of part-time, first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages.
+omenrup8_pell_ptft_pooled float --Percentage of part-time, first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages.
+omawdp8_pell_ftnft_pooled float --Percentage of full-time, not first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages.
+omenryp8_pell_ftnft_pooled float --Percentage of full-time, not first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages.
+omenrap8_pell_ftnft_pooled float --Percentage of full-time, not first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages.
+omenrup8_pell_ftnft_pooled float --Percentage of full-time, not first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages.
+omawdp8_pell_ptnft_pooled float --Percentage of part-time, not first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages.
+omenryp8_pell_ptnft_pooled float --Percentage of part-time, not first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages.
+omenrap8_pell_ptnft_pooled float --Percentage of part-time, not first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages.
+omenrup8_pell_ptnft_pooled float --Percentage of part-time, not first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages.
+omenryp_pell_all_pooled float --Percentage of all Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap_pell_all_pooled float --Percentage of all Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp8_pell_all_pooled float --Percentage of all Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup_pell_all_pooled float --Percentage of all Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenryp_pell_ftt_pooled float --Percentage of first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap_pell_ftt_pooled float --Percentage of first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp8_pell_ftt_pooled float --Percentage of first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup_pell_ftt_pooled float --Percentage of first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenryp_pell_nft_pooled float --Percentage of not first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap_pell_nft_pooled float --Percentage of not first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp8_pell_nft_pooled float --Percentage of not first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup_pell_nft_pooled float --Percentage of not first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenryp_pell_ft_pooled float --Percentage of full-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap_pell_ft_pooled float --Percentage of full-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp8_pell_ft_pooled float --Percentage of full-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup_pell_ft_pooled float --Percentage of full-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenryp_pell_pt_pooled float --Percentage of part-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap_pell_pt_pooled float --Percentage of part-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp8_pell_pt_pooled float --Percentage of part-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup_pell_pt_pooled float --Percentage of part-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+poolyrsom_pell_ftft float --Years used for rolling averages of outcome metrics OM[ACHT6/AWDP6/ACHT8/AWDP8/ENRAP8/ENRYP8/ENRUP8]_PELL_FTFT_POOLED
+poolyrsom_pell_ptft float --Years used for rolling averages of outcome metrics OM[ACHT6/AWDP6/ACHT8/AWDP8/ENRAP8/ENRYP8/ENRUP8]_PELL_PTFT_POOLED
+poolyrsom_pell_ftnft float --Years used for rolling averages of outcome metrics OM[ACHT6/AWDP6/ACHT8/AWDP8/ENRAP8/ENRYP8/ENRUP8]_PELL_FTNFT_POOLED
+poolyrsom_pell_ptnft float --Years used for rolling averages of outcome metrics OM[ACHT6/AWDP6/ACHT8/AWDP8/ENRAP8/ENRYP8/ENRUP8]_PELL_PTNFT_POOLED
+poolyrsom_pell_all float --Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_PELL_ALL_POOLED
+poolyrsom_pell_firsttime float --Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_PELL_FTT_POOLED
+poolyrsom_pell_notfirsttime float --Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_PELL_NFT_POOLED
+poolyrsom_pell_fulltime float --Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_PELL_FT_POOLED
+poolyrsom_pell_parttime float --Years used for rolling averages of outcome metrics OM[AWDP8/ENRAP8/ENRYP8/ENRUP8]_PELL_PT_POOLED
+omawdp8_pell_ftft_pooled_supp float --Percentage of full-time, first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenryp8_pell_ftft_pooled_supp float --Percentage of full-time, first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap8_pell_ftft_pooled_supp float --Percentage of full-time, first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup8_pell_ftft_pooled_supp float --Percentage of full-time, first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp8_pell_ptft_pooled_supp float --Percentage of part-time, first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenryp8_pell_ptft_pooled_supp float --Percentage of part-time, first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap8_pell_ptft_pooled_supp float --Percentage of part-time, first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup8_pell_ptft_pooled_supp float --Percentage of part-time, first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp8_pell_ftnft_pooled_supp float --Percentage of full-time, not first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenryp8_pell_ftnft_pooled_supp float --Percentage of full-time, not first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap8_pell_ftnft_pooled_supp float --Percentage of full-time, not first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup8_pell_ftnft_pooled_supp float --Percentage of full-time, not first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp8_pell_ptnft_pooled_supp float --Percentage of part-time, not first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenryp8_pell_ptnft_pooled_supp float --Percentage of part-time, not first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap8_pell_ptnft_pooled_supp float --Percentage of part-time, not first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup8_pell_ptnft_pooled_supp float --Percentage of part-time, not first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenryp_pell_all_pooled_supp float --Percentage of all Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap_pell_all_pooled_supp float --Percentage of all Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp8_pell_all_pooled_supp float --Percentage of all Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup_pell_all_pooled_supp float --Percentage of all Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenryp_pell_ftt_pooled_supp float --Percentage of first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap_pell_ftt_pooled_supp float --Percentage of first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp8_pell_ftt_pooled_supp float --Percentage of first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup_pell_ftt_pooled_supp float --Percentage of first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenryp_pell_nft_pooled_supp float --Percentage of not first-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap_pell_nft_pooled_supp float --Percentage of not first-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp8_pell_nft_pooled_supp float --Percentage of not first-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup_pell_nft_pooled_supp float --Percentage of not first-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenryp_pell_ft_pooled_supp float --Percentage of full-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap_pell_ft_pooled_supp float --Percentage of full-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp8_pell_ft_pooled_supp float --Percentage of full-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup_pell_ft_pooled_supp float --Percentage of full-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenryp_pell_pt_pooled_supp float --Percentage of part-time Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry, pooled in rolling averages and suppressed for small n size
+omenrap_pell_pt_pooled_supp float --Percentage of part-time Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omawdp8_pell_pt_pooled_supp float --Percentage of part-time Pell Grant recipient students receiving an award within 8 years of entry, pooled in rolling averages and suppressed for small n size
+omenrup_pell_pt_pooled_supp float --Percentage of part-time Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry, pooled in rolling averages and suppressed for small n size
+bbrr1_fed_ind_n integer --Independent federal student loan borrower-based 1-year borrower count
+bbrr1_fed_ind_dflt string --Percentage of independent federal student loan borrowers in default after 1 year
+bbrr1_fed_ind_dlnq string --Percentage of independent federal student loan borrowers in delinquency after 1 year
+bbrr1_fed_ind_fbr string --Percentage of independent federal student loan borrowers in forbearance after 1 year
+bbrr1_fed_ind_dfr string --Percentage of independent federal student loan borrowers in deferment after 1 year
+bbrr1_fed_ind_noprog string --Percentage of independent federal student loan borrowers not making progress after 1 year
+bbrr1_fed_ind_makeprog string --Percentage of independent federal student loan borrowers making progress after 1 year
+bbrr1_fed_ind_paidinfull string --Percentage of independent federal student loan borrowers paid in full after 1 year
+bbrr1_fed_ind_discharge string --Percentage of independent federal student loan borrowers with all loans discharged after 1 year
+bbrr1_fed_dep_n integer --Dependent federal student loan borrower-based 1-year borrower count
+bbrr1_fed_dep_dflt string --Percentage of dependent federal student loan borrowers in default after 1 year
+bbrr1_fed_dep_dlnq string --Percentage of dependent federal student loan borrowers in delinquency after 1 year
+bbrr1_fed_dep_fbr string --Percentage of dependent federal student loan borrowers in forbearance after 1 year
+bbrr1_fed_dep_dfr string --Percentage of dependent federal student loan borrowers in deferment after 1 year
+bbrr1_fed_dep_noprog string --Percentage of dependent federal student loan borrowers not making progress after 1 year
+bbrr1_fed_dep_makeprog string --Percentage of dependent federal student loan borrowers making progress after 1 year
+bbrr1_fed_dep_paidinfull string --Percentage of dependent federal student loan borrowers paid in full after 1 year
+bbrr1_fed_dep_discharge string --Percentage of dependent federal student loan borrowers with all loans discharged after 1 year
+bbrr1_fed_pell_n integer --Pell Grant recipient federal student loan borrower-based 1-year borrower count
+bbrr1_fed_pell_dflt string --Percentage of Pell Grant recipient federal student loan borrowers in default after 1 year
+bbrr1_fed_pell_dlnq string --Percentage of Pell Grant recipient federal student loan borrowers in delinquency after 1 year
+bbrr1_fed_pell_fbr string --Percentage of Pell Grant recipient federal student loan borrowers in forbearance after 1 year
+bbrr1_fed_pell_dfr string --Percentage of Pell Grant recipient federal student loan borrowers in deferment after 1 year
+bbrr1_fed_pell_noprog string --Percentage of Pell Grant recipient federal student loan borrowers not making progress after 1 year
+bbrr1_fed_pell_makeprog string --Percentage of Pell Grant recipient federal student loan borrowers making progress after 1 year
+bbrr1_fed_pell_paidinfull string --Percentage of Pell Grant recipient federal student loan borrowers paid in full after 1 year
+bbrr1_fed_pell_discharge string --Percentage of Pell Grant recipient federal student loan borrowers with all loans discharged after 1 year
+bbrr1_fed_nopell_n integer --Non-Pell Grant recipient federal student loan borrower-based 1-year borrower count
+bbrr1_fed_nopell_dflt string --Percentage of non-Pell Grant recipient federal student loan borrowers in default after 1 year
+bbrr1_fed_nopell_dlnq string --Percentage of non-Pell Grant recipient federal student loan borrowers in delinquency after 1 year
+bbrr1_fed_nopell_fbr string --Percentage of non-Pell Grant recipient federal student loan borrowers in forbearance after 1 year
+bbrr1_fed_nopell_dfr string --Percentage of non-Pell Grant recipient federal student loan borrowers in deferment after 1 year
+bbrr1_fed_nopell_noprog string --Percentage of non-Pell Grant recipient federal student loan borrowers not making progress after 1 year
+bbrr1_fed_nopell_makeprog string --Percentage of non-Pell Grant recipient federal student loan borrowers making progress after 1 year
+bbrr1_fed_nopell_paidinfull string --Percentage of non-Pell Grant recipient federal student loan borrowers paid in full after 1 year
+bbrr1_fed_nopell_discharge string --Percentage of non-Pell Grant recipient federal student loan borrowers with all loans discharged after 1 year
+bbrr1_fed_male_n integer --Male federal student loan borrower-based 1-year borrower count
+bbrr1_fed_male_dflt string --Percentage of male federal student loan borrowers in default after 1 year
+bbrr1_fed_male_dlnq string --Percentage of male federal student loan borrowers in delinquency after 1 year
+bbrr1_fed_male_fbr string --Percentage of male federal student loan borrowers in forbearance after 1 year
+bbrr1_fed_male_dfr string --Percentage of male federal student loan borrowers in deferment after 1 year
+bbrr1_fed_male_noprog string --Percentage of male federal student loan borrowers not making progress after 1 year
+bbrr1_fed_male_makeprog string --Percentage of male federal student loan borrowers making progress after 1 year
+bbrr1_fed_male_paidinfull string --Percentage of male federal student loan borrowers paid in full after 1 year
+bbrr1_fed_male_discharge string --Percentage of male federal student loan borrowers with all loans discharged after 1 year
+bbrr1_fed_nomale_n integer --Non-male federal student loan borrower-based 1-year borrower count
+bbrr1_fed_nomale_dflt string --Percentage of non-male federal student loan borrowers in default after 1 year
+bbrr1_fed_nomale_dlnq string --Percentage of non-male federal student loan borrowers in delinquency after 1 year
+bbrr1_fed_nomale_fbr string --Percentage of non-male federal student loan borrowers in forbearance after 1 year
+bbrr1_fed_nomale_dfr string --Percentage of non-male federal student loan borrowers in deferment after 1 year
+bbrr1_fed_nomale_noprog string --Percentage of non-male federal student loan borrowers not making progress after 1 year
+bbrr1_fed_nomale_makeprog string --Percentage of non-male federal student loan borrowers making progress after 1 year
+bbrr1_fed_nomale_paidinfull string --Percentage of non-male federal student loan borrowers paid in full after 1 year
+bbrr1_fed_nomale_discharge string --Percentage of non-male federal student loan borrowers with all loans discharged after 1 year
+bbrr1_pp_ind_n integer --Independent student Parent PLUS Loan borrower-based 1-year borrower count
+bbrr1_pp_ind_dflt string --Percentage of independent student Parent PLUS Loan borrowers in default after 1 year
+bbrr1_pp_ind_dlnq string --Percentage of independent student Parent PLUS Loan borrowers in delinquency after 1 year
+bbrr1_pp_ind_fbr string --Percentage of independent student Parent PLUS Loan borrowers in forbearance after 1 year
+bbrr1_pp_ind_dfr string --Percentage of independent student Parent PLUS Loan borrowers in deferment after 1 year
+bbrr1_pp_ind_noprog string --Percentage of independent student Parent PLUS Loan borrowers not making progress after 1 year
+bbrr1_pp_ind_makeprog string --Percentage of independent student Parent PLUS Loan borrowers making progress after 1 year
+bbrr1_pp_ind_paidinfull string --Percentage of independent student Parent PLUS Loan borrowers paid in full after 1 year
+bbrr1_pp_ind_discharge string --Percentage of independent student Parent PLUS Loan borrowers with all loans discharged after 1 year
+bbrr1_pp_dep_n integer --Dependent student Parent PLUS Loan borrower-based 1-year borrower count
+bbrr1_pp_dep_dflt string --Percentage of dependent student Parent PLUS Loan borrowers in default after 1 year
+bbrr1_pp_dep_dlnq string --Percentage of dependent student Parent PLUS Loan borrowers in delinquency after 1 year
+bbrr1_pp_dep_fbr string --Percentage of dependent student Parent PLUS Loan borrowers in forbearance after 1 year
+bbrr1_pp_dep_dfr string --Percentage of dependent student Parent PLUS Loan borrowers in deferment after 1 year
+bbrr1_pp_dep_noprog string --Percentage of dependent student Parent PLUS Loan borrowers not making progress after 1 year
+bbrr1_pp_dep_makeprog string --Percentage of dependent student Parent PLUS Loan borrowers making progress after 1 year
+bbrr1_pp_dep_paidinfull string --Percentage of dependent student Parent PLUS Loan borrowers paid in full after 1 year
+bbrr1_pp_dep_discharge string --Percentage of dependent student Parent PLUS Loan borrowers with all loans discharged after 1 year
+bbrr1_pp_pell_n integer --Pell Grant recipient student Parent PLUS Loan borrower-based 1-year borrower count
+bbrr1_pp_pell_dflt string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in default after 1 year
+bbrr1_pp_pell_dlnq string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in delinquency after 1 year
+bbrr1_pp_pell_fbr string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in forbearance after 1 year
+bbrr1_pp_pell_dfr string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in deferment after 1 year
+bbrr1_pp_pell_noprog string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers not making progress after 1 year
+bbrr1_pp_pell_makeprog string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers making progress after 1 year
+bbrr1_pp_pell_paidinfull string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers paid in full after 1 year
+bbrr1_pp_pell_discharge string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers with all loans discharged after 1 year
+bbrr1_pp_nopell_n integer --Non-Pell Grant recipient student Parent PLUS Loan borrower-based 1-year borrower count
+bbrr1_pp_nopell_dflt string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in default after 1 year
+bbrr1_pp_nopell_dlnq string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in delinquency after 1 year
+bbrr1_pp_nopell_fbr string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in forbearance after 1 year
+bbrr1_pp_nopell_dfr string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in deferment after 1 year
+bbrr1_pp_nopell_noprog string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers not making progress after 1 year
+bbrr1_pp_nopell_makeprog string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers making progress after 1 year
+bbrr1_pp_nopell_paidinfull string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers paid in full after 1 year
+bbrr1_pp_nopell_discharge string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers with all loans discharged after 1 year
+bbrr1_pp_male_n integer --Male student Parent PLUS Loan borrower-based 1-year borrower count
+bbrr1_pp_male_dflt string --Percentage of male student Parent PLUS Loan borrowers in default after 1 year
+bbrr1_pp_male_dlnq string --Percentage of male student Parent PLUS Loan borrowers in delinquency after 1 year
+bbrr1_pp_male_fbr string --Percentage of male student Parent PLUS Loan borrowers in forbearance after 1 year
+bbrr1_pp_male_dfr string --Percentage of male student Parent PLUS Loan borrowers in deferment after 1 year
+bbrr1_pp_male_noprog string --Percentage of male student Parent PLUS Loan borrowers not making progress after 1 year
+bbrr1_pp_male_makeprog string --Percentage of male student Parent PLUS Loan borrowers making progress after 1 year
+bbrr1_pp_male_paidinfull string --Percentage of male student Parent PLUS Loan borrowers paid in full after 1 year
+bbrr1_pp_male_discharge string --Percentage of male student Parent PLUS Loan borrowers with all loans discharged after 1 year
+bbrr1_pp_nomale_n integer --Non-male student Parent PLUS Loan borrower-based 1-year borrower count
+bbrr1_pp_nomale_dflt string --Percentage of non-male student Parent PLUS Loan borrowers in default after 1 year
+bbrr1_pp_nomale_dlnq string --Percentage of non-male student Parent PLUS Loan borrowers in delinquency after 1 year
+bbrr1_pp_nomale_fbr string --Percentage of non-male student Parent PLUS Loan borrowers in forbearance after 1 year
+bbrr1_pp_nomale_dfr string --Percentage of non-male student Parent PLUS Loan borrowers in deferment after 1 year
+bbrr1_pp_nomale_noprog string --Percentage of non-male student Parent PLUS Loan borrowers not making progress after 1 year
+bbrr1_pp_nomale_makeprog string --Percentage of non-male student Parent PLUS Loan borrowers making progress after 1 year
+bbrr1_pp_nomale_paidinfull string --Percentage of non-male student Parent PLUS Loan borrowers paid in full after 1 year
+bbrr1_pp_nomale_discharge string --Percentage of non-male student Parent PLUS Loan borrowers with all loans discharged after 1 year
+bbrr2_fed_ind_n integer --Independent federal student loan borrower-based 2-year borrower count
+bbrr2_fed_ind_dflt string --Percentage of independent federal student loan borrowers in default after 2 years
+bbrr2_fed_ind_dlnq string --Percentage of independent federal student loan borrowers in delinquency after 2 years
+bbrr2_fed_ind_fbr string --Percentage of independent federal student loan borrowers in forbearance after 2 years
+bbrr2_fed_ind_dfr string --Percentage of independent federal student loan borrowers in deferment after 2 years
+bbrr2_fed_ind_noprog string --Percentage of independent federal student loan borrowers not making progress after 2 years
+bbrr2_fed_ind_makeprog string --Percentage of independent federal student loan borrowers making progress after 2 years
+bbrr2_fed_ind_paidinfull string --Percentage of independent federal student loan borrowers paid in full after 2 years
+bbrr2_fed_ind_discharge string --Percentage of independent federal student loan borrowers with all loans discharged after 2 years
+bbrr2_fed_dep_n integer --Dependent federal student loan borrower-based 2-year borrower count
+bbrr2_fed_dep_dflt string --Percentage of dependent federal student loan borrowers in default after 2 years
+bbrr2_fed_dep_dlnq string --Percentage of dependent federal student loan borrowers in delinquency after 2 years
+bbrr2_fed_dep_fbr string --Percentage of dependent federal student loan borrowers in forbearance after 2 years
+bbrr2_fed_dep_dfr string --Percentage of dependent federal student loan borrowers in deferment after 2 years
+bbrr2_fed_dep_noprog string --Percentage of dependent federal student loan borrowers not making progress after 2 years
+bbrr2_fed_dep_makeprog string --Percentage of dependent federal student loan borrowers making progress after 2 years
+bbrr2_fed_dep_paidinfull string --Percentage of dependent federal student loan borrowers paid in full after 2 years
+bbrr2_fed_dep_discharge string --Percentage of dependent federal student loan borrowers with all loans discharged after 2 years
+bbrr2_fed_pell_n integer --Pell Grant recipient federal student loan borrower-based 2-year borrower count
+bbrr2_fed_pell_dflt string --Percentage of Pell Grant recipient federal student loan borrowers in default after 2 years
+bbrr2_fed_pell_dlnq string --Percentage of Pell Grant recipient federal student loan borrowers in delinquency after 2 years
+bbrr2_fed_pell_fbr string --Percentage of Pell Grant recipient federal student loan borrowers in forbearance after 2 years
+bbrr2_fed_pell_dfr string --Percentage of Pell Grant recipient federal student loan borrowers in deferment after 2 years
+bbrr2_fed_pell_noprog string --Percentage of Pell Grant recipient federal student loan borrowers not making progress after 2 years
+bbrr2_fed_pell_makeprog string --Percentage of Pell Grant recipient federal student loan borrowers making progress after 2 years
+bbrr2_fed_pell_paidinfull string --Percentage of Pell Grant recipient federal student loan borrowers paid in full after 2 years
+bbrr2_fed_pell_discharge string --Percentage of Pell Grant recipient federal student loan borrowers with all loans discharged after 2 years
+bbrr2_fed_nopell_n integer --Non-Pell Grant recipient federal student loan borrower-based 2-year borrower count
+bbrr2_fed_nopell_dflt string --Percentage of non-Pell Grant recipient federal student loan borrowers in default after 2 years
+bbrr2_fed_nopell_dlnq string --Percentage of non-Pell Grant recipient federal student loan borrowers in delinquency after 2 years
+bbrr2_fed_nopell_fbr string --Percentage of non-Pell Grant recipient federal student loan borrowers in forbearance after 2 years
+bbrr2_fed_nopell_dfr string --Percentage of non-Pell Grant recipient federal student loan borrowers in deferment after 2 years
+bbrr2_fed_nopell_noprog string --Percentage of non-Pell Grant recipient federal student loan borrowers not making progress after 2 years
+bbrr2_fed_nopell_makeprog string --Percentage of non-Pell Grant recipient federal student loan borrowers making progress after 2 years
+bbrr2_fed_nopell_paidinfull string --Percentage of non-Pell Grant recipient federal student loan borrowers paid in full after 2 years
+bbrr2_fed_nopell_discharge string --Percentage of non-Pell Grant recipient federal student loan borrowers with all loans discharged after 2 years
+bbrr2_fed_male_n integer --Male federal student loan borrower-based 2-year borrower count
+bbrr2_fed_male_dflt string --Percentage of male federal student loan borrowers in default after 2 years
+bbrr2_fed_male_dlnq string --Percentage of male federal student loan borrowers in delinquency after 2 years
+bbrr2_fed_male_fbr string --Percentage of male federal student loan borrowers in forbearance after 2 years
+bbrr2_fed_male_dfr string --Percentage of male federal student loan borrowers in deferment after 2 years
+bbrr2_fed_male_noprog string --Percentage of male federal student loan borrowers not making progress after 2 years
+bbrr2_fed_male_makeprog string --Percentage of male federal student loan borrowers making progress after 2 years
+bbrr2_fed_male_paidinfull string --Percentage of male federal student loan borrowers paid in full after 2 years
+bbrr2_fed_male_discharge string --Percentage of male federal student loan borrowers with all loans discharged after 2 years
+bbrr2_fed_nomale_n integer --Non-male federal student loan borrower-based 2-year borrower count
+bbrr2_fed_nomale_dflt string --Percentage of non-male federal student loan borrowers in default after 2 years
+bbrr2_fed_nomale_dlnq string --Percentage of non-male federal student loan borrowers in delinquency after 2 years
+bbrr2_fed_nomale_fbr string --Percentage of non-male federal student loan borrowers in forbearance after 2 years
+bbrr2_fed_nomale_dfr string --Percentage of non-male federal student loan borrowers in deferment after 2 years
+bbrr2_fed_nomale_noprog string --Percentage of non-male federal student loan borrowers not making progress after 2 years
+bbrr2_fed_nomale_makeprog string --Percentage of non-male federal student loan borrowers making progress after 2 years
+bbrr2_fed_nomale_paidinfull string --Percentage of non-male federal student loan borrowers paid in full after 2 years
+bbrr2_fed_nomale_discharge string --Percentage of non-male federal student loan borrowers with all loans discharged after 2 years
+bbrr2_pp_ind_n integer --Independent student Parent PLUS Loan borrower-based 2-year borrower count
+bbrr2_pp_ind_dflt string --Percentage of independent student Parent PLUS Loan borrowers in default after 2 years
+bbrr2_pp_ind_dlnq string --Percentage of independent student Parent PLUS Loan borrowers in delinquency after 2 years
+bbrr2_pp_ind_fbr string --Percentage of independent student Parent PLUS Loan borrowers in forbearance after 2 years
+bbrr2_pp_ind_dfr string --Percentage of independent student Parent PLUS Loan borrowers in deferment after 2 years
+bbrr2_pp_ind_noprog string --Percentage of independent student Parent PLUS Loan borrowers not making progress after 2 years
+bbrr2_pp_ind_makeprog string --Percentage of independent student Parent PLUS Loan borrowers making progress after 2 years
+bbrr2_pp_ind_paidinfull string --Percentage of independent student Parent PLUS Loan borrowers paid in full after 2 years
+bbrr2_pp_ind_discharge string --Percentage of independent student Parent PLUS Loan borrowers with all loans discharged after 2 years
+bbrr2_pp_dep_n integer --Dependent student Parent PLUS Loan borrower-based 2-year borrower count
+bbrr2_pp_dep_dflt string --Percentage of dependent student Parent PLUS Loan borrowers in default after 2 years
+bbrr2_pp_dep_dlnq string --Percentage of dependent student Parent PLUS Loan borrowers in delinquency after 2 years
+bbrr2_pp_dep_fbr string --Percentage of dependent student Parent PLUS Loan borrowers in forbearance after 2 years
+bbrr2_pp_dep_dfr string --Percentage of dependent student Parent PLUS Loan borrowers in deferment after 2 years
+bbrr2_pp_dep_noprog string --Percentage of dependent student Parent PLUS Loan borrowers not making progress after 2 years
+bbrr2_pp_dep_makeprog string --Percentage of dependent student Parent PLUS Loan borrowers making progress after 2 years
+bbrr2_pp_dep_paidinfull string --Percentage of dependent student Parent PLUS Loan borrowers paid in full after 2 years
+bbrr2_pp_dep_discharge string --Percentage of dependent student Parent PLUS Loan borrowers with all loans discharged after 2 years
+bbrr2_pp_pell_n integer --Pell Grant recipient student Parent PLUS Loan borrower-based 2-year borrower count
+bbrr2_pp_pell_dflt string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in default after 2 years
+bbrr2_pp_pell_dlnq string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in delinquency after 2 years
+bbrr2_pp_pell_fbr string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in forbearance after 2 years
+bbrr2_pp_pell_dfr string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in deferment after 2 years
+bbrr2_pp_pell_noprog string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers not making progress after 2 years
+bbrr2_pp_pell_makeprog string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers making progress after 2 years
+bbrr2_pp_pell_paidinfull string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers paid in full after 2 years
+bbrr2_pp_pell_discharge string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers with all loans discharged after 2 years
+bbrr2_pp_nopell_n integer --Non-Pell Grant recipient student Parent PLUS Loan borrower-based 2-year borrower count
+bbrr2_pp_nopell_dflt string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in default after 2 years
+bbrr2_pp_nopell_dlnq string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in delinquency after 2 years
+bbrr2_pp_nopell_fbr string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in forbearance after 2 years
+bbrr2_pp_nopell_dfr string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in deferment after 2 years
+bbrr2_pp_nopell_noprog string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers not making progress after 2 years
+bbrr2_pp_nopell_makeprog string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers making progress after 2 years
+bbrr2_pp_nopell_paidinfull string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers paid in full after 2 years
+bbrr2_pp_nopell_discharge string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers with all loans discharged after 2 years
+bbrr2_pp_male_n integer --Male student Parent PLUS Loan borrower-based 2-year borrower count
+bbrr2_pp_male_dflt string --Percentage of male student Parent PLUS Loan borrowers in default after 2 years
+bbrr2_pp_male_dlnq string --Percentage of male student Parent PLUS Loan borrowers in delinquency after 2 years
+bbrr2_pp_male_fbr string --Percentage of male student Parent PLUS Loan borrowers in forbearance after 2 years
+bbrr2_pp_male_dfr string --Percentage of male student Parent PLUS Loan borrowers in deferment after 2 years
+bbrr2_pp_male_noprog string --Percentage of male student Parent PLUS Loan borrowers not making progress after 2 years
+bbrr2_pp_male_makeprog string --Percentage of male student Parent PLUS Loan borrowers making progress after 2 years
+bbrr2_pp_male_paidinfull string --Percentage of male student Parent PLUS Loan borrowers paid in full after 2 years
+bbrr2_pp_male_discharge string --Percentage of male student Parent PLUS Loan borrowers with all loans discharged after 2 years
+bbrr2_pp_nomale_n integer --Non-male student Parent PLUS Loan borrower-based 2-year borrower count
+bbrr2_pp_nomale_dflt string --Percentage of non-male student Parent PLUS Loan borrowers in default after 2 years
+bbrr2_pp_nomale_dlnq string --Percentage of non-male student Parent PLUS Loan borrowers in delinquency after 2 years
+bbrr2_pp_nomale_fbr string --Percentage of non-male student Parent PLUS Loan borrowers in forbearance after 2 years
+bbrr2_pp_nomale_dfr string --Percentage of non-male student Parent PLUS Loan borrowers in deferment after 2 years
+bbrr2_pp_nomale_noprog string --Percentage of non-male student Parent PLUS Loan borrowers not making progress after 2 years
+bbrr2_pp_nomale_makeprog string --Percentage of non-male student Parent PLUS Loan borrowers making progress after 2 years
+bbrr2_pp_nomale_paidinfull string --Percentage of non-male student Parent PLUS Loan borrowers paid in full after 2 years
+bbrr2_pp_nomale_discharge string --Percentage of non-male student Parent PLUS Loan borrowers with all loans discharged after 2 years
+bbrr3_fed_ug_n integer --Undergraduate federal student loan borrower-based 3-year borrower count
+bbrr3_fed_ug_dflt string --Percentage of undergraduate federal student loan borrowers in default after 3 years
+bbrr3_fed_ug_dlnq string --Percentage of undergraduate federal student loan borrowers in delinquency after 3 years
+bbrr3_fed_ug_fbr string --Percentage of undergraduate federal student loan borrowers in forbearance after 3 years
+bbrr3_fed_ug_dfr string --Percentage of undergraduate federal student loan borrowers in deferment after 3 years
+bbrr3_fed_ug_noprog string --Percentage of undergraduate federal student loan borrowers not making progress after 3 years
+bbrr3_fed_ug_makeprog string --Percentage of undergraduate federal student loan borrowers making progress after 3 years
+bbrr3_fed_ug_paidinfull string --Percentage of undergraduate federal student loan borrowers paid in full after 3 years
+bbrr3_fed_ug_discharge string --Percentage of undergraduate federal student loan borrowers with all loans discharged after 3 years
+bbrr3_fed_ugcomp_n integer --Undergraduate completer undergraduate federal student loan borrower-based 3-year borrower count
+bbrr3_fed_ugcomp_dflt string --Percentage of undergraduate completer undergraduate federal student loan borrowers in default after 3 years
+bbrr3_fed_ugcomp_dlnq string --Percentage of undergraduate completer undergraduate federal student loan borrowers in delinquency after 3 years
+bbrr3_fed_ugcomp_fbr string --Percentage of undergraduate completer undergraduate federal student loan borrowers in forbearance after 3 years
+bbrr3_fed_ugcomp_dfr string --Percentage of undergraduate completer undergraduate federal student loan borrowers in deferment after 3 years
+bbrr3_fed_ugcomp_noprog string --Percentage of undergraduate completer undergraduate federal student loan borrowers not making progress after 3 years
+bbrr3_fed_ugcomp_makeprog string --Percentage of undergraduate completer undergraduate federal student loan borrowers making progress after 3 years
+bbrr3_fed_ugcomp_paidinfull string --Percentage of undergraduate completer undergraduate federal student loan borrowers paid in full after 3 years
+bbrr3_fed_ugcomp_discharge string --Percentage of undergraduate completer undergraduate federal student loan borrowers with all loans discharged after 3 years
+bbrr3_fed_ugnocomp_n integer --Undergraduate non-completer undergraduate federal student loan borrower-based 3-year borrower count
+bbrr3_fed_ugnocomp_dflt string --Percentage of undergraduate non-completer undergraduate federal student loan borrowers in default after 3 years
+bbrr3_fed_ugnocomp_dlnq string --Percentage of undergraduate non-completer undergraduate federal student loan borrowers in delinquency after 3 years
+bbrr3_fed_ugnocomp_fbr string --Percentage of undergraduate non-completer undergraduate federal student loan borrowers in forbearance after 3 years
+bbrr3_fed_ugnocomp_dfr string --Percentage of undergraduate non-completer undergraduate federal student loan borrowers in deferment after 3 years
+bbrr3_fed_ugnocomp_noprog string --Percentage of undergraduate non-completer undergraduate federal student loan borrowers not making progress after 3 years
+bbrr3_fed_ugnocomp_makeprog string --Percentage of undergraduate non-completer undergraduate federal student loan borrowers making progress after 3 years
+bbrr3_fed_ugnocomp_paidinfull string --Percentage of undergraduate non-completer undergraduate federal student loan borrowers paid in full after 3 years
+bbrr3_fed_ugnocomp_discharge string --Percentage of undergraduate non-completer undergraduate federal student loan borrowers with all loans discharged after 3 years
+bbrr3_fed_ugunk_n integer --Undergraduate unknown completion status undergraduate federal student loan borrower-based 3-year borrower count
+bbrr3_fed_ugunk_dflt string --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in default after 3 years
+bbrr3_fed_ugunk_dlnq string --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in delinquency after 3 years
+bbrr3_fed_ugunk_fbr string --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in forbearance after 3 years
+bbrr3_fed_ugunk_dfr string --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in deferment after 3 years
+bbrr3_fed_ugunk_noprog string --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers not making progress after 3 years
+bbrr3_fed_ugunk_makeprog string --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers making progress after 3 years
+bbrr3_fed_ugunk_paidinfull string --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers paid in full after 3 years
+bbrr3_fed_ugunk_discharge string --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers with all loans discharged after 3 years
+bbrr3_fed_gr_n integer --Graduate federal student loan borrower-based 3-year borrower count
+bbrr3_fed_gr_dflt string --Percentage of graduate federal student loan borrowers in default after 3 years
+bbrr3_fed_gr_dlnq string --Percentage of graduate federal student loan borrowers in delinquency after 3 years
+bbrr3_fed_gr_fbr string --Percentage of graduate federal student loan borrowers in forbearance after 3 years
+bbrr3_fed_gr_dfr string --Percentage of graduate federal student loan borrowers in deferment after 3 years
+bbrr3_fed_gr_noprog string --Percentage of graduate federal student loan borrowers not making progress after 3 years
+bbrr3_fed_gr_makeprog string --Percentage of graduate federal student loan borrowers making progress after 3 years
+bbrr3_fed_gr_paidinfull string --Percentage of graduate federal student loan borrowers paid in full after 3 years
+bbrr3_fed_gr_discharge string --Percentage of graduate federal student loan borrowers with all loans discharged after 3 years
+bbrr3_fed_grcomp_n integer --Graduate completer graduate federal student loan borrower-based 3-year borrower count
+bbrr3_fed_grcomp_dflt string --Percentage of graduate completer graduate federal student loan borrowers in default after 3 years
+bbrr3_fed_grcomp_dlnq string --Percentage of graduate completer graduate federal student loan borrowers in delinquency after 3 years
+bbrr3_fed_grcomp_fbr string --Percentage of graduate completer graduate federal student loan borrowers in forbearance after 3 years
+bbrr3_fed_grcomp_dfr string --Percentage of graduate completer graduate federal student loan borrowers in deferment after 3 years
+bbrr3_fed_grcomp_noprog string --Percentage of graduate completer graduate federal student loan borrowers not making progress after 3 years
+bbrr3_fed_grcomp_makeprog string --Percentage of graduate completer graduate federal student loan borrowers making progress after 3 years
+bbrr3_fed_grcomp_paidinfull string --Percentage of graduate completer graduate federal student loan borrowers paid in full after 3 years
+bbrr3_fed_grcomp_discharge string --Percentage of graduate completer graduate federal student loan borrowers with all loans discharged after 3 years
+bbrr3_fed_grnocomp_n integer --Graduate non-completer graduate federal student loan borrower-based 3-year borrower count
+bbrr3_fed_grnocomp_dflt string --Percentage of graduate non-completer graduate federal student loan borrowers in default after 3 years
+bbrr3_fed_grnocomp_dlnq string --Percentage of graduate non-completer graduate federal student loan borrowers in delinquency after 3 years
+bbrr3_fed_grnocomp_fbr string --Percentage of graduate non-completer graduate federal student loan borrowers in forbearance after 3 years
+bbrr3_fed_grnocomp_dfr string --Percentage of graduate non-completer graduate federal student loan borrowers in deferment after 3 years
+bbrr3_fed_grnocomp_noprog string --Percentage of graduate non-completer graduate federal student loan borrowers not making progress after 3 years
+bbrr3_fed_grnocomp_makeprog string --Percentage of graduate non-completer graduate federal student loan borrowers making progress after 3 years
+bbrr3_fed_grnocomp_paidinfull string --Percentage of graduate non-completer graduate federal student loan borrowers paid in full after 3 years
+bbrr3_fed_grnocomp_discharge string --Percentage of graduate non-completer graduate federal student loan borrowers with all loans discharged after 3 years
+bbrr3_pp_ug_n integer --Undergraduate student Parent PLUS Loan borrower-based 3-year borrower count
+bbrr3_pp_ug_dflt string --Percentage of undergraduate student Parent PLUS Loan borrowers in default after 3 years
+bbrr3_pp_ug_dlnq string --Percentage of undergraduate student Parent PLUS Loan borrowers in delinquency after 3 years
+bbrr3_pp_ug_fbr string --Percentage of undergraduate student Parent PLUS Loan borrowers in forbearance after 3 years
+bbrr3_pp_ug_dfr string --Percentage of undergraduate student Parent PLUS Loan borrowers in deferment after 3 years
+bbrr3_pp_ug_noprog string --Percentage of undergraduate student Parent PLUS Loan borrowers not making progress after 3 years
+bbrr3_pp_ug_makeprog string --Percentage of undergraduate student Parent PLUS Loan borrowers making progress after 3 years
+bbrr3_pp_ug_paidinfull string --Percentage of undergraduate student Parent PLUS Loan borrowers paid in full after 3 years
+bbrr3_pp_ug_discharge string --Percentage of undergraduate student Parent PLUS Loan borrowers with all loans discharged after 3 years
+bbrr3_pp_ugcomp_n integer --Undergraduate completer undergraduate student Parent PLUS Loan borrower-based 3-year borrower count
+bbrr3_pp_ugcomp_dflt string --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in default after 3 years
+bbrr3_pp_ugcomp_dlnq string --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in delinquency after 3 years
+bbrr3_pp_ugcomp_fbr string --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in forbearance after 3 years
+bbrr3_pp_ugcomp_dfr string --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in deferment after 3 years
+bbrr3_pp_ugcomp_noprog string --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers not making progress after 3 years
+bbrr3_pp_ugcomp_makeprog string --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers making progress after 3 years
+bbrr3_pp_ugcomp_paidinfull string --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers paid in full after 3 years
+bbrr3_pp_ugcomp_discharge string --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers with all loans discharged after 3 years
+bbrr3_pp_ugnocomp_n integer --Undergraduate non-completer undergraduate student Parent PLUS Loan borrower-based 3-year borrower count
+bbrr3_pp_ugnocomp_dflt string --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in default after 3 years
+bbrr3_pp_ugnocomp_dlnq string --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in delinquency after 3 years
+bbrr3_pp_ugnocomp_fbr string --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in forbearance after 3 years
+bbrr3_pp_ugnocomp_dfr string --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in deferment after 3 years
+bbrr3_pp_ugnocomp_noprog string --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers not making progress after 3 years
+bbrr3_pp_ugnocomp_makeprog string --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers making progress after 3 years
+bbrr3_pp_ugnocomp_paidinfull string --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers paid in full after 3 years
+bbrr3_pp_ugnocomp_discharge string --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers with all loans discharged after 3 years
+bbrr3_pp_ugunk_n integer --Undergraduate unknown completion status undergraduate student Parent PLUS Loan borrower-based 3-year borrower count
+bbrr3_pp_ugunk_dflt string --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in default after 3 years
+bbrr3_pp_ugunk_dlnq string --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in delinquency after 3 years
+bbrr3_pp_ugunk_fbr string --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in forbearance after 3 years
+bbrr3_pp_ugunk_dfr string --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in deferment after 3 years
+bbrr3_pp_ugunk_noprog string --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers not making progress after 3 years
+bbrr3_pp_ugunk_makeprog string --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers making progress after 3 years
+bbrr3_pp_ugunk_paidinfull string --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers paid in full after 3 years
+bbrr3_pp_ugunk_discharge string --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers with all loans discharged after 3 years
+bbrr3_fed_ind_n integer --Independent federal student loan borrower-based 3-year borrower count
+bbrr3_fed_ind_dflt string --Percentage of independent federal student loan borrowers in default after 3 years
+bbrr3_fed_ind_dlnq string --Percentage of independent federal student loan borrowers in delinquency after 3 years
+bbrr3_fed_ind_fbr string --Percentage of independent federal student loan borrowers in forbearance after 3 years
+bbrr3_fed_ind_dfr string --Percentage of independent federal student loan borrowers in deferment after 3 years
+bbrr3_fed_ind_noprog string --Percentage of independent federal student loan borrowers not making progress after 3 years
+bbrr3_fed_ind_makeprog string --Percentage of independent federal student loan borrowers making progress after 3 years
+bbrr3_fed_ind_paidinfull string --Percentage of independent federal student loan borrowers paid in full after 3 years
+bbrr3_fed_ind_discharge string --Percentage of independent federal student loan borrowers with all loans discharged after 3 years
+bbrr3_fed_dep_n integer --Dependent federal student loan borrower-based 3-year borrower count
+bbrr3_fed_dep_dflt string --Percentage of dependent federal student loan borrowers in default after 3 years
+bbrr3_fed_dep_dlnq string --Percentage of dependent federal student loan borrowers in delinquency after 3 years
+bbrr3_fed_dep_fbr string --Percentage of dependent federal student loan borrowers in forbearance after 3 years
+bbrr3_fed_dep_dfr string --Percentage of dependent federal student loan borrowers in deferment after 3 years
+bbrr3_fed_dep_noprog string --Percentage of dependent federal student loan borrowers not making progress after 3 years
+bbrr3_fed_dep_makeprog string --Percentage of dependent federal student loan borrowers making progress after 3 years
+bbrr3_fed_dep_paidinfull string --Percentage of dependent federal student loan borrowers paid in full after 3 years
+bbrr3_fed_dep_discharge string --Percentage of dependent federal student loan borrowers with all loans discharged after 3 years
+bbrr3_fed_pell_n integer --Pell Grant recipient federal student loan borrower-based 3-year borrower count
+bbrr3_fed_pell_dflt string --Percentage of Pell Grant recipient federal student loan borrowers in default after 3 years
+bbrr3_fed_pell_dlnq string --Percentage of Pell Grant recipient federal student loan borrowers in delinquency after 3 years
+bbrr3_fed_pell_fbr string --Percentage of Pell Grant recipient federal student loan borrowers in forbearance after 3 years
+bbrr3_fed_pell_dfr string --Percentage of Pell Grant recipient federal student loan borrowers in deferment after 3 years
+bbrr3_fed_pell_noprog string --Percentage of Pell Grant recipient federal student loan borrowers not making progress after 3 years
+bbrr3_fed_pell_makeprog string --Percentage of Pell Grant recipient federal student loan borrowers making progress after 3 years
+bbrr3_fed_pell_paidinfull string --Percentage of Pell Grant recipient federal student loan borrowers paid in full after 3 years
+bbrr3_fed_pell_discharge string --Percentage of Pell Grant recipient federal student loan borrowers with all loans discharged after 3 years
+bbrr3_fed_nopell_n integer --Non-Pell Grant recipient federal student loan borrower-based 3-year borrower count
+bbrr3_fed_nopell_dflt string --Percentage of non-Pell Grant recipient federal student loan borrowers in default after 3 years
+bbrr3_fed_nopell_dlnq string --Percentage of non-Pell Grant recipient federal student loan borrowers in delinquency after 3 years
+bbrr3_fed_nopell_fbr string --Percentage of non-Pell Grant recipient federal student loan borrowers in forbearance after 3 years
+bbrr3_fed_nopell_dfr string --Percentage of non-Pell Grant recipient federal student loan borrowers in deferment after 3 years
+bbrr3_fed_nopell_noprog string --Percentage of non-Pell Grant recipient federal student loan borrowers not making progress after 3 years
+bbrr3_fed_nopell_makeprog string --Percentage of non-Pell Grant recipient federal student loan borrowers making progress after 3 years
+bbrr3_fed_nopell_paidinfull string --Percentage of non-Pell Grant recipient federal student loan borrowers paid in full after 3 years
+bbrr3_fed_nopell_discharge string --Percentage of non-Pell Grant recipient federal student loan borrowers with all loans discharged after 3 years
+bbrr3_fed_male_n integer --Male federal student loan borrower-based 3-year borrower count
+bbrr3_fed_male_dflt string --Percentage of male federal student loan borrowers in default after 3 years
+bbrr3_fed_male_dlnq string --Percentage of male federal student loan borrowers in delinquency after 3 years
+bbrr3_fed_male_fbr string --Percentage of male federal student loan borrowers in forbearance after 3 years
+bbrr3_fed_male_dfr string --Percentage of male federal student loan borrowers in deferment after 3 years
+bbrr3_fed_male_noprog string --Percentage of male federal student loan borrowers not making progress after 3 years
+bbrr3_fed_male_makeprog string --Percentage of male federal student loan borrowers making progress after 3 years
+bbrr3_fed_male_paidinfull string --Percentage of male federal student loan borrowers paid in full after 3 years
+bbrr3_fed_male_discharge string --Percentage of male federal student loan borrowers with all loans discharged after 3 years
+bbrr3_fed_nomale_n integer --Non-male federal student loan borrower-based 3-year borrower count
+bbrr3_fed_nomale_dflt string --Percentage of non-male federal student loan borrowers in default after 3 years
+bbrr3_fed_nomale_dlnq string --Percentage of non-male federal student loan borrowers in delinquency after 3 years
+bbrr3_fed_nomale_fbr string --Percentage of non-male federal student loan borrowers in forbearance after 3 years
+bbrr3_fed_nomale_dfr string --Percentage of non-male federal student loan borrowers in deferment after 3 years
+bbrr3_fed_nomale_noprog string --Percentage of non-male federal student loan borrowers not making progress after 3 years
+bbrr3_fed_nomale_makeprog string --Percentage of non-male federal student loan borrowers making progress after 3 years
+bbrr3_fed_nomale_paidinfull string --Percentage of non-male federal student loan borrowers paid in full after 3 years
+bbrr3_fed_nomale_discharge string --Percentage of non-male federal student loan borrowers with all loans discharged after 3 years
+bbrr3_pp_ind_n integer --Independent student Parent PLUS Loan borrower-based 3-year borrower count
+bbrr3_pp_ind_dflt string --Percentage of independent student Parent PLUS Loan borrowers in default after 3 years
+bbrr3_pp_ind_dlnq string --Percentage of independent student Parent PLUS Loan borrowers in delinquency after 3 years
+bbrr3_pp_ind_fbr string --Percentage of independent student Parent PLUS Loan borrowers in forbearance after 3 years
+bbrr3_pp_ind_dfr string --Percentage of independent student Parent PLUS Loan borrowers in deferment after 3 years
+bbrr3_pp_ind_noprog string --Percentage of independent student Parent PLUS Loan borrowers not making progress after 3 years
+bbrr3_pp_ind_makeprog string --Percentage of independent student Parent PLUS Loan borrowers making progress after 3 years
+bbrr3_pp_ind_paidinfull string --Percentage of independent student Parent PLUS Loan borrowers paid in full after 3 years
+bbrr3_pp_ind_discharge string --Percentage of independent student Parent PLUS Loan borrowers with all loans discharged after 3 years
+bbrr3_pp_dep_n integer --Dependent student Parent PLUS Loan borrower-based 3-year borrower count
+bbrr3_pp_dep_dflt string --Percentage of dependent student Parent PLUS Loan borrowers in default after 3 years
+bbrr3_pp_dep_dlnq string --Percentage of dependent student Parent PLUS Loan borrowers in delinquency after 3 years
+bbrr3_pp_dep_fbr string --Percentage of dependent student Parent PLUS Loan borrowers in forbearance after 3 years
+bbrr3_pp_dep_dfr string --Percentage of dependent student Parent PLUS Loan borrowers in deferment after 3 years
+bbrr3_pp_dep_noprog string --Percentage of dependent student Parent PLUS Loan borrowers not making progress after 3 years
+bbrr3_pp_dep_makeprog string --Percentage of dependent student Parent PLUS Loan borrowers making progress after 3 years
+bbrr3_pp_dep_paidinfull string --Percentage of dependent student Parent PLUS Loan borrowers paid in full after 3 years
+bbrr3_pp_dep_discharge string --Percentage of dependent student Parent PLUS Loan borrowers with all loans discharged after 3 years
+bbrr3_pp_pell_n integer --Pell Grant recipient student Parent PLUS Loan borrower-based 3-year borrower count
+bbrr3_pp_pell_dflt string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in default after 3 years
+bbrr3_pp_pell_dlnq string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in delinquency after 3 years
+bbrr3_pp_pell_fbr string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in forbearance after 3 years
+bbrr3_pp_pell_dfr string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in deferment after 3 years
+bbrr3_pp_pell_noprog string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers not making progress after 3 years
+bbrr3_pp_pell_makeprog string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers making progress after 3 years
+bbrr3_pp_pell_paidinfull string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers paid in full after 3 years
+bbrr3_pp_pell_discharge string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers with all loans discharged after 3 years
+bbrr3_pp_nopell_n integer --Non-Pell Grant recipient student Parent PLUS Loan borrower-based 3-year borrower count
+bbrr3_pp_nopell_dflt string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in default after 3 years
+bbrr3_pp_nopell_dlnq string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in delinquency after 3 years
+bbrr3_pp_nopell_fbr string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in forbearance after 3 years
+bbrr3_pp_nopell_dfr string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in deferment after 3 years
+bbrr3_pp_nopell_noprog string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers not making progress after 3 years
+bbrr3_pp_nopell_makeprog string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers making progress after 3 years
+bbrr3_pp_nopell_paidinfull string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers paid in full after 3 years
+bbrr3_pp_nopell_discharge string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers with all loans discharged after 3 years
+bbrr3_pp_male_n integer --Male student Parent PLUS Loan borrower-based 3-year borrower count
+bbrr3_pp_male_dflt string --Percentage of male student Parent PLUS Loan borrowers in default after 3 years
+bbrr3_pp_male_dlnq string --Percentage of male student Parent PLUS Loan borrowers in delinquency after 3 years
+bbrr3_pp_male_fbr string --Percentage of male student Parent PLUS Loan borrowers in forbearance after 3 years
+bbrr3_pp_male_dfr string --Percentage of male student Parent PLUS Loan borrowers in deferment after 3 years
+bbrr3_pp_male_noprog string --Percentage of male student Parent PLUS Loan borrowers not making progress after 3 years
+bbrr3_pp_male_makeprog string --Percentage of male student Parent PLUS Loan borrowers making progress after 3 years
+bbrr3_pp_male_paidinfull string --Percentage of male student Parent PLUS Loan borrowers paid in full after 3 years
+bbrr3_pp_male_discharge string --Percentage of male student Parent PLUS Loan borrowers with all loans discharged after 3 years
+bbrr3_pp_nomale_n integer --Non-male student Parent PLUS Loan borrower-based 3-year borrower count
+bbrr3_pp_nomale_dflt string --Percentage of non-male student Parent PLUS Loan borrowers in default after 3 years
+bbrr3_pp_nomale_dlnq string --Percentage of non-male student Parent PLUS Loan borrowers in delinquency after 3 years
+bbrr3_pp_nomale_fbr string --Percentage of non-male student Parent PLUS Loan borrowers in forbearance after 3 years
+bbrr3_pp_nomale_dfr string --Percentage of non-male student Parent PLUS Loan borrowers in deferment after 3 years
+bbrr3_pp_nomale_noprog string --Percentage of non-male student Parent PLUS Loan borrowers not making progress after 3 years
+bbrr3_pp_nomale_makeprog string --Percentage of non-male student Parent PLUS Loan borrowers making progress after 3 years
+bbrr3_pp_nomale_paidinfull string --Percentage of non-male student Parent PLUS Loan borrowers paid in full after 3 years
+bbrr3_pp_nomale_discharge string --Percentage of non-male student Parent PLUS Loan borrowers with all loans discharged after 3 years
+count_nwne_1yr integer --Number of graduates working and not enrolled 1 year after completing
+count_wne_1yr integer --Number of graduates not working and not enrolled 1 year after completing
+cntover150_1yr integer --Number of graduates working and not enrolled who earned more than 150% of the single-person household poverty threshold 1 year after completing
+gt_threshold_p6 float --Share of students earning more than a high school graduate (threshold earnings) 6 years after entry
+gt_threshold_p6_supp float --Share of students earning more than a high school graduate (threshold earnings) 6 years after entry, suppressed for small n size
+md_earn_wne_inc1_p6 integer --Median earnings of students working and not enrolled 6 years after entry in the lowest income tercile $0-$30,000
+md_earn_wne_inc2_p6 integer --Median earnings of students working and not enrolled 6 years after entry in the middle income tercile $30,001-$75,000
+md_earn_wne_inc3_p6 integer --Median earnings of students working and not enrolled 6 years after entry in the highest income tercile $75,001+
+md_earn_wne_indep1_p6 integer --Median earnings of independent students working and not enrolled 6 years after entry
+md_earn_wne_indep0_p6 integer --Median earnings of dependent students working and not enrolled 6 years after entry
+md_earn_wne_male0_p6 integer --Median earnings of non-male students working and not enrolled 6 years after entry
+md_earn_wne_male1_p6 integer --Median earnings of male students working and not enrolled 6 years after entry
+gt_threshold_p8 float --Share of students earning more than a high school graduate (threshold earnings) 8 years after entry
+count_wne_inc1_p8 integer --Number of students working and not enrolled 8 years after entry in the lowest income tercile $0-$30,000
+md_earn_wne_inc1_p8 integer --Median earnings of students working and not enrolled 8 years after entry in the lowest income tercile $0-$30,000
+count_wne_inc2_p8 integer --Number of students working and not enrolled 8 years after entry in the middle income tercile $30,001-$75,000
+md_earn_wne_inc2_p8 integer --Median earnings of students working and not enrolled 8 years after entry in the middle income tercile $30,001-$75,000
+count_wne_inc3_p8 integer --Number of students working and not enrolled 8 years after entry in the highest income tercile $75,001+
+md_earn_wne_inc3_p8 integer --Median earnings of students working and not enrolled 8 years after entry in the highest income tercile $75,001+
+count_wne_indep1_p8 integer --Number of independent students working and not enrolled 8 years after entry
+md_earn_wne_indep1_p8 integer --Median earnings of independent students working and not enrolled 8 years after entry
+count_wne_indep0_p8 integer --Number of dependent students working and not enrolled 8 years after entry
+md_earn_wne_indep0_p8 integer --Median earnings of dependent students working and not enrolled 8 years after entry
+count_wne_male0_p8 integer --Number of non-male students working and not enrolled 8 years after entry
+md_earn_wne_male0_p8 integer --Median earnings of non-male students working and not enrolled 8 years after entry
+count_wne_male1_p8 integer --Number of male students working and not enrolled 8 years after entry
+md_earn_wne_male1_p8 integer --Median earnings of male students working and not enrolled 8 years after entry
+gt_threshold_p10 float --Share of students earning more than a high school graduate (threshold earnings) 10 years after entry
+md_earn_wne_inc1_p10 integer --Median earnings of students working and not enrolled 10 years after entry in the lowest income tercile $0-$30,000
+md_earn_wne_inc2_p10 integer --Median earnings of students working and not enrolled 10 years after entry in the middle income tercile $30,001-$75,000
+md_earn_wne_inc3_p10 integer --Median earnings of students working and not enrolled 10 years after entry in the highest income tercile $75,001+
+md_earn_wne_indep1_p10 integer --Median earnings of independent students working and not enrolled 10 years after entry
+md_earn_wne_indep0_p10 integer --Median earnings of dependent students working and not enrolled 10 years after entry
+md_earn_wne_male0_p10 integer --Median earnings of non-male students working and not enrolled 10 years after entry
+md_earn_wne_male1_p10 integer --Median earnings of male students working and not enrolled 10 years after entry
+stufacr float --Undergraduate student to instructional faculty ratio
+irps_2mor float --Share of full time faculty that are Two or More Races
+irps_aian float --Share of full time faculty that are American Indian or Alaskan Native
+irps_asian float --Share of full time faculty that are Asian
+irps_black float --Share of full time faculty that are Black or African American
+irps_hisp float --Share of full time faculty that are Hispanic
+irps_nhpi float --Share of full time faculty that are Native Hawaiian or Other Pacific Islander
+irps_nra float --Share of full time faculty that are U.S. Nonresidents
+irps_unkn float --Share of full time faculty that are of unknown race/ethnicity
+irps_white float --Share of full time faculty that are White
+irps_women float --Share of full time faculty that are men
+irps_men float --Share of full time faculty that are women
+md_earn_wne_1yr integer --Median earnings of graduates working and not enrolled 1 year after completing
+gt_threshold_1yr integer --Number of graduates working and not enrolled who earned more than a high school graduate 1 year after completing
+count_nwne_4yr integer --Number of graduates not working and not enrolled 4 years after completing
+count_wne_4yr integer --Number of graduates working and not enrolled 4 years after completing
+md_earn_wne_4yr integer --Median earnings of graduates working and not enrolled 4 years after completing
+gt_threshold_4yr integer --Number of graduates working and not enrolled who earned more than a high school graduate 4 years after completing
+bbrr4_fed_ug_n integer --Undergraduate federal student loan borrower-based 4-year borrower count
+bbrr4_fed_ug_dflt string --Percentage of undergraduate federal student loan borrowers in default after 4 years
+bbrr4_fed_ug_dlnq string --Percentage of undergraduate federal student loan borrowers in delinquency after 4 years
+bbrr4_fed_ug_fbr string --Percentage of undergraduate federal student loan borrowers in forbearance after 4 years
+bbrr4_fed_ug_dfr string --Percentage of undergraduate federal student loan borrowers in deferment after 4 years
+bbrr4_fed_ug_noprog string --Percentage of undergraduate federal student loan borrowers not making progress after 4 years
+bbrr4_fed_ug_makeprog string --Percentage of undergraduate federal student loan borrowers making progress after 4 years
+bbrr4_fed_ug_paidinfull string --Percentage of undergraduate federal student loan borrowers paid in full after 4 years
+bbrr4_fed_ug_discharge string --Percentage of undergraduate federal student loan borrowers with all loans discharged after 4 years
+bbrr4_fed_ugcomp_n integer --Undergraduate completer undergraduate federal student loan borrower-based 4-year borrower count
+bbrr4_fed_ugcomp_dflt string --Percentage of undergraduate completer undergraduate federal student loan borrowers in default after 4 years
+bbrr4_fed_ugcomp_dlnq string --Percentage of undergraduate completer undergraduate federal student loan borrowers in delinquency after 4 years
+bbrr4_fed_ugcomp_fbr string --Percentage of undergraduate completer undergraduate federal student loan borrowers in forbearance after 4 years
+bbrr4_fed_ugcomp_dfr string --Percentage of undergraduate completer undergraduate federal student loan borrowers in deferment after 4 years
+bbrr4_fed_ugcomp_noprog string --Percentage of undergraduate completer undergraduate federal student loan borrowers not making progress after 4 years
+bbrr4_fed_ugcomp_makeprog string --Percentage of undergraduate completer undergraduate federal student loan borrowers making progress after 4 years
+bbrr4_fed_ugcomp_paidinfull string --Percentage of undergraduate completer undergraduate federal student loan borrowers paid in full after 4 years
+bbrr4_fed_ugcomp_discharge string --Percentage of undergraduate completer undergraduate federal student loan borrowers with all loans discharged after 4 years
+bbrr4_fed_ugnocomp_n integer --Undergraduate non-completer undergraduate federal student loan borrower-based 4-year borrower count
+bbrr4_fed_ugnocomp_dflt string --Percentage of undergraduate non-completer undergraduate federal student loan borrowers in default after 4 years
+bbrr4_fed_ugnocomp_dlnq string --Percentage of undergraduate non-completer undergraduate federal student loan borrowers in delinquency after 4 years
+bbrr4_fed_ugnocomp_fbr string --Percentage of undergraduate non-completer undergraduate federal student loan borrowers in forbearance after 4 years
+bbrr4_fed_ugnocomp_dfr string --Percentage of undergraduate non-completer undergraduate federal student loan borrowers in deferment after 4 years
+bbrr4_fed_ugnocomp_noprog string --Percentage of undergraduate non-completer undergraduate federal student loan borrowers not making progress after 4 years
+bbrr4_fed_ugnocomp_makeprog string --Percentage of undergraduate non-completer undergraduate federal student loan borrowers making progress after 4 years
+bbrr4_fed_ugnocomp_paidinfull string --Percentage of undergraduate non-completer undergraduate federal student loan borrowers paid in full after 4 years
+bbrr4_fed_ugnocomp_discharge string --Percentage of undergraduate non-completer undergraduate federal student loan borrowers with all loans discharged after 4 years
+bbrr4_fed_ugunk_n integer --Undergraduate unknown completion status undergraduate federal student loan borrower-based 4-year borrower count
+bbrr4_fed_ugunk_dflt string --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in default after 4 years
+bbrr4_fed_ugunk_dlnq string --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in delinquency after 4 years
+bbrr4_fed_ugunk_fbr string --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in forbearance after 4 years
+bbrr4_fed_ugunk_dfr string --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers in deferment after 4 years
+bbrr4_fed_ugunk_noprog string --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers not making progress after 4 years
+bbrr4_fed_ugunk_makeprog string --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers making progress after 4 years
+bbrr4_fed_ugunk_paidinfull string --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers paid in full after 4 years
+bbrr4_fed_ugunk_discharge string --Percentage of undergraduate unknown completion status undergraduate federal student loan borrowers with all loans discharged after 4 years
+bbrr4_fed_gr_n integer --Graduate federal student loan borrower-based 4-year borrower count
+bbrr4_fed_gr_dflt string --Percentage of graduate federal student loan borrowers in default after 4 years
+bbrr4_fed_gr_dlnq string --Percentage of graduate federal student loan borrowers in delinquency after 4 years
+bbrr4_fed_gr_fbr string --Percentage of graduate federal student loan borrowers in forbearance after 4 years
+bbrr4_fed_gr_dfr string --Percentage of graduate federal student loan borrowers in deferment after 4 years
+bbrr4_fed_gr_noprog string --Percentage of graduate federal student loan borrowers not making progress after 4 years
+bbrr4_fed_gr_makeprog string --Percentage of graduate federal student loan borrowers making progress after 4 years
+bbrr4_fed_gr_paidinfull string --Percentage of graduate federal student loan borrowers paid in full after 4 years
+bbrr4_fed_gr_discharge string --Percentage of graduate federal student loan borrowers with all loans discharged after 4 years
+bbrr4_fed_grcomp_n integer --Graduate completer graduate federal student loan borrower-based 4-year borrower count
+bbrr4_fed_grcomp_dflt string --Percentage of graduate completer graduate federal student loan borrowers in default after 4 years
+bbrr4_fed_grcomp_dlnq string --Percentage of graduate completer graduate federal student loan borrowers in delinquency after 4 years
+bbrr4_fed_grcomp_fbr string --Percentage of graduate completer graduate federal student loan borrowers in forbearance after 4 years
+bbrr4_fed_grcomp_dfr string --Percentage of graduate completer graduate federal student loan borrowers in deferment after 4 years
+bbrr4_fed_grcomp_noprog string --Percentage of graduate completer graduate federal student loan borrowers not making progress after 4 years
+bbrr4_fed_grcomp_makeprog string --Percentage of graduate completer graduate federal student loan borrowers making progress after 4 years
+bbrr4_fed_grcomp_paidinfull string --Percentage of graduate completer graduate federal student loan borrowers paid in full after 4 years
+bbrr4_fed_grcomp_discharge string --Percentage of graduate completer graduate federal student loan borrowers with all loans discharged after 4 years
+bbrr4_fed_grnocomp_n integer --Graduate non-completer graduate federal student loan borrower-based 4-year borrower count
+bbrr4_fed_grnocomp_dflt string --Percentage of graduate non-completer graduate federal student loan borrowers in default after 4 years
+bbrr4_fed_grnocomp_dlnq string --Percentage of graduate non-completer graduate federal student loan borrowers in delinquency after 4 years
+bbrr4_fed_grnocomp_fbr string --Percentage of graduate non-completer graduate federal student loan borrowers in forbearance after 4 years
+bbrr4_fed_grnocomp_dfr string --Percentage of graduate non-completer graduate federal student loan borrowers in deferment after 4 years
+bbrr4_fed_grnocomp_noprog string --Percentage of graduate non-completer graduate federal student loan borrowers not making progress after 4 years
+bbrr4_fed_grnocomp_makeprog string --Percentage of graduate non-completer graduate federal student loan borrowers making progress after 4 years
+bbrr4_fed_grnocomp_paidinfull string --Percentage of graduate non-completer graduate federal student loan borrowers paid in full after 4 years
+bbrr4_fed_grnocomp_discharge string --Percentage of graduate non-completer graduate federal student loan borrowers with all loans discharged after 4 years
+bbrr4_pp_ug_n integer --Undergraduate student Parent PLUS Loan borrower-based 4-year borrower count
+bbrr4_pp_ug_dflt string --Percentage of undergraduate student Parent PLUS Loan borrowers in default after 4 years
+bbrr4_pp_ug_dlnq string --Percentage of undergraduate student Parent PLUS Loan borrowers in delinquency after 4 years
+bbrr4_pp_ug_fbr string --Percentage of undergraduate student Parent PLUS Loan borrowers in forbearance after 4 years
+bbrr4_pp_ug_dfr string --Percentage of undergraduate student Parent PLUS Loan borrowers in deferment after 4 years
+bbrr4_pp_ug_noprog string --Percentage of undergraduate student Parent PLUS Loan borrowers not making progress after 4 years
+bbrr4_pp_ug_makeprog string --Percentage of undergraduate student Parent PLUS Loan borrowers making progress after 4 years
+bbrr4_pp_ug_paidinfull string --Percentage of undergraduate student Parent PLUS Loan borrowers paid in full after 4 years
+bbrr4_pp_ug_discharge string --Percentage of undergraduate student Parent PLUS Loan borrowers with all loans discharged after 4 years
+bbrr4_pp_ugcomp_n integer --Undergraduate completer undergraduate student Parent PLUS Loan borrower-based 4-year borrower count
+bbrr4_pp_ugcomp_dflt string --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in default after 4 years
+bbrr4_pp_ugcomp_dlnq string --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in delinquency after 4 years
+bbrr4_pp_ugcomp_fbr string --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in forbearance after 4 years
+bbrr4_pp_ugcomp_dfr string --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers in deferment after 4 years
+bbrr4_pp_ugcomp_noprog string --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers not making progress after 4 years
+bbrr4_pp_ugcomp_makeprog string --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers making progress after 4 years
+bbrr4_pp_ugcomp_paidinfull string --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers paid in full after 4 years
+bbrr4_pp_ugcomp_discharge string --Percentage of undergraduate completer undergraduate student Parent PLUS Loan borrowers with all loans discharged after 4 years
+bbrr4_pp_ugnocomp_n integer --Undergraduate non-completer undergraduate student Parent PLUS Loan borrower-based 4-year borrower count
+bbrr4_pp_ugnocomp_dflt string --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in default after 4 years
+bbrr4_pp_ugnocomp_dlnq string --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in delinquency after 4 years
+bbrr4_pp_ugnocomp_fbr string --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in forbearance after 4 years
+bbrr4_pp_ugnocomp_dfr string --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers in deferment after 4 years
+bbrr4_pp_ugnocomp_noprog string --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers not making progress after 4 years
+bbrr4_pp_ugnocomp_makeprog string --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers making progress after 4 years
+bbrr4_pp_ugnocomp_paidinfull string --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers paid in full after 4 years
+bbrr4_pp_ugnocomp_discharge string --Percentage of undergraduate non-completer undergraduate student Parent PLUS Loan borrowers with all loans discharged after 4 years
+bbrr4_pp_ugunk_n integer --Undergraduate unknown completion status undergraduate student Parent PLUS Loan borrower-based 4-year borrower count
+bbrr4_pp_ugunk_dflt string --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in default after 4 years
+bbrr4_pp_ugunk_dlnq string --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in delinquency after 4 years
+bbrr4_pp_ugunk_fbr string --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in forbearance after 4 years
+bbrr4_pp_ugunk_dfr string --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers in deferment after 4 years
+bbrr4_pp_ugunk_noprog string --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers not making progress after 4 years
+bbrr4_pp_ugunk_makeprog string --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers making progress after 4 years
+bbrr4_pp_ugunk_paidinfull string --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers paid in full after 4 years
+bbrr4_pp_ugunk_discharge string --Percentage of undergraduate unknown completion status undergraduate student Parent PLUS Loan borrowers with all loans discharged after 4 years
+bbrr4_fed_ind_n integer --Independent federal student loan borrower-based 4-year borrower count
+bbrr4_fed_ind_dflt string --Percentage of independent federal student loan borrowers in default after 4 years
+bbrr4_fed_ind_dlnq string --Percentage of independent federal student loan borrowers in delinquency after 4 years
+bbrr4_fed_ind_fbr string --Percentage of independent federal student loan borrowers in forbearance after 4 years
+bbrr4_fed_ind_dfr string --Percentage of independent federal student loan borrowers in deferment after 4 years
+bbrr4_fed_ind_noprog string --Percentage of independent federal student loan borrowers not making progress after 4 years
+bbrr4_fed_ind_makeprog string --Percentage of independent federal student loan borrowers making progress after 4 years
+bbrr4_fed_ind_paidinfull string --Percentage of independent federal student loan borrowers paid in full after 4 years
+bbrr4_fed_ind_discharge string --Percentage of independent federal student loan borrowers with all loans discharged after 4 years
+bbrr4_fed_dep_n integer --Dependent federal student loan borrower-based 4-year borrower count
+bbrr4_fed_dep_dflt string --Percentage of dependent federal student loan borrowers in default after 4 years
+bbrr4_fed_dep_dlnq string --Percentage of dependent federal student loan borrowers in delinquency after 4 years
+bbrr4_fed_dep_fbr string --Percentage of dependent federal student loan borrowers in forbearance after 4 years
+bbrr4_fed_dep_dfr string --Percentage of dependent federal student loan borrowers in deferment after 4 years
+bbrr4_fed_dep_noprog string --Percentage of dependent federal student loan borrowers not making progress after 4 years
+bbrr4_fed_dep_makeprog string --Percentage of dependent federal student loan borrowers making progress after 4 years
+bbrr4_fed_dep_paidinfull string --Percentage of dependent federal student loan borrowers paid in full after 4 years
+bbrr4_fed_dep_discharge string --Percentage of dependent federal student loan borrowers with all loans discharged after 4 years
+bbrr4_fed_pell_n integer --Pell Grant recipient federal student loan borrower-based 4-year borrower count
+bbrr4_fed_pell_dflt string --Percentage of Pell Grant recipient federal student loan borrowers in default after 4 years
+bbrr4_fed_pell_dlnq string --Percentage of Pell Grant recipient federal student loan borrowers in delinquency after 4 years
+bbrr4_fed_pell_fbr string --Percentage of Pell Grant recipient federal student loan borrowers in forbearance after 4 years
+bbrr4_fed_pell_dfr string --Percentage of Pell Grant recipient federal student loan borrowers in deferment after 4 years
+bbrr4_fed_pell_noprog string --Percentage of Pell Grant recipient federal student loan borrowers not making progress after 4 years
+bbrr4_fed_pell_makeprog string --Percentage of Pell Grant recipient federal student loan borrowers making progress after 4 years
+bbrr4_fed_pell_paidinfull string --Percentage of Pell Grant recipient federal student loan borrowers paid in full after 4 years
+bbrr4_fed_pell_discharge string --Percentage of Pell Grant recipient federal student loan borrowers with all loans discharged after 4 years
+bbrr4_fed_nopell_n integer --Non-Pell Grant recipient federal student loan borrower-based 4-year borrower count
+bbrr4_fed_nopell_dflt string --Percentage of non-Pell Grant recipient federal student loan borrowers in default after 4 years
+bbrr4_fed_nopell_dlnq string --Percentage of non-Pell Grant recipient federal student loan borrowers in delinquency after 4 years
+bbrr4_fed_nopell_fbr string --Percentage of non-Pell Grant recipient federal student loan borrowers in forbearance after 4 years
+bbrr4_fed_nopell_dfr string --Percentage of non-Pell Grant recipient federal student loan borrowers in deferment after 4 years
+bbrr4_fed_nopell_noprog string --Percentage of non-Pell Grant recipient federal student loan borrowers not making progress after 4 years
+bbrr4_fed_nopell_makeprog string --Percentage of non-Pell Grant recipient federal student loan borrowers making progress after 4 years
+bbrr4_fed_nopell_paidinfull string --Percentage of non-Pell Grant recipient federal student loan borrowers paid in full after 4 years
+bbrr4_fed_nopell_discharge string --Percentage of non-Pell Grant recipient federal student loan borrowers with all loans discharged after 4 years
+bbrr4_fed_male_n integer --Male federal student loan borrower-based 4-year borrower count
+bbrr4_fed_male_dflt string --Percentage of male federal student loan borrowers in default after 4 years
+bbrr4_fed_male_dlnq string --Percentage of male federal student loan borrowers in delinquency after 4 years
+bbrr4_fed_male_fbr string --Percentage of male federal student loan borrowers in forbearance after 4 years
+bbrr4_fed_male_dfr string --Percentage of male federal student loan borrowers in deferment after 4 years
+bbrr4_fed_male_noprog string --Percentage of male federal student loan borrowers not making progress after 4 years
+bbrr4_fed_male_makeprog string --Percentage of male federal student loan borrowers making progress after 4 years
+bbrr4_fed_male_paidinfull string --Percentage of male federal student loan borrowers paid in full after 4 years
+bbrr4_fed_male_discharge string --Percentage of male federal student loan borrowers with all loans discharged after 4 years
+bbrr4_fed_nomale_n integer --Non-male federal student loan borrower-based 4-year borrower count
+bbrr4_fed_nomale_dflt string --Percentage of non-male federal student loan borrowers in default after 4 years
+bbrr4_fed_nomale_dlnq string --Percentage of non-male federal student loan borrowers in delinquency after 4 years
+bbrr4_fed_nomale_fbr string --Percentage of non-male federal student loan borrowers in forbearance after 4 years
+bbrr4_fed_nomale_dfr string --Percentage of non-male federal student loan borrowers in deferment after 4 years
+bbrr4_fed_nomale_noprog string --Percentage of non-male federal student loan borrowers not making progress after 4 years
+bbrr4_fed_nomale_makeprog string --Percentage of non-male federal student loan borrowers making progress after 4 years
+bbrr4_fed_nomale_paidinfull string --Percentage of non-male federal student loan borrowers paid in full after 4 years
+bbrr4_fed_nomale_discharge string --Percentage of non-male federal student loan borrowers with all loans discharged after 4 years
+bbrr4_pp_ind_n integer --Independent student Parent PLUS Loan borrower-based 4-year borrower count
+bbrr4_pp_ind_dflt string --Percentage of independent student Parent PLUS Loan borrowers in default after 4 years
+bbrr4_pp_ind_dlnq string --Percentage of independent student Parent PLUS Loan borrowers in delinquency after 4 years
+bbrr4_pp_ind_fbr string --Percentage of independent student Parent PLUS Loan borrowers in forbearance after 4 years
+bbrr4_pp_ind_dfr string --Percentage of independent student Parent PLUS Loan borrowers in deferment after 4 years
+bbrr4_pp_ind_noprog string --Percentage of independent student Parent PLUS Loan borrowers not making progress after 4 years
+bbrr4_pp_ind_makeprog string --Percentage of independent student Parent PLUS Loan borrowers making progress after 4 years
+bbrr4_pp_ind_paidinfull string --Percentage of independent student Parent PLUS Loan borrowers paid in full after 4 years
+bbrr4_pp_ind_discharge string --Percentage of independent student Parent PLUS Loan borrowers with all loans discharged after 4 years
+bbrr4_pp_dep_n integer --Dependent student Parent PLUS Loan borrower-based 4-year borrower count
+bbrr4_pp_dep_dflt string --Percentage of dependent student Parent PLUS Loan borrowers in default after 4 years
+bbrr4_pp_dep_dlnq string --Percentage of dependent student Parent PLUS Loan borrowers in delinquency after 4 years
+bbrr4_pp_dep_fbr string --Percentage of dependent student Parent PLUS Loan borrowers in forbearance after 4 years
+bbrr4_pp_dep_dfr string --Percentage of dependent student Parent PLUS Loan borrowers in deferment after 4 years
+bbrr4_pp_dep_noprog string --Percentage of dependent student Parent PLUS Loan borrowers not making progress after 4 years
+bbrr4_pp_dep_makeprog string --Percentage of dependent student Parent PLUS Loan borrowers making progress after 4 years
+bbrr4_pp_dep_paidinfull string --Percentage of dependent student Parent PLUS Loan borrowers paid in full after 4 years
+bbrr4_pp_dep_discharge string --Percentage of dependent student Parent PLUS Loan borrowers with all loans discharged after 4 years
+bbrr4_pp_pell_n integer --Pell Grant recipient student Parent PLUS Loan borrower-based 4-year borrower count
+bbrr4_pp_pell_dflt string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in default after 4 years
+bbrr4_pp_pell_dlnq string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in delinquency after 4 years
+bbrr4_pp_pell_fbr string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in forbearance after 4 years
+bbrr4_pp_pell_dfr string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers in deferment after 4 years
+bbrr4_pp_pell_noprog string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers not making progress after 4 years
+bbrr4_pp_pell_makeprog string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers making progress after 4 years
+bbrr4_pp_pell_paidinfull string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers paid in full after 4 years
+bbrr4_pp_pell_discharge string --Percentage of Pell Grant recipient student Parent PLUS Loan borrowers with all loans discharged after 4 years
+bbrr4_pp_nopell_n integer --Non-Pell Grant recipient student Parent PLUS Loan borrower-based 4-year borrower count
+bbrr4_pp_nopell_dflt string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in default after 4 years
+bbrr4_pp_nopell_dlnq string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in delinquency after 4 years
+bbrr4_pp_nopell_fbr string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in forbearance after 4 years
+bbrr4_pp_nopell_dfr string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers in deferment after 4 years
+bbrr4_pp_nopell_noprog string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers not making progress after 4 years
+bbrr4_pp_nopell_makeprog string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers making progress after 4 years
+bbrr4_pp_nopell_paidinfull string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers paid in full after 4 years
+bbrr4_pp_nopell_discharge string --Percentage of non-Pell Grant recipient student Parent PLUS Loan borrowers with all loans discharged after 4 years
+bbrr4_pp_male_n integer --Male student Parent PLUS Loan borrower-based 4-year borrower count
+bbrr4_pp_male_dflt string --Percentage of male student Parent PLUS Loan borrowers in default after 4 years
+bbrr4_pp_male_dlnq string --Percentage of male student Parent PLUS Loan borrowers in delinquency after 4 years
+bbrr4_pp_male_fbr string --Percentage of male student Parent PLUS Loan borrowers in forbearance after 4 years
+bbrr4_pp_male_dfr string --Percentage of male student Parent PLUS Loan borrowers in deferment after 4 years
+bbrr4_pp_male_noprog string --Percentage of male student Parent PLUS Loan borrowers not making progress after 4 years
+bbrr4_pp_male_makeprog string --Percentage of male student Parent PLUS Loan borrowers making progress after 4 years
+bbrr4_pp_male_paidinfull string --Percentage of male student Parent PLUS Loan borrowers paid in full after 4 years
+bbrr4_pp_male_discharge string --Percentage of male student Parent PLUS Loan borrowers with all loans discharged after 4 years
+bbrr4_pp_nomale_n integer --Non-male student Parent PLUS Loan borrower-based 4-year borrower count
+bbrr4_pp_nomale_dflt string --Percentage of non-male student Parent PLUS Loan borrowers in default after 4 years
+bbrr4_pp_nomale_dlnq string --Percentage of non-male student Parent PLUS Loan borrowers in delinquency after 4 years
+bbrr4_pp_nomale_fbr string --Percentage of non-male student Parent PLUS Loan borrowers in forbearance after 4 years
+bbrr4_pp_nomale_dfr string --Percentage of non-male student Parent PLUS Loan borrowers in deferment after 4 years
+bbrr4_pp_nomale_noprog string --Percentage of non-male student Parent PLUS Loan borrowers not making progress after 4 years
+bbrr4_pp_nomale_makeprog string --Percentage of non-male student Parent PLUS Loan borrowers making progress after 4 years
+bbrr4_pp_nomale_paidinfull string --Percentage of non-male student Parent PLUS Loan borrowers paid in full after 4 years
+bbrr4_pp_nomale_discharge string --Percentage of non-male student Parent PLUS Loan borrowers with all loans discharged after 4 years
+control_peps string --Control of institution (PEPS)
+adm_rate_supp float --Admission rate, suppressed for n<30
+omenryp_nopell_all float --Percentage of all non-Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry
+omenrap_nopell_all float --Percentage of all non-Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+omawdp8_nopell_all float --Percentage of all non-Pell Grant recipient students receiving an award within 8 years of entry
+omenrup_nopell_all float --Percentage of all non-Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+omenryp_nopell_firsttime float --Percentage of first-time non-Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry
+omenrap_nopell_firsttime float --Percentage of first-time non-Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+omawdp8_nopell_firsttime float --Percentage of first-time non-Pell Grant recipient students receiving an award within 8 years of entry
+omenrup_nopell_firsttime float --Percentage of first-time non-Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+omenryp_nopell_notfirsttime float --Percentage of not first-time non-Pell Grant recipient students that did not receive an award and are still enrolled at this institution 8 years after entry
+omenrap_nopell_notfirsttime float --Percentage of not first-time non-Pell Grant recipient students that did not receive an award and enrolled at another institution after leaving this institution within 8 years of entry
+omawdp8_nopell_notfirsttime float --Percentage of not first-time non-Pell Grant recipient students receiving an award within 8 years of entry
+omenrup_nopell_notfirsttime float --Percentage of not first-time non-Pell Grant recipient students that did not receive an award and whose enrollment status is unknown after leaving this institution within 8 years of entry
+omacht8_nopell_all integer --Adjusted cohort count of non-Pell Grant recipeint students (denominator for the 8-year outcomes percentages)
+omacht8_nopell_firsttime integer --Adjusted cohort count of first-time non-Pell Grant recipient students (denominator for the 8-year outcomes percentages)
+omacht8_nopell_notfirsttime integer --Adjusted cohort count of non-first-time non-Pell Grant recipient students (denominator for the 8-year outcomes percentages)
+addr string --Address of institution
+pctpell_dcs float --Percentage of degree/certificate-seeking undergraduate students awarded a Pell Grant
+pctfloan_dcs float --Percentage of degree/certificate-seeking undergraduate students awarded a federal loan
+dcs_pell_loan integer --Number of degree/certificate-seeking undergraduate students (denominator for percent degree/certificate-seeking undergraduates receiving a pell grant or federal student loan)
+pctpell_dcs_pooled_supp float --Percentage of degree/certificate-seeking undergraduate students awarded a Pell Grant, pooled in rolling averages and suppressed for small n size
+pctfloan_dcs_pooled_supp float --Percentage of degree/certificate-seeking undergraduate students awarded a federal loan, pooled in rolling averages and suppressed for small n size
+dcs_pell_loan_pooled integer --Number of degree/certificate-seeking undergraduate students (denominator for percent degree/certificate-seeking undergraduates receiving a pell grant or federal student loan), pooled in rolling averages
+poolyrs_dcs integer --Years used for rolling averages of PCTPELL_DCS_POOLED_SUPP and PCTFLOAN_DCS_POOLED_SUPP
+satvr50 float --50th percentile of SAT scores at the institution (critical reading)
+satmt50 float --50th percentile of SAT scores at the institution (math)
+actcm50 float --50th percentile of the ACT cumulative score
+acten50 float --50th percentile of the ACT English score
+actmt50 float --50th percentile of the ACT math score
+count_nwne_5yr integer --Number of graduates not working and not enrolled 5 years after completing
+count_wne_5yr integer --Number of graduates working and not enrolled 5 years after completing
+md_earn_wne_5yr integer --Median earnings of graduates working and not enrolled 5 years after completing
+gt_threshold_5yr integer --Number of graduates working and not enrolled who earned more than a high school graduate 5 years after completing
+md_earn_wne_p7 integer --Median earnings of students working and not enrolled 7 years after entry
+pct25_earn_wne_p7 integer --25th percentile of earnings of students working and not enrolled 7 years after entry
+pct75_earn_wne_p7 integer --75th percentile of earnings of students working and not enrolled 7 years after entry
+count_wne_inc1_p7 integer --Number of students working and not enrolled 7 years after entry in the lowest income tercile $0-$30,000
+count_wne_inc2_p7 integer --Number of students working and not enrolled 7 years after entry in the middle income tercile $30,001-$75,000
+count_wne_inc3_p7 integer --Number of students working and not enrolled 7 years after entry in the highest income tercile $75,001+ 
+count_wne_indep0_p7 integer --Number of dependent students working and not enrolled 7 years after entry
+count_wne_indep1_p7 integer --Number of independent students working and not enrolled 7 years after entry
+count_wne_male0_p7 integer --Number of female students working and not enrolled 7 years after entry
+count_wne_male1_p7 integer --Number of male students working and not enrolled 7 years after entry
+gt_threshold_p7 float --Share of students earning more than a high school graduate (threshold earnings) 7 years after entry
+md_earn_wne_inc1_p7 integer --Median earnings of students working and not enrolled 7 years after entry in the lowest income tercile $0-$30,000
+md_earn_wne_inc2_p7 integer --Median earnings of students working and not enrolled 7 years after entry in the middle income tercile $30,001-$75,000
+md_earn_wne_inc3_p7 integer --Median earnings of students working and not enrolled 7 years after entry in the highest income tercile $75,001+
+md_earn_wne_indep1_p7 integer --Median earnings of independent students working and not enrolled 7 years after entry
+md_earn_wne_indep0_p7 integer --Median earnings of dependent students working and not enrolled 7 years after entry
+md_earn_wne_male0_p7 integer --Median earnings of non-male students working and not enrolled 7 years after entry
+md_earn_wne_male1_p7 integer --Median earnings of male students working and not enrolled 7 years after entry
+md_earn_wne_p9 float --Median earnings of students working and not enrolled 9 years after entry
+pct25_earn_wne_p9 integer --25th percentile of earnings of students working and not enrolled 9 years after entry
+pct75_earn_wne_p9 integer --75th percentile of earnings of students working and not enrolled 9 years after entry
+count_wne_inc1_p9 integer --Number of students working and not enrolled 9 years after entry in the lowest income tercile $0-$30,000
+count_wne_inc2_p9 integer --Number of students working and not enrolled 9 years after entry in the middle income tercile $30,001-$75,000
+count_wne_inc3_p9 integer --Number of students working and not enrolled 9 years after entry in the highest income tercile $75,001+
+count_wne_indep0_p9 integer --Number of dependent students working and not enrolled 9 years after entry
+count_wne_indep1_p9 integer --Number of independent students working and not enrolled 9 years after entry
+count_wne_male0_p9 integer --Number of non-male students working and not enrolled 9 years after entry
+count_wne_male1_p9 integer --Number of male students working and not enrolled 9 years after entry
+gt_threshold_p9 float --Share of students earning more than a high school graduate (threshold earnings) 9 years after entry
+md_earn_wne_inc1_p9 integer --Median earnings of students working and not enrolled 9 years after entry in the lowest income tercile $0-$30,000
+md_earn_wne_inc2_p9 integer --Median earnings of students working and not enrolled 9 years after entry in the middle income tercile $30,001-$75,000
+md_earn_wne_inc3_p9 integer --Median earnings of students working and not enrolled 9 years after entry in the highest income tercile $75,001+
+md_earn_wne_indep0_p9 integer --Median earnings of dependent students working and not enrolled 9 years after entry
+md_earn_wne_indep1_p9 integer --Median earnings of independent students working and not enrolled 9 years after entry
+md_earn_wne_male0_p9 integer --Median earnings of non-male students working and not enrolled 9 years after entry
+md_earn_wne_male1_p9 integer --Median earnings of male students working and not enrolled 9 years after entry
+count_nwne_p11 integer --Number of students not working and not enrolled 11 years after entry
+count_wne_p11 integer --Number of students working and not enrolled 11 years after entry
+md_earn_wne_p11 integer --Median earnings of students working and not enrolled 11 years after entry
+pct25_earn_wne_p11 integer --25th percentile of earnings of students working and not enrolled 11 years after entry
+pct75_earn_wne_p11 integer --75th percentile of earnings of students working and not enrolled 11 years after entry
+sd_earn_wne_p11 integer --Standard deviation of earnings of students working and not enrolled 11 years after entry
+count_wne_inc1_p11 integer --Number of students working and not enrolled 11 years after entry in the lowest income tercile $0-$30,000
+count_wne_inc2_p11 integer --Number of students working and not enrolled 11 years after entry in the middle income tercile $30,001-$75,000
+count_wne_inc3_p11 integer --Number of students working and not enrolled 11 years after entry in the highest income tercile $75,001+ 
+count_wne_indep0_p11 integer --Number of dependent students working and not enrolled 11 years after entry
+count_wne_indep1_p11 integer --Number of independent students working and not enrolled 11 years after entry
+count_wne_male0_p11 integer --Number of female students working and not enrolled 11 years after entry
+count_wne_male1_p11 integer --Number of male students working and not enrolled 11 years after entry
+gt_threshold_p11 float --Share of students earning more than a high school graduate (threshold earnings) 11 years after entry
+md_earn_wne_inc1_p11 integer --Median earnings of students working and not enrolled 11 years after entry in the lowest income tercile $0-$30,000
+md_earn_wne_inc2_p11 integer --Median earnings of students working and not enrolled 11 years after entry in the middle income tercile $30,001-$75,000
+md_earn_wne_inc3_p11 integer --Median earnings of students working and not enrolled 11 years after entry in the highest income tercile $75,001+
+md_earn_wne_indep0_p11 integer --Median earnings of dependent students working and not enrolled 11 years after entry
+md_earn_wne_indep1_p11 integer --Median earnings of independent students working and not enrolled 11 years after entry
+md_earn_wne_male0_p11 integer --Median earnings of non-male students working and not enrolled 11 years after entry
+md_earn_wne_male1_p11 integer --Median earnings of male students working and not enrolled 11 years after entry
 
 
 --foreign_gifts
 -- Useful columns ( ID | Institution Name | City | State | Foreign Gift Amount | Gift Type | Country of Giftor | Giftor Name )
 -- OPEID: foreign key to university
 -- `WHERE` clause for inclusion: foreign gift received data
-ID
-OPEID
-Institution Name
-City
-State
-Foreign Gift Received Date
-Foreign Gift Amount
-Gift Type
-Country of Giftor
-Giftor Name
+id int
+OPEID varchar(6)
+institution_name varchar(255)
+city varchar(64)
+state varchar(64)
+date_received varchar(10)
+amount float
+gift_type varchar(64)
+giftor_country varchar(64)
+giftor_name varchar(64)
 
 - [x] equity_athletics_data_analysis/
 	- 2002--2023
@@ -3328,57 +3328,55 @@ Giftor Name
   	- Can be ignored ( addr1_txt | addr2_txt)
 
 
-- [x] college_athletics_financing/
-	- 2010--2014
- 	- Useful columns ( unitid | instnm | chronname | conference | city | state | nickname | year | url | full_time_enrollment )
-  	- Can be ignored ( inflationadjusted columns ) 
-
+--college_athletics_financing
+-- Useful columns ( unitid | instnm | chronname | conference | city | state | nickname | year | url | full_time_enrollment )
+-- Can be ignored ( inflationadjusted columns ) 
 unitid int --"Dept. of Education, The Integrated Postsecondary Education Data System (Ipeds) ID"
 instnm varchar(255) --Dept. of Education, The Integrated Postsecondary Education Data System (Ipeds)"
 chronname varchar(255) --Chronicle Institution Name
-conference varchar(255) --Conference,2013-2014 Conference based on Basketball Team Affiliation,ESPN/Institution Website
-city varchar(255) --City,City of the institution,"Dept. of Education, The Integrated Postsecondary Education Data System (Ipeds)"
-state  varchar(255) --State,State of the institution,"Dept. of Education, The Integrated Postsecondary Education Data System (Ipeds)"
-nickname varchar(255) --Nickname,Nickname of the instituition,Institution Website
-year int(11) --Year,Year of the data,NCAA Revenue and Expense Reports
-url varchar(255) --URL,"Filename of the raw report, appends to the URL http://chronicle.s3.amazonaws.com/DI/ncaa_subsidies/",NCAA Revenue and Expense Reports
-full_time_enrollment int(11) --2013 Full-time enrollment,2013-2014 enrollment for all full-time undergraduate and graduate students from Ipeds for all data; latest data available,"Dept. of Education, The Integrated Postsecondary Education Data System (Ipeds)"
-inflation_adjusted_ticket_sales bigint(13) --Revenue received for sales of admissions to athletics events,"Adjusted for inflation; Per NCAA Revenue/Expense form: Include revenue received for sales of admissions to athletics events. Include ticket sales to the  public, faculty and students, and money received for shipping and handling of tickets. Do not include ticket sales for conference and national tournaments that are pass-through transactions.","NCAA Revenue and Expense Reports, line 1"
-inflation_adjusted_student_fees bigint(13) --Student fees for college athletics ,Adjusted for inflation; Per NCAA Revenue/Expense form: Includes student fees assessed and restricted for support of intercollegiate athletics.,"NCAA Revenue and Expense Reports, line 2"
-inflation_adjusted_direct_state_govt_support bigint(13) --"State, municipal, federal and other government appropriations made in support of the operations of college athletics","Adjusted for inflation; Per NCAA Revenue/Expense form: Includes state, municipal, federal and other government appropriations made in support of the operations of intercollegiate athletics. This amount includes funding specifically earmarked to the athletics department by government agencies for which the institution has no discretion to reallocate. Any state or other government support appropriated to the university, for which the university determines the dollar allocation to the athletics department shall be reported in Direct Institutional Support (item 7).","NCAA Revenue and Expense Reports, line 6"
-inflation_adjusted_direct_institutional_support bigint(13) --,"Adjusted for inflation; Per NCAA Revenue/Expense form: Includes value of institutional resources for the current operations of intercollegiate athletics, as well as all unrestricted funds allocated to the athletics department by the university (e.g., state funds, tuition, tuition waivers and transfers). Also include Federal Work Study support for student workers employed by athletics. Report actual amounts and do not net with Transfers to Institution (category 37).","NCAA Revenue and Expense Reports, line 7"
-inflation_adjusted_indirect_facil_admin_support bigint(13) --Facilities and services provided by the institution not charged to athletics,"Adjusted for inflation; Per NCAA Revenue/Expense form: Includes value of facilities and services provided by the institution not charged to athletics. This support  may include an allocation for institutional administrative cost, facilities and maintenance, grounds and field maintenance, security, risk management, utilities, depreciation and debt service. If your institution does not currently track indirect institutional support, consult your business office for a reasonable allocation. If counted here, include offsetting expenditure equal in value in Expense Category 32 (Indirect Facilities and Administrative Support).","NCAA Revenue and Expense Reports, line 8"
-inflation_adjusted_ncaa_distributions bigint(13) --"Revenue received from participation in bowl games, tournaments and all NCAA distributions","Adjusted for inflation; Per NCAA Revenue/Expense form: Includes revenue received from participation in bowl games, tournaments and all NCAA distributions. This category includes amounts received for direct participation or through a sharing arrangement with an athletics conference, including shares of conference television agreements. If known by sport, report as such. Include any payments received from the NCAA for hosting a championship (permissible to include in Revenue Not Related to Specific Teams). ","NCAA Revenue and Expense Reports, line 9"
-inflation_adjusted_royalties bigint(13) --"All revenue from corporate sponsorships, licensing, sales of advertisements, trademarks and royalties","Adjusted for inflation; Per NCAA Revenue/Expense form: Includes all revenue from corporate sponsorships, licensing, sales of advertisements, trademarks and royalties. An allocation will be necessary to distinguish revenues generated by athletics versus the university if payments are combined. Include the value of in-kind products and services provided as part of the sponsorship (e.g., equipment, apparel, soft drinks, water and isotonic products).","NCAA Revenue and Expense Reports, line 12"
-inflation_adjusted_tv_revenue bigint(13) --"Revenue received directly for radio and television broadcasts, Internet and e-commerce rights received through institution-negotiated contracts","Adjusted for inflation; Per NCAA Revenue/Expense form: Includes institutional revenue received directly for radio and television broadcasts, Internet and e-commerce rights received through institution-negotiated contracts.","NCAA Revenue and Expense Reports, line 10"
-inflation_adjusted_endowments bigint(13) --,Adjusted for inflation; Per NCAA Revenue/Expense form: Includes endowment spending policy distribution and other investment income in support of the athletics department. These categories include only restricted investment and endowment income for the operations of intercollegiate athletics; institutional allocations of income from unrestricted endowments qualify as Direct Institutional Support.,"NCAA Revenue and Expense Reports, line 14"
-other_revenues bigint(13) --Other revenues,"Calculated using all inflation adjusted fields, as follows: External revenue MINUS (NCAA Distributions PLUS Royalties PLUS TV Revenue PLUS Ticket Sales)",Calculated by The Chronicle & Huffington Post
-inflation_adjusted_athletic_revenues bigint(13) --,"Adjusted for inflation; Per NCAA Revenue/Expense form: Includes ticket sales; student fees; guarantee revenue; contributions; compensation and benefits provided by a third party; direct state or other government support; direct institutional support; indirect facilities and adminstrative support;NCAA/Conference Distributions including all tournament revenue; Broadcast, TV, Radio & Internet Rights; Program Sales, Concessions, Novelty Sales, and Parking; Royalties, Licensing, Advertisements and Sponsorships; Sports Camp Revenues; Endowment and Investment Income; Other Operating Revenue","NCAA Revenue and Expense Reports, line 1-15"
-inflation_adjusted_athletic_expenses bigint(13) --,"Adjusted for inflation; Per NCAA Revenue/Expense form: Includes athletic student aid; guarantee expenses; coaching salaries, benefitsm and bonuses paid by the university and related entities; coaching other compensation and benefits paid by a third party; support staff/adminstrative salaries, benefits and bonuses paid by the university and related entities; support staff/administrative other compensationand benefits paid by a third party; severance payments; recruiting; team travel; equipment, uniforms and supplies; game expenses; fundraising, marketing, and promotion; sports camp expenses; direct facilities, maintenance and rental; spirit groups; indirect facilities and adminstrative support; medical expenses and medical insurance; memberships and dues; other operating expenses","NCAA Revenue and Expense Reports, line 36"
-inflation_adjusted_subsidy bigint(13) --"Includes student fees, institutional subsidy and direct state government support","Calculated using all inflation adjusted fields, as follows: Student Fees PLUS Direct Institutional Support PLUS Direct State Govt Support PLUS Indirect Facil Admin Support",Calculated by The Chronicle & Huffington Post
-inflation_adjusted_subsidyproportion float --,"Calculated using all inflation adjusted fields, as follows: Subsidy DIVIDED BY Athletic revenues ",Calculated by The Chronicle & Huffington Post
-inflation_adjusted_institutional_subsidy bigint(13) --"Institutional resources for the operations of intercollegiate athletics, as well as all unrestricted funds allocated to the athletics department by the university (e.g., state funds, tuition, tuition waivers and transfers) and facilities and services provided by the institution not charged to athletics","Calculated using all inflation adjusted fields, as follows: Direct Institutional Support PLUS Indirect Facil Admin Support ",Calculated by The Chronicle & Huffington Post
-inflation_adjusted_institutionalsubsidy_proportion float --,"Calculated using all inflation adjusted fields, as follows: Institutional Subsidy DIVIDED BY Athletic revenues",Calculated by The Chronicle & Huffington Post
-inflation_adjusted_net_revenue bigint(13) --,"Calculated using all inflation adjusted fields, as follows: Athletic revenues MINUS Athletic expenses",Calculated by The Chronicle & Huffington Post
-inflation_adjusted_net_revenue_before_subsidy bigint(13) --,"Calculated using all inflation adjusted fields, as follows: Net revenue MINUS Subsidy",Calculated by The Chronicle & Huffington Post
-inflation_adjusted_external_revenue bigint(13) --,"Calculated using all inflation adjusted fields, as follows: Athletic revenues MINUS Subsidy",Calculated by The Chronicle & Huffington Post
-ticket_sales bigint(13) --Revenue received for sales of admissions to athletics events,"Per NCAA Revenue/Expense form: Includes revenue received for sales of admissions to athletics events. Include ticket sales to the  public, faculty and students, and money received for shipping and handling of tickets. Do not include ticket sales for conference and national tournaments that are pass-through transactions.","NCAA Revenue and Expense Reports, line 1"
-student_fees bigint(13) --Student fees for college athletics ,Per NCAA Revenue/Expense form: Includes student fees assessed and restricted for support of intercollegiate athletics.,"NCAA Revenue and Expense Reports, line 2"
-direct_state_govt_support bigint(13) --"State, municipal, federal and other government appropriations made in support of the operations of college athletics","Per NCAA Revenue/Expense form: Includes state, municipal, federal and other government appropriations made in support of the operations of intercollegiate athletics. This amount includes funding specifically earmarked to the athletics department by government agencies for which the institution has no discretion to reallocate. Any state or other government support appropriated to the university, for which the university determines the dollar allocation to the athletics department shall be reported in Direct Institutional Support (item 7).","NCAA Revenue and Expense Reports, line 6"
-direct_institutional_support bigint(13) --,"Per NCAA Revenue/Expense form: Includes value of institutional resources for the current operations of intercollegiate athletics, as well as all unrestricted funds allocated to the athletics department by the university (e.g., state funds, tuition, tuition waivers and transfers). Also include Federal Work Study support for student workers employed by athletics. Report actual amounts and do not net with Transfers to Institution (category 37).","NCAA Revenue and Expense Reports, line 7"
-ndirect_facil_admin_support bigint(13) --Facilities and services provided by the institution not charged to athletics,"Per NCAA Revenue/Expense form: Includes value of facilities and services provided by the institution not charged to athletics. This support  may include an allocation for institutional administrative cost, facilities and maintenance, grounds and field maintenance, security, risk management, utilities, depreciation and debt service. If your institution does not currently track indirect institutional support, consult your business office for a reasonable allocation. If counted here, include offsetting expenditure equal in value in Expense Category 32 (Indirect Facilities and Administrative Support).","NCAA Revenue and Expense Reports, line 8"
-ncaa_distributions bigint(13) --"Revenue received from participation in bowl games, tournaments and all NCAA distributions","Per NCAA Revenue/Expense form: Includes revenue received from participation in bowl games, tournaments and all NCAA distributions. This category includes amounts received for direct participation or through a sharing arrangement with an athletics conference, including shares of conference television agreements. If known by sport, report as such. Include any payments received from the NCAA for hosting a championship (permissible to include in Revenue Not Related to Specific Teams). ","NCAA Revenue and Expense Reports, line 9"
-royalties bigint(13) --"All revenue from corporate sponsorships, licensing, sales of advertisements, trademarks and royalties","Per NCAA Revenue/Expense form: Includes all revenue from corporate sponsorships, licensing, sales of advertisements, trademarks and royalties. An allocation will be necessary to distinguish revenues generated by athletics versus the university if payments are combined. Include the value of in-kind products and services provided as part of the sponsorship (e.g., equipment, apparel, soft drinks, water and isotonic products).","NCAA Revenue and Expense Reports, line 12"
-tv_revenue bigint(13) --"Revenue received directly for radio and television broadcasts, Internet and e-commerce rights received through institution-negotiated contracts","Per NCAA Revenue/Expense form: Includes institutional revenue received directly for radio and television broadcasts, Internet and e-commerce rights received through institution-negotiated contracts.","NCAA Revenue and Expense Reports, line 10"
-endowments bigint(13) --,Per NCAA Revenue/Expense form: Includes endowment spending policy distribution and other investment income in support of the athletics department. These categories include only restricted investment and endowment income for the operations of intercollegiate athletics; institutional allocations of income from unrestricted endowments qualify as Direct Institutional Support.,"NCAA Revenue and Expense Reports, line 14"
-athletic_revenues bigint(13) --Other revenues,"Per NCAA Revenue/Expense form: Includes ticket sales; student fees; guarantee revenue; contributions; compensation and benefits provided by a third party; direct state or other government support; direct institutional support; indirect facilities and adminstrative support;NCAA/Conference Distributions including all tournament revenue; Broadcast, TV, Radio & Internet Rights; Program Sales, Concessions, Novelty Sales, and Parking; Royalties, Licensing, Advertisements and Sponsorships; Sports Camp Revenues; Endowment and Investment Income; Other Operating Revenue","NCAA Revenue and Expense Reports, line 1-15"
-other_revenues bigint(13) --,"Calculated using all raw fields, as follows: External revenue MINUS (NCAA Distributions PLUS Royalties PLUS TV Revenue PLUS Ticket Sales)",Calculated by The Chronicle & Huffington Post
-athletic_expenses bigint(13) --,"Per NCAA Revenue/Expense form: Includes athletic student aid; guarantee expenses; coaching salaries, benefitsm and bonuses paid by the university and related entities; coaching other compensation and benefits paid by a third party; support staff/adminstrative salaries, benefits and bonuses paid by the university and related entities; support staff/administrative other compensationand benefits paid by a third party; severance payments; recruiting; team travel; equipment, uniforms and supplies; game expenses; fundraising, marketing, and promotion; sports camp expenses; direct facilities, maintenance and rental; spirit groups; indirect facilities and adminstrative support; medical expenses and medical insurance; memberships and dues; other operating expenses","NCAA Revenue and Expense Reports, line 36"
-subsidy bigint(13) --"Includes student fees, institutional subsidy and direct state government support","Calculated using all raw fields, as follows: Student Fees PLUS Direct Institutional Support PLUS Direct State Govt Support PLUS Indirect Facil Admin Support",Calculated by The Chronicle & Huffington Post
-subsidyproportion float --,"Calculated using all raw fields, as follows: Subsidy DIVIDED BY Athletic revenues ",Calculated by The Chronicle & Huffington Post
-institutional_subsidy bigint(13) --"Institutional resources for the operations of intercollegiate athletics, as well as all unrestricted funds allocated to the athletics department by the university (e.g., state funds, tuition, tuition waivers and transfers) and facilities and services provided by the institution not charged to athletics","Calculated using all raw fields, as follows: Direct Institutional Support PLUS Indirect Facil Admin Support ",Calculated by The Chronicle & Huffington Post
-institutionalsubsidy_proportion float --,"Calculated using all raw fields, as follows: Institutional Subsidy DIVIDED BY Athletic revenues",Calculated by The Chronicle & Huffington Post
-net_revenue bigint(13) --,"Calculated using all raw fields, as follows: Athletic revenues MINUS Athletic expenses",Calculated by The Chronicle & Huffington Post
-net_revenue_before_subsidy bigint(13) --,"Calculated using all raw fields, as follows: Net revenue MINUS Subsidy",Calculated by The Chronicle & Huffington Post
-external_revenue bigint(13) --"Earned Revenue includes any income generated through ticket sales, endowments, royalties, and TV and conference distributions, among others. ","Calculated using all raw fields, as follows: Athletic revenues MINUS Subsidy",Calculated by The Chronicle & Huffington Post
-instate_tuition bigint(13) --2014 In-state Tuition,2014-2015 In-state tuition ,College Board
+conference varchar(255) --2013-2014 Conference based on Basketball Team Affiliation,ESPN/Institution Website
+city varchar(255)
+state  varchar(255)
+nickname varchar(255) --Nickname of the instituition
+year int --Year of the data
+url varchar(255) --Raw report filename, appended to http://chronicle.s3.amazonaws.com/DI/ncaa_subsidies/
+full_time_enrollment int --2013--2014 enrollment for all full-time students
+inflation_adjusted_ticket_sales bigint --Ticket sales revenue.
+inflation_adjusted_student_fees bigint --Student fees assessed to support college athletics.
+inflation_adjusted_direct_state_govt_support bigint
+inflation_adjusted_direct_institutional_support bigint --Value of institutional resources and unristricted funds
+inflation_adjusted_indirect_facil_admin_support bigint --Value of indirect support
+inflation_adjusted_ncaa_distributions bigint --Revenue received from participation in games.
+inflation_adjusted_royalties bigint --Revenue from royalties.
+inflation_adjusted_tv_revenue bigint --Revenue from radio and television broadcasts.
+inflation_adjusted_endowments bigint --Revenue from endowments and investments.
+other_revenues bigint --Other revenues.
+inflation_adjusted_athletic_revenues bigint --Total revenue.
+inflation_adjusted_athletic_expenses bigint --Total expenses.
+inflation_adjusted_subsidy bigint --Total state government and institutional subsidy.
+inflation_adjusted_subsidyproportion float --Subsidy divided by athletic revenues.
+inflation_adjusted_institutional_subsidy bigint --Direct institutional support plus indirect facil admin support.
+inflation_adjusted_institutionalsubsidy_proportion float --Institutional subsidy divided by athletic revenues.
+inflation_adjusted_net_revenue bigint --Athletic revenues minus athletic expenses.
+inflation_adjusted_net_revenue_before_subsidy bigint --Net revenue minus subsidy.
+inflation_adjusted_external_revenue bigint --Athletic revenues minus subsidy.
+ticket_sales bigint --Revenue received for sales of admissions to athletics events.
+student_fees bigint --Student fees for college athletics.
+direct_state_govt_support bigint --Direct support from state government.
+direct_institutional_support bigint --Institutional resources plus unrestricted university funds.
+ndirect_facil_admin_support bigint --Facilities and services provided by the institution but not charged to athletics.
+ncaa_distributions bigint --Revenue received from participation in games.
+royalties bigint --Revenue from royalties.
+tv_revenue bigint --Revenue from radio and television broadcasts.
+endowments bigint --Revenue from endowments and investments.
+athletic_revenues bigint --Total revenue.
+other_revenues bigint --Other revenues.
+athletic_expenses bigint --Total expenses.
+subsidy bigint --Total state government and institutional subsidy.
+subsidyproportion float --Subsidy divided by athletic revenues.
+institutional_subsidy bigint --Direct institutional support plus indirect facil admin support.
+institutionalsubsidy_proportion float --Institutional subsidy divided by athletic revenues.
+net_revenue bigint --Athletic revenues minus athletic expenses.
+net_revenue_before_subsidy bigint --Net revenue minus subsidy.
+external_revenue bigint --Athletic revenues minus subsidy.
+instate_tuition bigint --2014 in-state tuition.
