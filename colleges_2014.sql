@@ -42,8 +42,7 @@ CREATE TABLE foreign_gifts (
 	donor_name varchar(100), --"Giftor Name"
 	gift_amount decimal(16, 2), --"Foreign Gift Amount"
 	gift_date date, --"Foreign Gift Received"
-	gift_type varchar(32), --"Gift Type"
-	year int DEFAULT 2014 CHECK (year = 2014)
+	gift_type varchar(32) --"Gift Type"
 );
 
 CREATE TABLE athletics_financing (
