@@ -1,25 +1,28 @@
 CREATE DATABASE colleges_2014;
 \c colleges_2014
 
+--from `college_scorecard`
 CREATE TABLE institutions (
 	unitid int PRIMARY KEY, --UNITID
-	opeid varchar(16), --OPEID
+	opeid varchar(16) UNIQUE, --OPEID
 	name varchar(128) NOT NULL, --INSTNM
 	state varchar(2), --STABBR
 	city varchar(64), --CITY
 	zip_code varchar(10) --ZIP
 );
 
+--from `college_scorecard`
 CREATE TABLE academic_scores (
 	id SERIAL PRIMARY KEY,
-	unitid int REFERENCES institutions(unitid),
+	unitid int REFERENCES institutions(unitid), --UNITID
 	sat_mid_read float, --SATVRMID
 	sat_mid_math float, --SATMTMID
 	sat_mid_write float, --SATWRMID
 	sat_avg float, --SAT_AVG
-	completion_rate, float --C200_4_POOLED_SUPP
+	completion_rate float --C200_4_POOLED_SUPP
 );
 
+--from `college_scorecard`
 CREATE TABLE financial_scores (
 	id SERIAL PRIMARY KEY,
 	unitid int REFERENCES institutions(unitid),
@@ -35,6 +38,7 @@ CREATE TABLE financial_scores (
 	shrinking_loans float --RPY_7YR_RT
 );
 
+--from `foreign_gifts`
 CREATE TABLE foreign_gifts (
 	id SERIAL PRIMARY KEY,
 	opeid varchar(16) REFERENCES institutions(opeid), --OPEID
@@ -45,9 +49,10 @@ CREATE TABLE foreign_gifts (
 	gift_type varchar(32) --"Gift Type"
 );
 
+--from `college_athletics_financing`
 CREATE TABLE athletics_financing (
 	id SERIAL PRIMARY KEY,
-	institution_id int REFERENCES institutions(unitid),
+	unitid int REFERENCES institutions(unitid), --unitid
 	total_revenue decimal(15, 2),
 	total_expenses decimal(15, 2),
 	year int DEFAULT 2014 CHECK (year = 2014)
