@@ -3306,7 +3306,6 @@ md_earn_wne_indep1_p11 integer --Median earnings of independent students working
 md_earn_wne_male0_p11 integer --Median earnings of non-male students working and not enrolled 11 years after entry
 md_earn_wne_male1_p11 integer --Median earnings of male students working and not enrolled 11 years after entry
 
-
 --foreign_gifts
 -- Useful columns ( ID | Institution Name | City | State | Foreign Gift Amount | Gift Type | Country of Giftor | Giftor Name )
 -- OPEID: foreign key to university
@@ -3321,12 +3320,6 @@ amount float
 gift_type varchar(64)
 giftor_country varchar(64)
 giftor_name varchar(64)
-
-- [x] equity_athletics_data_analysis/
-	- 2002--2023
- 	- Useful columns (unitid | institution_name | city_txt	| state_cd | EFMaleCount | EFFemaleCount | EFTotalCount | sector_cd | sector_name | STAID_MEN | STAID_WOMEN | STAID_COED | STUDENTAID_TOTAL)
-  	- Can be ignored ( addr1_txt | addr2_txt)
-
 
 --college_athletics_financing
 -- Useful columns ( unitid | instnm | chronname | conference | city | state | nickname | year | url | full_time_enrollment )
