@@ -10,19 +10,29 @@ CREATE TABLE institutions (
 	zip_code varchar(10) --ZIP
 );
 
-CREATE TABLE scorecards (
+CREATE TABLE academic_scores (
 	id SERIAL PRIMARY KEY,
-	institution_id varchar(10) REFERENCES institutions(unitid),
-	enrollment int,
+	institution_id int REFERENCES institutions(unitid)
+);
+
+CREATE TABLE financial_scores (
+	id SERIAL PRIMARY KEY,
+	institution_id int REFERENCES institutions(unitid),
+	enrollment int, --UG
 	avg_tuition decimal(10, 2),
 	grad_rate decimal(5, 2),
 	median_debt decimal(10, 2),
-	year int DEFAULT 2014 CHECK (year = 2014)
+	year int DEFAULT 2014 CHECK (year = 2014),
+	instruction_spend_per_student int, --INTEXPFTE
+	pct_pell_students float, --PCTPELL
+	default_rate2 float, --CDR2
+	default_rate3 float, --CDR3
+	shrinking_loans float --RPY_7YR_RT
 );
 
 CREATE TABLE foreign_gifts (
 	id SERIAL PRIMARY KEY,
-	institution_id varchar(10) REFERENCES institutions(unitid),
+	institution_id int REFERENCES institutions(unitid),
 	donor_country varchar(50),
 	donor_name varchar(100),
 	gift_amount decimal(15, 2),
@@ -33,7 +43,7 @@ CREATE TABLE foreign_gifts (
 
 CREATE TABLE athletics_financing (
 	id SERIAL PRIMARY KEY,
-	institution_id varchar(10) REFERENCES institutions(unitid),
+	institution_id int REFERENCES institutions(unitid),
 	total_revenue decimal(15, 2),
 	total_expenses decimal(15, 2),
 	year int DEFAULT 2014 CHECK (year = 2014)
@@ -41,13 +51,17 @@ CREATE TABLE athletics_financing (
 
 CREATE TABLE equity_athletics (
     id SERIAL PRIMARY KEY,
-    institution_id varchar(10) REFERENCES institutions(unitid),
+    institution_id int REFERENCES institutions(unitid),
     academic_year varchar(9) CHECK (academic_year IN ('2014-2015')),
     men_participants int,
     women_participants int,
     men_expenses decimal(15, 2),
     women_expenses decimal(15, 2)
 );
+
+COPY scorecards (
+COPY college_scorecards (institution_id, enrollment, avg_tuition, grad_rate, median_debt, year)
+FROM './datasets/college_scorecard/2014data00.csv' DELIMITER ',' CSV HEADER;
 
 --college_scorecard/
 variable_name API_data_type --NAME_OF_DATA_ELEMENT
