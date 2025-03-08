@@ -1,3 +1,54 @@
+CREATE DATABASE colleges_2014;
+\c colleges_2014
+
+CREATE TABLE institutions (
+	unitid int PRIMARY KEY, --UNITID
+	opeid varchar(8), --OPEID
+	name varchar(128) NOT NULL, --INSTNM
+	state varchar(2), --STABBR
+	city varchar(64), --CITY
+	zip_code varchar(10) --ZIP
+);
+
+CREATE TABLE scorecards (
+	id SERIAL PRIMARY KEY,
+	institution_id varchar(10) REFERENCES institutions(unitid),
+	enrollment int,
+	avg_tuition decimal(10, 2),
+	grad_rate decimal(5, 2),
+	median_debt decimal(10, 2),
+	year int DEFAULT 2014 CHECK (year = 2014)
+);
+
+CREATE TABLE foreign_gifts (
+	id SERIAL PRIMARY KEY,
+	institution_id varchar(10) REFERENCES institutions(unitid),
+	donor_country varchar(50),
+	donor_name varchar(100),
+	gift_amount decimal(15, 2),
+	gift_date date,
+	gift_purpose text,
+	year int DEFAULT 2014 CHECK (year = 2014)
+);
+
+CREATE TABLE athletics_financing (
+	id SERIAL PRIMARY KEY,
+	institution_id varchar(10) REFERENCES institutions(unitid),
+	total_revenue decimal(15, 2),
+	total_expenses decimal(15, 2),
+	year int DEFAULT 2014 CHECK (year = 2014)
+);
+
+CREATE TABLE equity_athletics (
+    id SERIAL PRIMARY KEY,
+    institution_id varchar(10) REFERENCES institutions(unitid),
+    academic_year varchar(9) CHECK (academic_year IN ('2014-2015')),
+    men_participants int,
+    women_participants int,
+    men_expenses decimal(15, 2),
+    women_expenses decimal(15, 2)
+);
+
 --college_scorecard/
 variable_name API_data_type --NAME_OF_DATA_ELEMENT
 unitid integer --Unit ID for institution
