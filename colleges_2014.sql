@@ -3,7 +3,7 @@ CREATE DATABASE colleges_2014;
 
 CREATE TABLE institutions (
 	unitid int PRIMARY KEY, --UNITID
-	opeid varchar(8), --OPEID
+	opeid varchar(16), --OPEID
 	name varchar(128) NOT NULL, --INSTNM
 	state varchar(2), --STABBR
 	city varchar(64), --CITY
@@ -12,16 +12,21 @@ CREATE TABLE institutions (
 
 CREATE TABLE academic_scores (
 	id SERIAL PRIMARY KEY,
-	institution_id int REFERENCES institutions(unitid)
+	unitid int REFERENCES institutions(unitid),
+	sat_mid_read float, --SATVRMID
+	sat_mid_math float, --SATMTMID
+	sat_mid_write float, --SATWRMID
+	sat_avg float, --SAT_AVG
+	completion_rate, float --C200_4_POOLED_SUPP
 );
 
 CREATE TABLE financial_scores (
 	id SERIAL PRIMARY KEY,
-	institution_id int REFERENCES institutions(unitid),
+	unitid int REFERENCES institutions(unitid),
 	enrollment int, --UG
-	avg_tuition decimal(10, 2),
-	grad_rate decimal(5, 2),
-	median_debt decimal(10, 2),
+	in_state_cost integer, --TUITIONFEE_IN
+	out_state_cost integer, --TUITIONFEE_OUT
+	median_debt decimal(10, 2), --GRAD_DEBT_MDN
 	year int DEFAULT 2014 CHECK (year = 2014),
 	instruction_spend_per_student int, --INTEXPFTE
 	pct_pell_students float, --PCTPELL
@@ -32,12 +37,12 @@ CREATE TABLE financial_scores (
 
 CREATE TABLE foreign_gifts (
 	id SERIAL PRIMARY KEY,
-	institution_id int REFERENCES institutions(unitid),
-	donor_country varchar(50),
-	donor_name varchar(100),
-	gift_amount decimal(15, 2),
-	gift_date date,
-	gift_purpose text,
+	opeid varchar(16) REFERENCES institutions(opeid), --OPEID
+	donor_country varchar(50), --"Country of Giftor"
+	donor_name varchar(100), --"Giftor Name"
+	gift_amount decimal(16, 2), --"Foreign Gift Amount"
+	gift_date date, --"Foreign Gift Received"
+	gift_type varchar(32), --"Gift Type"
 	year int DEFAULT 2014 CHECK (year = 2014)
 );
 
@@ -47,16 +52,6 @@ CREATE TABLE athletics_financing (
 	total_revenue decimal(15, 2),
 	total_expenses decimal(15, 2),
 	year int DEFAULT 2014 CHECK (year = 2014)
-);
-
-CREATE TABLE equity_athletics (
-    id SERIAL PRIMARY KEY,
-    institution_id int REFERENCES institutions(unitid),
-    academic_year varchar(9) CHECK (academic_year IN ('2014-2015')),
-    men_participants int,
-    women_participants int,
-    men_expenses decimal(15, 2),
-    women_expenses decimal(15, 2)
 );
 
 COPY scorecards (
