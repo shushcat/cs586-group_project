@@ -1,0 +1,18 @@
+-- Q1: How many students are in high school, under grad, grad etc programs?
+-- Q2: How many students are involved in both academics and sports?
+-- Q3: Which colleges have the highest fees?
+-- Q4: What are the top 15 schools and colleges that have good ratings?
+-- Q5: Which schools and colleges support financing for academically oriented students?
+-- Q6: Which schools and colleges support financing for students involved in sports?
+-- Q7: How many students are involved in college sports?
+-- Q8: What kinds of funding are offered to students at schools and colleges?
+-- Q9: How much funding is offered to students when comparing between states?
+-- Q10: Which schools and colleges are highly supportive of sports?
+-- Q11: What is the variation in funding for education versus sports?
+-- Q12: Which schools and colleges participate and encourage students in more than 1 sport?
+-- Q13: What is the average of students who are good at both sports and academics?
+-- Q14: How many consecutive wins have various college sports team had?
+-- Q15: How many students, by school, have received funding based on athletics participation?
+-- Q16: What is the average amount or scholarship money offered per year in each category?
+-- Q17: Is there a difference in the average funding for male and female college sports teams?
+-- Q18: How does any difference in the previous question compare to differences in funding based on academic merit?
