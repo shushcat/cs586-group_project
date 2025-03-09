@@ -7,10 +7,10 @@ CREATE DATABASE colleges_2014;
 DROP TABLE IF EXISTS public.institutions CASCADE;
 DROP TABLE IF EXISTS public.student_backgrounds;
 DROP TABLE IF EXISTS public.student_academic_profile;
-
 DROP TABLE IF EXISTS public.student_financial_profile;
 
 DROP TABLE IF EXISTS public.institutional_financial_profile;
+
 DROP TABLE IF EXISTS public.foreign_gifts;
 DROP TABLE IF EXISTS public.athletics_financing;
 
@@ -87,9 +87,8 @@ CREATE TABLE institutional_financial_profile ( --from `college_scorecard`
 	enrollment int, --UG
 	in_state_cost integer, --TUITIONFEE_IN
 	out_state_cost integer, --TUITIONFEE_OUT
-	year int DEFAULT 2014 CHECK (year = 2014),
 	average_faculty_salary integer, --AVGFACSAL; average faculty salary
-	instruction_spend_per_student int, --INTEXPFTE
+	instruction_spend_per_student int, --INEXPFTE
 	endowbegin decimal(15, 2), --Value of school's endowment at the beginning of the fiscal year
 	endowend decimal(15, 2) --Value of school's endowment at the end of the fiscal year
 );
@@ -134,3 +133,4 @@ CREATE TABLE athletics_financing ( --from `college_athletics_financing`
 
 \COPY student_financial_profile (unitid, median_cost, grad_debt_mdn, female_debt_mdn, male_debt_mdn, mdearn_pd, count_nwne_1yr, count_wne_1yr, pct_pell_students, default_rate2, default_rate3, pell_ever, shrinking_loans, earning_over_highschool, count_ed, age_entry, female, married, dependent, veteran, first_gen, faminc, poverty_rate, unemp_rate) FROM 'datasets/college_scorecard/student_financial_profile.csv' DELIMITER ',' CSV HEADER NULL 'NA';
 
+\COPY institutional_financial_profile (unitid, enrollment, in_state_cost, out_state_cost, average_faculty_salary, instruction_spend_per_student, endowbegin, endowend) FROM 'datasets/college_scorecard/institutional_financial_profile.csv' DELIMITER ',' CSV HEADER NULL 'NA';
