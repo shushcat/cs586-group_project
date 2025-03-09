@@ -1,8 +1,16 @@
 CREATE DATABASE colleges_2014;
 \c colleges_2014
 
---from `college_scorecard`
-CREATE TABLE institutions (
+\dt
+
+DROP TABLE IF EXISTS public.academic_scores;
+DROP TABLE IF EXISTS public.athletics_financing;
+DROP TABLE IF EXISTS public.equity_athletics;
+DROP TABLE IF EXISTS public.financial_scores;
+DROP TABLE IF EXISTS public.foreign_gifts;
+DROP TABLE IF EXISTS public.institutions;
+
+CREATE TABLE institutions ( --from `college_scorecard`
 	unitid int PRIMARY KEY, --UNITID
 	opeid varchar(16) UNIQUE, --OPEID
 	name varchar(128) NOT NULL, --INSTNM
@@ -12,14 +20,13 @@ CREATE TABLE institutions (
 	latitude float, --Latitude
 	longitude float, --Longitude
 	adm_rate_all float, --Admission rate for all campuses rolled up to the 6-digit OPE ID
-	undergraduate_enrollment, integer --UG; Enrollment of all undergraduate students
-	grad_enrollment integer --GRADS; number of graduate students
-	student_faculty_ratio float --STUFACR; undergraduate student to instructional faculty ratio
+	undergraduate_enrollment integer, --UG; Enrollment of all undergraduate students
+	grad_enrollment integer, --GRADS; number of graduate students
+	student_faculty_ratio float, --STUFACR; undergraduate student to instructional faculty ratio
 	adm_rate_supp float --Admission rate, suppressed for n<30
 );
 
---from `college_scorecard`
-CREATE TABLE student_backgrounds (
+CREATE TABLE student_backgrounds ( --from `college_scorecard`
 	id SERIAL PRIMARY KEY,
 	unitid int REFERENCES institutions(unitid), --UNITID
 	pct_ba float, --Percent of people over age 25 from students' zip codes with bachelor's degrees.
@@ -29,8 +36,7 @@ CREATE TABLE student_backgrounds (
 	ugds_women float --Total share of enrollment of undergraduate degree-seeking students who are women.
 );
 
---from `college_scorecard`
-CREATE TABLE student_academic_profile (
+CREATE TABLE student_academic_profile ( --from `college_scorecard`
 	id SERIAL PRIMARY KEY,
 	unitid int REFERENCES institutions(unitid), --UNITID
 	sat_mid_read float, --SATVRMID
@@ -43,8 +49,7 @@ CREATE TABLE student_academic_profile (
 	non_traditional float --UG25ABV; percentage of undergraduates aged 25 and above
 );
 
---from `college_scorecard`
-CREATE TABLE student_financial_profile (
+CREATE TABLE student_financial_profile ( --from `college_scorecard`
 	id SERIAL PRIMARY KEY,
 	unitid int REFERENCES institutions(unitid), --UNITID
 	median_cost float, --MDCOST_ALL; overall median for average net price.
@@ -75,8 +80,7 @@ CREATE TABLE student_financial_profile (
 	unemp_rate float --Unemployment rate, via Census data.
 );
 
---from `college_scorecard`
-CREATE TABLE institutional_financial_profile (
+CREATE TABLE institutional_financial_profile ( --from `college_scorecard`
 	id SERIAL PRIMARY KEY,
 	unitid int REFERENCES institutions(unitid),
 	enrollment int, --UG
@@ -85,12 +89,11 @@ CREATE TABLE institutional_financial_profile (
 	year int DEFAULT 2014 CHECK (year = 2014),
 	average_faculty_salary integer, --AVGFACSAL; average faculty salary
 	instruction_spend_per_student int, --INTEXPFTE
-	endowbegin long --Value of school's endowment at the beginning of the fiscal year
-	endowend long --Value of school's endowment at the end of the fiscal year
+	endowbegin decimal(15, 2), --Value of school's endowment at the beginning of the fiscal year
+	endowend decimal(15, 2) --Value of school's endowment at the end of the fiscal year
 );
 
---from `foreign_gifts`
-CREATE TABLE foreign_gifts (
+CREATE TABLE foreign_gifts ( --from `foreign_gifts`
 	id SERIAL PRIMARY KEY,
 	opeid varchar(16) REFERENCES institutions(opeid), --OPEID
 	donor_country varchar(50), --"Country of Giftor"
@@ -100,34 +103,25 @@ CREATE TABLE foreign_gifts (
 	gift_type varchar(32) --"Gift Type"
 );
 
---from `college_athletics_financing`
-CREATE TABLE athletics_financing (
+CREATE TABLE athletics_financing ( --from `college_athletics_financing`
 	id SERIAL PRIMARY KEY,
 	unitid int REFERENCES institutions(unitid), --UNITID
-	athletic_revenues, decimal(15, 2), --Total revenue.
+	athletic_revenues decimal(15, 2), --Total revenue.
 	royalties bigint, --Revenue from royalties.
 	tv_revenue bigint, --Revenue from radio and television broadcasts.
 	ticket_sales bigint, --Revenue received for sales of admissions to athletics events.
-	subsidy, int, --Direct state and institution subsidies.
+	subsidy int, --Direct state and institution subsidies.
 	direct_state_govt_support bigint, --Direct support from state government.
 	ncaa_distributions bigint, --Revenue received from participation in games.
-	ndirect_facil_admin_support bigint, --Facilities and services provided by the institution but not charged to athletics.
+	indirect_facil_admin_support bigint, --Facilities and services provided by the institution but not charged to athletics.
 	endowments bigint, --Revenue from endowments and investments.
 	other_revenues bigint, --Other revenues.
 	athletic_expenses decimal(15, 2), --Total expenses.
 	student_fees bigint, --Student fees for college athletics; reference from `student_financial_profile`.
 	net_revenue bigint, --Athletic revenues minus athletic expenses.
-
-	-- Calculated?
-	--subsidyproportion float --Subsidy divided by athletic revenues; calculated.
-	-- institutional_subsidy bigint --Direct institutional support plus indirect facil admin support.
-	-- institutionalsubsidy_proportion float --Institutional subsidy divided by athletic revenues.
-	-- external_revenue bigint --Athletic revenues minus subsidy.
-
 	year int DEFAULT 2014 CHECK (year = 2014)
 );
 
 COPY scorecards (
 COPY college_scorecards (institution_id, enrollment, avg_tuition, grad_rate, median_debt, year)
 FROM './datasets/college_scorecard/2014data00.csv' DELIMITER ',' CSV HEADER;
-

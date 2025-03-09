@@ -21,24 +21,24 @@
 	- [x] Split files
 	- [x] Narrow to 2010--2015
 - [x] Remove unused datasets
-- [ ] Select relevant fields from each dataset
+- [x] Select relevant fields from each dataset
 	- [x] Check which are promising
-- [ ] Prune to overlapping data range (2014?)
+- [x] Prune to overlapping data range (2014?)
 	- [x] Prune to narrowed ranges:
 		- [x] college_scorecard: 2010--2015
 		- [x] foreign_gifts: 2014-01--2020-06
 		- [x] college_athletics_financing: 2010--2014
 		- [x] equity_athletics_data_analysis: 2011--2016
-	- [ ] Check reporting protocols to make sure date ranges are reported for the same spans
-		- [ ] college_scorecard: 2010--2015
-		- [ ] foreign_gifts: 2014-01--2020-06
-		- [ ] college_athletics_financing: 2010--2014
-		- [ ] equity_athletics_data_analysis: 2011--2016
-- [ ] Make sure retrieval and normalization steps are described (at least roughly) for used datasets
+	- [x] Check reporting protocols to make sure date ranges are reported for the same spans
+		- [x] college_scorecard: 2010--2015
+		- [x] foreign_gifts: 2014-01--2020-06
+		- [x] college_athletics_financing: 2010--2014
+		- [x] equity_athletics_data_analysis: 2011--2016
+- [x] Make sure retrieval and normalization steps are described (at least roughly) for used datasets
 - [ ] Deliverable 2 (due 2025-03-07)
 	- [ ] ER diagram
-		- 6--10 tables
-		- at least 1 view
+		- [x] 6--10 tables
+		- [ ] at least 1 view
 		- [ ] translation to relational schema, including
 			- primary keys
 			- unique keys
@@ -56,6 +56,16 @@ All very tentative so far.
   - Marker for completeness by time?
 - State
 - College
+
+Use a `VIEW` to calculate
+
+
+	subsidyproportion float --Subsidy divided by athletic revenues; calculated.
+	institutional_subsidy bigint --Direct institutional support plus indirect facil admin support.
+	institutionalsubsidy_proportion float --Institutional subsidy divided by athletic revenues.
+	external_revenue bigint --Athletic revenues minus subsidy.
+
+from `college_athletics_financing` data.
 
 # Dataset retrieval, normalization & selection
 
