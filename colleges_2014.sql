@@ -9,9 +9,7 @@ DROP TABLE IF EXISTS public.student_backgrounds;
 DROP TABLE IF EXISTS public.student_academic_profile;
 DROP TABLE IF EXISTS public.student_financial_profile;
 DROP TABLE IF EXISTS public.institutional_financial_profile;
-
 DROP TABLE IF EXISTS public.foreign_gifts;
-
 DROP TABLE IF EXISTS public.athletics_financing;
 
 CREATE TABLE institutions ( --from `college_scorecard`
@@ -135,3 +133,5 @@ CREATE TABLE athletics_financing ( --from `college_athletics_financing`
 \COPY institutional_financial_profile (unitid, enrollment, in_state_cost, out_state_cost, average_faculty_salary, instruction_spend_per_student, endowbegin, endowend) FROM 'datasets/college_scorecard/institutional_financial_profile.csv' DELIMITER ',' CSV HEADER NULL 'NA';
 
 \COPY foreign_gifts (unitid, gift_date, gift_amount, gift_type, donor_country, donor_name) FROM 'datasets/foreign_gifts/2014data_unitid.csv' DELIMITER ',' CSV HEADER NULL 'NA';
+
+\COPY athletics_financing (unitid, athletic_revenues, royalties, tv_revenue, ticket_sales, subsidy, direct_state_govt_support, ncaa_distributions, indirect_facil_admin_support, endowments, other_revenues, athletic_expenses, student_fees, net_revenue) FROM 'datasets/college_athletics_financing/2014data_selected.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
