@@ -36,17 +36,36 @@
 		- [x] equity_athletics_data_analysis: 2011--2016
 - [x] Make sure retrieval and normalization steps are described (at least roughly) for used datasets
 - [ ] Deliverable 2 (due 2025-03-07)
+	- [x] 6--10 tables
+	- [x] translation to relational schema, including
+		- [x] primary keys
+		- [x] unique keys
+		- [x] foreign keys
+	- [x] load real data into database
+		- [x] at least 5 rows per table
+		- [x] aim for summed row count of at least 1,000
+	- [ ] at least 1 view joining at least 3 tables
 	- [ ] ER diagram
-		- [x] 6--10 tables
-		- [ ] at least 1 view
-		- [ ] translation to relational schema, including
-			- primary keys
-			- unique keys
-			- foreign keys
-	- [ ] load real data into database
-		- at least 5 rows per table
-		- aim for summed row count of at least 1,000
+	- [ ] 20-some questions
+		- [ ] explain revisions
+		- [ ] some questions must involve multiple tables
+		- [ ] at least a few must join at least 4 tables
 - [ ] Deliverable 3 (due 2025-03-14)
+	- [ ] Write-up the project including:
+	- [ ] A revised ER diagram to reflect the actual implementation;
+	- [ ] Create statements for all tables with
+		- [ ] primary keys,
+		- [ ] unique keys, and
+		- [ ] foreign keys, and for all
+		- [ ] view statements (of which there must be at least one);
+	- [ ] Create statements for all indexes;
+	- [ ] "A *thorough* description of how you populated the database,";
+	- [ ] For each of the 20, include
+		- [ ] the question in english,
+		- [ ] it's translation to SQL,
+		- [ ] the answer to the query (truncated to 10 rows),
+		- [ ] originals and rationals for all changed questions;
+	- [ ] A listing of 5 rows and a report of total row count for each table.
 
 # Database design
 
