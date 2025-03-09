@@ -129,3 +129,6 @@ CREATE TABLE athletics_financing ( --from `college_athletics_financing`
 \COPY institutions (unitid, opeid, name, state, city, zip_code, latitude, longitude, adm_rate_all, undergraduate_enrollment, grad_enrollment, student_faculty_ratio, adm_rate_supp) FROM 'datasets/college_scorecard/institutions.csv' DELIMITER ',' CSV HEADER NULL 'NA';
 
 \COPY student_backgrounds (unitid, pct_ba, pct_grad_prof, pct_born_us, ugds_men, ugds_women) FROM 'datasets/college_scorecard/student_backgrounds.csv' DELIMITER ',' CSV HEADER NULL 'NA';
+
+
+\COPY student_academic_profile (unitid, sat_mid_read, sat_mid_math, sat_mid_write, sat_avg, sat_avg_all, completion_rate, median_completion_rate, non_traditional) FROM 'datasets/college_scorecard/student_academic_profile.csv' DELIMITER ',' CSV HEADER NULL 'NA';
