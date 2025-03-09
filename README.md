@@ -67,6 +67,12 @@ Use a `VIEW` to calculate
 
 from `college_athletics_financing` data.
 
+Since `\COPY` requires that all columns be handled, and since we've already used CSVKit, we used the `csvcut` tool from CSVKit to extract columns from some datasets.
+We placed extracted columns in files specific to each table.
+
+	csvcut -c UNITID,OPEID,INSTNM,STABBR,CITY,ZIP,LATITUDE,LONGITUDE,ADM_RATE_ALL merged.csv > institutions.csv
+
+
 # Dataset retrieval, normalization & selection
 
 - [x] college_scorecard/

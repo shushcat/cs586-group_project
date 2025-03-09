@@ -1,18 +1,20 @@
 CREATE DATABASE colleges_2014;
-\c colleges_2014
 
-\dt
+--\c colleges_2014
 
-DROP TABLE IF EXISTS public.academic_scores;
-DROP TABLE IF EXISTS public.athletics_financing;
-DROP TABLE IF EXISTS public.equity_athletics;
-DROP TABLE IF EXISTS public.financial_scores;
+--CREATE TABLES
+
+DROP TABLE IF EXISTS public.institutions CASCADE;
+DROP TABLE IF EXISTS public.student_backgrounds;
+DROP TABLE IF EXISTS public.student_academic_profile;
+DROP TABLE IF EXISTS public.student_financial_profile;
+DROP TABLE IF EXISTS public.institutional_financial_profile;
 DROP TABLE IF EXISTS public.foreign_gifts;
-DROP TABLE IF EXISTS public.institutions;
+DROP TABLE IF EXISTS public.athletics_financing;
 
 CREATE TABLE institutions ( --from `college_scorecard`
 	unitid int PRIMARY KEY, --UNITID
-	opeid varchar(16) UNIQUE, --OPEID
+	opeid varchar(16), --OPEID
 	name varchar(128) NOT NULL, --INSTNM
 	state varchar(2), --STABBR
 	city varchar(64), --CITY
@@ -122,6 +124,8 @@ CREATE TABLE athletics_financing ( --from `college_athletics_financing`
 	year int DEFAULT 2014 CHECK (year = 2014)
 );
 
-COPY scorecards (
-COPY college_scorecards (institution_id, enrollment, avg_tuition, grad_rate, median_debt, year)
-FROM './datasets/college_scorecard/2014data00.csv' DELIMITER ',' CSV HEADER;
+--IMPORT DATA
+
+\COPY institutions (unitid, opeid, name, state, city, zip_code, latitude, longitude, adm_rate_all, undergraduate_enrollment, grad_enrollment, student_faculty_ratio, adm_rate_supp) FROM 'datasets/college_scorecard/institutions.csv' DELIMITER ',' CSV HEADER NULL 'NA';
+
+\COPY student_backgrounds (unitid, pct_ba, pct_grad_prof, pct_born_us, ugds_men, ugds_women) FROM 'datasets/college_scorecard/student_backgrounds.csv' DELIMITER ',' CSV HEADER NULL 'NA';
