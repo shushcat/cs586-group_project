@@ -7,7 +7,9 @@ CREATE DATABASE colleges_2014;
 DROP TABLE IF EXISTS public.institutions CASCADE;
 DROP TABLE IF EXISTS public.student_backgrounds;
 DROP TABLE IF EXISTS public.student_academic_profile;
+
 DROP TABLE IF EXISTS public.student_financial_profile;
+
 DROP TABLE IF EXISTS public.institutional_financial_profile;
 DROP TABLE IF EXISTS public.foreign_gifts;
 DROP TABLE IF EXISTS public.athletics_financing;
@@ -59,8 +61,8 @@ CREATE TABLE student_financial_profile ( --from `college_scorecard`
 	female_debt_mdn float, --The median debt for female students.
 	male_debt_mdn float, --The median debt for male students.
 	mdearn_pd float, --Median earnings of students working and not enrolled 10 years after entry.
-	count_nwne_1yr integer, --Number of graduates working and not enrolled 1 year after completing.
-	count_wne_1yr integer, --Number of graduates not working and not enrolled 1 year after completing.
+	count_nwne_1yr float, --Number of graduates working and not enrolled 1 year after completing.
+	count_wne_1yr float, --Number of graduates not working and not enrolled 1 year after completing.
 	pct_pell_students float, --PCTPELL
 	default_rate2 float, --CDR2
 	default_rate3 float, --CDR3
@@ -68,16 +70,13 @@ CREATE TABLE student_financial_profile ( --from `college_scorecard`
 	shrinking_loans float, --RPY_7YR_RT
 	earning_over_highschool float, --GT_THRESHOLD_P11; students earning more than a high school graduate 11 years after entry.
 	count_ed integer, --Count of students in the earnings cohort.
-	age_entry integer, --Average age of entry.
+	age_entry float, --Average age of entry.
 	female float, --Share of female students.
 	married float, --Share of married students.
 	dependent float, --Share of dependent students.
 	veteran float, --Share of veteran students.
 	first_gen float, --Share of first-generation students.
-	faminc integer, --Average family income.
-	md_faminc integer, --Median family income.
-	faminc_ind integer, --Average family income for independent students.
-	median_hh_inc integer, --Median household income.
+	faminc float, --Average family income.
 	poverty_rate float, --Poverty rate, via Census data.
 	unemp_rate float --Unemployment rate, via Census data.
 );
@@ -132,3 +131,6 @@ CREATE TABLE athletics_financing ( --from `college_athletics_financing`
 
 
 \COPY student_academic_profile (unitid, sat_mid_read, sat_mid_math, sat_mid_write, sat_avg, sat_avg_all, completion_rate, median_completion_rate, non_traditional) FROM 'datasets/college_scorecard/student_academic_profile.csv' DELIMITER ',' CSV HEADER NULL 'NA';
+
+\COPY student_financial_profile (unitid, median_cost, grad_debt_mdn, female_debt_mdn, male_debt_mdn, mdearn_pd, count_nwne_1yr, count_wne_1yr, pct_pell_students, default_rate2, default_rate3, pell_ever, shrinking_loans, earning_over_highschool, count_ed, age_entry, female, married, dependent, veteran, first_gen, faminc, poverty_rate, unemp_rate) FROM 'datasets/college_scorecard/student_financial_profile.csv' DELIMITER ',' CSV HEADER NULL 'NA';
+
