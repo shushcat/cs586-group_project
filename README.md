@@ -72,6 +72,7 @@ We placed extracted columns in files specific to each table.
 
 	csvcut -c UNITID,OPEID,INSTNM,STABBR,CITY,ZIP,LATITUDE,LONGITUDE,ADM_RATE_ALL merged.csv > institutions.csv
 
+Scripted replacement of OPEID with UNITID in `foreign_gifts`. 
 
 # Dataset retrieval, normalization & selection
 
@@ -93,6 +94,12 @@ We placed extracted columns in files specific to each table.
 
 Steps taken to collect and normalize each dataset appear under each dataset's heading.
 To convert datasets that were only available as XLS or XLSX files as of March 2025, we used the tool `in2csv`, which is part of [CSVKit](https://github.com/wireservice/csvkit).
+
+Removed from `foreign_gifts` since not in `college_scorecard`:
+
+	27708,00672500,University of Tennessee Health Science Center,Memphis,TN,2014-03-01,156000,Contract,IRELAND,Neotype Biosciences Limited
+	27709,00672500,University of Tennessee Health Science Center,Memphis,TN,2014-04-01,525000,Contract,CHINA,First Hospital of Qiqihaer
+
 
 ## Data import and schema design
 

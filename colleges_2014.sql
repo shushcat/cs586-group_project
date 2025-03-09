@@ -8,10 +8,10 @@ DROP TABLE IF EXISTS public.institutions CASCADE;
 DROP TABLE IF EXISTS public.student_backgrounds;
 DROP TABLE IF EXISTS public.student_academic_profile;
 DROP TABLE IF EXISTS public.student_financial_profile;
-
 DROP TABLE IF EXISTS public.institutional_financial_profile;
 
 DROP TABLE IF EXISTS public.foreign_gifts;
+
 DROP TABLE IF EXISTS public.athletics_financing;
 
 CREATE TABLE institutions ( --from `college_scorecard`
@@ -95,7 +95,7 @@ CREATE TABLE institutional_financial_profile ( --from `college_scorecard`
 
 CREATE TABLE foreign_gifts ( --from `foreign_gifts`
 	id SERIAL PRIMARY KEY,
-	opeid varchar(16) REFERENCES institutions(opeid), --OPEID
+	unitid int REFERENCES institutions(unitid),
 	donor_country varchar(50), --"Country of Giftor"
 	donor_name varchar(100), --"Giftor Name"
 	gift_amount decimal(16, 2), --"Foreign Gift Amount"
@@ -128,9 +128,10 @@ CREATE TABLE athletics_financing ( --from `college_athletics_financing`
 
 \COPY student_backgrounds (unitid, pct_ba, pct_grad_prof, pct_born_us, ugds_men, ugds_women) FROM 'datasets/college_scorecard/student_backgrounds.csv' DELIMITER ',' CSV HEADER NULL 'NA';
 
-
 \COPY student_academic_profile (unitid, sat_mid_read, sat_mid_math, sat_mid_write, sat_avg, sat_avg_all, completion_rate, median_completion_rate, non_traditional) FROM 'datasets/college_scorecard/student_academic_profile.csv' DELIMITER ',' CSV HEADER NULL 'NA';
 
 \COPY student_financial_profile (unitid, median_cost, grad_debt_mdn, female_debt_mdn, male_debt_mdn, mdearn_pd, count_nwne_1yr, count_wne_1yr, pct_pell_students, default_rate2, default_rate3, pell_ever, shrinking_loans, earning_over_highschool, count_ed, age_entry, female, married, dependent, veteran, first_gen, faminc, poverty_rate, unemp_rate) FROM 'datasets/college_scorecard/student_financial_profile.csv' DELIMITER ',' CSV HEADER NULL 'NA';
 
 \COPY institutional_financial_profile (unitid, enrollment, in_state_cost, out_state_cost, average_faculty_salary, instruction_spend_per_student, endowbegin, endowend) FROM 'datasets/college_scorecard/institutional_financial_profile.csv' DELIMITER ',' CSV HEADER NULL 'NA';
+
+\COPY foreign_gifts (unitid, gift_date, gift_amount, gift_type, donor_country, donor_name) FROM 'datasets/foreign_gifts/2014data_unitid.csv' DELIMITER ',' CSV HEADER NULL 'NA';
