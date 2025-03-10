@@ -1,7 +1,32 @@
 -- How many students are in high school, under grad, grad etc programs?
 -- How many students are involved in both academics and sports?
--- Which colleges have the highest fees?
--- What are the top 15 schools and colleges that have good ratings?
+
+-- Which colleges report charging the highest in-state tuition?
+
+SELECT i.name, i.state, i.city, ifp.in_state_cost
+FROM institutional_financial_profile AS ifp
+JOIN institutions AS i ON ifp.unitid = i.unitid
+WHERE ifp.in_state_cost IS NOT NULL
+ORDER BY ifp.in_state_cost DESC
+LIMIT 5;
+
+-- Which schools and colleges that also report students' sexes report the lowest student-faculty ratios?
+
+SELECT fsr.name, fsr.state, fsr.city, fsr.student_faculty_ratio
+FROM faculty_and_sex_ratios AS fsr
+WHERE fsr.student_faculty_ratio IS NOT NULL
+ORDER BY fsr.student_faculty_ratio ASC
+LIMIT 15;
+
+-- Which schools accepted the most money from foreign donors in 2014?
+
+SELECT i.name, i.state, sum(fg.gift_amount) AS gift_sum
+FROM foreign_gifts AS fg
+JOIN institutions AS i ON fg.unitid = i.unitid
+GROUP BY i.unitid
+ORDER BY gift_sum DESC
+LIMIT 10;
+
 -- Which schools and colleges support financing for academically oriented students?
 -- Which schools and colleges support financing for students involved in sports?
 -- How many students are involved in college sports?
