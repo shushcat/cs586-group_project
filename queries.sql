@@ -214,16 +214,27 @@ WHERE grad_debt_mdn IS NOT NULL
 ORDER BY grad_debt_mdn DESC
 LIMIT 5;
 
+-- Does spending on college sports affect student's academic performances?
+-- Does sports gambling correlate with subsidies to college sports?
+-- How does any difference in the previous question compare to differences in funding based on academic merit?
+-- How does increased funding for college sports affect universities, colleges, and the areas surrounding them?
+-- How is cost of attendance affected by funding for college sports?
+-- How many consecutive wins have various college sports team had?
+-- How many students are in high school, under grad, grad etc programs?
+-- How many students are involved in both academics and sports?
+-- How many students are involved in college sports?
+-- How many students, by school, have received funding based on athletics participation?
+-- How much funding is offered to students when comparing between states?
+-- Is there a connection between subsidies to college sports teams and Title-IX investigations?
+-- Is there a difference in the average funding for male and female college sports teams?
+-- What are the top 15 schools and colleges that have good ratings?
+-- What is the average amount or scholarship money offered per year in each category?
+-- What is the average of students who are good at both sports and academics?
+-- What is the connection between college sports and academics?
+-- What is the variation in funding for education versus sports?
+-- What kinds of funding are offered to students at schools and colleges?
+-- Which colleges have the highest fees?
+-- Which schools and colleges are highly supportive of sports?
+-- Which schools and colleges participate and encourage students in more than 1 sport?
 -- Which schools and colleges support financing for academically oriented students?
 -- Which schools and colleges support financing for students involved in sports?
--- How many students are involved in college sports?
--- What kinds of funding are offered to students at schools and colleges?
--- How much funding is offered to students when comparing between states?
--- Which schools and colleges are highly supportive of sports?
--- What is the variation in funding for education versus sports?
--- Which schools and colleges participate and encourage students in more than 1 sport?
--- What is the average of students who are good at both sports and academics?
--- How many students, by school, have received funding based on athletics participation?
--- What is the average amount or scholarship money offered per year in each category?
--- Is there a difference in the average funding for male and female college sports teams?
--- How does any difference in the previous question compare to differences in funding based on academic merit?
