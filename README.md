@@ -44,8 +44,8 @@
 	- [x] load real data into database
 		- [x] at least 5 rows per table
 		- [x] aim for summed row count of at least 1,000
-	- [ ] at least 1 view joining at least 3 tables
-	- [ ] ER diagram
+	- [x] at least 1 view joining at least 3 tables
+	- [x] ER diagram
 	- [ ] 20-some questions
 		- [ ] explain revisions
 		- [ ] some questions must involve multiple tables
