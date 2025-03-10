@@ -35,7 +35,7 @@
 		- [x] college_athletics_financing: 2010--2014
 		- [x] equity_athletics_data_analysis: 2011--2016
 - [x] Make sure retrieval and normalization steps are described (at least roughly) for used datasets
-- [ ] Deliverable 2 (due 2025-03-07)
+- [x] Deliverable 2 (due 2025-03-07)
 	- [x] 6--10 tables
 	- [x] translation to relational schema, including
 		- [x] primary keys
@@ -46,10 +46,10 @@
 		- [x] aim for summed row count of at least 1,000
 	- [x] at least 1 view joining at least 3 tables
 	- [x] ER diagram
-	- [ ] 20-some questions
-		- [ ] explain revisions
-		- [ ] some questions must involve multiple tables
-		- [ ] at least a few must join at least 4 tables
+	- [x] 20-some questions
+		- [x] explain revisions
+		- [x] some questions must involve multiple tables
+		- [x] at least a few must join at least 4 tables
 - [ ] Deliverable 3 (due 2025-03-14)
 	- [ ] Write-up the project including:
 	- [ ] A revised ER diagram to reflect the actual implementation;
