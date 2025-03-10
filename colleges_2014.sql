@@ -1,8 +1,7 @@
 CREATE DATABASE colleges_2014;
 
+-- Connect to the newly-created database:
 --\c colleges_2014
-
---CREATE TABLES
 
 DROP TABLE IF EXISTS public.institutions CASCADE;
 DROP TABLE IF EXISTS public.student_backgrounds;
@@ -11,6 +10,8 @@ DROP TABLE IF EXISTS public.student_financial_profile;
 DROP TABLE IF EXISTS public.institutional_financial_profile;
 DROP TABLE IF EXISTS public.foreign_gifts;
 DROP TABLE IF EXISTS public.athletics_financing;
+
+-- CREATE TABLES
 
 CREATE TABLE institutions ( --from `college_scorecard`
 	unitid int PRIMARY KEY, --UNITID
@@ -119,6 +120,24 @@ CREATE TABLE athletics_financing ( --from `college_athletics_financing`
 	net_revenue bigint, --Athletic revenues minus athletic expenses.
 	year int DEFAULT 2014 CHECK (year = 2014)
 );
+
+--CREATE VIEW
+
+DROP VIEW faculty_and_sex_ratios;
+
+CREATE OR REPLACE VIEW faculty_and_sex_ratios AS
+SELECT i.name, i.state, i.city, i.student_faculty_ratio,
+	ifp.in_state_cost, ifp.out_state_cost,
+	sb.ugds_men, sb.ugds_women,
+	sap.sat_avg_all
+FROM institutions AS i
+JOIN student_backgrounds AS sb ON i.unitid = sb.unitid
+JOIN student_academic_profile AS sap ON sb.unitid = sap.unitid
+JOIN institutional_financial_profile AS ifp ON sap.unitid = ifp.unitid
+WHERE sap.sat_avg_all IS NOT NULL
+	AND i.student_faculty_ratio IS NOT NULL
+	AND ifp.in_state_cost IS NOT NULL
+	AND ifp.out_state_cost IS NOT NULL;
 
 --IMPORT DATA
 
