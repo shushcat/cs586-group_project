@@ -1,7 +1,13 @@
--- How many students are in high school, under grad, grad etc programs?
+-- How many graduate students are enrolled at reporting schools?
+
+SELECT i.name, i.state, i.city, i.grad_enrollment
+FROM institutions AS i
+WHERE i.grad_enrollment IS NOT NULL
+ORDER BY i.grad_enrollment DESC;
+
 -- How many students are involved in both academics and sports?
 
--- Which colleges report charging the highest in-state tuition?
+-- Which schools report charging the highest in-state tuition?
 
 SELECT i.name, i.state, i.city, ifp.in_state_cost
 FROM institutional_financial_profile AS ifp
@@ -41,5 +47,66 @@ LIMIT 10;
 -- What is the average amount or scholarship money offered per year in each category?
 -- Is there a difference in the average funding for male and female college sports teams?
 -- How does any difference in the previous question compare to differences in funding based on academic merit?
--- Which schools have the lowest student-to-faculty ratios in Oregon?
--- ...In the US?
+
+-- What is the ranking of schools in Oregon that report average SAT scores, in-state tuition, and out-of-state tuition when ordered by student-to-faculty ratios?
+
+SELECT i.name, i.state, i.city, i.student_faculty_ratio
+FROM institutions AS i
+JOIN student_backgrounds AS sb ON i.unitid = sb.unitid
+JOIN student_academic_profile AS sap ON sb.unitid = sap.unitid
+JOIN institutional_financial_profile AS ifp ON sap.unitid = ifp.unitid
+WHERE sap.sat_avg_all IS NOT NULL
+	AND i.student_faculty_ratio IS NOT NULL
+	AND ifp.in_state_cost IS NOT NULL
+	AND ifp.out_state_cost IS NOT NULL
+	AND i.state = 'OR'
+ORDER BY i.student_faculty_ratio;
+
+-- How much does each of those schools spend directly on instructing students?
+
+SELECT i.name, i.state, i.city, i.student_faculty_ratio, ifp.instruction_spend_per_student
+FROM institutions AS i
+JOIN student_backgrounds AS sb ON i.unitid = sb.unitid
+JOIN student_academic_profile AS sap ON sb.unitid = sap.unitid
+JOIN institutional_financial_profile AS ifp ON sap.unitid = ifp.unitid
+WHERE sap.sat_avg_all IS NOT NULL
+	AND i.student_faculty_ratio IS NOT NULL
+	AND ifp.in_state_cost IS NOT NULL
+	AND ifp.out_state_cost IS NOT NULL
+	AND i.state = 'OR'
+ORDER BY i.student_faculty_ratio;
+
+-- Of those, which are included in the athletics financing database, and what are their net revenues from athletics, broadly construed?
+
+SELECT i.name, i.state, i.city, i.student_faculty_ratio,
+	af.athletic_revenues, af.athletic_expenses, 
+	(af.athletic_revenues - af.athletic_expenses) AS net
+FROM institutions AS i
+JOIN student_backgrounds AS sb ON i.unitid = sb.unitid
+JOIN student_academic_profile AS sap ON sb.unitid = sap.unitid
+JOIN institutional_financial_profile AS ifp ON sap.unitid = ifp.unitid
+JOIN athletics_financing AS af ON i.unitid = af.unitid
+WHERE sap.sat_avg_all IS NOT NULL
+	AND i.student_faculty_ratio IS NOT NULL
+	AND ifp.in_state_cost IS NOT NULL
+	AND ifp.out_state_cost IS NOT NULL
+	aND i.state = 'OR'
+ORDER BY i.student_faculty_ratio;
+
+
+SELECT i.name, i.state, i.city, i.student_faculty_ratio,
+	ifp.in_state_cost, ifp.out_state_cost,
+	sb.ugds_men, sb.ugds_women,
+	sap.sat_avg_all
+FROM institutions AS i
+JOIN student_backgrounds AS sb ON i.unitid = sb.unitid
+JOIN student_academic_profile AS sap ON sb.unitid = sap.unitid
+JOIN institutional_financial_profile AS ifp ON sap.unitid = ifp.unitid
+WHERE sap.sat_avg_all IS NOT NULL
+	AND i.student_faculty_ratio IS NOT NULL
+	AND ifp.in_state_cost IS NOT NULL
+	AND ifp.out_state_cost IS NOT NULL
+	aND i.state = 'OR'
+ORDER BY i.student_faculty_ratio;
+
+select * from institutions;

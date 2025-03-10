@@ -23,7 +23,7 @@ CREATE TABLE institutions ( --from `college_scorecard`
 	latitude float, --Latitude
 	longitude float, --Longitude
 	adm_rate_all float, --Admission rate for all campuses rolled up to the 6-digit OPE ID
-	undergraduate_enrollment integer, --UG; Enrollment of all undergraduate students
+	undergraduate_enrollment integer, --UGDS; number of undergraduate students
 	grad_enrollment integer, --GRADS; number of graduate students
 	student_faculty_ratio float, --STUFACR; undergraduate student to instructional faculty ratio
 	adm_rate_supp float --Admission rate, suppressed for n<30
@@ -83,7 +83,6 @@ CREATE TABLE student_financial_profile ( --from `college_scorecard`
 CREATE TABLE institutional_financial_profile ( --from `college_scorecard`
 	id SERIAL PRIMARY KEY,
 	unitid int REFERENCES institutions(unitid),
-	enrollment int, --UG
 	in_state_cost integer, --TUITIONFEE_IN
 	out_state_cost integer, --TUITIONFEE_OUT
 	average_faculty_salary integer, --AVGFACSAL; average faculty salary
@@ -149,7 +148,7 @@ WHERE sap.sat_avg_all IS NOT NULL
 
 \COPY student_financial_profile (unitid, median_cost, grad_debt_mdn, female_debt_mdn, male_debt_mdn, mdearn_pd, count_nwne_1yr, count_wne_1yr, pct_pell_students, default_rate2, default_rate3, pell_ever, shrinking_loans, earning_over_highschool, count_ed, age_entry, female, married, dependent, veteran, first_gen, faminc, poverty_rate, unemp_rate) FROM 'datasets/college_scorecard/student_financial_profile.csv' DELIMITER ',' CSV HEADER NULL 'NA';
 
-\COPY institutional_financial_profile (unitid, enrollment, in_state_cost, out_state_cost, average_faculty_salary, instruction_spend_per_student, endowbegin, endowend) FROM 'datasets/college_scorecard/institutional_financial_profile.csv' DELIMITER ',' CSV HEADER NULL 'NA';
+\COPY institutional_financial_profile (unitid, in_state_cost, out_state_cost, average_faculty_salary, instruction_spend_per_student, endowbegin, endowend) FROM 'datasets/college_scorecard/institutional_financial_profile.csv' DELIMITER ',' CSV HEADER NULL 'NA';
 
 \COPY foreign_gifts (unitid, gift_date, gift_amount, gift_type, donor_country, donor_name) FROM 'datasets/foreign_gifts/2014data_unitid.csv' DELIMITER ',' CSV HEADER NULL 'NA';
 
