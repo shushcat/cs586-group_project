@@ -280,15 +280,14 @@ FROM athletics_financing as af;
 
 ##### Which country donated most frequently to each school that reported foreign gifts?
 
+(We accidentally included the wrong SQL query here when first submitting this PDF.)
+
 ```sql
-WITH donor_ranks AS (
-	SELECT fg.unitid, fg.donor_country, count(*) AS n_gifts,
-		ROW_NUMBER() OVER (PARTITION BY fg.unitid ORDER BY count(*) DESC,
-			fg.donor_country) AS rank,
-		sum(fg.gift_amount) AS total
-	FROM foreign_gifts as fg
-	GROUP BY unitid, donor_country
-)
+SELECT i.name, fg.unitid,
+	MODE() WITHIN GROUP (ORDER BY fg.donor_country) AS top_donor
+FROM colleges_2014.foreign_gifts AS fg
+join colleges_2014.institutions as i on fg.unitid = i.unitid
+GROUP BY i.name, fg.unitid;
 ```
 
 ##### And again, but with a CTE:

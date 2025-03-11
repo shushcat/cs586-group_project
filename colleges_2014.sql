@@ -1,19 +1,18 @@
-CREATE DATABASE colleges_2014;
+DROP SCHEMA IF EXISTS colleges_2014;
 
--- Connect to the newly-created database:
---\c colleges_2014
+CREATE SCHEMA colleges_2014;
 
-DROP TABLE IF EXISTS public.institutions CASCADE;
-DROP TABLE IF EXISTS public.student_backgrounds;
-DROP TABLE IF EXISTS public.student_academic_profile;
-DROP TABLE IF EXISTS public.student_financial_profile;
-DROP TABLE IF EXISTS public.institutional_financial_profile;
-DROP TABLE IF EXISTS public.foreign_gifts;
-DROP TABLE IF EXISTS public.athletics_financing;
+DROP TABLE IF EXISTS colleges_2014.institutions CASCADE;
+DROP TABLE IF EXISTS colleges_2014.student_backgrounds;
+DROP TABLE IF EXISTS colleges_2014.student_academic_profile;
+DROP TABLE IF EXISTS colleges_2014.student_financial_profile;
+DROP TABLE IF EXISTS colleges_2014.institutional_financial_profile;
+DROP TABLE IF EXISTS colleges_2014.foreign_gifts;
+DROP TABLE IF EXISTS colleges_2014.athletics_financing;
 
 -- CREATE TABLES
 
-CREATE TABLE institutions ( --from `college_scorecard`
+CREATE TABLE colleges_2014.institutions ( --from `college_scorecard`
 	unitid int PRIMARY KEY, --UNITID
 	opeid varchar(16), --OPEID
 	name varchar(128) NOT NULL, --INSTNM
@@ -29,9 +28,9 @@ CREATE TABLE institutions ( --from `college_scorecard`
 	adm_rate_supp float --Admission rate, suppressed for n<30
 );
 
-CREATE TABLE student_backgrounds ( --from `college_scorecard`
+CREATE TABLE colleges_2014.student_backgrounds ( --from `college_scorecard`
 	id SERIAL PRIMARY KEY,
-	unitid int REFERENCES institutions(unitid), --UNITID
+	unitid int REFERENCES colleges_2014.institutions(unitid), --UNITID
 	pct_ba float, --Percent of people over age 25 from students' zip codes with bachelor's degrees.
 	pct_grad_prof float, --Percent of people over age 25 from students' zip codes with professional degrees.
 	pct_born_us float, --Percent of people from students' zip codes that were born in the US.
@@ -39,9 +38,9 @@ CREATE TABLE student_backgrounds ( --from `college_scorecard`
 	ugds_women float --Total share of enrollment of undergraduate degree-seeking students who are women.
 );
 
-CREATE TABLE student_academic_profile ( --from `college_scorecard`
+CREATE TABLE colleges_2014.student_academic_profile ( --from `college_scorecard`
 	id SERIAL PRIMARY KEY,
-	unitid int REFERENCES institutions(unitid), --UNITID
+	unitid int REFERENCES colleges_2014.institutions(unitid), --UNITID
 	sat_mid_read float, --SATVRMID
 	sat_mid_math float, --SATMTMID
 	sat_mid_write float, --SATWRMID
@@ -52,9 +51,9 @@ CREATE TABLE student_academic_profile ( --from `college_scorecard`
 	non_traditional float --UG25ABV; percentage of undergraduates aged 25 and above
 );
 
-CREATE TABLE student_financial_profile ( --from `college_scorecard`
+CREATE TABLE colleges_2014.student_financial_profile ( --from `college_scorecard`
 	id SERIAL PRIMARY KEY,
-	unitid int REFERENCES institutions(unitid), --UNITID
+	unitid int REFERENCES colleges_2014.institutions(unitid), --UNITID
 	median_cost float, --MDCOST_ALL; overall median for average net price.
 	grad_debt_mdn float, --The median debt for students who have completed.
 	female_debt_mdn float, --The median debt for female students.
@@ -80,9 +79,9 @@ CREATE TABLE student_financial_profile ( --from `college_scorecard`
 	unemp_rate float --Unemployment rate, via Census data.
 );
 
-CREATE TABLE institutional_financial_profile ( --from `college_scorecard`
+CREATE TABLE colleges_2014.institutional_financial_profile ( --from `college_scorecard`
 	id SERIAL PRIMARY KEY,
-	unitid int REFERENCES institutions(unitid),
+	unitid int REFERENCES colleges_2014.institutions(unitid),
 	in_state_cost integer, --TUITIONFEE_IN
 	out_state_cost integer, --TUITIONFEE_OUT
 	average_faculty_salary integer, --AVGFACSAL; average faculty salary
@@ -91,9 +90,9 @@ CREATE TABLE institutional_financial_profile ( --from `college_scorecard`
 	endowend decimal(15, 2) --Value of school's endowment at the end of the fiscal year
 );
 
-CREATE TABLE foreign_gifts ( --from `foreign_gifts`
+CREATE TABLE colleges_2014.foreign_gifts ( --from `foreign_gifts`
 	id SERIAL PRIMARY KEY,
-	unitid int REFERENCES institutions(unitid),
+	unitid int REFERENCES colleges_2014.institutions(unitid),
 	donor_country varchar(50), --"Country of Giftor"
 	donor_name varchar(100), --"Giftor Name"
 	gift_amount decimal(16, 2), --"Foreign Gift Amount"
@@ -101,9 +100,9 @@ CREATE TABLE foreign_gifts ( --from `foreign_gifts`
 	gift_type varchar(32) --"Gift Type"
 );
 
-CREATE TABLE athletics_financing ( --from `college_athletics_financing`
+CREATE TABLE colleges_2014.athletics_financing ( --from `college_athletics_financing`
 	id SERIAL PRIMARY KEY,
-	unitid int REFERENCES institutions(unitid), --UNITID
+	unitid int REFERENCES colleges_2014.institutions(unitid), --UNITID
 	athletic_revenues decimal(15, 2), --Total revenue.
 	royalties bigint, --Revenue from royalties.
 	tv_revenue bigint, --Revenue from radio and television broadcasts.
@@ -122,17 +121,17 @@ CREATE TABLE athletics_financing ( --from `college_athletics_financing`
 
 --CREATE VIEW
 
-DROP VIEW faculty_and_sex_ratios;
+DROP VIEW colleges_2014.faculty_and_sex_ratios;
 
-CREATE OR REPLACE VIEW faculty_and_sex_ratios AS
+CREATE OR REPLACE VIEW colleges_2014.faculty_and_sex_ratios AS
 SELECT i.name, i.state, i.city, i.student_faculty_ratio,
 	ifp.in_state_cost, ifp.out_state_cost,
 	sb.ugds_men, sb.ugds_women,
 	sap.sat_avg_all
-FROM institutions AS i
-JOIN student_backgrounds AS sb ON i.unitid = sb.unitid
-JOIN student_academic_profile AS sap ON sb.unitid = sap.unitid
-JOIN institutional_financial_profile AS ifp ON sap.unitid = ifp.unitid
+FROM colleges_2014.institutions AS i
+JOIN colleges_2014.student_backgrounds AS sb ON i.unitid = sb.unitid
+JOIN colleges_2014.student_academic_profile AS sap ON sb.unitid = sap.unitid
+JOIN colleges_2014.institutional_financial_profile AS ifp ON sap.unitid = ifp.unitid
 WHERE sap.sat_avg_all IS NOT NULL
 	AND i.student_faculty_ratio IS NOT NULL
 	AND ifp.in_state_cost IS NOT NULL
@@ -140,16 +139,16 @@ WHERE sap.sat_avg_all IS NOT NULL
 
 --IMPORT DATA
 
-\COPY institutions (unitid, opeid, name, state, city, zip_code, latitude, longitude, adm_rate_all, undergraduate_enrollment, grad_enrollment, student_faculty_ratio, adm_rate_supp) FROM 'datasets/college_scorecard/institutions.csv' DELIMITER ',' CSV HEADER NULL 'NA';
+\COPY colleges_2014.institutions (unitid, opeid, name, state, city, zip_code, latitude, longitude, adm_rate_all, undergraduate_enrollment, grad_enrollment, student_faculty_ratio, adm_rate_supp) FROM 'datasets/college_scorecard/institutions.csv' DELIMITER ',' CSV HEADER NULL 'NA';
 
-\COPY student_backgrounds (unitid, pct_ba, pct_grad_prof, pct_born_us, ugds_men, ugds_women) FROM 'datasets/college_scorecard/student_backgrounds.csv' DELIMITER ',' CSV HEADER NULL 'NA';
+\COPY colleges_2014.student_backgrounds (unitid, pct_ba, pct_grad_prof, pct_born_us, ugds_men, ugds_women) FROM 'datasets/college_scorecard/student_backgrounds.csv' DELIMITER ',' CSV HEADER NULL 'NA';
 
-\COPY student_academic_profile (unitid, sat_mid_read, sat_mid_math, sat_mid_write, sat_avg, sat_avg_all, completion_rate, median_completion_rate, non_traditional) FROM 'datasets/college_scorecard/student_academic_profile.csv' DELIMITER ',' CSV HEADER NULL 'NA';
+\COPY colleges_2014.student_academic_profile (unitid, sat_mid_read, sat_mid_math, sat_mid_write, sat_avg, sat_avg_all, completion_rate, median_completion_rate, non_traditional) FROM 'datasets/college_scorecard/student_academic_profile.csv' DELIMITER ',' CSV HEADER NULL 'NA';
 
-\COPY student_financial_profile (unitid, median_cost, grad_debt_mdn, female_debt_mdn, male_debt_mdn, mdearn_pd, count_nwne_1yr, count_wne_1yr, pct_pell_students, default_rate2, default_rate3, pell_ever, shrinking_loans, earning_over_highschool, count_ed, age_entry, female, married, dependent, veteran, first_gen, faminc, poverty_rate, unemp_rate) FROM 'datasets/college_scorecard/student_financial_profile.csv' DELIMITER ',' CSV HEADER NULL 'NA';
+\COPY colleges_2014.student_financial_profile (unitid, median_cost, grad_debt_mdn, female_debt_mdn, male_debt_mdn, mdearn_pd, count_nwne_1yr, count_wne_1yr, pct_pell_students, default_rate2, default_rate3, pell_ever, shrinking_loans, earning_over_highschool, count_ed, age_entry, female, married, dependent, veteran, first_gen, faminc, poverty_rate, unemp_rate) FROM 'datasets/college_scorecard/student_financial_profile.csv' DELIMITER ',' CSV HEADER NULL 'NA';
 
-\COPY institutional_financial_profile (unitid, in_state_cost, out_state_cost, average_faculty_salary, instruction_spend_per_student, endowbegin, endowend) FROM 'datasets/college_scorecard/institutional_financial_profile.csv' DELIMITER ',' CSV HEADER NULL 'NA';
+\COPY colleges_2014.institutional_financial_profile (unitid, in_state_cost, out_state_cost, average_faculty_salary, instruction_spend_per_student, endowbegin, endowend) FROM 'datasets/college_scorecard/institutional_financial_profile.csv' DELIMITER ',' CSV HEADER NULL 'NA';
 
-\COPY foreign_gifts (unitid, gift_date, gift_amount, gift_type, donor_country, donor_name) FROM 'datasets/foreign_gifts/2014data_unitid.csv' DELIMITER ',' CSV HEADER NULL 'NA';
+\COPY colleges_2014.foreign_gifts (unitid, gift_date, gift_amount, gift_type, donor_country, donor_name) FROM 'datasets/foreign_gifts/2014data_unitid.csv' DELIMITER ',' CSV HEADER NULL 'NA';
 
-\COPY athletics_financing (unitid, athletic_revenues, royalties, tv_revenue, ticket_sales, subsidy, direct_state_govt_support, ncaa_distributions, indirect_facil_admin_support, endowments, other_revenues, athletic_expenses, student_fees, net_revenue) FROM 'datasets/college_athletics_financing/2014data_selected.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
+\COPY colleges_2014.athletics_financing (unitid, athletic_revenues, royalties, tv_revenue, ticket_sales, subsidy, direct_state_govt_support, ncaa_distributions, indirect_facil_admin_support, endowments, other_revenues, athletic_expenses, student_fees, net_revenue) FROM 'datasets/college_athletics_financing/2014data_selected.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
