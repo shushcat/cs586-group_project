@@ -121,7 +121,7 @@ WITH top_donor AS (
 		MODE() WITHIN GROUP (ORDER BY fg.donor_country) AS top_donor
 	FROM colleges_2014.foreign_gifts AS fg
 	GROUP BY fg.unitid
-) 
+)
 SELECT i.name, td.top_donor
 FROM colleges_2014.foreign_gifts AS fg
 JOIN colleges_2014.institutions AS i ON fg.unitid = i.unitid
@@ -188,7 +188,7 @@ ORDER BY i.student_faculty_ratio;
 -- Of those, which are included in the athletics financing database and what are their net revenues from athletics, broadly construed?
 
 SELECT i.name, i.state, i.city, i.student_faculty_ratio,
-	af.athletic_revenues, af.athletic_expenses, 
+	af.athletic_revenues, af.athletic_expenses,
 	(af.athletic_revenues - af.athletic_expenses) AS net
 FROM colleges_2014.institutions AS i
 JOIN colleges_2014.student_backgrounds AS sb ON i.unitid = sb.unitid
@@ -211,13 +211,25 @@ WHERE sfp.grad_debt_mdn IS NOT NULL
 ORDER BY sfp.grad_debt_mdn DESC
 LIMIT 5;
 
+-- Do the schools with the largest sports subsidies have fewer students from low income or first-to-attend-college backgrounds?
+-- (There doesn't seem to be any correlation.)
+SELECT i.name, i.state, sfp.pell_ever, sfp.first_gen, af.subsidy
+FROM colleges_2014.student_financial_profile AS sfp
+JOIN colleges_2014.institutions AS i ON sfp.unitid = i.unitid
+JOIN colleges_2014.athletics_financing AS af ON af.unitid = i.unitid;
+
+-- Do schools that spend more on student instruction have higher faculty salaries?
+SELECT i.name, i.state, ifp.average_faculty_salary, ifp.instruction_spend_per_student
+FROM colleges_2014.institutional_financial_profile AS ifp
+JOIN colleges_2014.institutions AS i ON ifp.unitid = i.unitid;
+
+-- See below for a cache of cynical or vague unanswered questions.
+------------------------------------------------------------------
+-- Which of the colleges that responded pay the most per student sports?
 -- Does spending on college sports affect student's academic performances?
--- Does sports gambling correlate with subsidies to college sports?
--- How does any difference in the previous question compare to differences in funding based on academic merit?
--- How does increased funding for college sports affect universities, colleges, and the areas surrounding them?
--- How is cost of attendance affected by funding for college sports?
+-- Does cost of attendance correlate with funding for college sports?
+----------------
 -- How many consecutive wins have various college sports team had?
--- How many students are in high school, under grad, grad etc programs?
 -- How many students are involved in both academics and sports?
 -- How many students are involved in college sports?
 -- How many students, by school, have received funding based on athletics participation?
@@ -230,8 +242,6 @@ LIMIT 5;
 -- What is the connection between college sports and academics?
 -- What is the variation in funding for education versus sports?
 -- What kinds of funding are offered to students at schools and colleges?
--- Which colleges have the highest fees?
--- Which schools and colleges are highly supportive of sports?
 -- Which schools and colleges participate and encourage students in more than 1 sport?
 -- Which schools and colleges support financing for academically oriented students?
 -- Which schools and colleges support financing for students involved in sports?
