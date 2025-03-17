@@ -223,14 +223,29 @@ SELECT i.name, i.state, ifp.average_faculty_salary, ifp.instruction_spend_per_st
 FROM colleges_2014.institutional_financial_profile AS ifp
 JOIN colleges_2014.institutions AS i ON ifp.unitid = i.unitid;
 
+-- Which of the colleges that responded pay the most per student sports in the undergrad program?
+SELECT i.name,(af.athletic_expenses - af.student_fees) / i.undergraduate_enrollment AS sports_pay_per_student
+FROM colleges_2014.institutions i
+JOIN colleges_2014.athletics_financing af ON i.unitid = af.unitid
+WHERE af.athletic_expenses IS NOT NULL
+    AND i.undergraduate_enrollment > 0
+ORDER by sports_pay_per_student DESC
+LIMIT 10; 
+
+-- How many students are involved in both academics and sports?
+SELECT i.name as college_name, SUM(i.undergraduate_enrollment) AS no_of_students_in_sports
+FROM colleges_2014.institutions i
+WHERE i.unitid IN (SELECT DISTINCT unitid FROM colleges_2014.athletics_financing)
+GROUP BY i.name 
+ORDER BY no_of_students_in_sports DESC;
+
+-- 
 -- See below for a cache of cynical or vague unanswered questions.
 ------------------------------------------------------------------
--- Which of the colleges that responded pay the most per student sports?
 -- Does spending on college sports affect student's academic performances?
 -- Does cost of attendance correlate with funding for college sports?
 ----------------
 -- How many consecutive wins have various college sports team had?
--- How many students are involved in both academics and sports?
 -- How many students are involved in college sports?
 -- How many students, by school, have received funding based on athletics participation?
 -- How much funding is offered to students when comparing between states?
