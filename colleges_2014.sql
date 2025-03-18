@@ -152,3 +152,16 @@ WHERE sap.sat_avg_all IS NOT NULL
 \COPY colleges_2014.foreign_gifts (unitid, gift_date, gift_amount, gift_type, donor_country, donor_name) FROM 'datasets/foreign_gifts/2014data_unitid.csv' DELIMITER ',' CSV HEADER NULL 'NA';
 
 \COPY colleges_2014.athletics_financing (unitid, athletic_revenues, royalties, tv_revenue, ticket_sales, subsidy, direct_state_govt_support, ncaa_distributions, indirect_facil_admin_support, endowments, other_revenues, athletic_expenses, student_fees, net_revenue) FROM 'datasets/college_athletics_financing/2014data_selected.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
+
+
+-- NORMALIZE DATA : Can be achieved by removing the below columns as there is no data available for those columns 
+
+* institutions - Laititude, Longitude, adm_rate_supp
+* student_backgrounds - pct_ba, pct_grad_prof, pct_born_us
+* student_academic_profile - completion_rate, median_completion_ratenon_traditional
+* student_financial_profile - median_cost, mdearn_pd, count_nwne_1yr, count_wne_1yr, earning_over_highschool, count_ed ,poverty_rate, unemp_rate
+* institutional_financial_profile - Good, normalization isn't required 
+* foreign_gifts - Good, no normalization required 
+* athletics_financing - Good, no normalization required 
+
+
