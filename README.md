@@ -52,22 +52,21 @@
 		- [x] at least a few must join at least 4 tables
 - [ ] Deliverable 3 (due 2025-03-14)
 	- [ ] Write-up the project including:
-		- [ ] A revised ER diagram to reflect the actual implementation;
-		- [ ] Create statements for all tables with
-			- [ ] primary keys,
-			- [ ] unique keys, and
-			- [ ] foreign keys, and for all
-			- [ ] view statements (of which there must be at least one);
-		- [ ] Create statements for all indexes;
+		- [x] A revised ER diagram to reflect the actual implementation;
+		- [x] Create statements for all tables with
+			- [x] primary keys,
+			- [x] unique keys, and
+			- [x] foreign keys, and for all
+			- [x] view statements (of which there must be at least one);
+		- [ ] A listing of 5 rows and a report of total row count for each table.
+		- ~~Create statements for all indexes~~ (no indexes used);
 		- [ ] "A *thorough* description of how you populated the database,";
-		- [ ] For each of the 20, include
-			- [ ] the question in english,
-			- [ ] it's translation to SQL,
+		- [ ] For each of the questions, include
+			- [x] the question in english,
+			- [x] it's translation to SQL,
 			- [ ] the answer to the query (truncated to 10 rows),
 			- [ ] originals and rationals for all changed questions;
-		- [ ] A listing of 5 rows and a report of total row count for each table.
-
-* TODO Final exam
+		- [ ] Do the same for the view
 
 # Database design
 

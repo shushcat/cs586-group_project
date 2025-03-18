@@ -38,7 +38,7 @@ JOIN colleges_2014.institutions AS i ON ifp.unitid = i.unitid
 WHERE ifp.in_state_cost IS NOT NULL
 ORDER BY in_to_out ASC;
 
--- Q5: How much education have people, shall we say, undergone in the areas where the students at institutions with the lowest in-state to out-of-state tuition ratios come from?
+-- Q5: How much education have people endured in the areas where the students at institutions with the lowest in-state to out-of-state tuition ratios come from?
 -- The present dataset doesn't allow for answering this question because apparently `pct_ba` and `pct_grad_prof` weren't being reported or gathered in 2014.
 
 SELECT i.name, i.state, i.city,
@@ -62,14 +62,6 @@ JOIN colleges_2014.institutions AS i ON ifp.unitid = i.unitid
 JOIN colleges_2014.student_academic_profile AS sap ON ifp.unitid = sap.unitid
 WHERE ifp.in_state_cost IS NOT NULL AND sap.sat_avg_all IS NOT NULL
 ORDER BY in_to_out ASC;
-
--- (Table doesn't exist.) Which schools and colleges that also report students' sexes report the lowest student-faculty ratios?
-
-SELECT fsr.name, fsr.state, fsr.city, fsr.student_faculty_ratio
-FROM colleges_2014.faculty_and_sex_ratios AS fsr
-WHERE fsr.student_faculty_ratio IS NOT NULL
-ORDER BY fsr.student_faculty_ratio ASC
-LIMIT 15;
 
 -- Q7: Which schools accepted the most money from foreign donors in 2014?
 
@@ -102,7 +94,7 @@ GROUP BY i.unitid, ifp.instruction_spend_per_student,
 	af.athletic_revenues, af.athletic_expenses, af.net_revenue
 ORDER BY gift_sum DESC;
 
--- Q10: How profitable are sports at schools that reported as to whether or not their sports-related doings are profitable?
+-- Q10: How profitable are sports at schools that gave a report as to whether or not their sports-related doings are profitable?
 
 SELECT i.name, i.state, cast(ifp.instruction_spend_per_student AS numeric(9,2)),
 	af.net_revenue AS net_revenue
@@ -269,17 +261,25 @@ WHERE i.unitid IN (SELECT DISTINCT unitid FROM colleges_2014.athletics_financing
 GROUP BY i.name
 ORDER BY no_of_students_in_sports DESC;
 
--- S: Statements to display first 15 rows of each table
+-- Q26: Which schools and colleges that also report students' sexes report the lowest student-faculty ratios?
 
-SELECT * FROM colleges_2014.institutions limit 15;
-SELECT * FROM colleges_2014.student_backgrounds limit 15;
-SELECT * FROM colleges_2014.student_academic_profile limit 15;
-SELECT * FROM colleges_2014.student_financial_profile limit 15;
-SELECT * FROM colleges_2014.institutional_financial_profile limit 15;
-SELECT * FROM colleges_2014.foreign_gifts limit 15;
-SELECT * FROM colleges_2014.athletics_financing limit 15;
+SELECT fsr.name, fsr.state, fsr.city, fsr.student_faculty_ratio
+FROM colleges_2014.faculty_and_sex_ratios AS fsr
+WHERE fsr.student_faculty_ratio IS NOT NULL
+ORDER BY fsr.student_faculty_ratio ASC
+LIMIT 15;
 
--- C: Count statements for all the tables
+-- S: Statements to display the first 15 rows of each table.
+
+SELECT * FROM colleges_2014.institutions LIMIT 15;
+SELECT * FROM colleges_2014.student_backgrounds LIMIT 15;
+SELECT * FROM colleges_2014.student_academic_profile LIMIT 15;
+SELECT * FROM colleges_2014.student_financial_profile LIMIT 15;
+SELECT * FROM colleges_2014.institutional_financial_profile LIMIT 15;
+SELECT * FROM colleges_2014.foreign_gifts LIMIT 15;
+SELECT * FROM colleges_2014.athletics_financing LIMIT 15;
+
+-- C: Count statements for all the tables.
 
 SELECT count(*) FROM colleges_2014.institutions;
 SELECT count(*) FROM colleges_2014.student_backgrounds;
@@ -294,7 +294,6 @@ SELECT count(*) FROM colleges_2014.athletics_financing;
 ------------------------------------------------------------------
 -- Does spending on college sports affect student's academic performances?
 -- Does cost of attendance correlate with funding for college sports?
-----------------
 -- How many consecutive wins have various college sports team had?
 -- How many students are involved in college sports?
 -- How many students, by school, have received funding based on athletics participation?
