@@ -52,20 +52,22 @@
 		- [x] at least a few must join at least 4 tables
 - [ ] Deliverable 3 (due 2025-03-14)
 	- [ ] Write-up the project including:
-	- [ ] A revised ER diagram to reflect the actual implementation;
-	- [ ] Create statements for all tables with
-		- [ ] primary keys,
-		- [ ] unique keys, and
-		- [ ] foreign keys, and for all
-		- [ ] view statements (of which there must be at least one);
-	- [ ] Create statements for all indexes;
-	- [ ] "A *thorough* description of how you populated the database,";
-	- [ ] For each of the 20, include
-		- [ ] the question in english,
-		- [ ] it's translation to SQL,
-		- [ ] the answer to the query (truncated to 10 rows),
-		- [ ] originals and rationals for all changed questions;
-	- [ ] A listing of 5 rows and a report of total row count for each table.
+		- [ ] A revised ER diagram to reflect the actual implementation;
+		- [ ] Create statements for all tables with
+			- [ ] primary keys,
+			- [ ] unique keys, and
+			- [ ] foreign keys, and for all
+			- [ ] view statements (of which there must be at least one);
+		- [ ] Create statements for all indexes;
+		- [ ] "A *thorough* description of how you populated the database,";
+		- [ ] For each of the 20, include
+			- [ ] the question in english,
+			- [ ] it's translation to SQL,
+			- [ ] the answer to the query (truncated to 10 rows),
+			- [ ] originals and rationals for all changed questions;
+		- [ ] A listing of 5 rows and a report of total row count for each table.
+
+* TODO Final exam
 
 # Database design
 
@@ -91,7 +93,7 @@ We placed extracted columns in files specific to each table.
 
 	csvcut -c UNITID,OPEID,INSTNM,STABBR,CITY,ZIP,LATITUDE,LONGITUDE,ADM_RATE_ALL merged.csv > institutions.csv
 
-Scripted replacement of OPEID with UNITID in `foreign_gifts`. 
+Scripted replacement of OPEID with UNITID in `foreign_gifts`.
 
 # Dataset retrieval, normalization & selection
 
@@ -109,7 +111,7 @@ Scripted replacement of OPEID with UNITID in `foreign_gifts`.
 - [x] college_athletics_financing/
 	- 2010--2014
  	- Useful columns ( unitid | instnm | chronname | conference | city | state | nickname | year | url | full_time_enrollment )
-  	- Can be ignored ( inflationadjusted columns ) 
+  	- Can be ignored ( inflationadjusted columns )
 
 Steps taken to collect and normalize each dataset appear under each dataset's heading.
 To convert datasets that were only available as XLS or XLSX files as of March 2025, we used the tool `in2csv`, which is part of [CSVKit](https://github.com/wireservice/csvkit).
@@ -136,7 +138,7 @@ Removed from `foreign_gifts` since not in `college_scorecard`:
 - [x] college_athletics_financing/
 	- 2010--2014
  	- Useful columns ( unitid | instnm | chronname | conference | city | state | nickname | year | url | full_time_enrollment )
-  	- Can be ignored ( inflationadjusted columns ) 
+  	- Can be ignored ( inflationadjusted columns )
 
 ## College scorecard
 
@@ -203,7 +205,7 @@ rm CHE_RealScoredatadictionary.xlsx
 
 [Dataset folder](datasets/foreign_gifts)
 
-"Foreign Gift and Contracts Report with Date Range 01/01/2014 to 06/30/2020 
+"Foreign Gift and Contracts Report with Date Range 01/01/2014 to 06/30/2020
 
 Data Source: Postsecondary Education Participation System 10/19/2020"
 
