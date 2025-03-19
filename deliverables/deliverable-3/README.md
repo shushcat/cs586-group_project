@@ -531,7 +531,7 @@ ORDER BY no_of_students_in_sports DESC;
 
 ![](/img/Q25.png)
 
-#### TODO Q26: Which schools and colleges that also report students' sexes report the lowest student-faculty ratios?
+#### Q26: Which schools and colleges that also report students' sexes report the lowest student-faculty ratios?
 
 This question relies on the `faculty_and_sex_ratios` view.
 
@@ -542,3 +542,5 @@ WHERE fsr.student_faculty_ratio IS NOT NULL
 ORDER BY fsr.student_faculty_ratio ASC
 LIMIT 15;
 ```
+
+![](/img/Q26.png)
