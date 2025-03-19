@@ -1,8 +1,13 @@
 # CS586 group project
 
---------
+This project gathers some data about US schools---"schools" here including 2-year and 4-year colleges, universities, and some trade schools---during the year 2014.
+Specifically, it collects the 2014 data for foreign gifts to US schools and college sports financing, as well as the _College scorecard_ data for that year.
+The datasets were selected by combing through the _Data is plural_ archives^[<https://www.data-is-plural.com/>] as collected by Jeremy Singer-Vine, searching for anything to do with US colleges and universities.
+As a consequence of this somewhat scattershot approach to dataset collection, the questions that can be asked using our database aren't quite as incisive as we would've preferred.
+Given the chance to do it all again, we probably would've focused on importing as near to the entirety of the _College scorecard_ data as we could manage since that data is already provided in a consistent format and is, as far as we know, as close to a complete picture of the higher education system in the US as is currently available.
+As it stand, our questions concern the kinds of things our database allow us to ask questions about---as is always the case, I suppose.
 
-# Roadmap
+# Log
 
 - [x] Go over the datasets once, accepting or rejecting
 - [x] Tidy up the reference links
@@ -50,8 +55,8 @@
 		- [x] explain revisions
 		- [x] some questions must involve multiple tables
 		- [x] at least a few must join at least 4 tables
-- [ ] Deliverable 3 (due 2025-03-14)
-	- [ ] Write-up the project including:
+- [x] Deliverable 3 (due 2025-03-14)
+	- [x] Write-up the project including:
 		- [x] A revised ER diagram to reflect the actual implementation;
 		- [x] Create statements for all tables with
 			- [x] primary keys,
@@ -70,75 +75,13 @@
 
 # Database design
 
-All very tentative so far.
+![](img/ERD.png)
 
-- Time
-  - Marker for completeness by time?
-- State
-- College
+# Datasets considered
 
-Use a `VIEW` to calculate
+## College scorecard (`college_scorecard`)
 
-
-	subsidyproportion float --Subsidy divided by athletic revenues; calculated.
-	institutional_subsidy bigint --Direct institutional support plus indirect facil admin support.
-	institutionalsubsidy_proportion float --Institutional subsidy divided by athletic revenues.
-	external_revenue bigint --Athletic revenues minus subsidy.
-
-from `college_athletics_financing` data.
-
-Since `\COPY` requires that all columns be handled, and since we've already used CSVKit, we used the `csvcut` tool from CSVKit to extract columns from some datasets.
-We placed extracted columns in files specific to each table.
-
-	csvcut -c UNITID,OPEID,INSTNM,STABBR,CITY,ZIP,LATITUDE,LONGITUDE,ADM_RATE_ALL merged.csv > institutions.csv
-
-Scripted replacement of OPEID with UNITID in `foreign_gifts`.
-
-# Dataset retrieval, normalization & selection
-
-- [x] college_scorecard/
-	- 1996--2023
-- [x] foreign_gifts/
-	- 2014--2020
- 	- Considering just the years 2013 to 2015
-  	- Useful columns ( ID | Institution Name | City | State | Foreign Gift Amount | Gift Type | Country of Giftor | Giftor Name )
-  	- Not useful columns ( OPEID | Foreign Gift Received Date )
-- [x] equity_athletics_data_analysis/
-	- 2002--2023
- 	- Useful columns ( unitid | institution_name | city_txt	| state_cd | EFMaleCount | EFFemaleCount | EFTotalCount | sector_cd | sector_name | STAID_MEN | STAID_WOMEN | STAID_COED | STUDENTAID_TOTAL)
-  	- Can be ignored ( addr1_txt | addr2_txt )
-- [x] college_athletics_financing/
-	- 2010--2014
- 	- Useful columns ( unitid | instnm | chronname | conference | city | state | nickname | year | url | full_time_enrollment )
-  	- Can be ignored ( inflationadjusted columns )
-
-Steps taken to collect and normalize each dataset appear under each dataset's heading.
-To convert datasets that were only available as XLS or XLSX files as of March 2025, we used the tool `in2csv`, which is part of [CSVKit](https://github.com/wireservice/csvkit).
-
-Removed from `foreign_gifts` since not in `college_scorecard`:
-
-	27708,00672500,University of Tennessee Health Science Center,Memphis,TN,2014-03-01,156000,Contract,IRELAND,Neotype Biosciences Limited
-	27709,00672500,University of Tennessee Health Science Center,Memphis,TN,2014-04-01,525000,Contract,CHINA,First Hospital of Qiqihaer
-
-## Data import and schema design
-
-- [x] college_scorecard/
-	- 1996--2023
-- [x] foreign_gifts/
-	- 2014--2020
- 	- Considering just the years 2013 to 2015
-  	- Useful columns ( ID | Institution Name | City | State | Foreign Gift Amount | Gift Type | Country of Giftor | Giftor Name )
-  	- Not useful columns ( OPEID | Foreign Gift Received Date )
-- [x] equity_athletics_data_analysis/
-	- 2002--2023
- 	- Useful columns ( unitid | institution_name | city_txt	| state_cd | EFMaleCount | EFFemaleCount | EFTotalCount | sector_cd | sector_name | STAID_MEN | STAID_WOMEN | STAID_COED | STUDENTAID_TOTAL)
-  	- Can be ignored ( addr1_txt | addr2_txt )
-- [x] college_athletics_financing/
-	- 2010--2014
- 	- Useful columns ( unitid | instnm | chronname | conference | city | state | nickname | year | url | full_time_enrollment )
-  	- Can be ignored ( inflationadjusted columns )
-
-## College scorecard
+[Dataset folder](datasets/college_scorecard)
 
 - Date range: 1996--2024
 
@@ -160,7 +103,7 @@ wget https://collegescorecard.ed.gov/files/EarningsDataErrata.pdf
 
 ### Retrieving the complete dataset
 
-I've decided not to use the entire dataset; all we need is the institution-level data.
+We decided not to use the entire dataset; all we need is the institution-level data.
 
 ```sh
 mkdir college_scorecard
@@ -174,7 +117,7 @@ rm -rf College_Scorecard_Raw_Data_01162025.zip
 rm -rf __MACOSX/
 ```
 
-## _The Huffington post_ and _Chronicle of higher education_'s data on how colleges finance their athletics; `college_athletics_financing`
+## _The Huffington post_ and _Chronicle of higher education_'s data on how colleges finance their athletics (`college_athletics_financing`)
 
 [Dataset folder](datasets/college_athletics_financing/)
 
@@ -194,24 +137,19 @@ in2csv CHE_RealScoredatadictionary.xlsx > data_dictionary.csv
 rm CHE_RealScoredatadictionary.xlsx
 ```
 
-- [x] _The Huffington post_ and _Chronicle of higher education_ teamed up to investigate have collected [data on how college's finance their athletics](http://projects.huffingtonpost.com/ncaa/reporters-note)
+_The Huffington post_ and _Chronicle of higher education_ teamed up to investigate have collected [data on how college's finance their athletics](http://projects.huffingtonpost.com/ncaa/reporters-note)
 	- **link**: http://hpin.s3.amazonaws.com/ncaa-financials/ncaa-financials-data.zip
 	- See [their report](http://projects.huffingtonpost.com/projects/ncaa/sports-at-any-cost) and
-	- [_The Washington post_'s report on the unprofitability of college athletics](http://www.washingtonpost.com/sf/sports/wp/2015/11/23/running-up-the-bills/)
+	- [_The Washington post_'s report on the unprofitability of college athletics](http://www.washingtonpost.com/sf/sports/wp/2015/11/23/running-up-the-bills/), which we weren't able to corroborate.
 
-## _Department of education_'s data on foreign gifts to and contracts with US colleges `foreign_gifts`
+## _Department of education_'s data on foreign gifts to and contracts with US colleges (`foreign_gifts`)
 
 [Dataset folder](datasets/foreign_gifts)
-
-"Foreign Gift and Contracts Report with Date Range 01/01/2014 to 06/30/2020
-
-Data Source: Postsecondary Education Participation System 10/19/2020"
 
 The [_Department of education_'s data on foreign gifts to and contracts with US colleges](https://studentaid.ed.gov/sa/about/data-center/school/foreign-gifts)
 	- **link**: https://studentaid.gov/sites/default/files/ForeignGifts.xls
 		- from: https://catalog.data.gov/dataset/foreign-gifts-and-contracts-report-e353d
 	- See [their database on such gifts and contracts](https://catalog.data.gov/dataset/foreign-gifts-and-contracts-report-2011), and
-	- See a report from the _Associated press_ on Saudi-Arabia's financial ties to US colleges: https://www.apnews.com/4d56411af6a8490e8030eacab4401571
 
 ```sh
 cd "$DATASET_DIR"
@@ -225,20 +163,6 @@ rm ForeignGifts.xls
 
 - Data for 2020--2024: https://fsapartners.ed.gov/knowledge-center/topics/section-117-foreign-gift-and-contract-reporting/section-117-foreign-gift-and-contract-data
 - Data for october of 2024: https://fsapartners.ed.gov/knowledge-center/topics/section-117-foreign-gift-and-contract-reporting/section-117-foreign-gift-and-contract-data
-
-## _Equity in athletics data analysis_ (EADA): Institution-level financial information for college sports `equity_athletics_data_analysis`
-
-[Dataset folder](datasets/equity_athletics_data_analysis)
-
-Information released per the [Equity in athletics disclosure act](https://www.ed.gov/laws-and-policy/higher-education-laws-and-policy/policy-initiatives/equity-in-athletics-disclosure-act) and available by year for all institutions at [](https://ope.ed.gov/athletics/#/datafile/list).
-
-Removed all files in formats other than doc and XLS, then filtered to retain only doc or XLS files that aggregate data at the institutional level.
-Since file and sheet names were inconsistent from year to year, we manually reviewed each of the remaining files before converting each one to a CSV file with `in2csv`.
-We converted data dictionaries that were provided in doc format by using LibreOffice to export them to an intermediate format, then using Pandoc to convert those files to plain text.
-
-- [x] The [_Department of education_'s annual school- and team-level datasets on college sports' finances](https://ope.ed.gov/athletics/)
-	- **link** (2003--2023): https://ope.ed.gov/athletics/#/datafile/list
-	- See _USAFacts_' reporting which uses the data to examine college football finances: https://usafacts.org/articles/coronavirus-college-football-profit-sec-acc-pac-12-big-ten-millions-fall-2020/
 
 # Archived resources
 
@@ -291,6 +215,20 @@ All resources below this point are unused.
   - https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/articles/whichskillsareemployersseekinginyourarea/2024-11-05
 
 >__Women’s college basketball rosters.__ Students in [Derek Willis](https://merrill.umd.edu/directory/derek-willis)’s “[Sports Data Analysis & Visualization](https://app.testudo.umd.edu/soc/202208/JOUR/JOUR479X)” course at the University of Maryland’s journalism school have [assembled](https://twitter.com/derekwillis/status/1600946516272861185) data on [13,000+ players on women’s college basketball teams](https://github.com/Sports-Roster-Data/womens-college-basketball), sourced from 900+ rosters for the 2022–23 NCAA season. Their main dataset lists each player’s name, team, position, jersey number, height, year, hometown, high school, and more.
+
+### _Equity in athletics data analysis_ (EADA): Institution-level financial information for college sports `equity_athletics_data_analysis`
+
+[Dataset folder](datasets/equity_athletics_data_analysis)
+
+Information released per the [Equity in athletics disclosure act](https://www.ed.gov/laws-and-policy/higher-education-laws-and-policy/policy-initiatives/equity-in-athletics-disclosure-act) and available by year for all institutions at [](https://ope.ed.gov/athletics/#/datafile/list).
+
+Removed all files in formats other than doc and XLS, then filtered to retain only doc or XLS files that aggregate data at the institutional level.
+Since file and sheet names were inconsistent from year to year, we manually reviewed each of the remaining files before converting each one to a CSV file with `in2csv`.
+We converted data dictionaries that were provided in doc format by using LibreOffice to export them to an intermediate format, then using Pandoc to convert those files to plain text.
+
+- [x] The [_Department of education_'s annual school- and team-level datasets on college sports' finances](https://ope.ed.gov/athletics/)
+	- **link** (2003--2023): https://ope.ed.gov/athletics/#/datafile/list
+	- See _USAFacts_' reporting which uses the data to examine college football finances: https://usafacts.org/articles/coronavirus-college-football-profit-sec-acc-pac-12-big-ten-millions-fall-2020/
 
 ### "Historic quarterly state and local government tax revenue"; _US census bureau_
 
@@ -359,7 +297,6 @@ cd loan_defaults
 ```
 
 https://studentaid.gov/data-center/student/default
-
 
 - [ ] [The _US department of education_'s cohort default rate](https://fsapartners.ed.gov/knowledge-center/topics/default-management/official-cohort-default-rates-schools)
 	- **link** for 2021: https://fsapartners.ed.gov/sites/default/files/2024-09/PEPS300ReportFY21Official.xlsx
