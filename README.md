@@ -61,7 +61,7 @@
 		- [ ] A listing of 5 rows and a report of total row count for each table.
 		- ~~Create statements for all indexes~~ (no indexes used);
 		- [ ] "A *thorough* description of how you populated the database,";
-		- [ ] For each of the questions, include
+		- [x] For each of the questions, include
 			- [x] the question in english,
 			- [x] it's translation to SQL,
 			- [ ] the answer to the query (truncated to 10 rows),
@@ -119,7 +119,6 @@ Removed from `foreign_gifts` since not in `college_scorecard`:
 
 	27708,00672500,University of Tennessee Health Science Center,Memphis,TN,2014-03-01,156000,Contract,IRELAND,Neotype Biosciences Limited
 	27709,00672500,University of Tennessee Health Science Center,Memphis,TN,2014-04-01,525000,Contract,CHINA,First Hospital of Qiqihaer
-
 
 ## Data import and schema design
 

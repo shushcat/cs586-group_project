@@ -14,7 +14,7 @@ date: \today
 ### Table-creation statements
 
 ```sql
-CREATE TABLE institutions ( --from `college_scorecard`
+CREATE TABLE colleges_2014.institutions ( --from `college_scorecard`
 	unitid int PRIMARY KEY, --UNITID
 	opeid varchar(16), --OPEID
 	name varchar(128) NOT NULL, --INSTNM
@@ -30,9 +30,23 @@ CREATE TABLE institutions ( --from `college_scorecard`
 	adm_rate_supp float --Admission rate, suppressed for n<30
 );
 
-CREATE TABLE student_backgrounds ( --from `college_scorecard`
+SELECT * FROM colleges_2014.institutions;
+```
+
+	unitid |  opeid   |                name                 | state... 
+	--------+----------+-------------------------------------+-----...
+	100654 | 00100200 | Alabama A & M University            | AL   ... 
+	100663 | 00105200 | University of Alabama at Birmingham | AL   ... 
+	100690 | 02503400 | Amridge University                  | AL   ... 
+	100706 | 00105500 | University of Alabama in Huntsville | AL   ... 
+	100724 | 00100500 | Alabama State University            | AL   ... 
+	...
+	(7766 rows)
+
+```sql
+CREATE TABLE colleges_2014.student_backgrounds ( --from `college_scorecard`
 	id SERIAL PRIMARY KEY,
-	unitid int REFERENCES institutions(unitid), --UNITID
+	unitid int REFERENCES colleges_2014.institutions(unitid), --UNITID
 	pct_ba float, --Percent of people over age 25 from students' zip codes with bachelor's degrees.
 	pct_grad_prof float, --Percent of people over age 25 from students' zip codes with professional degrees.
 	pct_born_us float, --Percent of people from students' zip codes that were born in the US.
@@ -40,9 +54,24 @@ CREATE TABLE student_backgrounds ( --from `college_scorecard`
 	ugds_women float --Total share of enrollment of undergraduate degree-seeking students who are women.
 );
 
-CREATE TABLE student_academic_profile ( --from `college_scorecard`
+SELECT * FROM colleges_2014.student_backgrounds LIMIT 5;
+```
+
+	id | unitid | pct_ba | pct_grad_prof | pct_born_us | ugds_men | ugds_women
+	----+--------+--------+---------------+-------------+----------+------------
+	1 | 100654 |        |               |             |   0.4831 |     0.5169
+	2 | 100663 |        |               |             |   0.4169 |     0.5831
+	3 | 100690 |        |               |             |   0.3986 |     0.6014
+	4 | 100706 |        |               |             |   0.5733 |     0.4267
+	5 | 100724 |        |               |             |   0.3877 |     0.6123
+	...
+	(7766 rows)
+
+
+```sql
+CREATE TABLE colleges_2014.student_academic_profile ( --from `college_scorecard`
 	id SERIAL PRIMARY KEY,
-	unitid int REFERENCES institutions(unitid), --UNITID
+	unitid int REFERENCES colleges_2014.institutions(unitid), --UNITID
 	sat_mid_read float, --SATVRMID
 	sat_mid_math float, --SATMTMID
 	sat_mid_write float, --SATWRMID
@@ -53,9 +82,23 @@ CREATE TABLE student_academic_profile ( --from `college_scorecard`
 	non_traditional float --UG25ABV; percentage of undergraduates aged 25 and above
 );
 
-CREATE TABLE student_financial_profile ( --from `college_scorecard`
+SELECT * FROM colleges_2014.student_academic_profile LIMIT 5;
+```
+
+	id | unitid | sat_mid_read | sat_mid_math | sat_mid_write | sat_avg | sat_avg_all ...
+	---+--------+--------------+--------------+---------------+---------+-------------...
+	 1 | 100654 |          424 |          420 |           420 |     827 |         827 ...
+	 2 | 100663 |          570 |          565 |               |    1107 |        1107 ...
+	 3 | 100690 |              |              |               |         |             ...
+	 4 | 100706 |          595 |          590 |               |    1219 |        1219 ...
+	 5 | 100724 |          425 |          430 |               |     851 |         851 ...
+	 ...
+	 (7766 rows)
+
+```sql
+CREATE TABLE colleges_2014.student_financial_profile ( --from `college_scorecard`
 	id SERIAL PRIMARY KEY,
-	unitid int REFERENCES institutions(unitid), --UNITID
+	unitid int REFERENCES colleges_2014.institutions(unitid), --UNITID
 	median_cost float, --MDCOST_ALL; overall median for average net price.
 	grad_debt_mdn float, --The median debt for students who have completed.
 	female_debt_mdn float, --The median debt for female students.
@@ -81,9 +124,24 @@ CREATE TABLE student_financial_profile ( --from `college_scorecard`
 	unemp_rate float --Unemployment rate, via Census data.
 );
 
-CREATE TABLE institutional_financial_profile ( --from `college_scorecard`
+SELECT male_debt_mdn FROM colleges_2014.student_financial_profile limit 5;
+
+```
+
+	id | unitid | median_cost | grad_debt_mdn | female_debt_mdn | male_debt_mdn...
+	---+--------+-------------+---------------+-----------------+--------------...
+	 1 | 100654 |             |         32750 |           14250 | 12000        ...
+	 2 | 100663 |             |         20750 |         12537.5 | 12500        ...
+	 3 | 100690 |             |         22829 |            8481 | 7125         ...
+	 4 | 100706 |             |         23250 |           15000 | 13500        ...
+	 5 | 100724 |             |         32500 |           13228 | 11250        ...
+	 ...
+	(7766 rows)
+
+```sql
+CREATE TABLE colleges_2014.institutional_financial_profile ( --from `college_scorecard`
 	id SERIAL PRIMARY KEY,
-	unitid int REFERENCES institutions(unitid),
+	unitid int REFERENCES colleges_2014.institutions(unitid),
 	in_state_cost integer, --TUITIONFEE_IN
 	out_state_cost integer, --TUITIONFEE_OUT
 	average_faculty_salary integer, --AVGFACSAL; average faculty salary
@@ -92,9 +150,23 @@ CREATE TABLE institutional_financial_profile ( --from `college_scorecard`
 	endowend decimal(15, 2) --Value of school's endowment at the end of the fiscal year
 );
 
-CREATE TABLE foreign_gifts ( --from `foreign_gifts`
+SELECT * FROM colleges_2014.institutional_financial_profile;
+```
+
+	id | unitid | in_state_cost | out_state_cost | average_faculty_salary | instruction_spend_per_student...
+	---+--------+---------------+----------------+------------------------+------------------------------...
+	 1 | 100654 |          9096 |          16596 |                   6892 |                          7437...
+	 2 | 100663 |          7510 |          17062 |                   9957 |                         17920...
+	 3 | 100690 |          6900 |           6900 |                   3430 |                          5532...
+	 4 | 100706 |          9158 |          21232 |                   9302 |                         10211...
+	 5 | 100724 |          8720 |          15656 |                   6609 |                          7618...
+	 ...
+	(7766 rows)
+
+```sql
+CREATE TABLE colleges_2014.foreign_gifts ( --from `foreign_gifts`
 	id SERIAL PRIMARY KEY,
-	unitid int REFERENCES institutions(unitid),
+	unitid int REFERENCES colleges_2014.institutions(unitid),
 	donor_country varchar(50), --"Country of Giftor"
 	donor_name varchar(100), --"Giftor Name"
 	gift_amount decimal(16, 2), --"Foreign Gift Amount"
@@ -102,9 +174,24 @@ CREATE TABLE foreign_gifts ( --from `foreign_gifts`
 	gift_type varchar(32) --"Gift Type"
 );
 
-CREATE TABLE athletics_financing ( --from `college_athletics_financing`
+SELECT * FROM colleges_2014.foreign_gifts;
+
+```
+
+	 id | unitid | donor_country |            donor_name            | gift_amount ...
+	----+--------+---------------+----------------------------------+-------------...
+	  1 | 104151 | QATAR         | RasGas Company Limited           |    12126.00 ...
+	  2 | 104151 | JAPAN         | Asia University                  |     5763.00 ...
+	  3 | 104151 | JAPAN         | Asia University                  |   121023.00 ...
+	  4 | 104151 | CANADA        | University of Western Ontario    |   136381.00 ...
+	  5 | 104151 | VIETNAM       | Intel Products Vietnam Co., Ltd. |   379106.00 ...
+	...
+	(3584 rows)
+
+```sql
+CREATE TABLE colleges_2014.athletics_financing ( --from `college_athletics_financing`
 	id SERIAL PRIMARY KEY,
-	unitid int REFERENCES institutions(unitid), --UNITID
+	unitid int REFERENCES colleges_2014.institutions(unitid), --UNITID
 	athletic_revenues decimal(15, 2), --Total revenue.
 	royalties bigint, --Revenue from royalties.
 	tv_revenue bigint, --Revenue from radio and television broadcasts.
@@ -120,7 +207,19 @@ CREATE TABLE athletics_financing ( --from `college_athletics_financing`
 	net_revenue bigint, --Athletic revenues minus athletic expenses.
 	year int DEFAULT 2014 CHECK (year = 2014)
 );
+
+SELECT * FROM colleges_2014.athletics_financing;
 ```
+
+	 id | unitid | athletic_revenues | royalties | tv_revenue | ticket_sales | subsidy ...
+	----+--------+-------------------+-----------+------------+--------------+---------...
+	  1 | 100751 |      153234273.00 |  15471366 |   13662940 |     37219343 |  5997100...
+	  2 | 100858 |      113716004.00 |   5275554 |    6357837 |     29833441 |  4384800...
+	  3 | 104151 |       74729269.00 |  10148054 |          0 |     12885134 | 10073205...
+	  4 | 104179 |       99911034.00 |   6308525 |          0 |     14931449 |  7901134...
+	  5 | 106397 |       96793972.00 |  11813916 |          0 |     34284318 |  1936405...
+	  ...
+	(201 rows)
 
 ### View-creation statement
 
@@ -128,53 +227,124 @@ This view summarizes the ratios of students-to-faculty and males-to-females at e
 We did not revise this view for the final deliverable.
 
 ```sql
-CREATE OR REPLACE VIEW faculty_and_sex_ratios AS
 SELECT i.name, i.state, i.city, i.student_faculty_ratio,
 	ifp.in_state_cost, ifp.out_state_cost,
 	sb.ugds_men, sb.ugds_women,
 	sap.sat_avg_all
-FROM institutions AS i
-JOIN student_backgrounds AS sb ON i.unitid = sb.unitid
-JOIN student_academic_profile AS sap ON sb.unitid = sap.unitid
-JOIN institutional_financial_profile AS ifp ON sap.unitid = ifp.unitid
+FROM colleges_2014.institutions AS i
+JOIN colleges_2014.student_backgrounds AS sb ON i.unitid = sb.unitid
+JOIN colleges_2014.student_academic_profile AS sap ON sb.unitid = sap.unitid
+JOIN colleges_2014.institutional_financial_profile AS ifp ON sap.unitid = ifp.unitid
 WHERE sap.sat_avg_all IS NOT NULL
 	AND i.student_faculty_ratio IS NOT NULL
 	AND ifp.in_state_cost IS NOT NULL
 	AND ifp.out_state_cost IS NOT NULL;
+
+SELECT * FROM colleges_2014.faculty_and_sex_ratios limit 5;
+
 ```
 
-### Truncated listings of each table and view
+	               name                 | state |    city    | student_faculty_ratio ...
+	------------------------------------+-------+------------+-----------------------...
+	Alabama A & M University            | AL    | Normal     |                    20 ...
+	University of Alabama at Birmingham | AL    | Birmingham |                    18 ...
+	University of Alabama in Huntsville | AL    | Huntsville |                    16 ...
+	Alabama State University            | AL    | Montgomery |                    16 ...
+	The University of Alabama           | AL    | Tuscaloosa |                    21 ...
+	...
+	(1358 rows)
 
 ### How we populated the database
 
 Of the datasets we reported having collected in the first deliverable, we retained the following:
 
-- The "College scorecard data"^[https://collegescorecard.ed.gov/data];
-- _The Huffington post_ and _Chronicle of higher education_'s data on how colleges finance their athletics^[Described at http://projects.huffingtonpost.com/ncaa/reporters-note and directly downloadable from http://hpin.s3.amazonaws.com/ncaa-financials/ncaa-financials-data.zip.]; and
-- The _Department of education_'s data on foreign gifts to and contracts with US colleges^[Described at https://studentaid.ed.gov/sa/about/data-center/school/foreign-gifts and downloadable from https://studentaid.gov/sites/default/files/ForeignGifts.xls.].
+- The "College scorecard data"^[https://collegescorecard.ed.gov/data] (`college_scorecard`);
+- _The Huffington post_ and _Chronicle of higher education_'s data on how colleges finance their athletics^[Described at http://projects.huffingtonpost.com/ncaa/reporters-note and directly downloadable from http://hpin.s3.amazonaws.com/ncaa-financials/ncaa-financials-data.zip.](`college_athletics_financing`); and
+- The _Department of education_'s data on foreign gifts to and contracts with US colleges^[Described at https://studentaid.ed.gov/sa/about/data-center/school/foreign-gifts and downloadable from https://studentaid.gov/sites/default/files/ForeignGifts.xls.] (`foreign_gifts`).
 
 We rejected each of the other databases that we initially reported having collected owing either to its redundancy or to its mismatch with the date-ranges or reporting protocols of our other databases.
 For instance, the dataset available from _Equity in athletics data analysis_ (EADA)^[Downloadable for selected years from https://ope.ed.gov/athletics/#/datafile/list.] reports data aggregated at the end of each academic year rather than at the end of the year proper.
 
-We found that extensive pre-processing was required for each of our datasets despite limiting our study to a single year, about which more in the final deliverable.
+We found that extensive pre-processing was required for each of our datasets despite limiting our study to the year 2014, which is the only year for which our chosen datasets overlap.
+Broadly speaking, we prepared each dataset by converting it to CSV (if necessary), then producing a smaller CSV containing only selected columns.
+To convert datasets that were only available as XLS or XLSX files as of March 2025 to CSVs, we used the tool `in2csv`, which is part of [CSVKit](https://github.com/wireservice/csvkit).
+
+Additionally, we removed two rows corresponding to colleges that do not appear in `college_scorecard` from `foreign_gifts`:
+
+	27708,00672500,University of Tennessee Health Science Center,Memphis,TN,2014-03-01,156000,Contract,IRELAND,Neotype Biosciences Limited
+	27709,00672500,University of Tennessee Health Science Center,Memphis,TN,2014-04-01,525000,Contract,CHINA,First Hospital of Qiqihaer
+
+For a brief summary of each dataset, along with some of the steps taken to retrieve it, see below.
+Note that in the following three sections, all commands were performed relative to the `datasets/` directory of our project.
+
+#### `college_scorecard`
+
+- Date range: 1996--2024
+
+The [College scorecard](https://collegescorecard.ed.gov/data) data, while [off by an average of 10% in reported graduation rates among Pell-grant recipients](https://hechingerreport.org/theres-finally-federal-data-on-low-income-college-graduation-rates-but-its-wrong/), give a comprehensive view of universities in the US as a whole.
+- **link**: https://ed-public-download.scorecard.network/downloads/College_Scorecard_Raw_Data_01162025.zip
+
+```sh
+mkdir college_scorecard
+cd college_scorecard
+wget https://ed-public-download.scorecard.network/downloads/Most-Recent-Cohorts-Institution_01162025.zip
+unzip Most-Recent-Cohorts-Institution_01162025.zip
+rm Most-Recent-Cohorts-Institution_01162025.zip
+wget https://collegescorecard.ed.gov/files/CollegeScorecardDataDictionary.xlsx
+wget https://collegescorecard.ed.gov/files/InstitutionDataDocumentation.pdf
+wget https://collegescorecard.ed.gov/files/EarningsDataErrata.pdf
+
+```
+
+#### `college_athletics_financing`
+
+- Date range: 2010--2014.
+
+_The Huffington post_ and _Chronicle of higher education_ teamed up to investigate have collected [data on how college's finance their athletics](http://projects.huffingtonpost.com/ncaa/reporters-note)
+	- **link**: http://hpin.s3.amazonaws.com/ncaa-financials/ncaa-financials-data.zip
+	- See [their report](http://projects.huffingtonpost.com/projects/ncaa/sports-at-any-cost) and
+	- [_The Washington post_'s report on the unprofitability of college athletics](http://www.washingtonpost.com/sf/sports/wp/2015/11/23/running-up-the-bills/)
+
+```sh
+cd "$DATASET_DIR"
+mkdir college_athletics_financing
+cd college_athletics_financing
+wget http://hpin.s3.amazonaws.com/ncaa-financials/ncaa-financials-data.zip
+unzip ncaa-financials-data.zip
+rm ncaa-financials-data.zip
+rm -rf __MACOSX/
+cd ncaa-financials-data
+mv * ..
+cd ..
+rm -rf ncaa-financials-data
+in2csv CHE_RealScoredatadictionary.xlsx > data_dictionary.csv
+rm CHE_RealScoredatadictionary.xlsx
+```
+
+#### `foreign_gifts`
+
+- Date range: 2014--2020.
+
+The [_Department of education_'s data on foreign gifts to and contracts with US colleges](https://studentaid.ed.gov/sa/about/data-center/school/foreign-gifts)
+	- **link**: https://studentaid.gov/sites/default/files/ForeignGifts.xls
+		- from: https://catalog.data.gov/dataset/foreign-gifts-and-contracts-report-e353d
+	- See [their database on such gifts and contracts](https://catalog.data.gov/dataset/foreign-gifts-and-contracts-report-2011).
+
+```sh
+mkdir foreign_gifts
+cd foreign_gifts
+wget --user-agent="" https://studentaid.gov/sites/default/files/ForeignGifts.xls
+# `in2csv` is part of CSVKit (https://github.com/wireservice/csvkit), which might be in `brew`
+in2csv ForeignGifts.xls > foreign_gifts.csv
+rm ForeignGifts.xls
+```
 
 ### Questions, their formulations in english and SQL, the database's answers, along with any needful rationalization
 
 We updated almost all of our questions, and came up with many new ones, to both better fit the limitations of our dataset and to reframe questions that could not be answered without additional statistical analysis
-Admittedly, this is a bit of a "Man searches for keys under streetlamp" situation, but since this dataset is purely for educational and exploratory purposes (as opposed to forming part of the basis for an argument to some effect), we have decided not to sweat it.
+I've said it before and I'll say it again: this is a "Man searches for keys under streetlamp" situation.
 
-#### Q0: How many graduate and undergraduate students are enrolled at reported schools?
-
-```sql
-SELECT i.name, i.state, i.city, i.undergraduate_enrollment, i.grad_enrollment
-FROM colleges_2014.institutions AS i
-WHERE (i.grad_enrollment IS NOT NULL) or (i.undergraduate_enrollment IS NOT NULL)
-ORDER BY i.grad_enrollment DESC;
-```
-
-![](/img/Q0.png)
-
-#### Q1: No. of undergraduate students and the insititution
+#### Q1: Which schools have the highest undergraduate student enrollment?
 
 ```sql
 SELECT i.name, i.state, i.city, i.undergraduate_enrollment
@@ -185,7 +355,7 @@ ORDER BY i.undergraduate_enrollment DESC;
 
 ![](/img/Q01.png)
 
-#### Q2: No. of graduate students and the insititution
+#### Q2: Which schools have the highest graduate student enrollment?
 
 ```sql
 SELECT i.name, i.state, i.city, i.grad_enrollment
@@ -544,3 +714,55 @@ LIMIT 15;
 ```
 
 ![](/img/Q26.png)
+
+#### Unused questions from our original list
+
+Some of these questions affected the queries we formulated.
+See the brief note below each question.
+
+- How many students are in high school, under grad, grad etc programs?
+	- Changed to consider undergraduate and graduate programs separately.  See Q1 and Q2.
+- Which colleges have the highest fees?
+	- Changed to consider in-state and out-of-state tuition separately.  See Q3 and Q4.  Additionally, used as part of the answer to questions Q4 and Q6.
+- What is the connection between college sports and academics?
+	- This question was too vague to answer with a database.
+- Does spending on college sports affect student's academic performances?
+	- We didn't formulate this question, but could have asked something similar---something like, "Are SAT scores correlated with spending on sports?"
+- How is cost of attendance affected by funding for college sports?
+	- We didn't formulate this question either, but, again, we could've.
+- How does increased funding for college sports affect universities, colleges, and the areas surrounding them?
+	- This question was too vague, and would've required importing tax revenue data; without a more focused question, it wasn't worth pursuing.
+- Does sports gambling correlate with subsidies to college sports?
+	- As with the previous question, answering this would've required including tax revenue data.
+- Is there a connection between subsidies to college sports teams and Title-IX investigations?
+	- Answering this question would've required including the EADA data, which we collected, but did not import since our database has already outgrown the scope of this assignment.
+- How many students are involved in both academics and sports?
+	- One would hope that everyone who is a student is involved in academics.
+- What are the top 15 schools and colleges that have good ratings?
+	- Answering this question as such would've required collecting additional data, but we asked a similar question in our queries about student--faculty ratios. See Q17, Q18, Q19, and Q26.
+- Which schools and colleges support financing for academically oriented students?
+  - Finding out the extent to which different schools provide financial support to students would've required collecting additional data.
+- Which schools and colleges support financing for students involved in sports?
+  - As with the previous question, answering this question would've required collection of additional data.
+- How many students are involved in college sports?
+  - There has been talk of Q25 in this connexion, but I have my doubts.
+- What kinds of funding are offered to students at schools and colleges?
+- How much funding is offered to students when comparing between states?
+- Which schools and colleges are highly supportive of sports?
+  - Adapted for Q21.
+- What is the variation in funding for education versus sports?
+  - I suppose we could've asked this by selecting instructional spending per student and institutional spending on sports, then getting the variance of both.
+- Which schools and colleges participate and encourage students in more than 1 sport?
+  - Answering this question would've required importing the EADA data.
+- What is the average of students who are good at both sports and academics?
+  - Maybe we could've answered a question somewhat, if you really squinted, like this by gathering data on the number of sports and academic scholarships distributed to distinct students per institution.
+- How many consecutive wins have various college sports team had?
+  - It may be that the EADA data includes game result data, in which case its inclusion would've helped to answer this question.
+- How many students, by school, have received funding based on athletics participation?
+  - This is another EADA question.
+- What is the average amount or scholarship money offered per year in each category?
+  - Additional information on scholarships might've enabled answering this question.
+- Is there a difference in the average funding for male and female college sports teams?
+  - The EADA data includes information on this subject.
+- How does any difference in the previous question compare to differences in funding based on academic merit?
+  - To answer this question, we would've had to've collected more information on scholarships.
