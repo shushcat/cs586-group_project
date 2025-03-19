@@ -172,6 +172,8 @@ WHERE (i.grad_enrollment IS NOT NULL) or (i.undergraduate_enrollment IS NOT NULL
 ORDER BY i.grad_enrollment DESC;
 ```
 
+![](/img/Q0.png)
+
 #### Q1: No. of undergraduate students and the insititution
 
 ```sql
@@ -181,6 +183,8 @@ WHERE i.undergraduate_enrollment IS NOT null
 ORDER BY i.undergraduate_enrollment DESC;
 ```
 
+![](/img/Q01.png)
+
 #### Q2: No. of graduate students and the insititution
 
 ```sql
@@ -189,6 +193,8 @@ FROM colleges_2014.institutions AS i
 WHERE i.grad_enrollment IS NOT null
 ORDER BY i.grad_enrollment DESC;
 ```
+
+![](/img/Q02.png)
 
 #### Q3: Which schools report charging the highest in-state tuition?
 
@@ -201,7 +207,9 @@ ORDER BY ifp.in_state_cost DESC
 LIMIT 10;
 ```
 
-#### Q4: Which schools report the highest and lowest ratios between in-state and out-of-state tuition?
+![](/img/Q03.png)
+
+#### Q4: Which schools report lowest ratios between in-state and out-of-state tuition?
 
 ```sql
 SELECT i.name, i.state, i.city, cast((cast(ifp.in_state_cost as float)/ifp.out_state_cost) AS numeric(7,6)) AS in_to_out
@@ -210,6 +218,8 @@ JOIN colleges_2014.institutions AS i ON ifp.unitid = i.unitid
 WHERE ifp.in_state_cost IS NOT NULL
 ORDER BY in_to_out ASC;
 ```
+
+![](/img/Q04.png)
 
 #### Q5: How much education have people endured in the areas where the students at institutions with the lowest in-state to out-of-state tuition ratios come from?
 
@@ -242,6 +252,8 @@ WHERE ifp.in_state_cost IS NOT NULL AND sap.sat_avg_all IS NOT NULL
 ORDER BY in_to_out ASC;
 ```
 
+![](/img/Q06.png)
+
 #### Q7: Which schools accepted the most money from foreign donors in 2014?
 
 ```sql
@@ -252,6 +264,8 @@ GROUP BY i.unitid
 ORDER BY gift_sum DESC
 LIMIT 10;
 ```
+
+![](/img/Q07.png)
 
 #### Q8: What is instructional spending like at those schools?
 
@@ -264,6 +278,8 @@ GROUP BY i.unitid, ifp.instruction_spend_per_student
 ORDER BY gift_sum DESC
 LIMIT 10;
 ```
+
+![](/img/Q08.png)
 
 #### Q9: How profitable are sports at schools that reported foreign gifts?
 
@@ -279,6 +295,8 @@ GROUP BY i.unitid, ifp.instruction_spend_per_student,
 ORDER BY gift_sum DESC;
 ```
 
+![](/img/Q09.png)
+
 #### Q10: How profitable are sports at schools that gave a report as to whether or not their sports-related doings are profitable?
 
 ```sql
@@ -292,6 +310,8 @@ GROUP BY i.unitid, ifp.instruction_spend_per_student,
 ORDER BY ifp.instruction_spend_per_student DESC;
 ```
 
+![](/img/Q10.png)
+
 #### Q11: How is the profitibility of sports distributed among schools?
 
 ```sql
@@ -303,6 +323,8 @@ SELECT cast(avg(af.net_revenue) AS numeric(10,2)) AS mean,
 FROM colleges_2014.athletics_financing as af;
 ```
 
+![](/img/Q11.png)
+
 #### Q12: Which country donated most frequently to each school that reported foreign gifts?
 
 ```sql
@@ -312,6 +334,8 @@ FROM colleges_2014.foreign_gifts AS fg
 join colleges_2014.institutions as i on fg.unitid = i.unitid
 GROUP BY i.name, fg.unitid;
 ```
+
+![](/img/Q12.png)
 
 #### Q13: And again, but with a CTE:
 
@@ -328,6 +352,8 @@ JOIN colleges_2014.institutions AS i ON fg.unitid = i.unitid
 JOIN top_donor AS td ON fg.unitid = td.unitid
 GROUP BY i.name, td.top_donor;
 ```
+
+![](/img/Q13.png)
 
 #### Q14: And again in still more convoluted fashion, but this time listing the top three donor countries for each university.
 
@@ -347,6 +373,8 @@ WHERE rank = 1 OR rank = 2 OR rank = 3
 ORDER BY i.name ASC, dr.total DESC;
 ```
 
+![](/img/Q14.png)
+
 #### Q15: Which countries donated the most money, and how much did each one donate?
 
 ```sql
@@ -357,12 +385,16 @@ ORDER BY donated DESC
 LIMIT 10;
 ```
 
+![](/img/Q15.png)
+
 #### Q16: Which country donated most often?
 
 ```sql
 SELECT MODE() WITHIN GROUP (ORDER BY fg.donor_country) AS donor
 FROM colleges_2014.foreign_gifts AS fg;
 ```
+
+![](/img/Q16.png)
 
 #### Q17: Which of the schools in Oregon that report average SAT scores, in-state tuition, and out-of-state tuition have the lowest student-to-faculty ratios?
 
@@ -380,6 +412,8 @@ WHERE sap.sat_avg_all IS NOT NULL
 ORDER BY i.student_faculty_ratio;
 ```
 
+![](/img/Q17.png)
+
 #### Q18: How much does each of those schools spend directly on instructing students?
 
 ```sql
@@ -395,6 +429,8 @@ WHERE sap.sat_avg_all IS NOT NULL
 	AND i.state = 'OR'
 ORDER BY i.student_faculty_ratio;
 ```
+
+![](/img/Q18.png)
 
 #### Q19: Of those, which are included in the athletics financing database and what are their net revenues from athletics, broadly construed?
 
@@ -415,6 +451,8 @@ WHERE sap.sat_avg_all IS NOT NULL
 ORDER BY i.student_faculty_ratio;
 ```
 
+![](/img/Q19.png)
+
 #### Q20: Which schools' graduates have the highest median debt?
 
 ```sql
@@ -425,6 +463,8 @@ WHERE sfp.grad_debt_mdn IS NOT NULL
 ORDER BY sfp.grad_debt_mdn DESC
 LIMIT 10;
 ```
+
+![](/img/Q20.png)
 
 #### Q21: Do the schools with the largest sports subsidies have fewer students from low income or first-to-attend-college backgrounds?
 
@@ -437,7 +477,11 @@ JOIN colleges_2014.institutions AS i ON sfp.unitid = i.unitid
 JOIN colleges_2014.athletics_financing AS af ON af.unitid = i.unitid;
 ```
 
+![](/img/Q21.png)
+
 #### Q22: Do schools that spend more on student instruction have higher faculty salaries?
+
+(They have more money, so yes.)
 
 ```sql
 SELECT i.name, i.state, ifp.average_faculty_salary, ifp.instruction_spend_per_student
@@ -445,10 +489,12 @@ FROM colleges_2014.institutional_financial_profile AS ifp
 JOIN colleges_2014.institutions AS i ON ifp.unitid = i.unitid;
 ```
 
+![](/img/Q22.png)
+
 #### Q23: Which of the colleges that responded pay the most per student sports in the undergrad program?
 
 ```sql
-SELECT i.name,(af.athletic_expenses - af.student_fees) / i.undergraduate_enrollment AS sports_pay_per_student
+SELECT i.name, (af.athletic_expenses - af.student_fees) / i.undergraduate_enrollment AS sports_pay_per_student
 FROM colleges_2014.institutions i
 JOIN colleges_2014.athletics_financing af ON i.unitid = af.unitid
 WHERE af.athletic_expenses IS NOT NULL
@@ -456,6 +502,8 @@ WHERE af.athletic_expenses IS NOT NULL
 ORDER by sports_pay_per_student DESC
 LIMIT 10;
 ```
+
+![](/img/Q23.png)
 
 #### Q24: Which of the colleges that responded pay the most per student sports in the grad program?
 
@@ -469,6 +517,8 @@ ORDER by sports_pay_per_student DESC
 LIMIT 10;
 ```
 
+![](/img/Q24.png)
+
 #### Q25: How many students are involved in both academics and sports?
 
 ```sql
@@ -478,6 +528,8 @@ WHERE i.unitid IN (SELECT DISTINCT unitid FROM colleges_2014.athletics_financing
 GROUP BY i.name
 ORDER BY no_of_students_in_sports DESC;
 ```
+
+![](/img/Q25.png)
 
 #### TODO Q26: Which schools and colleges that also report students' sexes report the lowest student-faculty ratios?
 
