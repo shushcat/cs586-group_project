@@ -2,7 +2,7 @@
 
 This project gathers some data about US schools---"schools" here including 2-year and 4-year colleges, universities, and some trade schools---during the year 2014.
 Specifically, it collects the 2014 data for foreign gifts to US schools and college sports financing, as well as the _College scorecard_ data for that year.
-The datasets were selected by combing through the _Data is plural_ archives^[<https://www.data-is-plural.com/>] as collected by Jeremy Singer-Vine, searching for anything to do with US colleges and universities.
+The datasets were selected by combing through [the _Data is plural_ archives](https://www.data-is-plural.com/) as collected by Jeremy Singer-Vine, searching for anything to do with US colleges and universities.
 As a consequence of this somewhat scattershot approach to dataset collection, the questions that can be asked using our database aren't quite as incisive as we would've preferred.
 Given the chance to do it all again, we probably would've focused on importing as near to the entirety of the _College scorecard_ data as we could manage since that data is already provided in a consistent format and is, as far as we know, as close to a complete picture of the higher education system in the US as is currently available.
 As it stand, our questions concern the kinds of things our database allow us to ask questions about---as is always the case, I suppose.
